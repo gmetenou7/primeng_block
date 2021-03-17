@@ -25,37 +25,58 @@
 
             li {
                 display: flex;
+
+                a {
+                    color: var(--text-color-secondary);
+                    font-weight: 700;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-bottom: 2px solid transparent;
+                    transition: border-bottom-color .2s;
+                    text-decoration: none;
+                    min-width: 120px;
+                    outline: 0 none;
+        
+                    &:hover, &:focus {
+                        border-bottom-color: var(--surface-d);
+                    }
+        
+                    &.router-link-active {
+                        color: var(--text-color);
+                        border-bottom-color: var(--primary-color);
+                    }
+                }
             }  
         }
 
-        a {
-            color: var(--text-color-secondary);
-            font-weight: 700;
+        .config-btn-container {
             display: flex;
             align-items: center;
-            justify-content: center;
-            border-bottom: 2px solid transparent;
-            transition: border-bottom-color .2s;
-            text-decoration: none;
-            min-width: 120px;
-            outline: 0 none;
 
-            &:hover, &:focus {
-                border-bottom-color: var(--surface-d);
-            }
+            .config-btn {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                border: 1px solid var(--surface-d);
+                border-radius: 4px;
+                padding: .5rem 1rem;
+                font-weight: 700;
+                color: var(--text-color-secondary);
+                transition: background-color .3s;
+                outline: 0 none;
+    
+                i {
+                    color: var(--primary-color);
+                    margin-right: .5rem;
+                }
 
-            &.router-link-active {
-                color: var(--text-color);
-                border-bottom-color: var(--primary-color);
+                &:hover {
+                    background-color: var(--surface-c);
+                }
             }
         }
     
-        .config-btn {
-            cursor: pointer;
-
-            i {
-                margin-right: .5rem;
-            }
-        }
+        
     }
 }

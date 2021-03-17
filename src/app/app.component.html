@@ -1,7 +1,9 @@
 <div class="layout-wrapper">
     <div class="layout-topbar">
         <div class="topbar-logo">
-            <img src="assets/images/logo-primeblocks.svg" class="logo" alt="PrimeBlocks Logo">
+            <a [routerLink]="['/']">
+                <img src="assets/images/logo-primeblocks.svg" class="logo" alt="PrimeBlocks Logo">
+            </a>
         </div>
 
         <div class="topbar-actions">
@@ -9,10 +11,12 @@
                 <li><a [routerLink]="['/']" class="router-link" to="/" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact:true}">BLOCKS</a></li>
                 <li><a [routerLink]="['/setup']" class="router-link" to="/setup" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact:true}">SETUP</a></li>
             </ul>
-            <a tabindex="0" class="config-btn">
-                <i class="pi pi-palette"></i>
-                <span>Change Theme</span>
-            </a>
+            <div class="config-btn-container">
+                <a tabindex="0" class="config-btn">
+                    <i class="pi pi-palette"></i>
+                    <span>CHANGE THEME</span>
+                </a>
+            </div>
         </div>    
     </div>
     <div class="layout-breadcrumb">
@@ -23,6 +27,7 @@
                     <span *ngIf="menuitem.label; else home">{{menuitem.label}}</span>
                     <ng-template #home><i class="pi pi-home"></i></ng-template>
                 </a>
+                <div *ngIf="menuitems.length === 1" class="chevron">/</div>
             </li>
         </ul>
     </div>
