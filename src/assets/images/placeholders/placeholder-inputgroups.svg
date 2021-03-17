@@ -1,0 +1,11 @@
+<svg width="283" height="132" viewBox="0 0 283 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="283" height="132" rx="4" fill="#78909C" fill-opacity="0.02"/>
+<rect x="1" y="1" width="281" height="130" rx="3" stroke="#78909C" stroke-opacity="0.5" stroke-width="2"/>
+<rect x="96" y="28" width="35" height="3" rx="1.5" fill="#B5C2C8"/>
+<path d="M96.75 48.75H141.25V57.25H100C98.2051 57.25 96.75 55.7949 96.75 54V48.75Z" fill="#B5C2C8" fill-opacity="0.2" stroke="#B5C2C8" stroke-width="1.5"/>
+<path d="M96.75 43C96.75 41.2051 98.2051 39.75 100 39.75H183C184.795 39.75 186.25 41.2051 186.25 43V48.25H96.75V43Z" fill="#B5C2C8" fill-opacity="0.2" stroke="#B5C2C8" stroke-width="1.5"/>
+<path d="M141.75 48.75H186.25V54C186.25 55.7949 184.795 57.25 183 57.25H141.75V48.75Z" fill="#B5C2C8" fill-opacity="0.2" stroke="#B5C2C8" stroke-width="1.5"/>
+<rect x="96" y="75" width="35" height="3" rx="1.5" fill="#B5C2C8"/>
+<path d="M96.75 90C96.75 88.2051 98.2051 86.75 100 86.75H183C184.795 86.75 186.25 88.2051 186.25 90V95.25H96.75V90Z" fill="#B5C2C8" fill-opacity="0.2" stroke="#B5C2C8" stroke-width="1.5"/>
+<path d="M96.75 95.75H186.25V101C186.25 102.795 184.795 104.25 183 104.25H100C98.2051 104.25 96.75 102.795 96.75 101V95.75Z" fill="#B5C2C8" fill-opacity="0.2" stroke="#B5C2C8" stroke-width="1.5"/>
+</svg>

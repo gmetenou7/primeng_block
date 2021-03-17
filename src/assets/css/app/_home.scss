@@ -1,0 +1,38 @@
+.block-category-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.block-category {
+    border:1px solid var(--surface-d);
+    border-radius: 4px;
+}
+
+.block-group-title {
+    font-weight: 700;
+    padding: 1rem 2rem;
+    display: block;
+    border-bottom:1px solid var(--surface-d);
+}
+
+.block-group-content {
+    padding: 2rem;
+}
+
+.block-placeholder {
+    width: 100%;
+    display: block;
+    margin-bottom: .75rem;
+}
+
+.block-name {
+    display: block;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.block-count {
+    display: block;
+    color: var(--text-color-secondary);
+}
