@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 const routes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'setup', loadChildren: () => import('./components/setup/setup.module').then(m => m.SetupModule)},
+    {path: 'marketing', loadChildren: () => import('./components/marketing/marketing.module').then(m => m.MarketingModule)},
 ];
 
 @NgModule({

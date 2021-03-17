@@ -15,6 +15,17 @@
             </a>
         </div>    
     </div>
+    <div class="layout-breadcrumb">
+        <ul>
+            <li *ngFor="let menuitem of menuitems; let l=last; let f=first;">
+                <div *ngIf="!f" class="chevron">/</div>
+                <a [routerLink]="menuitem.routerLink">
+                    <span *ngIf="menuitem.label; else home">{{menuitem.label}}</span>
+                    <ng-template #home><i class="pi pi-home"></i></ng-template>
+                </a>
+            </li>
+        </ul>
+    </div>
 
     <div class="layout-content">
         <router-outlet></router-outlet>
