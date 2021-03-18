@@ -101,4 +101,4 @@ $grid-column-offsets: (
     }
 }
 
-@include style-class($grid-column-offsets, 'margin-left', true);
+@include style-class('margin-left', $grid-column-offsets, true);

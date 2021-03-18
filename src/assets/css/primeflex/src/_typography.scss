@@ -41,9 +41,9 @@ $font-size-props: (
     "text-8xl": 4rem
 );
 
-@include style-class($text-align-props, 'text-align', true);
-@include style-class($text-decoration-props, 'text-decoration');
-@include style-class($text-transform-props, 'text-transform');
-@include style-class($font-weight-props, 'font-weight');
-@include style-class($font-style-props, 'font-style');
-@include style-class($font-size-props, 'font-size', true);
+@include style-class('text-align', $text-align-props, true);
+@include style-class('text-decoration', $text-decoration-props);
+@include style-class('text-transform', $text-transform-props);
+@include style-class('font-weight', $font-weight-props);
+@include style-class('font-style', $font-style-props);
+@include style-class('font-size', $font-size-props, true);

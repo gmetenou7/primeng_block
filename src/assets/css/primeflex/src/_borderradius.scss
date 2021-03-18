@@ -1,0 +1,31 @@
+.border-noround {
+    border-radius: 0;
+}
+
+.border-round {
+    border-radius: var(--border-radius, $borderRadius);
+}
+
+.border-round-left {
+    border-top-left-radius: var(--border-radius, $borderRadius);
+    border-bottom-left-radius: var(--border-radius, $borderRadius);
+}
+
+.border-round-top {
+    border-top-left-radius: var(--border-radius, $borderRadius);
+    border-top-right-radius: var(--border-radius, $borderRadius);
+}
+
+.border-round-bottom {
+    border-bottom-left-radius: var(--border-radius, $borderRadius);
+    border-bottom-right-radius: var(--border-radius, $borderRadius);
+}
+
+.border-round-right {
+    border-top-right-radius: var(--border-radius, $borderRadius);
+    border-bottom-right-radius: var(--border-radius, $borderRadius);
+}
+
+.border-circle {
+    border-radius: 50%;
+}

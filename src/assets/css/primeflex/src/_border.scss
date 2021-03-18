@@ -1,0 +1,40 @@
+$border-scales:0px, 1px, 2px;
+
+$border-directions: (
+    '': 'border',
+    'top': 'border-top',
+    'right': 'border-right',
+    'left': 'border-left',
+    'bottom': 'border-bottom',
+    'x': ('border-left','border-right'),
+    'y': ('border-top','border-bottom')
+);
+
+$border-styles: (
+    'border-solid': solid,
+    'border-dashed': dashed,
+    'border-dotted': dotted,
+    'border-double': double,
+    'border-none': none
+);
+
+@mixin border-class($name, $directions, $scales) {
+    @each $dir, $prop in $directions {
+        @for $i from 0 through length($scales) - 1 {
+            $className: #{$name}-#{$dir}-#{$i};
+            @if ($dir == '') {
+                $className: #{$name}-#{$i};
+            }
+            
+            .#{$className} {
+                @each $propName in $prop {
+                    #{$propName}: nth($scales, $i + 1) solid !important;
+                }
+            }
+        }
+    }
+
+}
+
+@include border-class('border', $border-directions, $border-scales);
+@include style-class('border-style', $border-styles);
