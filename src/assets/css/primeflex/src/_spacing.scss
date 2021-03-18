@@ -19,5 +19,47 @@ $margin-directions: (
     'y': ('margin-top','margin-bottom'),
 );
 
+@mixin spacing-class($name, $directions, $scales, $auto: false) {
+    @each $dir, $prop in $directions {
+        @for $i from 0 through length($scales) - 1 {
+            .#{$name}#{$dir}-#{$i} {
+                @each $propName in $prop {
+                    #{$propName}: $spacer * nth($scales, $i + 1) !important;
+                }
+            }
+        }
+
+        @if ($auto) {
+            .#{$name}#{$dir}-auto {
+                @each $propName in $prop {
+                    #{$propName}: auto !important;
+                }
+            }
+        } 
+    }
+
+    @each $key, $val in $breakpoints {
+        @media screen and (min-width: #{$val}) {
+            @each $dir, $prop in $directions {
+                @for $i from 0 through length($scales) - 1 {
+                    .#{$key + $separator}#{$name}#{$dir}-#{$i} {
+                        @each $propName in $prop {
+                            #{$propName}: $spacer * nth($scales, $i + 1);
+                        }
+                    }
+                }
+
+                @if ($auto) {
+                    .#{$key + $separator}#{$name}#{$dir}-auto {
+                        @each $propName in $prop {
+                            #{$propName}: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @include spacing-class('p', $padding-directions, $space-scales);
 @include spacing-class('m', $margin-directions, $space-scales, true);
