@@ -1,0 +1,49 @@
+$text-align-props: (
+    "text-center": center,
+    "text-justify": justify,
+    "text-left": left,
+    "text-right": right
+);
+
+$text-decoration-props: (
+    "underline": underline,
+    "line-through": line-through,
+    "no-underline": none
+);
+
+$text-transform-props: (
+    "lowercase": lowercase,
+    "uppercase": uppercase,
+    "capitalize": capitalize
+);
+
+$font-weight-props: (
+    "font-light": 300,
+    "font-normal": 400,
+    "font-bold": 700
+);
+
+$font-style-props: (
+    "font-italic": italic
+);
+
+$font-size-props: (
+    "text-xs": .75rem,
+    "text-sm": .875rem,
+    "text-lg": 1rem,
+    "text-xl": 1.125rem,
+    "text-2xl": 1.25rem,
+    "text-3xl": 1.5rem,
+    "text-4xl": 1.75rem,
+    "text-5xl": 2rem,
+    "text-6xl": 2.5rem,
+    "text-7xl": 3rem,
+    "text-8xl": 4rem
+);
+
+@include style-class($text-align-props, 'text-align', true);
+@include style-class($text-decoration-props, 'text-decoration');
+@include style-class($text-transform-props, 'text-transform');
+@include style-class($font-weight-props, 'font-weight');
+@include style-class($font-style-props, 'font-style');
+@include style-class($font-size-props, 'font-size', true);

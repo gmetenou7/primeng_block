@@ -1,0 +1,8 @@
+$colors: "blue", "green", "yellow", "cyan", "pink", "indigo", "teal", "orange", "bluegray", "purple";
+$colorShades: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
+$surfaces: "surface";
+$surfaceShades: 0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
+
+@include color-class('text-', 'color', $colors, $colorShades);
+@include color-class('bg-', 'background-color', $colors, $colorShades);
+@include color-class('', 'background-color', $surfaces, $surfaceShades);

@@ -1,0 +1,34 @@
+@mixin style-class($map, $prop, $responsive: false) {
+    @each $key, $val in $map {
+        .#{$key} {
+            #{$prop}: #{$val} !important;
+        }
+    }
+
+    @if ($responsive) {
+        @each $key, $val in $breakpoints {
+            @media screen and (min-width: #{$val}) {
+                .#{$key + $separator} {
+                    @each $key, $val in $map {
+                        &#{$key} {
+                            #{$prop}: #{$val} !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@mixin color-class($name, $prop, $colors, $shades) {
+    @each $color in $colors {
+        .#{$name}#{$color} {
+            @each $shade in $shades {
+                &-#{$shade} {
+                    #{$prop}: var(--#{$color}-#{$shade});
+                }
+            }
+        }
+    }
+}
