@@ -1,86 +1,86 @@
-.p-field {
+.field {
     margin-bottom: $fieldMargin;
 }
 
-.p-field > label {
+.field > label {
     display: inline-block;
     margin-bottom: $fieldLabelMargin;
 }
 
-.p-field.p-grid > label {
+.field.grid > label {
     display: flex;
     align-items: center;
 }
 
-.p-field > small {
+.field > small {
     margin-top: $helperTextMargin;
 }
 
-.p-field.p-grid,
-.p-formgrid.p-grid {
+.field.grid,
+.formgrid.grid {
     margin-top: 0;
 }
 
-.p-field.p-grid .p-col-fixed,
-.p-formgrid.p-grid .p-col-fixed,
-.p-field.p-grid .p-col,
-.p-formgrid.p-grid .p-col,
-.p-field.p-grid .p-col-1, 
-.p-formgrid.p-grid .p-col-1, 
-.p-field.p-grid .p-col-2,
-.p-formgrid.p-grid .p-col-2, 
-.p-field.p-grid .p-col-3, 
-.p-formgrid.p-grid .p-col-3, 
-.p-field.p-grid .p-col-4, 
-.p-formgrid.p-grid .p-col-4, 
-.p-field.p-grid .p-col-5, 
-.p-formgrid.p-grid .p-col-5, 
-.p-field.p-grid .p-col-6, 
-.p-formgrid.p-grid .p-col-6,
-.p-field.p-grid .p-col-7, 
-.p-formgrid.p-grid .p-col-7, 
-.p-field.p-grid .p-col-8, 
-.p-formgrid.p-grid .p-col-8, 
-.p-field.p-grid .p-col-9, 
-.p-formgrid.p-grid .p-col-9, 
-.p-field.p-grid .p-col-10, 
-.p-formgrid.p-grid .p-col-10, 
-.p-field.p-grid .p-col-11, 
-.p-formgrid.p-grid .p-col-11, 
-.p-field.p-grid .p-col-12,
-.p-formgrid.p-grid .p-col-12 {
+.field.grid .col-fixed,
+.formgrid.grid .col-fixed,
+.field.grid .col,
+.formgrid.grid .col,
+.field.grid .col-1, 
+.formgrid.grid .col-1, 
+.field.grid .col-2,
+.formgrid.grid .col-2, 
+.field.grid .col-3, 
+.formgrid.grid .col-3, 
+.field.grid .col-4, 
+.formgrid.grid .col-4, 
+.field.grid .col-5, 
+.formgrid.grid .col-5, 
+.field.grid .col-6, 
+.formgrid.grid .col-6,
+.field.grid .col-7, 
+.formgrid.grid .col-7, 
+.field.grid .col-8, 
+.formgrid.grid .col-8, 
+.field.grid .col-9, 
+.formgrid.grid .col-9, 
+.field.grid .col-10, 
+.formgrid.grid .col-10, 
+.field.grid .col-11, 
+.formgrid.grid .col-11, 
+.field.grid .col-12,
+.formgrid.grid .col-12 {
     padding-top: 0;
     padding-bottom: 0;
 }
 
-.p-formgroup-inline {
+.formgroup-inline {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
 }
 
-.p-formgroup-inline .p-field,
-.p-formgroup-inline .p-field-checkbox,
-.p-formgroup-inline .p-field-radiobutton {
+.formgroup-inline .field,
+.formgroup-inline .field-checkbox,
+.formgroup-inline .field-radiobutton {
     margin-right: $fieldMargin;
 }
 
-.p-formgroup-inline .p-field > label,
-.p-formgroup-inline .p-field-checkbox > label,
-.p-formgroup-inline .p-field-radiobutton > label {
+.formgroup-inline .field > label,
+.formgroup-inline .field-checkbox > label,
+.formgroup-inline .field-radiobutton > label {
     margin-right: $fieldLabelMargin;
     margin-bottom: 0;
 }
 
-.p-field-checkbox,
-.p-field-radiobutton {
+.field-checkbox,
+.field-radiobutton {
     margin-bottom: $fieldMargin;
     display: flex;
     align-items: center;
 }
 
-.p-field-checkbox > label,
-.p-field-radiobutton > label {
+.field-checkbox > label,
+.field-radiobutton > label {
     margin-left: $fieldLabelMargin;
     line-height: 1;
 }
