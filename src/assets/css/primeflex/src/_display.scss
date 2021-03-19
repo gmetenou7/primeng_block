@@ -7,20 +7,4 @@ $display-props: (
     'inline-flex': 'inline-flex'
 );
 
-@each $prop-name, $prop-value in $display-props {
-    .#{$prop-name} {
-        display: #{$prop-value} !important;
-    }
-}
-
-@each $key, $val in $breakpoints {
-    @media screen and (min-width: #{$val}) {
-        .#{$key + $separator} {
-            @each $prop-name, $prop-value in $display-props {
-                &#{$prop-name} {
-                    display: #{$prop-value} !important;
-                }
-            }
-        }
-    }
-}
+@include style-class('display', $display-props, true);

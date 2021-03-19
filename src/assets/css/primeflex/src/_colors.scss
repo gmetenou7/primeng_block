@@ -19,3 +19,37 @@ $surfaceShades: 0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
 @include color-class('bg-', 'background-color', $colors, $colorShades);
 @include color-class('border-', 'border-color', $colors, $colorShades);
 @include color-class('', 'background-color', $surfaces, $surfaceShades);
+
+.text-0 {
+    color: var(--surface-0) !important;
+}
+.text-50 {
+    color: var(--surface-50) !important;
+}
+.text-100 {
+    color: var(--surface-100) !important;
+}
+.text-200 {
+    color: var(--surface-200) !important;
+}
+.text-300 {
+    color: var(--surface-300) !important;
+}
+.text-400 {
+    color: var(--surface-400) !important;
+}
+.text-500 {
+    color: var(--surface-500) !important;
+}
+.text-600 {
+    color: var(--surface-600) !important;
+}
+.text-700 {
+    color: var(--surface-700) !important;
+}
+.text-800 {
+    color: var(--surface-800) !important;
+}
+.text-900 {
+    color: var(--surface-900) !important;
+}

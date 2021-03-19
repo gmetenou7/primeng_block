@@ -8,12 +8,17 @@
     margin-bottom: 1rem;
 }
 
-.block-category,
-.block-section {
+.block-category {
     border:1px solid var(--surface-d);
     border-radius: 4px;
     margin-bottom: 4rem;
     background-color: var(--surface-a);
+}
+
+.block-section {
+    border:1px solid var(--surface-d);
+    border-radius: 4px;
+    margin-bottom: 4rem;
 }
 
 .block-group {

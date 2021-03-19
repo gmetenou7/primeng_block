@@ -41,8 +41,8 @@ $max-height-properties: (
 );
 
 @include style-class('width', $width-properties, true);
-@include style-class('height', $width-properties, true);
-@include style-class('min-width', $width-properties, true);
-@include style-class('max-width', $width-properties, true);
-@include style-class('min-height', $width-properties, true);
-@include style-class('max-height', $width-properties, true);
+@include style-class('height', $height-properties, true);
+@include style-class('min-width', $min-width-properties, true);
+@include style-class('max-width', $max-width-properties, true);
+@include style-class('min-height', $min-height-properties, true);
+@include style-class('max-height', $max-height-properties, true);

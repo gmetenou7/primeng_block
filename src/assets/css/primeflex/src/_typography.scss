@@ -30,15 +30,23 @@ $font-style-props: (
 $font-size-props: (
     "text-xs": .75rem,
     "text-sm": .875rem,
-    "text-lg": 1rem,
-    "text-xl": 1.125rem,
-    "text-2xl": 1.25rem,
-    "text-3xl": 1.5rem,
-    "text-4xl": 1.75rem,
-    "text-5xl": 2rem,
-    "text-6xl": 2.5rem,
-    "text-7xl": 3rem,
-    "text-8xl": 4rem
+    "text-base": 1rem,
+    "text-lg": 1.125rem,
+    "text-xl": 1.25rem,
+    "text-2xl": 1.5rem,
+    "text-3xl": 1.75rem,
+    "text-4xl": 2rem,
+    "text-5xl": 2.5rem,
+    "text-6xl": 3rem,
+    "text-7xl": 4rem,
+    "text-8xl": 6rem
+);
+
+$line-height: (
+    'line-height-1': 1,
+    'line-height-2': 1.25,
+    'line-height-3': 1.5,
+    'line-height-4': 2
 );
 
 @include style-class('text-align', $text-align-props, true);
@@ -47,3 +55,4 @@ $font-size-props: (
 @include style-class('font-weight', $font-weight-props);
 @include style-class('font-style', $font-style-props);
 @include style-class('font-size', $font-size-props, true);
+@include style-class('line-height', $line-height);

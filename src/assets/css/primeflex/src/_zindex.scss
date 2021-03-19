@@ -1,0 +1,7 @@
+$zindex-props: (
+    'z-auto': 'auto',
+    'z-0': 0,
+    'z-1': 1
+);
+
+@include style-class('z-index', $zindex-props, true);
