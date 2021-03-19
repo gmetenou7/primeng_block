@@ -6,7 +6,8 @@ import { MarketingComponent } from './marketing.component';
     imports: [
         RouterModule.forChild([
             {path: '', component: MarketingComponent},
-            {path: 'hero', loadChildren: () => import('./hero/hero.module').then(m => m.HeroModule)}
+            {path: 'hero', loadChildren: () => import('./hero/hero.module').then(m => m.HeroModule)},
+            {path: 'faq', loadChildren: () => import('./faq/faq.module').then(m => m.FaqModule)}
         ])
     ], 
     exports: [
