@@ -56,6 +56,23 @@ $flex-order: (
     'flex-order-6': 6
 );
 
+$flex-shorthand: (
+    'flex-1': 1 1 0%,
+    'flex-auto': 1 1 auto,
+    'flex-initial': 0 1 auto,
+    'flex-none': none
+);
+
+$flex-grow: (
+    'flex-grow-0': 0,
+    'flex-grow-1': 1
+);
+
+$flex-shrink: (
+    'flex-shrink-0': 0,
+    'flex-shrink-1': 1
+);
+
 @include style-class('flex-direction', $flex-direction, true);
 @include style-class('flex-wrap', $flex-wrap, true);
 @include style-class('justify-content', $flex-justify-content, true);
@@ -63,3 +80,5 @@ $flex-order: (
 @include style-class('align-items', $flex-align-items, true);
 @include style-class('align-self', $flex-align-self, true);
 @include style-class('order', $flex-order, true);
+@include style-class('flex-grow', $flex-grow, true);
+@include style-class('flex-shrink', $flex-shrink, true);
