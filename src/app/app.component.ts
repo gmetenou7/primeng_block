@@ -14,6 +14,10 @@ export class AppComponent implements OnInit {
 
     menuitems: MenuItem[];
 
+    visibleSidebar: boolean;
+
+    theme: string = 'saga-blue';
+
     ngOnInit() {
         this.buildBreadcrumb();
 
@@ -27,5 +31,12 @@ export class AppComponent implements OnInit {
         this.menuitems = paths.map(path => {
             return {label: path, routerLink: ['/' + path]};
         });
+    }
+
+    changeTheme(event: Event, theme: string) {
+        let themeElement = document.getElementById('theme-link');
+        themeElement.setAttribute('href', themeElement.getAttribute('href').replace(this.theme, theme));
+        this.theme = theme;
+        event.preventDefault();
     }
 }
