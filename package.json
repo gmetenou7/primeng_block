@@ -25,7 +25,8 @@
     "zone.js": "~0.10.2",
     "primeng": "11.3.1",
     "primeicons": "4.1.0",
-    "web-animations-js": "^2.3.2"
+    "web-animations-js": "^2.3.2",
+    "prismjs": "1.20.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1100.1",
