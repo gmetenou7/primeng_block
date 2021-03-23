@@ -23,6 +23,7 @@ enum BlockView {
                 </div>
                 <div class="block-code" [ngClass]="{'block-content-active': blockView == BlockView.CODE}">
 <pre class="language-markup"><code #codeblock>{{code}}
+
 </code></pre>
                 </div>
             </div>
