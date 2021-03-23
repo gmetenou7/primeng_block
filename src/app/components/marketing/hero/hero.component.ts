@@ -9,16 +9,14 @@ export class HeroComponent {
 <div class="grid grid-nogutter surface-0 text-800">
     <div class="col-12 md:col-6 p-6 text-center md:text-left">
         <span class="block text-6xl font-bold mb-1">The Most Powerful</span>
-        <div class="block text-6xl text-blue-500 font-bold mb-3">UI Component Library</div>
+        <div class="text-6xl text-blue-500 font-bold mb-3">UI Component Library</div>
         <p class="mt-0 mb-4 text-700 line-height-3">Your perfect companion for Angular featuring elegant, high-performance, accessible and fully customizable UI Components.</p>
         
-        <div>
-            <button pButton label="Learn More" type="button" class="mr-3"></button>
-            <button pButton label="Live Demo" type="button" class="p-button-outlined"></button>
-        </div>
+        <button pButton label="Learn More" type="button" class="mr-3"></button>
+        <button pButton label="Live Demo" type="button" class="p-button-outlined"></button>
     </div>
     <div class="col-12 md:col-6 overflow-hidden">
-        <img src="assets/images/blocks/city.png" alt="City" class="block md:h-full" style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%)">
+        <img src="assets/images/blocks/city.png" alt="City" class="md:ml-auto block md:h-full" style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%)">
     </div>
 </div>`;
 
