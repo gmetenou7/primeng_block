@@ -15,6 +15,15 @@ $surfaceShades: 0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
     }
 }
 
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+    color: var(--primary-color-text) !important;
+}
+
 @include color-class('text-', 'color', $colors, $colorShades);
 @include color-class('bg-', 'background-color', $colors, $colorShades);
 @include color-class('border-', 'border-color', $colors, $colorShades);
@@ -55,11 +64,3 @@ $surfaceShades: 0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
     color: var(--surface-900) !important;
 }
 
-.text-primary {
-    color: var(--primary-color) !important;
-}
-
-.bg-primary {
-    background-color: var(--primary-color) !important;
-    color: var(--primary-color-text);
-}
