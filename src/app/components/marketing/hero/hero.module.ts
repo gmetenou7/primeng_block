@@ -4,13 +4,15 @@ import { HeroComponent } from './hero.component';
 import { HeroRoutingModule } from './hero-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
 
 @NgModule({
   imports: [
     CommonModule,
     HeroRoutingModule,
     ButtonModule,
-    BlockViewerModule
+    BlockViewerModule,
+    InputTextModule
   ],
   declarations: [
     HeroComponent

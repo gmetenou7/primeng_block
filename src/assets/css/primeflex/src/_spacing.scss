@@ -44,7 +44,7 @@ $margin-directions: (
                 @for $i from 0 through length($scales) - 1 {
                     .#{$key + $separator}#{$name}#{$dir}-#{$i} {
                         @each $propName in $prop {
-                            #{$propName}: $spacer * nth($scales, $i + 1);
+                            #{$propName}: $spacer * nth($scales, $i + 1) !important;;
                         }
                     }
                 }
@@ -52,7 +52,7 @@ $margin-directions: (
                 @if ($auto) {
                     .#{$key + $separator}#{$name}#{$dir}-auto {
                         @each $propName in $prop {
-                            #{$propName}: auto;
+                            #{$propName}: auto !important;;
                         }
                     }
                 }
