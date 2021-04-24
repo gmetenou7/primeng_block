@@ -7,6 +7,7 @@ import { MarketingComponent } from './marketing.component';
         RouterModule.forChild([
             {path: '', component: MarketingComponent},
             {path: 'hero', loadChildren: () => import('./hero/hero.module').then(m => m.HeroModule)},
+            {path: 'feature', loadChildren: () => import('./feature/feature.module').then(m => m.FeatureModule)},
             {path: 'faq', loadChildren: () => import('./faq/faq.module').then(m => m.FaqModule)}
         ])
     ], 
