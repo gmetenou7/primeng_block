@@ -28,7 +28,8 @@ $border-styles: (
             
             .#{$className} {
                 @each $propName in $prop {
-                    #{$propName}: nth($scales, $i + 1) solid !important;
+                    #{$propName}-width: nth($scales, $i + 1) !important;
+                    border-style: solid;
                 }
             }
         }

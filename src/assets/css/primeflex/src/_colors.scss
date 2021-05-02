@@ -1,6 +1,5 @@
 $colors: "blue", "green", "yellow", "cyan", "pink", "indigo", "teal", "orange", "bluegray", "purple";
 $colorShades: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
-$surfaces: "surface";
 $surfaceShades: 0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
 
 @mixin color-class($name, $prop, $colors, $shades) {
@@ -15,6 +14,22 @@ $surfaceShades: 0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
     }
 }
 
+@mixin surface-class($name, $prop, $shades) {
+    @each $shade in $shades {
+        .#{$name}-#{$shade} {
+            #{$prop}: var(--surface-#{$shade}) !important;
+        }
+    }
+}
+
+@include color-class('text-', 'color', $colors, $colorShades);
+@include color-class('bg-', 'background-color', $colors, $colorShades);
+@include color-class('border-', 'border-color', $colors, $colorShades);
+@include style-class('background-color', (bg-transparent:'transparent'), true);
+@include surface-class('text', 'color', $surfaceShades);
+@include surface-class('surface', 'background-color', $surfaceShades);
+@include surface-class('border', 'border-color', $surfaceShades);
+
 .text-primary {
     color: var(--primary-color) !important;
 }
@@ -23,44 +38,3 @@ $surfaceShades: 0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
     background-color: var(--primary-color) !important;
     color: var(--primary-color-text) !important;
 }
-
-@include color-class('text-', 'color', $colors, $colorShades);
-@include color-class('bg-', 'background-color', $colors, $colorShades);
-@include color-class('border-', 'border-color', $colors, $colorShades);
-@include color-class('', 'background-color', $surfaces, $surfaceShades);
-@include style-class('background-color', (bg-transparent:'transparent'), true);
-
-.text-0 {
-    color: var(--surface-0) !important;
-}
-.text-50 {
-    color: var(--surface-50) !important;
-}
-.text-100 {
-    color: var(--surface-100) !important;
-}
-.text-200 {
-    color: var(--surface-200) !important;
-}
-.text-300 {
-    color: var(--surface-300) !important;
-}
-.text-400 {
-    color: var(--surface-400) !important;
-}
-.text-500 {
-    color: var(--surface-500) !important;
-}
-.text-600 {
-    color: var(--surface-600) !important;
-}
-.text-700 {
-    color: var(--surface-700) !important;
-}
-.text-800 {
-    color: var(--surface-800) !important;
-}
-.text-900 {
-    color: var(--surface-900) !important;
-}
-
