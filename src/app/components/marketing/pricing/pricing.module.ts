@@ -4,13 +4,15 @@ import { PricingComponent } from './pricing.component';
 import { PricingRoutingModule } from './pricing-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 import { ButtonModule } from 'primeng/button';
+import { InputSwitchModule } from 'primeng/inputswitch';
 
 @NgModule({
   imports: [
     CommonModule,
     PricingRoutingModule,
     BlockViewerModule,
-    ButtonModule
+    ButtonModule,
+    InputSwitchModule
   ],
   declarations: [
     PricingComponent
