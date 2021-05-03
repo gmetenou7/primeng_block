@@ -11,9 +11,10 @@ import { MarketingComponent } from './marketing.component';
             {path: 'cta', loadChildren: () => import('./cta/cta.module').then(m => m.CtaModule)},
             {path: 'faq', loadChildren: () => import('./faq/faq.module').then(m => m.FaqModule)},
             {path: 'pricing', loadChildren: () => import('./pricing/pricing.module').then(m => m.PricingModule)},
-            {path: 'header', loadChildren: () => import('./header/header.module').then(m => m.HeaderModule)}
+            {path: 'header', loadChildren: () => import('./header/header.module').then(m => m.HeaderModule)},
+            {path: 'newsletter', loadChildren: () => import('./newsletter/newsletter.module').then(m => m.NewsletterModule)}
         ])
-    ], 
+    ],
     exports: [
         RouterModule
     ]
