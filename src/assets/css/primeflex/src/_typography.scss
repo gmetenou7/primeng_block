@@ -44,11 +44,16 @@ $font-size-props: (
     "text-8xl": 6rem
 );
 
-$line-height: (
+$line-height-props: (
     'line-height-1': 1,
     'line-height-2': 1.25,
     'line-height-3': 1.5,
     'line-height-4': 2
+);
+
+$white-space-props: (
+    "white-space-normal": normal,
+    "white-space-nowrap": nowrap
 );
 
 @include style-class('text-align', $text-align-props, true);
@@ -57,4 +62,5 @@ $line-height: (
 @include style-class('font-weight', $font-weight-props);
 @include style-class('font-style', $font-style-props);
 @include style-class('font-size', $font-size-props, true);
-@include style-class('line-height', $line-height);
+@include style-class('line-height', $line-height-props);
+@include style-class('white-space', $white-space-props);
