@@ -7,4 +7,7 @@ export class BlogComponent {
     block1: string = ``;
 
     block2: string = ``;
+
+    block3: string = ``;
+    
 }
