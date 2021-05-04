@@ -13,7 +13,8 @@ import { MarketingComponent } from './marketing.component';
             {path: 'pricing', loadChildren: () => import('./pricing/pricing.module').then(m => m.PricingModule)},
             {path: 'header', loadChildren: () => import('./header/header.module').then(m => m.HeaderModule)},
             {path: 'newsletter', loadChildren: () => import('./newsletter/newsletter.module').then(m => m.NewsletterModule)},
-            {path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)}
+            {path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)},
+            {path: 'stats', loadChildren: () => import('./stats/stats.module').then(m => m.StatsModule)}
         ])
     ],
     exports: [
