@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { StatsComponent } from './stats.component';
-import { StatsRoutingModule } from './stats-routing.module';
+import { TestimonialsComponent } from './testimonials.component';
+import { TestimonialsRoutingModule } from './testimonials-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    StatsRoutingModule,
+    TestimonialsRoutingModule,
     BlockViewerModule
   ],
   declarations: [
-    StatsComponent
+    TestimonialsComponent
   ]
 })
-export class StatsModule {}
+export class TestimonialsModule {}
