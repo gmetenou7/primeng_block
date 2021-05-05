@@ -29,7 +29,7 @@ $border-styles: (
             .#{$className} {
                 @each $propName in $prop {
                     #{$propName}-width: nth($scales, $i + 1) !important;
-                    border-style: solid;
+                    #{$propName}-style: solid;
                 }
             }
         }

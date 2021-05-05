@@ -15,7 +15,8 @@ import { MarketingComponent } from './marketing.component';
             {path: 'newsletter', loadChildren: () => import('./newsletter/newsletter.module').then(m => m.NewsletterModule)},
             {path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)},
             {path: 'stats', loadChildren: () => import('./stats/stats.module').then(m => m.StatsModule)},
-            {path: 'contact', loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)}
+            {path: 'contact', loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)},
+            {path: 'content', loadChildren: () => import('./content/content.module').then(m => m.ContentModule)}
         ])
     ],
     exports: [
