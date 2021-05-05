@@ -48,4 +48,19 @@
   </div>
 </block-viewer>
 
-<block-viewer title="Centered with slide" [code]="block2"></block-viewer>
+<block-viewer title="Centered with slide" [code]="block2">
+  <div class="md:p-8 p-6 surface-0 text-center text-900" style="height: 500px">
+    <p-carousel [value]="company" [responsiveOptions]="responsiveOptions">
+      <ng-template let-person pTemplate="item">
+        <div class="flex justify-content-center">
+          <div class="surface-0 shadow-1 px-6 py-5 border-round mb-4 text-900 text-2xl line-highlight-3" style="max-width: 600px">{{person.text}}</div>
+        </div>
+
+        <img src="assets/images/blocks/testimonials-{{person.image}}.png" width="56" height="56" [alt]="person.name" class="mb-3"/>
+        <div class="text-900 font-bold line-height-3">{{person.name}}</div>
+        <div class="text-600 line-height-3 mb-4">Company Title</div>
+
+      </ng-template>
+    </p-carousel>
+  </div>
+</block-viewer>
