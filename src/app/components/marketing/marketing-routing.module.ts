@@ -18,6 +18,7 @@ import { MarketingComponent } from './marketing.component';
             {path: 'testimonials', loadChildren: () => import('./testimonials/testimonials.module').then(m => m.TestimonialsModule)},
             {path: 'contact', loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)},
             {path: 'content', loadChildren: () => import('./content/content.module').then(m => m.ContentModule)},
+            {path: 'footer', loadChildren: () => import('./footer/footer.module').then(m => m.FooterModule)},
             {path: 'logocloud', loadChildren: () => import('./logocloud/logocloud.module').then(m => m.LogoCloudModule)}
         ])
     ],
