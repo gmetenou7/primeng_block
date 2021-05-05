@@ -19,7 +19,9 @@ import { MarketingComponent } from './marketing.component';
             {path: 'contact', loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)},
             {path: 'content', loadChildren: () => import('./content/content.module').then(m => m.ContentModule)},
             {path: 'logocloud', loadChildren: () => import('./logocloud/logocloud.module').then(m => m.LogoCloudModule)},
-            {path: 'team', loadChildren: () => import('./team/team.module').then(m => m.TeamModule)}
+            {path: 'team', loadChildren: () => import('./team/team.module').then(m => m.TeamModule)},
+            {path: 'footer', loadChildren: () => import('./footer/footer.module').then(m => m.FooterModule)},
+            {path: 'logocloud', loadChildren: () => import('./logocloud/logocloud.module').then(m => m.LogoCloudModule)}
         ])
     ],
     exports: [
