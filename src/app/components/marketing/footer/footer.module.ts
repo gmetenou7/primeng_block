@@ -4,6 +4,7 @@ import {FooterComponent} from './footer.component';
 import {FooterRoutingModule} from './footer-routing.module';
 import {BlockViewerModule} from '../../blockviewer/blockviewer.module';
 import {InputTextModule} from 'primeng/inputtext';
+import {ButtonModule} from "primeng/button";
 
 @NgModule({
   imports: [
@@ -11,6 +12,7 @@ import {InputTextModule} from 'primeng/inputtext';
     FooterRoutingModule,
     BlockViewerModule,
     InputTextModule,
+    ButtonModule,
   ],
   declarations: [
     FooterComponent
