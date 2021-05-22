@@ -31,9 +31,9 @@
         }
 
         .hover#{$separator} {
-            &.#{$name}#{$color} {
+            &#{$name}#{$color} {
                 @each $shade in $shades {
-                    &-#{$shade} {
+                    &-#{$shade}:hover {
                         #{$prop}: var(--#{$color}-#{$shade}) !important;
                     }
                 }
@@ -46,6 +46,14 @@
     @each $shade in $shades {
         .#{$name}-#{$shade} {
             #{$prop}: var(--surface-#{$shade}) !important;
+        }
+    }
+
+    @each $shade in $shades {
+        .hover#{$separator} {
+            &#{$name}-#{$shade}:hover {
+                #{$prop}: var(--surface-#{$shade}) !important;
+            }
         }
     }
 }
