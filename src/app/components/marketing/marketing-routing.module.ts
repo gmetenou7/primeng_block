@@ -11,7 +11,6 @@ import { MarketingComponent } from './marketing.component';
             {path: 'cta', loadChildren: () => import('./cta/cta.module').then(m => m.CtaModule)},
             {path: 'faq', loadChildren: () => import('./faq/faq.module').then(m => m.FaqModule)},
             {path: 'pricing', loadChildren: () => import('./pricing/pricing.module').then(m => m.PricingModule)},
-            {path: 'header', loadChildren: () => import('./header/header.module').then(m => m.HeaderModule)},
             {path: 'newsletter', loadChildren: () => import('./newsletter/newsletter.module').then(m => m.NewsletterModule)},
             {path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)},
             {path: 'stats', loadChildren: () => import('./stats/stats.module').then(m => m.StatsModule)},
@@ -21,7 +20,9 @@ import { MarketingComponent } from './marketing.component';
             {path: 'logocloud', loadChildren: () => import('./logocloud/logocloud.module').then(m => m.LogoCloudModule)},
             {path: 'team', loadChildren: () => import('./team/team.module').then(m => m.TeamModule)},
             {path: 'footer', loadChildren: () => import('./footer/footer.module').then(m => m.FooterModule)},
-            {path: 'logocloud', loadChildren: () => import('./logocloud/logocloud.module').then(m => m.LogoCloudModule)}
+            {path: 'logocloud', loadChildren: () => import('./logocloud/logocloud.module').then(m => m.LogoCloudModule)},
+            {path: 'navbar', loadChildren: () => import('./navbar/navbar.module').then(m => m.NavBarModule)},
+            {path: 'banner', loadChildren: () => import('./banner/banner.module').then(m => m.BannerModule)}
         ])
     ],
     exports: [
