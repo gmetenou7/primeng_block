@@ -19,3 +19,52 @@
         }
     }
 }
+
+@mixin color-class($name, $prop, $colors, $shades) {
+    @each $color in $colors {
+        .#{$name}#{$color} {
+            @each $shade in $shades {
+                &-#{$shade} {
+                    #{$prop}: var(--#{$color}-#{$shade}) !important;
+                }
+            }
+        }
+
+        .hover#{$separator} {
+            &.#{$name}#{$color} {
+                @each $shade in $shades {
+                    &-#{$shade} {
+                        #{$prop}: var(--#{$color}-#{$shade}) !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin surface-class($name, $prop, $shades) {
+    @each $shade in $shades {
+        .#{$name}-#{$shade} {
+            #{$prop}: var(--surface-#{$shade}) !important;
+        }
+    }
+}
+
+@mixin border-class($name, $directions, $scales) {
+    @each $dir, $prop in $directions {
+        @for $i from 0 through length($scales) - 1 {
+            $className: #{$name}-#{$dir}-#{$i};
+            @if ($dir == '') {
+                $className: #{$name}-#{$i};
+            }
+            
+            .#{$className} {
+                @each $propName in $prop {
+                    #{$propName}-width: nth($scales, $i + 1) !important;
+                    #{$propName}-style: solid;
+                }
+            }
+        }
+    }
+
+}
