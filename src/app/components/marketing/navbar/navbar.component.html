@@ -1,4 +1,53 @@
 <div class="block-category-title">Navigation Bar</div>
-<block-viewer title="Centered Menu" [code]="block1">
-
+<block-viewer title="Centered Menu" [code]="block1" previewClass="surface-0 pb-8">
+    <div class="surface-0 py-3 px-6 shadow-x flex align-items-center justify-content-between">
+        <img src="assets/images/blocks/logos/hyper.svg" alt="Image" height="40">
+        <ul class="reset-list flex align-items-center text-900 font-medium select-none">
+            <li class="relative">
+                <a class="flex px-5 py-3 cursor-pointer align-items-center hover:text-blue-600" pToggler="@next">
+                    <span>Products</span>
+                    <i class="pi pi-chevron-down ml-3"></i>
+                </a>
+                <ul class="reset-list border-round shadow-x absolute left-0 surface-0 hidden fadein">
+                    <li>
+                        <a class="flex p-3 align-items-center hover:bg-blue-50 hover:text-blue-600 cursor-pointer" pToggler="@next">
+                            <i class="pi pi-list text-2xl mr-2 text-blue-600"></i>
+                            <span>Features</span>
+                        </a>
+                        <a class="flex p-3 align-items-center hover:bg-blue-50 hover:text-blue-600 cursor-pointer">
+                            <i class="pi pi-shield text-2xl mr-2 text-blue-600"></i>
+                            <span>Solutions</span>
+                        </a>
+                        <a class="flex p-3 align-items-center hover:bg-blue-50 hover:text-blue-600 cursor-pointer">
+                            <i class="pi pi-users text-2xl mr-2 text-blue-600"></i>
+                            <span>Customers</span>
+                        </a>
+                        <a class="flex p-3 align-items-center hover:bg-blue-50 hover:text-blue-600 cursor-pointer">
+                            <i class="pi pi-question-circle text-2xl mr-2 text-blue-600"></i>
+                            <span>Faq</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="flex px-5 py-3 cursor-pointer">
+                    <span>Corporate</span>
+                </a>
+            </li>
+            <li>
+                <a class="flex px-5 py-3 cursor-pointer">
+                    <span>Resources</span>
+                </a>
+            </li>
+            <li>
+                <a class="flex px-5 py-3 cursor-pointer">
+                    <span>Pricing</span>
+                </a>
+            </li>
+        </ul>
+        <div>
+            <button pButton label="Login" class="px-5 py-3 p-button-text font-bold"></button>
+            <button pButton label="Register" class="ml-2 px-5 p-button-outlined py-3 font-bold"></button>
+        </div>
+    </div>
 </block-viewer>

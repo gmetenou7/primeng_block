@@ -6,7 +6,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { SidebarModule} from 'primeng/sidebar';
+import { SidebarModule } from 'primeng/sidebar';
 
 @NgModule({
   declarations: [

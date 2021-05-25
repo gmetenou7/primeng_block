@@ -1,0 +1,24 @@
+@keyframes fadein {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slidein {
+    0%   {
+        opacity: 0;
+        transform: scaleY(0.8);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+    100% { 
+        opacity: 1;
+        transform: scaleY(1); 
+    }
+}
+
+.fadein {
+    animation: fadein .3s linear;
+}
+
+.slidein {
+    animation: slidein .3s linear;
+}
