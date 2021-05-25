@@ -27,7 +27,6 @@ export class Toggler implements AfterViewInit, OnDestroy {
                 this.unbindDocumentListener();
             }
             else {
-                this.selfClick = true;
                 DomHandler.addClass(this.target, this.styleClass);
                 this.bindDocumentListener();
             }
