@@ -75,4 +75,25 @@
         }
     }
 
+    @each $key, $val in $breakpoints {
+        @media screen and (min-width: #{$val}) {
+            .#{$key + $separator} {
+                @each $dir, $prop in $directions {
+                    @for $i from 0 through length($scales) - 1 {
+                        $className: #{$name}-#{$dir}-#{$i};
+                        @if ($dir == '') {
+                            $className: #{$name}-#{$i};
+                        }
+                        
+                        &#{$className} {
+                            @each $propName in $prop {
+                                #{$propName}-width: nth($scales, $i + 1) !important;
+                                #{$propName}-style: solid;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
