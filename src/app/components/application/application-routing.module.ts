@@ -7,6 +7,7 @@ import { ApplicationComponent } from './application.component';
         RouterModule.forChild([
             {path: '', component: ApplicationComponent},
             {path: 'pageheading', loadChildren: () => import('./pageheading/pageheading.module').then(m => m.PageHeadingModule)},
+            {path: 'cardheading', loadChildren: () => import('./cardheading/cardheading.module').then(m => m.CardHeadingModule)}
         ])
     ],
     exports: [

@@ -1,0 +1,60 @@
+<div class="block-category-title">Page Heading</div>
+<block-viewer title="Title with Subtitle" [code]="block1" previewClass="p-8">
+    <div class="surface-0 p-4 shadow-x border-round">
+        <div class="text-3xl font-medium text-900 mb-3">Card Title</div>
+        <div class="font-medium text-500 mb-3">Vivamus id nisl interdum, blandit augue sit amet, eleifend mi.</div>
+        <div style="height: 150px" class="border-2 border-dashed border-300"></div>
+    </div>
+</block-viewer>
+
+<block-viewer title="With Dropdown" [code]="block3" previewClass="p-8">
+    <div class="surface-0 p-4 shadow-x border-round">
+        <div class="mb-3 flex align-items-center justify-content-between">
+            <div class="flex align-items-center">
+                <span class="text-xl font-medium text-900">Card Title</span>
+            </div>
+            <div>
+                <button pButton icon="pi pi-ellipsis-v" class="p-button-text p-button-plain p-button-rounded" (click)="menu.toggle($event)"></button>
+                <p-menu #menu [popup]="true" [model]="items"></p-menu>
+            </div>
+        </div>
+        <div style="height: 150px" class="border-2 border-dashed border-300"></div>
+    </div>
+</block-viewer>
+
+<block-viewer title="Dropdown, Icon and Subtitle" [code]="block2" previewClass="p-8">
+    <div class="surface-0 p-4 shadow-x border-round">
+        <div class="mb-3 flex align-items-center justify-content-between">
+            <div class="flex align-items-center">
+                <i class="pi pi-map-marker text-500 mr-2 text-xl"></i>
+                <span class="text-xl font-medium text-900">Card Title</span>
+            </div>
+            <div>
+                <button pButton icon="pi pi-ellipsis-v" class="p-button-text p-button-plain p-button-rounded" (click)="menu.toggle($event)"></button>
+                <p-menu #menu [popup]="true" [model]="items"></p-menu>
+            </div>
+        </div>
+        <div class="font-medium text-500 mb-3">Vivamus id nisl interdum, blandit augue sit amet, eleifend mi.</div>
+        <div style="height: 150px" class="border-2 border-dashed border-300"></div>
+    </div>
+</block-viewer>
+
+<block-viewer title="Image and Buttons" [code]="block3" previewClass="p-8">
+    <div class="surface-0 p-4 shadow-x border-round">
+        <div class="mb-3 flex flex-column md:flex-row align-items-end md:align-items-center md:justify-content-between">
+            <div class="flex align-items-start">
+                <img src="assets/images/blocks/logos/hyper.svg" alt="Image" height="40" class="mr-3">
+                <div>
+                    <div class="text-xl font-medium text-900 mb-2">Card Title</div>
+                    <div class="font-medium text-500 mb-3 text-sm">Vivamus id nisl interdum, blandit augue sit amet, eleifend mi.</div>
+                </div>
+            </div>
+            <div class="flex">
+                <button pButton icon="pi pi-heart" class="p-button-rounded mr-2 p-button-outlined"></button>
+                <button pButton icon="pi pi-share-alt" class="p-button-rounded p-button-outlined"></button>
+            </div>
+        </div>
+        
+        <div style="height: 150px" class="border-2 border-dashed border-300"></div>
+    </div>
+</block-viewer>
