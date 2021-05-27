@@ -22,7 +22,7 @@ export class PricingComponent {
                         <span class="ml-2 font-medium text-600">per month</span>
                     </div>
                     <hr class="my-3 mx-0 border-top-1 border-bottom-0 border-300" />
-                    <ul class="reset-list flex-grow-1">
+                    <ul class="list-none p-0 m-0 flex-grow-1">
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
                             <span>Arcu vitae elementum</span>
@@ -53,7 +53,7 @@ export class PricingComponent {
                         <span class="ml-2 font-medium text-600">per month</span>
                     </div>
                     <hr class="my-3 mx-0 border-top-1 border-bottom-0 border-300" />
-                    <ul class="reset-list flex-grow-1">
+                    <ul class="list-none p-0 m-0 flex-grow-1">
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
                             <span>Arcu vitae elementum</span>
@@ -88,7 +88,7 @@ export class PricingComponent {
                         <span class="ml-2 font-medium text-600">per month</span>
                     </div>
                     <hr class="my-3 mx-0 border-top-1 border-bottom-0 border-300" />
-                    <ul class="reset-list flex-grow-1">
+                    <ul class="list-none p-0 m-0 flex-grow-1">
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
                             <span>Arcu vitae elementum</span>
@@ -143,7 +143,7 @@ export class PricingComponent {
             </div>
             <div class="bg-bluegray-50 p-4 flex flex-column flex-grow-1" style="box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.1); border-radius: 0 0 6px 6px">
                 <div class="text-bluegray-500 font-bold line-height-3 mb-4">Ut enim ad minim veniam, quis nostrud exercitation.</div>
-                <ul class="reset-list mb-5 text-bluegray-600">
+                <ul class="list-none p-0 m-0 mb-5 text-bluegray-600">
                     <li class="flex align-items-center mb-3">
                         <i class="pi pi-circle-on mr-2 text-sm"></i>
                         <span>Arcu vitae elementum</span>
@@ -169,7 +169,7 @@ export class PricingComponent {
             </div>
             <div class="bg-bluegray-900 p-4 flex flex-column flex-grow-1 border-3 border-green-500 border-top-0" style="box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.1); border-radius: 0 0 6px 6px">
                 <div class="text-bluegray-400 font-bold line-height-3 mb-4">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                <ul class="reset-list mb-5 text-bluegray-100">
+                <ul class="list-none p-0 m-0 mb-5 text-bluegray-100">
                     <li class="flex align-items-center mb-3">
                         <i class="pi pi-circle-on mr-2 text-sm"></i>
                         <span>Arcu vitae elementum</span>
@@ -202,7 +202,7 @@ export class PricingComponent {
             </div>
             <div class="bg-blue-900 p-4 flex flex-column flex-grow-1" style="box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.1); border-radius: 0 0 6px 6px">
                 <div class="text-blue-400 font-bold line-height-3 mb-4">Duis aute irure dolor in reprehenderit in voluptate velit.</div>
-                <ul class="reset-list mb-5 text-blue-100">
+                <ul class="list-none p-0 m-0 mb-5 text-blue-100">
                     <li class="flex align-items-center mb-3">
                         <i class="pi pi-circle-on mr-2 text-sm"></i>
                         <span>Arcu vitae elementum</span>
