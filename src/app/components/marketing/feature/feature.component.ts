@@ -65,7 +65,7 @@ export class FeatureComponent {
     <div class="text-700 text-sm">Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna.</div>
     <div class="grid mt-7">
         <div class="col-12 md:col-4">
-            <div class="shadow-0 p-5 surface-0 text-center">
+            <div class="shadow-2 p-5 surface-0 text-center">
                 <div class="border-circle bg-blue-50 p-4 text-blue-600 inline-flex justify-content-center align-items-center mb-4">
                     <i class="pi pi-heart text-5xl "></i>
                 </div>
@@ -75,7 +75,7 @@ export class FeatureComponent {
             </div>
         </div>
         <div class="col-12 md:col-4">
-            <div class="shadow-0 p-5 surface-0 text-center">
+            <div class="shadow-2 p-5 surface-0 text-center">
                 <div class="border-circle bg-purple-50 p-4 text-purple-600 inline-flex justify-content-center align-items-center mb-4">
                     <i class="pi pi-wifi text-5xl"></i>
                 </div>
@@ -85,7 +85,7 @@ export class FeatureComponent {
             </div>
         </div>
         <div class="col-12 md:col-4">
-            <div class="shadow-0 p-5 surface-0 text-center">
+            <div class="shadow-2 p-5 surface-0 text-center">
                 <div class="border-circle bg-orange-50 p-4 text-orange-600 inline-flex justify-content-center align-items-center mb-4">
                     <i class="pi pi-lock text-5xl"></i>
                 </div>
@@ -216,7 +216,7 @@ export class FeatureComponent {
             
                 <div class="mb-5 flex">
                     <div class="flex flex-column align-items-center" style="width:2rem">
-                        <span class="bg-cyan-600 text-0 flex align-items-center justify-content-center border-circle shadow-4" style="min-width:2rem; min-height: 2rem; border: 2px solid #ffffff">
+                        <span class="bg-cyan-600 text-0 flex align-items-center justify-content-center border-circle shadow-2" style="min-width:2rem; min-height: 2rem; border: 2px solid #ffffff">
                             <i class="pi pi-image"></i>
                         </span>
                         <div class="h-full bg-cyan-500" style="width: 2px; min-height: 4rem"></div>
@@ -229,7 +229,7 @@ export class FeatureComponent {
 
                 <div class="mb-5 flex">
                     <div class="flex flex-column align-items-center" style="width:2rem">
-                        <span class="bg-orange-500 text-0 flex align-items-center justify-content-center border-circle shadow-4" style="min-width:2rem; min-height: 2rem; border: 2px solid #ffffff">
+                        <span class="bg-orange-500 text-0 flex align-items-center justify-content-center border-circle shadow-2" style="min-width:2rem; min-height: 2rem; border: 2px solid #ffffff">
                             <i class="pi pi-android"></i>
                         </span>
                         <div class="h-full bg-orange-500" style="width: 2px; min-height: 4rem"></div>
@@ -242,7 +242,7 @@ export class FeatureComponent {
 
                 <div class="mb-5 flex">
                     <div class="flex flex-column align-items-center" style="width:2rem">
-                        <span class="surface-900 text-0 flex align-items-center justify-content-center border-circle shadow-4" style="min-width:2rem; min-height: 2rem; border: 2px solid #ffffff">
+                        <span class="surface-900 text-0 flex align-items-center justify-content-center border-circle shadow-2" style="min-width:2rem; min-height: 2rem; border: 2px solid #ffffff">
                             <i class="pi pi-globe"></i>
                         </span>
                         <div class="h-full surface-500" style="width: 2px; min-height: 4rem"></div>
