@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DescriptionListComponent } from './descriptionlist.component';
 import { ButtonModule } from 'primeng/button';
 import { ChipModule } from 'primeng/chip';
+import { TagModule } from 'primeng/tag';
 import { DescriptionListRoutingModule } from './descriptionlist-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 
@@ -11,6 +12,7 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
     CommonModule,
     ButtonModule,
     ChipModule,
+    TagModule,
     DescriptionListRoutingModule,
     BlockViewerModule
   ],

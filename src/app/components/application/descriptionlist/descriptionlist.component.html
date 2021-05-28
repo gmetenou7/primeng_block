@@ -99,4 +99,124 @@
     </div>
 </block-viewer>
 
+<block-viewer title="Striped in a Card" [code]="block1" previewClass="p-8">
+    <div class="surface-0 p-4 shadow-2 border-round">
+        <div class="font-medium text-3xl text-900 mb-3">Applicant Profile</div>
+        <div class="text-500 mb-5">Egestas sed tempus urna et pharetra pharetra massa massa ultricies.</div>
+        <ul class="list-none p-0 m-0 border-top-1 border-300">
+            <li class="flex align-items-center py-2 flex-wrap surface-50">
+                <div class="text-500 col-12 md:col-2 font-medium">Name</div>
+                <div class="text-900 col-12 md:col-10">Elliot Alderson</div>
+            </li>
+            <li class="flex align-items-center py-2 flex-wrap">
+                <div class="text-500 col-12 md:col-2 font-medium">Bio</div>
+                <div class="text-900 col-12 md:col-10 line-height-3">Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Eget felis eget nunc lobortis mattis aliquam faucibus purus in.</div>
+            </li>
+            <li class="flex align-items-center py-2 flex-wrap surface-50">
+                <div class="text-500 col-12 md:col-2 font-medium">Salary Expectation</div>
+                <div class="text-900 col-12 md:col-10">$150,000</div>
+            </li>
+            <li class="flex align-items-center py-2 flex-wrap">
+                <div class="text-500 col-12 md:col-2 font-medium">Skills</div>
+                <div class="text-900 col-12 md:col-10">
+                    <p-tag styleClass="mr-2" value="Algorithms" [rounded]="true"></p-tag>
+                    <p-tag styleClass="mr-2" severity="success" value="Javascript" [rounded]="true"></p-tag>
+                    <p-tag styleClass="mr-2" severity="danger" value="Python" [rounded]="true"></p-tag>
+                    <p-tag severity="warning" value="SQL" [rounded]="true"></p-tag>
+                </div>
+            </li>
+            <li class="flex align-items-center py-2 flex-wrap surface-50">
+                <div class="text-500 col-12 md:col-2 font-medium">Repositories</div>
+                <div class="text-900 col-12 md:col-10">
+                    <div class="grid">
+                        <div class="col-12 md:col-6">
+                            <div class="p-3 border-1 border-300 border-round surface-0">
+                                <div class="text-900 mb-2">
+                                    <i class="pi pi-github mr-2"></i>
+                                    <span class="font-medium">PrimeFaces</span>
+                                </div>
+                                <div class="text-700">Ultimate UI Component Suite for JavaServer Faces</div>
+                            </div>
+                        </div>
+                        <div class="col-12 md:col-6">
+                            <div class="p-3 border-1 border-300 border-round surface-0">
+                                <div class="text-900 mb-2">
+                                    <i class="pi pi-github mr-2"></i>
+                                    <span class="font-medium">PrimeNG</span>
+                                </div>
+                                <div class="text-700">The Most Complete Angular UI Component Library</div>
+                            </div>
+                        </div>
+                        <div class="col-12 md:col-6">
+                            <div class="p-3 border-1 border-300 border-round surface-0">
+                                <div class="text-900 mb-2">
+                                    <i class="pi pi-github mr-2"></i>
+                                    <span class="font-medium">PrimeReact</span>
+                                </div>
+                                <div class="text-700">Advanced UI Components for ReactJS</div>
+                            </div>
+                        </div>
+                        <div class="col-12 md:col-6">
+                            <div class="p-3 border-1 border-300 border-round surface-0">
+                                <div class="text-900 mb-2">
+                                    <i class="pi pi-github mr-2"></i>
+                                    <span class="font-medium">PrimeVue</span>
+                                </div>
+                                <div class="text-700">The Most Powerful Vue UI Component Library</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</block-viewer>
+
+<block-viewer title="Vertical Layout in a Card" [code]="block1" previewClass="p-8">
+    <div class="surface-0 p-4 shadow-2 border-round">
+        <div class="font-medium text-3xl text-900 mb-3">Applicant Profile</div>
+        <div class="text-500 mb-5">Egestas sed tempus urna et pharetra pharetra massa massa ultricies.</div>
+        <div class="grid grid-nogutter border-top-1 border-300 pt-2">
+            <div class="col-12 md:col-6 p-3">
+                <div class="text-500 font-medium mb-2">Name</div>
+                <div class="text-900">Elliot Alderson</div>
+            </div>
+            <div class="col-12 md:col-6 p-3">
+                <div class="text-500 font-medium mb-2">Email</div>
+                <div class="text-900">elliot.alderson@email.com</div>
+            </div>
+            <div class="col-12 md:col-6 p-3">
+                <div class="text-500 font-medium mb-2">Applied Position</div>
+                <div class="text-900">Front-End Developer</div>
+            </div>
+            <div class="col-12 md:col-6 p-3">
+                <div class="text-500 font-medium mb-2">Salary Expectation</div>
+                <div class="text-900">$150,000</div>
+            </div>
+            <div class="col-12 p-3">
+                <div class="text-500 font-medium mb-2">Bio</div>
+                <div class="text-900 line-height-3">Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Eget felis eget nunc lobortis mattis aliquam faucibus purus in.</div>
+            </div>
+            <div class="col-12 p-3">
+                <div class="text-500 font-medium mb-3">Files</div>
+                <div class="flex md:align-items-center md:justify-content-between border-top-1 border-300 p-3 flex-column md:flex-row">
+                    <div class="flex align-items-center">
+                        <span class="block pi pi-file mr-2"></span>
+                        <span class="text-900">resume_en.pdf</span>
+                    </div>
+                    <button pButton icon="pi pi-download" label="Download" class="p-button-outlined mt-2 md:mt-0"></button>
+                </div>
+                <div class="flex md:align-items-center md:justify-content-between border-top-1 border-bottom-1 border-300 p-3 flex-column md:flex-row">
+                    <div class="flex align-items-center">
+                        <span class="block pi pi-file mr-2"></span>
+                        <span class="text-900">cover_letter_en.pdf</span>
+                    </div>
+                    <button pButton icon="pi pi-download" label="Download" class="p-button-outlined mt-2 md:mt-0"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</block-viewer>
+
 
