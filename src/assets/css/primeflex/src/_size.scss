@@ -40,9 +40,25 @@ $max-height-properties: (
     'max-h-screen': 100vh
 );
 
+$widths: (
+    "w-1": 8.3333%,
+    "w-2": 16.6667%,
+    "w-3": 25%,
+    "w-4": 33.3333%,
+    "w-5": 41.6667%,
+    "w-6": 50%,
+    "w-7": 58.3333%,
+    "w-8": 66.6667%,
+    "w-9": 75%,
+    "w-10": 83.3333%,
+    "w-11": 91.6667%,
+    "w-12": 100%
+);
+
 @include style-class('width', $width-properties, true);
 @include style-class('height', $height-properties, true);
 @include style-class('min-width', $min-width-properties, true);
 @include style-class('max-width', $max-width-properties, true);
 @include style-class('min-height', $min-height-properties, true);
 @include style-class('max-height', $max-height-properties, true);
+@include style-class('width', $widths, true);
