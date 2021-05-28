@@ -80,5 +80,6 @@ $flex-shrink: (
 @include style-class('align-items', $flex-align-items, true);
 @include style-class('align-self', $flex-align-self, true);
 @include style-class('order', $flex-order, true);
+@include style-class('flex', $flex-shorthand, true);
 @include style-class('flex-grow', $flex-grow, true);
 @include style-class('flex-shrink', $flex-shrink, true);
