@@ -10,7 +10,8 @@ import { ApplicationComponent } from './application.component';
             {path: 'cardheading', loadChildren: () => import('./cardheading/cardheading.module').then(m => m.CardHeadingModule)},
             {path: 'sectionheading', loadChildren: () => import('./sectionheading/sectionheading.module').then(m => m.SectionHeadingModule)},
             {path: 'descriptionlist', loadChildren: () => import('./descriptionlist/descriptionlist.module').then(m => m.DescriptionListModule)},
-            {path: 'stats', loadChildren: () => import('./stats/stats.module').then(m => m.StatsModule)}
+            {path: 'stats', loadChildren: () => import('./stats/stats.module').then(m => m.StatsModule)},
+            {path: 'stackedlist', loadChildren: () => import('./stackedlist/stackedlist.module').then(m => m.StackedListModule)}
         ])
     ],
     exports: [
