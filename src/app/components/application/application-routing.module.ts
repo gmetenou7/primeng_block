@@ -11,7 +11,8 @@ import { ApplicationComponent } from './application.component';
             {path: 'sectionheading', loadChildren: () => import('./sectionheading/sectionheading.module').then(m => m.SectionHeadingModule)},
             {path: 'descriptionlist', loadChildren: () => import('./descriptionlist/descriptionlist.module').then(m => m.DescriptionListModule)},
             {path: 'stats', loadChildren: () => import('./stats/stats.module').then(m => m.StatsModule)},
-            {path: 'stackedlist', loadChildren: () => import('./stackedlist/stackedlist.module').then(m => m.StackedListModule)}
+            {path: 'stackedlist', loadChildren: () => import('./stackedlist/stackedlist.module').then(m => m.StackedListModule)},
+            {path: 'gridlist', loadChildren: () => import('./gridlist/gridlist.module').then(m => m.GridListModule)}
         ])
     ],
     exports: [
