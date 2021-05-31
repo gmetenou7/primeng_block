@@ -13,7 +13,8 @@ import { ApplicationComponent } from './application.component';
             {path: 'stats', loadChildren: () => import('./stats/stats.module').then(m => m.StatsModule)},
             {path: 'stackedlist', loadChildren: () => import('./stackedlist/stackedlist.module').then(m => m.StackedListModule)},
             {path: 'gridlist', loadChildren: () => import('./gridlist/gridlist.module').then(m => m.GridListModule)},
-            {path: 'feed', loadChildren: () => import('./feed/feed.module').then(m => m.FeedModule)}
+            {path: 'feed', loadChildren: () => import('./feed/feed.module').then(m => m.FeedModule)},
+            {path: 'formlayout', loadChildren: () => import('./formlayout/formlayout.module').then(m => m.FormLayoutModule)}
         ])
     ],
     exports: [
