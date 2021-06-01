@@ -1,6 +1,6 @@
 <div class="block-category-title">Radio Group</div>
 <block-viewer title="Stacked Cards" [code]="block1" previewClass="px-4 py-8 md:p-8 flex justify-content-center align-items-center">
-    <div class="w-full md:w-10">
+    <div class="w-full">
         <div class="text-900 text-xl mb-3 text-left font-medium">Choose your favorite animal</div>
         <div class="border-1 p-4 mb-3 border-round flex flex-column md:flex-row align-items-start md:align-items-center md:justify-content-between cursor-pointer" (click)="animal=0"
             [ngClass]="{'surface-0 border-300': animal !== 0, 'bg-blue-50 border-blue-300': animal === 0}">
@@ -48,7 +48,7 @@
 </block-viewer>
 
 <block-viewer title="List Description" [code]="block2" previewClass="px-4 py-8 md:p-8 flex justify-content-center align-items-center">
-    <div class="w-full md:w-10">
+    <div class="w-full">
         <div class="text-900 text-xl mb-3 text-left font-medium">Change your account tier1</div>
         <div class="border-300 border-1 p-3 border-round-top flex align-items-center cursor-pointer" [ngClass]="{'surface-0': tier1 !== 0, 'bg-blue-50': 'tier1 === 0'}" (click)="tier1 = 0">
             <p-radioButton name="tier1" [value]="0" [(ngModel)]="tier1" styleClass="mr-3"></p-radioButton>
@@ -87,7 +87,7 @@
 </block-viewer>
 
 <block-viewer title="Table Layout" [code]="block3" previewClass="px-4 py-8 md:p-8 flex justify-content-center align-items-center">
-    <div class="w-full md:w-10">
+    <div class="w-full">
         <div class="text-900 text-xl mb-3 text-left font-medium">Change your account tier</div>
         <div class="border-300 border-1 p-3 border-round-top flex align-items-center cursor-pointer" [ngClass]="{'surface-0': tier2 !== 0, 'bg-blue-50': 'tier2 === 0'}" (click)="tier2 = 0">
             <div class="w-4 flex align-items-center pr-4">
