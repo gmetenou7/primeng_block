@@ -1,0 +1,48 @@
+<div class="block-category-title">Radio Group</div>
+<block-viewer title="Stacked Cards" [code]="block1" previewClass="px-4 py-8 md:p-8 flex justify-content-center align-items-center">
+    <div>
+        <div class="text-900 text-xl mb-3 text-left font-medium">Choose your favorite animal</div>
+        <div class="border-1 p-4 mb-3 border-round flex flex-column md:flex-row align-items-start md:align-items-center md:justify-content-between cursor-pointer" (click)="animal=0"
+            [ngClass]="{'surface-0 border-300': animal !== 0, 'bg-blue-50 border-blue-300': animal === 0}">
+            <div class="flex align-items-start mr-0 md:mr-8">
+                <img src="assets/images/blocks/animals/a1.jpg" class="mr-3" style="width:50px" />
+                <div>
+                    <div class="text-900 font-mediumn mb-2">Owl</div>
+                    <span class="p-1 border-round" [ngClass]="{'surface-100 text-600': animal !== 0, 'surface-0 text-blue-500': animal === 0}">Sharp Talons</span>
+                </div>
+            </div>
+            <div class="ml-0 md:ml-8 mt-2 md:mt-0 border-1 p-1 px-2 border-round flex align-items-center" [ngClass]="{'surface-100 text-600 border-300': animal !== 0, 'surface-0 text-blue-700 border-blue-500 ': animal === 0}">
+                <i class="pi pi-users mr-2"></i>
+                <span>702</span>
+            </div>
+        </div>
+        <div class="border-1 p-4 mb-3 border-round flex flex-column md:flex-row align-items-start md:align-items-center md:justify-content-between cursor-pointer" (click)="animal=1"
+            [ngClass]="{'surface-0 border-300': animal !== 1, 'bg-blue-50 border-blue-300': animal === 1}">
+            <div class="flex align-items-start mr-0 md:mr-8">
+                <img src="assets/images/blocks/animals/a2.jpg" class="mr-3" style="width:50px" />
+                <div>
+                    <div class="text-900 font-mediumn mb-2">Fox</div>
+                    <span class="p-1 border-round" [ngClass]="{'surface-100 text-600': animal !== 1, 'surface-0 text-blue-500': animal === 1}">Upturned Snout</span>
+                </div>
+            </div>
+            <div class="ml-0 md:ml-8 mt-2 md:mt-0 border-1 p-1 px-2 border-round flex align-items-center" [ngClass]="{'surface-100 text-600 border-300': animal !== 1, 'surface-0 text-blue-700 border-blue-500 ': animal === 1}">
+                <i class="pi pi-users mr-2"></i>
+                <span>702</span>
+            </div>
+        </div>
+        <div class="border-1 p-4 border-round flex flex-column md:flex-row align-items-start md:align-items-center md:justify-content-between cursor-pointer" (click)="animal=2"
+            [ngClass]="{'surface-0 border-300': animal !== 2, 'bg-blue-50 border-blue-300': animal === 2}">
+            <div class="flex align-items-start mr-0 md:mr-8">
+                <img src="assets/images/blocks/animals/a3.jpg" class="mr-3" style="width:50px" />
+                <div>
+                    <div class="text-900 font-mediumn mb-2">Sheep</div>
+                    <span class="p-1 border-round" [ngClass]="{'surface-100 text-600': animal !== 2, 'surface-0 text-blue-500': animal === 2}">Just Sheep</span>
+                </div>
+            </div>
+            <div class="ml-0 md:ml-8 mt-2 md:mt-0 border-1 p-1 px-2 border-round flex align-items-center" [ngClass]="{'surface-100 text-600 border-300': animal !== 2, 'surface-0 text-blue-700 border-blue-500 ': animal === 2}">
+                <i class="pi pi-users mr-2"></i>
+                <span>529</span>
+            </div>
+        </div>
+    </div>
+</block-viewer>
