@@ -1,4 +1,43 @@
 <div class="block-category-title">Radio Group</div>
+<block-viewer title="Stacked Cards" [code]="block2" previewClass="px-4 py-8 md:p-8 flex justify-content-center align-items-center">
+    <div>
+        <div class="text-900 text-xl mb-3 text-left font-medium">Change your account tier</div>
+        <div class="border-300 border-1 p-3 border-round-top flex align-items-center cursor-pointer" [ngClass]="{'surface-0': tier !== 0, 'bg-blue-50': 'tier === 0'}" (click)="tier = 0">
+            <p-radioButton name="tier" [value]="0" [(ngModel)]="tier" styleClass="mr-3"></p-radioButton>
+            <div class="mr-4 md:mr-8">
+                <div class="font-medium text-900 mb-1">Basic</div>
+                <span class="text-sm" [ngClass]="{'text-600': tier !== 0, 'text-blue-500': 'tier === 0'}">Quam nulla porttitor massa.</span>
+            </div>
+            <div class="border-round border-1 p-1 ml-auto flex flex-nowrap" [ngClass]="{'surface-50 text-600 border-300': tier !== 0, 'surface-0 text-blue-700 border-blue-100': 'tier === 0'}">
+                <i class="pi pi-star"></i>
+            </div>
+        </div>
+        <div class="border-300 border-1 border-top-0 p-3 flex align-items-center cursor-pointer" [ngClass]="{'surface-0': tier !== 1, 'bg-blue-50': 'tier === 1'}" (click)="tier = 1">
+            <p-radioButton name="tier" [value]="1" [(ngModel)]="tier" styleClass="mr-3"></p-radioButton>
+            <div class="mr-4 md:mr-8">
+                <div class="font-medium text-900 mb-1">Premium</div>
+                <span class="text-sm" [ngClass]="{'text-600': tier !== 1, 'text-blue-500': 'tier === 1'}">Quam nulla porttitor massa.</span>
+            </div>
+            <div class="border-round border-1 p-1 ml-auto flex flex-nowrap" [ngClass]="{'surface-50 text-600 border-300': tier !== 1, 'surface-0 text-blue-700 border-blue-100': 'tier === 1'}">
+                <i class="pi pi-star mr-2"></i>
+                <i class="pi pi-star"></i>
+            </div>
+        </div>
+        <div class="border-300 border-1 border-top-0 p-3 border-round-bottom flex align-items-center cursor-pointer" [ngClass]="{'surface-0': tier !== 2, 'bg-blue-50': 'tier === 2'}" (click)="tier = 2">
+            <p-radioButton name="tier" [value]="2" [(ngModel)]="tier" styleClass="mr-3"></p-radioButton>
+            <div class="mr-4 md:mr-8">
+                <div class="font-medium text-900 mb-1">Enterprise</div>
+                <span class="text-sm" [ngClass]="{'text-600': tier !== 2, 'text-blue-500': 'tier === 2'}">Quam nulla porttitor massa.</span>
+            </div>
+            <div class="border-round border-1 p-1 ml-auto flex flex-nowrap" [ngClass]="{'surface-50 text-600 border-300': tier !== 2, 'surface-0 text-blue-700 border-blue-100': 'tier === 2'}">
+                <i class="pi pi-star mr-2"></i>
+                <i class="pi pi-star mr-2"></i>
+                <i class="pi pi-star"></i>
+            </div>
+        </div>
+    </div>
+</block-viewer>
+
 <block-viewer title="Stacked Cards" [code]="block1" previewClass="px-4 py-8 md:p-8 flex justify-content-center align-items-center">
     <div>
         <div class="text-900 text-xl mb-3 text-left font-medium">Choose your favorite animal</div>

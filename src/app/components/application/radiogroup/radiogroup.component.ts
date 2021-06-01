@@ -15,4 +15,6 @@ export class RadioGroupComponent {
 
     animal: number = 1;
 
+    tier: number = 1;
+
 }
