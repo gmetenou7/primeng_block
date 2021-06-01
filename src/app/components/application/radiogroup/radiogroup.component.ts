@@ -15,6 +15,10 @@ export class RadioGroupComponent {
 
     animal: number = 1;
 
-    tier: number = 1;
+    tier1: number = 1;
+
+    tier2: number = 1;
+
+    hotel: number = 1;
 
 }
