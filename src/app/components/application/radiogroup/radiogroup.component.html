@@ -90,7 +90,7 @@
     <div class="w-full md:w-10">
         <div class="text-900 text-xl mb-3 text-left font-medium">Change your account tier</div>
         <div class="border-300 border-1 p-3 border-round-top flex align-items-center cursor-pointer" [ngClass]="{'surface-0': tier2 !== 0, 'bg-blue-50': 'tier2 === 0'}" (click)="tier2 = 0">
-            <div class="w-4 flex align-items-center">
+            <div class="w-4 flex align-items-center pr-4">
                 <p-radioButton name="tier2" [value]="0" [(ngModel)]="tier2" styleClass="mr-2"></p-radioButton>
                 <div class="font-medium text-900">Basic</div>
             </div>
@@ -103,7 +103,7 @@
             </div>
         </div>
         <div class="border-300 border-1 p-3 border-top-0 flex align-items-center cursor-pointer" [ngClass]="{'surface-0': tier2 !== 1, 'bg-blue-50': 'tier2 === 1'}" (click)="tier2 = 1">
-            <div class="w-4 flex align-items-center">
+            <div class="w-4 flex align-items-center pr-4">
                 <p-radioButton name="tier2" [value]="0" [(ngModel)]="tier2" styleClass="mr-2"></p-radioButton>
                 <div class="font-medium text-900">Premium</div>
             </div>
@@ -116,7 +116,7 @@
             </div>
         </div>
         <div class="border-300 border-1 border-top-0 p-3 border-round-bottom flex align-items-center cursor-pointer" [ngClass]="{'surface-0': tier2 !== 2, 'bg-blue-50': 'tier2 === 2'}" (click)="tier2 = 2">
-            <div class="w-4 flex align-items-center">
+            <div class="w-4 flex align-items-center pr-4">
                 <p-radioButton name="tier2" [value]="0" [(ngModel)]="tier2" styleClass="mr-2"></p-radioButton>
                 <div class="font-medium text-900">Enterprise</div>
             </div>
