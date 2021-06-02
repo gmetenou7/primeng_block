@@ -7,10 +7,15 @@
     justify-content: space-between;
 
     .topbar-logo {
-        padding: 12px 0;
+        display: flex;
+        align-items: center;
 
-        img {
+        .logo {
             height: 56px;
+        }
+
+        .icon {
+            display: none;
         }
     }
 
@@ -76,7 +81,34 @@
                 }
             }
         }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .layout-topbar {
+        .topbar-logo {
+            padding: 12px 0;
     
+            .logo {
+                display: none;
+            }
+
+            .icon {
+                display: block;
+            }
+        }
+
+        .topbar-actions {
+            .config-btn-container {
+                .config-btn {
+                    padding: .5rem;
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
         
     }
 }
