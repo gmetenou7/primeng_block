@@ -16,7 +16,8 @@ import { ApplicationComponent } from './application.component';
             {path: 'feed', loadChildren: () => import('./feed/feed.module').then(m => m.FeedModule)},
             {path: 'formlayout', loadChildren: () => import('./formlayout/formlayout.module').then(m => m.FormLayoutModule)},
             {path: 'signin', loadChildren: () => import('./signin/signin.module').then(m => m.SignInModule)},
-            {path: 'radiogroup', loadChildren: () => import('./radiogroup/radiogroup.module').then(m => m.RadioGroupModule)}
+            {path: 'radiogroup', loadChildren: () => import('./radiogroup/radiogroup.module').then(m => m.RadioGroupModule)},
+            {path: 'actionpanel', loadChildren: () => import('./actionpanel/actionpanel.module').then(m => m.ActionPanelModule)}
         ])
     ],
     exports: [
