@@ -9,4 +9,6 @@ export class StatsComponent {
 
   block2 = ``;
 
+  block3 = ``;
+
 }
