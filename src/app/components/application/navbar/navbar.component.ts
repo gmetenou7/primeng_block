@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
 export class NavBarComponent {
 
     block1: string = '';
+
+    block2: string = '';
+
+    block3: string = '';
     
 }
