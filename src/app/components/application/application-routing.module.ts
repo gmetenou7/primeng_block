@@ -20,7 +20,8 @@ import { ApplicationComponent } from './application.component';
             {path: 'actionpanel', loadChildren: () => import('./actionpanel/actionpanel.module').then(m => m.ActionPanelModule)},
             {path: 'alert', loadChildren: () => import('./alert/alert.module').then(m => m.AlertModule)},
             {path: 'navbar', loadChildren: () => import('./navbar/navbar.module').then(m => m.NavBarModule)},
-            {path: 'tabs', loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsModule)}
+            {path: 'tabs', loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsModule)},
+            {path: 'verticalnav', loadChildren: () => import('./verticalnav/verticalnav.module').then(m => m.VerticalNavModule)}
         ])
     ],
     exports: [
