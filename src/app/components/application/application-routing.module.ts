@@ -22,7 +22,8 @@ import { ApplicationComponent } from './application.component';
             {path: 'navbar', loadChildren: () => import('./navbar/navbar.module').then(m => m.NavBarModule)},
             {path: 'tabs', loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsModule)},
             {path: 'verticalnav', loadChildren: () => import('./verticalnav/verticalnav.module').then(m => m.VerticalNavModule)},
-            {path: 'breadcrumb', loadChildren: () => import('./breadcrumb/breadcrumb.module').then(m => m.BreadcrumbModule)}
+            {path: 'breadcrumb', loadChildren: () => import('./breadcrumb/breadcrumb.module').then(m => m.BreadcrumbModule)},
+            {path: 'steps', loadChildren: () => import('./steps/steps.module').then(m => m.StepsModule)}
         ])
     ],
     exports: [
