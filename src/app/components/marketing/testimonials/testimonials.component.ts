@@ -31,10 +31,9 @@ export class TestimonialsComponent implements OnInit{
 
   ngOnInit() {
     this.company = [
-      {name: 'Annie Lanphear', image: '3', text: '“When I found your components it was like the Sun came out after a year of pouring rain. Thanks and congratulations.”'},
-      {name: 'Annie Lanphear', image: '2', text: '“When I found your components it was like the Sun came out after a year of pouring rain. Thanks and congratulations.”'},
-      {name: 'Annie Lanphear', image: '3', text: '“When I found your components it was like the Sun came out after a year of pouring rain. Thanks and congratulations.”'},
-      {name: 'Annie Lanphear', image: '4', text: '“When I found your components it was like the Sun came out after a year of pouring rain. Thanks and congratulations.”'},
+      {name: 'Dave Williams', image: '1', text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”'},
+      {name: 'Jane Watson', image: '2', text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”'},
+      {name: 'Annie Lanphear', image: '3', text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”'}
     ];
   }
 

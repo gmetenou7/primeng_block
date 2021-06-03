@@ -1,6 +1,6 @@
 <div class="block-category-title">Testimonials</div>
-<block-viewer title="3x1 grid with offset images" [code]="block1">
-  <div class="md:p-8 p-6 surface-0 text-center">
+<block-viewer title="3x1 grid with offset images" [code]="block1" previewClass="surface-0 px-4 py-8 md:px-6 lg:px-8">
+  <div class="surface-0 text-center">
     <div class="flex flex-column md:flex-row">
       <div class="flex flex-grow-1 md:px-4 py-4 md:py-0">
         <div class="shadow-2 surface-0 border-round relative" style="height: calc(100% - 50px)">
@@ -11,7 +11,7 @@
               “Lorem ipsum dolor sit amet, sed tempor incididunt ut labore et dolore magna alique.”
             </p>
 
-            <div class="text-900 line-height-3 mt-4">Benjamin Andersen</div>
+            <div class="text-900 line-height-3 mt-4">Dave Williams</div>
             <div class="text-600 line-height-3">Company Title</div>
           </div>
         </div>
@@ -25,7 +25,7 @@
             <p class="text-900 font-italic line-height-3 text-lg m-0 pb-4 border-x-0 border-top-0 border-bottom-1 border-solid border-300">
               “Lorem ipsum dolor sit amet, sed tempor incididunt ut labore et dolore magna alique.”</p>
 
-            <div class="text-900 line-height-3 mt-4">Benjamin Andersen</div>
+            <div class="text-900 line-height-3 mt-4">Jane Watson</div>
             <div class="text-600 line-height-3">Company Title</div>
           </div>
         </div>
@@ -39,7 +39,7 @@
             <p class="text-900 font-italic line-height-3 text-lg m-0 pb-4 border-x-0 border-top-0 border-bottom-1 border-solid border-300">
               “Lorem ipsum dolor sit amet, sed tempor incididunt ut labore et dolore magna alique.”</p>
 
-            <div class="text-900 line-height-3 mt-4">Benjamin Andersen</div>
+            <div class="text-900 line-height-3 mt-4">Annie Lanphear</div>
             <div class="text-600 line-height-3">Company Title</div>
           </div>
         </div>
@@ -48,8 +48,8 @@
   </div>
 </block-viewer>
 
-<block-viewer title="Centered with slide" [code]="block2">
-  <div class="md:p-8 p-6 surface-0 text-center text-900" style="height: 500px">
+<block-viewer title="Centered with slide" [code]="block2" previewClass="surface-0 px-4 py-8 md:px-6 lg:px-8">
+  <div class="surface-0 text-center text-900" style="height: 500px">
     <p-carousel [value]="company" [responsiveOptions]="responsiveOptions">
       <ng-template let-person pTemplate="item">
         <div class="flex justify-content-center">
@@ -59,7 +59,6 @@
         <img src="assets/images/blocks/testimonials-{{person.image}}.png" width="56" height="56" [alt]="person.name" class="mb-3"/>
         <div class="text-900 font-bold line-height-3">{{person.name}}</div>
         <div class="text-600 line-height-3 mb-4">Company Title</div>
-
       </ng-template>
     </p-carousel>
   </div>
