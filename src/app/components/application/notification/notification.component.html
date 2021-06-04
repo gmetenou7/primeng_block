@@ -1,0 +1,14 @@
+<div class="block-category-title">Notification</div>
+<block-viewer title="Message Actions" [code]="block1" previewClass="surface-0 px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center">
+    <button pButton label="Display" (click)="notify1()"></button>
+    <p-toast key="block1">
+        <ng-template let-message pTemplate="message">
+            <div class="flex align-items-center">
+                <span class="flex align-items-center justify-content-center bg-cyan-100 text-cyan-800 mr-3 border-circle" style="width:32px;height:32px">
+                    <i class="pi pi-info 4xl"></i>
+                </span>
+                <span class="font-medium text-2xl text-900">{{message.summary}}</span>
+            </div>
+        </ng-template>
+    </p-toast>
+</block-viewer>

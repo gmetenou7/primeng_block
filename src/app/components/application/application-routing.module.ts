@@ -25,7 +25,8 @@ import { ApplicationComponent } from './application.component';
             {path: 'breadcrumb', loadChildren: () => import('./breadcrumb/breadcrumb.module').then(m => m.BreadcrumbModule)},
             {path: 'steps', loadChildren: () => import('./steps/steps.module').then(m => m.StepsModule)},
             {path: 'sidebarnav', loadChildren: () => import('./sidebarnav/sidebarnav.module').then(m => m.SidebarNavModule)},
-            {path: 'dialog', loadChildren: () => import('./dialog/dialog.module').then(m => m.DialogModule)}
+            {path: 'dialog', loadChildren: () => import('./dialog/dialog.module').then(m => m.DialogModule)},
+            {path: 'notification', loadChildren: () => import('./notification/notification.module').then(m => m.NotificationModule)}
         ])
     ],
     exports: [
