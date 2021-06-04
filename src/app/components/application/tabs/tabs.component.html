@@ -2,31 +2,36 @@
 <block-viewer title="Underline" [code]="block1" previewClass="px-3 py-8 md:px-6 lg:px-8">
     <ul class="surface-0 p-0 m-0 list-none flex overflow-x-auto select-none">
         <li>
-            <a class="cursor-pointer text-blue-500 px-4 py-3 flex align-items-center border-bottom-2 border-blue-500">
+            <a class="cursor-pointer px-4 py-3 flex align-items-center border-bottom-2 hover:border-500 transition-colors transition-duration-150" 
+                [ngClass]="{'border-blue-500 text-blue-500 hover:border-blue-500': active1 === 0, 'text-700 border-transparent': active1 !== 0}" (click)="active1 = 0">
                 <i class="pi pi-home mr-2"></i>
                 <span class="font-medium">Overview</span>
             </a>
         </li>
         <li>
-            <a class="cursor-pointer text-700 px-4 py-3 flex align-items-center border-bottom-2 border-transparent hover:border-500">
+            <a class="cursor-pointer px-4 py-3 flex align-items-center border-bottom-2 hover:border-500 transition-colors transition-duration-150" 
+            [ngClass]="{'border-blue-500 text-blue-500 hover:border-blue-500': active1 === 1, 'text-700 border-transparent': active1 !== 1}" (click)="active1 = 1">
                 <i class="pi pi-users mr-2"></i>
                 <span class="font-medium">Members</span>
             </a>
         </li>
         <li>
-            <a class="cursor-pointer text-700 px-4 py-3 flex align-items-center border-bottom-2 border-transparent hover:border-500">
+            <a class="cursor-pointer px-4 py-3 flex align-items-center border-bottom-2 hover:border-500 transition-colors transition-duration-150" 
+            [ngClass]="{'border-blue-500 text-blue-500 hover:border-blue-500': active1 === 2, 'text-700 border-transparent': active1 !== 2}" (click)="active1 = 2">
                 <i class="pi pi-shopping-cart mr-2"></i>
                 <span class="font-medium">Sales</span>
             </a>
         </li>
         <li>
-            <a class="cursor-pointer text-700 px-4 py-3 flex align-items-center border-bottom-2 border-transparent hover:border-500">
+            <a class="cursor-pointer px-4 py-3 flex align-items-center border-bottom-2 hover:border-500 transition-colors transition-duration-150" 
+            [ngClass]="{'border-blue-500 text-blue-500 hover:border-blue-500': active1 === 3, 'text-700 border-transparent': active1 !== 3}" (click)="active1 = 3">
                 <i class="pi pi-user mr-2"></i>
                 <span class="font-medium">Profile</span>
             </a>
         </li>
         <li>
-            <a class="cursor-pointer text-700 px-4 py-3 flex align-items-center border-bottom-2 border-transparent hover:border-500">
+            <a class="cursor-pointer px-4 py-3 flex align-items-center border-bottom-2 hover:border-500 transition-colors transition-duration-150" 
+            [ngClass]="{'border-blue-500 text-blue-500 hover:border-blue-500': active1 === 4, 'text-700 border-transparent': active1 !== 4}" (click)="active1 = 4">
                 <i class="pi pi-cog mr-2"></i>
                 <span class="font-medium">Settings</span>
             </a>
@@ -37,31 +42,36 @@
 <block-viewer title="Pills" [code]="block2" previewClass="px-3 py-8 md:px-6 lg:px-8">
     <ul class="surface-0 p-2 m-0 list-none flex overflow-x-auto select-none">
         <li class="mr-2">
-            <a class="cursor-pointer text-blue-500 px-4 py-3 flex align-items-center bg-blue-50">
+            <a class="cursor-pointer px-4 py-3 flex align-items-center hover:surface-100 transition-colors transition-duration-150" 
+            [ngClass]="{'bg-blue-50 text-blue-500 hover:bg-blue-50': active2 === 0, 'text-700': active2 !== 0}" (click)="active2 = 0">
                 <i class="pi pi-home mr-2"></i>
                 <span class="font-medium">Overview</span>
             </a>
         </li>
         <li class="mr-2">
-            <a class="cursor-pointer text-700 px-4 py-3 flex align-items-center hover:surface-100">
+            <a class="cursor-pointer px-4 py-3 flex align-items-center hover:surface-100 transition-colors transition-duration-150" 
+            [ngClass]="{'bg-blue-50 text-blue-500 hover:bg-blue-50': active2 === 1, 'text-700': active2 !== 2}" (click)="active2 = 1">
                 <i class="pi pi-users mr-2"></i>
                 <span class="font-medium">Members</span>
             </a>
         </li>
         <li class="mr-2">
-            <a class="cursor-pointer text-700 px-4 py-3 flex align-items-center hover:surface-100">
+            <a class="cursor-pointer px-4 py-3 flex align-items-center hover:surface-100 transition-colors transition-duration-150" 
+            [ngClass]="{'bg-blue-50 text-blue-500 hover:bg-blue-50': active2 === 2, 'text-700': active2 !== 2}" (click)="active2 = 2">
                 <i class="pi pi-shopping-cart mr-2"></i>
                 <span class="font-medium">Sales</span>
             </a>
         </li>
         <li class="mr-2">
-            <a class="cursor-pointer text-700 px-4 py-3 flex align-items-center hover:surface-100">
+            <a class="cursor-pointer px-4 py-3 flex align-items-center hover:surface-100 transition-colors transition-duration-150" 
+            [ngClass]="{'bg-blue-50 text-blue-500 hover:bg-blue-50': active2 === 3, 'text-700': active2 !== 3}" (click)="active2 = 3">
                 <i class="pi pi-user mr-2"></i>
                 <span class="font-medium">Profile</span>
             </a>
         </li>
         <li>
-            <a class="cursor-pointer text-700 px-4 py-3 flex align-items-center hover:surface-100">
+            <a class="cursor-pointer px-4 py-3 flex align-items-center hover:surface-100 transition-colors transition-duration-150" 
+            [ngClass]="{'bg-blue-50 text-blue-500 hover:bg-blue-50': active2 === 4, 'text-700': active2 !== 4}" (click)="active2 = 4">
                 <i class="pi pi-cog mr-2"></i>
                 <span class="font-medium">Settings</span>
             </a>

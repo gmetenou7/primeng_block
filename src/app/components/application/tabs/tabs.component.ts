@@ -9,4 +9,8 @@ export class TabsComponent {
 
     block2 = ``;
 
+    active1: number = 0;
+
+    active2: number = 0;
+
 }
