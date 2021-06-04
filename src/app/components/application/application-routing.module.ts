@@ -26,6 +26,7 @@ import { ApplicationComponent } from './application.component';
             {path: 'steps', loadChildren: () => import('./steps/steps.module').then(m => m.StepsModule)},
             {path: 'sidebarnav', loadChildren: () => import('./sidebarnav/sidebarnav.module').then(m => m.SidebarNavModule)},
             {path: 'dialog', loadChildren: () => import('./dialog/dialog.module').then(m => m.DialogModule)},
+            {path: 'slideover', loadChildren: () => import('./slideover/slideover.module').then(m => m.SlideOverModule)},
             {path: 'notification', loadChildren: () => import('./notification/notification.module').then(m => m.NotificationModule)}
         ])
     ],
