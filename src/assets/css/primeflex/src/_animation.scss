@@ -3,6 +3,11 @@
     100% { opacity: 1; }
 }
 
+@keyframes fadeout {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 @keyframes slidein {
     0%   {
         opacity: 0;
@@ -26,6 +31,10 @@
 
 .fadein {
     animation: fadein .3s linear;
+}
+
+.fadeout {
+    animation: fadeout .3s linear;
 }
 
 .slidein {
