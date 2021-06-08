@@ -48,6 +48,9 @@ export class Toggler implements AfterViewInit, OnDestroy {
             case '@parent':
                 return this.el.nativeElement.parentElement;
 
+            case '@grandparent':
+                return this.el.nativeElement.parentElement.parentElement;
+
             default:
                 return document.querySelector(this.selector);
         }

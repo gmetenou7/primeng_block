@@ -1,10 +1,11 @@
 <div class="block-category-title">SlideOver</div>
-<block-viewer title="Empty" [code]="block1" previewClass="flex align-items-start justify-content-end px-4 py-8 md:px-6 lg:px-8 relative" [previewStyle]="{'height': '650px'}">
-    <button pButton label="Display" icon="pi pi-arrow-left"></button>
-    <div class="surface-0 flex flex-column p-4 h-full absolute top-0 right-0 shadow-2" style="width:280px">
+<block-viewer title="Empty" [code]="block1" previewClass="flex align-items-start justify-content-end px-4 py-8 md:px-6 lg:px-8 relative overflow-hidden" [previewStyle]="{'height': '650px'}">
+    <button pButton label="Display" icon="pi pi-arrow-left" pToggler="@next" pTogglerClass="translate-x-100"></button>
+    <div class="surface-0 flex flex-column p-4 h-full absolute top-0 right-0 shadow-2 
+        translate-x-100 transition-transform transition-duration-150 transition-ease-in-out" style="width:280px">
         <div class="flex align-items-center justify-content-between mb-4">
             <span class="text-900 text-xl font-medium">Title Placeholder</span>
-            <button pButton icon="pi pi-times" class="p-button-rounded p-button-text p-button-plain"></button>
+            <button pButton icon="pi pi-times" class="p-button-rounded p-button-text p- button-plain" pToggler="@grandparent" pTogglerClass="translate-x-100"></button>
         </div>
         <div class="border-2 border-dashed border-300 flex-auto overflow-y-auto p-3"></div>
     </div>
