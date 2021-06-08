@@ -32,15 +32,8 @@ $transition-delay-props: (
     'transition-delay-1000': '1000ms'
 );
 
-$transition-fill-props: (
-    'transition-fill-none': 'none',
-    'transition-fill-forwards': 'forwards',
-    'transition-fill-backwards': 'backwards',
-    'transition-fill-both': 'both'
-);
 
 @include style-class('transition-property', $transition-property-props);
 @include style-class('transition-duration', $transition-duration-props);
 @include style-class('transition-timing-function', $transition-timing-props);
 @include style-class('transition-delay', $transition-delay-props);
-@include style-class('transition-fill', $transition-fill-props);
