@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SidebarNavComponent } from './sidebarnav.component';
 import { SidebarNavRoutingModule } from './sidebarnav-routing.module';
-import { TogglerModule } from '../../../toggler';
+import { StyleClassModule } from '../../../styleClass';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 
 @NgModule({
   imports: [
     CommonModule,
     SidebarNavRoutingModule,
-    TogglerModule,
+    StyleClassModule,
     BlockViewerModule
   ],
   declarations: [

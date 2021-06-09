@@ -3,13 +3,13 @@ import { NgModule, Directive, ElementRef, Input, Renderer2, OnDestroy, AfterView
 import { DomHandler } from 'primeng/dom';
 
 @Directive({
-    selector: '[pToggler]'
+    selector: '[pStyleClass]'
 })
-export class Toggler implements AfterViewInit, OnDestroy {
+export class StyleClass implements AfterViewInit, OnDestroy {
 
     constructor(public el: ElementRef, public renderer: Renderer2) {}
 
-    @Input('pToggler') selector: string;
+    @Input('pStyleClass') selector: string;
 
     @Input() enterClass: string;
 
@@ -25,6 +25,8 @@ export class Toggler implements AfterViewInit, OnDestroy {
 
     @Input() hideOnOutsideClick: boolean = true;
 
+    @Input() toggleClass: string;
+
     eventListener: Function;
 
     documentListener: Function;
@@ -38,10 +40,19 @@ export class Toggler implements AfterViewInit, OnDestroy {
     ngAfterViewInit() {
         this.eventListener = this.renderer.listen(this.el.nativeElement, 'click', () => {
             this.target = this.resolveTarget();
-            if (this.target.offsetParent === null)
-                this.enter();
-            else
-                this.leave();
+
+            if (this.toggleClass) {
+                if (DomHandler.hasClass(this.target, this.toggleClass))
+                    DomHandler.removeClass(this.target, this.toggleClass);
+                else
+                    DomHandler.addClass(this.target, this.toggleClass);
+            }
+            else {
+                if (this.target.offsetParent === null)
+                    this.enter();
+                else
+                    this.leave();
+            }
         });
     }
 
@@ -153,7 +164,7 @@ export class Toggler implements AfterViewInit, OnDestroy {
 
 @NgModule({
     imports: [CommonModule],
-    exports: [Toggler],
-    declarations: [Toggler]
+    exports: [StyleClass],
+    declarations: [StyleClass]
 })
-export class TogglerModule { }
+export class StyleClassModule { }

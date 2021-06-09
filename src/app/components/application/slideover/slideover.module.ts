@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 import { SlideOverComponent } from './slideover.component';
 import { SlideOverRoutingModule } from './slideover-routing.module';
 import { ButtonModule } from 'primeng/button';
-import { TogglerModule } from '../../../toggler';
+import { StyleClassModule } from '../../../styleClass';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 
 @NgModule({
   imports: [
     CommonModule,
     ButtonModule,
-    TogglerModule,
+    StyleClassModule,
     SlideOverRoutingModule,
     BlockViewerModule
   ],

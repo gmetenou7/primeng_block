@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VerticalNavComponent } from './verticalnav.component';
 import { VerticalNavRoutingModule } from './verticalnav-routing.module';
-import { TogglerModule } from '../../../toggler';
+import { StyleClassModule } from '../../../styleClass';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    TogglerModule,
+    StyleClassModule,
     VerticalNavRoutingModule,
     BlockViewerModule
   ],
