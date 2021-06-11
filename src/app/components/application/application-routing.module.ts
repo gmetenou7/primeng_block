@@ -28,7 +28,8 @@ import { ApplicationComponent } from './application.component';
             {path: 'dialog', loadChildren: () => import('./dialog/dialog.module').then(m => m.DialogModule)},
             {path: 'slideover', loadChildren: () => import('./slideover/slideover.module').then(m => m.SlideOverModule)},
             {path: 'notification', loadChildren: () => import('./notification/notification.module').then(m => m.NotificationModule)},
-            {path: 'container', loadChildren: () => import('./container/container.module').then(m => m.ContainerModule)}
+            {path: 'container', loadChildren: () => import('./container/container.module').then(m => m.ContainerModule)},
+            {path: 'panel', loadChildren: () => import('./panel/panel.module').then(m => m.PanelModule)}
         ])
     ],
     exports: [
