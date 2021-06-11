@@ -27,7 +27,8 @@ import { ApplicationComponent } from './application.component';
             {path: 'sidebarnav', loadChildren: () => import('./sidebarnav/sidebarnav.module').then(m => m.SidebarNavModule)},
             {path: 'dialog', loadChildren: () => import('./dialog/dialog.module').then(m => m.DialogModule)},
             {path: 'slideover', loadChildren: () => import('./slideover/slideover.module').then(m => m.SlideOverModule)},
-            {path: 'notification', loadChildren: () => import('./notification/notification.module').then(m => m.NotificationModule)}
+            {path: 'notification', loadChildren: () => import('./notification/notification.module').then(m => m.NotificationModule)},
+            {path: 'container', loadChildren: () => import('./container/container.module').then(m => m.ContainerModule)}
         ])
     ],
     exports: [
