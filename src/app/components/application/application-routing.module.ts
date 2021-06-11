@@ -30,7 +30,8 @@ import { ApplicationComponent } from './application.component';
             {path: 'notification', loadChildren: () => import('./notification/notification.module').then(m => m.NotificationModule)},
             {path: 'container', loadChildren: () => import('./container/container.module').then(m => m.ContainerModule)},
             {path: 'panel', loadChildren: () => import('./panel/panel.module').then(m => m.PanelModule)},
-            {path: 'listcontainer', loadChildren: () => import('./listcontainer/listcontainer.module').then(m => m.ListContainerModule)}
+            {path: 'listcontainer', loadChildren: () => import('./listcontainer/listcontainer.module').then(m => m.ListContainerModule)},
+            {path: 'divider', loadChildren: () => import('./divider/divider.module').then(m => m.DividerModule)}
         ])
     ],
     exports: [
