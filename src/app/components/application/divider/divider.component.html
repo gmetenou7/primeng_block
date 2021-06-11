@@ -19,7 +19,7 @@
     </div>
 </block-viewer>
 
-<block-viewer title="Right Aligned" [code]="block2" previewClass="surface-0 px-4 py-5 md:px-6 lg:px-8">
+<block-viewer title="Right Aligned" [code]="block3" previewClass="surface-0 px-4 py-5 md:px-6 lg:px-8">
     <div class="flex w-full relative align-items-center justify-content-end my-3 px-4">
         <div class="border-top-1 border-300 top-50 left-0 absolute w-full"></div>
         <div class="px-2 z-1 surface-0 flex align-items-center">
@@ -38,4 +38,24 @@
         </div>
         <button pButton label="Search" icon="pi pi-search" class="p-button-rounded"></button>
     </div>
+</block-viewer>
+
+<block-viewer title="Vertical Button" [code]="block5" previewClass="surface-0 px-4 py-5 md:px-6 lg:px-8">
+    <div class="flex">
+        <div class="w-5 py-8 text-center flex align-items-center justify-content-center">
+            <button pButton label="Login" icon="pi pi-user" class="p-button-rounded p-button-outlined"></button>
+        </div>
+        <div class="w-2">
+            <div class="flex relative align-items-center justify-content-center mx-3 py-3 min-h-full">
+                <div class="border-left-1 border-300 top-0 left-50 absolute h-full"></div>
+                <div class="py-2 z-1 surface-0">
+                    <span class="text-900 font-medium">OR</span>
+                </div>
+            </div>
+        </div>
+        <div class="w-5 py-8 flex align-items-center justify-content-center">
+            <button pButton label="Sign Up" icon="pi pi-user-add" class="p-button-rounded p-button-success"></button>
+        </div>
+    </div>
+
 </block-viewer>

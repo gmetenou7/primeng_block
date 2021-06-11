@@ -15,12 +15,4 @@ export class DividerComponent {
 
     block5 = ``;
 
-    block6 = ``;
-
-    block7 = ``;
-
-    block8 = ``;
-
-    block9 = ``;
-
 }
