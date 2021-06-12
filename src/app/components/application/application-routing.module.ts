@@ -31,7 +31,8 @@ import { ApplicationComponent } from './application.component';
             {path: 'container', loadChildren: () => import('./container/container.module').then(m => m.ContainerModule)},
             {path: 'panel', loadChildren: () => import('./panel/panel.module').then(m => m.PanelModule)},
             {path: 'listcontainer', loadChildren: () => import('./listcontainer/listcontainer.module').then(m => m.ListContainerModule)},
-            {path: 'divider', loadChildren: () => import('./divider/divider.module').then(m => m.DividerModule)}
+            {path: 'divider', loadChildren: () => import('./divider/divider.module').then(m => m.DividerModule)},
+            {path: 'stackedlayout', loadChildren: () => import('./stackedlayout/stackedlayout.module').then(m => m.StackedLayoutModule)}
         ])
     ],
     exports: [
