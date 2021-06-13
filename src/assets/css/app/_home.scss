@@ -1,38 +1,51 @@
-.block-category-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
+.introduction {
+    background-image: url('../../images/bg-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 115px);
+    margin: -2rem -2rem 2rem -2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.block-category {
-    border:1px solid var(--surface-d);
-    border-radius: 4px;
-}
+    .introduction-content {
+        padding: 4rem;
+        border-radius: 8px;
+        background-color: rgba(255,255,255,.75);
+        text-align: center;
 
-.block-group-title {
-    font-weight: 700;
-    padding: 1rem 2rem;
-    display: block;
-    border-bottom:1px solid var(--surface-d);
-}
+        .introduction-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #212121;
+            line-height: 1;
+            margin-bottom: .5rem;
+        }
 
-.block-group-content {
-    padding: 2rem;
-}
+        .introduction-subtitle {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            line-height: 1;
+            margin-bottom: 1.5rem;
+        }
 
-.block-placeholder {
-    width: 100%;
-    display: block;
-    margin-bottom: .75rem;
-}
+        p {
+            max-width: 600px;
+            font-size: 1.5rem; 
+            margin: 0 auto 1.5rem auto;
+            line-height: 1.5;
+            text-align: center;
+            color: #616161;
+        }
 
-.block-name {
-    display: block;
-    font-weight: 700;
-    margin-bottom: .5rem;
-}
+        button {
+            padding: 1rem;
+            border-radius: 35px;
 
-.block-count {
-    display: block;
-    color: var(--text-color-secondary);
+            &.p-button-outlined {
+                margin-left: 1.5rem;
+            }
+        }
+    }
 }
