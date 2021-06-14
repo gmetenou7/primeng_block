@@ -7,4 +7,6 @@ export class MultiColumnLayoutComponent {
 
     block1 = ``;
 
+    activeTab: number = 0;
+
 }
