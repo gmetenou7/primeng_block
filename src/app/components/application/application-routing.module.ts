@@ -33,7 +33,8 @@ import { ApplicationComponent } from './application.component';
             {path: 'listcontainer', loadChildren: () => import('./listcontainer/listcontainer.module').then(m => m.ListContainerModule)},
             {path: 'divider', loadChildren: () => import('./divider/divider.module').then(m => m.DividerModule)},
             {path: 'stackedlayout', loadChildren: () => import('./stackedlayout/stackedlayout.module').then(m => m.StackedLayoutModule)},
-            {path: 'sidebarlayout', loadChildren: () => import('./sidebarlayout/sidebarlayout.module').then(m => m.SidebarLayoutModule)}
+            {path: 'sidebarlayout', loadChildren: () => import('./sidebarlayout/sidebarlayout.module').then(m => m.SidebarLayoutModule)},
+            {path: 'multicolumnlayout', loadChildren: () => import('./multicolumnlayout/multicolumnlayout.module').then(m => m.MultiColumnLayoutModule)}
         ])
     ],
     exports: [
