@@ -1,6 +1,8 @@
 $translate-props: (
+    'translate-x-0': 'translateX(0%)',
     'translate-x-100': 'translateX(100%)',
     '-translate-x-100': 'translateX(-100%)',
+    'translate-y-0': 'translateY(0%)',
     'translate-y-100': 'translateY(100%)',
     '-translate-y-100': 'translateY(-100%)'
 );
