@@ -5,6 +5,7 @@ import { MultiColumnLayoutRoutingModule } from './multicolumnlayout-routing.modu
 import { InputTextModule } from 'primeng/inputtext';
 import { BadgeModule } from 'primeng/badge';
 import { ButtonModule } from 'primeng/button';
+import { RippleModule } from 'primeng/ripple';
 import { StyleClassModule } from '../../../styleClass';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 
@@ -14,6 +15,7 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
     InputTextModule,
     BadgeModule,
     ButtonModule,
+    RippleModule,
     StyleClassModule,
     MultiColumnLayoutRoutingModule,
     BlockViewerModule

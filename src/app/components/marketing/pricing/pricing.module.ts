@@ -4,6 +4,7 @@ import { PricingComponent } from './pricing.component';
 import { PricingRoutingModule } from './pricing-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 import { ButtonModule } from 'primeng/button';
+import { RippleModule } from 'primeng/ripple';
 import { InputSwitchModule } from 'primeng/inputswitch';
 
 @NgModule({
@@ -12,6 +13,7 @@ import { InputSwitchModule } from 'primeng/inputswitch';
     PricingRoutingModule,
     BlockViewerModule,
     ButtonModule,
+    RippleModule,
     InputSwitchModule
   ],
   declarations: [

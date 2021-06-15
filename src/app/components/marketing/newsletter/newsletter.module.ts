@@ -4,6 +4,7 @@ import { NewsletterComponent } from './newsletter.component';
 import { NewsletterRoutingModule } from './newsletter-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 import { ButtonModule } from 'primeng/button';
+import { RippleModule } from 'primeng/ripple';
 import { InputTextModule } from 'primeng/inputtext';
 
 @NgModule({
@@ -11,6 +12,7 @@ import { InputTextModule } from 'primeng/inputtext';
     CommonModule,
     NewsletterRoutingModule,
     ButtonModule,
+    RippleModule,
     BlockViewerModule,
     InputTextModule
   ],

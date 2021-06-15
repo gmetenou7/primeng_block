@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { StackedListComponent } from './stackedlist.component';
 import { StackedListRoutingModule } from './stackedlist-routing.module';
 import { ButtonModule } from 'primeng/button';
+import { RippleModule } from 'primeng/ripple';
 import { MenuModule } from 'primeng/menu';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 
@@ -11,6 +12,7 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
     CommonModule,
     StackedListRoutingModule,
     ButtonModule,
+    RippleModule,
     MenuModule,
     BlockViewerModule
   ],

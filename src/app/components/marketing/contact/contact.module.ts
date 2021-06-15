@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ContactComponent } from './contact.component';
 import { ContactRoutingModule } from './contact-routing.module';
 import { ButtonModule } from 'primeng/button';
+import { RippleModule } from 'primeng/ripple';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
@@ -12,6 +13,7 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
     CommonModule,
     ContactRoutingModule,
     ButtonModule,
+    RippleModule,
     InputTextModule,
     InputTextareaModule,
     BlockViewerModule

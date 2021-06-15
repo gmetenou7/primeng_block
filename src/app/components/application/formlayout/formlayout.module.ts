@@ -6,7 +6,8 @@ import { FormLayoutRoutingModule } from './formlayout-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 import { InputTextModule } from 'primeng/inputtext'; 
 import { InputTextareaModule } from 'primeng/inputtextarea'; 
-import { ButtonModule } from 'primeng/button'; 
+import { ButtonModule } from 'primeng/button';
+import { RippleModule } from 'primeng/ripple'; 
 import { DropdownModule } from 'primeng/dropdown'; 
 import { FileUploadModule } from 'primeng/fileupload'; 
 import { CheckboxModule } from 'primeng/checkbox';
@@ -20,6 +21,7 @@ import { InputSwitchModule } from 'primeng/inputswitch';
     InputTextModule,
     InputTextareaModule,
     ButtonModule,
+    RippleModule,
     DropdownModule,
     FileUploadModule,
     CheckboxModule,

@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
+import { RippleModule } from 'primeng/ripple';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { InputSwitchModule } from 'primeng/inputswitch';
 
@@ -22,6 +23,7 @@ import { InputSwitchModule } from 'primeng/inputswitch';
     BrowserAnimationsModule,
     AppRoutingModule,
     ButtonModule,
+    RippleModule,
     FormsModule,
     RadioButtonModule,
     InputSwitchModule,

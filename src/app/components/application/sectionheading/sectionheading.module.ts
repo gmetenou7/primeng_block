@@ -4,6 +4,7 @@ import { SectionHeadingComponent } from './sectionheading.component';
 import { SectionHeadingRoutingModule } from './sectionheading-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 import { ButtonModule } from 'primeng/button';
+import { RippleModule } from 'primeng/ripple';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { InputTextModule } from 'primeng/inputtext';
 
@@ -12,6 +13,7 @@ import { InputTextModule } from 'primeng/inputtext';
     CommonModule,
     SectionHeadingRoutingModule,
     ButtonModule,
+    RippleModule,
     InputTextModule,
     TabMenuModule,
     BlockViewerModule
