@@ -71,7 +71,7 @@ export class FeatureComponent {
                 </div>
                 <div class="text-900 font-medium text-xl mb-4">Simpler Interface</div>
                 <div class="text-700 text-sm mb-4 line-height-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                <button pButton label="Learn More" class="p-button-text font-bold"></button>
+                <button pButton pRipple label="Learn More" class="p-button-text font-bold"></button>
             </div>
         </div>
         <div class="col-12 md:col-4">
@@ -81,7 +81,7 @@ export class FeatureComponent {
                 </div>
                 <div class="text-900 font-medium text-xl mb-4">Extensive Connectivity</div>
                 <div class="text-700 text-sm mb-4 line-height-3">Risus nec feugiat in fermentum posuere urna nec. Posuere sollicitudin aliquam ultrices sagittis.</div>
-                <button pButton label="Learn More" class="p-button-text font-bold"></button>
+                <button pButton pRipple label="Learn More" class="p-button-text font-bold"></button>
             </div>
         </div>
         <div class="col-12 md:col-4">
@@ -91,7 +91,7 @@ export class FeatureComponent {
                 </div>
                 <div class="text-900 font-medium text-xl mb-4">Magical Privacy</div>
                 <div class="text-700 text-sm mb-4 line-height-3">Laoreet sit amet cursus sit. Velit ut tortor pretium viverra. Sollicitudin aliquam ultrices sagittis orci.</div>
-                <button pButton label="Learn More" class="p-button-text font-bold"></button>
+                <button pButton pRipple label="Learn More" class="p-button-text font-bold"></button>
             </div>
         </div>
     </div>

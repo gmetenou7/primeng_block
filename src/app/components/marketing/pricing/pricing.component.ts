@@ -37,7 +37,7 @@ export class PricingComponent {
                         </li>
                     </ul>
                     <hr class="mb-3 mx-0 border-top-1 border-bottom-0 border-300 mt-auto" />
-                    <button pButton label="Buy Now" class="p-3 w-full mt-auto"></button>
+                    <button pButton pRipple label="Buy Now" class="p-3 w-full mt-auto"></button>
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@ export class PricingComponent {
                         </li>
                     </ul>
                     <hr class="mb-3 mx-0 border-top-1 border-bottom-0 border-300" />
-                    <button pButton label="Buy Now" class="p-3 w-full"></button>
+                    <button pButton pRipple label="Buy Now" class="p-3 w-full"></button>
                 </div>
             </div>
         </div>
@@ -115,7 +115,7 @@ export class PricingComponent {
                         </li>
                     </ul>
                     <hr class="mb-3 mx-0 border-top-1 border-bottom-0 border-300" />
-                    <button pButton label="Buy Now" class="p-3 w-full p-button-outlined"></button>
+                    <button pButton pRipple label="Buy Now" class="p-3 w-full p-button-outlined"></button>
                 </div>
             </div>
         </div>
@@ -154,7 +154,7 @@ export class PricingComponent {
                     </li>
                 </ul>
 
-                <button pButton class="p-button-secondary w-full mt-auto" label="Try Free"></button>
+                <button pButton pRipple class="p-button-secondary w-full mt-auto" label="Try Free"></button>
             </div>
         </div>
 
@@ -188,7 +188,7 @@ export class PricingComponent {
                     </li>
                 </ul>
 
-                <button pButton class="p-button-success w-full mt-auto" label="Buy Now"></button>
+                <button pButton pRipple class="p-button-success w-full mt-auto" label="Buy Now"></button>
             </div>
         </div>
 
@@ -225,7 +225,7 @@ export class PricingComponent {
                     </li>
                 </ul>
 
-                <button pButton class="p-button-outlined w-full mt-auto" label="Contact Us" ></button>
+                <button pButton pRipple class="p-button-outlined w-full mt-auto" label="Contact Us" ></button>
             </div>
         </div>
     </div>

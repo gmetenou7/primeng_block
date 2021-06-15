@@ -39,9 +39,9 @@
     <p-sidebar [(visible)]="visibleSidebar" position="right" class="layout-config" styleClass="p-sidebar-md">
         <div class="config-title" style="margin-top:0">Component Scale</div>
         <div class="config-scale">
-            <button icon="pi pi-minus" type="button" pButton (click)="decrementScale()" class="p-button-text" [disabled]="scale === scales[0]"></button>
+            <button icon="pi pi-minus" type="button" pButton pRipple (click)="decrementScale()" class="p-button-text" [disabled]="scale === scales[0]"></button>
             <i class="pi pi-circle-on" *ngFor="let s of scales" [ngClass]="{'scale-active': s === scale}"></i>
-            <button icon="pi pi-plus"  type="button" pButton (click)="incrementScale()" class="p-button-text" [disabled]="scale === scales[scales.length - 1]"></button>
+            <button icon="pi pi-plus"  type="button" pButton pRipple (click)="incrementScale()" class="p-button-text" [disabled]="scale === scales[scales.length - 1]"></button>
         </div>
 
         <div class="config-title">Input Style</div>

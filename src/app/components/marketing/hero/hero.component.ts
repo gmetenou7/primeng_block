@@ -13,8 +13,8 @@ export class HeroComponent {
             <div class="text-6xl text-primary font-bold mb-3">your visitors deserve to see</div>
             <p class="mt-0 mb-4 text-700 line-height-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             
-            <button pButton label="Learn More" type="button" class="mr-3 p-button-raised"></button>
-            <button pButton label="Live Demo" type="button" class="p-button-outlined"></button>
+            <button pButton pRipple label="Learn More" type="button" class="mr-3 p-button-raised"></button>
+            <button pButton pRipple label="Live Demo" type="button" class="p-button-outlined"></button>
         </section>
     </div>
     <div class="col-12 md:col-6 overflow-hidden">
@@ -31,7 +31,7 @@ export class HeroComponent {
         <div class="text-6xl text-primary font-bold mb-4">Today's Generation</div>
         <p class="mt-0 mb-4 line-height-3 text-center mx-auto" style="max-width:500px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         
-        <button pButton label="Learn More" type="button"></button>
+        <button pButton pRipple label="Learn More" type="button"></button>
 
         <p class="text-sm mt-4 mb-4 line-height-3">Available for MacOS, Web and Google accounts only</p>
         <div class="flex justify-content-center align-items-center">
@@ -59,7 +59,7 @@ export class HeroComponent {
         
         <div class="flex align-items-center justify-content-center flex-wrap">
             <input type="text" pInputText class="bg-transparent p-3 mr-3 mt-3" style="border-radius: 40px" size="30" placeholder="Enter your email">
-            <button type="button" label="Notify Me" pButton class="p-button-text surface-50 p-3 mt-3" style="border-radius: 40px"></button>
+            <button type="button" label="Notify Me" pButton pRipple class="p-button-text surface-50 p-3 mt-3" style="border-radius: 40px"></button>
         </div>
     </div>
 </div>`;
@@ -69,7 +69,7 @@ export class HeroComponent {
     <div class="surface-900 text-0 p-2 mx-auto mb-4" style="max-width: 250px; border-radius: 40px">🔥 Get started in no time</div>
     <div class="text-6xl font-bold mb-1">Highly Customizable</div>
     <div class="text-6xl text-primary font-bold mb-4">Premium Application Template</div>
-    <button type="button" pButton label="Get Started" class="p-button-outlined p-3 font-bold"></button>
+    <button type="button" pButton pRipple label="Get Started" class="p-button-outlined p-3 font-bold"></button>
 
     <img src="assets/images/blocks/ultima.png" alt="Image" class="block mx-auto mt-6 w-full md:w-auto" style="margin-bottom:-3rem">
 </div>`;

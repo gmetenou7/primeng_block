@@ -15,8 +15,8 @@
             </span>
         </div>
         <div class="mt-5 lg:mt-0 flex flex-wrap lg:flex-nowrap">
-            <button pButton label="Get Started" class="px-5 py-3 mr-0 lg:mr-3 p-button-rounded font-bold mb-3 lg:mb-0 w-full lg:w-auto white-space-nowrap"></button>
-            <button pButton label="Request a Demo" icon="pi pi-arrow-right" iconPos="right" class="px-5 py-3 p-button-outlined p-button-rounded font-bold w-full lg:w-auto white-space-nowrap" style="white-space: nowrap"></button>
+            <button pButton pRipple label="Get Started" class="px-5 py-3 mr-0 lg:mr-3 p-button-rounded font-bold mb-3 lg:mb-0 w-full lg:w-auto white-space-nowrap"></button>
+            <button pButton pRipple label="Request a Demo" icon="pi pi-arrow-right" iconPos="right" class="px-5 py-3 p-button-outlined p-button-rounded font-bold w-full lg:w-auto white-space-nowrap" style="white-space: nowrap"></button>
         </div>
         
     </div>
@@ -28,8 +28,8 @@
             <div class="font-bold text-0 text-6xl font-bold mb-3">Enhanced User Experience</div>
             <div class="text-300 line-height-3 mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
             <div class="flex flex-wrap lg:flex-nowrap">
-                <button pButton class="px-5 py-3 font-bold mr-3 white-space-nowrap mb-3 lg:mb-0 w-full lg:w-auto" label="Learn More"></button>
-                <button pButton class="px-5 py-3 font-bold mr-3 p-button-text white-space-nowrap w-full lg:w-auto" label="Contact Sales"></button>
+                <button pButton pRipple class="px-5 py-3 font-bold mr-3 white-space-nowrap mb-3 lg:mb-0 w-full lg:w-auto" label="Learn More"></button>
+                <button pButton pRipple class="px-5 py-3 font-bold mr-3 p-button-text white-space-nowrap w-full lg:w-auto" label="Contact Sales"></button>
             </div>
         </div>
         <img src="assets/images/blocks/cta-1.png" alt="Image" class="block mx-auto lg:mx-0">
@@ -42,7 +42,7 @@
             <div class="text-0 font-bold text-6xl">Ready to build beyond</div>
             <div class="text-blue-200 font-bold text-6xl">your expectations?</div>
             <div class="mt-3 mb-5 text-200 font-medium line-height-3">Vestibulum sed arcu non odio euismod lacinia at quis risus. Massa massa ultricies mi quis. </div>
-            <button pButton label="Get Started" class="font-bold px-5 py-3"></button>
+            <button pButton pRipple label="Get Started" class="font-bold px-5 py-3"></button>
         </div>
     </div>
 </block-viewer>
@@ -54,7 +54,7 @@
             <div class="text-0 font-medium text-5xl">Enpower your customer experience</div>
         </div>
         <div class="mt-4 mr-auto md:mt-0 md:mr-0">
-            <button pButton label="Get Started" class="font-bold px-5 py-3 p-button-success p-button-rounded p-button-raised white-space-nowrap"></button>
+            <button pButton pRipple label="Get Started" class="font-bold px-5 py-3 p-button-success p-button-rounded p-button-raised white-space-nowrap"></button>
         </div>
     </div>
 </block-viewer>
@@ -64,14 +64,14 @@
         <div class="text-blue-600 font-bold mb-3"><i class="pi pi-discord"></i>&nbsp;POWERED BY DISCORD</div>
         <div class="text-900 font-bold text-5xl mb-3">Join Our Design Community</div>
         <div class="text-700 text-2xl mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos.</div>
-        <button pButton label="Join Now" icon="pi pi-discord" class="font-bold px-5 py-3 p-button-raised p-button-rounded white-space-nowrap"></button>
+        <button pButton pRipple label="Join Now" icon="pi pi-discord" class="font-bold px-5 py-3 p-button-raised p-button-rounded white-space-nowrap"></button>
     </div>
 </block-viewer>
 
 <block-viewer title="Simple with date selector" [code]="block6" previewClass="surface-0 px-4 py-8 md:px-6 lg:px-8">
     <div class="grid surface-0">
         <div class="col-12 md:col-6">
-            <button pButton label="Travel Update" icon="pi pi-chevron-right" iconPos="right" class="p-button-success p-button-rounded mb-3 font-bold"></button>
+            <button pButton pRipple label="Travel Update" icon="pi pi-chevron-right" iconPos="right" class="p-button-success p-button-rounded mb-3 font-bold"></button>
             <div class="text-900 font-bold text-5xl mb-3">Book Flights</div>
             <div class="text-600 text-2xl line-height-3">Find cheap flights and airline tickets.</div>
             <div class="text-600 text-2xl line-height-3">Prime Flights helps you compare and track airfares.</div>
@@ -80,7 +80,7 @@
             <div>
                 <div class="text-900 font-medium justify-content-start mb-3">Round Trip Dates</div>
                 <p-calendar [(ngModel)]="date1" dateFormat="dd/mm/yy" [showIcon]="true" selectionMode="range" [style]="{'min-width': '240px'}" [inputStyleClass]="'bg-transparent text-900 border-400'"></p-calendar>
-                <button pButton label="Book Now" icon="pi pi-check" class="block mt-3 font-bold white-space-nowrap p-button-outlined w-full"></button>
+                <button pButton pRipple label="Book Now" icon="pi pi-check" class="block mt-3 font-bold white-space-nowrap p-button-outlined w-full"></button>
             </div>
         </div>
     </div>
@@ -89,7 +89,7 @@
 <block-viewer title="Simple with date selector contrast" [code]="block7" previewClass="surface-900 px-4 py-8 md:px-6 lg:px-8">
     <div class="grid surface-900">
         <div class="col-12 md:col-6">
-            <button pButton label="Travel Resticted" icon="pi pi-chevron-right" iconPos="right" class="p-button-help p-button-rounded mb-3 font-bold"></button>
+            <button pButton pRipple label="Travel Resticted" icon="pi pi-chevron-right" iconPos="right" class="p-button-help p-button-rounded mb-3 font-bold"></button>
             <div class="text-0 font-bold text-5xl mb-3">Book Flights</div>
             <div class="text-400 text-2xl line-height-3">Find cheap flights and airline tickets.</div>
             <div class="text-400 text-2xl line-height-3">Prime Flights helps you compare and track airfares.</div>
@@ -98,7 +98,7 @@
             <div>
                 <div class="text-400 font-medium justify-content-start mb-3">Round Trip Dates</div>
                 <p-calendar [(ngModel)]="date2" dateFormat="dd/mm/yy" [showIcon]="true" selectionMode="range" [style]="{'min-width': '240px'}" [inputStyleClass]="'bg-transparent text-400 border-400'"></p-calendar>
-                <button pButton label="Book Now" icon="pi pi-check" class="block mt-3 font-bold white-space-nowrap w-full"></button>
+                <button pButton pRipple label="Book Now" icon="pi pi-check" class="block mt-3 font-bold white-space-nowrap w-full"></button>
             </div>
         </div>
     </div>
@@ -113,8 +113,8 @@
                 True Power
             </div>
             <div class="text-2xl text-400 line-height-3 text-center mx-auto mb-5" style="max-width: 500px">Your perfect companion for Angular featuring elegant, high-performance, accessible and fully customizable UI Components.</div>
-            <button pButton label="Learn More" class="font-bold px-5 py-3 mr-4 p-button-warning p-button-rounded p-button-raised white-space-nowrap"></button>
-            <button pButton label="Live Demo" class="font-bold px-5 py-3 p-button-warning p-button-rounded p-button-raised p-button-outlined white-space-nowrap"></button>
+            <button pButton pRipple label="Learn More" class="font-bold px-5 py-3 mr-4 p-button-warning p-button-rounded p-button-raised white-space-nowrap"></button>
+            <button pButton pRipple label="Live Demo" class="font-bold px-5 py-3 p-button-warning p-button-rounded p-button-raised p-button-outlined white-space-nowrap"></button>
         </div>
     </div>
 </block-viewer>
