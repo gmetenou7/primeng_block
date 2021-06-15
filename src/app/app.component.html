@@ -1,4 +1,4 @@
-<div class="layout-wrapper">
+<div class="layout-wrapper" [ngClass]="{'p-input-filled': inputStyle === 'filled', 'p-ripple-disabled': !ripple}">
     <div class="layout-topbar">
         <div class="topbar-logo">
             <a [routerLink]="['/']">
@@ -37,8 +37,30 @@
     </div>
 
     <p-sidebar [(visible)]="visibleSidebar" position="right" class="layout-config" styleClass="p-sidebar-md">
-        <div class="theme-title">Bootstrap</div>
-        <div class="grid free-themes">
+        <div class="config-title" style="margin-top:0">Component Scale</div>
+        <div class="config-scale">
+            <button icon="pi pi-minus" type="button" pButton (click)="decrementScale()" class="p-button-text" [disabled]="scale === scales[0]"></button>
+            <i class="pi pi-circle-on" *ngFor="let s of scales" [ngClass]="{'scale-active': s === scale}"></i>
+            <button icon="pi pi-plus"  type="button" pButton (click)="incrementScale()" class="p-button-text" [disabled]="scale === scales[scales.length - 1]"></button>
+        </div>
+
+        <div class="config-title">Input Style</div>
+        <div class="formgroup-inline">
+            <div class="field-radiobutton">
+                <p-radioButton name="inputstyle" value="outlined" [(ngModel)]="inputStyle" (onClick)="onInputStyleChange()" inputId="input_outlined"></p-radioButton>
+                <label for="input_outlined">Outlined</label>
+            </div>
+            <div class="field-radiobutton">
+                <p-radioButton name="inputstyle" value="filled" [(ngModel)]="inputStyle" (onClick)="onInputStyleChange()" inputId="input_filled"></p-radioButton>
+                <label for="input_filled">Filled</label>
+            </div>
+        </div>
+
+        <div class="config-title">Ripple Effect</div>
+        <p-inputSwitch [(ngModel)]="ripple"></p-inputSwitch>
+
+        <div class="config-title">Bootstrap</div>
+        <div class="grid themes-grid">
             <div class="col-3">
                 <button class="p-link" (click)="changeTheme($event, 'bootstrap4-light-blue')">
                     <img src="assets/images/themes/bootstrap4-light-blue.svg" alt="Bootstrap Light Blue" />
@@ -65,8 +87,8 @@
             </div>
         </div>
 
-        <div class="theme-title">Material Design</div>
-        <div class="grid free-themes">
+        <div class="config-title">Material Design</div>
+        <div class="grid themes-grid">
             <div class="col-3">
                 <button class="p-link" (click)="changeTheme($event, 'md-light-indigo')">
                     <img src="assets/images/themes/md-light-indigo.svg" alt="Material Light Indigo" />
@@ -93,8 +115,8 @@
             </div>
         </div>
 
-        <div class="theme-title">Material Design Compact</div>
-        <div class="grid free-themes">
+        <div class="config-title">Material Design Compact</div>
+        <div class="grid themes-grid">
             <div class="col-3">
                 <button class="p-link" (click)="changeTheme($event, 'mdc-light-indigo')">
                     <img src="assets/images/themes/md-light-indigo.svg" alt="Material Compact Light Indigo"/>
@@ -121,8 +143,8 @@
             </div>
         </div>
 
-        <div class="theme-title">Fluent UI</div>
-        <div class="grid free-themes">
+        <div class="config-title">Fluent UI</div>
+        <div class="grid themes-grid">
             <div class="col-3">
                 <button class="p-link" (click)="changeTheme($event, 'fluent-light')">
                     <img src="assets/images/themes/fluent-light.png" alt="Fluent Light"/>
@@ -131,8 +153,8 @@
             </div>
         </div>
 
-        <div class="theme-title">PrimeOne Design</div>
-        <div class="grid free-themes">
+        <div class="config-title">PrimeOne Design</div>
+        <div class="grid themes-grid">
             <div class="col-3">
                 <button class="p-link" (click)="changeTheme($event, 'saga-blue')">
                     <img src="assets/images/themes/saga-blue.png" alt="Saga Blue" />
@@ -207,9 +229,9 @@
             </div>
         </div>
 
-        <div class="theme-title">Premium Themes</div>
+        <div class="config-title">Premium Themes</div>
 
-        <div class="grid free-themes">
+        <div class="grid themes-grid">
             <div class="col-3">
                 <button class="p-link" (click)="changeTheme($event, 'soho-light')">
                     <img src="assets/images/themes/soho-light.png" alt="Soho Light"/>

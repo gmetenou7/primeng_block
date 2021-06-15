@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
-import { MenuItem } from 'primeng/api';
+import { MenuItem,PrimeNGConfig } from 'primeng/api';
 
 @Component({
     selector: 'app-root',
@@ -10,7 +10,7 @@ import { MenuItem } from 'primeng/api';
 })
 export class AppComponent implements OnInit {
     
-    constructor(private router: Router) { }
+    constructor(private router: Router, private primengConfig: PrimeNGConfig) { }
 
     menuitems: MenuItem[];
 
@@ -18,7 +18,16 @@ export class AppComponent implements OnInit {
 
     theme: string = 'saga-blue';
 
+    scale: number = 14;
+    
+    scales: number[] = [12,13,14,15,16];
+
+    inputStyle: string = 'outlined';
+
+    ripple: boolean = false;
+
     ngOnInit() {
+        this.primengConfig.ripple = true;
         this.buildBreadcrumb();
 
         this.router.events
@@ -38,5 +47,19 @@ export class AppComponent implements OnInit {
         themeElement.setAttribute('href', themeElement.getAttribute('href').replace(this.theme, theme));
         this.theme = theme;
         event.preventDefault();
+    }
+
+    decrementScale() {
+        this.scale--;
+        this.applyScale();
+    }
+
+    incrementScale() {
+        this.scale++;
+        this.applyScale();
+    }
+
+    applyScale() {
+        document.documentElement.style.fontSize = this.scale + 'px';
     }
 }
