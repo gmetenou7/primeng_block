@@ -1,8 +1,0 @@
-$cursor-props: (
-    'cursor-auto': 'auto',
-    'cursor-pointer': 'pointer',
-    'cursor-wait': 'wait',
-    'cursor-move': 'move'
-);
-
-@include style-class('cursor', $cursor-props);
