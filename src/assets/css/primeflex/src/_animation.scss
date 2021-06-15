@@ -170,7 +170,7 @@
 }
 
 .animate-width {
-    animation: width 3000ms linear;
+    animation: animate-width 1000ms linear;
 }
 
 $animation-duration-props: (
@@ -180,7 +180,9 @@ $animation-duration-props: (
     'animation-duration-300': '300ms',
     'animation-duration-400': '400ms',
     'animation-duration-500': '500ms',
-    'animation-duration-1000': '1000ms'
+    'animation-duration-1000': '1000ms',
+    'animation-duration-2000': '2000ms',
+    'animation-duration-3000': '3000ms'
 );
 
 $animation-delay-props: (
