@@ -12,16 +12,26 @@
   --primary-color-text:#121212;
   --font-family:Poppins, sans-serif;
   --surface-0: #0e1315;
-  --surface-50: #14191b;
-  --surface-100: #1a1f21;
-  --surface-200: #202527;
-  --surface-300: #262b2c;
-  --surface-400: #2c3132;
-  --surface-500: #323638;
-  --surface-600: #383c3e;
-  --surface-700: #3e4244;
-  --surface-800: #44484a;
-  --surface-900: #4a4e50;
+  --surface-50: #262b2c;
+  --surface-100: #3e4244;
+  --surface-200: #565a5b;
+  --surface-300: #6e7173;
+  --surface-400: #87898a;
+  --surface-500: #9fa1a1;
+  --surface-600: #b7b8b9;
+  --surface-700: #cfd0d0;
+  --surface-800: #e7e7e8;
+  --surface-900: #ffffff;
+  --gray-50: #e7e7e8;
+  --gray-100: #cfd0d0;
+  --gray-200: #b7b8b9;
+  --gray-300: #9fa1a1;
+  --gray-400: #87898a;
+  --gray-500: #6e7173;
+  --gray-600: #565a5b;
+  --gray-700: #3e4244;
+  --gray-800: #262b2c;
+  --gray-900: #0e1315;
   --content-padding:1rem;
   --inline-spacing:0.5rem;
 }
@@ -253,7 +263,10 @@ p-autocomplete.ng-dirty.ng-invalid > .p-autocomplete > .p-inputtext {
   border-radius: 6px;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
-.p-autocomplete-panel .p-autocomplete-items {
+.p-autocomplete-panel .p-autocomplete-items:not(.p-autocomplete-virtualscroll) {
+  padding: 0.5rem 0.5rem;
+}
+.p-autocomplete-panel .p-autocomplete-items.p-autocomplete-virtualscroll .cdk-virtual-scroll-content-wrapper {
   padding: 0.5rem 0.5rem;
 }
 .p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item {
@@ -272,6 +285,11 @@ p-autocomplete.ng-dirty.ng-invalid > .p-autocomplete > .p-inputtext {
 .p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item.p-highlight {
   color: #9eade6;
   background: rgba(158, 173, 230, 0.16);
+}
+.p-autocomplete-panel .p-autocomplete-items .p-autocomplete-empty-message {
+  padding: 0.5rem 1rem;
+  color: rgba(255, 255, 255, 0.87);
+  background: transparent;
 }
 .p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item-group {
   margin: 0;
@@ -741,7 +759,10 @@ p-chips.ng-dirty.ng-invalid > .p-chips > .p-inputtext {
   right: 0.75rem;
   color: rgba(255, 255, 255, 0.6);
 }
-.p-dropdown-panel .p-dropdown-items {
+.p-dropdown-panel .p-dropdown-items:not(.p-dropdown-virtualscroll) {
+  padding: 0.5rem 0.5rem;
+}
+.p-dropdown-panel .p-dropdown-items.p-dropdown-virtualscroll .cdk-virtual-scroll-content-wrapper {
   padding: 0.5rem 0.5rem;
 }
 .p-dropdown-panel .p-dropdown-items .p-dropdown-item {
@@ -1155,6 +1176,11 @@ p-inputswitch.ng-dirty.ng-invalid > .p-inputswitch {
   background: #161d21;
   font-weight: 600;
 }
+.p-listbox .p-listbox-list .p-listbox-empty-message {
+  padding: 0.5rem 1rem;
+  color: rgba(255, 255, 255, 0.87);
+  background: transparent;
+}
 .p-listbox:not(.p-disabled) .p-listbox-item:not(.p-highlight):not(.p-disabled):hover {
   color: rgba(255, 255, 255, 0.87);
   background: rgba(158, 173, 230, 0.08);
@@ -1254,7 +1280,10 @@ p-listbox.ng-dirty.ng-invalid > .p-listbox {
   outline-offset: 0;
   box-shadow: 0 0 0 1px #9eade6;
 }
-.p-multiselect-panel .p-multiselect-items {
+.p-multiselect-panel .p-multiselect-items:not(.p-multiselect-virtualscroll) {
+  padding: 0.5rem 0.5rem;
+}
+.p-multiselect-panel .p-multiselect-items.p-multiselect-virtualscroll .cdk-virtual-scroll-content-wrapper {
   padding: 0.5rem 0.5rem;
 }
 .p-multiselect-panel .p-multiselect-items .p-multiselect-item {
@@ -1557,6 +1586,76 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   border-color: #f78c79;
 }
 
+.p-treeselect {
+  background: #0e1315;
+  border: 2px solid #263238;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+  border-radius: 6px;
+}
+.p-treeselect:not(.p-disabled):hover {
+  border-color: #2d3e44;
+}
+.p-treeselect:not(.p-disabled).p-focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 1px #9eade6;
+  border-color: #9eade6;
+}
+.p-treeselect .p-treeselect-label {
+  padding: 0.5rem 0.75rem;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+.p-treeselect .p-treeselect-label.p-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.p-treeselect.p-treeselect-chip .p-treeselect-token {
+  padding: 0.25rem 0.75rem;
+  margin-right: 0.5rem;
+  background: #263238;
+  color: rgba(255, 255, 255, 0.87);
+  border-radius: 16px;
+}
+.p-treeselect .p-treeselect-trigger {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  width: 2.857rem;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.p-treeselect.p-invalid.p-component {
+  border-color: #f78c79;
+}
+
+.p-inputwrapper-filled .p-treeselect.p-treeselect-chip .p-treeselect-label {
+  padding: 0.25rem 0.75rem;
+}
+
+.p-treeselect-panel {
+  background: #161d21;
+  color: rgba(255, 255, 255, 0.87);
+  border: 1px solid #263238;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.p-treeselect-panel .p-treeselect-items-wrapper .p-tree {
+  border: 0 none;
+}
+.p-treeselect-panel .p-treeselect-items-wrapper .p-treeselect-empty-message {
+  padding: 0.5rem 1rem;
+  color: rgba(255, 255, 255, 0.87);
+  background: transparent;
+}
+
+.p-input-filled .p-treeselect {
+  background: #263238;
+}
+.p-input-filled .p-treeselect:not(.p-disabled):hover {
+  background-color: #263238;
+}
+.p-input-filled .p-treeselect:not(.p-disabled).p-focus {
+  background-color: #263238;
+}
+
 .p-button {
   color: #121212;
   background: #9eade6;
@@ -1685,6 +1784,12 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
 }
 .p-button.p-button-lg .p-button-icon {
   font-size: 1.25rem;
+}
+.p-button.p-button-loading-label-only .p-button-label {
+  margin-left: 0.5rem;
+}
+.p-button.p-button-loading-label-only .p-button-loading-icon {
+  margin-right: 0;
 }
 
 .p-fluid .p-button {
@@ -2605,6 +2710,10 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   color: #9eade6;
   background: rgba(158, 173, 230, 0.16);
 }
+.p-orderlist .p-orderlist-list .p-orderlist-empty-message {
+  padding: 0.5rem 1rem;
+  color: rgba(255, 255, 255, 0.87);
+}
 .p-orderlist .p-orderlist-list:not(.cdk-drop-list-dragging) .p-orderlist-item:not(.p-highlight):hover {
   background: rgba(158, 173, 230, 0.08);
   color: rgba(255, 255, 255, 0.87);
@@ -2697,6 +2806,7 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
 }
 .p-paginator .p-dropdown {
   margin-left: 0.5rem;
+  margin-right: 0.5rem;
   height: 2.857rem;
 }
 .p-paginator .p-dropdown .p-dropdown-label {
@@ -3633,11 +3743,14 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
 .p-sidebar {
   background: #161d21;
   color: rgba(255, 255, 255, 0.87);
-  padding: 1rem;
   border: 2px solid #263238;
   box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
 }
-.p-sidebar .p-sidebar-close {
+.p-sidebar .p-sidebar-header {
+  padding: 1rem;
+}
+.p-sidebar .p-sidebar-header .p-sidebar-close,
+.p-sidebar .p-sidebar-header .p-sidebar-icon {
   width: 2rem;
   height: 2rem;
   color: rgba(255, 255, 255, 0.6);
@@ -3646,15 +3759,23 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   border-radius: 50%;
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
-.p-sidebar .p-sidebar-close:enabled:hover {
+.p-sidebar .p-sidebar-header .p-sidebar-close:enabled:hover,
+.p-sidebar .p-sidebar-header .p-sidebar-icon:enabled:hover {
   color: rgba(255, 255, 255, 0.87);
   border-color: transparent;
   background: rgba(158, 173, 230, 0.08);
 }
-.p-sidebar .p-sidebar-close:focus {
+.p-sidebar .p-sidebar-header .p-sidebar-close:focus,
+.p-sidebar .p-sidebar-header .p-sidebar-icon:focus {
   outline: 0 none;
   outline-offset: 0;
   box-shadow: 0 0 0 1px #9eade6;
+}
+.p-sidebar .p-sidebar-header + .p-sidebar-content {
+  padding-top: 0;
+}
+.p-sidebar .p-sidebar-content {
+  padding: 1rem;
 }
 
 .p-sidebar-mask.p-component-overlay {
@@ -4946,9 +5067,6 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
 .p-galleria .p-galleria-thumbnail-container .p-galleria-thumbnail-next:hover {
   background: rgba(255, 255, 255, 0.1);
   color: #f8f9fa;
-}
-.p-galleria .p-galleria-thumbnail-container .p-galleria-thumbnail-item-content {
-  transition: box-shadow 0.3s;
 }
 .p-galleria .p-galleria-thumbnail-container .p-galleria-thumbnail-item-content:focus {
   outline: 0 none;
