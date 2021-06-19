@@ -102,7 +102,7 @@ $rem-widths: (
     "w-27rem": 27rem,
     "w-28rem": 28rem,
     "w-29rem": 29rem,
-    "w-30rem": 30rem,
+    "w-30rem": 30rem
 );
 
 @include style-class('width', $width-properties, true);
