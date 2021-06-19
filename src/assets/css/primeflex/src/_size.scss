@@ -55,6 +55,56 @@ $widths: (
     "w-12": 100%
 );
 
+$px-widths: (
+    "w-50px": 50px,
+    "w-100px": 100px,
+    "w-125px": 125px,
+    "w-150px": 150px,
+    "w-175px": 175px,
+    "w-200px": 200px,
+    "w-225px": 225px,
+    "w-250px": 250px,
+    "w-275px": 275px,
+    "w-300px": 300px,
+    "w-325px": 325px,
+    "w-350px": 350px,
+    "w-375px": 375px,
+    "w-400px": 400px
+);
+
+$rem-widths: (
+    "w-1rem": 1rem,
+    "w-2rem": 2rem,
+    "w-3rem": 3rem,
+    "w-4rem": 4rem,
+    "w-5rem": 5rem,
+    "w-6rem": 6rem,
+    "w-7rem": 7rem,
+    "w-8rem": 8rem,
+    "w-9rem": 9rem,
+    "w-10rem": 10rem,
+    "w-11rem": 11rem,
+    "w-12rem": 12rem,
+    "w-13rem": 13rem,
+    "w-14rem": 14rem,
+    "w-15rem": 15rem,
+    "w-16rem": 16rem,
+    "w-17rem": 17rem,
+    "w-18rem": 18rem,
+    "w-19rem": 1rem,
+    "w-20rem": 20rem,
+    "w-21rem": 21rem,
+    "w-22rem": 22rem,
+    "w-23rem": 23rem,
+    "w-24rem": 24rem,
+    "w-25rem": 25rem,
+    "w-26rem": 26rem,
+    "w-27rem": 27rem,
+    "w-28rem": 28rem,
+    "w-29rem": 29rem,
+    "w-30rem": 30rem,
+);
+
 @include style-class('width', $width-properties, true);
 @include style-class('height', $height-properties, true);
 @include style-class('min-width', $min-width-properties, true);
@@ -62,3 +112,5 @@ $widths: (
 @include style-class('min-height', $min-height-properties, true);
 @include style-class('max-height', $max-height-properties, true);
 @include style-class('width', $widths, true);
+@include style-class('width', $px-widths, true);
+@include style-class('width', $rem-widths, true);
