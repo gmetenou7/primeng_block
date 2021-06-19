@@ -55,23 +55,6 @@ $widths: (
     "w-12": 100%
 );
 
-$px-widths: (
-    "w-50px": 50px,
-    "w-100px": 100px,
-    "w-125px": 125px,
-    "w-150px": 150px,
-    "w-175px": 175px,
-    "w-200px": 200px,
-    "w-225px": 225px,
-    "w-250px": 250px,
-    "w-275px": 275px,
-    "w-300px": 300px,
-    "w-325px": 325px,
-    "w-350px": 350px,
-    "w-375px": 375px,
-    "w-400px": 400px
-);
-
 $rem-widths: (
     "w-1rem": 1rem,
     "w-2rem": 2rem,
@@ -112,5 +95,4 @@ $rem-widths: (
 @include style-class('min-height', $min-height-properties, true);
 @include style-class('max-height', $max-height-properties, true);
 @include style-class('width', $widths, true);
-@include style-class('width', $px-widths, true);
 @include style-class('width', $rem-widths, true);
