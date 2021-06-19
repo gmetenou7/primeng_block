@@ -15,10 +15,26 @@
                         </a>
                     </li>
                     <li>
-                        <a class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 font-medium border-round cursor-pointer">
+                        <a class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 font-medium border-round cursor-pointer"
+                            pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout">
                             <i class="pi pi-users mr-2"></i>
                             <span>Customers</span>
+                            <i class="pi pi-angle-down ml-auto lg:ml-3"></i>
                         </a>
+                        <ul class="list-none py-0 px-6 m-0 lg:px-0 border-round shadow-0 lg:shadow-2 lg:absolute surface-0 hidden origin-top w-full lg:w-15rem cursor-pointer">
+                            <li>
+                                <a class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100">
+                                    <i class="pi pi-user-plus mr-2"></i>
+                                    <span class="font-medium">Add New</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100">
+                                    <i class="pi pi-search mr-2"></i>
+                                    <span class="font-medium">Search</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 font-medium border-round cursor-pointer">
