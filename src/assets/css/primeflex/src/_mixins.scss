@@ -42,7 +42,7 @@
     }
 }
 
-@mixin surface-class($name, $prop, $shades, $responsive: false) {
+@mixin surface-class($name, $prop, $shades) {
     @each $shade in $shades {
         .#{$name}-#{$shade} {
             #{$prop}: var(--surface-#{$shade}) !important;
@@ -53,28 +53,6 @@
         .hover#{$separator} {
             &#{$name}-#{$shade}:hover {
                 #{$prop}: var(--surface-#{$shade}) !important;
-            }
-        }
-    }
-
-    @if ($responsive) {
-        @each $key, $val in $breakpoints {
-            @media screen and (min-width: #{$val}) {
-                .#{$key + $separator} {
-                    @each $shade in $shades {
-                        &#{$name}-#{$shade} {
-                            #{$prop}: var(--surface-#{$shade}) !important;
-                        }
-                    }
-                
-                    @each $shade in $shades {
-                        &hover#{$separator} {
-                            &#{$name}-#{$shade}:hover {
-                                #{$prop}: var(--surface-#{$shade}) !important;
-                            }
-                        }
-                    }
-                }
             }
         }
     }
