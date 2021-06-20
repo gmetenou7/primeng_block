@@ -25,7 +25,7 @@
         max-height: 0;
     }
     100% { 
-        max-height: 1000px;
+        max-height: auto;
     }
 }
 
@@ -152,7 +152,7 @@
 }
 
 .slidedown {
-    animation: slidedown 1s cubic-bezier(0, 1, 0, 1);
+    animation: slidedown .45s ease-in-out;
 }
 
 .slideup {

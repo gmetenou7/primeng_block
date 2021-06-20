@@ -58,6 +58,14 @@ export class StyleClass implements AfterViewInit, OnDestroy {
 
     enter() {
         if (this.enterActiveClass) {
+            if (this.enterActiveClass === 'slidedown') {
+                this.target.style.height = '0px';
+                DomHandler.removeClass(this.target, 'hidden');
+                this.target.style.maxHeight = this.target.scrollHeight + 'px';
+                DomHandler.addClass(this.target, 'hidden');
+                this.target.style.height = '';
+            }
+
             DomHandler.addClass(this.target, this.enterActiveClass);
             if (this.enterClass) {
                 DomHandler.removeClass(this.target, this.enterClass);
@@ -69,6 +77,10 @@ export class StyleClass implements AfterViewInit, OnDestroy {
                     DomHandler.addClass(this.target, this.enterToClass);
                 }
                 this.enterListener();
+
+                if (this.enterActiveClass === 'slidedown') {
+                    this.target.style.maxHeight = '';
+                }
             });
         }
         else {

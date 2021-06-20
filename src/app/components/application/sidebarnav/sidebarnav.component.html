@@ -24,7 +24,7 @@
                 </li>
                 <li>
                     <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100"
-                        pStyleClass="@next" toggleClass="max-h-0">
+                        pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup" [hideOnOutsideClick]="false">
                         <i class="pi pi-calendar mr-2"></i>
                         <span class="font-medium">Calendar</span>
                         <div class="ml-auto">
@@ -32,7 +32,7 @@
                             <i class="pi pi-chevron-down ml-2"></i>
                         </div>
                     </a>
-                    <ul class="list-none py-0 pl-3 pr-0 m-0 surface-0 max-h-0 overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out" style="max-height:150px">
+                    <ul class="list-none py-0 pl-3 pr-0 m-0 surface-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
                         <li>
                             <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
                                 <i class="pi pi-calendar mr-2"></i>
@@ -67,7 +67,7 @@
                 </li>
                 <li>
                     <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100"
-                        pStyleClass="@next" toggleClass="max-h-0">
+                        pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup" [hideOnOutsideClick]="false">
                         <i class="pi pi-file mr-2"></i>
                         <span class="font-medium">Reports</span>
                         <div class="ml-auto">
@@ -75,15 +75,15 @@
                             <i class="pi pi-chevron-down ml-2"></i>
                         </div>
                     </a>
-                    <ul class="list-none py-0 pl-3 pr-0 m-0 surface-0 max-h-0 overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out" style="max-height:500px">
+                    <ul class="list-none py-0 pl-3 pr-0 m-0 surface-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
                         <li>
                             <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100"
-                                pStyleClass="@next" toggleClass="max-h-0">
+                                pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup" [hideOnOutsideClick]="false">
                                 <i class="pi pi-chart-line mr-2"></i>
                                 <span class="font-medium">Analytics</span>
                                 <i class="pi pi-chevron-down ml-auto"></i>
                             </a>
-                            <ul class="list-none py-0 pl-3 pr-0 m-0 surface-0 max-h-0 overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out" style="max-height:150px">
+                            <ul class="list-none py-0 pl-3 pr-0 m-0 surface-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
                                 <li>
                                     <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
                                         <i class="pi pi-refresh mr-2"></i>
