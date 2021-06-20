@@ -20,6 +20,24 @@
     }
 }
 
+@keyframes slidedown {
+    0% {
+        max-height: 0;
+    }
+    100% { 
+        max-height: 1000px;
+    }
+}
+
+@keyframes slideup {
+    0% {
+        max-height: 1000px;
+    }
+    100% { 
+        max-height: 0;
+    }
+}
+
 @keyframes fadeinleft {
     0%   {
         opacity: 0;
@@ -131,6 +149,14 @@
 
 .fadeout {
     animation: fadeout .15s linear;
+}
+
+.slidedown {
+    animation: slidedown 1s cubic-bezier(0, 1, 0, 1);
+}
+
+.slideup {
+    animation: slideup .45s cubic-bezier(0, 1, 0, 1);
 }
 
 .scalein {

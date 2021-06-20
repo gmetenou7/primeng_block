@@ -1,6 +1,6 @@
 <div class="block-category-title">Sidebar Navigation</div>
 <block-viewer title="Grouped with Icons" [code]="block1" [previewStyle]="{'height': '100vh'}">
-    <div class="surface-0 h-screen border-right-1 border-300 flex flex-column" style="width:280px">
+    <div class="surface-0 h-screen border-right-1 border-300 flex flex-column w-18rem select-none">
         <div class="p-3 flex align-items-center justify-content-center">
             <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="40">
         </div>
@@ -10,24 +10,42 @@
                    <div class="p-3 text-500 font-medium">HOME</div> 
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
-                        <i class="pi pi-home mr-2 text-700"></i>
-                        <span class="font-medium text-700">Dashboard</span>
+                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
+                        <i class="pi pi-home mr-2"></i>
+                        <span class="font-medium">Dashboard</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
-                        <i class="pi pi-comments mr-2 text-700"></i>
-                        <span class="font-medium text-700">Messages</span>
+                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
+                        <i class="pi pi-comments mr-2"></i>
+                        <span class="font-medium">Messages</span>
                         <span class="inline-flex align-items-center justify-content-center ml-auto bg-blue-100 text-blue-900 border-circle" style="min-width: 1.5rem; height: 1.5rem">3</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
-                        <i class="pi pi-calendar mr-2 text-700"></i>
-                        <span class="font-medium text-700">Calendar</span>
-                        <span class="inline-flex align-items-center justify-content-center ml-auto bg-purple-100 text-purple-900 border-circle" style="min-width: 1.5rem; height: 1.5rem">2</span>
+                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100"
+                        pStyleClass="@next" toggleClass="max-h-0">
+                        <i class="pi pi-calendar mr-2"></i>
+                        <span class="font-medium">Calendar</span>
+                        <div class="ml-auto">
+                            <span class="inline-flex align-items-center justify-content-center bg-purple-100 text-purple-900 border-circle" style="min-width: 1.5rem; height: 1.5rem">2</span>
+                            <i class="pi pi-chevron-down ml-2"></i>
+                        </div>
                     </a>
+                    <ul class="list-none py-0 pl-3 pr-0 m-0 surface-0 max-h-0 overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out" style="max-height:150px">
+                        <li>
+                            <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
+                                <i class="pi pi-calendar mr-2"></i>
+                                <span class="font-medium">Work</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
+                                <i class="pi pi-calendar mr-2"></i>
+                                <span class="font-medium">Personal</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <ul class="list-none p-2 m-0 border-top-1 border-300">
@@ -35,24 +53,58 @@
                    <div class="p-3 text-500 font-medium">ORGANIZATION</div> 
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
-                        <i class="pi pi-home mr-2 text-700"></i>
-                        <span class="font-medium text-700">Overview</span>
+                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
+                        <i class="pi pi-home mr-2"></i>
+                        <span class="font-medium">Overview</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
-                        <i class="pi pi-bookmark mr-2 text-700"></i>
-                        <span class="font-medium text-700">Security</span>
+                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
+                        <i class="pi pi-lock mr-2"></i>
+                        <span class="font-medium">Security</span>
                         <span class="inline-flex align-items-center justify-content-center ml-auto bg-cyan-100 text-cyan-900 border-circle" style="min-width: 1.5rem; height: 1.5rem">3</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
-                        <i class="pi pi-calendar mr-2 text-700"></i>
-                        <span class="font-medium text-700">Reports</span>
-                        <span class="inline-flex align-items-center justify-content-center ml-auto bg-orange-100 text-orange-900 border-circle" style="min-width: 1.5rem; height: 1.5rem">2</span>
+                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100"
+                        pStyleClass="@next" toggleClass="max-h-0">
+                        <i class="pi pi-file mr-2"></i>
+                        <span class="font-medium">Reports</span>
+                        <div class="ml-auto">
+                            <span class="inline-flex align-items-center justify-content-center ml-auto bg-orange-100 text-orange-900 border-circle" style="min-width: 1.5rem; height: 1.5rem">2</span>
+                            <i class="pi pi-chevron-down ml-2"></i>
+                        </div>
                     </a>
+                    <ul class="list-none py-0 pl-3 pr-0 m-0 surface-0 max-h-0 overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out" style="max-height:500px">
+                        <li>
+                            <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100"
+                                pStyleClass="@next" toggleClass="max-h-0">
+                                <i class="pi pi-chart-line mr-2"></i>
+                                <span class="font-medium">Analytics</span>
+                                <i class="pi pi-chevron-down ml-auto"></i>
+                            </a>
+                            <ul class="list-none py-0 pl-3 pr-0 m-0 surface-0 max-h-0 overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out" style="max-height:150px">
+                                <li>
+                                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
+                                        <i class="pi pi-refresh mr-2"></i>
+                                        <span class="font-medium">Traffic</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
+                                        <i class="pi pi-dollar mr-2"></i>
+                                        <span class="font-medium">Conversions</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
+                                <i class="pi pi-chart-bar mr-2"></i>
+                                <span class="font-medium">Sales</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <ul class="list-none p-2 m-0 border-top-1 border-300">
@@ -60,35 +112,37 @@
                    <div class="p-3 text-500 font-medium">CUSTOMERS</div> 
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
-                        <i class="pi pi-home mr-2 text-700"></i>
-                        <span class="font-medium text-700">Overview</span>
+                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
+                        <i class="pi pi-home mr-2"></i>
+                        <span class="font-medium">Overview</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
-                        <i class="pi pi-users mr-2 text-700"></i>
-                        <span class="font-medium text-700">Users</span>
+                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
+                        <i class="pi pi-users mr-2"></i>
+                        <span class="font-medium">Users</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
-                        <i class="pi pi-inbox mr-2 text-700"></i>
-                        <span class="font-medium text-700">Inbox</span>
+                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
+                        <i class="pi pi-inbox mr-2"></i>
+                        <span class="font-medium">Inbox</span>
                         <span class="inline-flex align-items-center justify-content-center ml-auto bg-purple-100 text-purple-900 border-circle" style="min-width: 1.5rem; height: 1.5rem">8</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
-                        <i class="pi pi-search mr-2 text-700"></i>
-                        <span class="font-medium text-700">Search</span>
+                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
+                        <i class="pi pi-search mr-2"></i>
+                        <span class="font-medium">Search</span>
                     </a>
                 </li>
             </ul>
         </div>
-        <a class="p-3 flex align-items-center border-top-1 border-300 cursor-pointer mt-auto">
-            <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-2" style="width: 28px; height: 28px"/>
-            <span class="font-medium text-900">Amy Elsner</span>
-        </a>
+        <div class="p-2 mt-auto border-top-1 border-300">
+            <a class="p-3 flex align-items-center cursor-pointer text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100">
+                <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-2" style="width: 28px; height: 28px"/>
+                <span class="font-medium">Amy Elsner</span>
+            </a>
+        </div>
     </div>
 </block-viewer>
