@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { ActivatedRoute, ActivationEnd, ActivationStart, ChildActivationEnd, ChildActivationStart, Data, NavigationEnd, NavigationStart, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { MenuItem,PrimeNGConfig } from 'primeng/api';
 
@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
     
     constructor(private router: Router, private primengConfig: PrimeNGConfig) { }
 
-    menuitems: MenuItem[];
+    menuitems: MenuItem[] = [{label:'', routerLink:''}];
 
     visibleSidebar: boolean;
 
@@ -28,18 +28,19 @@ export class AppComponent implements OnInit {
 
     ngOnInit() {
         this.primengConfig.ripple = true;
-        this.buildBreadcrumb();
+
+        this.router.events.
+            pipe(filter(event => event instanceof ChildActivationStart))
+            .subscribe(event => {
+                if (event['snapshot'].data.name) {
+                    let prevRoute = this.menuitems[this.menuitems.length - 1].routerLink;
+                    this.menuitems.push({label: event['snapshot'].data.name, routerLink: prevRoute + '/' + event['snapshot'].url[0].path});
+                }
+            });
 
         this.router.events
-            .pipe(filter(event => event instanceof NavigationEnd))
-            .subscribe(() => this.buildBreadcrumb());
-    }
-
-    buildBreadcrumb() {
-        const paths = this.router.url === '/' ?  ['']: this.router.url.split('/');
-        this.menuitems = paths.map(path => {
-            return {label: path, routerLink: ['/' + path]};
-        });
+            .pipe(filter(event => event instanceof NavigationStart))
+            .subscribe(() => this.menuitems = [{label:'', routerLink:''}]);
     }
 
     changeTheme(event: Event, theme: string) {

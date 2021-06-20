@@ -21,9 +21,9 @@
     </div>
     <div class="layout-breadcrumb">
         <ul>
-            <li *ngFor="let menuitem of menuitems; let l=last; let f=first;">
+            <li *ngFor="let menuitem of menuitems; let f=first;">
                 <div *ngIf="!f" class="chevron">/</div>
-                <a [routerLink]="menuitem.routerLink">
+                <a [routerLink]="menuitem.routerLink || ['/']">
                     <span *ngIf="menuitem.label; else home">{{menuitem.label}}</span>
                     <ng-template #home><i class="pi pi-home"></i></ng-template>
                 </a>
