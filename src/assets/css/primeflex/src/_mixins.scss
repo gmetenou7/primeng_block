@@ -61,15 +61,16 @@
 @mixin border-class($name, $directions, $scales) {
     @each $dir, $prop in $directions {
         @for $i from 0 through length($scales) - 1 {
-            $className: #{$name}-#{$dir}-#{$i};
+            $borderValue: if($i == 0, 'none', $i);
+            $className: #{$name}-#{$dir}-#{$borderValue};
             @if ($dir == '') {
-                $className: #{$name}-#{$i};
+                $className: #{$name}-#{$borderValue};
             }
             
             .#{$className} {
                 @each $propName in $prop {
                     #{$propName}-width: nth($scales, $i + 1) !important;
-                    #{$propName}-style: solid;
+                    #{$propName}-style: if($i == 0, none, solid);
                 }
             }
         }
@@ -80,15 +81,16 @@
             .#{$key + $separator} {
                 @each $dir, $prop in $directions {
                     @for $i from 0 through length($scales) - 1 {
-                        $className: #{$name}-#{$dir}-#{$i};
+                        $borderValue: if($i == 0, 'none', $i);
+                        $className: #{$name}-#{$dir}-#{$borderValue};
                         @if ($dir == '') {
-                            $className: #{$name}-#{$i};
+                            $className: #{$name}-#{$borderValue};
                         }
                         
                         &#{$className} {
                             @each $propName in $prop {
                                 #{$propName}-width: nth($scales, $i + 1) !important;
-                                #{$propName}-style: solid;
+                                #{$propName}-style: if($i == 0, none, solid);
                             }
                         }
                     }

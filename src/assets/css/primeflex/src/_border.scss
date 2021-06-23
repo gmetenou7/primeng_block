@@ -14,8 +14,7 @@ $border-styles: (
     'border-solid': solid,
     'border-dashed': dashed,
     'border-dotted': dotted,
-    'border-double': double,
-    'border-none': none
+    'border-double': double
 );
 
 @include border-class('border', $border-directions, $border-scales);
