@@ -99,3 +99,28 @@
         }
     }
 }
+
+@mixin border-radius-class($directions) {
+    @each $dir, $prop in $directions {
+        .#{$dir} {
+            @each $propName in $prop {
+                #{$propName}: var(--border-radius, $borderRadius);
+            }
+        }
+    }
+    
+    @each $key, $val in $breakpoints {
+        @media screen and (min-width: #{$val}) {
+            .#{$key + $separator} {
+                @each $dir, $prop in $directions {
+                    &#{$dir} {
+                        @each $propName in $prop {
+                            #{$propName}: var(--border-radius, $borderRadius);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

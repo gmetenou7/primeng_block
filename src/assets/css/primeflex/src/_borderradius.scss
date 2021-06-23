@@ -1,31 +1,15 @@
-.border-noround {
-    border-radius: 0;
-}
+$border-radius-props: (
+    'border-noround': 0,
+    'border-round': var(--border-radius, $borderRadius),
+    'border-circle': 50%
+);
 
-.border-round {
-    border-radius: var(--border-radius, $borderRadius);
-}
+$border-radius-directions: (
+    'border-round-left': ('border-top-left-radius','border-bottom-left-radius'),
+    'border-round-top': ('border-top-left-radius','border-top-right-radius'),
+    'border-round-right': ('border-top-right-radius','border-bottom-right-radius'),
+    'border-round-bottom': ('border-bottom-left-radius','border-bottom-right-radius')
+);
 
-.border-round-left {
-    border-top-left-radius: var(--border-radius, $borderRadius);
-    border-bottom-left-radius: var(--border-radius, $borderRadius);
-}
-
-.border-round-top {
-    border-top-left-radius: var(--border-radius, $borderRadius);
-    border-top-right-radius: var(--border-radius, $borderRadius);
-}
-
-.border-round-bottom {
-    border-bottom-left-radius: var(--border-radius, $borderRadius);
-    border-bottom-right-radius: var(--border-radius, $borderRadius);
-}
-
-.border-round-right {
-    border-top-right-radius: var(--border-radius, $borderRadius);
-    border-bottom-right-radius: var(--border-radius, $borderRadius);
-}
-
-.border-circle {
-    border-radius: 50%;
-}
+@include border-radius-class($border-radius-directions);
+@include style-class('border-radius', $border-radius-props, true);
