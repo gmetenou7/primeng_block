@@ -1,5 +1,5 @@
 <div class="block-category-title">Sidebar Layouts</div>
-<block-viewer title="Dim Sidebar with Topbar" [code]="block1" [previewStyle]="{height: '100vh', overflow: 'hidden'}">
+<block-viewer header="Dim Sidebar with Topbar" [code]="block1" [previewStyle]="{height: '100vh', overflow: 'hidden'}">
     <div class="min-h-screen flex relative lg:static">
         <div id="app-sidebar-1" class="bg-bluegray-800 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1" style="width:280px">
             <div class="flex flex-column h-full">
@@ -157,7 +157,7 @@
     </div>
 </block-viewer>
 
-<block-viewer title="Light Sidebar with Grouped Menu" [code]="block2" [previewStyle]="{height: '100vh', overflow: 'hidden'}">
+<block-viewer header="Light Sidebar with Grouped Menu" [code]="block2" [previewStyle]="{height: '100vh', overflow: 'hidden'}">
     <div class="min-h-screen flex relative lg:static">
         <div id="app-sidebar-2" class="surface-100 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-300" style="width:280px">
             <div class="flex flex-column h-full">
@@ -344,7 +344,7 @@
     </div>
 </block-viewer>
 
-<block-viewer title="Dark Sidebar with Grouped Menu" [code]="block3" [previewStyle]="{height: '100vh', overflow: 'hidden'}">
+<block-viewer header="Dark Sidebar with Grouped Menu" [code]="block3" [previewStyle]="{height: '100vh', overflow: 'hidden'}">
     <div class="min-h-screen flex relative lg:static">
         <div id="app-sidebar-3" class="surface-900 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-300" style="width:280px">
             <div class="flex flex-column h-full">
@@ -517,14 +517,14 @@
     </div>
 </block-viewer>
 
-<block-viewer title="Narrow Sidebar" [code]="block4" [previewStyle]="{height: '100vh', overflow: 'hidden'}">
+<block-viewer header="Narrow Sidebar" [code]="block4" [previewStyle]="{height: '100vh', overflow: 'hidden'}">
     <div class="min-h-screen flex relative lg:static">
-        <div id="app-sidebar-4" class="surface-900 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-300 w-auto lg:w-min">
+        <div id="app-sidebar-4" class="surface-900 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-300 w-18rem lg:w-5rem">
             <div class="flex flex-column h-full">
                 <div class="flex align-items-center justify-content-center flex-shrink-0 bg-indigo-500" style="height:60px">
                     <img src="assets/images/blocks/logos/hyper-light.svg" alt="Image" height="30">
                 </div>
-                <div class="overflow-y-auto mt-3">
+                <div class="mt-3 select-none">
                     <ul class="list-none p-3 lg:py-3 lg:px-2 m-0">
                         <li>
                             <a class="flex align-items-center cursor-pointer p-3 lg:justify-content-center hover:surface-800 border-round text-300 hover:text-0 transition-duration-150 transition-colors">
@@ -544,11 +544,42 @@
                                 <span class="font-medium inline lg:hidden">Team</span>
                             </a>
                         </li>
-                        <li>
-                            <a class="flex align-items-center cursor-pointer p-3 lg:justify-content-center hover:surface-800 border-round text-300 hover:text-0 transition-duration-150 transition-colors">
-                                <i class="pi pi-comments mr-2 lg:mr-0 text-base lg:text-xl" pBadge="3"></i>
-                                <span class="font-medium inline lg:hidden">Messages</span>
+                        <li class="lg:relative">
+                            <a class="flex align-items-center cursor-pointer p-3 lg:justify-content-center hover:surface-800 border-round text-300 hover:text-0 transition-duration-150 transition-colors" pStyleClass="@next" toggleClass="hidden">
+                                <i class="pi pi-chart-line mr-2 lg:mr-0 text-base lg:text-xl" pBadge="3"></i>
+                                <span class="font-medium inline lg:hidden">Reports</span>
+                                <i class="pi pi-chevron-down ml-auto lg:hidden"></i>
                             </a>
+                            <ul class="list-none pl-3 pr-0 py-0 lg:p-3 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out static lg:absolute left-100 top-0 z-1 surface-900 border-round shadow-none lg:shadow-2 w-full lg:w-15rem">
+                                <li>
+                                    <a class="flex align-items-center cursor-pointer p-3 hover:surface-800 border-round text-300 hover:text-0 transition-duration-150 transition-colors"
+                                        pStyleClass="@next" toggleClass="hidden">
+                                        <i class="pi pi-chart-line mr-2"></i>
+                                        <span class="font-medium">Revenue</span>
+                                        <i class="pi pi-chevron-down ml-auto"></i>
+                                    </a>
+                                    <ul class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
+                                        <li>
+                                            <a class="flex align-items-center cursor-pointer p-3 hover:surface-800 border-round text-300 hover:text-0 transition-duration-150 transition-colors">
+                                                <i class="pi pi-table mr-2"></i>
+                                                <span class="font-medium">View</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="flex align-items-center cursor-pointer p-3 hover:surface-800 border-round text-300 hover:text-0 transition-duration-150 transition-colors">
+                                                <i class="pi pi-search mr-2"></i>
+                                                <span class="font-medium">Search</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="flex align-items-center cursor-pointer p-3 hover:surface-800 border-round text-300 hover:text-0 transition-duration-150 transition-colors">
+                                        <i class="pi pi-chart-line mr-2"></i>
+                                        <span class="font-medium">Expenses</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a class="flex align-items-center cursor-pointer p-3 lg:justify-content-center hover:surface-800 border-round text-300 hover:text-0 transition-duration-150 transition-colors">
@@ -625,14 +656,14 @@
     </div>
 </block-viewer>
 
-<block-viewer title="Narrow Sidebar with Titles" [code]="block5" [previewStyle]="{height: '100vh', overflow: 'hidden'}">
+<block-viewer header="Narrow Sidebar with Titles" [code]="block5" [previewStyle]="{height: '100vh', overflow: 'hidden'}">
     <div class="min-h-screen flex relative lg:static">
-        <div id="app-sidebar-4" class="surface-900 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-300 w-auto lg:w-min">
+        <div id="app-sidebar-5" class="surface-900 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-300 w-18rem lg:w-7rem">
             <div class="flex flex-column h-full">
                 <div class="flex align-items-center justify-content-center flex-shrink-0 bg-orange-500" style="height:60px">
                     <img src="assets/images/blocks/logos/hyper-light.svg" alt="Image" height="30">
                 </div>
-                <div class="overflow-y-auto mt-3">
+                <div class="mt-3">
                     <ul class="list-none p-3 m-0">
                         <li>
                             <a class="flex flex-row lg:flex-column align-items-center cursor-pointer p-3 lg:justify-content-center hover:surface-800 border-round text-300 hover:text-0 transition-duration-150 transition-colors">
@@ -652,11 +683,42 @@
                                 <span class="font-medium inline text-base lg:text-xs lg:block">Team</span>
                             </a>
                         </li>
-                        <li>
-                            <a class="flex flex-row lg:flex-column align-items-center cursor-pointer p-3 lg:justify-content-center hover:surface-800 border-round text-300 hover:text-0 transition-duration-150 transition-colors">
-                                <i class="pi pi-comments mr-2 lg:mr-0 mb-0 lg:mb-2 text-base lg:text-lg" pBadge="3" severity="danger"></i>
-                                <span class="font-medium inline text-base lg:text-xs lg:block">Chat</span>
+                        <li class="relative">
+                            <a class="flex flex-row lg:flex-column align-items-center cursor-pointer p-3 lg:justify-content-center hover:surface-800 border-round text-300 hover:text-0 transition-duration-150 transition-colors" pStyleClass="@next" toggleClass="hidden">
+                                <i class="pi pi-chart-line mr-2 lg:mr-0 mb-0 lg:mb-2 text-base lg:text-lg" pBadge="3" severity="danger"></i>
+                                <span class="font-medium inline text-base lg:text-xs lg:block">Reports</span>
+                                <i class="pi pi-chevron-down ml-auto lg:hidden"></i>
                             </a>
+                            <ul class="list-none pl-3 pr-0 py-0 lg:p-3 m-0 lg:ml-3 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out static lg:absolute left-100 top-0 z-1 surface-900 shadow-none lg:shadow-2 w-full lg:w-15rem">
+                                <li>
+                                    <a class="flex align-items-center cursor-pointer p-3 hover:surface-800 border-round text-300 hover:text-0 transition-duration-150 transition-colors"
+                                        pStyleClass="@next" toggleClass="hidden">
+                                        <i class="pi pi-chart-line mr-2"></i>
+                                        <span class="font-medium">Revenue</span>
+                                        <i class="pi pi-chevron-down ml-auto"></i>
+                                    </a>
+                                    <ul class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
+                                        <li>
+                                            <a class="flex align-items-center cursor-pointer p-3 hover:surface-800 border-round text-300 hover:text-0 transition-duration-150 transition-colors">
+                                                <i class="pi pi-table mr-2"></i>
+                                                <span class="font-medium">View</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="flex align-items-center cursor-pointer p-3 hover:surface-800 border-round text-300 hover:text-0 transition-duration-150 transition-colors">
+                                                <i class="pi pi-search mr-2"></i>
+                                                <span class="font-medium">Search</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="flex align-items-center cursor-pointer p-3 hover:surface-800 border-round text-300 hover:text-0 transition-duration-150 transition-colors">
+                                        <i class="pi pi-chart-line mr-2"></i>
+                                        <span class="font-medium">Expenses</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a class="flex flex-row lg:flex-column align-items-center cursor-pointer p-3 lg:justify-content-center hover:surface-800 border-round text-300 hover:text-0 transition-duration-150 transition-colors">
@@ -685,7 +747,7 @@
         <div class="min-h-screen flex flex-column relative flex-auto">
             <div class="flex justify-content-between align-items-center px-5 surface-0 border-bottom-1 border-300 relative lg:static" style="height:60px">
                 <div class="flex">
-                    <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-4" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft">
+                    <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-5" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft">
                         <i class="pi pi-bars text-4xl"></i>
                     </a>
                     <span class="p-input-icon-left">

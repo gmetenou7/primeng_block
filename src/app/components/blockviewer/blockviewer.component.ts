@@ -10,7 +10,7 @@ enum BlockView {
     template: `
         <div class="block-section">
             <div class="block-header">
-                <span class="block-title">{{title}}</span>
+                <span class="block-title">{{header}}</span>
                 <div class="block-actions">
                     <a tabindex="0" [ngClass]="{'block-action-active': blockView == BlockView.PREVIEW}" (click)="activateView($event, BlockView.PREVIEW)">Preview</a>
                     <a tabindex="0" [ngClass]="{'block-action-active': blockView == BlockView.CODE}" (click)="activateView($event, BlockView.CODE)">Code</a>
@@ -32,7 +32,7 @@ enum BlockView {
 })
 export class BlockViewer implements AfterViewInit {
     
-    @Input() title: string;
+    @Input() header: string;
 
     @Input() code: string;
 
