@@ -9,7 +9,7 @@ $translate-props: (
 
 $rotate-props: (
     'rotate-90': 'rotate(90deg)',
-    '-rotate-90': 'rotate(90deg)',
+    '-rotate-90': 'rotate(-90deg)',
     'rotate-180': 'rotate(180deg)',
     '-rotate-180': 'rotate(-180deg)'
 );
