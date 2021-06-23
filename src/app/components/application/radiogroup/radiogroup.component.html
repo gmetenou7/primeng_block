@@ -60,7 +60,7 @@
                 <i class="pi pi-star"></i>
             </div>
         </div>
-        <div class="border-300 border-1 border-top-0 p-3 flex align-items-center cursor-pointer" [ngClass]="{'surface-0': tier1 !== 1, 'bg-blue-50': 'tier1 === 1'}" (click)="tier1 = 1">
+        <div class="border-300 border-1 border-top-none p-3 flex align-items-center cursor-pointer" [ngClass]="{'surface-0': tier1 !== 1, 'bg-blue-50': 'tier1 === 1'}" (click)="tier1 = 1">
             <p-radioButton name="tier1" [value]="1" [(ngModel)]="tier1" styleClass="mr-3"></p-radioButton>
             <div class="mr-4 md:mr-8">
                 <div class="font-medium text-900 mb-1">Premium</div>
@@ -71,7 +71,7 @@
                 <i class="pi pi-star"></i>
             </div>
         </div>
-        <div class="border-300 border-1 border-top-0 p-3 border-round-bottom flex align-items-center cursor-pointer" [ngClass]="{'surface-0': tier1 !== 2, 'bg-blue-50': 'tier1 === 2'}" (click)="tier1 = 2">
+        <div class="border-300 border-1 border-top-none p-3 border-round-bottom flex align-items-center cursor-pointer" [ngClass]="{'surface-0': tier1 !== 2, 'bg-blue-50': 'tier1 === 2'}" (click)="tier1 = 2">
             <p-radioButton name="tier1" [value]="2" [(ngModel)]="tier1" styleClass="mr-3"></p-radioButton>
             <div class="mr-4 md:mr-8">
                 <div class="font-medium text-900 mb-1">Enterprise</div>
@@ -102,7 +102,7 @@
                 <span [ngClass]="{'text-600': tier2 !== 0, 'blue-500': 'tier2 === 0'}"> / Month</span>
             </div>
         </div>
-        <div class="border-300 border-1 p-3 border-top-0 flex align-items-center cursor-pointer" [ngClass]="{'surface-0': tier2 !== 1, 'bg-blue-50': 'tier2 === 1'}" (click)="tier2 = 1">
+        <div class="border-300 border-1 p-3 border-top-none flex align-items-center cursor-pointer" [ngClass]="{'surface-0': tier2 !== 1, 'bg-blue-50': 'tier2 === 1'}" (click)="tier2 = 1">
             <div class="w-4 flex align-items-center pr-4">
                 <p-radioButton name="tier2" [value]="1" [(ngModel)]="tier2" styleClass="mr-2"></p-radioButton>
                 <div class="font-medium text-900">Premium</div>
@@ -115,7 +115,7 @@
                 <span [ngClass]="{'text-600': tier2 !== 1, 'blue-500': 'tier2 === 1'}"> / Month</span>
             </div>
         </div>
-        <div class="border-300 border-1 border-top-0 p-3 border-round-bottom flex align-items-center cursor-pointer" [ngClass]="{'surface-0': tier2 !== 2, 'bg-blue-50': 'tier2 === 2'}" (click)="tier2 = 2">
+        <div class="border-300 border-1 border-top-none p-3 border-round-bottom flex align-items-center cursor-pointer" [ngClass]="{'surface-0': tier2 !== 2, 'bg-blue-50': 'tier2 === 2'}" (click)="tier2 = 2">
             <div class="w-4 flex align-items-center pr-4">
                 <p-radioButton name="tier2" [value]="2" [(ngModel)]="tier2" styleClass="mr-2"></p-radioButton>
                 <div class="font-medium text-900">Enterprise</div>

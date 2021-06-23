@@ -16,12 +16,12 @@ export class PricingComponent {
                 <div class="shadow-2 p-3 h-full flex flex-column" style="border-radius: 6px">
                     <div class="text-900 font-medium text-xl mb-2">Basic</div>
                     <div class="text-600">Plan description</div>
-                    <hr class="my-3 mx-0 border-top-1 border-bottom-0 border-300" />
+                    <hr class="my-3 mx-0 border-top-1 border-bottom-none border-300" />
                     <div class="flex align-items-center">
                         <span class="font-bold text-2xl text-900">$9</span>
                         <span class="ml-2 font-medium text-600">per month</span>
                     </div>
-                    <hr class="my-3 mx-0 border-top-1 border-bottom-0 border-300" />
+                    <hr class="my-3 mx-0 border-top-1 border-bottom-none border-300" />
                     <ul class="list-none p-0 m-0 flex-grow-1">
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
@@ -36,7 +36,7 @@ export class PricingComponent {
                             <span>Morbi tincidunt augue</span>
                         </li>
                     </ul>
-                    <hr class="mb-3 mx-0 border-top-1 border-bottom-0 border-300 mt-auto" />
+                    <hr class="mb-3 mx-0 border-top-1 border-bottom-none border-300 mt-auto" />
                     <button pButton pRipple label="Buy Now" class="p-3 w-full mt-auto"></button>
                 </div>
             </div>
@@ -47,12 +47,12 @@ export class PricingComponent {
                 <div class="shadow-2 p-3 h-full flex flex-column" style="border-radius: 6px">
                     <div class="text-900 font-medium text-xl mb-2">Premium</div>
                     <div class="text-600">Plan description</div>
-                    <hr class="my-3 mx-0 border-top-1 border-bottom-0 border-300" />
+                    <hr class="my-3 mx-0 border-top-1 border-bottom-none border-300" />
                     <div class="flex align-items-center">
                         <span class="font-bold text-2xl text-900">$29</span>
                         <span class="ml-2 font-medium text-600">per month</span>
                     </div>
-                    <hr class="my-3 mx-0 border-top-1 border-bottom-0 border-300" />
+                    <hr class="my-3 mx-0 border-top-1 border-bottom-none border-300" />
                     <ul class="list-none p-0 m-0 flex-grow-1">
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
@@ -71,7 +71,7 @@ export class PricingComponent {
                             <span>Duis ultricies lacus sed</span>
                         </li>
                     </ul>
-                    <hr class="mb-3 mx-0 border-top-1 border-bottom-0 border-300" />
+                    <hr class="mb-3 mx-0 border-top-1 border-bottom-none border-300" />
                     <button pButton pRipple label="Buy Now" class="p-3 w-full"></button>
                 </div>
             </div>
@@ -82,12 +82,12 @@ export class PricingComponent {
                 <div class="shadow-2 p-3 flex flex-column" style="border-radius: 6px">
                     <div class="text-900 font-medium text-xl mb-2">Enterprise</div>
                     <div class="text-600">Plan description</div>
-                    <hr class="my-3 mx-0 border-top-1 border-bottom-0 border-300" />
+                    <hr class="my-3 mx-0 border-top-1 border-bottom-none border-300" />
                     <div class="flex align-items-center">
                         <span class="font-bold text-2xl text-900">$49</span>
                         <span class="ml-2 font-medium text-600">per month</span>
                     </div>
-                    <hr class="my-3 mx-0 border-top-1 border-bottom-0 border-300" />
+                    <hr class="my-3 mx-0 border-top-1 border-bottom-none border-300" />
                     <ul class="list-none p-0 m-0 flex-grow-1">
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
@@ -114,7 +114,7 @@ export class PricingComponent {
                             <span>Nisi scelerisque</span>
                         </li>
                     </ul>
-                    <hr class="mb-3 mx-0 border-top-1 border-bottom-0 border-300" />
+                    <hr class="mb-3 mx-0 border-top-1 border-bottom-none border-300" />
                     <button pButton pRipple label="Buy Now" class="p-3 w-full p-button-outlined"></button>
                 </div>
             </div>
@@ -159,7 +159,7 @@ export class PricingComponent {
         </div>
 
         <div class="mb-6 md:mb-0 mr-0 md:mr-4 flex flex-column flex-grow-1">
-            <div class="bg-bluegray-800 text-center p-3 border-3 border-green-500 border-bottom-0" style="border-radius: 6px 6px 0 0">
+            <div class="bg-bluegray-800 text-center p-3 border-3 border-green-500 border-bottom-none" style="border-radius: 6px 6px 0 0">
                 <div class="bg-green-500 text-0 font-bold text-sm inline-block p-2 mb-3" style="border-radius: 20px">MOST POPULAR</div>
                 <div class="text-2xl font-bold text-0 mb-3">Premium</div>
                 <div class="flex align-items-center justify-content-center">
@@ -167,7 +167,7 @@ export class PricingComponent {
                     <span class="text-2xl text-bluegray-400"> / month</span>
                 </div>
             </div>
-            <div class="bg-bluegray-900 p-4 flex flex-column flex-grow-1 border-3 border-green-500 border-top-0" style="box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.1); border-radius: 0 0 6px 6px">
+            <div class="bg-bluegray-900 p-4 flex flex-column flex-grow-1 border-3 border-green-500 border-top-none" style="box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.1); border-radius: 0 0 6px 6px">
                 <div class="text-bluegray-400 font-bold line-height-3 mb-4">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                 <ul class="list-none p-0 m-0 mb-5 text-bluegray-100">
                     <li class="flex align-items-center mb-3">
