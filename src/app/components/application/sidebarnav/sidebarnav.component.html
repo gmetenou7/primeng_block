@@ -226,9 +226,31 @@
             </ul>
         </div>
         <div class="p-2 mt-auto border-top-1 border-300">
-            <a class="p-3 flex align-items-center cursor-pointer text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100 transition-colors transition-duration-150">
+            <ul class="list-none p-2 m-0 hidden">
+                <li>
+                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100 transition-colors transition-duration-150">
+                        <i class="pi pi-user mr-2"></i>
+                        <span class="font-medium">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100 transition-colors transition-duration-150">
+                        <i class="pi pi-cog mr-2"></i>
+                        <span class="font-medium">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100 transition-colors transition-duration-150">
+                        <i class="pi pi-sign-out mr-2"></i>
+                        <span class="font-medium">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+            <a class="p-3 flex align-items-center cursor-pointer text-700 hover:bg-blue-50 hover:text-blue-500 border-round border-1 border-transparent hover:border-blue-100 transition-colors transition-duration-150"
+                pStyleClass="@prev" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="false">
                 <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-2" style="width: 28px; height: 28px"/>
                 <span class="font-medium">Amy Elsner</span>
+                <i class="pi pi-chevron-up ml-auto"></i>
             </a>
         </div>
     </div>
