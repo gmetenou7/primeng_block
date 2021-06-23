@@ -23,7 +23,8 @@
         justify-content: space-between;
 
         a {
-            display: block;
+            display: flex;
+            align-items: center;
             margin-right: .75rem;
             padding: .5rem 1rem;
             border-radius: 4px;
@@ -35,7 +36,7 @@
                 margin-right: 0;
             }
 
-            &:hover {
+            &:not(.block-action-disabled):hover {
                 background-color: var(--surface-c);
             }
 
@@ -49,6 +50,15 @@
                     color: var(--primary-color);
                     font-size: 1.25rem;
                 }
+            }
+
+            &.block-action-disabled {
+                opacity: .6;
+                cursor: auto !important;
+            }
+
+            i {
+                margin-right: .5rem;
             }
         }
     }
