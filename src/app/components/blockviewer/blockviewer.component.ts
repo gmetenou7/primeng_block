@@ -18,7 +18,7 @@ enum BlockView {
                         <i class="pi pi-lock" *ngIf="codeDisabled"></i>
                         <span>Code</span>
                     </a>
-                    <a tabindex="0" class="block-action-copy" [ngClass]="{'block-action-disabled': codeDisabled}" (click)="copyCode($event)"><i class="pi pi-copy"></i></a>
+                    <a tabindex="0" class="block-action-copy" [ngClass]="{'block-action-disabled': codeDisabled}" (click)="copyCode($event)" pTooltip="Copied to clipboard" tooltipEvent="focus" tooltipPosition="bottom"><i class="pi pi-copy"></i></a>
                 </div>
             </div>
             <div class="block-content">
