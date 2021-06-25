@@ -11,12 +11,6 @@
             <ul class="topbar-menu">
                 <li><a [routerLink]="['/setup']" class="router-link" to="/setup" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact:true}">SETUP</a></li>
             </ul>
-            <div class="config-btn-container">
-                <a tabindex="0" class="config-btn" (click)="visibleSidebar = true">
-                    <i class="pi pi-palette"></i>
-                    <span>CHANGE THEME</span>
-                </a>
-            </div>
         </div>
     </div>
     <div class="layout-breadcrumb">
@@ -35,6 +29,10 @@
     <div class="layout-content">
         <router-outlet></router-outlet>
     </div>
+
+    <a tabindex="0" class="layout-config-button" (click)="visibleSidebar = true">
+        <i class="pi pi-cog"></i>
+    </a>
 
     <p-sidebar [(visible)]="visibleSidebar" position="right" class="layout-config" styleClass="p-sidebar-md">
         <div class="config-title" style="margin-top:0">Component Scale</div>
@@ -61,25 +59,25 @@
 
         <div class="config-title">Bootstrap</div>
         <div class="grid themes-grid">
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'bootstrap4-light-blue')">
                     <img src="assets/images/themes/bootstrap4-light-blue.svg" alt="Bootstrap Light Blue" />
                 </button>
                 <span>Blue</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'bootstrap4-light-purple')">
                     <img src="assets/images/themes/bootstrap4-light-purple.svg" alt="Bootstrap Light Purple" />
                 </button>
                 <span>Purple</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'bootstrap4-dark-blue')">
                     <img src="assets/images/themes/bootstrap4-dark-blue.svg" alt="Bootstrap Dark Blue" />
                 </button>
                 <span>Blue</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'bootstrap4-dark-purple')">
                     <img src="assets/images/themes/bootstrap4-dark-purple.svg" alt="Bootstrap Dark Purple" />
                 </button>
@@ -89,25 +87,25 @@
 
         <div class="config-title">Material Design</div>
         <div class="grid themes-grid">
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'md-light-indigo')">
                     <img src="assets/images/themes/md-light-indigo.svg" alt="Material Light Indigo" />
                 </button>
                 <span>Indigo</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'md-light-deeppurple')">
                     <img src="assets/images/themes/md-light-deeppurple.svg" alt="Material Light Deep Purple" />
                 </button>
                 <span>Deep Purple</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'md-dark-indigo')">
                     <img src="assets/images/themes/md-dark-indigo.svg" alt="Material Dark Indigo" />
                 </button>
                 <span>Indigo</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'md-dark-deeppurple')">
                     <img src="assets/images/themes/md-dark-deeppurple.svg" alt="Material Dark Deep Purple" />
                 </button>
@@ -117,25 +115,25 @@
 
         <div class="config-title">Material Design Compact</div>
         <div class="grid themes-grid">
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'mdc-light-indigo')">
                     <img src="assets/images/themes/md-light-indigo.svg" alt="Material Compact Light Indigo"/>
                 </button>
                 <span>Indigo</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'mdc-light-deeppurple')">
                     <img src="assets/images/themes/md-light-deeppurple.svg" alt="Material Compact Deep Purple" />
                 </button>
                 <span>Deep Purple</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'mdc-dark-indigo')">
                     <img src="assets/images/themes/md-dark-indigo.svg" alt="Material Compact Dark Indigo" />
                 </button>
                 <span>Indigo</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'mdc-dark-deeppurple')">
                     <img src="assets/images/themes/md-dark-deeppurple.svg" alt="Material Compact Dark Deep Purple" />
                 </button>
@@ -145,7 +143,7 @@
 
         <div class="config-title">Fluent UI</div>
         <div class="grid themes-grid">
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'fluent-light')">
                     <img src="assets/images/themes/fluent-light.png" alt="Fluent Light"/>
                 </button>
@@ -155,73 +153,73 @@
 
         <div class="config-title">PrimeOne Design</div>
         <div class="grid themes-grid">
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'saga-blue')">
                     <img src="assets/images/themes/saga-blue.png" alt="Saga Blue" />
                 </button>
                 <span>Saga Blue</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'saga-green')">
                     <img src="assets/images/themes/saga-green.png" alt="Saga Green" />
                 </button>
                 <span>Saga Green</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'saga-orange')">
                     <img src="assets/images/themes/saga-orange.png" alt="Saga Orange" />
                 </button>
                 <span>Saga Orange</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'saga-purple')">
                     <img src="assets/images/themes/saga-purple.png" alt="Saga Purple" />
                 </button>
                 <span>Saga Purple</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'vela-blue')">
                     <img src="assets/images/themes/vela-blue.png" alt="Vela Blue" />
                 </button>
                 <span>Vela Blue</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'vela-green')">
                     <img src="assets/images/themes/vela-green.png" alt="Vela Green" />
                 </button>
                 <span>Vela Green</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'vela-orange')">
                     <img src="assets/images/themes/vela-orange.png" alt="Vela Orange" />
                 </button>
                 <span>Vela Orange</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'vela-purple')">
                     <img src="assets/images/themes/vela-purple.png" alt="Vela Purple" />
                 </button>
                 <span>Vela Purple</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'arya-blue')">
                     <img src="assets/images/themes/arya-blue.png" alt="Arya Blue" />
                 </button>
                 <span>Arya Blue</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'arya-green')">
                     <img src="assets/images/themes/arya-green.png" alt="Arya Green" />
                 </button>
                 <span>Arya Green</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'arya-orange')">
                     <img src="assets/images/themes/arya-orange.png" alt="Arya Orange" />
                 </button>
                 <span>Arya Orange</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'arya-purple')">
                     <img src="assets/images/themes/arya-purple.png" alt="Arya Purple" />
                 </button>
@@ -232,37 +230,37 @@
         <div class="config-title">Premium Themes</div>
 
         <div class="grid themes-grid">
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'soho-light')">
                     <img src="assets/images/themes/soho-light.png" alt="Soho Light"/>
                 </button>
                 <span>Soho Light</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'soho-dark')">
                 <img src="assets/images/themes/soho-dark.png" alt="Soho Dark"/>
                 </button>
                 <span>Soho Dark</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'viva-light')">
                     <img src="assets/images/themes/viva-light.svg" alt="Viva Light"/>
                 </button>
                 <span>Viva Light</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'viva-dark')">
                 <img src="assets/images/themes/viva-dark.svg" alt="Viva Dark"/>
                 </button>
                 <span>Viva Dark</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'mira')">
                     <img src="assets/images/themes/mira.jpg" alt="Mira"/>
                 </button>
                 <span>Mira</span>
             </div>
-            <div class="col-3">
+            <div class="col-6 sm:col-3">
                 <button class="p-link" (click)="changeTheme($event, 'nano')">
                     <img src="assets/images/themes/nano.jpg" alt="Nano"/>
                 </button>
