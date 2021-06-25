@@ -13,4 +13,6 @@ export class ActionPanelComponent {
 
     block4 = ``;
 
+    block5 = ``;
+
 }
