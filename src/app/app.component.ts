@@ -16,6 +16,8 @@ export class AppComponent implements OnInit {
 
     visibleSidebar: boolean;
 
+    visibleTopbarMenu: boolean;
+
     theme: string = 'saga-blue';
 
     scale: number = 14;
@@ -62,5 +64,10 @@ export class AppComponent implements OnInit {
 
     applyScale() {
         document.documentElement.style.fontSize = this.scale + 'px';
+    }
+    
+    showTopbarMenu(event: Event) {
+        this.visibleTopbarMenu = true;
+        event.preventDefault();
     }
 }

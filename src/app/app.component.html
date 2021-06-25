@@ -3,13 +3,18 @@
         <div class="topbar-logo">
             <a [routerLink]="['/']">
                 <img src="assets/images/logo-primeblocks.svg" class="logo" alt="PrimeBlocks Logo">
-                <img src="assets/images/icon-primeblocks.svg" class="icon" alt="PrimeBlocks Logo">
+                <img src="assets/images/icon-primeblocks.svg" class="icon" alt="PrimeBlocks">
             </a>
         </div>
 
         <div class="topbar-actions">
+            <a class="topbar-menu-button" (click)="showTopbarMenu($event)">
+                <i class="pi pi-bars"></i>
+            </a>
             <ul class="topbar-menu">
-                <li><a [routerLink]="['/setup']" class="router-link" to="/setup" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact:true}">SETUP</a></li>
+                <li><a [routerLink]="['/']" class="router-link" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact:true}">BLOCKS</a></li>
+                <li><a [routerLink]="['/documentation']" class="router-link" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact:true}">DOCUMENTATION</a></li>
+                <li><a [routerLink]="['/pricing']" class="router-link" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact:true}">PRICING</a></li>
             </ul>
         </div>
     </div>
@@ -33,6 +38,14 @@
     <a tabindex="0" class="layout-config-button" (click)="visibleSidebar = true">
         <i class="pi pi-cog"></i>
     </a>
+
+    <p-sidebar [(visible)]="visibleTopbarMenu" position="right">
+        <ul class="topbar-mobile-menu">
+            <li><a [routerLink]="['/']" class="router-link" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact:true}">BLOCKS</a></li>
+            <li><a [routerLink]="['/documentation']" class="router-link" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact:true}">DOCUMENTATION</a></li>
+            <li><a [routerLink]="['/pricing']" class="router-link" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{exact:true}">PRICING</a></li>
+        </ul>
+    </p-sidebar>
 
     <p-sidebar [(visible)]="visibleSidebar" position="right" class="layout-config" styleClass="p-sidebar-md">
         <div class="config-title" style="margin-top:0">Component Scale</div>
