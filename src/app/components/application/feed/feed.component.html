@@ -88,8 +88,8 @@
     </div>
 </block-viewer>
 
-<block-viewer header="Single Card" [code]="block2" previewClass="px-4 py-8 md:px-6 lg:px-8 flex justify-content-center">
-    <div class="surface-0 shadow-2 border-round p-4 max-w-max">
+<block-viewer header="Single Card" [code]="block2" previewClass="px-4 py-8 md:px-6 lg:px-8 flex justify-content-center align-items-center">
+    <div class="surface-0 shadow-2 border-round p-4">
         <div class="flex align-items-center justify-content-between mb-4">
             <div class="text-900 font-medium text-xl">Notifications</div>
             <div>
@@ -146,7 +146,7 @@
     </div>
 </block-viewer>
 
-<block-viewer header="Avatars and Timestamps" [code]="block3" previewClass="px-4 py-8 md:px-6 lg:px-8">
+<block-viewer header="Avatars and Timestamps" [code]="block3" previewClass="px-4 py-8 md:px-6 lg:px-8 flex justify-content-center align-items-center">
     <div class="surface-0 shadow-2 border-round p-4">
         <div class="flex align-items-center justify-content-between mb-3">
             <div class="text-900 font-medium text-xl">Team Activity</div>
@@ -156,9 +156,9 @@
             </div>
         </div>
         <ul class="list-none p-0 m-0">
-            <li class="py-3 border-bottom-1 border-300 flex align-items-start justify-content-between">
-                <div class="flex align-items-start">
-                    <img src="assets/images/blocks/avatars/circle-big/avatar-f-1.png" class="mr-3" width="42" />
+            <li class="py-3 border-bottom-1 border-300 flex md:align-items-start md:justify-content-between flex-column md:flex-row">
+                <div class="flex align-items-start mr-0 lg:mr-5">
+                    <img src="assets/images/blocks/avatars/circle-big/avatar-f-1.png" class="mr-3 w-3rem h-3rem"/>
                     <div>
                         <span class="text-900 font-medium block mb-2">Jane Cooper</span>
                         <div class="text-700 mb-2">responded to an issue.</div>
@@ -168,21 +168,21 @@
                         </a>
                     </div>
                 </div>
-                <span class="text-500 font-medium">14 mins ago</span>
+                <span class="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">14 mins ago</span>
             </li>
-            <li class="py-3 border-bottom-1 border-300 flex align-items-start justify-content-between">
-                <div class="flex align-items-start">
-                    <img src="assets/images/blocks/avatars/circle-big/avatar-m-1.png" class="mr-3" width="42" />
+            <li class="py-3 border-bottom-1 border-300 flex md:align-items-start md:justify-content-between flex-column md:flex-row">
+                <div class="flex align-items-start mr-0 lg:mr-5">
+                    <img src="assets/images/blocks/avatars/circle-big/avatar-m-1.png" class="mr-3 w-3rem h-3rem"/>
                     <div>
                         <span class="text-900 font-medium block mb-2">Robert Fox</span>
                         <div class="text-700">changed team size from <span class="text-900">5</span> to <span class="text-900">6</span>.</div>
                     </div>
                 </div>
-                <span class="text-500 font-medium">20 mins ago</span>
+                <span class="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">20 mins ago</span>
             </li>
-            <li class="py-3 border-bottom-1 border-300 flex align-items-start justify-content-between">
-                <div class="flex align-items-start">
-                    <img src="assets/images/blocks/avatars/circle-big/avatar-f-2.png" class="mr-3" width="42" />
+            <li class="py-3 border-bottom-1 border-300 flex md:align-items-start md:justify-content-between flex-column md:flex-row">
+                <div class="flex align-items-start mr-0 lg:mr-5">
+                    <img src="assets/images/blocks/avatars/circle-big/avatar-f-2.png" class="mr-3 w-3rem h-3rem"/>
                     <div>
                         <span class="text-900 font-medium block mb-2">Kristin Watson Cooper</span>
                         <div class="text-700 mb-2">created a Q4 presentation to an issue.</div>
@@ -192,27 +192,27 @@
                         </a>
                     </div>
                 </div>
-                <span class="text-500 font-medium">38 mins ago</span>
+                <span class="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">38 mins ago</span>
             </li>
-            <li class="py-3 border-bottom-1 border-300 flex align-items-start justify-content-between">
-                <div class="flex align-items-start">
-                    <img src="assets/images/blocks/avatars/circle-big/avatar-f-3.png" class="mr-3" width="42" />
+            <li class="py-3 border-bottom-1 border-300 flex md:align-items-start md:justify-content-between flex-column md:flex-row">
+                <div class="flex align-items-start mr-0 lg:mr-5">
+                    <img src="assets/images/blocks/avatars/circle-big/avatar-f-3.png" class="mr-3 w-3rem h-3rem"/>
                     <div>
                         <span class="text-900 font-medium block mb-2">Annette Black</span>
                         <div class="text-700">added <span class="text-900">Nico Greenberg</span> to <span class="text-blue-500">Watchlist Tier-1</span>.</div>
                     </div>
                 </div>
-                <span class="text-500 font-medium">1 day ago</span>
+                <span class="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">1 day ago</span>
             </li>
-            <li class="py-3 flex align-items-start justify-content-between">
-                <div class="flex align-items-start">
-                    <img src="assets/images/blocks/avatars/circle-big/avatar-m-2.png" class="mr-3" width="42" />
+            <li class="py-3 border-bottom-1 border-300 flex md:align-items-start md:justify-content-between flex-column md:flex-row">
+                <div class="flex align-items-start mr-0 lg:mr-5">
+                    <img src="assets/images/blocks/avatars/circle-big/avatar-m-2.png" class="mr-3 w-3rem h-3rem"/>
                     <div>
                         <span class="text-900 font-medium block mb-2">Floyd Miles</span>
                         <div class="text-700">has refunded a blue t-shirt for <span class="text-blue-500">79$</span>.</div>
                     </div>
                 </div>
-                <span class="text-500 font-medium">4 days ago</span>
+                <span class="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">4 days ago</span>
             </li>
         </ul>
     </div>
