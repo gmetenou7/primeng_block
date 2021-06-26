@@ -35,7 +35,8 @@ import { ApplicationComponent } from './application.component';
             {path: 'stackedlayout', loadChildren: () => import('./stackedlayout/stackedlayout.module').then(m => m.StackedLayoutModule), data: {name: 'Stacked Layout'}},
             {path: 'sidebarlayout', loadChildren: () => import('./sidebarlayout/sidebarlayout.module').then(m => m.SidebarLayoutModule), data: {name: 'Sidebar Layout'}},
             {path: 'multicolumnlayout', loadChildren: () => import('./multicolumnlayout/multicolumnlayout.module').then(m => m.MultiColumnLayoutModule), data: {name: 'Multi Column Layout'}},
-            {path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboadModule), data: {name: 'Dashboard'}}
+            {path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboadModule), data: {name: 'Dashboard'}},
+            {path: 'detailscreen', loadChildren: () => import('./detailscreen/detailscreen.module').then(m => m.DetailScreenModule), data: {name: 'Detail Screen'}}
         ])
     ],
     exports: [
