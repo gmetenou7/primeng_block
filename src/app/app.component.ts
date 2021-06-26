@@ -27,6 +27,8 @@ export class AppComponent implements OnInit {
     inputStyle: string = 'outlined';
 
     ripple: boolean = false;
+    
+    dark: boolean = false;
 
     ngOnInit() {
         this.primengConfig.ripple = true;
@@ -45,10 +47,11 @@ export class AppComponent implements OnInit {
             .subscribe(() => this.menuitems = [{label:'', routerLink:''}]);
     }
 
-    changeTheme(event: Event, theme: string) {
+    changeTheme(event: Event, theme: string, dark: boolean) {
         let themeElement = document.getElementById('theme-link');
         themeElement.setAttribute('href', themeElement.getAttribute('href').replace(this.theme, theme));
         this.theme = theme;
+        this.dark = dark;
         event.preventDefault();
     }
 

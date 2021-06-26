@@ -17,7 +17,7 @@
         .introduction-title {
             font-size: 3rem;
             font-weight: 700;
-            color: #212121;
+            color: var(--text-color);
             line-height: 1;
             margin-bottom: .5rem;
         }
@@ -36,7 +36,7 @@
             margin: 0 auto 1.5rem auto;
             line-height: 1.5;
             text-align: center;
-            color: #616161;
+            color: var(--text-secondary-color);
         }
 
         button {
@@ -46,6 +46,16 @@
             &.p-button-outlined {
                 margin-left: 1.5rem;
             }
+        }
+    }
+}
+
+.layout-wrapper-dark {
+    .introduction {
+        background-image: url('../../images/bg-hero-dark.png');
+
+        .introduction-content {
+            background-color: rgba(0,0,0,.75);
         }
     }
 }
