@@ -2,15 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
 @Component({
-    templateUrl: './stackedlist.component.html'
+    templateUrl: './dashboard.component.html'
 })
-export class StackedListComponent implements OnInit {
+export class DashboardComponent implements OnInit {
 
     block1 = ``;
 
     block2 = ``;
-
-    block3 = ``;
 
     items: MenuItem[];
 

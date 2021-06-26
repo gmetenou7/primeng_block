@@ -34,7 +34,8 @@ import { ApplicationComponent } from './application.component';
             {path: 'divider', loadChildren: () => import('./divider/divider.module').then(m => m.DividerModule), data: {name: 'Divider'}},
             {path: 'stackedlayout', loadChildren: () => import('./stackedlayout/stackedlayout.module').then(m => m.StackedLayoutModule), data: {name: 'Stacked Layout'}},
             {path: 'sidebarlayout', loadChildren: () => import('./sidebarlayout/sidebarlayout.module').then(m => m.SidebarLayoutModule), data: {name: 'Sidebar Layout'}},
-            {path: 'multicolumnlayout', loadChildren: () => import('./multicolumnlayout/multicolumnlayout.module').then(m => m.MultiColumnLayoutModule), data: {name: 'Multi Column Layout'}}
+            {path: 'multicolumnlayout', loadChildren: () => import('./multicolumnlayout/multicolumnlayout.module').then(m => m.MultiColumnLayoutModule), data: {name: 'Multi Column Layout'}},
+            {path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboadModule), data: {name: 'Dashboard'}}
         ])
     ],
     exports: [
