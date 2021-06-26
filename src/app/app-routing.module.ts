@@ -7,7 +7,8 @@ const routes: Routes = [
     {path: 'documentation', loadChildren: () => import('./components/documentation/documentation.module').then(m => m.DocumentationModule), data: {name: 'Documentation'}},
     {path: 'pricing', loadChildren: () => import('./components/pricing/pricing.module').then(m => m.PricingModule), data: {name: 'Pricing'}},
     {path: 'marketing', loadChildren: () => import('./components/marketing/marketing.module').then(m => m.MarketingModule), data: {name: 'Marketing'}},
-    {path: 'application', loadChildren: () => import('./components/application/application.module').then(m => m.ApplicationModule), data: {name: 'Application'}}
+    {path: 'application', loadChildren: () => import('./components/application/application.module').then(m => m.ApplicationModule), data: {name: 'Application'}},
+    {path: 'free', loadChildren: () => import('./components/free/free.module').then(m => m.FreeModule), data: {name: 'Free'}}
 ];
 
 @NgModule({
