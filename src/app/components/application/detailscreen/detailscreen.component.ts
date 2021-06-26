@@ -14,7 +14,7 @@ export class DetailScreenComponent implements OnInit {
         this.items = [
             {label: 'Overview', icon: 'pi pi-home'},
             {label: 'Members', icon: 'pi pi-users'},
-            {label: 'Sales', icon: 'pi pi-shopping-cart'},
+            {label: 'Jobs', icon: 'pi pi-search'},
             {label: 'Profile', icon: 'pi pi-user'},
             {label: 'Settings', icon: 'pi pi-cog'}
         ];
