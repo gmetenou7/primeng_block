@@ -9,4 +9,6 @@ export class VerticalNavComponent {
 
     block2 = ``;
 
+    block3 = ``;
+
 }
