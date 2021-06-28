@@ -25,6 +25,7 @@ import { ApplicationComponent } from './application.component';
             {path: 'breadcrumb', loadChildren: () => import('./breadcrumb/breadcrumb.module').then(m => m.BreadcrumbModule), data: {name: 'Breadcrumb'}},
             {path: 'steps', loadChildren: () => import('./steps/steps.module').then(m => m.StepsModule), data: {name: 'Steps'}},
             {path: 'sidebarnav', loadChildren: () => import('./sidebarnav/sidebarnav.module').then(m => m.SidebarNavModule), data: {name: 'Sidebar Nav'}},
+            {path: 'footer', loadChildren: () => import('./footer/footer.module').then(m => m.FooterModule), data: {name: 'Footer'}},
             {path: 'dialog', loadChildren: () => import('./dialog/dialog.module').then(m => m.DialogModule), data: {name: 'Dialog'}},
             {path: 'slideover', loadChildren: () => import('./slideover/slideover.module').then(m => m.SlideOverModule), data: {name: 'SlideOver'}},
             {path: 'notification', loadChildren: () => import('./notification/notification.module').then(m => m.NotificationModule), data: {name: 'Notification'}},
