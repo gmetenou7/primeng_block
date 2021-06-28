@@ -1,6 +1,6 @@
 <block-viewer header="Sidebar" [code]="block1">
     <div class="min-h-screen flex relative lg:static">
-        <div id="app-sidebar-2" class="surface-0 h-100 hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-300 select-none" style="width:280px">
+        <div id="app-sidebar" class="surface-0 h-100 hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-300 select-none" style="width:280px">
             <div class="flex flex-column h-full">
                 <div class="flex align-items-center px-5 flex-shrink-0" style="height:60px">
                     <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="30">
@@ -24,7 +24,7 @@
                         </li>
                         <li>
                             <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors"
-                                pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup" [hideOnOutsideClick]="false">
+                                pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                                 <i class="pi pi-chart-line mr-2"></i>
                                 <span class="font-medium">Reports</span>
                                 <i class="pi pi-chevron-down ml-auto mr-1"></i>
@@ -32,7 +32,7 @@
                             <ul class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
                                 <li>
                                     <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors"
-                                        pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup" [hideOnOutsideClick]="false">
+                                        pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                                         <i class="pi pi-chart-line mr-2"></i>
                                         <span class="font-medium">Revenue</span>
                                         <i class="pi pi-chevron-down ml-auto mr-1"></i>
@@ -122,7 +122,7 @@
         <div class="min-h-screen flex flex-column relative flex-auto">
             <div class="flex justify-content-between align-items-center px-5 surface-0 border-bottom-1 border-300 relative lg:static" style="height:60px">
                 <div class="flex">
-                    <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-2" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft">
+                    <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                         <i class="pi pi-bars text-4xl"></i>
                     </a>
                     <span class="p-input-icon-left">
@@ -130,7 +130,7 @@
                         <input type="search" pInputText class="border-none" placeholder="Search">
                     </span>
                 </div>
-                <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout">
+                <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                     <i class="pi pi-ellipsis-v text-2xl"></i>
                 </a>
                 <ul class="list-none p-0 m-0  hidden lg:flex lg:align-items-center select-none lg:flex-row 
@@ -466,7 +466,7 @@
     <div class="min-h-screen flex flex-column">
         <div class="bg-indigo-500 py-3 px-5 flex align-items-center justify-content-between relative lg:static" style="min-height: 80px">
             <img src="assets/images/blocks/logos/hyper-300.svg" alt="Image" height="40" class="mr-0 lg:mr-6">
-            <a class="cursor-pointer block lg:hidden text-indigo-50" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden">
+            <a class="cursor-pointer block lg:hidden text-indigo-50" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
                 <i class="pi pi-bars text-4xl"></i>
             </a>
             <div class="align-items-center flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full bg-indigo-500 left-0 top-100 z-1 shadow-2 lg:shadow-none">

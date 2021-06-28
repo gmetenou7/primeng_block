@@ -2,7 +2,7 @@
 <block-viewer header="White Background" [code]="block1" previewClass="pb-8">
     <div class="surface-0 py-3 px-6 shadow-2 flex align-items-center justify-content-between relative lg:static border-bottom-1 border-50" style="min-height: 80px">
         <img src="assets/images/blocks/logos/bastion-700.svg" alt="Image" height="40" class="mr-0 lg:mr-6">
-        <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden">
+        <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
             <i class="pi pi-bars text-4xl"></i>
         </a>
         <div class="align-items-center flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full surface-0 left-0 top-100 z-1 shadow-2 lg:shadow-none">
@@ -15,7 +15,7 @@
                 </li>
                 <li class="lg:relative">
                     <a class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-900 hover:surface-100 font-medium border-round cursor-pointer transition-colors transition-duration-150"
-                        pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout">
+                        pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                         <i class="pi pi-users mr-2"></i>
                         <span>Customers</span>
                         <i class="pi pi-angle-down ml-auto lg:ml-3"></i>
@@ -28,7 +28,8 @@
                             </a>
                         </li>
                         <li class="relative">
-                            <a class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 transition-colors transition-duration-150" pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout">
+                            <a class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 transition-colors transition-duration-150" 
+                                pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                                 <i class="pi pi-search mr-2"></i>
                                 <span class="font-medium">Search</span>
                                 <i class="pi pi-angle-down ml-auto lg:-rotate-90"></i>
@@ -93,7 +94,7 @@
 <block-viewer header="Dark Background" [code]="block2" previewClass="pb-8">
     <div class="bg-gray-900 py-3 px-6 shadow-2 flex align-items-center justify-content-between relative lg:static border-bottom-1 border-gray-800" style="min-height: 84px">
         <img src="assets/images/blocks/logos/bastion-300.svg" alt="Image" height="40" class="mr-0 lg:mr-6">
-        <a class="cursor-pointer block lg:hidden text-gray-400" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden">
+        <a class="cursor-pointer block lg:hidden text-gray-400" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
             <i class="pi pi-bars text-4xl"></i>
         </a>
         <div class="align-items-center flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full bg-gray-900 left-0 top-100 z-1 shadow-2 lg:shadow-none">
@@ -106,7 +107,7 @@
                 </li>
                 <li>
                     <a class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium border-round cursor-pointer transition-colors transition-duration-150"
-                        pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout">
+                        pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                         <i class="pi pi-users mr-2"></i>
                         <span>Customers</span>
                         <i class="pi pi-angle-down ml-auto lg:ml-3"></i>
@@ -119,7 +120,8 @@
                             </a>
                         </li>
                         <li class="relative">
-                            <a class="flex p-3 align-items-center text-300 hover:bg-gray-800 hover:text-50 transition-colors transition-duration-150" pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout">
+                            <a class="flex p-3 align-items-center text-300 hover:bg-gray-800 hover:text-50 transition-colors transition-duration-150" 
+                                pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                                 <i class="pi pi-search mr-2"></i>
                                 <span class="font-medium">Search</span>
                                 <i class="pi pi-angle-down ml-auto lg:-rotate-90"></i>
@@ -180,7 +182,7 @@
 <block-viewer header="Colored Background" [code]="block2" previewClass="pb-8">
     <div class="bg-indigo-500 py-3 px-6 shadow-2 flex align-items-center justify-content-between relative lg:static" style="min-height: 84px">
         <img src="assets/images/blocks/logos/bastion-300.svg" alt="Image" height="40" class="mr-0 lg:mr-6">
-        <a class="cursor-pointer block lg:hidden text-400" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden">
+        <a class="cursor-pointer block lg:hidden text-400" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
             <i class="pi pi-bars text-4xl"></i>
         </a>
         <div class="align-items-center flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full bg-indigo-500 left-0 top-100 z-1 shadow-2 lg:shadow-none">
@@ -193,7 +195,7 @@
                 </li>
                 <li>
                     <a class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 font-medium border-round cursor-pointer transition-colors transition-duration-150"
-                        pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout">
+                        pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                         <i class="pi pi-users mr-2"></i>
                         <span>Customers</span>
                         <i class="pi pi-angle-down ml-auto lg:ml-3"></i>
@@ -206,7 +208,8 @@
                             </a>
                         </li>
                         <li class="relative">
-                            <a class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 transition-colors transition-duration-150" pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout">
+                            <a class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 transition-colors transition-duration-150" 
+                                pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                                 <i class="pi pi-search mr-2"></i>
                                 <span class="font-medium">Search</span>
                                 <i class="pi pi-angle-down ml-auto lg:-rotate-90"></i>
@@ -267,7 +270,7 @@
 <block-viewer header="Hover Borders" [code]="block3" previewClass="pb-8">
     <div class="surface-0 px-6 shadow-2 flex justify-content-between relative lg:static border-bottom-1 border-50" style="min-height: 84px">
         <img src="assets/images/blocks/logos/bastion-700.svg" alt="Image" height="40" class="mr-0 lg:mr-6 align-self-center">
-        <a class="cursor-pointer block lg:hidden align-self-center text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden">
+        <a class="cursor-pointer block lg:hidden align-self-center text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
             <i class="pi pi-bars text-4xl"></i>
         </a>
         <div class="flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full surface-0 left-0 top-100 z-1 shadow-2 lg:shadow-none">

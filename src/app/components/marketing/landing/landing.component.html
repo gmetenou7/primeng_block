@@ -14,7 +14,7 @@
     </div>
     <div class="surface-0 py-3 px-6 shadow-2 border-bottom-1 border-50 flex align-items-center justify-content-between relative lg:static">
         <img src="assets/images/blocks/logos/hyper.svg" alt="Image" height="50">
-        <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden">
+        <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
             <i class="pi pi-bars text-4xl"></i>
         </a>
         <div class="align-items-center flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full surface-0 left-0 top-100 px-6 lg:px-0 z-2 shadow-2 lg:shadow-none">
@@ -22,7 +22,7 @@
             <ul class="list-none p-0 m-0 flex lg:align-items-center text-900 select-none flex-column lg:flex-row cursor-pointer">
                 <li class="relative">
                     <a class="flex px-0 lg:px-5 py-3 align-items-center hover:text-blue-600 font-medium transition-colors transition-duration-150" 
-                        pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout">
+                        pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                         <span>Products</span>
                         <i class="pi pi-chevron-down ml-auto lg:ml-3"></i>
                     </a>
@@ -47,7 +47,7 @@
                         </li>
                         <li class="relative">
                             <a class="flex p-3 align-items-center hover:surface-50 transition-colors transition-duration-150"
-                                pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout">
+                                pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                                 <i class="pi pi-question-circle text-2xl mr-2 text-blue-600"></i>
                                 <span>Support</span>
                                 <i class="pi pi-chevron-down ml-auto lg:-rotate-90"></i>

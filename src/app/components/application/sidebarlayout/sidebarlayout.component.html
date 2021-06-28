@@ -25,7 +25,7 @@
                         <li>
                             <a class="flex align-items-center cursor-pointer p-3 hover:bg-bluegray-900 border-round text-bluegray-100 hover:text-bluegray-50
                                 transition-duration-150 transition-colors"
-                                pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup" [hideOnOutsideClick]="false">
+                                pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                                 <i class="pi pi-chart-line mr-2"></i>
                                 <span class="font-medium">Reports</span>
                                 <i class="pi pi-chevron-down ml-auto mr-1"></i>
@@ -34,7 +34,7 @@
                                 <li>
                                     <a class="flex align-items-center cursor-pointer p-3 hover:bg-bluegray-900 border-round text-bluegray-100 hover:text-bluegray-50
                                     transition-duration-150 transition-colors"
-                                        pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup" [hideOnOutsideClick]="false">
+                                        pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                                         <i class="pi pi-chart-line mr-2"></i>
                                         <span class="font-medium">Revenue</span>
                                         <i class="pi pi-chevron-down ml-auto mr-1"></i>
@@ -123,7 +123,7 @@
                     </ul>
                     <a class="m-3 px-3 py-2 flex align-items-center hover:bg-bluegray-900 border-round cursor-pointer text-bluegray-100 hover:text-bluegray-50
                         transition-duration-150 transition-colors"
-                        pStyleClass="@prev" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="false">
+                        pStyleClass="@prev" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout">
                         <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-2" style="width: 28px; height: 28px"/>
                         <span class="font-medium">Amy Elsner</span>
                         <i class="pi pi-chevron-up ml-auto"></i>
@@ -134,7 +134,7 @@
         <div class="min-h-screen flex flex-column relative flex-auto">
             <div class="flex justify-content-between align-items-center px-5 surface-0 shadow-2 relative lg:static" style="height:60px">
                 <div class="flex">
-                    <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-1" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft">
+                    <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-1" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                         <i class="pi pi-bars text-4xl"></i>
                     </a>
                     <span class="p-input-icon-left">
@@ -142,7 +142,7 @@
                         <input type="search" pInputText class="border-none" placeholder="Search">
                     </span>
                 </div>
-                <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout">
+                <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                     <i class="pi pi-ellipsis-v text-2xl"></i>
                 </a>
                 <ul class="list-none p-0 m-0  hidden lg:flex lg:align-items-center select-none lg:flex-row 
@@ -208,7 +208,7 @@
                         </li>
                         <li>
                             <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors"
-                                pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup" [hideOnOutsideClick]="false">
+                                pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                                 <i class="pi pi-chart-line mr-2"></i>
                                 <span class="font-medium">Reports</span>
                                 <i class="pi pi-chevron-down ml-auto mr-1"></i>
@@ -216,7 +216,7 @@
                             <ul class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
                                 <li>
                                     <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors"
-                                        pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup" [hideOnOutsideClick]="false">
+                                        pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                                         <i class="pi pi-chart-line mr-2"></i>
                                         <span class="font-medium">Revenue</span>
                                         <i class="pi pi-chevron-down ml-auto mr-1"></i>
@@ -306,7 +306,7 @@
         <div class="min-h-screen flex flex-column relative flex-auto">
             <div class="flex justify-content-between align-items-center px-5 surface-0 border-bottom-1 border-300 relative lg:static" style="height:60px">
                 <div class="flex">
-                    <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-2" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft">
+                    <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-2" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                         <i class="pi pi-bars text-4xl"></i>
                     </a>
                     <span class="p-input-icon-left">
@@ -314,7 +314,7 @@
                         <input type="search" pInputText class="border-none" placeholder="Search">
                     </span>
                 </div>
-                <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout">
+                <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                     <i class="pi pi-ellipsis-v text-2xl"></i>
                 </a>
                 <ul class="list-none p-0 m-0  hidden lg:flex lg:align-items-center select-none lg:flex-row 
@@ -380,7 +380,7 @@
                         </li>
                         <li>
                             <a class="flex align-items-center cursor-pointer p-3 hover:surface-800 border-round text-300 hover:text-0 transition-duration-150 transition-colors"
-                                pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup" [hideOnOutsideClick]="false">
+                                pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                                 <i class="pi pi-chart-line mr-2"></i>
                                 <span class="font-medium">Reports</span>
                                 <i class="pi pi-chevron-down ml-auto mr-1"></i>
@@ -388,7 +388,7 @@
                             <ul class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
                                 <li>
                                     <a class="flex align-items-center cursor-pointer p-3 border-round hover:bg-gray-800 text-gray-300 hover:text-white transition-duration-150 transition-colors"
-                                        pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup" [hideOnOutsideClick]="false">
+                                        pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                                         <i class="pi pi-chart-line mr-2"></i>
                                         <span class="font-medium">Revenue</span>
                                         <i class="pi pi-chevron-down ml-auto mr-1"></i>
@@ -478,7 +478,7 @@
         <div class="min-h-screen flex flex-column relative flex-auto">
             <div class="flex justify-content-between align-items-center px-5 surface-0 border-bottom-1 border-300 relative lg:static" style="height:60px">
                 <div class="flex">
-                    <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-3" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft">
+                    <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-3" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                         <i class="pi pi-bars text-4xl"></i>
                     </a>
                     <span class="p-input-icon-left">
@@ -486,7 +486,7 @@
                         <input type="search" pInputText class="border-none" placeholder="Search">
                     </span>
                 </div>
-                <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout">
+                <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                     <i class="pi pi-ellipsis-v text-2xl"></i>
                 </a>
                 <ul class="list-none p-0 m-0  hidden lg:flex lg:align-items-center select-none lg:flex-row 
@@ -554,7 +554,8 @@
                             </a>
                         </li>
                         <li class="lg:relative">
-                            <a class="flex align-items-center cursor-pointer p-3 lg:justify-content-center hover:bg-gray-800 border-round text-gray-300 hover:text-white transition-duration-150 transition-colors" pStyleClass="@next" toggleClass="hidden">
+                            <a class="flex align-items-center cursor-pointer p-3 lg:justify-content-center hover:bg-gray-800 border-round text-gray-300 hover:text-white transition-duration-150 transition-colors" 
+                                pStyleClass="@next" toggleClass="hidden" [hideOnOutsideClick]="true">
                                 <i class="pi pi-chart-line mr-2 lg:mr-0 text-base lg:text-xl" pBadge="3"></i>
                                 <span class="font-medium inline lg:hidden">Reports</span>
                                 <i class="pi pi-chevron-down ml-auto lg:hidden"></i>
@@ -617,7 +618,7 @@
         <div class="min-h-screen flex flex-column relative flex-auto">
             <div class="flex justify-content-between align-items-center px-5 surface-0 border-bottom-1 border-300 relative lg:static" style="height:60px">
                 <div class="flex">
-                    <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-4" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft">
+                    <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-4" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                         <i class="pi pi-bars text-4xl"></i>
                     </a>
                     <span class="p-input-icon-left">
@@ -625,7 +626,7 @@
                         <input type="search" pInputText class="border-none" placeholder="Search">
                     </span>
                 </div>
-                <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout">
+                <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                     <i class="pi pi-ellipsis-v text-2xl"></i>
                 </a>
                 <ul class="list-none p-0 m-0  hidden lg:flex lg:align-items-center select-none lg:flex-row 
@@ -693,7 +694,8 @@
                             </a>
                         </li>
                         <li class="relative">
-                            <a class="flex flex-row lg:flex-column align-items-center cursor-pointer p-3 lg:justify-content-center hover:bg-gray-800 border-round text-gray-300 hover:text-white transition-duration-150 transition-colors" pStyleClass="@next" toggleClass="hidden">
+                            <a class="flex flex-row lg:flex-column align-items-center cursor-pointer p-3 lg:justify-content-center hover:bg-gray-800 border-round text-gray-300 hover:text-white transition-duration-150 transition-colors" 
+                                pStyleClass="@next" toggleClass="hidden" [hideOnOutsideClick]="true">
                                 <i class="pi pi-chart-line mr-2 lg:mr-0 mb-0 lg:mb-2 text-base lg:text-lg" pBadge="3" severity="danger"></i>
                                 <span class="font-medium inline text-base lg:text-xs lg:block">Reports</span>
                                 <i class="pi pi-chevron-down ml-auto lg:hidden"></i>
@@ -755,7 +757,7 @@
         <div class="min-h-screen flex flex-column relative flex-auto">
             <div class="flex justify-content-between align-items-center px-5 surface-0 border-bottom-1 border-300 relative lg:static" style="height:60px">
                 <div class="flex">
-                    <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-5" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft">
+                    <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-5" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                         <i class="pi pi-bars text-4xl"></i>
                     </a>
                     <span class="p-input-icon-left">
@@ -763,7 +765,7 @@
                         <input type="search" pInputText class="border-none" placeholder="Search">
                     </span>
                 </div>
-                <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout">
+                <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                     <i class="pi pi-ellipsis-v text-2xl"></i>
                 </a>
                 <ul class="list-none p-0 m-0  hidden lg:flex lg:align-items-center select-none lg:flex-row 

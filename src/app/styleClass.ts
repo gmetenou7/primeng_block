@@ -23,7 +23,7 @@ export class StyleClass implements AfterViewInit, OnDestroy {
 
     @Input() leaveToClass: string;
 
-    @Input() hideOnOutsideClick: boolean = true;
+    @Input() hideOnOutsideClick: boolean;
 
     @Input() toggleClass: string;
 
