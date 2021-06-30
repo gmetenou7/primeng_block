@@ -1,25 +1,24 @@
-<svg width="283" height="132" viewBox="0 0 283 132" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="283" height="132" rx="4" fill="#78909C" fill-opacity="0.1"/>
-<rect x="1" y="1" width="281" height="130" rx="3" stroke="#78909C" stroke-opacity="0.5" stroke-width="2"/>
+<svg width="283" height="133" viewBox="0 0 283 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1" y="1.90405" width="281" height="130" rx="3" fill="#ECEFF1" stroke="#BBC7CD" stroke-width="2"/>
 <g filter="url(#filter0_d)">
-<rect x="48" y="24" width="187" height="81" rx="3" fill="white"/>
+<rect x="48" y="24.9041" width="187" height="81" rx="3" fill="white"/>
 </g>
-<rect x="60" y="36" width="33" height="3" rx="1.5" fill="#283738"/>
-<rect x="60" y="45" width="55" height="3" rx="1.5" fill="#B5C2C8"/>
-<rect x="213.5" y="36.5" width="9" height="9" rx="4.5" fill="#B5C2C8" stroke="white"/>
-<rect x="205.5" y="36.5" width="9" height="9" rx="4.5" fill="#B5C2C8" stroke="white"/>
-<rect x="197.5" y="36.5" width="9" height="9" rx="4.5" fill="#B5C2C8" stroke="white"/>
-<rect x="48" y="54" width="187" height="1" fill="#F2F4F5"/>
-<rect x="60" y="61" width="25" height="3" rx="1.5" fill="#283738"/>
-<rect x="60" y="70" width="67" height="3" rx="1.5" fill="#B5C2C8"/>
-<rect x="213.5" y="61.5" width="9" height="9" rx="4.5" fill="#B5C2C8" stroke="white"/>
-<rect x="205.5" y="61.5" width="9" height="9" rx="4.5" fill="#B5C2C8" stroke="white"/>
-<rect x="48" y="79" width="187" height="1" fill="#F2F4F5"/>
-<rect x="60" y="86" width="45" height="3" rx="1.5" fill="#283738"/>
-<rect x="60" y="95" width="49" height="3" rx="1.5" fill="#B5C2C8"/>
-<rect x="213.5" y="86.5" width="9" height="9" rx="4.5" fill="#B5C2C8" stroke="white"/>
+<rect x="60" y="36.9041" width="33" height="3" rx="1.5" fill="#263238"/>
+<rect x="60" y="45.9041" width="55" height="3" rx="1.5" fill="#BBC7CD"/>
+<rect x="213.5" y="37.4041" width="9" height="9" rx="4.5" fill="#BBC7CD" stroke="white"/>
+<rect x="205.5" y="37.4041" width="9" height="9" rx="4.5" fill="#BBC7CD" stroke="white"/>
+<rect x="197.5" y="37.4041" width="9" height="9" rx="4.5" fill="#BBC7CD" stroke="white"/>
+<rect x="48.25" y="55.1541" width="186.5" height="0.5" fill="#D9E0E3" stroke="#F7F9F9" stroke-width="0.5"/>
+<rect x="60" y="61.9041" width="25" height="3" rx="1.5" fill="#263238"/>
+<rect x="60" y="70.9041" width="67" height="3" rx="1.5" fill="#BBC7CD"/>
+<rect x="213.5" y="62.4041" width="9" height="9" rx="4.5" fill="#BBC7CD" stroke="white"/>
+<rect x="205.5" y="62.4041" width="9" height="9" rx="4.5" fill="#BBC7CD" stroke="white"/>
+<rect x="48.25" y="80.1541" width="186.5" height="0.5" fill="#D9E0E3" stroke="#F7F9F9" stroke-width="0.5"/>
+<rect x="60" y="86.9041" width="45" height="3" rx="1.5" fill="#263238"/>
+<rect x="60" y="95.9041" width="49" height="3" rx="1.5" fill="#BBC7CD"/>
+<rect x="213.5" y="87.4041" width="9" height="9" rx="4.5" fill="#BBC7CD" stroke="white"/>
 <defs>
-<filter id="filter0_d" x="46" y="24" width="191" height="85" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d" x="46" y="24.9041" width="191" height="85" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="2"/>
