@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ActivationEnd, ActivationStart, ChildActivationEnd, ChildActivationStart, Data, NavigationEnd, NavigationStart, Router } from '@angular/router';
+import { ChildActivationStart, NavigationStart, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { MenuItem,PrimeNGConfig } from 'primeng/api';
+import { AppConfig } from './app.config';
 
 @Component({
     selector: 'app-root',
@@ -10,7 +11,7 @@ import { MenuItem,PrimeNGConfig } from 'primeng/api';
 })
 export class AppComponent implements OnInit {
     
-    constructor(private router: Router, private primengConfig: PrimeNGConfig) { }
+    constructor(private router: Router, private primengConfig: PrimeNGConfig, public appConfig: AppConfig) { }
 
     menuitems: MenuItem[] = [{label:'', routerLink:''}];
 
@@ -18,17 +19,9 @@ export class AppComponent implements OnInit {
 
     visibleTopbarMenu: boolean;
 
-    theme: string = 'saga-blue';
-
     scale: number = 14;
     
     scales: number[] = [12,13,14,15,16];
-
-    inputStyle: string = 'outlined';
-
-    ripple: boolean = false;
-    
-    dark: boolean = false;
 
     ngOnInit() {
         this.primengConfig.ripple = true;
@@ -49,9 +42,9 @@ export class AppComponent implements OnInit {
 
     changeTheme(event: Event, theme: string, dark: boolean) {
         let themeElement = document.getElementById('theme-link');
-        themeElement.setAttribute('href', themeElement.getAttribute('href').replace(this.theme, theme));
-        this.theme = theme;
-        this.dark = dark;
+        themeElement.setAttribute('href', themeElement.getAttribute('href').replace(this.appConfig.theme, theme));
+        this.appConfig.theme = theme;
+        this.appConfig.dark = dark;
         event.preventDefault();
     }
 

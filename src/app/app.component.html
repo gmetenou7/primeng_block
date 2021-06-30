@@ -1,8 +1,8 @@
-<div class="layout-wrapper" [ngClass]="{'p-input-filled': inputStyle === 'filled', 'p-ripple-disabled': !ripple, 'layout-wrapper-dark': dark}">
+<div class="layout-wrapper" [ngClass]="{'p-input-filled': appConfig.inputStyle === 'filled', 'p-ripple-disabled': !appConfig.ripple, 'layout-wrapper-dark': appConfig.dark}">
     <div class="layout-topbar">
         <div class="topbar-logo">
             <a [routerLink]="['/']">
-                <img [src]="dark ? 'assets/images/logo-primeblocks-dark.svg': 'assets/images/logo-primeblocks.svg'" class="logo" alt="PrimeBlocks Logo">
+                <img [src]="appConfig.dark ? 'assets/images/logo-primeblocks-dark.svg': 'assets/images/logo-primeblocks.svg'" class="logo" alt="PrimeBlocks Logo">
                 <img src="assets/images/icon-primeblocks.svg" class="icon" alt="PrimeBlocks">
             </a>
         </div>
@@ -58,17 +58,17 @@
         <div class="config-title">Input Style</div>
         <div class="formgroup-inline">
             <div class="field-radiobutton">
-                <p-radioButton name="inputstyle" value="outlined" [(ngModel)]="inputStyle" inputId="input_outlined"></p-radioButton>
+                <p-radioButton name="inputstyle" value="outlined" [(ngModel)]="appConfig.inputStyle" inputId="input_outlined"></p-radioButton>
                 <label for="input_outlined">Outlined</label>
             </div>
             <div class="field-radiobutton">
-                <p-radioButton name="inputstyle" value="filled" [(ngModel)]="inputStyle" inputId="input_filled"></p-radioButton>
+                <p-radioButton name="inputstyle" value="filled" [(ngModel)]="appConfig.inputStyle" inputId="input_filled"></p-radioButton>
                 <label for="input_filled">Filled</label>
             </div>
         </div>
 
         <div class="config-title">Ripple Effect</div>
-        <p-inputSwitch [(ngModel)]="ripple"></p-inputSwitch>
+        <p-inputSwitch [(ngModel)]="appConfig.ripple"></p-inputSwitch>
 
         <div class="config-title">Bootstrap</div>
         <div class="grid themes-grid">
