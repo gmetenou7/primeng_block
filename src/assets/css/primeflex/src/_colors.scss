@@ -70,3 +70,23 @@ $surfaceShades: 0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
 .hover\:border-white:hover {
     border-color: #ffffff !important; 
 }
+
+.surface-ground {
+    background-color: var(--surface-ground);
+}
+
+.surface-section {
+    background-color: var(--surface-section);
+}
+
+.surface-card {
+    background-color: var(--surface-card);
+}
+
+.surface-overlay {
+    background-color: var(--surface-overlay);
+}
+
+.surface-border {
+    border-color: var(--surface-border);
+}
