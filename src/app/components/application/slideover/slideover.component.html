@@ -1,44 +1,44 @@
 <div class="block-category-title">SlideOver</div>
 <block-viewer header="Left Side" [code]="block1" previewClass="flex align-items-start justify-content-start px-4 py-8 md:px-6 lg:px-8 relative overflow-hidden" [previewStyle]="{'height': '100vh'}">
     <button pButton pRipple label="Display" icon="pi pi-arrow-right" pStyleClass="@next" toggleClass="-translate-x-100" [hideOnOutsideClick]="true"></button>
-    <div class="surface-0 flex flex-column p-4 h-screen absolute top-0 left-0 shadow-2 
+    <div class="surface-overlay flex flex-column p-4 h-screen absolute top-0 left-0 shadow-2 
         -translate-x-100 transition-transform transition-duration-150 transition-ease-in-out" style="width:280px">
         <div class="flex align-items-center justify-content-between mb-4">
             <span class="text-900 text-xl font-medium">Title Placeholder</span>
             <button pButton pRipple icon="pi pi-times" class="p-button-rounded p-button-text p-button-plain" pStyleClass="@grandparent" toggleClass="-translate-x-100"></button>
         </div>
-        <div class="border-2 border-dashed border-300 flex-auto overflow-y-auto p-3"></div>
+        <div class="border-2 border-dashed surface-border flex-auto overflow-y-auto p-3"></div>
     </div>
 </block-viewer>
 
 <block-viewer header="Right Side" [code]="block2" previewClass="flex align-items-start justify-content-end px-4 py-8 md:px-6 lg:px-8 relative overflow-hidden" [previewStyle]="{'height': '100vh'}">
     <button pButton pRipple label="Display" icon="pi pi-arrow-left" pStyleClass="@next" toggleClass="translate-x-100" [hideOnOutsideClick]="true"></button>
-    <div class="surface-0 flex flex-column p-4 h-screen absolute top-0 right-0 shadow-2 
+    <div class="surface-overlay flex flex-column p-4 h-screen absolute top-0 right-0 shadow-2 
         translate-x-100 transition-transform transition-duration-150 transition-ease-in-out" style="width:280px">
         <div class="flex align-items-center justify-content-between mb-4">
             <span class="text-900 text-xl font-medium">Title Placeholder</span>
             <button pButton pRipple icon="pi pi-times" class="p-button-rounded p-button-text p-button-plain" pStyleClass="@grandparent" toggleClass="translate-x-100"></button>
         </div>
-        <div class="border-2 border-dashed border-300 flex-auto overflow-y-auto p-3"></div>
+        <div class="border-2 border-dashed surface-border flex-auto overflow-y-auto p-3"></div>
     </div>
 </block-viewer>
 
 <block-viewer header="Half Width" [code]="block3" previewClass="flex align-items-start justify-content-end px-4 py-8 md:px-6 lg:px-8 relative overflow-hidden" [previewStyle]="{'height': '100vh'}">
     <button pButton pRipple label="Display" icon="pi pi-arrow-left" pStyleClass="@next" toggleClass="translate-x-100" [hideOnOutsideClick]="true"></button>
-    <div class="surface-0 flex flex-column p-4 h-screen absolute top-0 right-0 shadow-2 
+    <div class="surface-overlay flex flex-column p-4 h-screen absolute top-0 right-0 shadow-2 
         translate-x-100 transition-transform transition-duration-150 transition-ease-in-out w-full lg:w-6">
         <div class="flex align-items-center justify-content-between mb-4">
             <span class="text-900 text-xl font-medium">Title Placeholder</span>
             <button pButton pRipple icon="pi pi-times" class="p-button-rounded p-button-text p-button-plain" pStyleClass="@grandparent" toggleClass="translate-x-100"></button>
         </div>
-        <div class="border-2 border-dashed border-300 flex-auto overflow-y-auto p-3"></div>
+        <div class="border-2 border-dashed surface-border flex-auto overflow-y-auto p-3"></div>
     </div>
 </block-viewer>
 
 
 <block-viewer header="Dark Header" [code]="block4" previewClass="flex align-items-start justify-content-end px-4 py-8 md:px-6 lg:px-8 relative overflow-hidden" [previewStyle]="{'height': '100vh'}">
     <button pButton pRipple label="Display" icon="pi pi-arrow-left" pStyleClass="@next" toggleClass="translate-x-100" [hideOnOutsideClick]="true"></button>
-    <div id="_contrastheader" class="surface-0 flex flex-column h-screen absolute top-0 right-0 shadow-2 
+    <div id="_contrastheader" class="surface-overlay flex flex-column h-screen absolute top-0 right-0 shadow-2 
         translate-x-100 transition-transform transition-duration-150 transition-ease-in-out" style="width:280px">
         <div class="flex align-items-start bg-gray-800 justify-content-between p-3">
             <div>
@@ -49,6 +49,6 @@
                 <button pButton pRipple icon="pi pi-times" class="p-button-rounded p-button-text p-button-warning p-button-plain" pStyleClass="#_contrastheader" toggleClass="translate-x-100"></button>
             </div>
         </div>
-        <div class="m-4 border-2 border-round border-dashed border-300 flex-auto overflow-y-auto"></div>
+        <div class="m-4 border-2 border-round border-dashed surface-border flex-auto overflow-y-auto"></div>
     </div>
 </block-viewer>

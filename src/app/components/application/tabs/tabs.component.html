@@ -1,6 +1,6 @@
 <div class="block-category-title">Tabs</div>
 <block-viewer header="Underline" [code]="block1" previewClass="px-3 py-8 md:px-6 lg:px-8">
-    <ul class="surface-0 p-0 m-0 list-none flex overflow-x-auto select-none">
+    <ul class="surface-card p-0 m-0 list-none flex overflow-x-auto select-none">
         <li>
             <a class="cursor-pointer px-4 py-3 flex align-items-center border-bottom-2 hover:border-500 transition-colors transition-duration-150" 
                 [ngClass]="{'border-blue-500 text-blue-500 hover:border-blue-500': active1 === 0, 'text-700 border-transparent': active1 !== 0}" (click)="active1 = 0">
@@ -40,7 +40,7 @@
 </block-viewer>
 
 <block-viewer header="Pills" [code]="block2" previewClass="px-3 py-8 md:px-6 lg:px-8">
-    <ul class="surface-0 p-2 m-0 list-none flex overflow-x-auto select-none">
+    <ul class="surface-card p-2 m-0 list-none flex overflow-x-auto select-none">
         <li class="mr-2">
             <a class="cursor-pointer px-4 py-3 flex align-items-center hover:surface-100 border-round transition-colors transition-duration-150" 
             [ngClass]="{'bg-primary hover:bg-primary': active2 === 0, 'text-700': active2 !== 0}" (click)="active2 = 0">

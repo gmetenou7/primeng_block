@@ -1,5 +1,5 @@
 <div class="block-category-title">Dialog</div>
-<block-viewer header="Left Aligned Header Icon" [code]="block1" previewClass="surface-0 px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center">
+<block-viewer header="Left Aligned Header Icon" [code]="block1" previewClass="surface-section px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center">
     <button pButton pRipple label="Display" (click)="visible1 = true"></button>
 
     <p-dialog [(visible)]="visible1" appendTo="body" [modal]="true" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '40vw'}">
@@ -16,7 +16,7 @@
             Sed risus pretium quam vulputate. At tellus at urna condimentum mattis pellentesque.
         </p>
         <ng-template pTemplate="footer">
-            <div class=" border-top-1 border-300 pt-3">
+            <div class=" border-top-1 surface-border pt-3">
                 <button pButton pRipple icon="pi pi-times" (click)="visible1 = false" label="Cancel" class="p-button-text"></button>
                 <button pButton pRipple icon="pi pi-check" (click)="visible1 = false" label="Save"></button>
             </div>
@@ -24,7 +24,7 @@
     </p-dialog>
 </block-viewer>
 
-<block-viewer header="Centered Header Icon" [code]="block2" previewClass="surface-0 px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center">
+<block-viewer header="Centered Header Icon" [code]="block2" previewClass="surface-section px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center">
     <button pButton pRipple label="Display" (click)="visible2 = true"></button>
 
     <p-dialog [(visible)]="visible2" appendTo="body" [modal]="true" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '40vw'}" [closable]="false" [showHeader]="false">
@@ -39,7 +39,7 @@
             Sed risus pretium quam vulputate. At tellus at urna condimentum mattis pellentesque.
         </p>
         <ng-template pTemplate="footer">
-            <div class=" border-top-1 border-300 pt-3 flex">
+            <div class=" border-top-1 surface-border pt-3 flex">
                 <button pButton pRipple icon="pi pi-times" (click)="visible2 = false" label="Cancel" class="p-button-outlined w-6 mr-2"></button>
                 <button pButton pRipple icon="pi pi-check" (click)="visible2 = false" label="Save" class="w-6 ml-2"></button>
             </div>
