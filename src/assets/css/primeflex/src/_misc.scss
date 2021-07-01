@@ -27,16 +27,16 @@ $select-props: (
 
 $opacity-props: (
     'opacity-0': '0',
-    'opacity-10': '10',
-    'opacity-20': '20',
-    'opacity-30': '30',
-    'opacity-40': '40',
-    'opacity-50': '50',
-    'opacity-60': '60',
-    'opacity-70': '70',
-    'opacity-80': '80',
-    'opacity-90': '90',
-    'opacity-100': '100'
+    'opacity-10': '.1',
+    'opacity-20': '.2',
+    'opacity-30': '.3',
+    'opacity-40': '.4',
+    'opacity-50': '.5',
+    'opacity-60': '.6',
+    'opacity-70': '.7',
+    'opacity-80': '.8',
+    'opacity-90': '.9',
+    'opacity-100': '1'
 );
 
 @include style-class('appearance', $appearance-props);
