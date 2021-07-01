@@ -1,28 +1,30 @@
-<svg width="299" height="149" viewBox="0 0 299 149" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="9" y="5.56885" width="281" height="130" rx="3" fill="#ECEFF1" stroke="#BBC7CD" stroke-width="2"/>
+<svg width="283" height="133" viewBox="0 0 283 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<rect x="1" y="1.56885" width="281" height="130" rx="3" fill="#ECEFF1" stroke="#BBC7CD" stroke-width="2"/>
 <g filter="url(#filter0_ddd)">
-<path d="M24 41.5688C24 39.912 25.3431 38.5688 27 38.5688H272C273.657 38.5688 275 39.912 275 41.5688V134.569H24V41.5688Z" fill="white"/>
+<path d="M16 37.5688C16 35.912 17.3431 34.5688 19 34.5688H264C265.657 34.5688 267 35.912 267 37.5688V130.569H16V37.5688Z" fill="white"/>
 </g>
-<rect x="40" y="54.5688" width="46" height="3" rx="1.5" fill="#BBC7CD"/>
-<rect x="40.75" y="66.3188" width="98.5" height="8.5" rx="3.25" fill="#F7F9F9" stroke="#75BEF8" stroke-width="1.5"/>
-<rect x="40" y="91.5688" width="31" height="3" rx="1.5" fill="#BBC7CD"/>
-<rect x="40.75" y="103.319" width="98.5" height="8.5" rx="3.25" fill="#F7F9F9" stroke="#BBC7CD" stroke-width="1.5"/>
-<rect x="158" y="54.5688" width="35" height="3" rx="1.5" fill="#BBC7CD"/>
-<rect x="158.75" y="66.3188" width="98.5" height="8.5" rx="3.25" fill="#F7F9F9" stroke="#BBC7CD" stroke-width="1.5"/>
-<rect x="158" y="91.5688" width="46" height="3" rx="1.5" fill="#BBC7CD"/>
-<rect x="158.75" y="103.319" width="98.5" height="8.5" rx="3.25" fill="#F7F9F9" stroke="#BBC7CD" stroke-width="1.5"/>
+<rect x="32" y="50.5688" width="46" height="3" rx="1.5" fill="#BBC7CD"/>
+<rect x="32.75" y="62.3188" width="98.5" height="8.5" rx="3.25" fill="#F7F9F9" stroke="#75BEF8" stroke-width="1.5"/>
+<rect x="32" y="87.5688" width="31" height="3" rx="1.5" fill="#BBC7CD"/>
+<rect x="32.75" y="99.3188" width="98.5" height="8.5" rx="3.25" fill="#F7F9F9" stroke="#BBC7CD" stroke-width="1.5"/>
+<rect x="150" y="50.5688" width="35" height="3" rx="1.5" fill="#BBC7CD"/>
+<rect x="150.75" y="62.3188" width="98.5" height="8.5" rx="3.25" fill="#F7F9F9" stroke="#BBC7CD" stroke-width="1.5"/>
+<rect x="150" y="87.5688" width="46" height="3" rx="1.5" fill="#BBC7CD"/>
+<rect x="150.75" y="99.3188" width="98.5" height="8.5" rx="3.25" fill="#F7F9F9" stroke="#BBC7CD" stroke-width="1.5"/>
 <g filter="url(#filter1_ddd)">
-<path d="M10 8.56885C10 7.46428 10.8954 6.56885 12 6.56885H287C288.105 6.56885 289 7.46428 289 8.56885V30.5688H10V8.56885Z" fill="white"/>
+<path d="M2 4.56885C2 3.46428 2.89543 2.56885 4 2.56885H279C280.105 2.56885 281 3.46428 281 4.56885V26.5688H2V4.56885Z" fill="white"/>
 </g>
-<circle cx="268" cy="18.5688" r="5" fill="#E91E63"/>
-<path d="M31.5372 13.7007C31.7066 13.2864 32.2934 13.2864 32.4628 13.7007L33.959 17.3599C33.9761 17.4017 33.9988 17.4411 34.0265 17.4768L36.4473 20.6021C36.7214 20.956 36.4281 21.4642 35.9845 21.4037L32.0675 20.8698C32.0227 20.8637 31.9773 20.8637 31.9325 20.8698L28.0155 21.4037C27.5719 21.4642 27.2786 20.956 27.5527 20.6021L29.9735 17.4768C30.0012 17.4411 30.0239 17.4017 30.041 17.3599L31.5372 13.7007Z" fill="#7E96A1"/>
-<rect x="60" y="17.0688" width="16" height="3" rx="1.5" fill="#BBC7CD"/>
-<rect x="88" y="17.0688" width="16" height="3" rx="1.5" fill="#BBC7CD"/>
-<rect x="116" y="17.0688" width="16" height="3" rx="1.5" fill="#263238"/>
-<rect x="144" y="17.0688" width="16" height="3" rx="1.5" fill="#BBC7CD"/>
-<rect x="172" y="17.0688" width="16" height="3" rx="1.5" fill="#BBC7CD"/>
+<circle cx="260" cy="14.5688" r="5" fill="#E91E63"/>
+<path d="M23.5372 9.70073C23.7066 9.28638 24.2934 9.28638 24.4628 9.70073L25.959 13.3599C25.9761 13.4017 25.9988 13.4411 26.0265 13.4768L28.4473 16.6021C28.7214 16.956 28.4281 17.4642 27.9845 17.4037L24.0675 16.8698C24.0227 16.8637 23.9773 16.8637 23.9325 16.8698L20.0155 17.4037C19.5719 17.4642 19.2786 16.956 19.5527 16.6021L21.9735 13.4768C22.0012 13.4411 22.0239 13.4017 22.041 13.3599L23.5372 9.70073Z" fill="#7E96A1"/>
+<rect x="52" y="13.0688" width="16" height="3" rx="1.5" fill="#BBC7CD"/>
+<rect x="80" y="13.0688" width="16" height="3" rx="1.5" fill="#BBC7CD"/>
+<rect x="108" y="13.0688" width="16" height="3" rx="1.5" fill="#263238"/>
+<rect x="136" y="13.0688" width="16" height="3" rx="1.5" fill="#BBC7CD"/>
+<rect x="164" y="13.0688" width="16" height="3" rx="1.5" fill="#BBC7CD"/>
+</g>
 <defs>
-<filter id="filter0_ddd" x="14" y="32.5688" width="271" height="116" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_ddd" x="6" y="28.5688" width="271" height="116" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="2"/>
@@ -41,7 +43,7 @@
 <feBlend mode="normal" in2="effect2_dropShadow" result="effect3_dropShadow"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow" result="shape"/>
 </filter>
-<filter id="filter1_ddd" x="0" y="0.568848" width="299" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_ddd" x="-8" y="-3.43115" width="299" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="2"/>
@@ -60,5 +62,8 @@
 <feBlend mode="normal" in2="effect2_dropShadow" result="effect3_dropShadow"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow" result="shape"/>
 </filter>
+<clipPath id="clip0">
+<rect width="283" height="132" fill="white" transform="translate(0 0.568848)"/>
+</clipPath>
 </defs>
 </svg>
