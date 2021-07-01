@@ -1,6 +1,6 @@
 <div class="block-category-title">Sidebar Layouts</div>
 <block-viewer header="Dim Sidebar with Topbar" [code]="block1" [previewStyle]="{height: '100vh', overflow: 'hidden'}">
-    <div class="min-h-screen flex relative lg:static">
+    <div class="min-h-screen flex relative lg:static surface-ground">
         <div id="app-sidebar-1" class="bg-bluegray-800 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 select-none" style="width:280px">
             <div class="flex flex-column h-full">
                 <div class="flex align-items-center px-5 bg-bluegray-900 flex-shrink-0" style="height:60px">
@@ -132,7 +132,7 @@
             </div>
         </div>
         <div class="min-h-screen flex flex-column relative flex-auto">
-            <div class="flex justify-content-between align-items-center px-5 surface-0 shadow-2 relative lg:static" style="height:60px">
+            <div class="flex justify-content-between align-items-center px-5 surface-section shadow-2 relative lg:static border-bottom-1 surface-border" style="height:60px">
                 <div class="flex">
                     <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-1" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                         <i class="pi pi-bars text-4xl"></i>
@@ -174,7 +174,7 @@
                 </ul>
             </div>
             <div class="p-5 flex flex-column flex-auto">
-                <div class="border-2 border-dashed border-300 border-round surface-0 flex-auto">
+                <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
                     
                 </div>
             </div>
@@ -183,8 +183,8 @@
 </block-viewer>
 
 <block-viewer header="Grouped Menu" [code]="block2" [previewStyle]="{height: '100vh', overflow: 'hidden'}">
-    <div class="min-h-screen flex relative lg:static">
-        <div id="app-sidebar-2" class="surface-0 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-300 select-none" style="width:280px">
+    <div class="min-h-screen flex relative lg:static surface-ground">
+        <div id="app-sidebar-2" class="surface-section h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 surface-border select-none" style="width:280px">
             <div class="flex flex-column h-full">
                 <div class="flex align-items-center px-5 flex-shrink-0" style="height:60px">
                     <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="30">
@@ -305,7 +305,7 @@
                     </ul>
                 </div>
                 <div class="mt-auto">
-                    <hr class="mb-3 mx-3 border-top-1 border-300" />
+                    <hr class="mb-3 mx-3 border-top-1 surface-border" />
                     <a class="m-3 flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
                         <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-2" style="width: 28px; height: 28px"/>
                         <span class="font-medium">Amy Elsner</span>
@@ -314,7 +314,7 @@
             </div>
         </div>
         <div class="min-h-screen flex flex-column relative flex-auto">
-            <div class="flex justify-content-between align-items-center px-5 surface-0 border-bottom-1 border-300 relative lg:static" style="height:60px">
+            <div class="flex justify-content-between align-items-center px-5 surface-0 border-bottom-1 surface-border relative lg:static" style="height:60px">
                 <div class="flex">
                     <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-2" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                         <i class="pi pi-bars text-4xl"></i>
@@ -356,7 +356,7 @@
                 </ul>
             </div>
             <div class="p-5 flex flex-column flex-auto">
-                <div class="border-2 border-dashed border-300 border-round surface-0 flex-auto">
+                <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
                     
                 </div>
             </div>
@@ -365,8 +365,8 @@
 </block-viewer>
 
 <block-viewer header="Dark Sidebar with Grouped Menu" [code]="block3" [previewStyle]="{height: '100vh', overflow: 'hidden'}">
-    <div class="min-h-screen flex relative lg:static">
-        <div id="app-sidebar-3" class="bg-gray-900 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-gray-300 select-none" style="width:280px">
+    <div class="min-h-screen flex relative lg:static surface-ground">
+        <div id="app-sidebar-3" class="bg-gray-900 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-gray-800 select-none" style="width:280px">
             <div class="flex flex-column h-full">
                 <div class="flex align-items-center px-5 flex-shrink-0" style="height:60px">
                     <img src="assets/images/blocks/logos/hyper-300.svg" alt="Image" height="30">
@@ -389,7 +389,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="flex align-items-center cursor-pointer p-3 hover:surface-800 border-round text-300 hover:text-0 transition-duration-150 transition-colors"
+                            <a class="flex align-items-center cursor-pointer p-3 border-round hover:bg-gray-800 text-gray-300 hover:text-white transition-duration-150 transition-colors"
                                 pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                                 <i class="pi pi-chart-line mr-2"></i>
                                 <span class="font-medium">Reports</span>
@@ -477,7 +477,7 @@
                     </ul>
                 </div>
                 <div class="mt-auto">
-                    <hr class="mb-3 mx-3 border-top-1 border-800" />
+                    <hr class="mb-3 mx-3 border-top-1 border-gray-800" />
                     <a class="m-3 flex align-items-center cursor-pointer p-3 border-round hover:bg-gray-800 text-gray-300 hover:text-white transition-duration-150 transition-colorss">
                         <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-2" style="width: 28px; height: 28px"/>
                         <span class="font-medium">Amy Elsner</span>
@@ -486,7 +486,7 @@
             </div>
         </div>
         <div class="min-h-screen flex flex-column relative flex-auto">
-            <div class="flex justify-content-between align-items-center px-5 surface-0 border-bottom-1 border-300 relative lg:static" style="height:60px">
+            <div class="flex justify-content-between align-items-center px-5 surface-0 border-bottom-1 surface-border relative lg:static" style="height:60px">
                 <div class="flex">
                     <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-3" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                         <i class="pi pi-bars text-4xl"></i>
@@ -528,7 +528,7 @@
                 </ul>
             </div>
             <div class="p-5 flex flex-column flex-auto">
-                <div class="border-2 border-dashed border-300 border-round surface-0 flex-auto">
+                <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
                     
                 </div>
             </div>
@@ -537,8 +537,8 @@
 </block-viewer>
 
 <block-viewer header="Narrow Sidebar" [code]="block4" [previewStyle]="{height: '100vh', overflow: 'hidden'}">
-    <div class="min-h-screen flex relative lg:static">
-        <div id="app-sidebar-4" class="bg-gray-900 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-gray-300 w-18rem lg:w-5rem select-none">
+    <div class="min-h-screen flex relative lg:static surface-ground">
+        <div id="app-sidebar-4" class="bg-gray-900 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-gray-800 w-18rem lg:w-5rem select-none">
             <div class="flex flex-column h-full">
                 <div class="flex align-items-center justify-content-center flex-shrink-0 bg-indigo-500" style="height:60px">
                     <img src="assets/images/blocks/logos/hyper-light.svg" alt="Image" height="30">
@@ -616,8 +616,8 @@
                     </ul>
                 </div>
                 <div class="mt-auto">
-                    <hr class="mb-3 mx-2 border-top-1 border-800" />
-                    <a class="my-3 mx-2 flex align-items-center cursor-pointer p-3 lg:justify-content-center hover:surface-800 border-round text-300 hover:text-0
+                    <hr class="mb-3 mx-2 border-top-1 border-gray-800" />
+                    <a class="my-3 mx-2 flex align-items-center cursor-pointer p-3 lg:justify-content-center hover:bg-gray-800 border-round text-300 hover:text-0
                         transition-duration-150 transition-colors">
                         <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-2 lg:mr-0" style="width: 32px; height: 32"/>
                         <span class="font-medium inline lg:hidden">Amy Elsner</span>
@@ -626,9 +626,9 @@
             </div>
         </div>
         <div class="min-h-screen flex flex-column relative flex-auto">
-            <div class="flex justify-content-between align-items-center px-5 surface-0 border-bottom-1 border-300 relative lg:static" style="height:60px">
+            <div class="flex justify-content-between align-items-center px-5 surface-section relative lg:static border-bottom-1 surface-border" style="height:60px">
                 <div class="flex">
-                    <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-4" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+                    <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-1" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                         <i class="pi pi-bars text-4xl"></i>
                     </a>
                     <span class="p-input-icon-left">
@@ -668,7 +668,7 @@
                 </ul>
             </div>
             <div class="p-5 flex flex-column flex-auto">
-                <div class="border-2 border-dashed border-300 border-round surface-0 flex-auto">
+                <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
                     
                 </div>
             </div>
@@ -677,8 +677,8 @@
 </block-viewer>
 
 <block-viewer header="Narrow Sidebar with Titles" [code]="block5" [previewStyle]="{height: '100vh', overflow: 'hidden'}">
-    <div class="min-h-screen flex relative lg:static">
-        <div id="app-sidebar-5" class="bg-gray-900 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 bg-gray-300 w-18rem lg:w-7rem select-none">
+    <div class="min-h-screen flex relative lg:static surface-ground">
+        <div id="app-sidebar-5" class="bg-gray-900 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-gray-800 w-18rem lg:w-7rem select-none">
             <div class="flex flex-column h-full">
                 <div class="flex align-items-center justify-content-center flex-shrink-0 bg-orange-500" style="height:60px">
                     <img src="assets/images/blocks/logos/hyper-light.svg" alt="Image" height="30">
@@ -710,7 +710,7 @@
                                 <span class="font-medium inline text-base lg:text-xs lg:block">Reports</span>
                                 <i class="pi pi-chevron-down ml-auto lg:hidden"></i>
                             </a>
-                            <ul class="list-none pl-3 pr-0 py-0 lg:p-3 m-0 lg:ml-3 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out static border-round-right lg:absolute left-100 top-0 z-1 bg-gray-900 shadow-none lg:shadow-2 w-full lg:w-15rem">
+                            <ul class="list-none pl-3 pr-0 py-0 lg:p-3 m-0 lg:ml-3 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out static border-round-right lg:absolute left-100 top-0 z-1 bg-gray-900 border-1 border-gray-800 shadow-none lg:shadow-2 w-full lg:w-15rem">
                                 <li>
                                     <a class="flex align-items-center cursor-pointer p-3 hover:bg-gray-800 border-round text-gray-300 hover:text-white transition-duration-150 transition-colors"
                                         pStyleClass="@next" toggleClass="hidden">
@@ -756,7 +756,7 @@
                     </ul>
                 </div>
                 <div class="mt-auto">
-                    <hr class="mb-3 mx-3 border-top-1 border-800" />
+                    <hr class="mb-3 mx-3 border-top-1 border-gray-800" />
                     <a class="m-3 flex flex-row lg:flex-column align-items-center cursor-pointer p-3 lg:justify-content-center hover:bg-gray-800 border-round text-gray-300 hover:text-white transition-duration-150 transition-colors">
                         <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-2 lg:mr-0" style="width: 32px; height: 32px"/>
                         <span class="font-medium inline lg:hidden">Amy Elsner</span>
@@ -765,9 +765,9 @@
             </div>
         </div>
         <div class="min-h-screen flex flex-column relative flex-auto">
-            <div class="flex justify-content-between align-items-center px-5 surface-0 border-bottom-1 border-300 relative lg:static" style="height:60px">
+            <div class="flex justify-content-between align-items-center px-5 surface-section relative lg:static border-bottom-1 surface-border" style="height:60px">
                 <div class="flex">
-                    <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-5" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+                    <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-1" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                         <i class="pi pi-bars text-4xl"></i>
                     </a>
                     <span class="p-input-icon-left">
@@ -807,7 +807,7 @@
                 </ul>
             </div>
             <div class="p-5 flex flex-column flex-auto">
-                <div class="border-2 border-dashed border-300 border-round surface-0 flex-auto">
+                <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
                     
                 </div>
             </div>
