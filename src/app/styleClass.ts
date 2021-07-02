@@ -37,6 +37,8 @@ export class StyleClass implements AfterViewInit, OnDestroy {
 
     leaveListener: Function;
 
+    animating: boolean;
+
     ngAfterViewInit() {
         this.eventListener = this.renderer.listen(this.el.nativeElement, 'click', () => {
             this.target = this.resolveTarget();
@@ -58,30 +60,35 @@ export class StyleClass implements AfterViewInit, OnDestroy {
 
     enter() {
         if (this.enterActiveClass) {
-            if (this.enterActiveClass === 'slidedown') {
-                this.target.style.height = '0px';
-                DomHandler.removeClass(this.target, 'hidden');
-                this.target.style.maxHeight = this.target.scrollHeight + 'px';
-                DomHandler.addClass(this.target, 'hidden');
-                this.target.style.height = '';
-            }
-
-            DomHandler.addClass(this.target, this.enterActiveClass);
-            if (this.enterClass) {
-                DomHandler.removeClass(this.target, this.enterClass);
-            }
-
-            this.enterListener = this.renderer.listen(this.target, 'animationend', () => {
-                DomHandler.removeClass(this.target, this.enterActiveClass);
-                if (this.enterToClass) {
-                    DomHandler.addClass(this.target, this.enterToClass);
-                }
-                this.enterListener();
+            if (!this.animating) {
+                this.animating = true;
 
                 if (this.enterActiveClass === 'slidedown') {
-                    this.target.style.maxHeight = '';
+                    this.target.style.height = '0px';
+                    DomHandler.removeClass(this.target, 'hidden');
+                    this.target.style.maxHeight = this.target.scrollHeight + 'px';
+                    DomHandler.addClass(this.target, 'hidden');
+                    this.target.style.height = '';
                 }
-            });
+
+                DomHandler.addClass(this.target, this.enterActiveClass);
+                if (this.enterClass) {
+                    DomHandler.removeClass(this.target, this.enterClass);
+                }
+
+                this.enterListener = this.renderer.listen(this.target, 'animationend', () => {
+                    DomHandler.removeClass(this.target, this.enterActiveClass);
+                    if (this.enterToClass) {
+                        DomHandler.addClass(this.target, this.enterToClass);
+                    }
+                    this.enterListener();
+
+                    if (this.enterActiveClass === 'slidedown') {
+                        this.target.style.maxHeight = '';
+                    }
+                    this.animating = false;
+                });
+            }
         }
         else {
             if (this.enterClass) {
@@ -100,18 +107,22 @@ export class StyleClass implements AfterViewInit, OnDestroy {
 
     leave() {
         if (this.leaveActiveClass) {
-            DomHandler.addClass(this.target, this.leaveActiveClass);
-            if (this.leaveClass) {
-                DomHandler.removeClass(this.target, this.leaveClass);
-            }
-
-            this.leaveListener = this.renderer.listen(this.target, 'animationend', () => {
-                DomHandler.removeClass(this.target, this.leaveActiveClass);
-                if (this.leaveToClass) {
-                    DomHandler.addClass(this.target, this.leaveToClass);
+            if (!this.animating) {
+                this.animating = true;
+                DomHandler.addClass(this.target, this.leaveActiveClass);
+                if (this.leaveClass) {
+                    DomHandler.removeClass(this.target, this.leaveClass);
                 }
-                this.leaveListener();
-            });
+
+                this.leaveListener = this.renderer.listen(this.target, 'animationend', () => {
+                    DomHandler.removeClass(this.target, this.leaveActiveClass);
+                    if (this.leaveToClass) {
+                        DomHandler.addClass(this.target, this.leaveToClass);
+                    }
+                    this.leaveListener();
+                    this.animating = false;
+                });
+            }
         }
         else {
             if (this.leaveClass) {
@@ -150,7 +161,10 @@ export class StyleClass implements AfterViewInit, OnDestroy {
     bindDocumentListener() {
         if (!this.documentListener) {
             this.documentListener = this.renderer.listen(this.el.nativeElement.ownerDocument, 'click', event => {
-                if (!this.el.nativeElement.isSameNode(event.target) && !this.el.nativeElement.contains(event.target) && !this.target.contains(event.target)) {
+                if (getComputedStyle(this.target).getPropertyValue('position') === 'static') {
+                    this.unbindDocumentListener();
+                }
+                else  if (!this.el.nativeElement.isSameNode(event.target) && !this.el.nativeElement.contains(event.target) && !this.target.contains(event.target)) {
                     this.leave();
                     this.unbindDocumentListener();
                 }
