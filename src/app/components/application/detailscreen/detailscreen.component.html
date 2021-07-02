@@ -1,6 +1,6 @@
 <block-viewer header="Applicant Detail" [code]="block1">
-    <div class="surface-0">
-        <div class="surface-0 px-6 py-3 border-bottom-1 border-300 flex align-items-center justify-content-between relative lg:static border-bottom-1 border-50" style="min-height: 80px">
+    <div class="surface-ground">
+        <div class="surface-section px-6 py-3 border-bottom-1 border-300 flex align-items-center justify-content-between relative lg:static border-bottom-1 border-50" style="min-height: 80px">
             <img src="assets/images/blocks/logos/bastion-700.svg" alt="Image" height="40" class="mr-0 lg:mr-6">
             <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
                 <i class="pi pi-bars text-4xl"></i>
@@ -89,11 +89,11 @@
                 </ul>
             </div>
         </div>
-        <div class="px-6 mt-5">
+        <div class="surface-section px-6 pt-5">
             <div class="text-3xl font-medium text-900 mb-4">Application</div>
             <p-tabMenu [model]="items" [activeItem]="items[0]"></p-tabMenu>
         </div>
-        <div class="surface-0 px-6 py-5">
+        <div class="surface-section px-6 py-5">
             <div class="flex align-items-start flex-column lg:flex-row lg:justify-content-between">
                 <div class="flex align-items-start flex-column md:flex-row">
                     <img src="assets/images/blocks/avatars/circle/avatar-f-1@2x.png" class="mr-5 mb-3 lg:mb-0" style="width:90px;height:90px" />
@@ -127,8 +127,8 @@
                 </div>
             </div>
         </div>
-        <div class="surface-50 px-6 py-5">
-            <div class="surface-0 p-4 shadow-2 border-round">
+        <div class="px-6 py-5">
+            <div class="surface-card p-4 shadow-2 border-round">
                 <div class="font-medium text-3xl text-900 mb-3">Applicant Profile</div>
                 <div class="text-500 mb-5">Egestas sed tempus urna et pharetra pharetra massa massa ultricies.</div>
                 <ul class="list-none p-0 m-0 border-top-1 border-300">
@@ -204,7 +204,7 @@
             <div class="font-medium text-3xl text-900 mb-3">Application Flow</div>
             <ul class="list-none p-0 m-0 flex flex-column md:flex-row">
                 <li class="relative mr-0 md:mr-8 flex-auto">
-                    <div class="border-1 border-300 border-round p-3 surface-50 flex flex-column md:flex-row align-items-center z-1">
+                    <div class="border-1 surface-border surface-card border-round p-3 flex flex-column md:flex-row align-items-center z-1">
                         <i class="pi pi-check-circle text-green-500 text-2xl md:text-4xl mb-2 md:mb-0 mr-0 md:mr-3"></i>
                         <div>
                             <div class="text-900 font-medium mb-1">Applied</div>
@@ -214,7 +214,7 @@
                     <div class="w-full absolute top-50 left-100 surface-300 hidden md:block" style="transform: translateY(-50%); height: 2px"></div>
                 </li>
                 <li class="relative mr-0 md:mr-8 flex-auto">
-                    <div class="border-2 border-blue-500 border-round p-3 surface-50 flex flex-column md:flex-row align-items-center z-1">
+                    <div class="border-2 border-blue-500 surface-card border-round p-3 flex flex-column md:flex-row align-items-center z-1">
                         <i class="pi pi-users text-blue-600 text-2xl md:text-4xl mb-2 md:mb-0 mr-0 md:mr-3"></i>
                         <div>
                             <div class="text-blue-600 font-medium mb-1">Interview</div>
@@ -224,7 +224,7 @@
                     <div class="w-full absolute top-50 left-100 surface-300 hidden md:block" style="transform: translateY(-50%); height: 2px"></div>
                 </li>
                 <li class="relative flex-auto">
-                    <div class="border-1 border-300 border-round p-3 surface-50 flex flex-column md:flex-row align-items-center z-1">
+                    <div class="border-1 surface-border surface-card border-round p-3 flex flex-column md:flex-row align-items-center z-1">
                         <i class="pi pi-check-circle text-600 text-2xl md:text-4xl mb-2 md:mb-0 mr-0 md:mr-3"></i>
                         <div>
                             <div class="text-900 font-medium mb-1">Confirmation</div>
@@ -234,7 +234,7 @@
                 </li>
             </ul>
         </div>
-        <div class="py-6 px-6 border-top-1 border-300">
+        <div class="surface-section py-6 px-6 border-top-1 surface-border">
             <div class="flex flex flex-column lg:flex-row lg:align-items-center justify-content-between">
                 <div class="flex align-items-center">
                     <img src="assets/images/blocks/footer/footer-1.png" alt="Logo" width="50" height="50" class="mr-3">

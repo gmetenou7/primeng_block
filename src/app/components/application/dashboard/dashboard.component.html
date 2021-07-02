@@ -1,5 +1,5 @@
 <block-viewer header="Sidebar" [code]="block1">
-    <div class="min-h-screen flex relative lg:static">
+    <div class="min-h-screen flex relative lg:static surface-ground">
         <div id="app-sidebar" class="surface-0 h-100 hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-300 select-none" style="width:280px">
             <div class="flex flex-column h-full">
                 <div class="flex align-items-center px-5 flex-shrink-0" style="height:60px">
@@ -172,7 +172,7 @@
                 </ul>
             </div>
             <div class="flex flex-column flex-auto">
-                <div class="surface-0 p-5">
+                <div class="surface-section p-5">
                     <div class="flex align-items-start flex-column lg:flex-row lg:justify-content-between">
                         <div class="flex align-items-start flex-column md:flex-row">
                             <img src="assets/images/blocks/avatars/circle/avatar-f-1@2x.png" class="mr-5 mb-3 lg:mb-0" style="width:90px;height:90px" />
@@ -209,7 +209,7 @@
                 <div class="p-5">
                     <div class="grid">
                         <div class="col-12 lg:col-6 xl:col-3">
-                            <div class="surface-0 shadow-2 p-3 border-1 border-50 border-round">
+                            <div class="surface-card shadow-2 p-3 border-1 border-50 border-round">
                                 <div class="flex justify-content-between mb-3">
                                     <div>
                                         <span class="block text-500 font-medium mb-3">Orders</span>
@@ -224,7 +224,7 @@
                             </div>
                         </div>
                         <div class="col-12 lg:col-6 xl:col-3">
-                            <div class="surface-0 shadow-2 p-3 border-1 border-50 border-round">
+                            <div class="surface-card shadow-2 p-3 border-1 border-50 border-round">
                                 <div class="flex justify-content-between mb-3">
                                     <div>
                                         <span class="block text-500 font-medium mb-3">Revenue</span>
@@ -239,7 +239,7 @@
                             </div>
                         </div>
                         <div class="col-12 lg:col-6 xl:col-3">
-                            <div class="surface-0 shadow-2 p-3 border-1 border-50 border-round">
+                            <div class="surface-card shadow-2 p-3 border-1 border-50 border-round">
                                 <div class="flex justify-content-between mb-3">
                                     <div>
                                         <span class="block text-500 font-medium mb-3">Customers</span>
@@ -254,7 +254,7 @@
                             </div>
                         </div>
                         <div class="col-12 lg:col-6 xl:col-3">
-                            <div class="surface-0 shadow-2 p-3 border-1 border-50 border-round">
+                            <div class="surface-card shadow-2 p-3 border-1 border-50 border-round">
                                 <div class="flex justify-content-between mb-3">
                                     <div>
                                         <span class="block text-500 font-medium mb-3">Comments</span>
@@ -269,20 +269,20 @@
                             </div>
                         </div>
                         <div class="col-12 xl:col-6">
-                            <div class="surface-0 shadow-2 border-round p-4">
+                            <div class="surface-card shadow-2 border-round p-4">
                                 <div class="text-xl text-900 font-medium mb-5">Latest News</div>
                                 <ul class="list-none p-0 m-0">
-                                    <li class="pb-3 border-bottom-1 border-300">
+                                    <li class="pb-3 border-bottom-1 surface-border">
                                         <div class="font-medium text-900 mb-2">Aenean euismod elementum</div>
                                         <div class="line-height-3 text-600" style="max-width: 30rem">Vitae turpis massa sed elementum tempus egestas sed sed risus. 
                                             In metus vulputate eu scelerisque felis imperdiet proin.</div>
                                     </li>
-                                    <li class="py-3 border-bottom-1 border-300">
+                                    <li class="py-3 border-bottom-1 surface-border">
                                         <div class="font-medium text-900 mb-2">In iaculis nunc sed augue lacus</div>
                                         <div class="line-height-3 text-600" style="max-width: 30rem">Viverra vitae congue. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. 
                                             Elementum eu facilisis sed odio morbi.</div>
                                     </li>
-                                    <li class="py-3 border-bottom-1 border-300">
+                                    <li class="py-3 border-bottom-1 surface-border">
                                         <div class="font-medium text-900 mb-2">Proin sagittis nisl rhoncus</div>
                                         <div class="line-height-3 text-600" style="max-width: 30rem">In pellentesque massa placerat duis ultricies lacus. Ac feugiat sed lectus vestibulum mattis ullamcorper.</div>
                                     </li>
@@ -294,7 +294,7 @@
                             </div>
                         </div>
                         <div class="col-12 xl:col-6">
-                            <div class="surface-0 shadow-2 border-round p-4">
+                            <div class="surface-card shadow-2 border-round p-4">
                                 <div class="flex justify-content-between align-items-center mb-5">
                                     <span class="text-xl text-900 font-medium">Team Members</span>
                                     <div>
@@ -377,7 +377,7 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="shadow-2 border-round surface-0 p-4">
+                            <div class="border-round p-4">
                                 <div class="text-xl text-900 font-medium mb-5">Timeline</div>
                                 <div class="mb-5 flex">
                                     <div class="flex flex-column align-items-center" style="width:2rem">
@@ -386,7 +386,7 @@
                                         </span>
                                         <div class="h-full bg-blue-500" style="width: 2px; min-height: 4rem"></div>
                                     </div>
-                                    <div class="ml-5 surface-0 shadow-2 border-round p-3 flex-auto">
+                                    <div class="ml-5 surface-card shadow-2 border-round p-3 flex-auto">
                                         <div class="mb-3">
                                             <span class="text-900 font-medium inline-block mr-3">Jacob Jones</span>
                                             <span class="text-500 text-sm">1 minute ago</span>
@@ -414,7 +414,7 @@
                                         </span>
                                         <div class="h-full bg-orange-500" style="width: 2px; min-height: 4rem"></div>
                                     </div>
-                                    <div class="ml-5 surface-0 shadow-2 border-round p-3 flex-auto">
+                                    <div class="ml-5 surface-card shadow-2 border-round p-3 flex-auto">
                                         <div class="mb-3">
                                             <span class="text-900 font-medium inline-block mr-3">Theresa Webb</span>
                                             <span class="text-500 text-sm">2 hours ago</span>
@@ -442,7 +442,7 @@
                                         </span>
                                         <div class="h-full bg-purple-500" style="width: 2px; min-height: 4rem"></div>
                                     </div>
-                                    <div class="ml-5 surface-0 shadow-2 border-round p-3 flex-auto">
+                                    <div class="ml-5 surface-card shadow-2 border-round p-3 flex-auto">
                                         <div class="mb-3">
                                             <span class="text-900 font-medium inline-block mr-3">Walter Black</span>
                                             <span class="text-500 text-sm">4 hours ago</span>
@@ -473,7 +473,7 @@
 </block-viewer>
 
 <block-viewer header="Navbar" [code]="block2">
-    <div class="min-h-screen flex flex-column">
+    <div class="min-h-screen flex flex-column surface-ground">
         <div class="bg-indigo-500 py-3 px-5 flex align-items-center justify-content-between relative lg:static" style="min-height: 80px">
             <img src="assets/images/blocks/logos/hyper-300.svg" alt="Image" height="40" class="mr-0 lg:mr-6">
             <a class="cursor-pointer block lg:hidden text-indigo-50" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
@@ -590,8 +590,8 @@
         <div class="p-5 flex flex-column flex-auto">
             <div class="grid">
                 <div class="col-12">
-                    <div class="surface-0 shadow-2 border-1 border-50 border-round flex p-3 flex-column md:flex-row">
-                        <div class="border-bottom-1 md:border-right-1 md:border-bottom-none border-300 flex-auto p-3">
+                    <div class="surface-card shadow-2 border-round flex p-3 flex-column md:flex-row">
+                        <div class="border-bottom-1 md:border-right-1 md:border-bottom-none surface-border flex-auto p-3">
                             <div class="flex align-items-center mb-3">
                                 <i class="pi pi-shopping-cart text-blue-500 text-xl mr-2"></i>
                                 <span class="text-500 font-medium">Orders</span>
@@ -602,7 +602,7 @@
                                 <span class="text-pink-500 font-medium ">-25</span>
                             </div>
                         </div>
-                        <div class="border-bottom-1 md:border-right-1 md:border-bottom-none border-300 flex-auto p-3">
+                        <div class="border-bottom-1 md:border-right-1 md:border-bottom-none surface-border flex-auto p-3">
                             <div class="flex align-items-center mb-3">
                                 <i class="pi pi-shopping-cart text-orange-500 text-xl mr-2"></i>
                                 <span class="text-500 font-medium">Revenue</span>
@@ -613,7 +613,7 @@
                                 <span class="text-green-500 font-medium ">+15</span>
                             </div>
                         </div>
-                        <div class="border-bottom-1 md:border-right-1 md:border-bottom-none border-300 flex-auto p-3">
+                        <div class="border-bottom-1 md:border-right-1 md:border-bottom-none surface-border flex-auto p-3">
                             <div class="flex align-items-center mb-3">
                                 <i class="pi pi-users text-cyan-500 text-xl mr-2"></i>
                                 <span class="text-500 font-medium">Customers</span>
@@ -638,7 +638,7 @@
                     </div>
                 </div>
                 <div class="col-12 lg:col-6">
-                    <div class="surface-0 shadow-2 border-round p-4 h-full">
+                    <div class="surface-card shadow-2 border-round p-4 h-full">
                         <div class="flex align-items-center justify-content-between mb-3">
                             <div class="text-900 font-medium text-xl">Team Activity</div>
                             <div>
@@ -647,7 +647,7 @@
                             </div>
                         </div>
                         <ul class="list-none p-0 m-0">
-                            <li class="py-3 border-bottom-1 border-300 flex md:align-items-start md:justify-content-between flex-column md:flex-row">
+                            <li class="py-3 border-bottom-1 surface-border flex md:align-items-start md:justify-content-between flex-column md:flex-row">
                                 <div class="flex align-items-start mr-0 lg:mr-5">
                                     <img src="assets/images/blocks/avatars/circle-big/avatar-f-1.png" class="mr-3 w-3rem h-3rem"/>
                                     <div>
@@ -661,7 +661,7 @@
                                 </div>
                                 <span class="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">14 mins ago</span>
                             </li>
-                            <li class="py-3 border-bottom-1 border-300 flex md:align-items-start md:justify-content-between flex-column md:flex-row">
+                            <li class="py-3 border-bottom-1 surface-border flex md:align-items-start md:justify-content-between flex-column md:flex-row">
                                 <div class="flex align-items-start mr-0 lg:mr-5">
                                     <img src="assets/images/blocks/avatars/circle-big/avatar-m-1.png" class="mr-3 w-3rem h-3rem"/>
                                     <div>
@@ -671,7 +671,7 @@
                                 </div>
                                 <span class="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">20 mins ago</span>
                             </li>
-                            <li class="py-3 border-bottom-1 border-300 flex md:align-items-start md:justify-content-between flex-column md:flex-row">
+                            <li class="py-3 border-bottom-1 surface-border flex md:align-items-start md:justify-content-between flex-column md:flex-row">
                                 <div class="flex align-items-start mr-0 lg:mr-5">
                                     <img src="assets/images/blocks/avatars/circle-big/avatar-f-2.png" class="mr-3 w-3rem h-3rem"/>
                                     <div>
@@ -685,7 +685,7 @@
                                 </div>
                                 <span class="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">38 mins ago</span>
                             </li>
-                            <li class="py-3 border-bottom-1 border-300 flex md:align-items-start md:justify-content-between flex-column md:flex-row">
+                            <li class="py-3 border-bottom-1 surface-border flex md:align-items-start md:justify-content-between flex-column md:flex-row">
                                 <div class="flex align-items-start mr-0 lg:mr-5">
                                     <img src="assets/images/blocks/avatars/circle-big/avatar-f-3.png" class="mr-3 w-3rem h-3rem"/>
                                     <div>
@@ -709,7 +709,7 @@
                     </div>
                 </div>
                 <div class="col-12 lg:col-6">
-                    <div class="surface-0 shadow-2 border-round p-4 h-full">
+                    <div class="surface-card shadow-2 border-round p-4 h-full">
                         <div class="flex align-items-center justify-content-between mb-4">
                             <div class="text-900 font-medium text-xl">Notifications</div>
                             <div>
@@ -720,7 +720,7 @@
                         
                         <span class="block text-600 font-medium mb-3">TODAY</span>
                         <ul class="p-0 mx-0 mt-0 mb-4 list-none">
-                            <li class="flex align-items-center py-2 border-bottom-1 border-300">
+                            <li class="flex align-items-center py-2 border-bottom-1 surface-border">
                                 <div class="w-3rem h-3rem flex align-items-center justify-content-center bg-blue-100 border-circle mr-3 flex-shrink-0">
                                     <i class="pi pi-dollar text-xl text-blue-500"></i>
                                 </div>
@@ -738,7 +738,7 @@
                 
                         <span class="block text-600 font-medium mb-3">YESTERDAY</span>
                         <ul class="p-0 m-0 list-none">
-                            <li class="flex align-items-center py-2 border-bottom-1 border-300">
+                            <li class="flex align-items-center py-2 border-bottom-1 surface-border">
                                 <div class="w-3rem h-3rem flex align-items-center justify-content-center bg-blue-100 border-circle mr-3 flex-shrink-0">
                                     <i class="pi pi-dollar text-xl text-blue-500"></i>
                                 </div>
@@ -746,7 +746,7 @@
                                     <span class="text-700">has purchased a black jacket for <span class="text-blue-500">59$</span></span>
                                 </span>
                             </li>
-                            <li class="flex align-items-center py-2 border-bottom-1 border-300">
+                            <li class="flex align-items-center py-2 border-bottom-1 surface-border">
                                 <div class="w-3rem h-3rem flex align-items-center justify-content-center bg-pink-100 border-circle mr-3 flex-shrink-0">
                                     <i class="pi pi-question text-xl text-pink-500"></i>
                                 </div>
@@ -766,7 +766,7 @@
                     </div>
                 </div>
                 <div class="col-12 lg:col-4">
-                    <div class="surface-0 border-round shadow-2 p-4 text-center">
+                    <div class="surface-card border-round shadow-2 p-4 text-center">
                         <img src="assets/images/blocks/illustration/windows.svg" alt="Image" class="mx-auto block mb-4">
                         <div class="text-900 font-medium mb-3 text-xl">Title Placeholder</div>
                         <p class="mt-0 mb-4 p-0 line-height-3">Nunc mi ipsum faucibus vitae aliquet nec. Lacus sed viverra tellus in hac habitasse platea dictumst.</p>
@@ -774,7 +774,7 @@
                     </div>
                 </div>
                 <div class="col-12 lg:col-4">
-                    <div class="surface-0 border-round shadow-2 p-4 text-center">
+                    <div class="surface-card border-round shadow-2 p-4 text-center">
                         <img src="assets/images/blocks/illustration/security.svg" alt="Image" class="mx-auto block mb-4">
                         <div class="text-900 font-medium mb-3 text-xl">Title Placeholder</div>
                         <p class="mt-0 mb-4 p-0 line-height-3">Nunc mi ipsum faucibus vitae aliquet nec. Lacus sed viverra tellus in hac habitasse platea dictumst.</p>
@@ -782,7 +782,7 @@
                     </div>
                 </div>
                 <div class="col-12 lg:col-4">
-                    <div class="surface-0 border-round shadow-2 p-4 text-center">
+                    <div class="surface-card border-round shadow-2 p-4 text-center">
                         <img src="assets/images/blocks/illustration/live-collaboration.svg" alt="Image" class="mx-auto block mb-4">
                         <div class="text-900 font-medium mb-3 text-xl">Title Placeholder</div>
                         <p class="mt-0 mb-4 p-0 line-height-3">Nunc mi ipsum faucibus vitae aliquet nec. Lacus sed viverra tellus in hac habitasse platea dictumst.</p>
@@ -790,7 +790,7 @@
                     </div>
                 </div>
                 <div class="col-12 lg:col-6">
-                    <div class="surface-0 shadow-2 border-round p-4">
+                    <div class="surface-card shadow-2 border-round p-4">
                         <div class="flex align-items-center justify-content-between mb-3">
                             <div class="text-900 font-medium text-xl">Sales</div>
                             <div>
@@ -802,7 +802,7 @@
                     </div>
                 </div>
                 <div class="col-12 lg:col-6">
-                    <div class="surface-0 shadow-2 border-round p-4">
+                    <div class="surface-card shadow-2 border-round p-4">
                         <div class="flex align-items-center justify-content-between mb-3">
                             <div class="text-900 font-medium text-xl">Customers</div>
                             <div>
@@ -814,7 +814,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
 </block-viewer>
