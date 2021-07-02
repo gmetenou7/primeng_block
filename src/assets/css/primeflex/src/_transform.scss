@@ -8,6 +8,8 @@ $translate-props: (
 );
 
 $rotate-props: (
+    'rotate-45': 'rotate(45deg)',
+    '-rotate-45': 'rotate(-45deg)',
     'rotate-90': 'rotate(90deg)',
     '-rotate-90': 'rotate(-90deg)',
     'rotate-180': 'rotate(180deg)',
@@ -17,11 +19,11 @@ $rotate-props: (
 $transform-origin-props: (
     'origin-center': 'center',
     'origin-top': 'top',
-    'origin-top-right': 'top-right',
+    'origin-top-right': 'top right',
     'origin-right': 'right',
-    'origin-bottom-right': 'bottom-right',
+    'origin-bottom-right': 'bottom right',
     'origin-bottom': 'bottom',
-    'origin-bottom-left': 'bottom-left',
+    'origin-bottom-left': 'bottom left',
     'origin-left': 'left',
     'origin-top-left': 'top-left'
 );
