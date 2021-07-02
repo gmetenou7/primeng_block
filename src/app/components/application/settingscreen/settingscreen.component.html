@@ -1,6 +1,6 @@
 <block-viewer header="Settings" [code]="block1">
     <div class="min-h-screen flex relative lg:static surface-ground">
-        <div id="app-sidebar" class="h-100 hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-300 w-full md:w-auto">
+        <div id="app-sidebar" class="h-100 hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 surface-border w-full md:w-auto">
             <div class="flex h-full">
                 <div class="flex flex-column h-full bg-indigo-500 flex-shrink-0 select-none">
                     <div class="flex align-items-center justify-content-center flex-shrink-0 bg-indigo-600" style="height:60px">
@@ -104,7 +104,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <ul class="list-none py-2 px-0 m-0 border-top-1 border-300">
+                                <ul class="list-none py-2 px-0 m-0 border-top-1 surface-border">
                                     <li>
                                        <div class="p-3 text-500 font-medium">ORGANIZATION</div> 
                                     </li>
@@ -147,7 +147,7 @@
             </div>
         </div>
         <div class="min-h-screen flex flex-column relative flex-auto">
-            <div class="flex justify-content-between align-items-center px-5 surface-0 border-bottom-1 border-300 relative lg:static" style="height:60px">
+            <div class="flex justify-content-between align-items-center px-5 surface-section border-bottom-1 surface-border relative lg:static" style="height:60px">
                 <div class="flex">
                     <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft">
                         <i class="pi pi-bars text-4xl"></i>
@@ -161,7 +161,7 @@
                     <i class="pi pi-ellipsis-v text-2xl"></i>
                 </a>
                 <ul class="list-none p-0 m-0  hidden lg:flex lg:align-items-center select-none lg:flex-row 
-                    surface-0 right-0 top-100 z-1 shadow-2 lg:shadow-none absolute lg:static">
+                    surface-section border-1 lg:border-none surface-border right-0 top-100 z-1 shadow-2 lg:shadow-none absolute lg:static">
                     <li>
                         <a class="flex p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-900 hover:surface-100 font-medium border-round cursor-pointer
                             transition-duration-150 transition-colors">
@@ -176,7 +176,7 @@
                             <span class="block lg:hidden font-medium">Notifications</span>
                         </a>
                     </li>
-                    <li class="border-top-1 border-300 lg:border-top-none">
+                    <li class="border-top-1 surface-border lg:border-top-none">
                         <a class="flex p-3 lg:px-3 lg:py-2 align-items-center hover:surface-100 font-medium border-round cursor-pointer
                             transition-duration-150 transition-colors">
                             <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-3 lg:mr-0" style="width: 32px; height: 32px"/>
