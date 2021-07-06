@@ -34,6 +34,11 @@
   --gray-900: #0e1315;
   --content-padding:1rem;
   --inline-spacing:0.5rem;
+  --surface-ground:#0e1315;
+  --surface-section:#0e1315;
+  --surface-card:#161d21;
+  --surface-overlay:#161d21;
+  --surface-border:#263238;
 }
 
 /* poppins-300 - latin-ext_latin */
