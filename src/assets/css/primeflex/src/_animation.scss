@@ -253,4 +253,4 @@ $animation-fill-props: (
 @include style-class('animation-delay', $animation-delay-props);
 @include style-class('animation-iteration-count', $animation-iteration-props);
 @include style-class('animation-timing-function', $animation-timing-props);
-@include style-class('animation-fill', $animation-fill-props);
+@include style-class('animation-fill-mode', $animation-fill-props);
