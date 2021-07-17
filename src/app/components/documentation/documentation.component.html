@@ -1,1 +1,64 @@
-SETUP
+<h1 class="text-4xl mt-0 mb-3">Documentation</h1>
+<p class="mb-3 line-height-3">PrimeBlocks for Angular consists of copy paste ready UI blocks crafted with PrimeFlex where theming and interactivity is provided by PrimeNG.</p>
+
+<h3 class="text-xl mb-3">What is a Block?</h3>
+<p class="line-height-3">A UI block is a set of html elements styled with the <a href="https://www.primefaces.org/primeflex" class="text-blue-500 no-underline">PrimeFlex</a> CSS utility library. A block can also contain PrimeNG components in addition to regular elements.
+    The blocks are designed to be used easily by simply moving the block code to your own application. This is achieved by
+    defining the styling in the markup without using a custom css declaration. In cases where a block requires interactivity such as toggling the visibility of a menu or a sidebar, pStyleClass directive of PrimeNG manages the events and animations.</p>
+
+<h3 class="text-xl mb-3">Theming</h3>
+<p class="line-height-3">Blocks utilize color classes for background, text color, border color and pseudo states. Color values are derived from the PrimeNG theme being used so that a block can seamlesslly integrate with your application. For example
+    <i>bg-blue-500</i> class retrieves the background color using the <i>--blue-500</i> CSS variables from PrimeNG. See <a href="https://primefaces.org/primeng/showcase/#/colors" class="text-blue-500 no-underline">PrimeNG colors palettes</a> for more information.
+</p>
+
+<h2 class="text-2xl mb-3">Setup</h2>
+<h3 class="text-xl mb-3">PrimeFlex</h3>
+<p class="line-height-3">PrimeFlex v3.0+ needs to be installed to begin with.</p>
+
+<app-code lang="markup" ngNonBindable ngPreserveWhitespaces>
+npm install primeflex --save
+</app-code>
+
+<p class="line-height-3">Next step is adding the primeflex.css to your application by either using angular.json or styles.scss alternatives.</p>
+
+<b class="block mt-3">angular.json</b>
+<p>You may define it at angular.json styles section.</p>
+<app-code lang="javascript" ngNonBindable ngPreserveWhitespaces>
+"styles": [
+    "src/styles.scss",
+    "./node_modules/primeflex/primeflex.css"
+],
+</app-code>
+
+<b class="block mt-3">styles.scss</b>
+<p>Alternative is importing the css via styles.scss without changing angular.json.</p>
+<app-code lang="javascript" ngNonBindable ngPreserveWhitespaces>
+"styles": [
+    "src/styles.scss"
+],
+</app-code>
+
+<br />
+
+<app-code lang="css" ngNonBindable ngPreserveWhitespaces>
+@import "primeflex/primeflex.css";
+</app-code>
+
+<h3 class="text-xl mb-3">pStyleClass directive</h3>
+<p class="line-height-3">Many of the blocks like a navbar may require interactivity for opening or hiding a menu. A handy directive called <i>pStyleClass</i> is available via PrimeNG to bring interactivity easily. 
+    The directive adds a click event to its host and manages the enter/leave animation of a target. Load the StyleClassModule from PrimeNG and import it to your module just like you are using a PrimeNG component.</p>
+
+<app-code lang="javascript" ngNonBindable ngPreserveWhitespaces>
+import &#123;StyleClassModule&#125; from 'primeng/utils';
+</app-code>
+
+<h3 class="text-xl mb-3">Try a Block</h3>
+<p class="line-height-3">That's it, now you can use the copy icon of a block demo and paste it to your application to get started. Please note that, a block may use PrimeNG components as well so make sure those components are imported.</p>
+
+<h3 class="text-xl mb-3">Containers</h3>
+<p class="line-height-3">A container is a wrapper of a UI block usually define the paddings, margins and also the background for some block types. Each demo in the samples have a section called <i>containerClass</i> that define the container. When a block is copied to your application,
+containers are not included as it depends on your application layout so it is highly suggested to paste the block into a container element, you may choose the exact container class in the sample, use one of the <a [routerLink]="['/application/container']" class="text-blue-500 no-underline">built-in containers</a> or create your own.</p>
+
+
+
+
