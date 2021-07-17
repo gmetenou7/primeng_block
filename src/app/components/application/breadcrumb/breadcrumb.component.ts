@@ -5,8 +5,55 @@ import { Component } from '@angular/core';
 })
 export class BreadcrumbComponent {
 
-    block1 = ``;
+    block1 = `
+<ul class="list-none p-3 m-0 surface-card flex align-items-center font-medium overflow-x-auto">
+    <li class="pr-3">
+        <a class="cursor-pointer">
+            <i class="pi pi-home text-blue-500"></i>
+        </a>
+    </li>
+    <li class="px-2">
+        <i class="pi pi-angle-right text-500"></i>
+    </li>
+    <li class="px-2">
+        <a class="cursor-pointer text-blue-500 white-space-nowrap">Level 3</a>
+    </li>
+    <li class="px-2">
+        <i class="pi pi-angle-right text-500"></i>
+    </li>
+    <li class="px-2">
+        <a class="cursor-pointer text-blue-500 white-space-nowrap">Level 2</a>
+    </li>
+    <li class="px-2">
+        <i class="pi pi-angle-right text-500"></i>
+    </li>
+    <li class="px-2">
+        <a class="cursor-pointer text-900 white-space-nowrap">Level 1</a>
+    </li>
+</ul>`;
 
-    block2 = ``;
+    block2 = `
+<ul class="list-none p-0 m-0 surface-card flex font-medium overflow-y-hidden overflow-x-auto">
+    <li class="relative p-3">
+        <a class="cursor-pointer">
+            <i class="pi pi-home text-blue-500"></i>
+        </a>
+    </li>
+    <li class="relative p-3">
+        <div class="absolute left-0 top-0 z-1" style="border-left: 20px solid var(--surface-card); border-top: 26px solid transparent; border-bottom: 26px solid transparent; width: 0; height: 0"></div>
+        <a class="cursor-pointer text-blue-500 pl-4 white-space-nowrap">Level 3</a>
+        <div class="absolute top-0" style="left: 1px; border-left: 20px solid var(--surface-border); border-top: 26px solid transparent; border-bottom: 26px solid transparent; width: 0; height: 0"></div>
+    </li>
+    <li class="relative p-3">
+        <div class="absolute left-0 top-0 z-1" style="border-left: 20px solid var(--surface-card); border-top: 26px solid transparent; border-bottom: 26px solid transparent; width: 0; height: 0"></div>
+        <a class="cursor-pointer text-blue-500 pl-4 white-space-nowrap">Level 2</a>
+        <div class="absolute top-0" style="left: 1px; border-left: 20px solid var(--surface-border); border-top: 26px solid transparent; border-bottom: 26px solid transparent; width: 0; height: 0"></div>
+    </li>
+    <li class="relative p-3">
+        <div class="absolute left-0 top-0 z-1" style="border-left: 20px solid var(--surface-card); border-top: 26px solid transparent; border-bottom: 26px solid transparent; width: 0; height: 0"></div>
+        <a class="cursor-pointer text-900 pl-4 white-space-nowrap">Level 1</a>
+        <div class="absolute top-0" style="left: 1px; border-left: 20px solid var(--surface-border); border-top: 26px solid transparent; border-bottom: 26px solid transparent; width: 0; height: 0"></div>
+    </li>
+</ul>`;
 
 }
