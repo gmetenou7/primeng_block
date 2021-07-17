@@ -25,7 +25,7 @@ enum BlockView {
                 </div>
             </div>
             <div class="block-content">
-                <div [class]="previewClass" [ngClass]="{'block-preview': true, 'block-content-active': blockView == BlockView.PREVIEW}" [ngStyle]="previewStyle">
+                <div [class]="containerClass" [ngClass]="{'block-preview': true, 'block-content-active': blockView == BlockView.PREVIEW}" [ngStyle]="previewStyle">
                     <ng-content></ng-content>   
                 </div>
                 <div class="block-code" [ngClass]="{'block-content-active': blockView == BlockView.CODE}">
@@ -43,7 +43,7 @@ export class BlockViewer implements AfterViewInit {
 
     @Input() code: string;
 
-    @Input() previewClass: string;
+    @Input() containerClass: string;
 
     @Input() previewStyle: string;
 

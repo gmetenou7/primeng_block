@@ -1,5 +1,5 @@
 <div class="block-category-title">Dialog</div>
-<block-viewer header="Left Aligned Header Icon" [code]="block1" previewClass="surface-section px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center">
+<block-viewer header="Left Aligned Header Icon" [code]="block1" containerClass="surface-section px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center">
     <button pButton pRipple label="Display" (click)="visible1 = true"></button>
 
     <p-dialog [(visible)]="visible1" appendTo="body" [modal]="true" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '40vw'}">
@@ -24,7 +24,7 @@
     </p-dialog>
 </block-viewer>
 
-<block-viewer header="Centered Header Icon" [code]="block2" previewClass="surface-section px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center">
+<block-viewer header="Centered Header Icon" [code]="block2" containerClass="surface-section px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center">
     <button pButton pRipple label="Display" (click)="visible2 = true"></button>
 
     <p-dialog [(visible)]="visible2" appendTo="body" [modal]="true" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '40vw'}" [closable]="false" [showHeader]="false">
