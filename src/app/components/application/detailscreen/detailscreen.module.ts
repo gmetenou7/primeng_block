@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DetailScreenComponent } from './detailscreen.component';
-import { StyleClassModule } from 'primeng/utils';
+import { StyleClassModule } from 'primeng/styleclass';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
 import { TabMenuModule } from 'primeng/tabmenu';

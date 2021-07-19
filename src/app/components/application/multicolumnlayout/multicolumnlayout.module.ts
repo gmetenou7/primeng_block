@@ -6,7 +6,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { BadgeModule } from 'primeng/badge';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
-import { StyleClassModule } from 'primeng/utils';
+import { StyleClassModule } from 'primeng/styleclass';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 
 @NgModule({

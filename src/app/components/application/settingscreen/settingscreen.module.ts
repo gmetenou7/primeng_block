@@ -12,7 +12,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { FileUploadModule } from 'primeng/fileupload'; 
 import { CheckboxModule } from 'primeng/checkbox';
 import { InputSwitchModule } from 'primeng/inputswitch';
-import { StyleClassModule } from 'primeng/utils';
+import { StyleClassModule } from 'primeng/styleclass';
 
 @NgModule({
   imports: [

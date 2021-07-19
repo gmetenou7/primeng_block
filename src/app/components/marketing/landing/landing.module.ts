@@ -7,7 +7,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { AvatarModule } from 'primeng/avatar';
 import { InputSwitchModule } from 'primeng/inputswitch';
-import { StyleClassModule } from 'primeng/utils';
+import { StyleClassModule } from 'primeng/styleclass';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 
 @NgModule({

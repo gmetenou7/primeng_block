@@ -5,7 +5,7 @@ import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
 import { InputTextModule } from 'primeng/inputtext';
 import { BadgeModule } from 'primeng/badge';
-import { StyleClassModule } from 'primeng/utils';
+import { StyleClassModule } from 'primeng/styleclass';
 import { NavBarRoutingModule } from './navbar-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 
