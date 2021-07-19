@@ -73,7 +73,7 @@ export class BlockViewer implements AfterViewInit {
     }
 
     ngAfterViewInit() {
-        if (window['Prism']) {
+        if (window['Prism'] && this.codeViewChild && this.codeViewChild.nativeElement) {
             window['Prism'].highlightElement(this.codeViewChild.nativeElement);
         }
     }
