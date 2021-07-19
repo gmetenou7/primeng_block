@@ -7,8 +7,8 @@ import { MenuItem } from 'primeng/api';
 export class DashboardComponent implements OnInit {
 
     block1 = `
-<div class="min-h-screen flex relative lg:static surface-ground">
-    <div id="app-sidebar" class="surface-section h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 surface-border select-none" style="width:280px">
+<div class="min-h-screen flex surface-ground">
+    <div id="app-sidebar" class="surface-section h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 border-right-1 surface-border select-none" style="width:280px">
         <div class="flex flex-column h-full">
             <div class="flex align-items-center px-5 flex-shrink-0" style="height:60px">
                 <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="30">

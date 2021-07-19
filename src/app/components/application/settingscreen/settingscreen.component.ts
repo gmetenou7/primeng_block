@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
 export class SettingScreenComponent implements OnInit {
 
     block1 = `
-<div class="min-h-screen flex relative lg:static surface-ground">
-    <div id="app-sidebar" class="h-100 hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 surface-border w-full md:w-auto">
+<div class="min-h-screen flex surface-ground">
+    <div id="app-sidebar" class="h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 border-right-1 surface-border w-full md:w-auto">
         <div class="flex h-full">
             <div class="flex flex-column h-full bg-indigo-500 flex-shrink-0 select-none">
                 <div class="flex align-items-center justify-content-center flex-shrink-0 bg-indigo-600" style="height:60px">

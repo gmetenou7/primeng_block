@@ -7,7 +7,7 @@ export class SlideOverComponent {
 
     block1 = `
 <button pButton pRipple label="Display" icon="pi pi-arrow-right" pStyleClass="@next" toggleClass="-translate-x-100" [hideOnOutsideClick]="true"></button>
-<div class="surface-overlay flex flex-column p-4 h-screen absolute top-0 left-0 shadow-2 
+<div class="surface-overlay flex flex-column p-4 h-full fixed top-0 left-0 shadow-2 
     -translate-x-100 transition-transform transition-duration-150 transition-ease-in-out" style="width:280px">
     <div class="flex align-items-center justify-content-between mb-4">
         <span class="text-900 text-xl font-medium">Title Placeholder</span>
@@ -18,7 +18,7 @@ export class SlideOverComponent {
 
     block2 = `
 <button pButton pRipple label="Display" icon="pi pi-arrow-left" pStyleClass="@next" toggleClass="translate-x-100" [hideOnOutsideClick]="true"></button>
-<div class="surface-overlay flex flex-column p-4 h-screen absolute top-0 right-0 shadow-2 
+<div class="surface-overlay flex flex-column p-4 h-full fixed top-0 right-0 shadow-2 
     translate-x-100 transition-transform transition-duration-150 transition-ease-in-out" style="width:280px">
     <div class="flex align-items-center justify-content-between mb-4">
         <span class="text-900 text-xl font-medium">Title Placeholder</span>
@@ -29,7 +29,7 @@ export class SlideOverComponent {
 
     block3 = `
 <button pButton pRipple label="Display" icon="pi pi-arrow-left" pStyleClass="@next" toggleClass="translate-x-100" [hideOnOutsideClick]="true"></button>
-<div class="surface-overlay flex flex-column p-4 h-screen absolute top-0 right-0 shadow-2 
+<div class="surface-overlay flex flex-column p-4 h-full fixed top-0 right-0 shadow-2 
     translate-x-100 transition-transform transition-duration-150 transition-ease-in-out w-full lg:w-6">
     <div class="flex align-items-center justify-content-between mb-4">
         <span class="text-900 text-xl font-medium">Title Placeholder</span>
@@ -40,7 +40,7 @@ export class SlideOverComponent {
 
     block4 = `
 <button pButton pRipple label="Display" icon="pi pi-arrow-left" pStyleClass="@next" toggleClass="translate-x-100" [hideOnOutsideClick]="true"></button>
-<div id="_contrastheader" class="surface-overlay flex flex-column h-screen absolute top-0 right-0 shadow-2 
+<div id="_contrastheader" class="surface-overlay flex flex-column h-full fixed top-0 right-0 shadow-2 
     translate-x-100 transition-transform transition-duration-150 transition-ease-in-out" style="width:280px">
     <div class="flex align-items-start bg-gray-800 justify-content-between p-3">
         <div>

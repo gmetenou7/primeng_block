@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
 export class SidebarLayoutComponent {
 
     block1 = `
-<div class="min-h-screen flex relative lg:static surface-ground">
-    <div id="app-sidebar-1" class="bg-bluegray-800 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 select-none" style="width:280px">
+<div class="min-h-screen flex surface-ground">
+    <div id="app-sidebar-1" class="bg-bluegray-800 h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 select-none" style="width:280px">
         <div class="flex flex-column h-full">
             <div class="flex align-items-center px-5 bg-bluegray-900 flex-shrink-0" style="height:60px">
                 <img src="assets/images/blocks/logos/hyper-300.svg" alt="Image" height="30">
@@ -188,8 +188,8 @@ export class SidebarLayoutComponent {
 </div>`;
 
     block2 = `
-<div class="min-h-screen flex relative lg:static surface-ground">
-    <div id="app-sidebar-2" class="surface-section h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 surface-border select-none" style="width:280px">
+<div class="min-h-screen flex surface-ground">
+    <div id="app-sidebar-2" class="surface-section h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 border-right-1 surface-border select-none" style="width:280px">
         <div class="flex flex-column h-full">
             <div class="flex align-items-center px-5 flex-shrink-0" style="height:60px">
                 <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="30">
@@ -369,8 +369,8 @@ export class SidebarLayoutComponent {
 </div>`;
 
     block3 = `
-<div class="min-h-screen flex relative lg:static surface-ground">
-    <div id="app-sidebar-3" class="bg-gray-900 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-gray-800 select-none" style="width:280px">
+<div class="min-h-screen flex surface-ground">
+    <div id="app-sidebar-3" class="bg-gray-900 h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 border-right-1 border-gray-800 select-none" style="width:280px">
         <div class="flex flex-column h-full">
             <div class="flex align-items-center px-5 flex-shrink-0" style="height:60px">
                 <img src="assets/images/blocks/logos/hyper-300.svg" alt="Image" height="30">
@@ -540,8 +540,8 @@ export class SidebarLayoutComponent {
 </div>`;
 
     block4 = `
-<div class="min-h-screen flex relative lg:static surface-ground">
-    <div id="app-sidebar-4" class="bg-gray-900 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-gray-800 w-18rem lg:w-5rem select-none">
+<div class="min-h-screen flex surface-ground">
+    <div id="app-sidebar-4" class="bg-gray-900 h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 border-right-1 border-gray-800 w-18rem lg:w-5rem select-none">
         <div class="flex flex-column h-full">
             <div class="flex align-items-center justify-content-center flex-shrink-0 bg-indigo-500" style="height:60px">
                 <img src="assets/images/blocks/logos/hyper-light.svg" alt="Image" height="30">
@@ -631,7 +631,7 @@ export class SidebarLayoutComponent {
     <div class="min-h-screen flex flex-column relative flex-auto">
         <div class="flex justify-content-between align-items-center px-5 surface-section relative lg:static border-bottom-1 surface-border" style="height:60px">
             <div class="flex">
-                <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-1" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+                <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-4" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                     <i class="pi pi-bars text-4xl"></i>
                 </a>
                 <span class="p-input-icon-left">
@@ -679,8 +679,8 @@ export class SidebarLayoutComponent {
 </div>`;
 
     block5 = `
-<div class="min-h-screen flex relative lg:static surface-ground">
-    <div id="app-sidebar-5" class="bg-gray-900 h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 border-gray-800 w-18rem lg:w-7rem select-none">
+<div class="min-h-screen flex surface-ground">
+    <div id="app-sidebar-5" class="bg-gray-900 h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 border-right-1 border-gray-800 w-18rem lg:w-7rem select-none">
         <div class="flex flex-column h-full">
             <div class="flex align-items-center justify-content-center flex-shrink-0 bg-orange-500" style="height:60px">
                 <img src="assets/images/blocks/logos/hyper-light.svg" alt="Image" height="30">
@@ -769,7 +769,7 @@ export class SidebarLayoutComponent {
     <div class="min-h-screen flex flex-column relative flex-auto">
         <div class="flex justify-content-between align-items-center px-5 surface-section relative lg:static border-bottom-1 surface-border" style="height:60px">
             <div class="flex">
-                <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-1" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+                <a class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-5" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                     <i class="pi pi-bars text-4xl"></i>
                 </a>
                 <span class="p-input-icon-left">
