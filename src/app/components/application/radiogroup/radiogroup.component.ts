@@ -93,7 +93,7 @@ export class RadioGroupComponent {
     block3 = `
 <div class="w-full">
     <div class="text-900 text-xl mb-3 text-left font-medium">Change your account tier</div>
-    <div class="surface-border border-1 p-3 border-round-top flex align-items-center cursor-pointer" [ngClass]="{'surface-card': tier2 !== 0, 'bg-blue-50': tier2 === 0}" (click)="tier2 = 0">
+    <div class="surface-border border-1 p-3 border-round-top flex align-items-center cursor-pointer" [ngClass]="{'surface-card': tier2 !== 0, 'bg-primary': tier2 === 0}" (click)="tier2 = 0">
         <div class="w-4 flex align-items-center pr-4">
             <p-radioButton name="tier2" [value]="0" [(ngModel)]="tier2" styleClass="mr-2"></p-radioButton>
             <div class="font-medium" [ngClass]="{'text-900': tier2 !== 0, 'bg-primary': tier2 === 0}">Basic</div>
@@ -119,7 +119,7 @@ export class RadioGroupComponent {
             <span [ngClass]="{'text-600': tier2 !== 1, 'bg-primary': tier2 === 1}"> / Month</span>
         </div>
     </div>
-    <div class="surface-border border-1 border-top-none p-3 border-round-bottom flex align-items-center cursor-pointer" [ngClass]="{'surface-card': tier2 !== 2, 'bg-blue-50': tier2 === 2}" (click)="tier2 = 2">
+    <div class="surface-border border-1 border-top-none p-3 border-round-bottom flex align-items-center cursor-pointer" [ngClass]="{'surface-card': tier2 !== 2, 'bg-primary': tier2 === 2}" (click)="tier2 = 2">
         <div class="w-4 flex align-items-center pr-4">
             <p-radioButton name="tier2" [value]="2" [(ngModel)]="tier2" styleClass="mr-2"></p-radioButton>
             <div class="font-medium" [ngClass]="{'text-900': tier2 !== 2, 'bg-primary': tier2 === 2}">Enterprise</div>

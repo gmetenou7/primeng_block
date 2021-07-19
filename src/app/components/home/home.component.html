@@ -3,9 +3,9 @@
         <div class="introduction-title text-900">Angular UI Blocks</div>
         <div class="introduction-subtitle">Powered by PrimeNG</div>
         <p>150+ ready to use UI blocks to build spectacular applications in no time.</p>
-        <div class="introduction-buttons">
-            <button pButton pRipple label="Browse All" (click)="viewBlocks(marketing)" class="font-bold"></button>
-            <button pButton pRipple label="Free Blocks" class="p-button-outlined font-bold" [routerLink]="['/free']"></button>
+        <div class="flex flex-nowrap flex-column align-items-center sm:flex-row sm:justify-content-center">
+            <button pButton pRipple label="Browse All" (click)="viewBlocks(marketing)" class="w-full sm:w-auto font-bold p-3 mb-3 sm:mb-0 sm:mr-3"></button>
+            <button pButton pRipple label="Free Blocks" class="w-full sm:w-auto p-button-outlined font-bold p-3" [routerLink]="['/free']"></button>
         </div>
     </div>
 </div>
