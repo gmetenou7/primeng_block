@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavBarComponent } from './navbar.component';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
-import { StyleClassModule } from '../../../styleClass';
+import { StyleClassModule } from 'primeng/utils';
 import { NavBarRoutingModule } from './navbar-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 

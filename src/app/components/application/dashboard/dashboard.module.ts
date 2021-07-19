@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard.component';
 import { InputTextModule } from 'primeng/inputtext';
 import { BadgeModule } from 'primeng/badge';
-import { StyleClassModule } from '../../../styleClass';
+import { StyleClassModule } from 'primeng/utils';
 import { ButtonModule } from 'primeng/button';
 import { MenuModule } from 'primeng/menu';
 import { DashboardRoutingModule } from './dashboard-routing.module';

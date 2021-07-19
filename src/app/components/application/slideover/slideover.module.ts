@@ -4,7 +4,7 @@ import { SlideOverComponent } from './slideover.component';
 import { SlideOverRoutingModule } from './slideover-routing.module';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
-import { StyleClassModule } from '../../../styleClass';
+import { StyleClassModule } from 'primeng/utils';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 
 @NgModule({

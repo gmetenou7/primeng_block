@@ -4,7 +4,7 @@ import { SidebarLayoutComponent } from './sidebarlayout.component';
 import { SidebarLayoutRoutingModule } from './sidebarlayout-routing.module';
 import { InputTextModule } from 'primeng/inputtext';
 import { BadgeModule } from 'primeng/badge';
-import { StyleClassModule } from '../../../styleClass';
+import { StyleClassModule } from 'primeng/utils';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 
 @NgModule({
