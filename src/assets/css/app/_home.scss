@@ -53,3 +53,21 @@
         }
     }
 }
+
+@media screen and (max-width: 576px) {
+    .introduction {    
+        .introduction-content {
+            padding-left:2rem;
+            padding-right:2rem;
+
+            .introduction-title,
+            .introduction-subtitle {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
