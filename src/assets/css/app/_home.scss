@@ -2,7 +2,7 @@
     background-image: url('../../images/bg-hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: calc(100vh - 115px);
+    min-height: calc(100vh - 115px);
     margin: -2rem -2rem 2rem -2rem;
     display: flex;
     align-items: center;
