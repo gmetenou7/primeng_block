@@ -19,7 +19,7 @@ export class SignInComponent {
         <input id="email" type="text" pInputText class="w-full mb-3">
 
         <label for="password" class="block text-900 font-medium mb-2">Password</label>
-        <input id="email" type="password" pInputText class="w-full mb-3">
+        <input id="password" type="password" pInputText class="w-full mb-3">
 
         <div class="flex align-items-center justify-content-between mb-6">
             <div class="flex align-items-center">
@@ -47,7 +47,7 @@ export class SignInComponent {
              <input id="email" type="text" pInputText class="w-full mb-3">
  
              <label for="password" class="block text-900 font-medium mb-2">Password</label>
-             <input id="email" type="password" pInputText class="w-full mb-3">
+             <input id="password" type="password" pInputText class="w-full mb-3">
  
              <div class="flex align-items-center justify-content-between mb-6">
                  <div class="flex align-items-center">
