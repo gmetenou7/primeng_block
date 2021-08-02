@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
 
     visibleTopbarMenu: boolean;
 
-    scale: number = 14;
+    scale: number = 16;
     
     scales: number[] = [12,13,14,15,16];
 
