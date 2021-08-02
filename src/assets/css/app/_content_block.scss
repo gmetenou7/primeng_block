@@ -78,14 +78,6 @@
     padding: 0;
     border:1px solid var(--surface-d);
     border-top: 0 none;
-
-    > div {
-        display: none;
-
-        &.block-content-active {
-            display: block;
-        }
-    }
 }
 
 pre[class*="language-"] {

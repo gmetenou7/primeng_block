@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { environment } from '../../../environments/environment';
 
 enum BlockView {
@@ -26,19 +26,18 @@ enum BlockView {
                 </div>
             </div>
             <div class="block-content">
-                <div [class]="containerClass" [ngClass]="{'block-preview': true, 'block-content-active': blockView == BlockView.PREVIEW}" [ngStyle]="previewStyle">
-                    <ng-content></ng-content>   
+                <div [class]="containerClass" [ngStyle]="previewStyle" *ngIf="blockView == BlockView.PREVIEW">
+                    <ng-content></ng-content>
                 </div>
-                <div class="block-code" [ngClass]="{'block-content-active': blockView == BlockView.CODE}">
-<pre class="language-markup" *ngIf="!codeDisabled"><code #codeblock>{{code}}
-
-</code></pre>
+                <div *ngIf="blockView == BlockView.CODE && !codeDisabled">
+<app-code lang="markup" ngPreserveWhitespaces>{{code}}
+</app-code>
                 </div>
             </div>
         </div>
     `
 })
-export class BlockViewer implements AfterViewInit {
+export class BlockViewer {
     
     @Input() header: string;
 
@@ -49,8 +48,6 @@ export class BlockViewer implements AfterViewInit {
     @Input() previewStyle: string;
 
     @Input() free: boolean = false;
-
-    @ViewChild('codeblock') codeViewChild: ElementRef;
 
     BlockView = BlockView;
 
@@ -70,12 +67,6 @@ export class BlockViewer implements AfterViewInit {
         }
 
         event.preventDefault();
-    }
-
-    ngAfterViewInit() {
-        if (window['Prism'] && this.codeViewChild && this.codeViewChild.nativeElement) {
-            window['Prism'].highlightElement(this.codeViewChild.nativeElement);
-        }
     }
 
     get codeDisabled() {
