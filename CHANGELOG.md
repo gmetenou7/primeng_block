@@ -1,1 +1,2 @@
+- Updated block viewer to use *ngIf instead of hiding elements with CSS
 - Fixed sign-in block input ids and added container
