@@ -7,24 +7,6 @@ export class TestimonialsComponent implements OnInit {
 
     company: any;
 
-    responsiveOptions: [
-        {
-            breakpoint: '1024px',
-            numVisible: 3,
-            numScroll: 3
-        },
-        {
-            breakpoint: '768px',
-            numVisible: 2,
-            numScroll: 2
-        },
-        {
-            breakpoint: '560px',
-            numVisible: 1,
-            numScroll: 1
-        }
-    ];
-
     block1 = `
 <div class="surface-ground text-center">
     <div class="flex flex-column md:flex-row">
@@ -75,10 +57,10 @@ export class TestimonialsComponent implements OnInit {
 
     block2 = `
 <div class="surface-ground text-center text-900" style="height: 500px">
-    <p-carousel [value]="company" [responsiveOptions]="responsiveOptions">
+    <p-carousel [value]="company">
         <ng-template let-person pTemplate="item">
             <div class="flex justify-content-center">
-                <div class="surface-card shadow-2 px-6 py-5 border-round mb-4 text-900 text-2xl line-highlight-3"
+                <div class="surface-card shadow-2 px-2 md:px-6 py-5 border-round mb-4 text-900 text-2xl line-highlight-3"
                     style="max-width: 600px">{{person.text}}</div>
             </div>
 
