@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 export class HeroComponent {
     
     block1: string = `
-    <div class="grid grid-nogutter surface-section text-800">
+<div class="grid grid-nogutter surface-section text-800">
     <div class="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center ">
         <section>
             <span class="block text-6xl font-bold mb-1">Create the screens your</span>
@@ -73,21 +73,22 @@ export class HeroComponent {
 </div>`;
 
     block5: string = `
-<div class="bg-gray-900 flex flex-wrap">
-    <div class="w-12 lg:w-6 p-4">
-        <h1 class="text-6xl font-bold text-white mt-0 mb-3">Social CRM that helps you grow faster <span class="text-yellow-500 underline">for free</span></h1>
-        <p class="text-3xl text-gray-400 mt-0 mb-5">Arcu cursus euismod quis viverra nibh cras. Amet justo donec enim diam vulputate ut.</p>
-        <ul class="list-none p-0 m-0">
-            <li class="mb-3 flex align-items-center"><i class="pi pi-compass text-yellow-500 text-xl mr-2"></i><span class="text-gray-400 line-height-3">Senectus et netus et malesuada fames.</span></li>
-            <li class="mb-3 flex align-items-center"><i class="pi pi-map text-yellow-500 text-xl mr-2"></i><span class="text-gray-400 line-height-3">Orci a scelerisque purus semper eget.</span></li>
-            <li class="mb-3 flex align-items-center"><i class="pi pi-calendar text-yellow-500 text-xl mr-2"></i><span class="text-gray-400 line-height-3">Aenean sed adipiscing diam donec adipiscing tristique.</span></li>
-        </ul>
-        <button type="button" pButton label="Claim Your Account" class="block mt-7 mb-7 lg:mb-0 p-button-rounded p-button-success p-button-lg font-medium"></button>
-    </div>
-    <div class="w-12 lg:w-6 text-center overflow-hidden">
-        <img src="assets/images/blocks/hero/hero-illustration.svg" alt="Image" class="w-full lg:w-auto">
+<div class="bg-gray-900 px-4 py-8 md:px-6 lg:px-8">
+    <div class="flex flex-wrap">
+        <div class="w-12 lg:w-6 p-4">
+            <h1 class="text-6xl font-bold text-white mt-0 mb-3">Social CRM that helps you grow faster <span class="text-yellow-500 underline">for free</span></h1>
+            <p class="text-3xl text-gray-400 mt-0 mb-5">Arcu cursus euismod quis viverra nibh cras. Amet justo donec enim diam vulputate ut.</p>
+            <ul class="list-none p-0 m-0">
+                <li class="mb-3 flex align-items-center"><i class="pi pi-compass text-yellow-500 text-xl mr-2"></i><span class="text-gray-400 line-height-3">Senectus et netus et malesuada fames.</span></li>
+                <li class="mb-3 flex align-items-center"><i class="pi pi-map text-yellow-500 text-xl mr-2"></i><span class="text-gray-400 line-height-3">Orci a scelerisque purus semper eget.</span></li>
+                <li class="mb-3 flex align-items-center"><i class="pi pi-calendar text-yellow-500 text-xl mr-2"></i><span class="text-gray-400 line-height-3">Aenean sed adipiscing diam donec adipiscing tristique.</span></li>
+            </ul>
+            <button type="button" pButton label="Claim Your Account" class="block mt-7 mb-7 lg:mb-0 p-button-rounded p-button-success p-button-lg font-medium"></button>
+        </div>
+        <div class="w-12 lg:w-6 text-center overflow-hidden">
+            <img src="assets/images/blocks/hero/hero-illustration.svg" alt="Image" class="w-full lg:w-auto">
+        </div>
     </div>
 </div>`;
-
 
 }
