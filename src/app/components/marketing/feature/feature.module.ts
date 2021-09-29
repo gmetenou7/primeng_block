@@ -4,6 +4,7 @@ import { FeatureComponent } from './feature.component';
 import { FeatureRoutingModule } from './feature-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 import { ButtonModule } from 'primeng/button';
+import { AccordionModule } from 'primeng/accordion';
 import { RippleModule } from 'primeng/ripple';
 
 @NgModule({
@@ -12,6 +13,7 @@ import { RippleModule } from 'primeng/ripple';
     FeatureRoutingModule,
     BlockViewerModule,
     ButtonModule,
+    AccordionModule,
     RippleModule
   ],
   declarations: [

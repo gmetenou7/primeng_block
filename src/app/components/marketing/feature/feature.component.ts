@@ -258,4 +258,274 @@ export class FeatureComponent {
     </div>
 </div>`;
 
+    block7: string = `
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+    <div class="font-bold text-900 text-3xl mb-3 text-center">Build The Way You Want</div>
+    <div class="text-700 text-center mb-3">Risus feugiat in ante metus. Lacus suspendisse faucibus interdum posuere lorem.</div>
+    <div class="flex flex-wrap">
+        <div class="w-full lg:w-6 xl:w-3 p-5">
+            <img src="assets/images/blocks/feature/feature-illustration-1.svg" alt="Image" class="w-full">
+            <div class="mt-3 mb-2 font-medium text-900 text-xl">Ornare Arcu Odio</div>
+            <span class="text-700 line-height-3">Quisque sagittis purus sit amet volutpat consequat mauris nunc. Scelerisque eleifend.</span>
+            <a tabindex="0" class="text-blue-500 font-medium flex align-items-center mt-2">
+                <span>Explore</span>
+                <i class="pi pi-arrow-right ml-3"></i>
+            </a>
+        </div>
+        <div class="w-full lg:w-6 xl:w-3 p-5">
+            <img src="assets/images/blocks/feature/feature-illustration-2.svg" alt="Image" class="w-full">
+            <div class="mt-3 mb-2 font-medium text-900 text-xl">Sem Nulla Pharetra</div>
+            <span class="text-700 line-height-3">Quisque sagittis purus sit amet volutpat consequat mauris nunc. Scelerisque eleifend.</span>
+            <a tabindex="0" class="text-blue-500 font-medium flex align-items-center mt-2">
+                <span>Explore</span>
+                <i class="pi pi-arrow-right ml-3"></i>
+            </a>
+        </div>
+        <div class="w-full lg:w-6 xl:w-3 p-5">
+            <img src="assets/images/blocks/feature/feature-illustration-3.svg" alt="Image" class="w-full">
+            <div class="mt-3 mb-2 font-medium text-900 text-xl">Facilisi Etiam Dignissim</div>
+            <span class="text-700 line-height-3">Quisque sagittis purus sit amet volutpat consequat mauris nunc. Scelerisque eleifend.</span>
+            <a tabindex="0" class="text-blue-500 font-medium flex align-items-center mt-2">
+                <span>Explore</span>
+                <i class="pi pi-arrow-right ml-3"></i>
+            </a>
+        </div>
+        <div class="w-full lg:w-6 xl:w-3 p-5">
+            <img src="assets/images/blocks/feature/feature-illustration-4.svg" alt="Image" class="w-full">
+            <div class="mt-3 mb-2 font-medium text-900 text-xl">Risus Feugiat In Ante</div>
+            <span class="text-700 line-height-3">Quisque sagittis purus sit amet volutpat consequat mauris nunc. Scelerisque eleifend.</span>
+            <a tabindex="0" class="text-blue-500 font-medium flex align-items-center mt-2">
+                <span>Explore</span>
+                <i class="pi pi-arrow-right ml-3"></i>
+            </a>
+        </div>
+    </div>
+</div>`;
+
+    block8: string = `
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8 overflow-hidden">
+    <div class="font-bold text-900 text-3xl mb-3 text-center">Explore The Features</div>
+    <div class="text-700 text-center mb-5 line-height-3">Libero justo laoreet sit amet cursus sit amet dictum. Auctor neque vitae tempus quam pellentesque nec nam.</div>
+    <div class="flex lg:justify-content-center mb-5">
+        <div class="py-3 pr-8 pl-3 w-30rem hidden lg:block">
+            <img src="assets/images/blocks/feature/feature-timeline-1.png" alt="Image" class="w-full mr-8">
+        </div>
+        <div class="flex flex-column align-items-center w-2rem">
+            <span class="bg-blue-500 text-0 flex align-items-center justify-content-center border-circle" style="min-width:2.5rem; min-height: 2.5rem">1</span>
+            <div class="h-full bg-blue-500" style="width: 2px; min-height: 4rem"></div>
+        </div>
+        <div class="py-3 pl-5 lg:pl-8 pl-3 lg:w-30rem">
+            <div class="text-900 text-xl mb-2 font-medium">Ornare Arcu Odio</div>
+            <span class="block text-700 line-height-3 mb-3">Quisque sagittis purus sit amet volutpat consequat mauris nunc. Scelerisque eleifend.</span>
+            <div class="pt-3 border-top-1 border-300">
+                <div class="mb-2 line-height-3"><span class="text-900 font-medium">Sed lectus vestibulum</span> mattis ullamcorper velit. Laoreet sit amet cursus sit.</div>
+                <div class="line-height-3"><span class="text-900 font-medium">Fames ac turpis</span> egestas sed tempus urna et. Cursus turpis massa.</div>
+            </div>
+            <img src="assets/images/blocks/feature/feature-timeline-1.png" alt="Image" class="w-full mt-3 block lg:hidden">
+        </div>
+    </div>
+    <div class="flex justify-content-center mb-5">
+        <div class="py-3 pl-5 pr-3 lg:pr-8 lg:pl-3 lg:w-30rem flex-order-1 lg:flex-order-0">
+            <div class="text-900 text-xl mb-2 font-medium">A diam maecenas</div>
+            <span class="block text-700 line-height-3 mb-3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</span>
+            <div class="pt-3 border-top-1 border-300">
+                <div class="mb-2 line-height-3"><span class="text-900 font-medium">Quis hendrerit dolor</span> magna eget est. Pellentesque pulvinar pellentesque.</div>
+                <div class="line-height-3"><span class="text-900 font-medium">Lectus urna duis</span> convallis convallis tellus id interdum velit laoreet.</div>
+            </div>
+            <img src="assets/images/blocks/feature/feature-timeline-2.png" alt="Image" class="w-full mt-3 block lg:hidden">
+        </div>
+        <div class="flex flex-column align-items-center w-2rem flex-order-0 lg:flex-order-1">
+            <span class="bg-yellow-500 text-0 flex align-items-center justify-content-center border-circle" style="min-width:2.5rem; min-height: 2.5rem">2</span>
+            <div class="h-full bg-yellow-500" style="width: 2px; min-height: 4rem"></div>
+        </div>
+        <div class="py-3 pl-8 pr-3 w-30rem hidden lg:block flex-order-2">
+            <img src="assets/images/blocks/feature/feature-timeline-2.png" alt="Image" class="w-full mr-8">
+        </div>
+    </div>
+    <div class="flex justify-content-center">
+        <div class="py-3 pr-8 pl-3 w-30rem hidden lg:block">
+            <img src="assets/images/blocks/feature/feature-timeline-3.png" alt="Image" class="w-full mr-8">
+        </div>
+        <div class="flex flex-column align-items-center w-2rem">
+            <span class="bg-cyan-500 text-0 flex align-items-center justify-content-center border-circle" style="min-width:2.5rem; min-height: 2.5rem">3</span>
+            <div class="h-full bg-cyan-500" style="width: 2px; min-height: 4rem"></div>
+        </div>
+        <div class="py-3 pl-5 lg:pl-8 pl-3 lg:w-30rem">
+            <div class="text-900 text-xl mb-2 font-medium">Pharetra et ultrices neque</div>
+            <span class="block text-700 line-height-3 mb-3">Id interdum velit laoreet id. A iaculis at erat pellentesque adipiscing commodo elit at imperdiet.</span>
+            <div class="pt-3 border-top-1 border-300">
+                <div class="mb-2 line-height-3"><span class="text-900 font-medium">Egestas dui id</span> ornare arcu odio ut. Mi bibendum neque egestas congue.</div>
+                <div class="line-height-3"><span class="text-900 font-medium">Sed velit dignissim</span> sodales ut eu. Massa placerat duis ultricies lacus.</div>
+            </div>
+            <img src="assets/images/blocks/feature/feature-timeline-3.png" alt="Image" class="w-full mt-3 block lg:hidden">
+        </div>
+    </div>
+</div>`;
+
+    block9: string = `
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+    <div class="font-bold text-900 text-3xl mb-3 text-center">These apps are ready to build</div>
+    <div class="text-700 text-center mb-5 line-height-3">Etiam non quam lacus suspendisse faucibus interdum posuere lorem. Nibh sit amet commodo nulla facilisi nullam vehicula.</div>
+    <div class="mb-4 flex flex-wrap justify-content-center">
+        <span class="inline-flex align-items-center px-3 py-2 bg-blue-500 text-white mb-3 mr-3" style="border-radius:40px">
+            <i class="pi pi-credit-card mr-2"></i>
+            <span class="font-medium">Ornare Arcu</span>
+        </span>
+        <span class="inline-flex align-items-center px-3 py-2 surface-200 text-900 mb-3 mr-3" style="border-radius:40px">
+            <i class="pi pi-envelope mr-2"></i>
+            <span class="font-medium">Diam Maecenas</span>
+        </span>
+        <span class="inline-flex align-items-center px-3 py-2 surface-200 text-900 mb-3 mr-3" style="border-radius:40px">
+            <i class="pi pi-link mr-2"></i>
+            <span class="font-medium">Ultrices Neque</span>
+        </span>
+        <span class="inline-flex align-items-center px-3 py-2 surface-200 text-900 mb-3 " style="border-radius:40px">
+            <i class="pi pi-moon mr-2"></i>
+            <span class="font-medium">Facilisi Etiam</span>
+        </span>
+    </div>
+    <div class="flex flex-wrap border-300 border-round border-1 p-5 overflow-hidden">
+        <div class="flex align-items-center w-full lg:w-6 pr-0 lg:pr-8">
+            <div class="text-center lg:text-left mb-3 lg:mb-0">
+                <div class="font-medium text-2xl text-900 mb-3">Vitae semper quis lectus nulla</div>
+                <p class="mt-0 mb-3 line-height-3 text-700">Pretium aenean pharetra magna ac placerat vestibulum. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Fringilla urna porttitor rhoncus dolor purus non enim. Vulputate odio ut enim blandit volutpat.</p>
+                <button pButton label="Learn More" class="p-button-outlined"></button>
+            </div>
+        </div>
+        <div class="w-full lg:w-6 text-center lg:text-right">
+            <img src="assets/images/blocks/feature/feature-chips.png" alt="Image" class="w-full lg:w-auto">
+        </div>
+    </div>
+</div>`;
+
+    block10: string = `
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+    <div class="font-bold text-900 text-4xl mb-3">More reasons people around the world prefer us</div>
+    <div class="text-700 mb-5 line-height-3">Egestas dui id ornare arcu odio. Egestas fringilla phasellus faucibus scelerisque eleifend.</div>
+    <div class="p-3 border-round surface-50">
+        <div class="flex flex-wrap">
+            <div class="w-full lg:w-6 p-3">
+                <div class="text-lg text-900 mb-3 font-medium">Services</div>
+                <p-accordion>
+                    <p-accordionTab>
+                        <ng-template pTemplate="header">
+                            <div class="flex align-items-center">
+                                <span class="block inline-flex align-items-center justify-content-center border-circle surface-300 mr-2 text-700" style="width: 2rem; height: 2rem">
+                                    <i class="pi pi-cloud text-sm"></i>
+                                </span>
+                                <span>Cloud Services</span>
+                            </div>
+                        </ng-template>
+                        <p class="line-height-3">Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Sit amet risus nullam eget felis eget. Feugiat pretium nibh ipsum consequat nisl vel pretium.</p>
+                    </p-accordionTab>
+                    <p-accordionTab>
+                        <ng-template pTemplate="header">
+                            <div class="flex align-items-center">
+                                <span class="block inline-flex align-items-center justify-content-center border-circle surface-300 mr-2 text-700" style="width: 2rem; height: 2rem">
+                                    <i class="pi pi-chart-bar text-sm"></i>
+                                </span>
+                                <span>Analytic Dashboard</span>
+                            </div>
+                        </ng-template>
+                        <p class="line-height-3">Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Sit amet risus nullam eget felis eget. Feugiat pretium nibh ipsum consequat nisl vel pretium.</p>
+                    </p-accordionTab>
+                    <p-accordionTab>
+                        <ng-template pTemplate="header">
+                            <div class="flex align-items-center">
+                                <span class="block inline-flex align-items-center justify-content-center border-circle surface-300 mr-2 text-700" style="width: 2rem; height: 2rem">
+                                    <i class="pi pi-key text-sm"></i>
+                                </span>
+                                <span>Private Keys</span>
+                            </div>
+                        </ng-template>
+                        <p class="line-height-3">Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Sit amet risus nullam eget felis eget. Feugiat pretium nibh ipsum consequat nisl vel pretium.</p>
+                    </p-accordionTab>
+                    <p-accordionTab>
+                        <ng-template pTemplate="header">
+                            <div class="flex align-items-center">
+                                <span class="block inline-flex align-items-center justify-content-center border-circle surface-300 mr-2 text-700" style="width: 2rem; height: 2rem">
+                                    <i class="pi pi-file-pdf text-sm"></i>
+                                </span>
+                                <span>PDF Export</span>
+                            </div>
+                        </ng-template>
+                        <p class="line-height-3">Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Sit amet risus nullam eget felis eget. Feugiat pretium nibh ipsum consequat nisl vel pretium.</p>
+                    </p-accordionTab>
+                    <p-accordionTab>
+                        <ng-template pTemplate="header">
+                            <div class="flex align-items-center">
+                                <span class="block inline-flex align-items-center justify-content-center border-circle surface-300 mr-2 text-700" style="width: 2rem; height: 2rem">
+                                    <i class="pi pi-book text-sm"></i>
+                                </span>
+                                <span>Documentation</span>
+                            </div>
+                        </ng-template>
+                        <p class="line-height-3">Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Sit amet risus nullam eget felis eget. Feugiat pretium nibh ipsum consequat nisl vel pretium.</p>
+                    </p-accordionTab>
+                </p-accordion>
+            </div>
+            <div class="w-full lg:w-6 p-3">
+                <div class="text-lg text-900 mb-3 font-medium">Support</div>
+                <p-accordion>
+                    <p-accordionTab>
+                        <ng-template pTemplate="header">
+                            <div class="flex align-items-center">
+                                <span class="block inline-flex align-items-center justify-content-center border-circle surface-300 mr-2 text-700" style="width: 2rem; height: 2rem">
+                                    <i class="pi pi-filter text-sm"></i>
+                                </span>
+                                <span>Advanced Filtering</span>
+                            </div>
+                        </ng-template>
+                        <p class="line-height-3">Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Sit amet risus nullam eget felis eget. Feugiat pretium nibh ipsum consequat nisl vel pretium.</p>
+                    </p-accordionTab>
+                    <p-accordionTab>
+                        <ng-template pTemplate="header">
+                            <div class="flex align-items-center">
+                                <span class="block inline-flex align-items-center justify-content-center border-circle surface-300 mr-2 text-700" style="width: 2rem; height: 2rem">
+                                    <i class="pi pi-credit-card text-sm"></i>
+                                </span>
+                                <span>Payment Gateway</span>
+                            </div>
+                        </ng-template>
+                        <p class="line-height-3">Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Sit amet risus nullam eget felis eget. Feugiat pretium nibh ipsum consequat nisl vel pretium.</p>
+                    </p-accordionTab>
+                    <p-accordionTab>
+                        <ng-template pTemplate="header">
+                            <div class="flex align-items-center">
+                                <span class="block inline-flex align-items-center justify-content-center border-circle surface-300 mr-2 text-700" style="width: 2rem; height: 2rem">
+                                    <i class="pi pi-map-marker text-sm"></i>
+                                </span>
+                                <span>Device Tracking</span>
+                            </div>
+                        </ng-template>
+                        <p class="line-height-3">Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Sit amet risus nullam eget felis eget. Feugiat pretium nibh ipsum consequat nisl vel pretium.</p>
+                    </p-accordionTab>
+                    <p-accordionTab>
+                        <ng-template pTemplate="header">
+                            <div class="flex align-items-center">
+                                <span class="block inline-flex align-items-center justify-content-center border-circle surface-300 mr-2 text-700" style="width: 2rem; height: 2rem">
+                                    <i class="pi pi-tags text-sm"></i>
+                                </span>
+                                <span>Tag Management</span>
+                            </div>
+                        </ng-template>
+                        <p class="line-height-3">Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Sit amet risus nullam eget felis eget. Feugiat pretium nibh ipsum consequat nisl vel pretium.</p>
+                    </p-accordionTab>
+                    <p-accordionTab>
+                        <ng-template pTemplate="header">
+                            <div class="flex align-items-center">
+                                <span class="block inline-flex align-items-center justify-content-center border-circle surface-300 mr-2 text-700" style="width: 2rem; height: 2rem">
+                                    <i class="pi pi-eye text-sm"></i>
+                                </span>
+                                <span>Privacy Settings</span>
+                            </div>
+                        </ng-template>
+                        <p class="line-height-3">Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Sit amet risus nullam eget felis eget. Feugiat pretium nibh ipsum consequat nisl vel pretium.</p>
+                    </p-accordionTab>
+                </p-accordion>
+            </div>
+        </div>
+    </div>
+</div>`;
+
 }
