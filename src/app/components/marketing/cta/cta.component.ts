@@ -118,4 +118,52 @@ export class CtaComponent {
     date1 = '31/03/2021 - 01/04/2021';
 
     date2 = '31/03/2021 - 01/04/2021';
+
+    block9: string = `
+<div class="bg-indigo-600 px-4 py-8 md:px-6 lg:px-8">
+    <div class="flex flex-column lg:flex-row">
+        <div class="w-full lg:w-6 p-6 bg-indigo-500 mr-0 lg:mr-3 mb-5 lg:mb-0" style="border-radius: 12px">
+            <div class="text-white text-4xl font-medium mb-3">Magna fringilla urna $0 per month</div>
+            <p class="line-height-3 text-indigo-100 text-xl mt-0 mb-4">Quisque sagittis purus sit amet volutpat consequat mauris nunc. 
+                Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p>
+            <button pButton type="button" label="Try It Free" class="p-button-warning font-medium p-button-rounded"></button>
+        </div>
+        <div class="w-full lg:w-6 p-6 bg-indigo-500 ml-0 lg:ml-3" style="border-radius: 12px">
+            <div class="mb-3">
+                <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="w-3rem mr-5 mb-3" />
+                <img src="assets/images/blocks/avatars/circle/avatar-m-1.png" class="w-3rem mr-5 mb-3" />
+                <img src="assets/images/blocks/avatars/circle/avatar-f-2.png" class="w-3rem mr-5 mb-3" />
+                <img src="assets/images/blocks/avatars/circle/avatar-m-2.png" class="w-3rem mr-5 mb-3" />
+                <img src="assets/images/blocks/avatars/circle/avatar-f-3.png" class="w-3rem mr-5 mb-3" />
+                <img src="assets/images/blocks/avatars/circle/avatar-m-3.png" class="w-3rem mr-5 mb-3" />
+                <img src="assets/images/blocks/avatars/circle/avatar-f-4.png" class="w-3rem mr-5 mb-3" />
+                <img src="assets/images/blocks/avatars/circle/avatar-m-4.png" class="w-3rem mr-5 mb-3" />
+                <img src="assets/images/blocks/avatars/circle/avatar-f-5.png" class="w-3rem mr-5 mb-3" />
+                <img src="assets/images/blocks/avatars/circle/avatar-m-5.png" class="w-3rem mr-5 mb-3" />
+                <img src="assets/images/blocks/avatars/circle/avatar-f-6.png" class="w-3rem mr-5 mb-3" />
+                <img src="assets/images/blocks/avatars/circle/avatar-m-6.png" class="w-3rem mr-5 mb-3" />
+                <img src="assets/images/blocks/avatars/circle/avatar-f-7.png" class="w-3rem mr-5 mb-3" />
+                <img src="assets/images/blocks/avatars/circle/avatar-m-7.png" class="w-3rem mr-5 mb-3" />
+                <img src="assets/images/blocks/avatars/circle/avatar-f-8.png" class="w-3rem mr-5 mb-3" />
+                <img src="assets/images/blocks/avatars/circle/avatar-m-8.png" class="w-3rem mr-5 mb-3" />
+            </div>
+            <div class="text-white text-4xl font-medium mb-3">Join our community of 100,000 users</div>
+            <p class="line-height-3 text-indigo-100 text-xl m-0">Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. At ultrices mi tempus imperdiet nulla malesuada.</p>
+        </div>
+    </div>
+</div>`;
+
+    block10: string = `
+<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+    <div class="flex flex-wrap relative overflow-hidden" style="border-radius:1rem; background:radial-gradient(100% 1126.49% at 100% 0%, rgba(106, 200, 212, 0.4) 0%, rgba(33, 33, 33, 0) 100%), #212121;">
+        <div class="px-6 py-8">
+            <span class="uppercase text-cyan-500 font-bold">BE THE FIRST ONE</span>
+            <div class="text-white text-medium text-5xl mt-3 mb-5">Join the waitlist Today!</div>
+            <button class="appearance-none" class="p-3 bg-cyan-500 hover:bg-600 transition-colors font-medium gray-900 border-none p-component" style="border-radius: 35px">Reserve Your Username</button>
+        </div>
+            
+        <img src="assets/images/blocks/cta/cta-browser.png" alt="Image" class="static lg:absolute block mx-auto" style="height: 400px; top: -2rem; right: -1rem">
+    </div>
+</div>`;
+
 }
