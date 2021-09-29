@@ -14,6 +14,7 @@ enum BlockView {
                 <span class="block-title">
                     <span>{{header}}</span>
                     <span class="badge-free" *ngIf="free">Free</span>
+                    <span class="badge-new" *ngIf="new">New</span>
                 </span>
                 <div class="block-actions">
                     <a tabindex="0" [ngClass]="{'block-action-active': blockView == BlockView.PREVIEW}" (click)="activateView($event, BlockView.PREVIEW)"><span>Preview</span></a>
@@ -48,6 +49,8 @@ export class BlockViewer {
     @Input() previewStyle: string;
 
     @Input() free: boolean = false;
+
+    @Input() new: boolean = false;
 
     BlockView = BlockView;
 
