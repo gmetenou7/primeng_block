@@ -105,4 +105,87 @@ export class StatsComponent {
     </div>
 </div>`;
 
+    block4 = `
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+    <div class="text-orange-500 text-center mb-3">VITAE TEMPUS QUAM</div>
+    <div class="font-bold text-5xl text-900 text-center mb-6">Take your vision to the next level</div>
+    <div class="grid grid-nogutter">
+        <div class="col-12 md:col-6 lg:col-3 p-3">
+            <div class="bg-blue-50 text-center p-5 border-round flex flex-column">
+                <i class="text-blue-500 pi pi-play text-4xl block mb-4"></i>
+                <span class="text-900 text-5xl">52000</span>
+                <div class="text-blue-700 mt-3 font-medium">Streams</div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3 p-3">
+            <div class="bg-purple-50 text-center p-5 border-round flex flex-column">
+                <i class="text-purple-500 pi pi-users text-4xl block mb-4"></i>
+                <span class="text-900 text-5xl">21000</span>
+                <div class="text-purple-700 mt-3 font-medium">Engagement</div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3 p-3">
+            <div class="bg-teal-50 text-center p-5 border-round flex flex-column">
+                <i class="text-teal-500 pi pi-camera text-4xl block mb-4"></i>
+                <span class="text-900 text-5xl">71.2h</span>
+                <div class="text-teal-700 mt-3 font-medium">Watch Time</div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3 p-3">
+            <div class="bg-indigo-50 text-center p-5 border-round flex flex-column">
+                <i class="text-indigo-500 pi pi-thumbs-up text-4xl block mb-4"></i>
+                <span class="text-900 text-5xl">4500</span>
+                <div class="text-indigo-700 mt-3 font-medium">Likes</div>
+            </div>
+        </div>
+    </div>
+</div>`;
+
+    block5 = `
+<div class="bg-gray-900 px-4 py-8 md:px-6 lg:px-8">
+    <div class="flex flex-column lg:flex-row">
+        <div class="flex-1 pr-0 lg:pr-5 mb-5 lg:mb-0">
+            <div class="font-bold text-5xl text-white mb-7">Get your business up with us</div>
+            <div class="font-medium text-2xl text-white mb-3">We help you grow</div>
+            <p class="text-600 font-medium text-xl mt-0 mb-7 line-height-3">Porta lorem mollis aliquam ut porttitor leo a diam. Amet purus gravida quis blandit. Consectetur libero id faucibus nisl tincidunt. Aenean vel elit scelerisque mauris pellentesque pulvinar 
+                pellentesque habitant morbi. Sit amet risus nullam eget felis eget. Feugiat pretium nibh ipsum consequat nisl vel pretium.</p>
+        
+            <div class="flex align-items-center">
+                <span class="text-white font-bold mr-3">TRUSTED BY</span>
+                <i class="pi pi-google mr-2"></i>
+                <i class="pi pi-apple mr-2"></i>
+                <i class="pi pi-microsoft"></i>
+            </div>
+        </div>
+        <div class="flex-1">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-6 p-3">
+                    <div class="p-3" style="background: linear-gradient(180deg, rgba(66, 66, 66, 0.9) 0%, rgba(66, 66, 66, 0.63) 100%); min-height: 150px; border-radius: 10px">
+                        <span class="text-white font-bold text-5xl">600+</span>
+                        <p class="mt-3 mb-0 font-medium text-xl text-400">Happy Clients</p>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6 p-3">
+                    <div class="p-3" style="background: linear-gradient(180deg, rgba(66, 66, 66, 0.9) 0%, rgba(66, 66, 66, 0.63) 100%); min-height: 150px; border-radius: 10px">
+                        <span class="text-white font-bold text-5xl">750+</span>
+                        <p class="mt-3 mb-0 font-medium text-xl text-400">Projects</p>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6 p-3">
+                    <div class="p-3" style="background: linear-gradient(180deg, rgba(66, 66, 66, 0.9) 0%, rgba(66, 66, 66, 0.63) 100%); min-height: 150px; border-radius: 10px">
+                        <span class="text-white font-bold text-5xl">73</span>
+                        <p class="mt-3 mb-0 font-medium text-xl text-400">Awards</p>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6 p-3">
+                    <div class="p-3 bg-indigo-500 border-round" style="min-height: 150px">
+                        <i class="pi pi-globe text-6xl text-indigo-100"></i>
+                        <button pButton label="Learn More" icon="pi pi-arrow-right" class="block mt-5 p-button-warning white-space-nowrap"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>`;
+
 }
