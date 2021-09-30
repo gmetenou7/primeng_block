@@ -35,4 +35,18 @@ export class NewsletterComponent {
     </div>
 </div>`;
 
+    block3 = `
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+    <div class="p-6 shadow-2 text-center" style="background: linear-gradient(180deg, #6372C3 0%, #3F51B5 100%); border-radius: 1rem">
+        <div class="text-white font-bold text-2xl mb-3">Stay in touch with us</div>
+        <span class="block text-indigo-100 font-medium text-xl">Subscribe for updates to ensure that you don’t miss any important news from us.</span>
+        <div class="mt-5 mb-3 relative w-20rem mx-auto">
+            <input type="text" class="appearance-none bg-indigo-600 border-1 border-indigo-400 p-3 w-full p-component text-indigo-100 outline-none" style="border-radius: 35px" value="Enter your email">
+            <button type="button" pButton class="absolute" label="Join Now" style="border-radius: 35px; top: 6px; right: 6px"></button>
+        </div>
+        <span class="text-indigo-200">We ensure to protect your privacy. <a tabindex="0" class="cursor-pointer text-white">Privacy Policy</a></span>
+    </div>
+</div>
+`;
+
 }
