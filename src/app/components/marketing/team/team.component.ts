@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
 })
 export class TeamComponent {
 
+    visibleMember: number;
+
     block1: string = `
 <div class="surface-section">
     <div class="text-center font-bold text-900 text-5xl mb-3">The Team</div>
@@ -280,6 +282,146 @@ export class TeamComponent {
                 <div class="flex flex-nowrap">
                     <button pButton pRipple class="p-button-rounded p-button-text p-button-outlined p-button-plain mr-2" icon="pi pi-twitter"></button>
                     <button pButton pRipple class="p-button-rounded p-button-text p-button-outlined p-button-plain" icon="pi pi-github"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>`;
+
+    block4: string = `
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+    <div class="grid">
+        <div class="col-12 lg:col-4 pr-0 lg:pr-4">
+            <div class="text-900 text-5xl font-bold mb-3">Meet our team</div>
+            <p class="text-700 text-lg line-height-3">Enim diam vulputate ut pharetra sit amet aliquam id. Consequat nisl vel pretium lectus quam id leo in. 
+                Nibh sit amet commodo nulla facilisi nullam vehicula. Nunc eget lorem dolor sed viverra ipsum nunc aliquet.</p>
+        </div>
+        <div class="col-12 lg:col-8">
+            <div class="grid">
+                <div class="col-12 lg:col-6 p-3">
+                    <img src="assets/images/blocks/team/team-1.png" class="mb-4 w-full" />
+                    <div class="font-medium text-xl mb-1 text-900">Jacob Jones</div>
+                    <span class="text-600 font-medium">UI/UX Designer</span>
+                    <p class="line-height-3 mt-3 mb-3">Vulputate ut pharetra sit amet. Netus et malesuada fames ac turpis egestas. 
+                        Elit eget gravida cum sociis natoque penatibus. Urna id volutpat lacus laoreet non curabitur. In ante metus dictum at.</p>
+                    <div class="mb-2">
+                        <a tabindex="0" class="cursor-pointer"><i class="pi pi-twitter text-600 text-xl mr-3"></i></a>
+                        <a tabindex="0" class="cursor-pointer"><i class="pi pi-github text-600 text-xl mr-3"></i></a>
+                        <a tabindex="0" class="cursor-pointer"><i class="pi pi-facebook text-600 text-xl"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 lg:col-6 p-3">
+                    <img src="assets/images/blocks/team/team-2.png" class="mb-4 w-full" />
+                    <div class="font-medium text-xl mb-1 text-900">Theresa Webb</div>
+                    <span class="text-600 font-medium">Project Manager</span>
+                    <p class="line-height-3 mt-3 mb-3">Risus feugiat in ante metus dictum. Et egestas quis ipsum suspendisse ultrices. 
+                        Risus pretium quam vulputate dignissim suspendisse. Justo nec ultrices dui sapien.</p>
+                        <div class="mb-2">
+                        <a tabindex="0" class="cursor-pointer"><i class="pi pi-twitter text-600 text-xl mr-3"></i></a>
+                        <a tabindex="0" class="cursor-pointer"><i class="pi pi-github text-600 text-xl mr-3"></i></a>
+                        <a tabindex="0" class="cursor-pointer"><i class="pi pi-facebook text-600 text-xl"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 lg:col-6 p-3">
+                    <img src="assets/images/blocks/team/team-3.png" class="mb-4 w-full" />
+                    <div class="font-medium text-xl mb-1 text-900">Esther Howard</div>
+                    <span class="text-600 font-medium">Software Developer</span>
+                    <p class="line-height-3 mt-3 mb-3">Donec et odio pellentesque diam volutpat commodo sed egestas. 
+                        Blandit massa enim nec dui nunc mattis enim ut tellus. Suspendisse faucibus interdum posuere lorem ipsum.</p>
+                        <div class="mb-2">
+                        <a tabindex="0" class="cursor-pointer"><i class="pi pi-twitter text-600 text-xl mr-3"></i></a>
+                        <a tabindex="0" class="cursor-pointer"><i class="pi pi-github text-600 text-xl mr-3"></i></a>
+                        <a tabindex="0" class="cursor-pointer"><i class="pi pi-facebook text-600 text-xl"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 lg:col-6 p-3">
+                    <img src="assets/images/blocks/team/team-4.png" class="mb-4 w-full" />
+                    <div class="font-medium text-xl mb-1 text-900">Darlene Robertson</div>
+                    <span class="text-600 font-medium">UI/UX Designer</span>
+                    <p class="line-height-3 mt-3 mb-3">Pretium aenean pharetra magna ac placerat vestibulum. 
+                        Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Fringilla urna porttitor rhoncus dolor purus non enim..</p>
+                    <div class="mb-2">
+                        <a tabindex="0" class="cursor-pointer"><i class="pi pi-twitter text-600 text-xl mr-3"></i></a>
+                        <a tabindex="0" class="cursor-pointer"><i class="pi pi-github text-600 text-xl mr-3"></i></a>
+                        <a tabindex="0" class="cursor-pointer"><i class="pi pi-facebook text-600 text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+`;
+
+    block5: string = `
+<div class="surface-section px-4 py-8 md:px-6 lg:px-">
+    <div class="text-center font-bold text-900 text-5xl mb-3">Who Are We?</div>
+    <div class="text-center text-xl line-height-3 text-600 mb-6">Faucibus ornare suspendisse sed nisi. Nisl rhoncus mattis rhoncus urna neque viverra justo nec.</div>
+    <div class="grid">
+        <div class="col-12 md:col-6 lg:col-3 p-3">
+            <div class="relative overflow-hidden" (mouseenter)="visibleMember = 0" (mouseleave)="visibleMember = null">
+                <img src="assets/images/blocks/team/team-5.png" class="w-full block" />
+                <div class="absolute top-0 left-0 h-full w-full border-round fadein animation-duration-300 select-none" style="background-color: rgba(0,0,0,0.7)" *ngIf="visibleMember === 0" >
+                    <div class="flex flex-column p-5 h-full">
+                        <span class="block font-medium text-white text-xl mb-3">Jeff Davies</span>
+                        <span class="font-medium text-400">Software Developer</span>
+                        <p class="line-height-3 text-sm my-3 text-white">Vulputate ut pharetra sit amet. Netus et malesuada fames ac turpis egestas. Elit eget gravida cum sociis natoque penatibus. Urna id volutpat lacus laoreet non curabitur. In ante metus dictum at.</p>
+                        <div class="mt-auto">
+                            <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-twitter text-600 text-xl mr-3"></i></a>
+                            <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-github text-600 text-xl mr-3"></i></a>
+                            <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-facebook text-600 text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3 p-3">
+            <div class="relative overflow-hidden" (mouseenter)="visibleMember = 1" (mouseleave)="visibleMember = null">
+                <img src="assets/images/blocks/team/team-6.png" class="w-full block" />
+                <div class="absolute top-0 left-0 h-full w-full border-round fadein animation-duration-300 select-none" style="background-color: rgba(0,0,0,0.7)" *ngIf="visibleMember === 1" >
+                    <div class="flex flex-column p-5 h-full">
+                        <span class="block font-medium text-white text-xl mb-3">Kristin Watson</span>
+                        <span class="font-medium text-400">UI/UX Designer</span>
+                        <p class="line-height-3 text-sm my-3 text-white">Risus feugiat in ante metus dictum. Et egestas quis ipsum suspendisse ultrices. Risus pretium quam vulputate dignissim suspendisse. Justo nec ultrices dui sapien.</p>
+                        <div class="mt-auto">
+                            <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-twitter text-600 text-xl mr-3"></i></a>
+                            <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-github text-600 text-xl mr-3"></i></a>
+                            <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-facebook text-600 text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3 p-3">
+            <div class="relative overflow-hidden" (mouseenter)="visibleMember = 2" (mouseleave)="visibleMember = null">
+                <img src="assets/images/blocks/team/team-7.png" class="w-full block" />
+                <div class="absolute top-0 left-0 h-full w-full border-round fadein animation-duration-300 select-none" style="background-color: rgba(0,0,0,0.7)" *ngIf="visibleMember === 2" >
+                    <div class="flex flex-column p-5 h-full">
+                        <span class="block font-medium text-white text-xl mb-3">Jenna Williams</span>
+                        <span class="font-medium text-400">Marketing Specialist</span>
+                        <p class="line-height-3 text-sm my-3 text-white">Donec et odio pellentesque diam volutpat commodo sed egestas. Blandit massa enim nec dui nunc mattis enim ut tellus.</p>
+                        <div class="mt-auto">
+                            <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-twitter text-600 text-xl mr-3"></i></a>
+                            <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-github text-600 text-xl mr-3"></i></a>
+                            <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-facebook text-600 text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3 p-3">
+            <div class="relative overflow-hidden" (mouseenter)="visibleMember = 3" (mouseleave)="visibleMember = null">
+                <img src="assets/images/blocks/team/team-8.png" class="w-full block" />
+                <div class="absolute top-0 left-0 h-full w-full border-round fadein animation-duration-300 select-none" style="background-color: rgba(0,0,0,0.7)" *ngIf="visibleMember === 3" >
+                    <div class="flex flex-column p-5 h-full">
+                        <span class="block font-medium text-white text-xl mb-3">Joe Clifford</span>
+                        <span class="font-medium text-400">Customer Relations</span>
+                        <p class="line-height-3 text-sm my-3 text-white">Pretium aenean pharetra magna ac placerat vestibulum. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Fringilla urna porttitor rhoncus dolor purus non enim.</p>
+                        <div class="mt-auto">
+                            <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-twitter text-600 text-xl mr-3"></i></a>
+                            <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-github text-600 text-xl mr-3"></i></a>
+                            <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-facebook text-600 text-xl"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
