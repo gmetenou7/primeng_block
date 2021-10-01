@@ -77,4 +77,82 @@ export class LogoCloudComponent {
     </div>
 </div>`;
 
+    block3: string = `
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+    <div class="flex justify-content-evenly flex-wrap">
+        <div class="p-3">
+            <img src="assets/images/blocks/logos/peak-500.svg" alt="Image" height="50">
+        </div>
+        <div class="p-3">
+            <img src="assets/images/blocks/logos/charot-500.svg" alt="Image" height="50">
+        </div>
+        <div class="p-3">
+            <img src="assets/images/blocks/logos/hyper-500.svg" alt="Image" height="50">
+        </div>
+        <div class="p-3">
+            <img src="assets/images/blocks/logos/hodly-500.svg" alt="Image" height="50">
+        </div>
+        <div class="p-3">
+            <img src="assets/images/blocks/logos/franki-500.svg" alt="Image" height="50">
+        </div>
+    </div>
+</div>
+`;
+
+    block4: string = `
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+    <div class="flex flex-wrap align-items-center justify-content-between">
+        <div class="w-full lg:w-6 pr-0 lg:pr-4">
+            <div class="font-bold text-900 text-4xl mb-3">Our Clients</div>
+            <p class="text-700 m-0 text-xl">Millions of individuals, corporations, startups and institutes work with us.</p>
+        </div>
+        <div class="w-full lg:w-6 mt-4 lg:mt-0">
+            <div class="grid grid-nogutter">
+                <div class="col-12 sm:col-6 xl:col-4 p-4">
+                    <img src="assets/images/blocks/logos/peak-500.svg" alt="Image" height="40">
+                </div>
+                <div class="col-12 sm:col-6 xl:col-4 p-4">
+                    <img src="assets/images/blocks/logos/charot-500.svg" alt="Image" height="40">
+                </div>
+                <div class="col-12 sm:col-6 xl:col-4 p-4">
+                    <img src="assets/images/blocks/logos/hyper-500.svg" alt="Image" height="40">
+                </div>
+                <div class="col-12 sm:col-6 xl:col-4 p-4">
+                    <img src="assets/images/blocks/logos/hodly-500.svg" alt="Image" height="40">
+                </div>
+                <div class="col-12 sm:col-6 xl:col-4 p-4">
+                    <img src="assets/images/blocks/logos/franki-500.svg" alt="Image" height="40">
+                </div>
+                <div class="col-12 sm:col-6 xl:col-4 p-4">
+                    <img src="assets/images/blocks/logos/alfred-500.svg" alt="Image" height="40">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>`;
+
+    block5: string = `
+<div class="surface-section surface-section px-4 py-8 md:px-6 lg:px-8 bg-indigo-500">
+    <div class="text-white mb-3 font-bold text-5xl text-center ">Who Uses Our Technology</div>
+    <div class="text-indigo-200 mb-6 line-height-3 text-xl text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+    <div class="flex align-items-center text-center flex-wrap">
+        <div class="flex-grow-1 p-3">
+            <img src="assets/images/blocks/logos/alfred-300.svg" alt="Image">
+        </div>
+        <div class="flex-grow-1 p-3">
+            <img src="assets/images/blocks/logos/charot-300.svg" alt="Image">
+        </div>
+        <div class="flex-grow-1 p-3">
+            <img src="assets/images/blocks/logos/hyper-300.svg" alt="Image">
+        </div>
+        <div class="flex-grow-1 p-3">
+            <img src="assets/images/blocks/logos/hodly-300.svg" alt="Image">
+        </div>
+        <div class="flex-grow-1 p-3">
+            <img src="assets/images/blocks/logos/franki-300.svg" alt="Image">
+        </div>
+    </div>
+</div>`;
+
 }
