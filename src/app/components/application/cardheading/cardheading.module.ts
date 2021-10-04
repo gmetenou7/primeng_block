@@ -5,6 +5,8 @@ import { CardHeadingRoutingModule } from './cardheading-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
+import { AvatarModule } from 'primeng/avatar';
+import { AvatarGroupModule } from 'primeng/avatargroup';
 import { MenuModule } from 'primeng/menu';
 
 @NgModule({
@@ -13,6 +15,8 @@ import { MenuModule } from 'primeng/menu';
     CardHeadingRoutingModule,
     ButtonModule,
     RippleModule,
+    AvatarModule,
+    AvatarGroupModule,
     MenuModule,
     BlockViewerModule
   ],
