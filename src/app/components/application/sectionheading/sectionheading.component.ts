@@ -6,6 +6,18 @@ import { MenuItem } from 'primeng/api';
 })
 export class SectionHeadingComponent implements OnInit {
 
+    items: MenuItem[];
+
+    ngOnInit() {
+        this.items = [
+            {label: 'Overview', icon: 'pi pi-home'},
+            {label: 'Members', icon: 'pi pi-users'},
+            {label: 'Sales', icon: 'pi pi-shopping-cart'},
+            {label: 'Profile', icon: 'pi pi-user'},
+            {label: 'Settings', icon: 'pi pi-cog'}
+        ];
+    }
+
     block1 = `
 <div class="surface-section">
     <div class="flex md:align-items-center md:justify-content-between flex-column md:flex-row pb-4 border-bottom-1 surface-border">
@@ -48,16 +60,20 @@ export class SectionHeadingComponent implements OnInit {
     </div>
 </div>`;
 
-    items: MenuItem[];
+    block5 = `
+<div class="surface-section px-4 py-5 md:px-6 lg:px-8">
+    <div class="border-bottom-1 surface-border">
+        <span class="block text-3xl font-medium text-900 mb-4">Messages</span>
+    </div>
+</div>
+`;
 
-    ngOnInit() {
-        this.items = [
-            {label: 'Overview', icon: 'pi pi-home'},
-            {label: 'Members', icon: 'pi pi-users'},
-            {label: 'Sales', icon: 'pi pi-shopping-cart'},
-            {label: 'Profile', icon: 'pi pi-user'},
-            {label: 'Settings', icon: 'pi pi-cog'}
-        ];
-    }
-    
+    block6 = `
+<div class="surface-section px-4 py-5 md:px-6 lg:px-8">
+    <div class="border-bottom-1 surface-border">
+        <div class="text-3xl font-medium text-900 mb-4 flex align-items-center">Messages <span class="text-base font-normal ml-3 text-600">79 Unread</span></div>
+    </div>
+</div>
+`;
+
 }

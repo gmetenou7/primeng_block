@@ -128,7 +128,7 @@ export class PageHeadingComponent {
         </li>
     </ul>
     <div class="flex flex-column md:flex-row md:justify-content-between">
-        <span class="text-2xl font-medium text-900">VIP LEADS</span>
+        <span class="text-3xl font-medium text-900">VIP LEADS</span>
         <div class="flex align-items-center mt-3 md:mt-0">
             <span class="p-input-icon-left">
                 <i class="pi pi-search"></i>
@@ -159,7 +159,7 @@ export class PageHeadingComponent {
         </li>
     </ul>
     <div class="flex flex-column md:flex-row md:justify-content-between">
-        <span class="text-2xl font-medium text-white">VIP LEADS</span>
+        <span class="text-3xl font-medium text-white">VIP LEADS</span>
         <div class="flex align-items-center mt-3 md:mt-0">
             <span class="p-input-icon-left">
                 <i class="pi pi-search"></i>
@@ -179,7 +179,7 @@ export class PageHeadingComponent {
                 <div style="width:140px; height: 140px; border-radius: 10px" class="mb-3 surface-card shadow-2 flex align-items-center justify-content-center">
                     <img src="assets/images/blocks/logos/hyper.svg" alt="Image" width="70" height="70">
                 </div>
-                <div class="text-900 text-2xl font-medium mb-3">Company Name</div>
+                <div class="text-900 text-3xl font-medium mb-3">Company Name</div>
                 <p class="mt-0 mb-3 text-700 text-xl">Vitae tortor condimentum lacinia quis vel eros.</p>
                 <div class="text-600 font-medium">
                     <span>Software | USA | 15523 Followers</span>
@@ -196,7 +196,7 @@ export class PageHeadingComponent {
 
     block8 = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8">
-    <div class="text-900 text-2xl font-medium mb-3 flex align-items-center">Applications <span class="text-700 ml-3 text-base font-normal">7 Active</span></div>
+    <div class="text-900 text-3xl font-medium mb-3 flex align-items-center">Applications <span class="text-700 ml-3 text-base font-normal">7 Active</span></div>
     <div class="flex flex-column lg:flex-row lg:align-items-center">
         <span class="p-input-icon-left mr-3">
             <i class="pi pi-search"></i>
@@ -224,7 +224,7 @@ export class PageHeadingComponent {
 
     block9 = `
 <div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
-    <div class="text-900 text-2xl font-medium mb-3">Latest Projects</div>
+    <div class="text-900 text-3xl font-medium mb-3">Latest Projects</div>
     <div class="px-4 py-2 surface-border border-1 border-round-top surface-section">
         <div class="flex flex-wrap align-items-center">
             <span class="inline-flex p-2 surface-100 font-medium text-sm align-items-center mr-3 my-1 white-space-nowrap" style="border-radius: 20px">CSS <i class="ml-2 pi pi-times-circle"></i></span>
@@ -247,7 +247,7 @@ export class PageHeadingComponent {
 
     block10 = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8">
-    <div class="text-900 font-medium text-2xl mb-3">Information Security Analyst</div>
+    <div class="text-900 font-medium text-3xl mb-3">Information Security Analyst</div>
     <div class="flex align-items-center text-700 mb-3">
         <span class="inline-flex align-items-center mr-5"><i class="pi pi-eye mr-2"></i>3232 Views</span>
         <span class="inline-flex align-items-center"><i class="pi pi-comments mr-2"></i>209 Comments</span>
@@ -287,7 +287,7 @@ export class PageHeadingComponent {
     block11 = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8 flex flex-column lg:flex-row lg:align-items-center lg:justify-content-between">
     <div class="flex align-items-center">
-        <div class="text-900 text-2xl font-medium mr-3">Mercury Mission</div>
+        <div class="text-900 text-3xl font-medium mr-3">Mercury Mission</div>
         <p-tag styleClass="mr-2" value="Journey" [rounded]="true" severity="warning"></p-tag>
         <p-tag styleClass="mr-2" value="Space" [rounded]="true" severity="help"></p-tag>
     </div>
@@ -308,7 +308,7 @@ export class PageHeadingComponent {
     block12 = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8 flex flex-wrap">
     <div class="w-full md:w-6">
-        <span class="inline-flex align-items-center text-900 text-2xl font-medium mb-3 cursor-pointer" (click)="menu12_1.toggle($event)">Venus Mission <span class="ml-1 pi pi-angle-down"></span></span>
+        <span class="inline-flex align-items-center text-900 text-3xl font-medium mb-3 cursor-pointer" (click)="menu12_1.toggle($event)">Venus Mission <span class="ml-1 pi pi-angle-down"></span></span>
         <p-menu #menu12_1 [popup]="true" [model]="items1"></p-menu>
         <div class="flex align-items-center text-600">
             <span class="mr-5"><i class="pi pi-check-circle mr-2"></i>Verified</span>
