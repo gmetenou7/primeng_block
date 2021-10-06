@@ -8,7 +8,9 @@ import { InputTextModule } from 'primeng/inputtext';
 import { InputTextareaModule } from 'primeng/inputtextarea'; 
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple'; 
+import { CalendarModule } from 'primeng/calendar'; 
 import { DropdownModule } from 'primeng/dropdown'; 
+import { InputNumberModule } from 'primeng/inputnumber'; 
 import { FileUploadModule } from 'primeng/fileupload'; 
 import { CheckboxModule } from 'primeng/checkbox';
 import { InputSwitchModule } from 'primeng/inputswitch';
@@ -22,7 +24,9 @@ import { InputSwitchModule } from 'primeng/inputswitch';
     InputTextareaModule,
     ButtonModule,
     RippleModule,
+    CalendarModule,
     DropdownModule,
+    InputNumberModule,
     FileUploadModule,
     CheckboxModule,
     InputSwitchModule,

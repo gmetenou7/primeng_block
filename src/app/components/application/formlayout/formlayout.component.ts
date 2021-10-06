@@ -145,6 +145,73 @@ export class FormLayoutComponent implements OnInit {
     </div>
 </div>`;
 
+    block3 = `
+<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+    <div class="text-900 font-medium text-xl mb-3">Create Invoice</div>
+    <div class="surface-card p-4 shadow-2 border-round p-fluid">
+        <div class="grid formgrid p-fluid">
+            <div class="field mb-4 col-12 md:col-6">
+                <label for="company_name" class="font-medium">Company Name</label>
+                <input id="company_name" type="text" pInputText>
+            </div>
+            <div class="field mb-4 col-12 md:col-6">
+                <label for="invoice_id" class="font-medium">Invoice Id</label>
+                <input id="invoice_id" type="text" pInputText>
+            </div>
+            <div class="field mb-4 col-12 md:col-6">
+                <label for="customer_name" class="font-medium">Customer Name</label>
+                <input id="customer_name" type="text" pInputText>
+            </div>
+            <div class="field mb-4 col-12 md:col-6">
+                <label for="customer_email" class="font-medium">Customer Email</label>
+                <input id="customer_email" type="text" pInputText>
+            </div>
+            <div class="field mb-4 col-12 md:col-6">
+                <label for="invoice_date" class="font-medium">Invoice Date</label>
+                <p-calendar id="invoice_date" [showIcon]="true"></p-calendar>
+            </div>
+            <div class="field mb-4 col-12 md:col-6">
+                <label for="due_date" class="font-medium">Due Date</label>
+                <p-calendar id="due_date" [showIcon]="true"></p-calendar>
+            </div>
+            <div class="surface-border border-top-1 opacity-50 mb-4 col-12"></div>
+            <div class="field mb-4 col-12 md:col-6">
+                <label for="item" class="font-medium">Item</label>
+                <input id="item" type="text" pInputText>
+            </div>
+            <div class="field mb-4 col-6">
+                <label for="item" class="font-medium">Quantity</label>
+                <input id="item" type="text" pInputText>
+            </div>
+            <div class="field mb-4 col-6">
+                <label for="item" class="font-medium">Price</label>
+                <div class="flex align-content-center">
+                    <p-inputNumber mode="currency" currency="USD" inputId="item" type="text" class="flex-1"></p-inputNumber>
+                    <button pButton icon="pi pi-trash" class="p-button-danger p-button-text ml-2"></button>
+                </div>
+            </div>
+            <div class="field mb-4 col-12 md:col-6">
+                <button pButton icon="pi pi-plus" label="Add Item" class="p-button-secondary p-button-outlined w-auto"></button>
+            </div>
+            <div class="field mb-4 col-12 md:col-6 text-right">
+                <span class="text-xl text-600 font-medium mr-2">Total</span>
+                <span class="text-xl text-900 font-medium">$59</span>
+            </div>
+            <div class="field mb-4 col-12 flex align-items-center">
+                <p-checkbox [binary]="true"></p-checkbox>
+                <span class="ml-2 text-900">Taxable (VAT 18%)</span>
+            </div>
+            <div class="surface-border border-top-1 opacity-50 mb-4 col-12"></div>
+            <div class="field mb-4 col-12">
+                <label for="notes" class="font-medium">Notes</label>
+                <textarea id="notes" pInputTextarea [autoResize]="true" [rows]="5"></textarea>
+            </div>
+            <div class="surface-border border-top-1 opacity-50 mb-4 col-12"></div>
+        </div>
+        <button pButton label="Create Invoice" icon="pi pi-file-o" class="w-auto"></button>
+    </div>
+</div>`;
+
     countries: any[];
 
     ngOnInit() {
