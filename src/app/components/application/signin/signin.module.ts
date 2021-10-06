@@ -6,7 +6,9 @@ import { SignInRoutingModule } from './signin-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 import { InputTextModule } from 'primeng/inputtext'; 
 import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple'; 
+import { CarouselModule } from 'primeng/carousel';
+import { DividerModule } from 'primeng/divider';
+import { RippleModule } from 'primeng/ripple';
 import { CheckboxModule } from 'primeng/checkbox'; 
 
 @NgModule({
@@ -16,6 +18,8 @@ import { CheckboxModule } from 'primeng/checkbox';
     SignInRoutingModule,
     InputTextModule,
     ButtonModule,
+    CarouselModule,
+    DividerModule,
     RippleModule,
     CheckboxModule,
     BlockViewerModule
