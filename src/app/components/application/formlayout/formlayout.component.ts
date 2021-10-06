@@ -179,11 +179,11 @@ export class FormLayoutComponent implements OnInit {
                 <label for="item" class="font-medium">Item</label>
                 <input id="item" type="text" pInputText>
             </div>
-            <div class="field mb-4 col-6">
+            <div class="field mb-4 col-6 md:col-3">
                 <label for="item" class="font-medium">Quantity</label>
                 <input id="item" type="text" pInputText>
             </div>
-            <div class="field mb-4 col-6">
+            <div class="field mb-4 col-6 md:col-3">
                 <label for="item" class="font-medium">Price</label>
                 <div class="flex align-content-center">
                     <p-inputNumber mode="currency" currency="USD" inputId="item" type="text" class="flex-1"></p-inputNumber>
