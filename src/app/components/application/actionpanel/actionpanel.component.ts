@@ -60,4 +60,16 @@ export class ActionPanelComponent {
     <button pButton label="Learn More" icon="pi pi-arrow-right" class="p-button-rounded" iconPos="right"></button>
 </div>`;
 
+    block6 = `
+<div class="surface-card border-round flex shadow-2">
+    <div class="bg-blue-50 flex align-items-center justify-content-center py-3 px-5">
+        <img src="assets/images/blocks/illustration/live-collaboration.svg" alt="Image" class="mx-auto block mb-4">
+    </div>
+    <div class="py-3 px-5 flex flex-column align-items-start">
+        <div class="text-900 font-medium mb-3 text-xl">Title Placeholder</div>
+        <p class="mt-0 mb-4 p-0 line-height-3">Nunc mi ipsum faucibus vitae aliquet nec.</p>
+        <button pButton pRipple label="Proceed" class="mt-auto"></button>
+    </div>
+</div>`; 
+
 }
