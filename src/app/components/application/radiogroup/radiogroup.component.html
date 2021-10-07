@@ -190,3 +190,127 @@
         </div>
     </div>
 </block-viewer>
+
+<block-viewer header="Inline with Separators" [code]="block5" [new]="true">
+    <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+        <div class="text-900 text-xl font-medium mb-3 text-center">Subscription Options</div>
+        <p class="text-700 mt-0 mb-4 text-center">Volutpat est velit egestas dui id ornare arcu odio. Amet dictum sit amet justo.</p>
+        <div class="surface-card shadow-2 border-round p-5">
+            <div class="grid">
+                <div class="col-12 sm:col-6 lg:col-3 p-3 flex align-items-center sm:justify-content-center sm:border-right-1 surface-border">
+                    <div class="flex align-items-center mr-3">
+                        <p-radioButton name="subscription" [value]="0" [(ngModel)]="subscription"></p-radioButton>
+                    </div>
+                    <div>
+                        <span class="text-900 text-2xl font-medium">10 Days</span>
+                        <p class="text-xl text-500 font-medium mt-2 mb-0">In tellus integer</p>
+                    </div>
+                </div>
+                <div class="col-12 sm:col-6 lg:col-3 p-3 flex align-items-center sm:justify-content-center lg:border-right-1 surface-border">
+                    <div class="flex align-items-center mr-3">
+                        <p-radioButton name="subscription" [value]="1" [(ngModel)]="subscription"></p-radioButton>
+                    </div>
+                    <div>
+                        <span class="text-900 text-2xl font-medium">30 Days</span>
+                        <p class="text-xl text-500 font-medium mt-2 mb-0">Risus pretium</p>
+                    </div>
+                </div>
+                <div class="col-12 sm:col-6 lg:col-3 p-3 flex align-items-center sm:justify-content-center sm:border-right-1 surface-border">
+                    <div class="flex align-items-center mr-3">
+                        <p-radioButton name="subscription" [value]="2" [(ngModel)]="subscription"></p-radioButton>
+                    </div>
+                    <div>
+                        <span class="text-900 text-2xl font-medium">90 Days</span>
+                        <p class="text-xl text-500 font-medium mt-2 mb-0">Pharetra pharetra</p>
+                    </div>
+                </div>
+                <div class="col-12 sm:col-6 lg:col-3 p-3 flex align-items-center sm:justify-content-center">
+                    <div class="flex align-items-center mr-3">
+                        <p-radioButton name="subscription" [value]="3" [(ngModel)]="subscription"></p-radioButton>
+                    </div>
+                    <div>
+                        <span class="text-900 text-2xl font-medium">360 Days</span>
+                        <p class="text-xl text-500 font-medium mt-2 mb-0">Aliquet lectus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block-viewer>
+
+<block-viewer header="2x2 Grid" [code]="block6" [new]="true">
+    <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+        <div class="text-900 text-xl font-medium mb-3 text-center">Payment Methods</div>
+        <p class="text-700 mt-0 mb-4 text-center">In tellus integer feugiat scelerisque varius morbi.</p>
+        <div class="grid">
+            <div class="col-12 lg:col-6 p-3">
+                <div class="shadow-2 surface-card p-4 border-2 border-transparent" style="border-radius: 10px" [ngClass]="{'border-blue-500': payment === 0}">
+                    <div class="flex align-items-center mb-4">
+                        <div class="mr-3">
+                            <span class="inline-flex justify-content-center align-items-center bg-indigo-100" style="border-radius: 4px; width:45px; height: 45px">
+                                <i class="pi pi-credit-card text-2xl text-indigo-600"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="text-900 text-xl mb-2 font-medium">Credit Card</span>
+                            <p class="m-0 text-600 font-medium text-sm">Magna fermentum iaculis</p>
+                        </div>
+                        <p-radioButton name="payment" [value]="0" [(ngModel)]="payment" class="ml-auto"></p-radioButton>
+                    </div>
+                    <p class="text-600 m-0 line-height-3">Nunc consequat interdum varius sit. Commodo odio aenean sed adipiscing diam donec adipiscing tristique risus.</p>
+                </div>
+            </div>
+            <div class="col-12 lg:col-6 p-3">
+                <div class="shadow-2 surface-card p-4 border-2 border-transparent" style="border-radius: 10px" [ngClass]="{'border-blue-500': payment === 1}">
+                    <div class="flex align-items-center mb-4">
+                        <div class="mr-3">
+                            <span class="inline-flex justify-content-center align-items-center bg-blue-100" style="border-radius: 4px; width:45px; height: 45px">
+                                <img src="assets/images/blocks/logos/paypal.svg" style="height:1.5rem" />
+                            </span>
+                        </div>
+                        <div>
+                            <span class="text-900 text-xl mb-2 font-medium">PayPal</span>
+                            <p class="m-0 text-600 font-medium text-sm">Nibh sit amet</p>
+                        </div>
+                        <p-radioButton name="payment" [value]="1" [(ngModel)]="payment" class="ml-auto"></p-radioButton>
+                    </div>
+                    <p class="text-600 m-0 line-height-3">Est pellentesque elit ullamcorper dignissim. Tortor condimentum lacinia quis vel eros. Pharetra magna ac placerat vestibulum lectus mauris ultrices.</p>
+                </div>
+            </div>
+            <div class="col-12 lg:col-6 p-3">
+                <div class="shadow-2 surface-card p-4 border-2 border-transparent" style="border-radius: 10px" [ngClass]="{'border-blue-500': payment === 2}">
+                    <div class="flex align-items-center mb-4">
+                        <div class="mr-3">
+                            <span class="inline-flex justify-content-center align-items-center bg-green-100" style="border-radius: 4px; width:45px; height: 45px">
+                                <i class="pi pi-credit-card text-2xl text-green-600"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="text-900 text-xl mb-2 font-medium">Wire Transfer</span>
+                            <p class="m-0 text-600 font-medium text-sm">Ornare lectus sit</p>
+                        </div>
+                        <p-radioButton name="payment" [value]="2" [(ngModel)]="payment" class="ml-auto"></p-radioButton>
+                    </div>
+                    <p class="text-600 m-0 line-height-3">Eget nunc lobortis mattis aliquam. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim.</p>
+                </div>
+            </div>
+            <div class="col-12 lg:col-6 p-3">
+                <div class="shadow-2 surface-card p-4 border-2 border-transparent" style="border-radius: 10px" [ngClass]="{'border-blue-500': payment === 3}">
+                    <div class="flex align-items-center mb-4">
+                        <div class="mr-3">
+                            <span class="inline-flex justify-content-center align-items-center bg-orange-100" style="border-radius: 4px; width:45px; height: 45px">
+                                <img src="assets/images/blocks/logos/bitcoin.svg" style="height:1.5rem" />
+                            </span>
+                        </div>
+                        <div>
+                            <span class="text-900 text-xl mb-2 font-medium">BitCoin</span>
+                            <p class="m-0 text-600 font-medium text-sm">Donec adipiscing tristique</p>
+                        </div>
+                        <p-radioButton name="payment" [value]="3" [(ngModel)]="payment" class="ml-auto"></p-radioButton>
+                    </div>
+                    <p class="text-600 m-0 line-height-3">Pharetra magna ac placerat vestibulum lectus mauris ultrices. Nec dui nunc mattis enim ut tellus elementum sagittis vitae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</block-viewer>
