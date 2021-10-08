@@ -18,7 +18,7 @@
                         <button pButton pRipple label="Update" class="p-button-text font-medium" (click)="clear('block1')"></button>
                     </div>
                     <div class="flex-auto border-top-1 surface-border flex align-items-center justify-content-center px-3">
-                        <button pButton pRipple label="Later" class="p-button-text font-medium" (click)="clear(block2)"></button>
+                        <button pButton pRipple label="Later" class="p-button-text font-medium" (click)="clear('block1')"></button>
                     </div>
                 </div>
             </div>
@@ -42,6 +42,50 @@
                 </div>
                 <div style="height:6px" class="bg-gray-700">
                     <div class="h-full bg-blue-500 animate-width animation-duration-3000"></div>
+                </div>
+            </div>
+        </ng-template>
+    </p-toast>
+</block-viewer>
+
+<block-viewer header="Custom Icon" [code]="block3" containerClass="surface-section px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center" [new]="true">
+    <button pButton pRipple label="Display" (click)="notify3()"></button>
+    <p-toast key="block3" [style]="{width: '30rem'}" [preventOpenDuplicates]="true">
+        <ng-template let-message pTemplate="message">
+            <div class="flex align-items-start flex-1">
+                <i class="pi pi-envelope text-cyan-900 text-2xl mr-3"></i>
+                <div>
+                    <span class="text-xl font-medium text-cyan-900">{{message.summary}}</span>
+                    <p class="text-cyan-800 mt-3">{{message.detail}}</p>
+                </div>
+            </div>
+        </ng-template>
+    </p-toast>
+</block-viewer>
+
+<block-viewer header="Condensed" [code]="block4" containerClass="surface-section px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center" [new]="true">
+    <button pButton pRipple label="Display" (click)="notify4()"></button>
+    <p-toast key="block4" [style]="{width: '30rem'}" [preventOpenDuplicates]="true">
+        <ng-template let-message pTemplate="message">
+            <div class="flex align-items-center justify-content-between flex-1 align-self-center mr-3">
+                <span class="text-xl font-medium text-orange-900">{{message.detail}}</span>
+                <a class="cursor-pointer font-medium text-orange-700">Reply</a>
+            </div>
+        </ng-template>
+    </p-toast>
+</block-viewer>
+
+<block-viewer header="With Profile" [code]="block5" containerClass="surface-section px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center" [new]="true">
+    <button pButton pRipple label="Display" (click)="notify5()"></button>
+    <p-toast key="block5" [style]="{width: '30rem'}" [preventOpenDuplicates]="true">
+        <ng-template let-message pTemplate="message">
+            <div class="flex align-items-start flex-1 align-self-center mr-3">
+                <img src="assets/images/blocks/avatars/circle-big/avatar-f-2.png" style="width:56px;height:56px" />
+                <div class="ml-3">
+                    <span class="text-xl font-medium text-900">{{message.summary}}</span>
+                    <p class="text-600 mt-2 mb-3">{{message.detail}}</p>
+                    <button type="button" pButton class="p-button-sm mr-2" label="Reply" (click)="clear('block5')"></button>
+                    <button type="button" pButton class="p-button-sm p-button-text" label="Hide" (click)="clear('block5')"></button>
                 </div>
             </div>
         </ng-template>
