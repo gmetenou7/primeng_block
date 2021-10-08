@@ -38,7 +38,8 @@ import { ApplicationComponent } from './application.component';
             {path: 'multicolumnlayout', loadChildren: () => import('./multicolumnlayout/multicolumnlayout.module').then(m => m.MultiColumnLayoutModule), data: {name: 'Multi Column Layout'}},
             {path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboadModule), data: {name: 'Dashboard'}},
             {path: 'detailscreen', loadChildren: () => import('./detailscreen/detailscreen.module').then(m => m.DetailScreenModule), data: {name: 'Detail Screen'}},
-            {path: 'settingscreen', loadChildren: () => import('./settingscreen/settingscreen.module').then(m => m.SettingScreenModule), data: {name: 'Setting Screen'}}
+            {path: 'settingscreen', loadChildren: () => import('./settingscreen/settingscreen.module').then(m => m.SettingScreenModule), data: {name: 'Setting Screen'}},
+            {path: 'pagenotfound', loadChildren: () => import('./pagenotfound/pagenotfound.module').then(m => m.PageNotFoundModule), data: {name: 'Page Not Found'}}
         ])
     ],
     exports: [
