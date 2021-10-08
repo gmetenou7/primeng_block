@@ -188,6 +188,17 @@ export class SignInComponent implements OnInit {
     </div>
 </div>`;
 
+    block5 = `
+<div class="px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center" style="background:linear-gradient(-225deg,#ac32e4,#7918f2 48%,#4801ff)">
+    <div class="p-6 shadow-2 text-center lg:w-30rem" style="border-radius: 12px;background-color: rgba(255,255,255,.1);color: rgba(255,255,255,.8)">
+        <div class="text-4xl font-medium mb-6">Welcome</div>
+        <input type="text" class="appearance-none border-none p-3 w-full outline-none text-xl block mb-4" value="Email" style="border-radius: 30px;background-color: rgba(255,255,255,.1);color: rgba(255,255,255,.6)">
+        <input type="text" class="appearance-none border-none p-3 w-full outline-none text-xl mb-4" type="password" value="Password" style="border-radius: 30px;background-color: rgba(255,255,255,.1);color: rgba(255,255,255,.6)">
+        <button type="button" class="appearance-none border-none p-3 w-full outline-none text-xl mb-4 font-medium w-12rem" style="border-radius: 30px;background-color: rgba(255,255,255,.3);color: rgba(255,255,255,.8)">Sign In</button>
+        <a class="cursor-pointer font-medium block text-center">Forgot Password?</a>
+    </div>
+</div>`;
+
     features: any[];
 
     ngOnInit() {
