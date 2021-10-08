@@ -51,8 +51,31 @@ export class DialogComponent {
     </ng-template>
 </p-dialog>`;
 
+    block3 = `
+<button pButton pRipple label="Display" (click)="visible3 = true"></button>
+
+<p-dialog [(visible)]="visible3" appendTo="body" [modal]="true" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '40vw'}" header="Title Placeholder">
+    <div class="flex flex-wrap border-top-1 surface-border pt-4">
+        <div class="bg-blue-50 flex align-items-center justify-content-center py-3 px-0 w-full md:w-4 border-round">
+            <img src="assets/images/blocks/illustration/security.svg" alt="Image" class="w-9">
+        </div>
+        <p class="text-700 line-height-3 m-0 p-5 w-full md:w-8">
+            Sagittis eu volutpat odio facilisis mauris sit amet. Sed velit dignissim sodales ut eu sem integer. Sed risus pretium quam vulputate. At tellus at urna condimentum mattis pellentesque.
+        </p>
+    </div>
+    <ng-template pTemplate="footer">
+        <div class="border-top-1 surface-border pt-3">
+            <button pButton pRipple icon="pi pi-times" (click)="visible3 = false" label="Cancel" class="p-button-text"></button>
+            <button pButton pRipple icon="pi pi-check" (click)="visible3 = false" label="Save"></button>
+        </div>
+    </ng-template>
+</p-dialog>
+`;
+
     visible1: boolean = false;
 
     visible2: boolean = false;
+
+    visible3: boolean = false;
 
 }
