@@ -197,7 +197,7 @@
         <p class="text-700 mt-0 mb-4 text-center">Volutpat est velit egestas dui id ornare arcu odio. Amet dictum sit amet justo.</p>
         <div class="surface-card shadow-2 border-round p-5">
             <div class="grid">
-                <div class="col-12 sm:col-6 lg:col-3 p-3 flex align-items-center sm:justify-content-center sm:border-right-1 surface-border">
+                <div class="col-12 sm:col-6 lg:col-3 p-3 flex align-items-center sm:justify-content-center sm:border-right-1 surface-border cursor-pointer" (click)="subscription = 0">
                     <div class="flex align-items-center mr-3">
                         <p-radioButton name="subscription" [value]="0" [(ngModel)]="subscription"></p-radioButton>
                     </div>
@@ -206,7 +206,7 @@
                         <p class="text-xl text-500 font-medium mt-2 mb-0">In tellus integer</p>
                     </div>
                 </div>
-                <div class="col-12 sm:col-6 lg:col-3 p-3 flex align-items-center sm:justify-content-center lg:border-right-1 surface-border">
+                <div class="col-12 sm:col-6 lg:col-3 p-3 flex align-items-center sm:justify-content-center lg:border-right-1 surface-border cursor-pointer" (click)="subscription = 1">
                     <div class="flex align-items-center mr-3">
                         <p-radioButton name="subscription" [value]="1" [(ngModel)]="subscription"></p-radioButton>
                     </div>
@@ -215,7 +215,7 @@
                         <p class="text-xl text-500 font-medium mt-2 mb-0">Risus pretium</p>
                     </div>
                 </div>
-                <div class="col-12 sm:col-6 lg:col-3 p-3 flex align-items-center sm:justify-content-center sm:border-right-1 surface-border">
+                <div class="col-12 sm:col-6 lg:col-3 p-3 flex align-items-center sm:justify-content-center sm:border-right-1 surface-border cursor-pointer" (click)="subscription = 2">
                     <div class="flex align-items-center mr-3">
                         <p-radioButton name="subscription" [value]="2" [(ngModel)]="subscription"></p-radioButton>
                     </div>
@@ -224,7 +224,7 @@
                         <p class="text-xl text-500 font-medium mt-2 mb-0">Pharetra pharetra</p>
                     </div>
                 </div>
-                <div class="col-12 sm:col-6 lg:col-3 p-3 flex align-items-center sm:justify-content-center">
+                <div class="col-12 sm:col-6 lg:col-3 p-3 flex align-items-center sm:justify-content-center cursor-pointer" (click)="subscription = 3">
                     <div class="flex align-items-center mr-3">
                         <p-radioButton name="subscription" [value]="3" [(ngModel)]="subscription"></p-radioButton>
                     </div>
@@ -244,7 +244,7 @@
         <p class="text-700 mt-0 mb-4 text-center">In tellus integer feugiat scelerisque varius morbi.</p>
         <div class="grid">
             <div class="col-12 lg:col-6 p-3">
-                <div class="shadow-2 surface-card p-4 border-2 border-transparent" style="border-radius: 10px" [ngClass]="{'border-blue-500': payment === 0}">
+                <div class="shadow-2 surface-card p-4 border-2 border-transparent cursor-pointer" style="border-radius: 10px" [ngClass]="{'border-blue-500': payment === 0}" (click)="payment = 0">
                     <div class="flex align-items-center mb-4">
                         <div class="mr-3">
                             <span class="inline-flex justify-content-center align-items-center bg-indigo-100" style="border-radius: 4px; width:45px; height: 45px">
@@ -261,7 +261,7 @@
                 </div>
             </div>
             <div class="col-12 lg:col-6 p-3">
-                <div class="shadow-2 surface-card p-4 border-2 border-transparent" style="border-radius: 10px" [ngClass]="{'border-blue-500': payment === 1}">
+                <div class="shadow-2 surface-card p-4 border-2 border-transparent cursor-pointer" style="border-radius: 10px" [ngClass]="{'border-blue-500': payment === 1}" (click)="payment = 1">
                     <div class="flex align-items-center mb-4">
                         <div class="mr-3">
                             <span class="inline-flex justify-content-center align-items-center bg-blue-100" style="border-radius: 4px; width:45px; height: 45px">
@@ -278,7 +278,7 @@
                 </div>
             </div>
             <div class="col-12 lg:col-6 p-3">
-                <div class="shadow-2 surface-card p-4 border-2 border-transparent" style="border-radius: 10px" [ngClass]="{'border-blue-500': payment === 2}">
+                <div class="shadow-2 surface-card p-4 border-2 border-transparent cursor-pointer" style="border-radius: 10px" [ngClass]="{'border-blue-500': payment === 2}" (click)="payment = 2">
                     <div class="flex align-items-center mb-4">
                         <div class="mr-3">
                             <span class="inline-flex justify-content-center align-items-center bg-green-100" style="border-radius: 4px; width:45px; height: 45px">
@@ -295,7 +295,7 @@
                 </div>
             </div>
             <div class="col-12 lg:col-6 p-3">
-                <div class="shadow-2 surface-card p-4 border-2 border-transparent" style="border-radius: 10px" [ngClass]="{'border-blue-500': payment === 3}">
+                <div class="shadow-2 surface-card p-4 border-2 border-transparent cursor-pointer" style="border-radius: 10px" [ngClass]="{'border-blue-500': payment === 3}" (click)="payment = 3">
                     <div class="flex align-items-center mb-4">
                         <div class="mr-3">
                             <span class="inline-flex justify-content-center align-items-center bg-orange-100" style="border-radius: 4px; width:45px; height: 45px">
