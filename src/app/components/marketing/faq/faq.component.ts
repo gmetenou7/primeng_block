@@ -140,4 +140,40 @@ export class FaqComponent {
     </div>
 </div>`;
     
+    block5: string = `
+<div class="surface-section px-4 py-6 md:px-6">
+    <div class="text-2xl text-900 font-bold mb-2 text-center">Frequently Asked Questions</div>
+    <div class="text-700 line-height-3 mb-6 text-center">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <p-accordion styleClass="mb-6">
+        <p-accordionTab header="Question 1">
+            <div class="line-height-3">Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+        </p-accordionTab>
+        <p-accordionTab header="Question 2">
+            <div class="line-height-3">Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+        </p-accordionTab>
+        <p-accordionTab header="Question 3">
+            <div class="line-height-3">Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+        </p-accordionTab>
+        <p-accordionTab header="Question 4">
+            <div class="line-height-3">Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+        </p-accordionTab>
+    </p-accordion>
+    <div class="border-1 border-round surface-border p-5 surface-50 flex flex-column align-items-center">
+        <p-avatarGroup styleClass="text-center">
+            <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-1.png" shape="circle" size="large"></p-avatar>
+            <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-2.png" shape="circle" size="large"></p-avatar>
+            <p-avatar image="assets/images/blocks/avatars/circle/avatar-m-1.png" shape="circle" size="large"></p-avatar>
+            <p-avatar image="assets/images/blocks/avatars/circle/avatar-m-2.png" shape="circle" size="large"></p-avatar>
+            <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-3.png" shape="circle" size="large"></p-avatar>
+        </p-avatarGroup>
+        <div class="font-medium text-xl mt-5 mb-3">Still Have Questions?</div>
+        <p class="text-700 line-height-3 mt-0 mb-5">Risus nec feugiat in fermentum posuere urna nec. Posuere sollicitudin aliquam ultrices sagittis.</p>
+        <button pButton label="Contact Us" icon="pi pi-send" class="p-button-help"></button>
+    </div>
+</div>`;
+    
 }
