@@ -549,3 +549,59 @@
         </div>
     </div>
 </block-viewer>
+
+<block-viewer header="Single Progress Bar" [code]="block9" containerClass="px-4 py-5 md:px-6 lg:px-8 lg:w-6 md:mx-auto" [new]="true">
+    <div class="surface-card shadow-2 border-round p-4">
+        <div class="flex align-items-center justify-content-between mb-4">
+            <span class="text-xl font-medium text-900">Quarter Goals</span>
+            <div class="ml-auto">
+                <button pButton pRipple icon="pi pi-ellipsis-v" class="p-button-text p-button-plain p-button-rounded" (click)="menu.toggle($event)"></button>
+                <p-menu #menu [popup]="true" [model]="items"></p-menu>
+            </div>
+        </div>
+        <div class="surface-border border-1 border-round p-3 mb-4">
+            <span class="text-900 font-medium text-3xl">85% <span class="text-600">(2125/2500)</span></span>
+            <ul class="mt-3 list-none p-0 mx-0 flex">
+                <li style="height:1rem" class="flex-1 bg-indigo-500 border-round-left"></li>
+                <li style="height:1rem" class="flex-1 bg-blue-500"></li>
+                <li style="height:1rem" class="flex-1 bg-orange-500"></li>
+                <li style="height:1rem" class="flex-1 bg-purple-500"></li>
+                <li style="height:1rem" class="flex-1 bg-yellow-500"></li>
+                <li style="height:1rem" class="flex-1 bg-cyan-500"></li>
+                <li style="height:1rem" class="flex-1 surface-500 border-round-right"></li>
+            </ul>
+        </div>
+        <ul class="mt-4 list-none p-0 mx-0">
+            <li class="flex align-items-center pb-3">
+                <span style="width:1rem;height:1rem" class="border-round bg-indigo-500 mr-3 flex-shrink-0"></span>
+                <span class="text-xl font-medium text-90">Watch</span>
+                <span class="text-600 text-xl font-medium ml-auto">152</span>
+            </li>
+            <li class="flex align-items-center py-3">
+                <span style="width:1rem;height:1rem" class="border-round bg-blue-500 mr-3 flex-shrink-0"></span>
+                <span class="text-xl font-medium text-90">Blue Band</span>
+                <span class="text-600 text-xl font-medium ml-auto">63</span>
+            </li>
+            <li class="flex align-items-center py-3">
+                <span style="width:1rem;height:1rem" class="border-round bg-orange-500 mr-3 flex-shrink-0"></span>
+                <span class="text-xl font-medium text-90">Controller</span>
+                <span class="text-600 text-xl font-medium ml-auto">23</span>
+            </li>
+            <li class="flex align-items-center py-3">
+                <span style="width:1rem;height:1rem" class="border-round bg-purple-500 mr-3 flex-shrink-0"></span>
+                <span class="text-xl font-medium text-90">Lime Band</span>
+                <span class="text-600 text-xl font-medium ml-auto">42</span>
+            </li>
+            <li class="flex align-items-center py-3">
+                <span style="width:1rem;height:1rem" class="border-round bg-yellow-500 mr-3 flex-shrink-0"></span>
+                <span class="text-xl font-medium text-90">Phone Case</span>
+                <span class="text-600 text-xl font-medium ml-auto">134</span>
+            </li>
+            <li class="flex align-items-center py-3">
+                <span style="width:1rem;height:1rem" class="border-round bg-cyan-500 mr-3 flex-shrink-0"></span>
+                <span class="text-xl font-medium text-90">T-Shirt</span>
+                <span class="text-600 text-xl font-medium ml-auto">89</span>
+            </li>
+        </ul>
+    </div>
+</block-viewer>
