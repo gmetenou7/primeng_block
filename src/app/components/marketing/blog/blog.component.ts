@@ -72,7 +72,7 @@ export class BlogComponent {
 </div>`;
 
     block2: string = `
-    <div class="surface-section">
+<div class="surface-section">
     <div class="font-bold text-5xl text-900 mb-3">Recent Articles</div>
     <div class="text-700 text-xl line-height-3 mb-5">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
     <div class="grid nogutter">
@@ -230,7 +230,7 @@ export class BlogComponent {
     </div>
 </div>`;
 
-    blog5: string = `
+    block5: string = `
 <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="text-900 font-bold text-5xl mb-6">Recent Posts</div>
     <div class="flex flex-wrap">
@@ -298,7 +298,7 @@ export class BlogComponent {
     </div>
 </div>`;
 
-    blog6: string = `
+    block6: string = `
 <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="font-bold text-5xl text-900 mb-3">From the Blog</div>
     <div class="text-700 line-height-3 text-xl mb-6">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
