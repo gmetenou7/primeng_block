@@ -4,6 +4,10 @@ import { Component } from '@angular/core';
     templateUrl: './feature.component.html'
 })
 export class FeatureComponent {
+
+    activeTab1 = 0;
+
+    activeTab2 = 0;
     
     block1: string = `
 <div class="surface-section text-center">
@@ -526,6 +530,60 @@ export class FeatureComponent {
             </div>
         </div>
     </div>
+</div>`;
+
+    block11: string = `
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+    <div class="text-center font-bold text-blue-600 mb-4">DISCOVER YOUR POTENTIAL</div>
+    <div class="text-center font-bold text-900 mb-5 text-4xl">One Simple Platform</div>
+    <div class="grid">
+        <div class="col-12 lg:col-6 flex align-items-center justify-content-center">
+            <img src="assets/images/blocks/feature/feature-illustration-1.svg" alt="Image" class="w-full md:w-9" *ngIf="activeTab1 == 0">
+            <img src="assets/images/blocks/feature/feature-illustration-2.svg" alt="Image" class="w-full md:w-9" *ngIf="activeTab1 == 1">
+            <img src="assets/images/blocks/feature/feature-illustration-3.svg" alt="Image" class="w-full md:w-9" *ngIf="activeTab1 == 2">
+        </div>
+        <div class="col-12 lg:col-6 mt-5 lg:mt-0">
+            <ul class="list-none m-0 p-0">
+                <li class="border-left-2 p-4 cursor-pointer" (mouseover)="activeTab1 = 0" [ngClass]="{'surface-border': activeTab1 !== 0, 'text-blue-900 bg-blue-50 border-blue-500': activeTab1 === 0}">
+                    <div class="text-2xl font-medium">Optimize your apps</div>
+                    <p class="line-height-3 text-xl">Eget nulla facilisi etiam dignissim diam quis enim lobortis. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Nunc non blandit massa enim nec dui nunc mattis.</p>
+                </li>
+                <li class="border-left-2 p-4 cursor-pointer" (mouseover)="activeTab1 = 1" [ngClass]="{'surface-border': activeTab1 !== 1, 'text-blue-900 bg-blue-50 border-blue-500': activeTab1 === 1}">
+                    <div class="text-2xl font-medium">Analyze competitors</div>
+                    <p class="line-height-3 text-xl">Eget nulla facilisi etiam dignissim diam quis enim lobortis. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Nunc non blandit massa enim nec dui nunc mattis.</p>
+                </li>
+                <li class="border-left-2 p-4 cursor-pointer" (mouseover)="activeTab1 = 2" [ngClass]="{'surface-border': activeTab1 !== 2, 'text-blue-900 bg-blue-50 border-blue-500': activeTab1 === 2}">
+                    <div class="text-2xl font-medium">Track Progress</div>
+                    <p class="line-height-3 text-xl">Eget nulla facilisi etiam dignissim diam quis enim lobortis. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Nunc non blandit massa enim nec dui nunc mattis.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>`;
+
+    block12: string = `
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+    <div class="text-center font-bold text-blue-600 mb-4">DISCOVER YOUR POTENTIAL</div>
+    <div class="text-center font-bold text-900 mb-5 text-4xl">One Simple Platform</div>
+    <div class="flex align-items-center justify-content-center py-4">
+        <img src="assets/images/blocks/feature/feature-illustration-1.svg" alt="Image" class="w-full md:w-6" *ngIf="activeTab2 == 0">
+        <img src="assets/images/blocks/feature/feature-illustration-2.svg" alt="Image" class="w-full md:w-6" *ngIf="activeTab2 == 1">
+        <img src="assets/images/blocks/feature/feature-illustration-3.svg" alt="Image" class="w-full md:w-6" *ngIf="activeTab2 == 2">
+    </div>
+    <ul class="grid list-none mx-0 mb-0 mt-5 p-0">
+        <li class="col-12 lg:col-4 border-top-2 p-4 cursor-pointer" (mouseover)="activactiveTab2eTab1 = 0" [ngClass]="{'surface-border': activeTab2 !== 0, 'text-blue-900 bg-blue-50 border-blue-500': activeTab2 === 0}">
+            <div class="text-2xl font-medium">Optimize your apps</div>
+            <p class="line-height-3 text-xl">Eget nulla facilisi etiam dignissim diam quis enim lobortis. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Nunc non blandit massa enim nec dui nunc mattis.</p>
+        </li>
+        <li class="col-12 lg:col-4 border-top-2 p-4 cursor-pointer" (mouseover)="activeTab2 = 1" [ngClass]="{'surface-border': activeTab2 !== 1, 'text-blue-900 bg-blue-50 border-blue-500': activeTab2 === 1}">
+            <div class="text-2xl font-medium">Analyze competitors</div>
+            <p class="line-height-3 text-xl">Eget nulla facilisi etiam dignissim diam quis enim lobortis. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Nunc non blandit massa enim nec dui nunc mattis.</p>
+        </li>
+        <li class="col-12 lg:col-4 border-top-2 p-4 cursor-pointer" (mouseover)="activeTab2 = 2" [ngClass]="{'surface-border': activeTab2 !== 2, 'text-blue-900 bg-blue-50 border-blue-500': activeTab2 === 2}">
+            <div class="text-2xl font-medium">Track Progress</div>
+            <p class="line-height-3 text-xl">Eget nulla facilisi etiam dignissim diam quis enim lobortis. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Nunc non blandit massa enim nec dui nunc mattis.</p>
+        </li>
+    </ul>
 </div>`;
 
 }
