@@ -104,4 +104,31 @@ export class BreadcrumbComponent {
     </li>
 </ul>`;
 
+    block5 = `
+<ul class="list-none p-3 m-0 surface-card flex align-items-center font-medium overflow-x-auto">
+    <li class="pr-3">
+        <a class="cursor-pointer">
+            <i class="pi pi-home text-blue-500"></i>
+        </a>
+    </li>
+    <li class="px-2">
+        <span class="text-400">/</span>
+    </li>
+    <li class="px-2">
+        <a class="cursor-pointer text-blue-500 white-space-nowrap">Level 3</a>
+    </li>
+    <li class="px-2">
+        <span class="text-400">/</span>
+    </li>
+    <li class="px-2">
+        <a class="cursor-pointer text-blue-500 white-space-nowrap">Level 2</a>
+    </li>
+    <li class="px-2">
+        <span class="text-400">/</span>
+    </li>
+    <li class="px-2">
+        <a class="cursor-pointer text-900 white-space-nowrap">Level 1</a>
+    </li>
+</ul>`;
+
 }
