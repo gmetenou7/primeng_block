@@ -60,10 +60,10 @@ export class NotificationComponent  {
 <p-toast key="block3" [style]="{width: '30rem'}" [preventOpenDuplicates]="true">
     <ng-template let-message pTemplate="message">
         <div class="flex align-items-start flex-1">
-            <i class="pi pi-envelope text-cyan-900 text-2xl mr-3"></i>
+            <i class="pi pi-envelope text-blue-500 text-2xl mr-3"></i>
             <div>
-                <span class="text-xl font-medium text-cyan-900">{{message.summary}}</span>
-                <p class="text-cyan-800 mt-3">{{message.detail}}</p>
+                <span class="text-xl font-medium text-900">{{message.summary}}</span>
+                <p class="text-700 mt-3">{{message.detail}}</p>
             </div>
         </div>
     </ng-template>
@@ -74,8 +74,8 @@ export class NotificationComponent  {
 <p-toast key="block4" [style]="{width: '30rem'}" [preventOpenDuplicates]="true">
     <ng-template let-message pTemplate="message">
         <div class="flex align-items-center justify-content-between flex-1 align-self-center mr-3">
-            <span class="text-xl font-medium text-orange-900">{{message.detail}}</span>
-            <a class="cursor-pointer font-medium text-orange-700">Reply</a>
+            <span class="text-xl font-medium text-900">{{message.detail}}</span>
+            <a class="cursor-pointer font-medium text-blue-500">Reply</a>
         </div>
     </ng-template>
 </p-toast>`;
@@ -130,7 +130,7 @@ export class NotificationComponent  {
             severity: 'custom-3',
             summary: 'Custom Icon',
             detail: 'Sagittis eu volutpat odio facilisis mauris sit amet.',
-            styleClass: 'bg-cyan-500',
+            styleClass: 'surface-0',
             contentStyleClass: 'p-3'
         });
     }
@@ -141,7 +141,7 @@ export class NotificationComponent  {
             key: 'block4',
             severity: 'custom-4',
             detail: 'You received 1 new message.',
-            styleClass: 'bg-orange-300',
+            styleClass: 'surface-0',
             contentStyleClass: 'p-3'
         });
     }
