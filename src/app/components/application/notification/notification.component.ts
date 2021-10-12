@@ -96,6 +96,31 @@ export class NotificationComponent  {
     </ng-template>
 </p-toast>`;
 
+block6 = `
+<button pButton pRipple label="Display" (click)="notify6()"></button>
+<p-toast key="block3" [style]="{width: '30rem'}" [preventOpenDuplicates]="true">
+    <ng-template let-message pTemplate="message">
+        <div class="flex align-items-start flex-1">
+            <i class="pi pi-envelope text-cyan-900 text-2xl mr-3"></i>
+            <div>
+                <span class="text-xl font-medium text-cyan-900">{{message.summary}}</span>
+                <p class="text-cyan-800 mt-3">{{message.detail}}</p>
+            </div>
+        </div>
+    </ng-template>
+</p-toast>`;
+
+    block7 = `
+<button pButton pRipple label="Display" (click)="notify7()"></button>
+<p-toast key="block4" [style]="{width: '30rem'}" [preventOpenDuplicates]="true">
+    <ng-template let-message pTemplate="message">
+        <div class="flex align-items-center justify-content-between flex-1 align-self-center mr-3">
+            <span class="text-xl font-medium text-orange-900">{{message.detail}}</span>
+            <a class="cursor-pointer font-medium text-orange-700">Reply</a>
+        </div>
+    </ng-template>
+</p-toast>`;
+
     notify1() {
         this.messageService.clear('block2');
         this.messageService.add({
@@ -155,6 +180,29 @@ export class NotificationComponent  {
             detail: 'Tristique nulla aliquet enim tortor at auctor 😅... Urna nunc id.',
             styleClass: 'surface-overlay',
             contentStyleClass: 'p-4'
+        });
+    }
+
+    notify6() {
+        this.messageService.clear('block6');
+        this.messageService.add({
+            key: 'block6',
+            severity: 'custom-6',
+            summary: 'Custom Icon',
+            detail: 'Sagittis eu volutpat odio facilisis mauris sit amet.',
+            styleClass: 'bg-cyan-500',
+            contentStyleClass: 'p-3'
+        });
+    }
+
+    notify7() {
+        this.messageService.clear('block7');
+        this.messageService.add({
+            key: 'block7',
+            severity: 'custom-7',
+            detail: 'You received 1 new message.',
+            styleClass: 'bg-orange-300',
+            contentStyleClass: 'p-3'
         });
     }
 
