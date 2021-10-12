@@ -370,4 +370,8 @@ export class StackedLayoutComponent {
     </div>
 </div>`;
 
+    block4 = ``;
+
+    block5 = ``;
+
 }
