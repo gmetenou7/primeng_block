@@ -126,6 +126,11 @@ export class MultiColumnLayoutComponent {
     </div>
 </div>`;
 
-    activeTab: number = 0;
+    activeTab1: number = 0;
 
+    activeTab2: number = 5;
+
+    block2 = ``;
+
+    block3 = ``;
 }
