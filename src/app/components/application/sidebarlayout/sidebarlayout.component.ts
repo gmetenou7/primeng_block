@@ -816,4 +816,16 @@ export class SidebarLayoutComponent {
     </div>
 </div>`;
 
+    block6 = ``;
+
+    block7 = ``;
+
+    block8 = ``;
+
+    block9 = ``;
+
+    block10 = ``;
+
+    block11 = ``;
+
 }
