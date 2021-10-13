@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
     templateUrl: './pricing.component.html'
 })
 export class PricingComponent {
-    
+
     block1: string = `
 <div>
     <div class="text-900 font-bold text-6xl mb-4 text-center">Pricing Plans</div>
@@ -312,4 +312,203 @@ block3: string = `
     </div>
 </div>`;
 
+block4: string = `
+<div class="surface-ground px-4 py-8 md:px-6 lg:px-8 bg-no-repeat bg-cover" style="background: url('assets/images/blocks/pricing/pricing-4.svg');">
+    <div class="grid">
+      <div class="col-12 lg:col-6 lg:pr-5 lg:mb-5">
+        <div class="text-900 font-bold text-6xl mb-4">Pricing</div>
+        <div class="text-700 text-xl line-height-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos.</div>
+      </div>
+      <div class="col-12 md:col-6 lg:col-3 lg:mb-5">
+        <ul class="list-none p-0 m-0 flex-grow-1">
+          <li class="flex align-items-center my-4">
+              <i class="pi pi-check text-green-500 mr-3"></i>
+              <span>Arcu vitae elementum</span>
+          </li>
+          <li class="flex align-items-center my-4">
+              <i class="pi pi-check text-green-500 mr-3"></i>
+              <span>Dui faucibus in ornare</span>
+          </li>
+          <li class="flex align-items-center my-4">
+              <i class="pi pi-check text-green-500 mr-3"></i>
+              <span>Morbi tincidunt augue</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 md:col-6 lg:col-3 lg:mb-5">
+        <ul class="list-none p-0 m-0 flex-grow-1">
+          <li class="flex align-items-center my-4">
+              <i class="pi pi-check text-green-500 mr-3"></i>
+              <span>Duis ultricies lacus sed</span>
+          </li>
+          <li class="flex align-items-center my-4">
+              <i class="pi pi-check text-green-500 mr-3"></i>
+              <span>Imperdiet proin</span>
+          </li>
+          <li class="flex align-items-center my-4">
+              <i class="pi pi-check text-green-500 mr-3"></i>
+              <span>Nisi scelerisque</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 lg:col-4">
+          <div class="h-full lg:pr-3">
+              <div class="shadow-2 p-3 h-full flex flex-column bg-primary" style="border-radius: 6px">
+                  <div class="font-medium text-xl mb-5">Free Forever</div>
+                  <div class="font-bold text-4xl mb-5">Free</div>
+                  <button pButton pRipple label="Create Account" class="p-2 surface-0 text-primary outline-none w-full mt-auto mb-5"></button>
+                  <p class="text-sm line-height-2">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos.
+                  </p>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 lg:col-4 mt-3 lg:m-0">
+        <div class="h-full lg:px-2">
+            <div class="shadow-2 p-3 h-full flex flex-column surface-card" style="border-radius: 6px">
+                <div class="text-900 font-medium text-xl mb-5">Monthly</div>
+                <div class="lex align-items-center mb-5">
+                  <span class="text-900 font-bold text-4xl">$29</span>
+                  <span class="font-medium text-500 line-height-3 ml-2 ">per month</span>
+                </div>
+                <button pRipple class="flex align-items-center justify-content-center p-button p-2 w-full mt-auto mb-5">
+                  <span>
+                    Proceed Monthly
+                  </span>
+                  <i class="pi pi-arrow-right ml-2"></i>
+                </button>
+                <p class="text-500 text-sm line-height-2">
+                  Nec ultrices dui sapien eget. Amet nulla facilisi morbi tempus.
+                </p>
+            </div>
+        </div>
+      </div>
+      <div class="col-12 lg:col-4 mt-3 lg:m-0">
+        <div class="h-full lg:pl-3">
+            <div class="shadow-2 p-3 h-full flex flex-column surface-card" style="border-radius: 6px">
+              <div class="flex flex-row justify-content-between mb-5 align-items-center">
+                <div class="text-900 text-xl font-medium">Yearly</div>
+                <span class="bg-orange-100 500 text-orange-500 font-semibold px-2">🎉 Save 20%</span>
+              </div>
+                <div class="flex align-items-center mb-5">
+                  <span class="font-bold text-4xl text-900">$275</span>
+                  <span class="font-medium text-500 line-height-3 ml-2">per year</span>
+                </div>
+                <button pRipple class="flex align-items-center justify-content-center p-button p-2 w-full mt-auto mb-5">
+                  <span>
+                    Proceed Yearly
+                  </span>
+                  <i class="pi pi-arrow-right ml-2"></i>
+                </button>
+                <p class="text-500 text-sm line-height-2">
+                  Placerat in egestas erat imperdiet sed euismod nisi porta.
+                </p>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+`;
+
+block5: string = `
+<div class="surface-card px-4 py-8 md:px-6 lg:px-8">
+    <div class="grid">
+      <div class="col-12 p-1 mb-3 lg:mb-5">
+        <div class="text-900 font-bold text-6xl mb-4">Pricing</div>
+        <div class="text-700 text-xl line-height-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos.</div>
+      </div>
+      <div class="col-12 lg:col-6 md:mb-3">
+        <div class="h-full">
+          <div class="flex flex-column justify-content-center h-full" style="border-radius: 6px">
+            <div class="flex flex-row p-3 mb-3">
+              <span class="inline-flex align-items-center justify-content-center text-blue-900 bg-blue-100 border-circle" style="min-width: 2.25rem; height: 2.25rem">
+                <i class="pi pi-users"></i>
+              </span>
+              <div class="ml-3">
+                  <div class="text-900 font-medium text-xl mb-2">Unlimited Users</div>
+                  <span class="text-600 line-height-3">Auctor augue mauris augue neque gravida in fermentum et sollicitudin. Ornare massa eget egestas purus viverra accumsan.</span>
+              </div>
+            </div>
+            <div class="flex flex-row p-3 mb-3">
+              <span class="inline-flex align-items-center justify-content-center text-blue-900 bg-blue-100 border-circle" style="min-width: 2.25rem; height: 2.25rem">
+                <i class="pi pi-comments"></i>
+              </span>
+              <div class="ml-3">
+                  <div class="text-900 font-medium text-xl mb-2">Unlimited Inbox</div>
+                  <span class="text-600 line-height-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo perspiciatis error possimus ipsam omnis libero dolorum.</span>
+              </div>
+            </div>
+            <div class="flex flex-row p-3">
+              <span class="inline-flex align-items-center justify-content-center text-blue-900 bg-blue-100 border-circle" style="min-width: 2.25rem; height: 2.25rem">
+                <i class="pi pi-moon"></i>
+              </span>
+              <div class="ml-3">
+                  <div class="text-900 font-medium text-xl mb-2">Dark Mode</div>
+                  <span class="text-600 line-height-3">Quidem delectus ad est illo ipsam fugiat voluptas tempora. At a veritatis obcaecati ipsam id eius aut at error modi.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 lg:col-6">
+        <div class="h-full pl-3">
+            <div class="surface-card shadow-2 p-5" style="border-radius: 6px">
+              <div class="flex flex-column justify-content-between md:flex-row">
+                <div class="flex-grow-1 lg:w-min">
+                  <div class="text-900 font-bold text-2xl mb-2">Single Plan</div>
+                  <div class="text-500 text-xl">Id diam vel quam elementum.</div>
+                </div>
+                <div class="flex align-items-center w-auto lg:w-9rem lg:justify-content-end mt-3 lg:mt-0">
+                  <span class="font-bold text-4xl text-900">$9</span>
+                  <span class="text-700 text-xl ml-2 line-height-3">per month</span>
+                </div>
+              </div>
+                <hr class="my-5 mx-0 border-top-1 border-bottom-none surface-border" />
+                <div class="text-900 font-medium text-xl pb-1">Features</div>
+                <div class="flex flex-column justify-space-between md:flex-row">
+                    <ul class="list-none p-0 m-0 flex-grow-1">
+                      <li class="flex align-items-center my-3">
+                          <i class="pi pi-check-circle text-green-500 mr-3"></i>
+                          <span>Arcu vitae elementum</span>
+                      </li>
+                      <li class="flex align-items-center my-3">
+                          <i class="pi pi-check-circle text-green-500 mr-3"></i>
+                          <span>Dui faucibus in ornare</span>
+                      </li>
+                      <li class="flex align-items-center my-3">
+                          <i class="pi pi-check-circle text-green-500 mr-3"></i>
+                          <span>Morbi tincidunt augue</span>
+                      </li>
+                      <li class="flex align-items-center my-3">
+                        <i class="pi pi-check-circle text-green-500 mr-3"></i>
+                        <span>Duis ultricies lacus sed</span>
+                      </li>
+                    </ul>
+                    <ul class="list-none p-0 md:pl-2 m-0 flex-grow-1">
+                      <li class="flex align-items-center my-3">
+                          <i class="pi pi-check-circle text-green-500 mr-3"></i>
+                          <span>Imperdiet proin</span>
+                      </li>
+                      <li class="flex align-items-center my-3">
+                          <i class="pi pi-check-circle text-green-500 mr-3"></i>
+                          <span>Nisi scelerisque</span>
+                      </li>
+                      <li class="flex align-items-center my-3">
+                          <i class="pi pi-check-circle text-green-500 mr-3"></i>
+                          <span>Elit eget gravida</span>
+                      </li>
+                      <li class="flex align-items-center my-3">
+                          <i class="pi pi-check-circle text-green-500 mr-3"></i>
+                          <span>Viverra vitae congue eu</span>
+                      </li>
+                    </ul>
+                </div>
+                <hr class="my-3 mx-0 border-top-1 border-bottom-none surface-border" />
+                <button pButton pRipple class="w-full mt-2" label="Buy Now"></button>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+`;
 }
