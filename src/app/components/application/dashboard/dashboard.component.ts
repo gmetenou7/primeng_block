@@ -825,6 +825,8 @@ export class DashboardComponent implements OnInit {
     </div>
 </div>`;
 
+    block3: ``;
+
     items: MenuItem[];
 
     ngOnInit() {
