@@ -19,7 +19,7 @@ export class BannerComponent {
     </a>
 </div>`;
 
-block2: string = `
+    block2: string = `
 <div class="bg-cyan-600 text-white p-3 flex justify-content-between align-items-center flex-wrap shadow-2" style="border-radius: 8px">
     <div class="font-bold">🔥 Hot Deals!</div>
     <div class="align-items-center flex">
@@ -33,7 +33,7 @@ block2: string = `
     </a>
 </div>`;
 
-block3: string = `
+    block3: string = `
 <div class="shadow-2 flex flex-wrap justify-content-between align-content-center px-4 md:px-8" style="background: linear-gradient(90deg, #263238 0%, #526A76 100%); border-radius: 8px">
     <div class="flex align-items-start py-3">
         <div>

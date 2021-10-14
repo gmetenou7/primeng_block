@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 export class NewsletterComponent {
 
     block1 = `
-<div class="surface-section">
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="flex flex-column md:flex-row">
         <div class="flex flex-column flex-grow-1">
             <div class="text-900 font-bold text-2xl mb-3">Get our weekly updates and <span class="text-blue-500">free stuff!</span></div>
@@ -22,7 +22,7 @@ export class NewsletterComponent {
 </div>`;
 
     block2 = `
-<div class="surface-section text-center">
+<div class="surface-section text-center px-4 py-8 md:px-6 lg:px-8">
     <div class="bg-blue-50 text-blue-600 font-bold border-round px-2 py-1 mx-auto mb-3" style="max-width: 350px">
         🔥&nbsp;3,907 businesses already subscribed</div>
     <div class="text-2xl text-900 font-bold mb-3">Subscribe to our newsletter today</div>
@@ -46,7 +46,6 @@ export class NewsletterComponent {
         </div>
         <span class="text-indigo-200">We ensure to protect your privacy. <a tabindex="0" class="cursor-pointer text-white">Privacy Policy</a></span>
     </div>
-</div>
-`;
+</div>`;
 
 }

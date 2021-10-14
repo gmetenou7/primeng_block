@@ -7,8 +7,16 @@ export class TestimonialsComponent implements OnInit {
 
     company: any;
 
+    ngOnInit() {
+        this.company = [
+            { name: 'Dave Williams', image: '1', text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”' },
+            { name: 'Jane Watson', image: '2', text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”' },
+            { name: 'Annie Lanphear', image: '3', text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”' }
+        ];
+    }
+
     block1 = `
-<div class="surface-ground text-center">
+<div class="surface-ground text-center px-4 py-8 md:px-6 lg:px-8">
     <div class="flex flex-column md:flex-row">
         <div class="flex flex-grow-1 mb-4 md:mb-0 md:px-4 py-4 md:py-0">
             <div class="shadow-2 surface-card border-round relative">
@@ -56,7 +64,7 @@ export class TestimonialsComponent implements OnInit {
 </div>`;
 
     block2 = `
-<div class="surface-ground text-center text-900" style="height: 500px">
+<div class="surface-ground text-center text- -4 py-8 md:px-6 lg:px-8" style="height: 500px">
     <p-carousel [value]="company">
         <ng-template let-person pTemplate="item">
             <div class="flex justify-content-center">
@@ -71,16 +79,8 @@ export class TestimonialsComponent implements OnInit {
     </p-carousel>
 </div>`;
 
-    ngOnInit() {
-        this.company = [
-            { name: 'Dave Williams', image: '1', text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”' },
-            { name: 'Jane Watson', image: '2', text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”' },
-            { name: 'Annie Lanphear', image: '3', text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”' }
-        ];
-    }
-
     block3 = `
-    <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="text-orange-500 font-medium mb-3 text-center">Exclusive Community</div>
     <div class="text-2xl font-medium mb-5 text-center text-900">Join Our Developer Community</div>
     <div class="grid grid-nogutter">
@@ -159,7 +159,7 @@ export class TestimonialsComponent implements OnInit {
     </div>
 </div>`;
 
-block4 = `
+    block4 = `
 <div style="background: url('assets/images/blocks/testimonial/testimonials-4.png') no-repeat; background-size: cover" class="px-4 py-8 md:px-6 lg:px-8">
     <div class="flex flex-column lg:flex-row">
         <div class="flex-1 pr-0 lg:pr-6 pb-6 lg:pb-0">

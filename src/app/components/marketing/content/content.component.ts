@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 export class ContentComponent {
 
     block1: string = `
-<div class="surface-section">
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="text-600 text-sm mb-3">
         <span>Published </span>
         <span class="font-bold">April 6, 2021</span>
@@ -84,7 +84,6 @@ export class ContentComponent {
             <div class="text-center text-sm font-medium mt-3">Consequat nisl vel pretium lectus quam id leo in.</div>
         </div>
     </div>
-</div>
-`;
+</div>`;
 
 }

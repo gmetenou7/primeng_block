@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 export class BlogComponent {
 
     block1: string = `
-<div class="surface-ground">
+<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="font-bold text-6xl text-900 mb-5 text-center">Featured Articles</div>
     <div class="grid nogutter">
         <div class="col-12 lg:col-4 p-3">
@@ -72,7 +72,7 @@ export class BlogComponent {
 </div>`;
 
     block2: string = `
-<div class="surface-section">
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="font-bold text-5xl text-900 mb-3">Recent Articles</div>
     <div class="text-700 text-xl line-height-3 mb-5">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
     <div class="grid nogutter">
@@ -134,7 +134,7 @@ export class BlogComponent {
 </div>`;
 
     block3: string = `
-<div class="surface-ground">
+<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="font-bold text-5xl text-900 mb-3">From the Blog</div>
     <div class="text-700 line-height-3 text-xl mb-6">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
     

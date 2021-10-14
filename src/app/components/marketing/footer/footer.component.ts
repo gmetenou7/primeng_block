@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 export class FooterComponent {
 
     block1 = `
-<div class="surface-section">
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="grid pb-6 border-bottom-1 border-300">
         <div class="col-12 md:col-3">
             <div class="text-900 font-bold line-height-3 mb-3">Company</div>
@@ -60,7 +60,7 @@ export class FooterComponent {
 </div>`;
 
     block2 = `
-<div class="bg-gray-900">
+<div class="bg-gray-900 px-4 py-8 md:px-6 lg:px-8">
     <div class="grid">
         <div class="col-12 md:col-3 flex flex-wrap justify-content-start md:mb-0 mb-3">
             <img src="assets/images/blocks/logos/alfred-300.svg" alt="Image">

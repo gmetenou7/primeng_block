@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 export class StatsComponent {
 
     block1 = `
-<div class="surface-ground">
+<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="text-900 font-bold text-2xl line-height-2 mb-3">🍕 Choice of all Ninja Turtles</div>
     <p class="text-600 line-height-3 text-lg m-0 mb-5">Excepteur sint occaecat cupidatat
         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -44,7 +44,7 @@ export class StatsComponent {
 </div>`;
 
     block2 = `
-<div class="surface-ground">
+<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="text-900 font-bold text-4xl line-height-3 mb-3 text-center">Continue Breaking Records</div>
     <p class="text-600 line-height-3 text-lg m-0 mb-6 text-center">Excepteur sint occaecat cupidatat non proident,
         sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -74,7 +74,7 @@ export class StatsComponent {
 </div>`;
 
     block3 = `
-<div class="bg-gray-900 text-center">
+<div class="bg-gray-900 text-center bg-gray-900 px-4 py-8 md:px-6 lg:px-8">
     <i class="pi pi-users bg-blue-500 text-4xl text-0 p-2 mb-3 border-circle" style="width: 49px; height: 49px"></i>
     <div class="text-white font-bold text-5xl line-height-3 mb-3">Biggest Tech Company of Region</div>
     <p class="text-gray-500 line-height-3 text-lg m-0 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

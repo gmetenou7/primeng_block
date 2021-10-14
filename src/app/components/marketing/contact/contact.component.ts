@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 export class ContactComponent {
 
     block1: string = `
-<div class="surface-section">
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="grid">
         <div class="col-12 md:col-6">
             <div class="p-fluid pr-0 md:pr-6">
@@ -140,6 +140,6 @@ export class ContactComponent {
         </div>
     </div>
     <img alt="Image" src="assets/images/blocks/contact/map.png" class="w-full">
-</div>
-`;
+</div>`;
+
 }

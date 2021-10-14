@@ -10,7 +10,7 @@ export class FeatureComponent {
     activeTab2 = 0;
     
     block1: string = `
-<div class="surface-section text-center">
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8 text-center">
     <div class="mb-3 font-bold text-2xl">
         <span class="text-900">One Product, </span>
         <span class="text-blue-600">Many Solutions</span>
@@ -102,7 +102,7 @@ export class FeatureComponent {
 </div>`;
 
     block3: string = `
-<div class="surface-section">
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="grid">
         <div class="col-12 md:col-6 flex align-items-center">
             <div>
@@ -136,7 +136,7 @@ export class FeatureComponent {
 </div>`;
 
     block4: string = `
-<div class="surface-section">
+    <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="grid">
         <div class="col-12 md:col-6">
             <img src="assets/images/blocks/feature/feature-2.png" alt="Image" class="w-full">
@@ -182,7 +182,7 @@ export class FeatureComponent {
 </div>`;
 
     block5: string = `
-<div class="bg-gray-900">
+<div class="bg-gray-900 px-4 py-8 md:px-6 lg:px-8">
     <div class="grid">
         <div class="col-12 md:col-6">
             <div class="pr-0 md:pr-8">
@@ -211,54 +211,56 @@ export class FeatureComponent {
 </div>`;
 
     block6: string = `
-<div class="surface-section grid">
-    <div class="col-12 md:col-6">
-        <div class="pr-0 md:pr-8">
-            <div class="text-900 font-bold text-4xl mb-3">Easy to Use</div>
-            <div class="text-700 line-height-3 mb-5">Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna.</div>
-        
-            <div class="mb-5 flex">
-                <div class="flex flex-column align-items-center" style="width:2rem">
-                    <span class="bg-cyan-600 text-white flex align-items-center justify-content-center border-circle shadow-2" style="min-width:2rem; min-height: 2rem; border: 2px solid #ffffff">
-                        <i class="pi pi-image"></i>
-                    </span>
-                    <div class="h-full bg-cyan-500" style="width: 2px; min-height: 4rem"></div>
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+    <div class="grid">
+        <div class="col-12 md:col-6">
+            <div class="pr-0 md:pr-8">
+                <div class="text-900 font-bold text-4xl mb-3">Easy to Use</div>
+                <div class="text-700 line-height-3 mb-5">Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna.</div>
+            
+                <div class="mb-5 flex">
+                    <div class="flex flex-column align-items-center" style="width:2rem">
+                        <span class="bg-cyan-600 text-white flex align-items-center justify-content-center border-circle shadow-2" style="min-width:2rem; min-height: 2rem; border: 2px solid #ffffff">
+                            <i class="pi pi-image"></i>
+                        </span>
+                        <div class="h-full bg-cyan-500" style="width: 2px; min-height: 4rem"></div>
+                    </div>
+                    <div class="ml-3">
+                        <div class="font-medium text-900 mb-2">Create a wireframe</div>
+                        <span class="line-height-3 text-700">Imperdiet nulla malesuada pellentesque elit eget gravida. Dui sapien eget mi proin. Eu mi bibendum neque egestas congue quisque egestas diam.</span>
+                    </div>
                 </div>
-                <div class="ml-3">
-                    <div class="font-medium text-900 mb-2">Create a wireframe</div>
-                    <span class="line-height-3 text-700">Imperdiet nulla malesuada pellentesque elit eget gravida. Dui sapien eget mi proin. Eu mi bibendum neque egestas congue quisque egestas diam.</span>
-                </div>
-            </div>
 
-            <div class="mb-5 flex">
-                <div class="flex flex-column align-items-center" style="width:2rem">
-                    <span class="bg-orange-500 text-white flex align-items-center justify-content-center border-circle shadow-2" style="min-width:2rem; min-height: 2rem; border: 2px solid #ffffff">
-                        <i class="pi pi-android"></i>
-                    </span>
-                    <div class="h-full bg-orange-500" style="width: 2px; min-height: 4rem"></div>
+                <div class="mb-5 flex">
+                    <div class="flex flex-column align-items-center" style="width:2rem">
+                        <span class="bg-orange-500 text-white flex align-items-center justify-content-center border-circle shadow-2" style="min-width:2rem; min-height: 2rem; border: 2px solid #ffffff">
+                            <i class="pi pi-android"></i>
+                        </span>
+                        <div class="h-full bg-orange-500" style="width: 2px; min-height: 4rem"></div>
+                    </div>
+                    <div class="ml-3">
+                        <div class="font-medium text-900 mb-2">Artificial Intelligence</div>
+                        <span class="line-height-3 text-700">Erat pellentesque adipiscing commodo elit at imperdiet dui. Morbi tristique senectus et netus et malesuada fames.</span>
+                    </div>
                 </div>
-                <div class="ml-3">
-                    <div class="font-medium text-900 mb-2">Artificial Intelligence</div>
-                    <span class="line-height-3 text-700">Erat pellentesque adipiscing commodo elit at imperdiet dui. Morbi tristique senectus et netus et malesuada fames.</span>
-                </div>
-            </div>
 
-            <div class="mb-5 flex">
-                <div class="flex flex-column align-items-center" style="width:2rem">
-                    <span class="bg-purple-500 text-white flex align-items-center justify-content-center border-circle shadow-2" style="min-width:2rem; min-height: 2rem; border: 2px solid #ffffff">
-                        <i class="pi pi-globe"></i>
-                    </span>
-                    <div class="h-full bg-purple-500" style="width: 2px; min-height: 4rem"></div>
-                </div>
-                <div class="ml-3">
-                    <div class="font-medium text-900 mb-2">Deploy to Production</div>
-                    <span class="line-height-3 text-700">Adipiscing at in tellus integer. Lorem donec massa sapien faucibus et molestie ac feugiat. Laoreet sit amet cursus sit. Velit ut tortor pretium viverra.</span>
+                <div class="mb-5 flex">
+                    <div class="flex flex-column align-items-center" style="width:2rem">
+                        <span class="bg-purple-500 text-white flex align-items-center justify-content-center border-circle shadow-2" style="min-width:2rem; min-height: 2rem; border: 2px solid #ffffff">
+                            <i class="pi pi-globe"></i>
+                        </span>
+                        <div class="h-full bg-purple-500" style="width: 2px; min-height: 4rem"></div>
+                    </div>
+                    <div class="ml-3">
+                        <div class="font-medium text-900 mb-2">Deploy to Production</div>
+                        <span class="line-height-3 text-700">Adipiscing at in tellus integer. Lorem donec massa sapien faucibus et molestie ac feugiat. Laoreet sit amet cursus sit. Velit ut tortor pretium viverra.</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-12 md:col-6">
-        <img src="assets/images/blocks/feature/feature-4.png" alt="Image" class="w-full">
+        <div class="col-12 md:col-6">
+            <img src="assets/images/blocks/feature/feature-4.png" alt="Image" class="w-full">
+        </div>
     </div>
 </div>`;
 

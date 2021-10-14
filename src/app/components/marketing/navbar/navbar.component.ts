@@ -196,7 +196,7 @@ export class NavBarComponent {
 </div>`;
 
     block3: string = `
-    <div class="bg-indigo-500 py-3 px-6 shadow-2 flex align-items-center justify-content-between relative lg:static">
+<div class="bg-indigo-500 py-3 px-6 shadow-2 flex align-items-center justify-content-between relative lg:static">
     <img src="assets/images/blocks/logos/hyper-light.svg" alt="Image" height="50">
     <a class="cursor-pointer block lg:hidden text-white" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
         <i class="pi pi-bars text-4xl"></i>
@@ -275,7 +275,7 @@ export class NavBarComponent {
 </div>`;
 
     block4: string = `
-    <div class="surface-overlay py-3 px-6 shadow-2 flex align-items-center justify-content-between relative lg:static">
+<div class="surface-overlay py-3 px-6 shadow-2 flex align-items-center justify-content-between relative lg:static">
     <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="50" class="block lg:hidden">
     <a class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
         <i class="pi pi-bars text-4xl"></i>

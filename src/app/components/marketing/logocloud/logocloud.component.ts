@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 export class LogoCloudComponent {
 
     block1: string = `
-<div class="surface-section">
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="text-900 mb-3 font-bold text-5xl text-center">Trusted By</div>
     <div class="text-600 mb-6 line-height-3 text-xl text-center">We provide many of the Planet Earth’s most powerful companies with extraordinary infrastructural capabilities.</div>
 
@@ -54,7 +54,7 @@ export class LogoCloudComponent {
 </div>`;
 
     block2: string = `
-<div class="bg-gray-900">
+<div class="bg-gray-900 px-4 py-8 md:px-6 lg:px-8">
     <div class="text-white mb-3 font-bold text-5xl">You're in good company</div>
     <div class="text-white mb-6 line-height-3 text-xl">Millions of individuals, corporations, startups and institutes work with us.</div>
 
@@ -96,8 +96,7 @@ export class LogoCloudComponent {
             <img src="assets/images/blocks/logos/franki-500.svg" alt="Image" height="50">
         </div>
     </div>
-</div>
-`;
+</div>`;
 
     block4: string = `
 <div class="surface-section px-4 py-8 md:px-6 lg:px-8">

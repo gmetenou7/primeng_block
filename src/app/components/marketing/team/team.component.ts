@@ -8,7 +8,7 @@ export class TeamComponent {
     visibleMember: number;
 
     block1: string = `
-<div class="surface-section">
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="text-center font-bold text-900 text-5xl mb-3">The Team</div>
     <div class="text-center text-xl line-height-3 text-600 mb-6">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
     <div class="grid">
@@ -112,7 +112,7 @@ export class TeamComponent {
 </div>`;
 
     block2: string = `
-<div class="surface-section">
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="text-center font-bold text-900 text-5xl mb-3">The Team</div>
     <div class="text-center text-xl line-height-3 text-600 mb-6">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
 
@@ -241,7 +241,7 @@ export class TeamComponent {
 </div>`;
 
     block3: string = `
-<div class="surface-ground">
+<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="font-bold text-900 text-5xl mb-3 text-center">Meet the People</div>
     <div class="text-xl line-height-3 text-600 mb-6 text-center">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
 
@@ -349,8 +349,7 @@ export class TeamComponent {
             </div>
         </div>
     </div>
-</div>
-`;
+</div>`;
 
     block5: string = `
 <div class="surface-section px-4 py-8 md:px-6 lg:px-">

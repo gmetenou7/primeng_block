@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 export class FaqComponent {
 
     block1: string = `
-<div class="surface-section text-800">
+<div class="surface-section text-800 px-4 py-6 md:px-6">
     <div class="grid">
         <div class="col-12 md:col-3">
             <span class="block font-bold text-3xl mb-3">Frequently Asked Questions</span>
@@ -13,8 +13,8 @@ export class FaqComponent {
                 sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
         </div>
         <div class="col-12 md:col-9 md:px-5">
-            <p-accordion>
-                <p-accordionTab header="Question 1" [activeIndex]="0">
+            <p-accordion [activeIndex]="0">
+                <p-accordionTab header="Question 1">
                     <div class="line-height-3">Ut enim ad minim veniam, quis nostrud exercitation 
                         ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
                 </p-accordionTab>
@@ -36,7 +36,7 @@ export class FaqComponent {
 </div>`;
 
     block2: string = `
-<div class="surface-section">
+<div class="surface-section px-4 py-6 md:px-6">
     <div class="text-2xl text-900 font-bold mb-2">Frequently Asked Questions</div>
     <div class="text-700 line-height-3">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
 
