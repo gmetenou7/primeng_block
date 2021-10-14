@@ -20,7 +20,7 @@ export class GridListComponent {
     }
 
     block1 = `
-<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+<div class="surface-ground">
     <div class="grid">
         <div class="col-12 md:col-6 xl:col-4 p-3">
             <div class="surface-card shadow-2 border-rounded p-4">
@@ -122,7 +122,7 @@ export class GridListComponent {
 </div>`;
 
     block2 = `
-<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+<div class="surface-ground">
     <div class="grid">
         <div class="col-12 md:col-6 xl:col-3 p-3">
             <div class="surface-card shadow-2 border-rounded p-4">
@@ -280,7 +280,7 @@ export class GridListComponent {
 </div>`;
 
     block3 = `
-<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+<div class="surface-ground">
     <div class="grid">
         <div class="col-12 lg:col-4 p-3">
             <div class="p-3 border-round shadow-2 flex align-items-center surface-card">
@@ -331,7 +331,7 @@ export class GridListComponent {
 </div>`;
 
     block4 = `
-<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+<div class="surface-ground">
     <div class="grid">
         <div class="col-12 md:col-6 xl:col-3 p-3">
             <div class="surface-card shadow-2 border-rounded p-3" style="border-radius: 6px">
@@ -545,7 +545,7 @@ export class GridListComponent {
 </div>`;
 
     block5 = `
-<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+<div class="surface-ground">
     <div class="grid">
         <div class="col-12 lg:col-4 p-3">
             <div class="shadow-2 border-round surface-card mb-3 h-full flex-column justify-content-between flex">

@@ -13,7 +13,7 @@ export class PageHeadingComponent {
     items3: MenuItem[] = [{label: "Permanent"}, {label: "Contractor"}];
     
     block1 = `
-<div class="surface-section">
+<div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <ul class="list-none p-0 m-0 flex align-items-center font-medium mb-3">
         <li>
             <a class="text-500 no-underline line-height-3 cursor-pointer">Application</a>
@@ -51,7 +51,7 @@ export class PageHeadingComponent {
 </div>`;
 
     block2 = `
-<div class="surface-section">
+<div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <div class="flex align-items-start flex-column lg:flex-row lg:justify-content-between">
         <div class="flex align-items-start flex-column md:flex-row">
             <img src="assets/images/blocks/avatars/circle/avatar-f-1@2x.png" class="mr-5 mb-3 lg:mb-0" style="width:90px;height:90px" />
@@ -87,7 +87,7 @@ export class PageHeadingComponent {
 </div>`;
 
     block3 = `
-<div class="surface-section">
+<div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <div class="flex flex-column md:align-items-center md:justify-content-between md:flex-row">
         <div class="font-medium text-3xl text-900">Customers</div>
         <div class="mt-3 md:mt-0">
@@ -98,7 +98,7 @@ export class PageHeadingComponent {
 </div>`;
 
     block4 = `
-<div class="bg-gray-900">
+<div class="bg-gray-900 px-4 py-5 md:px-6 lg:px-8">
     <div class="flex flex-column md:align-items-center md:justify-content-between md:flex-row">
         <div class="font-medium text-3xl text-white">Customers</div>
         <div class="mt-3 md:mt-0">

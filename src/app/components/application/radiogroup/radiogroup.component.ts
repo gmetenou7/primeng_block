@@ -5,6 +5,18 @@ import { Component } from '@angular/core';
 })
 export class RadioGroupComponent {
 
+    animal: number = 1;
+
+    tier1: number = 1;
+
+    tier2: number = 1;
+
+    hotel: number = 1;
+
+    subscription: number = 1;
+
+    payment: number = 1;
+
     block1 = `
 <div class="w-full">
     <div class="text-900 text-xl mb-3 text-left font-medium">Choose your favorite animal</div>
@@ -135,7 +147,7 @@ export class RadioGroupComponent {
 </div>`;
 
     block4 = `
-<div class="text-center">
+<div class="surface-ground text-center px-4 py-8 md:px-6 lg:px-8">
     <div class="text-900 font-medium text-2xl mb-3">Choose your Adventure</div>
     <div class="text-700 line-height-3 mb-4">Volutpat est velit egestas dui id ornare arcu odio. Amet dictum sit amet justo.</div>
     <div class="grid">
@@ -240,7 +252,7 @@ export class RadioGroupComponent {
 </div>`;
 
     block6 = `
-<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+    <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="text-900 text-xl font-medium mb-3 text-center">Payment Methods</div>
     <p class="text-700 mt-0 mb-4 text-center">In tellus integer feugiat scelerisque varius morbi.</p>
     <div class="grid">
@@ -314,17 +326,5 @@ export class RadioGroupComponent {
         </div>
     </div>
 </div>`;
-
-    animal: number = 1;
-
-    tier1: number = 1;
-
-    tier2: number = 1;
-
-    hotel: number = 1;
-
-    subscription: number = 1;
-
-    payment: number = 1;
 
 }

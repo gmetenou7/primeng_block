@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 export class SidebarNavComponent {
 
     block1 = `
-<div class="surface-section h-screen border-right-1 surface-border flex flex-column w-18rem select-none">
+<div class="surface-section h-screen border-right-1 surface-border flex flex-column w-18rem select-none fixed left-0 top-0">
     <div class="p-3 flex align-items-center justify-content-center">
         <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="40">
     </div>
@@ -92,7 +92,7 @@ export class SidebarNavComponent {
 </div>`;
 
     block2 = `
-<div class="surface-section h-screen border-right-1 surface-border flex flex-column w-18rem select-none">
+<div class="surface-section h-screen border-right-1 surface-border flex flex-column w-18rem select-none fixed left-0 top-0">
     <div class="p-3 flex align-items-center justify-content-center">
         <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="40">
     </div>
@@ -261,7 +261,7 @@ export class SidebarNavComponent {
 </div>`;
 
     block3 = `
-<div class="bg-gray-900 h-screen border-right-1 surface-border flex flex-column w-18rem select-none">
+    <div class="bg-gray-900 h-screen border-right-1 surface-border flex flex-column w-18rem select-none fixed left-0 top-0">
     <div class="p-3 flex align-items-center justify-content-center">
         <img src="assets/images/blocks/logos/hyper-300.svg" alt="Image" height="40">
     </div>
@@ -402,7 +402,7 @@ export class SidebarNavComponent {
 </div>`;
 
     block4 = `
-<div class="bg-indigo-500 h-screen flex flex-column w-18rem select-none">
+<div class="bg-indigo-500 h-screen flex flex-column w-18rem select-none fixed left-0 top-0">
     <div class="p-3 flex align-items-center justify-content-center">
         <img src="assets/images/blocks/logos/hyper-300.svg" alt="Image" height="40">
     </div>
@@ -553,7 +553,7 @@ export class SidebarNavComponent {
 </div>`;
 
     block5 = `
-<div class="surface-section h-screen border-right-1 surface-border flex flex-column w-18rem select-none">
+<div class="surface-section h-screen border-right-1 surface-border flex flex-column w-18rem select-none fixed left-0 top-0">
     <div class="p-3 flex align-items-center justify-content-center">
         <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="40">
     </div>

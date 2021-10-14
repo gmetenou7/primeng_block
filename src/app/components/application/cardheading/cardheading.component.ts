@@ -69,8 +69,7 @@ export class CardHeadingComponent implements OnInit {
         <button pButton label="New" icon="pi pi-plus"></button>
     </div>
     <div style="height: 150px" class="border-2 border-dashed surface-border"></div>
-</div>
-`;
+</div>`;
 
     block6 = `
 <div class="surface-card p-4 shadow-2 border-round">
@@ -87,7 +86,7 @@ export class CardHeadingComponent implements OnInit {
                 </p-avatarGroup>
                 <span class="text-600">+2</span>
             </div>
-            <button pButton label="View All" icon="pi pi-plus" class="p-button-outlined"></button>
+            <button pButton label="View All" icon="pi pi-search" class="p-button-outlined"></button>
         </div>
     </div>
     <div style="height: 150px" class="border-2 border-dashed surface-border"></div>

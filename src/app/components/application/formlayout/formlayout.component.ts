@@ -5,8 +5,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormLayoutComponent implements OnInit {
 
+    countries: any[];
+
+    ngOnInit() {
+        this.countries = [
+            {name: 'Australia', code: 'AU'},
+            {name: 'Brazil', code: 'BR'},
+            {name: 'China', code: 'CN'},
+            {name: 'Egypt', code: 'EG'},
+            {name: 'France', code: 'FR'},
+            {name: 'Germany', code: 'DE'},
+            {name: 'India', code: 'IN'},
+            {name: 'Japan', code: 'JP'},
+            {name: 'Spain', code: 'ES'},
+            {name: 'United States', code: 'US'}
+        ]; 
+    }
+
     block1 = `
-<div class="surface-section">
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="grid">
         <div class="col-12 lg:col-2">
             <div class="text-900 font-medium text-xl mb-3">Profile</div>
@@ -75,7 +92,7 @@ export class FormLayoutComponent implements OnInit {
 </div>`;
 
     block2 = `
-<div>
+<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="text-900 font-medium text-xl mb-3">Profile</div>
     <p class="m-0 mb-4 p-0 text-600 line-height-3 mr-3">Odio euismod lacinia at quis risus sed vulputate odio. Non nisi est sit amet. 
         Egestas integer eget aliquet nibh praesent tristique magna.</p>
@@ -211,22 +228,5 @@ export class FormLayoutComponent implements OnInit {
         <button pButton label="Create Invoice" icon="pi pi-file-o" class="w-auto"></button>
     </div>
 </div>`;
-
-    countries: any[];
-
-    ngOnInit() {
-        this.countries = [
-            {name: 'Australia', code: 'AU'},
-            {name: 'Brazil', code: 'BR'},
-            {name: 'China', code: 'CN'},
-            {name: 'Egypt', code: 'EG'},
-            {name: 'France', code: 'FR'},
-            {name: 'Germany', code: 'DE'},
-            {name: 'India', code: 'IN'},
-            {name: 'Japan', code: 'JP'},
-            {name: 'Spain', code: 'ES'},
-            {name: 'United States', code: 'US'}
-        ]; 
-    }
 
 }

@@ -5,6 +5,18 @@ import { Component } from '@angular/core';
 })
 export class TabsComponent {
 
+    active1: number = 0;
+
+    active2: number = 0;
+
+    active3: number = 0;
+
+    active4: number = 0;
+
+    active5: number = 0;
+
+    active6: number = 0;
+
     block1 = `
 <ul class="surface-card p-0 m-0 list-none flex overflow-x-auto select-none">
     <li>
@@ -55,7 +67,7 @@ export class TabsComponent {
     </li>
     <li class="mr-2">
         <a class="cursor-pointer px-4 py-3 flex align-items-center hover:surface-100 border-round transition-colors transition-duration-150" 
-        [ngClass]="{'bg-primary hover:bg-primary': active2 === 1, 'text-700': active2 !== 2}" (click)="active2 = 1">
+        [ngClass]="{'bg-primary hover:bg-primary': active2 === 1, 'text-700': active2 !== 1}" (click)="active2 = 1">
             <i class="pi pi-users mr-2"></i>
             <span class="font-medium">Members</span>
         </a>
@@ -262,17 +274,5 @@ export class TabsComponent {
         </a>
     </li>
 </ul>`;
-
-    active1: number = 0;
-
-    active2: number = 0;
-
-    active3: number = 0;
-
-    active4: number = 0;
-
-    active5: number = 0;
-
-    active6: number = 0;
 
 }

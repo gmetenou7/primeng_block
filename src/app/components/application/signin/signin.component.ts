@@ -5,62 +5,70 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignInComponent implements OnInit {
 
+    features: any[];
+
+    ngOnInit() {
+        this.features = [
+            { title: 'Unlimited Inbox', image: 'live-collaboration.svg', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
+            { title: 'Data Security', image: 'security.svg', text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
+            { title: 'Cloud Backup Williams', image: 'subscribe.svg', text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' }
+        ];
+    }
+
     block1 = `
-<div class="flex align-items-center justify-content-center">
-    <div class="surface-card p-4 shadow-2 border-round w-full lg:w-6">
-        <div class="text-center mb-5">
-            <img src="assets/images/blocks/logos/hyper.svg" alt="Image" height="50" class="mb-3">
-            <div class="text-900 text-3xl font-medium mb-3">Welcome Back</div>
-            <span class="text-600 font-medium line-height-3">Don't have an account?</span>
-            <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer">Create today!</a>
-        </div>
+<div class="surface-card p-4 shadow-2 border-round w-full lg:w-6">
+    <div class="text-center mb-5">
+        <img src="assets/images/blocks/logos/hyper.svg" alt="Image" height="50" class="mb-3">
+        <div class="text-900 text-3xl font-medium mb-3">Welcome Back</div>
+        <span class="text-600 font-medium line-height-3">Don't have an account?</span>
+        <a class="font-medium no-underline ml-2 text-blue-500 cursor-pointer">Create today!</a>
+    </div>
 
-        <div>
-            <label for="email1" class="block text-900 font-medium mb-2">Email</label>
-            <input id="email1" type="text" pInputText class="w-full mb-3">
+    <div>
+        <label for="email1" class="block text-900 font-medium mb-2">Email</label>
+        <input id="email1" type="text" pInputText class="w-full mb-3">
 
-            <label for="password1" class="block text-900 font-medium mb-2">Password</label>
-            <input id="password1" type="password" pInputText class="w-full mb-3">
+        <label for="password1" class="block text-900 font-medium mb-2">Password</label>
+        <input id="password1" type="password" pInputText class="w-full mb-3">
 
-            <div class="flex align-items-center justify-content-between mb-6">
-                <div class="flex align-items-center">
-                    <p-checkbox id="rememberme" [binary]="true" styleClass="mr-2"></p-checkbox>
-                    <label for="rememberme">Remember me</label>
-                </div>
-                <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot password?</a>
+        <div class="flex align-items-center justify-content-between mb-6">
+            <div class="flex align-items-center">
+                <p-checkbox id="rememberme" [binary]="true" styleClass="mr-2"></p-checkbox>
+                <label for="rememberme">Remember me</label>
             </div>
-
-            <button pButton pRipple label="Sign In" icon="pi pi-user" class="w-full"></button>
+            <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot password?</a>
         </div>
+
+        <button pButton pRipple label="Sign In" icon="pi pi-user" class="w-full"></button>
     </div>
 </div>`;
 
     block2 = `
 <div class="flex">
     <div class="surface-section w-full md:w-6 p-6 md:p-8">
-            <div class="mb-5">
-                <img src="assets/images/blocks/logos/hyper.svg" alt="Image" height="50" class="mb-3">
-                <div class="text-900 text-3xl font-medium mb-3">Welcome Back</div>
-                <span class="text-600 font-medium mr-2">Don't have an account?</span>
-                <a class="font-medium no-underline text-blue-500 cursor-pointer">Create today!</a>
-            </div>
-            <div>
-                <label for="email2" class="block text-900 font-medium mb-2">Email</label>
-                <input id="email2" type="text" pInputText class="w-full mb-3">
-    
-                <label for="password2" class="block text-900 font-medium mb-2">Password</label>
-                <input id="password2" type="password" pInputText class="w-full mb-3">
-    
-                <div class="flex align-items-center justify-content-between mb-6">
-                    <div class="flex align-items-center">
-                        <p-checkbox id="rememberme" [binary]="true" styleClass="mr-2"></p-checkbox>
-                        <label for="rememberme">Remember me</label>
-                    </div>
-                    <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot password?</a>
-                </div>
-    
-                <button pButton pRipple label="Sign In" icon="pi pi-user" class="w-full"></button>
-            </div>
+         <div class="mb-5">
+             <img src="assets/images/blocks/logos/hyper.svg" alt="Image" height="50" class="mb-3">
+             <div class="text-900 text-3xl font-medium mb-3">Welcome Back</div>
+             <span class="text-600 font-medium mr-2">Don't have an account?</span>
+             <a class="font-medium no-underline text-blue-500 cursor-pointer">Create today!</a>
+         </div>
+         <div>
+             <label for="email2" class="block text-900 font-medium mb-2">Email</label>
+             <input id="email2" type="text" pInputText class="w-full mb-3">
+ 
+             <label for="password2" class="block text-900 font-medium mb-2">Password</label>
+             <input id="password2" type="password" pInputText class="w-full mb-3">
+ 
+             <div class="flex align-items-center justify-content-between mb-6">
+                 <div class="flex align-items-center">
+                     <p-checkbox id="rememberme" [binary]="true" styleClass="mr-2"></p-checkbox>
+                     <label for="rememberme">Remember me</label>
+                 </div>
+                 <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot password?</a>
+             </div>
+ 
+             <button pButton pRipple label="Sign In" icon="pi pi-user" class="w-full"></button>
+         </div>
     </div>
     <div class="hidden md:block w-6 bg-no-repeat bg-cover" style="background-image: url('assets/images/blocks/signin/signin.jpg')"></div>
 </div>`;
@@ -198,15 +206,5 @@ export class SignInComponent implements OnInit {
         <a class="cursor-pointer font-medium block text-center">Forgot Password?</a>
     </div>
 </div>`;
-
-    features: any[];
-
-    ngOnInit() {
-        this.features = [
-            { title: 'Unlimited Inbox', image: 'live-collaboration.svg', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-            { title: 'Data Security', image: 'security.svg', text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
-            { title: 'Cloud Backup Williams', image: 'subscribe.svg', text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' }
-        ];
-    }
 
 }

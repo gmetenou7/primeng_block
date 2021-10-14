@@ -7,7 +7,7 @@ import { MenuItem } from 'primeng/api';
 export class FeedComponent {
 
     block1 = `
-<div>
+<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="mb-5 flex">
         <div class="flex flex-column align-items-center" style="width:2rem">
             <span class="bg-blue-500 text-0 flex align-items-center justify-content-center border-circle" style="min-width:2.5rem; min-height: 2.5rem">

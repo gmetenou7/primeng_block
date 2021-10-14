@@ -157,7 +157,7 @@ export class VerticalNavComponent {
 </div>`;
 
     block3 = `
-    <div class="bg-indigo-500 shadow-2 select-none" style="border-radius: 30px">
+<div class="bg-indigo-500 shadow-2 select-none" style="border-radius: 30px">
     <ul class="list-none p-2 m-0">
         <li>
             <div class="p-3 flex align-items-center justify-content-between text-indigo-300 cursor-pointer" pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">

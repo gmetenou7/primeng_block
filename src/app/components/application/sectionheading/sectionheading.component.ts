@@ -19,7 +19,7 @@ export class SectionHeadingComponent implements OnInit {
     }
 
     block1 = `
-<div class="surface-section">
+<div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <div class="flex md:align-items-center md:justify-content-between flex-column md:flex-row pb-4 border-bottom-1 surface-border">
         <div class="flex align-items-center">
             <i class="pi pi-inbox text-2xl mr-3 text-500"></i>
@@ -33,7 +33,7 @@ export class SectionHeadingComponent implements OnInit {
 </div>`;
 
     block2 = `
-<div class="surface-section">
+<div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <div class="flex md:align-items-center md:justify-content-between flex-column md:flex-row pb-4 border-bottom-1 surface-border">
         <div class="mb-3 lg:mb-0">
             <div class="text-3xl font-medium text-900 mb-3">Messages</div>
@@ -47,13 +47,13 @@ export class SectionHeadingComponent implements OnInit {
 </div>`;
 
     block3 = `
-<div class="surface-section">
+<div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <div class="text-3xl font-medium text-900 mb-4">Application</div>
     <p-tabMenu [model]="items" [activeItem]="items[0]"></p-tabMenu>
 </div>`;
 
     block4 = `
-<div class="surface-section">
+<div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <div class="flex lg:align-items-center flex-column lg:flex-row">
         <div class="text-3xl font-medium text-900 mr-0 lg:mr-4 mb-4 lg:mb-0">Application</div>
         <p-tabMenu [model]="items" [activeItem]="items[0]" class="flex-grow-1"></p-tabMenu>
@@ -65,15 +65,13 @@ export class SectionHeadingComponent implements OnInit {
     <div class="border-bottom-1 surface-border">
         <span class="block text-3xl font-medium text-900 mb-4">Messages</span>
     </div>
-</div>
-`;
+</div>`;
 
     block6 = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <div class="border-bottom-1 surface-border">
         <div class="text-3xl font-medium text-900 mb-4 flex align-items-center">Messages <span class="text-base font-normal ml-3 text-600">79 Unread</span></div>
     </div>
-</div>
-`;
+</div>`;
 
 }

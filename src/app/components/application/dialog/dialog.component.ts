@@ -5,6 +5,12 @@ import { Component } from '@angular/core';
 })
 export class DialogComponent {
 
+    visible1: boolean = false;
+
+    visible2: boolean = false;
+
+    visible3: boolean = false;
+
     block1 = `
 <button pButton pRipple label="Display" (click)="visible1 = true"></button>
 
@@ -69,13 +75,6 @@ export class DialogComponent {
             <button pButton pRipple icon="pi pi-check" (click)="visible3 = false" label="Save"></button>
         </div>
     </ng-template>
-</p-dialog>
-`;
-
-    visible1: boolean = false;
-
-    visible2: boolean = false;
-
-    visible3: boolean = false;
+</p-dialog>`;
 
 }
