@@ -924,7 +924,7 @@ export class SidebarLayoutComponent {
 
     block7 = `
 <div class="min-h-screen flex relative lg:static" style="background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);">
-    <div id="app-sidebar-7" class="h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 border-right-1 select-none animation-duration-300 animation-ease-in-out" style="width:280px; border-color: rgba(255,255,255,.3)">
+    <div id="app-sidebar-7" class="h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 border-right-1 select-none animation-duration-300 animation-ease-in-out" style="width:280px; border-color: rgba(255,255,255,.3); background-image: linear-gradient(120deg, #e0c3fc 0%, #ccc3fc 100%);">
         <div class="flex flex-column h-full">
             <div class="flex align-items-center px-5 flex-shrink-0" style="height:60px">
                 <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="30">
@@ -1122,7 +1122,7 @@ export class SidebarLayoutComponent {
 
     block8 = `
 <div class="min-h-screen flex relative lg:static" style="background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);">
-    <div id="app-sidebar-8" class="h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 border-right-1 select-none animation-duration-300 animation-ease-in-out" style="width:280px; border-color: rgba(255,255,255,.1)">
+    <div id="app-sidebar-8" class="h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 border-right-1 select-none animation-duration-300 animation-ease-in-out" style="width:280px; border-color: rgba(255,255,255,.1); background-image: linear-gradient(60deg, #29323c 0%, #2f3844 100%);">
         <div class="flex flex-column h-full">
             <div class="flex align-items-center px-5 flex-shrink-0" style="height:60px">
                 <img src="assets/images/blocks/logos/hyper-300.svg" alt="Image" height="30">
@@ -1458,7 +1458,7 @@ export class SidebarLayoutComponent {
 
     block10 = `
 <div class="min-h-screen flex surface-ground">
-    <div id="app-sidebar-10" class="h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 select-none" style="width:280px">
+    <div id="app-sidebar-10" class="h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 select-none surface-ground border-right-1 lg:border-right-none surface-bordere" style="width:280px">
         <div class="flex flex-column h-full">
             <div class="flex align-items-center px-5 flex-shrink-0" style="height:60px">
                 <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="30">
