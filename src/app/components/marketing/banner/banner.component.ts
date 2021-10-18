@@ -14,7 +14,7 @@ export class BannerComponent {
     <a class="flex align-items-center ml-2 mr-8">
         <a class="text-white" href="#"><span class="underline font-bold">Learn More</span></a>
     </a>
-    <a class="flex align-items-center no-underline justify-content-center border-circle text-100 hover:bg-bluegray-700 cursor-pointer transition-colors transition-duration-150" style="width:2rem; height: 2rem">
+    <a class="flex align-items-center no-underline justify-content-center border-circle text-gray-50 hover:bg-bluegray-700 cursor-pointer transition-colors transition-duration-150" style="width:2rem; height: 2rem">
         <i class="pi pi-times"></i>
     </a>
 </div>`;
@@ -28,7 +28,7 @@ export class BannerComponent {
             <a class="text-white" href="#"><span class="underline font-bold">Learn More</span></a>
         </a>
     </div>
-    <a class="flex align-items-center no-underline justify-content-center border-circle text-100 hover:bg-cyan-400 cursor-pointer transition-colors transition-duration-150" style="width:2rem; height: 2rem">
+    <a class="flex align-items-center no-underline justify-content-center border-circle text-gray-50 hover:bg-cyan-400 cursor-pointer transition-colors transition-duration-150" style="width:2rem; height: 2rem">
         <i class="pi pi-times"></i>
     </a>
 </div>`;

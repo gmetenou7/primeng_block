@@ -1,16 +1,17 @@
 <div class="block-category-title">Newsletter</div>
 <block-viewer header="Simple 2 Column" [code]="block1">
     <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
-        <div class="flex flex-column md:flex-row">
-            <div class="flex flex-column flex-grow-1">
+        <div class="flex flex-wrap align-items-center">
+            <div class="w-full lg:w-6 lg:pr-6">
                 <div class="text-900 font-bold text-2xl mb-3">Get our weekly updates and <span class="text-blue-500">free stuff!</span></div>
-                <div class="text-600 text-xl line-height-3 md:mb-0 mb-4" style="max-width: 450px">Join our community to get weekly updates and unique gifts every friday.</div>
+                <div class="text-600 text-xl line-height-3 lg:mb-0 mb-4" style="max-width: 450px">Join our community to get weekly updates and unique gifts every friday.</div>
             </div>
 
-            <div class="flex flex-grow-1 flex-wrap align-items-center md:justify-content-end">
-                <input pInputText placeholder="Enter your email" class="p-3 md:mr-3 mr-0 md:mb-0 mb-3 border-400"
-                    style="min-width: 250px">
-                <button pButton pRipple label="Subscribe" class="px-6 py-3 font-bold"></button>
+            <div class="w-full lg:w-6">
+                <div class="flex flex-column md:flex-row align-items-start md:align-items-center lg:justify-content-end">
+                    <input pInputText placeholder="Enter your email" class="p-3 mr-3 border-400 mb-3 md:mb-0">
+                    <button pButton pRipple label="Subscribe" class="py-3 font-bold"></button>
+                </div>
             </div>
         </div>
     </div>
@@ -33,12 +34,12 @@
 
 <block-viewer header="Gradient Background" [code]="block3" [new]="true">
     <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
-        <div class="p-6 shadow-2 text-center" style="background: linear-gradient(180deg, #6372C3 0%, #3F51B5 100%); border-radius: 1rem">
+        <div class="py-6 px-3 md:px-6shadow-2 text-center" style="background: linear-gradient(180deg, #6372C3 0%, #3F51B5 100%); border-radius: 1rem">
             <div class="text-white font-bold text-2xl mb-3">Stay in touch with us</div>
             <span class="block text-indigo-100 font-medium text-xl">Subscribe for updates to ensure that you don’t miss any important news from us.</span>
-            <div class="mt-5 mb-3 relative w-20rem mx-auto">
-                <input type="text" class="appearance-none bg-indigo-600 border-1 border-indigo-400 p-3 w-full p-component text-indigo-100 outline-none" style="border-radius: 35px" value="Enter your email">
-                <button type="button" pButton class="absolute" label="Join Now" style="border-radius: 35px; top: 6px; right: 6px"></button>
+            <div class="mt-5 mb-3 relative sm:w-20rem mx-auto">
+                <input type="text" class="appearance-none bg-indigo-600 border-1 border-indigo-400 py-3 pl-3 w-full p-component text-indigo-100 outline-none" style="border-radius: 35px; padding-right:6rem" value="Your email">
+                <button type="button" pButton class="absolute" label="Join" style="border-radius: 35px; top: .5rem; right: .5rem"></button>
             </div>
             <span class="text-indigo-200">We ensure to protect your privacy. <a tabindex="0" class="cursor-pointer text-white">Privacy Policy</a></span>
         </div>

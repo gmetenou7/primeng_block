@@ -352,7 +352,7 @@ export class TeamComponent {
 </div>`;
 
     block5: string = `
-<div class="surface-section px-4 py-8 md:px-6 lg:px-">
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="text-center font-bold text-900 text-5xl mb-3">Who Are We?</div>
     <div class="text-center text-xl line-height-3 text-600 mb-6">Faucibus ornare suspendisse sed nisi. Nisl rhoncus mattis rhoncus urna neque viverra justo nec.</div>
     <div class="grid">
@@ -363,7 +363,6 @@ export class TeamComponent {
                     <div class="flex flex-column p-5 h-full">
                         <span class="block font-medium text-white text-xl mb-3">Jeff Davies</span>
                         <span class="font-medium text-400">Software Developer</span>
-                        <p class="line-height-3 text-sm my-3 text-white">Vulputate ut pharetra sit amet. Netus et malesuada fames ac turpis egestas. Elit eget gravida cum sociis natoque penatibus. Urna id volutpat lacus laoreet non curabitur. In ante metus dictum at.</p>
                         <div class="mt-auto">
                             <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-twitter text-600 text-xl mr-3"></i></a>
                             <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-github text-600 text-xl mr-3"></i></a>
@@ -380,7 +379,6 @@ export class TeamComponent {
                     <div class="flex flex-column p-5 h-full">
                         <span class="block font-medium text-white text-xl mb-3">Kristin Watson</span>
                         <span class="font-medium text-400">UI/UX Designer</span>
-                        <p class="line-height-3 text-sm my-3 text-white">Risus feugiat in ante metus dictum. Et egestas quis ipsum suspendisse ultrices. Risus pretium quam vulputate dignissim suspendisse. Justo nec ultrices dui sapien.</p>
                         <div class="mt-auto">
                             <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-twitter text-600 text-xl mr-3"></i></a>
                             <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-github text-600 text-xl mr-3"></i></a>
@@ -397,7 +395,6 @@ export class TeamComponent {
                     <div class="flex flex-column p-5 h-full">
                         <span class="block font-medium text-white text-xl mb-3">Jenna Williams</span>
                         <span class="font-medium text-400">Marketing Specialist</span>
-                        <p class="line-height-3 text-sm my-3 text-white">Donec et odio pellentesque diam volutpat commodo sed egestas. Blandit massa enim nec dui nunc mattis enim ut tellus.</p>
                         <div class="mt-auto">
                             <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-twitter text-600 text-xl mr-3"></i></a>
                             <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-github text-600 text-xl mr-3"></i></a>
@@ -414,7 +411,6 @@ export class TeamComponent {
                     <div class="flex flex-column p-5 h-full">
                         <span class="block font-medium text-white text-xl mb-3">Joe Clifford</span>
                         <span class="font-medium text-400">Customer Relations</span>
-                        <p class="line-height-3 text-sm my-3 text-white">Pretium aenean pharetra magna ac placerat vestibulum. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Fringilla urna porttitor rhoncus dolor purus non enim.</p>
                         <div class="mt-auto">
                             <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-twitter text-600 text-xl mr-3"></i></a>
                             <a tabindex="0" class="cursor-pointer text-white"><i class="pi pi-github text-600 text-xl mr-3"></i></a>

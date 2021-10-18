@@ -11,7 +11,7 @@ export class CtaComponent {
     block1: string = `
 <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="flex flex-column lg:flex-row align-items-center justify-content-between">
-        <div class="pr-8">
+        <div class="text-center lg:text-left lg:pr-8">
             <div class="text-blue-600 font-medium mb-1 text-xl">TAKE THE NEXT STEP</div>
             <div class="text-900 font-bold text-6xl mb-5">Get Started with PrimeBlocks</div>
 
@@ -118,8 +118,7 @@ export class CtaComponent {
 </div>`;
 
     block8: string = `
-<div class="relative lg:p-8 p-6 text-0 overflow-hidden">
-    <img src="assets/images/blocks/cta/cta-3.jpg" alt="header" class="absolute top-0 left-0 w-auto h-full block md:w-full">
+<div class="relative lg:p-8 p-6 text-0 overflow-hidden" style="background: url('assets/images/blocks/cta/cta-3.jpg') no-repeat; background-size: cover">
     <div class="text-center my-6 relative">
         <div class="text-6xl mb-3 text-white flex justify-content-center flex-wrap">
             <div class="font-bold">Discover&nbsp;</div>
@@ -171,7 +170,7 @@ export class CtaComponent {
         <div class="px-6 py-8">
             <span class="uppercase text-cyan-500 font-bold">BE THE FIRST ONE</span>
             <div class="text-white text-medium text-5xl mt-3 mb-5">Join the waitlist Today!</div>
-            <button class="appearance-none" class="p-3 bg-cyan-500 hover:bg-600 transition-colors font-medium gray-900 border-none p-component" style="border-radius: 35px">Reserve Your Username</button>
+            <button class="appearance-none" class="p-3 bg-cyan-500 hover:bg-cyan-300 cursor-pointer transition-colors font-medium gray-900 border-none p-component transition-colors transition-duration-150" style="border-radius: 35px">Reserve Your Username</button>
         </div>
             
         <img src="assets/images/blocks/cta/cta-browser.png" alt="Image" class="static lg:absolute block mx-auto" style="height: 400px; top: -2rem; right: -1rem">

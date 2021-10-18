@@ -105,13 +105,13 @@ export class FooterComponent {
             <a class="cursor-pointer border-circle bg-bluegray-100 text-bluegray-500 block inline-flex justify-content-center align-items-center mr-5" style="width:2.5rem; height: 2.5rem">
                 <i class="pi pi-facebook"></i>
             </a>
-            <a class="cursor-pointer border-circle bg-bluegray-100 text-bluegray-500 block inline-flex justify-content-center align-items-center mr-5" style="width:2.5rem; height: 2.5rem">
+            <a class="cursor-pointer border-circle bg-bluegray-100 text-bluegray-500 block inline-flex justify-content-center align-items-center" style="width:2.5rem; height: 2.5rem">
                 <i class="pi pi-github"></i>
             </a>
         </div>
         <div class="text-center">
             <a class="mr-5 text-sm text-600 cursor-pointer">Privacy Policy</a>
-            <a class="mr-5 text-sm text-600 cursor-pointer">Terms of Service</a>
+            <a class="text-sm text-600 cursor-pointer">Terms of Service</a>
         </div>
     </div>
 </div>`;
@@ -179,7 +179,7 @@ export class FooterComponent {
                 <span class="text-900 block font-bold line-height-3 mb-3">Legal</span>
                 <ul class="list-none p-0 m-0">
                     <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Brand Policy</a></li>
-                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Privacty Policy</a></li>
+                    <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Privacy Policy</a></li>
                     <li class="mb-2"><a class="text-700 cursor-pointer line-height-3">Terms of Service</a></li>
                 </ul>
             </div>

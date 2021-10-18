@@ -64,7 +64,7 @@ export class TestimonialsComponent implements OnInit {
 </div>`;
 
     block2 = `
-<div class="surface-ground text-center text- -4 py-8 md:px-6 lg:px-8" style="height: 500px">
+<div class="surface-ground text-center px-0 sm:px-4 py-8 md:px-6 lg:px-8">
     <p-carousel [value]="company">
         <ng-template let-person pTemplate="item">
             <div class="flex justify-content-center">

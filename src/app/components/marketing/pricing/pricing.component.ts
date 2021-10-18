@@ -303,9 +303,9 @@ export class PricingComponent {
                 </tr>
                 <tr>
                     <td class="p-3 text-900 font-medium border-bottom-1 border-200">Dignissim vivamus</td>
-                    <td class="text-center text-600">Up to <span class="text-900">5</span> files</td>
-                    <td class="text-center text-600">Up to <span class="text-900">10</span> files</td>
-                    <td class="text-center text-900">Unlimited</td>
+                    <td class="text-center text-600 border-bottom-1 border-200">Up to <span class="text-900">5</span> files</td>
+                    <td class="text-center text-600 border-bottom-1 border-200">Up to <span class="text-900">10</span> files</td>
+                    <td class="text-center text-900 border-bottom-1 border-200">Unlimited</td>
                 </tr>
             </tbody>
         </table>
