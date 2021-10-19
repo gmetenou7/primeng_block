@@ -16,7 +16,6 @@ export class NotificationComponent  {
             summary: 'Message Title',
             detail: 'Sagittis eu volutpat odio facilisis mauris sit amet. Sed velit dignissim sodales ut eu sem integer.',
             closable: false,
-            styleClass: 'surface-0',
             contentStyleClass: 'p-0'
         });
     }
@@ -29,7 +28,6 @@ export class NotificationComponent  {
             summary: 'Message Title',
             closable: false,
             detail: 'Sagittis eu volutpat odio facilisis mauris sit amet. Sed velit dignissim sodales ut eu sem integer.',
-            styleClass: 'surface-900',
             contentStyleClass: 'p-0'
         });
     }
@@ -41,8 +39,9 @@ export class NotificationComponent  {
             severity: 'custom-3',
             summary: 'Custom Icon',
             detail: 'Sagittis eu volutpat odio facilisis mauris sit amet.',
-            styleClass: 'surface-0',
-            contentStyleClass: 'p-3'
+            styleClass: 'surface-overlay',
+            contentStyleClass: 'p-3',
+            closable: false
         });
     }
 
@@ -52,8 +51,9 @@ export class NotificationComponent  {
             key: 'block4',
             severity: 'custom-4',
             detail: 'You received 1 new message.',
-            styleClass: 'surface-0',
-            contentStyleClass: 'p-3'
+            styleClass: 'surface-overlay',
+            contentStyleClass: 'p-3',
+            closable: false
         });
     }
 
@@ -65,7 +65,8 @@ export class NotificationComponent  {
             summary: 'Arlene McCoy',
             detail: 'Tristique nulla aliquet enim tortor at auctor 😅... Urna nunc id.',
             styleClass: 'surface-overlay',
-            contentStyleClass: 'p-4'
+            contentStyleClass: 'p-4',
+            closable: false
         });
     }
 
@@ -100,7 +101,7 @@ export class NotificationComponent  {
 <button pButton pRipple label="Display" (click)="notify1()"></button>
 <p-toast key="block1" [style]="{width: '30rem'}" [preventOpenDuplicates]="true">
     <ng-template let-message pTemplate="message">
-        <div class="flex surface-overlay border-1 surface-border">
+        <div class="flex surface-overlay border-1 surface-border surface-overlay">
             <div class="flex flex-column p-3">
                 <div class="flex align-items-center">
                     <span class="flex align-items-center justify-content-center bg-cyan-100 text-cyan-800 mr-3 border-circle" style="width:32px;height:32px">
