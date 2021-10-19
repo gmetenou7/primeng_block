@@ -253,10 +253,10 @@ export class GridListComponent {
                 </div>
                 <div class="flex pt-3">
                     <div class="w-6 pr-2">
-                        <button pButton pRipple icon="pi pi-star" class="p-button-outlined p-button-secondary"></button>
+                        <button pButton pRipple icon="pi pi-shopping-cart" label="Add to Cart"class="p-button-text"></button>
                     </div>
                     <div class="w-6 pl-2 text-right">
-                        <button pButton pRipple icon="pi pi-shopping-cart"></button>
+                        <button pButton pRipple icon="pi pi-star-o" class="p-button-text p-button-secondary"></button>
                     </div>
                 </div>
             </div>
@@ -272,10 +272,10 @@ export class GridListComponent {
                 </div>
                 <div class="flex pt-3">
                     <div class="w-6 pr-2">
-                        <button pButton pRipple icon="pi pi-star" class="p-button-outlined p-button-secondary"></button>
+                        <button pButton pRipple icon="pi pi-shopping-cart" label="Add to Cart"class="p-button-text"></button>
                     </div>
                     <div class="w-6 pl-2 text-right">
-                        <button pButton pRipple icon="pi pi-shopping-cart"></button>
+                        <button pButton pRipple icon="pi pi-star-o" class="p-button-text p-button-secondary"></button>
                     </div>
                 </div>
             </div>
@@ -291,10 +291,10 @@ export class GridListComponent {
                 </div>
                 <div class="flex pt-3">
                     <div class="w-6 pr-2">
-                        <button pButton pRipple icon="pi pi-star" class="p-button-outlined p-button-secondary"></button>
+                        <button pButton pRipple icon="pi pi-shopping-cart" label="Add to Cart"class="p-button-text"></button>
                     </div>
                     <div class="w-6 pl-2 text-right">
-                        <button pButton pRipple icon="pi pi-shopping-cart"></button>
+                        <button pButton pRipple icon="pi pi-star-o" class="p-button-text p-button-secondary"></button>
                     </div>
                 </div>
             </div>
@@ -310,10 +310,10 @@ export class GridListComponent {
                 </div>
                 <div class="flex pt-3">
                     <div class="w-6 pr-2">
-                        <button pButton pRipple icon="pi pi-star" class="p-button-outlined p-button-secondary"></button>
+                        <button pButton pRipple icon="pi pi-shopping-cart" label="Add to Cart"class="p-button-text"></button>
                     </div>
                     <div class="w-6 pl-2 text-right">
-                        <button pButton pRipple icon="pi pi-shopping-cart"></button>
+                        <button pButton pRipple icon="pi pi-star-o" class="p-button-text p-button-secondary"></button>
                     </div>
                 </div>
             </div>
@@ -329,10 +329,10 @@ export class GridListComponent {
                 </div>
                 <div class="flex pt-3">
                     <div class="w-6 pr-2">
-                        <button pButton pRipple icon="pi pi-star" class="p-button-outlined p-button-secondary"></button>
+                        <button pButton pRipple icon="pi pi-shopping-cart" label="Add to Cart"class="p-button-text"></button>
                     </div>
                     <div class="w-6 pl-2 text-right">
-                        <button pButton pRipple icon="pi pi-shopping-cart"></button>
+                        <button pButton pRipple icon="pi pi-star-o" class="p-button-text p-button-secondary"></button>
                     </div>
                 </div>
             </div>
@@ -348,10 +348,10 @@ export class GridListComponent {
                 </div>
                 <div class="flex pt-3">
                     <div class="w-6 pr-2">
-                        <button pButton pRipple icon="pi pi-star" class="p-button-outlined p-button-secondary"></button>
+                        <button pButton pRipple icon="pi pi-shopping-cart" label="Add to Cart"class="p-button-text"></button>
                     </div>
                     <div class="w-6 pl-2 text-right">
-                        <button pButton pRipple icon="pi pi-shopping-cart"></button>
+                        <button pButton pRipple icon="pi pi-star-o" class="p-button-text p-button-secondary"></button>
                     </div>
                 </div>
             </div>
@@ -367,10 +367,10 @@ export class GridListComponent {
                 </div>
                 <div class="flex pt-3">
                     <div class="w-6 pr-2">
-                        <button pButton pRipple icon="pi pi-star" class="p-button-outlined p-button-secondary"></button>
+                        <button pButton pRipple icon="pi pi-shopping-cart" label="Add to Cart"class="p-button-text"></button>
                     </div>
                     <div class="w-6 pl-2 text-right">
-                        <button pButton pRipple icon="pi pi-shopping-cart"></button>
+                        <button pButton pRipple icon="pi pi-star-o" class="p-button-text p-button-secondary"></button>
                     </div>
                 </div>
             </div>
@@ -386,10 +386,10 @@ export class GridListComponent {
                 </div>
                 <div class="flex pt-3">
                     <div class="w-6 pr-2">
-                        <button pButton pRipple icon="pi pi-star" class="p-button-outlined p-button-secondary"></button>
+                        <button pButton pRipple icon="pi pi-shopping-cart" label="Add to Cart"class="p-button-text"></button>
                     </div>
                     <div class="w-6 pl-2 text-right">
-                        <button pButton pRipple icon="pi pi-shopping-cart"></button>
+                        <button pButton pRipple icon="pi pi-star-o" class="p-button-text p-button-secondary"></button>
                     </div>
                 </div>
             </div>
