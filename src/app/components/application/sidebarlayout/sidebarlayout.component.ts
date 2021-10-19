@@ -823,7 +823,13 @@ export class SidebarLayoutComponent {
             <div class="flex align-items-center justify-content-center flex-shrink-0" style="height:60px">
                 <img src="assets/images/blocks/logos/bastion.svg" alt="Image" height="30">
             </div>
-            <div class="overflow-y-auto mt-3">
+            <div class="my-3 p-3">
+                    <span class="p-input-icon-left">
+                        <i class="pi pi-search text-indigo-50"></i>
+                        <input type="search" pInputText class="appearance-none border-none bg-indigo-700 text-indigo-50 w-full">
+                    </span>
+                </div>
+            <div class="overflow-y-auto">
                 <ul class="list-none p-3 m-0 flex flex-wrap">
                     <li class="w-6 text-center">
                         <a class="cursor-pointer inline-flex align-items-center justify-content-center border-2 border-indigo-500 hover:bg-indigo-700 active:bg-indigo-400 text-indigo-200 hover:text-indigo-100 transition-colors transition-duration-150" style="width:60px;height:60px;border-radius:10px">
@@ -1458,7 +1464,7 @@ export class SidebarLayoutComponent {
 
     block10 = `
 <div class="min-h-screen flex surface-ground">
-    <div id="app-sidebar-10" class="h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 select-none surface-ground border-right-1 lg:border-right-none surface-bordere" style="width:280px">
+    <div id="app-sidebar-10" class="h-screen hidden lg:block flex-shrink-0 fixedl lg:sticky left-0 top-0 z-1 select-none surface-ground border-right-1 lg:border-right-none surface-bordere" style="width:280px">
         <div class="flex flex-column h-full">
             <div class="flex align-items-center px-5 flex-shrink-0" style="height:60px">
                 <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="30">
@@ -1677,7 +1683,7 @@ export class SidebarLayoutComponent {
                             </li>
                             <li>
                                 <a class="flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent hover:border-300 transition-duration-150 transition-colors" style="border-radius: 12px"
-                                    pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leave ToClass="hidden" leaveActiveClass="slideup">
+                                    pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                                     <i class="pi pi-chart-line mr-2 text-purple-500"></i>
                                     <span class="font-medium">Reports</span>
                                     <i class="pi pi-chevron-down ml-auto mr-1"></i>
@@ -1694,7 +1700,7 @@ export class SidebarLayoutComponent {
                                             <li>
                                                 <a class="flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent hover:border-300 transition-duration-150 transition-colors" style="border-radius: 12px">
                                                     <i class="pi pi-table text-purple-500 mr-2"></i>
-                                                    <span class="font-medium">Viesw</span>
+                                                    <span class="font-medium">View</span>
                                                 </a>
                                             </li>
                                             <li>
@@ -1852,8 +1858,8 @@ export class SidebarLayoutComponent {
 </div>`;
 
     block12 = `
-<div class="min-h-screen flex flex-column surface-ground">
-    <div class="surface-overlay py-3 px-6 flex align-items-center justify-content-between relative lg:static" style="min-height: 80px">
+    <div class="min-h-screen flex flex-column surface-ground">
+    <div class="surface-overlay py-3 px-6 flex align-items-center justify-content-between relative lg:static">
         <a class="cursor-pointer block lg:hidden text-700" pStyleClass="#app-sidebar-12" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
             <i class="pi pi-bars text-4xl"></i>
         </a>
@@ -1905,7 +1911,7 @@ export class SidebarLayoutComponent {
         </li>
     </ul>
     <div class="flex relative lg:static p-5 flex-auto">
-        <div id="app-sidebar-12" class="surface-card hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 select-none shadow-2" style="width:280px;border-radius: 12px">
+        <div id="app-sidebar-12" class="surface-card hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 select-none shadow-2" style="width:280px;border-radius: 12px">
             <div class="flex flex-column h-full">
                 <div class="overflow-y-auto">
                     <div class="p-3">
@@ -1921,19 +1927,19 @@ export class SidebarLayoutComponent {
                             </div>
                             <ul class="list-none p-0 m-0 overflow-hidden">
                                 <li>
-                                    <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors text-purple-500">
+                                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 bg-purple-50 transition-duration-150 transition-colors text-purple-500 border-purple-500 border-right-2">
                                         <i class="pi pi-home mr-2"></i>
                                         <span class="font-medium">Dashboard</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
+                                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
                                         <i class="pi pi-bookmark mr-2"></i>
                                         <span class="font-medium">Bookmarks</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors"
+                                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent"
                                         pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                                         <i class="pi pi-chart-line mr-2"></i>
                                         <span class="font-medium">Reports</span>
@@ -1941,7 +1947,7 @@ export class SidebarLayoutComponent {
                                     </a>
                                     <ul class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
                                         <li>
-                                            <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors"
+                                            <a class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent"
                                                 pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                                                 <i class="pi pi-chart-line mr-2"></i>
                                                 <span class="font-medium">Revenue</span>
@@ -1949,13 +1955,13 @@ export class SidebarLayoutComponent {
                                             </a>
                                             <ul class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
                                                 <li>
-                                                    <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
+                                                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
                                                         <i class="pi pi-table mr-2"></i>
                                                         <span class="font-medium">View</span>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
+                                                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
                                                         <i class="pi pi-search mr-2"></i>
                                                         <span class="font-medium">Search</span>
                                                     </a>
@@ -1963,7 +1969,7 @@ export class SidebarLayoutComponent {
                                             </ul>
                                         </li>
                                         <li>
-                                            <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
+                                            <a class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
                                                 <i class="pi pi-chart-line mr-2"></i>
                                                 <span class="font-medium">Expenses</span>
                                             </a>
@@ -1971,26 +1977,26 @@ export class SidebarLayoutComponent {
                                     </ul>
                                 </li>
                                 <li>
-                                    <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
+                                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
                                         <i class="pi pi-users mr-2"></i>
                                         <span class="font-medium">Team</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
+                                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
                                         <i class="pi pi-comments mr-2"></i>
                                         <span class="font-medium">Messages</span>
                                         <span class="inline-flex align-items-center justify-content-center ml-auto bg-purple-500 text-0 border-circle" style="min-width: 1.5rem; height: 1.5rem">3</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
+                                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
                                         <i class="pi pi-calendar mr-2"></i>
                                         <span class="font-medium">Calendar</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
+                                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
                                         <i class="pi pi-cog mr-2"></i>
                                         <span class="font-medium">Settings</span>
                                     </a>
@@ -2005,19 +2011,19 @@ export class SidebarLayoutComponent {
                             </div>
                             <ul class="list-none p-0 m-0 overflow-hidden">
                                 <li>
-                                    <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
+                                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
                                         <i class="pi pi-folder mr-2"></i>
                                         <span class="font-medium">Projects</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
+                                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
                                         <i class="pi pi-chart-bar mr-2"></i>
                                         <span class="font-medium">Performance</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
+                                    <a class="flex align-items-center cursor-pointer p-3 text-700 hover:surface-100 transition-duration-150 transition-colors border-right-2 border-transparent">
                                         <i class="pi pi-cog mr-2"></i>
                                         <span class="font-medium">Settings</span>
                                     </a>

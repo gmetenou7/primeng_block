@@ -60,7 +60,8 @@ export class DialogComponent {
     block3 = `
 <button pButton pRipple label="Display" (click)="visible3 = true"></button>
 
-<p-dialog [(visible)]="visible3" appendTo="body" [modal]="true" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '40vw'}" header="Title Placeholder">
+<p-dialog [(visible)]="visible3" appendTo="body" [modal]="true" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '40vw'}" header="Title Placeholder"
+    [draggable]="false" [resizable]="false">
     <div class="flex flex-wrap border-top-1 surface-border pt-4">
         <div class="bg-blue-50 flex align-items-center justify-content-center py-3 px-0 w-full md:w-4 border-round">
             <img src="assets/images/blocks/illustration/security.svg" alt="Image" class="w-9">

@@ -150,7 +150,7 @@ export class SignInComponent implements OnInit {
     block4 = `
 <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="flex flex-wrap shadow-2">
-        <div class="w-full lg:w-6 p-4 lg:p-7 bg-blue-50">
+        <div class="w-full lg:w-6 px-0 py-4 lg:p-7 bg-blue-50">
             <img src="assets/images/blocks/logos/bastion-700.svg" alt="Image" height="35" class="mb-6">
             <p-carousel [value]="features">
                 <ng-template let-feature pTemplate="item">

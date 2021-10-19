@@ -126,6 +126,124 @@ export class GridListComponent {
     <div class="grid">
         <div class="col-12 md:col-6 xl:col-3 p-3">
             <div class="surface-card shadow-2 border-rounded p-4">
+                <div class="flex flex-column align-items-center mb-3">
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" style="width: 70px;height: 70px" class="mb-3" />
+                    <span class="font-medium text-900 text-xl mb-3">Jane Fox</span>
+                    <span class="text-600 font-medium mb-2">Project Manager</span>
+                    <span class="text-600 surface-200 p-2 border-round">Subscriber</span>
+                </div>
+                <div class="pt-3 border-top-1 surface-border flex">
+                    <button pButton type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 xl:col-3 p-3">
+            <div class="surface-card shadow-2 border-rounded p-4">
+                <div class="flex flex-column align-items-center mb-3">
+                    <img src="assets/images/blocks/avatars/circle/avatar-m-1.png" style="width: 70px;height: 70px" class="mb-3" />
+                    <span class="font-medium text-900 text-xl mb-3">Robert Wilkins</span>
+                    <span class="text-600 font-medium mb-2">Developer</span>
+                    <span class="text-600 surface-200 p-2 border-round">Editor</span>
+                </div>
+                <div class="pt-3 border-top-1 surface-border flex">
+                    <button pButton type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 xl:col-3 p-3">
+            <div class="surface-card shadow-2 border-rounded p-4">
+                <div class="flex flex-column align-items-center mb-3">
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-2.png" style="width: 70px;height: 70px" class="mb-3" />
+                    <span class="font-medium text-900 text-xl mb-3">Jenny Wilson</span>
+                    <span class="text-600 font-medium mb-2">Marketing</span>
+                    <span class="text-600 surface-200 p-2 border-round">Subscriber</span>
+                </div>
+                <div class="pt-3 border-top-1 surface-border flex">
+                    <button pButton type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 xl:col-3 p-3">
+            <div class="surface-card shadow-2 border-rounded p-4">
+                <div class="flex flex-column align-items-center mb-3">
+                    <img src="assets/images/blocks/avatars/circle/avatar-m-2.png" style="width: 70px;height: 70px" class="mb-3" />
+                    <span class="font-medium text-900 text-xl mb-3">Alberto Flores</span>
+                    <span class="text-600 font-medium mb-2">Accounting</span>
+                    <span class="text-600 surface-200 p-2 border-round">Moderator</span>
+                </div>
+                <div class="pt-3 border-top-1 surface-border flex">
+                    <button pButton type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 xl:col-3 p-3">
+            <div class="surface-card shadow-2 border-rounded p-4">
+                <div class="flex flex-column align-items-center mb-3">
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-3.png" style="width: 70px;height: 70px" class="mb-3" />
+                    <span class="font-medium text-900 text-xl mb-3">Regina Miles</span>
+                    <span class="text-600 font-medium mb-2">Developer</span>
+                    <span class="text-600 surface-200 p-2 border-round">Contributor</span>
+                </div>
+                <div class="pt-3 border-top-1 surface-border flex">
+                    <button pButton type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 xl:col-3 p-3">
+            <div class="surface-card shadow-2 border-rounded p-4">
+                <div class="flex flex-column align-items-center mb-3">
+                    <img src="assets/images/blocks/avatars/circle/avatar-m-3.png" style="width: 70px;height: 70px" class="mb-3" />
+                    <span class="font-medium text-900 text-xl mb-3">Gary Richards</span>
+                    <span class="text-600 font-medium mb-2">Designer</span>
+                    <span class="text-600 surface-200 p-2 border-round">Subscriber</span>
+                </div>
+                <div class="pt-3 border-top-1 surface-border flex">
+                    <button pButton type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 xl:col-3 p-3">
+            <div class="surface-card shadow-2 border-rounded p-4">
+                <div class="flex flex-column align-items-center mb-3">
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-4.png" style="width: 70px;height: 70px" class="mb-3" />
+                    <span class="font-medium text-900 text-xl mb-3">Nelly Cooper</span>
+                    <span class="text-600 font-medium mb-2">Sales Specialist</span>
+                    <span class="text-600 surface-200 p-2 border-round">Editor</span>
+                </div>
+                <div class="pt-3 border-top-1 surface-border flex">
+                    <button pButton type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 xl:col-3 p-3">
+            <div class="surface-card shadow-2 border-rounded p-4">
+                <div class="flex flex-column align-items-center mb-3">
+                    <img src="assets/images/blocks/avatars/circle/avatar-m-4.png" style="width: 70px;height: 70px" class="mb-3" />
+                    <span class="font-medium text-900 text-xl mb-3">Cody Roberts</span>
+                    <span class="text-600 font-medium mb-2">Designer</span>
+                    <span class="text-600 surface-200 p-2 border-round">Author</span>
+                </div>
+                <div class="pt-3 border-top-1 surface-border flex">
+                    <button pButton type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>`;
+
+    block3 = `
+<div class="surface-ground">
+    <div class="grid">
+        <div class="col-12 md:col-6 xl:col-3 p-3">
+            <div class="surface-card shadow-2 border-rounded p-4">
                 <div class="flex flex-column align-items-center border-bottom-1 surface-border pb-3">
                     <img src="assets/images/blocks/products/bracelet.jpg" class="mb-3 w-9" />
                     <span class="text-lg text-900 font-medium mb-2">Bamboo Watch</span>
@@ -279,7 +397,7 @@ export class GridListComponent {
     </div>
 </div>`;
 
-    block3 = `
+    block4 = `
 <div class="surface-ground">
     <div class="grid">
         <div class="col-12 lg:col-4 p-3">
@@ -330,7 +448,7 @@ export class GridListComponent {
     </div>
 </div>`;
 
-    block4 = `
+    block5 = `
 <div class="surface-ground">
     <div class="grid">
         <div class="col-12 md:col-6 xl:col-3 p-3">
@@ -544,7 +662,7 @@ export class GridListComponent {
     </div>
 </div>`;
 
-    block5 = `
+    block6 = `
 <div class="surface-ground">
     <div class="grid">
         <div class="col-12 lg:col-4 p-3">
@@ -601,7 +719,7 @@ export class GridListComponent {
     </div>
 </div>`;
 
-    block6 = `
+    block7 = `
 <div class="shadow-2 border-round surface-card p-4">
     <div class="flex align-items-center justify-content-between mb-4">
         <span class="text-xl font-medium text-900">Files</span>

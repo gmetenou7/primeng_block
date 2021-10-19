@@ -63,7 +63,7 @@ export class ActionPanelComponent {
     block6 = `
 <div class="surface-card border-round flex shadow-2">
     <div class="bg-blue-50 flex align-items-center justify-content-center py-3 px-5">
-        <img src="assets/images/blocks/illustration/live-collaboration.svg" alt="Image" class="mx-auto block mb-4">
+        <img src="assets/images/blocks/illustration/live-collaboration.svg" alt="Image" class="mx-auto block mb-4 w-full">
     </div>
     <div class="py-3 px-5 flex flex-column align-items-start">
         <div class="text-900 font-medium mb-3 text-xl">Title Placeholder</div>

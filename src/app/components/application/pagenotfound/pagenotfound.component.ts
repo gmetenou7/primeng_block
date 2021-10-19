@@ -46,8 +46,8 @@ export class PageNotFoundComponent {
         <p class="text-700 text-3xl mt-0 mb-6">Sorry, we couldn't find the page.</p>
 
         <ul class="list-none px-0 pb-0 pt-4 m-0 border-top-1 surface-border">
-            <li class="py-4">
-                <a class="cursor-pointer flex align-items-center border-round">
+            <li class="py-2">
+                <a class="cursor-pointer flex align-items-center border-round border-1 border-transparent hover:border-300 p-3 transition-colors transition-duration-150">
                     <span class="inline-flex align-items-center justify-content-center bg-indigo-500 border-round flex-shrink-0" style="height:52px;width:52px;">
                         <i class="pi pi-envelope text-white text-3xl"></i>
                     </span>
@@ -58,8 +58,8 @@ export class PageNotFoundComponent {
                     <i class="text-600 pi pi-chevron-right ml-auto"></i>
                 </a>
             </li>
-            <li class="py-4">
-                <a class="cursor-pointer flex align-items-center border-round">
+            <li class="py-2">
+                <a class="cursor-pointer flex align-items-center border-round border-1 border-transparent hover:border-300 p-3 transition-colors transition-duration-150">
                     <span class="inline-flex align-items-center justify-content-center bg-orange-500 border-round flex-shrink-0" style="height:52px;width:52px;">
                         <i class="pi pi-chart-bar text-white text-3xl"></i>
                     </span>
@@ -70,8 +70,8 @@ export class PageNotFoundComponent {
                     <i class="text-600 pi pi-chevron-right ml-auto"></i>
                 </a>
             </li>
-            <li class="pt-4">
-                <a class="cursor-pointer flex align-items-center border-round">
+            <li class="pt-2">
+                <a class="cursor-pointer flex align-items-center border-round border-1 border-transparent hover:border-300 p-3 transition-colors transition-duration-150">
                     <span class="inline-flex align-items-center justify-content-center bg-cyan-500 border-round flex-shrink-0" style="height:52px;width:52px;">
                         <i class="pi pi-cog text-white text-3xl"></i>
                     </span>

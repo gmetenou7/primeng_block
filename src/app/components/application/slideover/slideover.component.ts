@@ -371,7 +371,7 @@ export class SlideOverComponent {
                     </li>
                 </ul>
             </div>
-            <div class="flex flex-auto flex-column overflow-y-auto">
+            <div class="flex flex-auto flex-column overflow-y-auto surface-ground">
                 <ul class="flex-auto list-none p-0 m-0" *ngIf="user === 2">
                     <li class="flex justify-content-end p-3">
                         <div>

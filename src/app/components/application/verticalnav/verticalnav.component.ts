@@ -422,7 +422,7 @@ export class VerticalNavComponent {
                         <i class="pi pi-sliders-h text-500 mr-3 text-xl"></i>
                         <span>
                             <span class="block text-700 font-medium">Tools</span>
-                            <p class="mt-1 mb-0 text-600 text-sm">Control everything with ease</p>
+                            <p class="mt-1 mb-0 text-600 text-sm">Import, Export and Site Health</p>
                         </span>
                     </a>
                 </li>

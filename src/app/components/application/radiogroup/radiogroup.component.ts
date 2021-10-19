@@ -211,7 +211,7 @@ export class RadioGroupComponent {
     <p class="text-700 mt-0 mb-4 text-center">Volutpat est velit egestas dui id ornare arcu odio. Amet dictum sit amet justo.</p>
     <div class="surface-card shadow-2 border-round p-5">
         <div class="grid">
-            <div class="col-12 sm:col-6 lg:col-3 p-3 flex align-items-center sm:justify-content-center sm:border-right-1 surface-border cursor-pointer" (click)="subscription = 0">
+            <div class="col-12 sm:col-6 lg:col-3 p-3 flex align-items-center sm:justify-content-center sm:border-right-1 border-bottom-1 lg:border-bottom-none surface-border cursor-pointer" (click)="subscription = 0">
                 <div class="flex align-items-center mr-3">
                     <p-radioButton name="subscription" [value]="0" [(ngModel)]="subscription"></p-radioButton>
                 </div>
@@ -220,7 +220,7 @@ export class RadioGroupComponent {
                     <p class="text-xl text-500 font-medium mt-2 mb-0">In tellus integer</p>
                 </div>
             </div>
-            <div class="col-12 sm:col-6 lg:col-3 p-3 flex align-items-center sm:justify-content-center lg:border-right-1 surface-border cursor-pointer" (click)="subscription = 1">
+            <div class="col-12 sm:col-6 lg:col-3 p-3 flex align-items-center sm:justify-content-center lg:border-right-1 border-bottom-1 lg:border-bottom-none surface-border cursor-pointer" (click)="subscription = 1">
                 <div class="flex align-items-center mr-3">
                     <p-radioButton name="subscription" [value]="1" [(ngModel)]="subscription"></p-radioButton>
                 </div>
@@ -229,7 +229,7 @@ export class RadioGroupComponent {
                     <p class="text-xl text-500 font-medium mt-2 mb-0">Risus pretium</p>
                 </div>
             </div>
-            <div class="col-12 sm:col-6 lg:col-3 p-3 flex align-items-center sm:justify-content-center sm:border-right-1 surface-border cursor-pointer" (click)="subscription = 2">
+            <div class="col-12 sm:col-6 lg:col-3 p-3 flex align-items-center sm:justify-content-center sm:border-right-1 border-bottom-1 sm:border-bottom-none surface-border cursor-pointer" (click)="subscription = 2">
                 <div class="flex align-items-center mr-3">
                     <p-radioButton name="subscription" [value]="2" [(ngModel)]="subscription"></p-radioButton>
                 </div>

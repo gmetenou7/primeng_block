@@ -826,8 +826,8 @@ export class DashboardComponent implements OnInit {
 </div>`;
 
     block3: `
-<div class="min-h-screen flex surface-ground">
-    <div id="app-sidebar-9" class="min-h-screen surface-section hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 border-right-1 surface-border w-18rem lg:w-7rem select-none">
+<div class="min-h-screen flex relative lg:static surface-ground">
+    <div id="app-sidebar-9" class="h-full lg:h-auto surface-section hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 surface-border w-18rem lg:w-7rem select-none">
         <div class="flex flex-column h-full">
             <div class="flex align-items-center justify-content-center flex-shrink-0" style="height:60px">
                 <img src="assets/images/blocks/logos/hyper-cyan.svg" alt="Image" height="30">
