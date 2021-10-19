@@ -33,6 +33,7 @@
         align-items: center;
         justify-content: space-between;
         user-select: none;
+        margin-left: 1rem;
 
         a {
             display: flex;
@@ -132,6 +133,7 @@ pre[class*="language-"] {
 
         .block-actions {
             margin-top: 1rem;
+            margin-left: 0;
         }
     }
 }
