@@ -3,12 +3,13 @@
         overflow: auto;
 
         .p-sidebar-content {
-            padding: 2rem;
+            padding: 0 2rem;
         }
 
         .p-sidebar-close {
             top: 2rem;
             right: 2rem;
+            z-index: 1;
         }
     }
 
