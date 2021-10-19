@@ -136,7 +136,7 @@ export class FeatureComponent {
 </div>`;
 
     block4: string = `
-    <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="grid">
         <div class="col-12 md:col-6">
             <img src="assets/images/blocks/feature/feature-2.png" alt="Image" class="w-full">

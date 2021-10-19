@@ -261,7 +261,7 @@ export class SidebarNavComponent {
 </div>`;
 
     block3 = `
-    <div class="bg-gray-900 h-screen border-right-1 surface-border flex flex-column w-18rem select-none fixed left-0 top-0">
+<div class="bg-gray-900 h-screen border-right-1 surface-border flex flex-column w-18rem select-none fixed left-0 top-0">
     <div class="p-3 flex align-items-center justify-content-center">
         <img src="assets/images/blocks/logos/hyper-300.svg" alt="Image" height="40">
     </div>

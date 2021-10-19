@@ -1858,7 +1858,7 @@ export class SidebarLayoutComponent {
 </div>`;
 
     block12 = `
-    <div class="min-h-screen flex flex-column surface-ground">
+<div class="min-h-screen flex flex-column surface-ground">
     <div class="surface-overlay py-3 px-6 flex align-items-center justify-content-between relative lg:static">
         <a class="cursor-pointer block lg:hidden text-700" pStyleClass="#app-sidebar-12" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
             <i class="pi pi-bars text-4xl"></i>
