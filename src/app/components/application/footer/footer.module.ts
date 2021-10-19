@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer.component';
+import { RippleModule } from "primeng/ripple";
 import { FooterRoutingModule } from './footer-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 
@@ -8,6 +9,7 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
   imports: [
     CommonModule,
     FooterRoutingModule,
+    RippleModule,
     BlockViewerModule
   ],
   declarations: [

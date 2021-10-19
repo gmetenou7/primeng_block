@@ -6,6 +6,7 @@ import { AccordionModule } from 'primeng/accordion';
 import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 import { ButtonModule } from 'primeng/button';
+import { RippleModule } from 'primeng/ripple';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
     AvatarModule,
     AvatarGroupModule,
     ButtonModule,
+    RippleModule,
     BlockViewerModule
   ],
   declarations: [

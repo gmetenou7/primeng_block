@@ -48,7 +48,7 @@ export class SlideOverComponent {
 <button pButton pRipple label="Display" icon="pi pi-arrow-left" 
     pStyleClass="#slideover-3" enterClass="hidden" enterActiveClass="fadeinright" leaveToClass="hidden" leaveActiveClass="fadeoutright" [hideOnOutsideClick]="true"></button>
 
-<div id="slideover-3" class="hidden surface-overlay absolute top-0 right-0 shadow-2 w-18rem h-full">
+<div id="slideover-3" class="hidden surface-overlay absolute top-0 right-0 shadow-2 w-full lg:w-6 h-full">
     <div class="flex flex-column h-full p-4">
         <div class="flex align-items-center justify-content-between mb-4">
             <span class="text-900 text-xl font-medium">Title Placeholder</span>
@@ -112,7 +112,7 @@ export class SlideOverComponent {
             <ul class="list-none p-0 m-0">
                 <li class="surface-100 font-medium text-xl px-4 py-1 mb-2">A</li>
                 <li class="mb-2">
-                    <a class="flex align-items-center py-2 px-4 cursor-pointer hover:surface-200 transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center py-2 px-4 cursor-pointer hover:surface-200 transition-colors transition-duration-150">
                         <img src="assets/images/blocks/avatars/circle/avatar-m-1.png" class="mr-3 flex-shrink-0" style="width:50px;height:50px" />
                         <div>
                             <span class="text-900 font-medium mb-2">Aaron Flore</span>
@@ -122,7 +122,7 @@ export class SlideOverComponent {
                     </a>
                 </li>
                 <li class="mb-2">
-                    <a class="flex align-items-center py-2 px-4 cursor-pointer hover:surface-200 transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center py-2 px-4 cursor-pointer hover:surface-200 transition-colors transition-duration-150">
                         <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-3 flex-shrink-0" style="width:50px;height:50px" />
                         <div>
                             <span class="text-900 font-medium mb-2">Annette Black</span>
@@ -132,7 +132,7 @@ export class SlideOverComponent {
                     </a>
                 </li>
                 <li class="mb-2">
-                    <a class="flex align-items-center py-2 px-4 cursor-pointer hover:surface-200 transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center py-2 px-4 cursor-pointer hover:surface-200 transition-colors transition-duration-150">
                         <img src="assets/images/blocks/avatars/circle/avatar-m-2.png" class="mr-3 flex-shrink-0" style="width:50px;height:50px" />
                         <div>
                             <span class="text-900 font-medium mb-2">Abha Watson</span>
@@ -143,7 +143,7 @@ export class SlideOverComponent {
                 </li>
                 <li class="surface-100 font-medium text-xl px-4 py-1 mb-2">B</li>
                 <li class="mb-2">
-                    <a class="flex align-items-center py-2 px-4 cursor-pointer hover:surface-200 transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center py-2 px-4 cursor-pointer hover:surface-200 transition-colors transition-duration-150">
                         <img src="assets/images/blocks/avatars/circle/avatar-f-2.png" class="mr-3 flex-shrink-0" style="width:50px;height:50px" />
                         <div>
                             <span class="text-900 font-medium mb-2">Balcaz Cooper</span>
@@ -153,7 +153,7 @@ export class SlideOverComponent {
                     </a>
                 </li>
                 <li class="mb-2">
-                    <a class="flex align-items-center py-2 px-4 cursor-pointer hover:surface-200 transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center py-2 px-4 cursor-pointer hover:surface-200 transition-colors transition-duration-150">
                         <img src="assets/images/blocks/avatars/circle/avatar-f-3.png" class="mr-3 flex-shrink-0" style="width:50px;height:50px" />
                         <div>
                             <span class="text-900 font-medium mb-2">Beatrix McKinney</span>
@@ -163,7 +163,7 @@ export class SlideOverComponent {
                     </a>
                 </li>
                 <li class="mb-2">
-                    <a class="flex align-items-center py-2 px-4 cursor-pointer hover:surface-200 transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center py-2 px-4 cursor-pointer hover:surface-200 transition-colors transition-duration-150">
                         <img src="assets/images/blocks/avatars/circle/avatar-m-3.png" class="mr-3 flex-shrink-0" style="width:50px;height:50px" />
                         <div>
                             <span class="text-900 font-medium mb-2">Belva Wilson</span>
@@ -173,7 +173,7 @@ export class SlideOverComponent {
                     </a>
                 </li>
                 <li class="mb-2">
-                    <a class="flex align-items-center py-2 px-4 cursor-pointer hover:surface-200 transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center py-2 px-4 cursor-pointer hover:surface-200 transition-colors transition-duration-150">
                         <img src="assets/images/blocks/avatars/circle/avatar-m-4.png" class="mr-3 flex-shrink-0" style="width:50px;height:50px" />
                         <div>
                             <span class="text-900 font-medium mb-2">Barnes Fox</span>
@@ -184,7 +184,7 @@ export class SlideOverComponent {
                 </li>
                 <li class="surface-100 font-medium text-xl px-4 py-1 mb-2">C</li>
                 <li class="mb-2">
-                    <a class="flex align-items-center py-2 px-4 cursor-pointer hover:surface-200 transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center py-2 px-4 cursor-pointer hover:surface-200 transition-colors transition-duration-150">
                         <img src="assets/images/blocks/avatars/circle/avatar-m-5.png" class="mr-3 flex-shrink-0" style="width:50px;height:50px" />
                         <div>
                             <span class="text-900 font-medium mb-2">Canyon Flores</span>
@@ -194,7 +194,7 @@ export class SlideOverComponent {
                     </a>
                 </li>
                 <li class="mb-2">
-                    <a class="flex align-items-center py-2 px-4 cursor-pointer hover:surface-200 transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center py-2 px-4 cursor-pointer hover:surface-200 transition-colors transition-duration-150">
                         <img src="assets/images/blocks/avatars/circle/avatar-f-4.png" class="mr-3 flex-shrink-0" style="width:50px;height:50px" />
                         <div>
                             <span class="text-900 font-medium mb-2">Carmen Cooper</span>
@@ -225,13 +225,13 @@ export class SlideOverComponent {
                 <span class="text-700">Sales Manager</span>
             </div>
             <div class="flex align-items-center justify-content-between mb-5">
-                <a class="cursor-pointer flex-shrink-0 border-round inline-flex justify-content-center align-items-center surface-100 hover:surface-200 transition-colors transition-duration-150 border-circle" style="width:38px;height:38px">
+                <a pRipple class="cursor-pointer flex-shrink-0 border-round inline-flex justify-content-center align-items-center surface-100 hover:surface-200 transition-colors transition-duration-150 border-circle" style="width:38px;height:38px">
                     <i class="pi pi-comment text-xl text-600"></i>
                 </a>
-                <a class="cursor-pointer flex-shrink-0 border-round inline-flex justify-content-center align-items-center surface-100 hover:surface-200 transition-colors transition-duration-150 border-circle" style="width:38px;height:38px">
+                <a pRipple class="cursor-pointer flex-shrink-0 border-round inline-flex justify-content-center align-items-center surface-100 hover:surface-200 transition-colors transition-duration-150 border-circle" style="width:38px;height:38px">
                     <i class="pi pi-phone text-xl text-600"></i>
                 </a>
-                <a class="cursor-pointer flex-shrink-0 border-round inline-flex justify-content-center align-items-center surface-100 hover:surface-200 transition-colors transition-duration-150 border-circle" style="width:38px;height:38px">
+                <a pRipple class="cursor-pointer flex-shrink-0 border-round inline-flex justify-content-center align-items-center surface-100 hover:surface-200 transition-colors transition-duration-150 border-circle" style="width:38px;height:38px">
                     <i class="pi pi-video text-xl text-600"></i>
                 </a>
             </div>
@@ -246,7 +246,7 @@ export class SlideOverComponent {
                 <li>
                     <ul class="list-none p-0 m-0">
                         <li class="py-2 border-bottom-1 surface-border">
-                            <a class="cursor-pointer flex align-items-center justify-content-between hover:surface-200 transition-colors transition-duration-150 border-round p-2">
+                            <a pRipple class="cursor-pointer flex align-items-center justify-content-between hover:surface-200 transition-colors transition-duration-150 border-round p-2">
                                 <img src="assets/images/blocks/products/sport-shoe.png" class="mr-3 flex-shrink-0" style="width:39px;height:39px" />
                                 <div>
                                     <span class="block text-900 mb-1">Sports Shoes</span>
@@ -256,7 +256,7 @@ export class SlideOverComponent {
                             </a>
                         </li>
                         <li class="py-2 border-bottom-1 surface-border">
-                            <a class="cursor-pointer flex align-items-center justify-content-between hover:surface-200 transition-colors transition-duration-150 border-round p-2">
+                            <a pRipple class="cursor-pointer flex align-items-center justify-content-between hover:surface-200 transition-colors transition-duration-150 border-round p-2">
                                 <img src="assets/images/blocks/products/dslr-camera.png" class="mr-3 flex-shrink-0" style="width:39px;height:39px" />
                                 <div>
                                     <span class="block text-900 mb-1">DSRL Camera</span>
@@ -266,7 +266,7 @@ export class SlideOverComponent {
                             </a>
                         </li>
                         <li class="py-2">
-                            <a class="cursor-pointer flex align-items-center justify-content-between hover:surface-200 transition-colors transition-duration-150 border-round p-2">
+                            <a pRipple class="cursor-pointer flex align-items-center justify-content-between hover:surface-200 transition-colors transition-duration-150 border-round p-2">
                                 <img src="assets/images/blocks/products/wireless-headphone.png" class="mr-3 flex-shrink-0" style="width:39px;height:39px" />
                                 <div>
                                     <span class="block text-900 mb-1">Headphone</span>
@@ -364,7 +364,7 @@ export class SlideOverComponent {
             <div style="width:70px" class="flex border-right-1 surface-border flex-shrink-0">
                 <ul class="flex flex-column list-none p-0 m-0 w-full">
                     <li *ngFor="let usr of users; let i = index">
-                        <a class="cursor-pointer flex align-items-center justify-content-center border-right-2 border-transparent p-2 hover:border-300 transition-colors transition-duration-150" 
+                        <a pRipple class="cursor-pointer flex align-items-center justify-content-center border-right-2 border-transparent p-2 hover:border-300 transition-colors transition-duration-150" 
                             [ngClass]="{'border-blue-500 surface-200': i === user}" (click)="user = i">
                             <img src="assets/images/blocks/avatars/circle/avatar-{{users[i].picture}}" class="flex-shrink-0" style="width:42px;height:42px" />
                         </a>
@@ -428,7 +428,7 @@ export class SlideOverComponent {
             <p-tabPanel header="Processed">
                 <ul class="list-none p-0 m-0">
                     <li class="border-bottom-1 surface-border py-2">
-                        <a class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
+                        <a pRipple class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
                             <img src="assets/images/blocks/products/speaker.png" class="mr-3 flex-shrink-0" style="width:42px;height:42px" />
                             <div>
                                 <span class="block text-900 mb-1">Bluetooth Speaker</span>
@@ -438,7 +438,7 @@ export class SlideOverComponent {
                         </a>
                     </li>
                     <li class="border-bottom-1 surface-border py-2">
-                        <a class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
+                        <a pRipple class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
                             <img src="assets/images/blocks/products/gaming.png" class="mr-3 flex-shrink-0" style="width:42px;height:42px" />
                             <div>
                                 <span class="block text-900 mb-1">Gaming Device</span>
@@ -448,7 +448,7 @@ export class SlideOverComponent {
                         </a>
                     </li>
                     <li class="border-bottom-1 surface-border py-2">
-                        <a class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
+                        <a pRipple class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
                             <img src="assets/images/blocks/products/skateboard.png" class="mr-3 flex-shrink-0" style="width:42px;height:42px" />
                             <div>
                                 <span class="block text-900 mb-1">Skateboard</span>
@@ -458,7 +458,7 @@ export class SlideOverComponent {
                         </a>
                     </li>
                     <li class="border-bottom-1 surface-border py-2">
-                        <a class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
+                        <a pRipple class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
                             <img src="assets/images/blocks/products/wax.png" class="mr-3 flex-shrink-0" style="width:42px;height:42px" />
                             <div>
                                 <span class="block text-900 mb-1">Strong Wax</span>
@@ -468,7 +468,7 @@ export class SlideOverComponent {
                         </a>
                     </li>
                     <li class="border-bottom-1 surface-border py-2">
-                        <a class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
+                        <a pRipple class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
                             <img src="assets/images/blocks/products/juice.png" class="mr-3 flex-shrink-0" style="width:42px;height:42px" />
                             <div>
                                 <span class="block text-900 mb-1">Berry Juice</span>
@@ -478,7 +478,7 @@ export class SlideOverComponent {
                         </a>
                     </li>
                     <li class="py-2">
-                        <a class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
+                        <a pRipple class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
                             <img src="assets/images/blocks/products/sport-shoe.png" class="mr-3 flex-shrink-0" style="width:42px;height:42px" />
                             <div>
                                 <span class="block text-900 mb-1">Sports Shoe</span>
@@ -493,7 +493,7 @@ export class SlideOverComponent {
             <p-tabPanel header="Pending">
                 <ul class="list-none p-0 m-0">
                     <li class="border-bottom-1 surface-border py-2">
-                        <a class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
+                        <a pRipple class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
                             <img src="assets/images/blocks/products/running-shoe.png" class="mr-3 flex-shrink-0" style="width:42px;height:42px" />
                             <div>
                                 <span class="block text-900 mb-1">Running Shoes</span>
@@ -503,7 +503,7 @@ export class SlideOverComponent {
                         </a>
                     </li>
                     <li class="border-bottom-1 surface-border py-2">
-                        <a class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
+                        <a pRipple class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
                             <img src="assets/images/blocks/products/instant-camera.png" class="mr-3 flex-shrink-0" style="width:42px;height:42px" />
                             <div>
                                 <span class="block text-900 mb-1">Instant Camera</span>
@@ -513,7 +513,7 @@ export class SlideOverComponent {
                         </a>
                     </li>
                     <li class="border-bottom-1 surface-border py-2">
-                        <a class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
+                        <a pRipple class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
                             <img src="assets/images/blocks/products/sunglasses.png" class="mr-3 flex-shrink-0" style="width:42px;height:42px" />
                             <div>
                                 <span class="block text-900 mb-1">Sunglasses</span>
@@ -523,7 +523,7 @@ export class SlideOverComponent {
                         </a>
                     </li>
                     <li class="border-bottom-1 surface-border py-2">
-                        <a class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
+                        <a pRipple class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
                             <img src="assets/images/blocks/products/dslr-camera.png" class="mr-3 flex-shrink-0" style="width:42px;height:42px" />
                             <div>
                                 <span class="block text-900 mb-1">DSLR Camera</span>
@@ -538,7 +538,7 @@ export class SlideOverComponent {
             <p-tabPanel header="Completed">
                 <ul class="list-none p-0 m-0">
                     <li class="border-bottom-1 surface-border py-2">
-                        <a class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
+                        <a pRipple class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
                             <img src="assets/images/blocks/products/cupcake.png" class="mr-3 flex-shrink-0" style="width:42px;height:42px" />
                             <div>
                                 <span class="block text-900 mb-1">Bluetooth Speaker</span>
@@ -548,7 +548,7 @@ export class SlideOverComponent {
                         </a>
                     </li>
                     <li class="border-bottom-1 surface-border py-2">
-                        <a class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
+                        <a pRipple class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
                             <img src="assets/images/blocks/products/wireless-headphone.png" class="mr-3 flex-shrink-0" style="width:42px;height:42px" />
                             <div>
                                 <span class="block text-900 mb-1">Gaming Device</span>
@@ -558,7 +558,7 @@ export class SlideOverComponent {
                         </a>
                     </li>
                     <li class="border-bottom-1 surface-border py-2">
-                        <a class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
+                        <a pRipple class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
                             <img src="assets/images/blocks/products/perfume.png" class="mr-3 flex-shrink-0" style="width:42px;height:42px" />
                             <div>
                                 <span class="block text-900 mb-1">Perfume</span>
@@ -568,7 +568,7 @@ export class SlideOverComponent {
                         </a>
                     </li>
                     <li class="border-bottom-1 surface-border py-2">
-                        <a class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
+                        <a pRipple class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
                             <img src="assets/images/blocks/products/model-car.png" class="mr-3 flex-shrink-0" style="width:42px;height:42px" />
                             <div>
                                 <span class="block text-900 mb-1">Model Car</span>
@@ -578,7 +578,7 @@ export class SlideOverComponent {
                         </a>
                     </li>
                     <li class="border-bottom-1 surface-border py-2">
-                        <a class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
+                        <a pRipple class="flex align-items-center p-2 cursor-pointer border-round hover:surface-200 transition-colors transition-duration-150">
                             <img src="assets/images/blocks/products/spoons.png" class="mr-3 flex-shrink-0" style="width:42px;height:42px" />
                             <div>
                                 <span class="block text-900 mb-1">Spoon Set</span>

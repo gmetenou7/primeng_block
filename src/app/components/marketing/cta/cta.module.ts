@@ -7,6 +7,7 @@ import { ButtonModule} from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { CalendarModule } from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
+import { RippleModule } from 'primeng/ripple';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { FormsModule } from '@angular/forms';
     InputTextModule,
     CalendarModule,
     FormsModule,
+    RippleModule,
     BlockViewerModule
   ],
   declarations: [

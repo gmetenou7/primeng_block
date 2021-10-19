@@ -5,6 +5,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { BadgeModule } from 'primeng/badge';
 import { StyleClassModule } from 'primeng/styleclass';
 import { ButtonModule } from 'primeng/button';
+import { RippleModule } from 'primeng/ripple';
 import { MenuModule } from 'primeng/menu';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
@@ -16,6 +17,7 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
     BadgeModule,
     StyleClassModule,
     ButtonModule,
+    RippleModule,
     MenuModule,
     DashboardRoutingModule,
     BlockViewerModule

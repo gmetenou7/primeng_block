@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { BannerComponent } from './banner.component';
 import { BannerRoutingModule } from './banner-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
+import { RippleModule } from 'primeng/ripple';
 
 @NgModule({
   imports: [
     CommonModule,
     BannerRoutingModule,
-    BlockViewerModule
+    BlockViewerModule,
+    RippleModule
   ],
   declarations: [
     BannerComponent

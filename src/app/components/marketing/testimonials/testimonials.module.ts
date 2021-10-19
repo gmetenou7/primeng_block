@@ -5,6 +5,7 @@ import { TestimonialsRoutingModule } from './testimonials-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
+import { RippleModule } from 'primeng/ripple';
 
 @NgModule({
   imports: [
@@ -12,7 +13,8 @@ import { ButtonModule } from 'primeng/button';
     TestimonialsRoutingModule,
     BlockViewerModule,
     CarouselModule,
-    ButtonModule
+    ButtonModule,
+    RippleModule
   ],
   declarations: [
     TestimonialsComponent

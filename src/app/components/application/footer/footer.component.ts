@@ -30,9 +30,9 @@ export class FooterComponent {
 <div class="surface-section px-4 md:px-6 lg:px-8">
     <div class="surface-section py-6 flex flex-column sm:flex-row align-items-center justify-content-between">
         <div class="flex flex-nowap font-medium">
-            <a class="cursor-pointer block text-700 py-2 px-3 transition-colors transition-duration-150 hover:surface-300 border-round hover:text-900">HOME</a>
-            <a class="cursor-pointer block text-700 py-2 px-3 transition-colors transition-duration-150 hover:surface-300 border-round hover:text-900">ABOUT</a>
-            <a class="cursor-pointer block text-700 py-2 px-3 transition-colors transition-duration-150 hover:surface-300 border-round hover:text-900">CONTACT</a>
+            <a pRipple class="cursor-pointer block text-700 py-2 px-3 transition-colors transition-duration-150 hover:surface-300 border-round hover:text-900">HOME</a>
+            <a pRipple class="cursor-pointer block text-700 py-2 px-3 transition-colors transition-duration-150 hover:surface-300 border-round hover:text-900">ABOUT</a>
+            <a pRipple class="cursor-pointer block text-700 py-2 px-3 transition-colors transition-duration-150 hover:surface-300 border-round hover:text-900">CONTACT</a>
         </div>
         <div class="mt-3 sm:mt-0">
             <img src="assets/images/blocks/logos/bastion-700.svg" alt="Image" height="40">

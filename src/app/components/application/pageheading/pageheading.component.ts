@@ -203,18 +203,18 @@ export class PageHeadingComponent {
             <input type="text" pInputText placeholder="Search" style="border-radius: 20px" />
         </span>
         <div class="mt-3 lg:mt-0 flex align-items-start flex-column md:flex-row">
-            <span class="inline-flex cursor-pointer py-2 px-3 align-items-center surface-100 hover:surface-200 transition-colors transition-duration-150 mb-3 md:mb-0 mr-0 md:mr-3" 
-                style="border-radius: 20px" (click)="menu8_1.toggle($event)">
+            <span class="inline-flex cursor-pointer py-2 px-3 align-items-center surface-100 hover:surface-200 transition-colors transition-duration-150 mb-3 md:mb-0 mr-0 md:mr-3 select-none" 
+                style="border-radius: 20px" (click)="menu8_1.toggle($event)" pRipple>
                 Specialties <i class="ml-2 pi pi-angle-down text-700"></i>
             </span>
             <p-menu #menu8_1 [popup]="true" [model]="items1"></p-menu>
-            <span class="inline-flex cursor-pointer  py-2 px-3 align-items-center surface-100 hover:surface-200 transition-colors transition-duration-150 mb-3 md:mb-0 mr-0 md:mr-3" 
-                style="border-radius: 20px" (click)="menu8_2.toggle($event)">
+            <span class="inline-flex cursor-pointer  py-2 px-3 align-items-center surface-100 hover:surface-200 transition-colors transition-duration-150 mb-3 md:mb-0 mr-0 md:mr-3 select-none" 
+                style="border-radius: 20px" (click)="menu8_2.toggle($event)" pRipple>
                 Locations <i class="ml-2 pi pi-angle-down text-700"></i>
             </span>
             <p-menu #menu8_2 [popup]="true" [model]="items2"></p-menu>
-            <span class="inline-flex cursor-pointer  py-2 px-3 align-items-center surface-100 hover:surface-200 transition-colors transition-duration-150 mb-3 md:mb-0 mr-0 md:mr-3" 
-                style="border-radius: 20px" (click)="menu8_3.toggle($event)">
+            <span class="inline-flex cursor-pointer  py-2 px-3 align-items-center surface-100 hover:surface-200 transition-colors transition-duration-150 mb-3 md:mb-0 mr-0 md:mr-3 select-none" 
+                style="border-radius: 20px" (click)="menu8_3.toggle($event)" pRipple>
                 Contract <i class="ml-2 pi pi-angle-down text-700"></i>
             </span>
             <p-menu #menu8_3 [popup]="true" [model]="items3"></p-menu>
@@ -235,11 +235,11 @@ export class PageHeadingComponent {
     </div>
     <div class="px-4 py-2 surface-border border-1 border-top-none border-round-bottom surface-section">
         <div class="flex flex-wrap align-items-center">
-            <span class="inline-flex p-2 text-bluegray-500 align-items-center mr-3 my-1 cursor-pointer" tabindex="0" (click)="menu9_1.toggle($event)">Technologies <i class="ml-2 pi pi-angle-down"></i></span>
+            <span class="inline-flex p-2 text-bluegray-500  hover:text-bluegray-600 align-items-center mr-3 my-1 cursor-pointer select-none" tabindex="0" (click)="menu9_1.toggle($event)">Technologies <i class="ml-2 pi pi-angle-down"></i></span>
             <p-menu #menu9_1 [popup]="true" [model]="items1"></p-menu>
-            <span class="inline-flex p-2 text-bluegray-500 align-items-center mr-3 my-1 cursor-pointer" tabindex="0" (click)="menu9_2.toggle($event)">Locations <i class="ml-2 pi pi-angle-down"></i></span>
+            <span class="inline-flex p-2 text-bluegray-500  hover:text-bluegray-600 align-items-center mr-3 my-1 cursor-pointer select-none" tabindex="0" (click)="menu9_2.toggle($event)">Locations <i class="ml-2 pi pi-angle-down"></i></span>
             <p-menu #menu9_2 [popup]="true" [model]="items2"></p-menu>
-            <span class="inline-flex p-2 text-bluegray-500 align-items-center mr-3 my-1 cursor-pointer" tabindex="0" (click)="menu9_3.toggle($event)">Contract <i class="ml-2 pi pi-angle-down"></i></span>
+            <span class="inline-flex p-2 text-bluegray-500  hover:text-bluegray-600 align-items-center mr-3 my-1 cursor-pointer select-none" tabindex="0" (click)="menu9_3.toggle($event)">Contract <i class="ml-2 pi pi-angle-down"></i></span>
             <p-menu #menu9_3 [popup]="true" [model]="items3"></p-menu>
         </div>
     </div>

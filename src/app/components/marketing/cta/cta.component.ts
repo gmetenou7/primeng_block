@@ -170,7 +170,7 @@ export class CtaComponent {
         <div class="px-6 py-8">
             <span class="uppercase text-cyan-500 font-bold">BE THE FIRST ONE</span>
             <div class="text-white text-medium text-5xl mt-3 mb-5">Join the waitlist Today!</div>
-            <button class="appearance-none" class="p-3 bg-cyan-500 hover:bg-cyan-300 cursor-pointer transition-colors font-medium gray-900 border-none p-component transition-colors transition-duration-150" style="border-radius: 35px">Reserve Your Username</button>
+            <button RippleModule class="appearance-none" class="p-3 bg-cyan-500 hover:bg-cyan-300 cursor-pointer transition-colors font-medium gray-900 border-none p-component transition-colors transition-duration-150" style="border-radius: 35px">Reserve Your Username</button>
         </div>
             
         <img src="assets/images/blocks/cta/cta-browser.png" alt="Image" class="static lg:absolute block mx-auto" style="height: 400px; top: -2rem; right: -1rem">

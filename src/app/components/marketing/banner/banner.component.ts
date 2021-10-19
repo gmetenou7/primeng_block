@@ -14,7 +14,7 @@ export class BannerComponent {
     <a class="flex align-items-center ml-2 mr-8">
         <a class="text-white" href="#"><span class="underline font-bold">Learn More</span></a>
     </a>
-    <a class="flex align-items-center no-underline justify-content-center border-circle text-gray-50 hover:bg-bluegray-700 cursor-pointer transition-colors transition-duration-150" style="width:2rem; height: 2rem">
+    <a pRipple class="flex align-items-center no-underline justify-content-center border-circle text-gray-50 hover:bg-bluegray-700 cursor-pointer transition-colors transition-duration-150" style="width:2rem; height: 2rem">
         <i class="pi pi-times"></i>
     </a>
 </div>`;
@@ -28,7 +28,7 @@ export class BannerComponent {
             <a class="text-white" href="#"><span class="underline font-bold">Learn More</span></a>
         </a>
     </div>
-    <a class="flex align-items-center no-underline justify-content-center border-circle text-gray-50 hover:bg-cyan-400 cursor-pointer transition-colors transition-duration-150" style="width:2rem; height: 2rem">
+    <a pRipple class="flex align-items-center no-underline justify-content-center border-circle text-gray-50 hover:bg-cyan-400 cursor-pointer transition-colors transition-duration-150" style="width:2rem; height: 2rem">
         <i class="pi pi-times"></i>
     </a>
 </div>`;
@@ -46,7 +46,7 @@ export class BannerComponent {
             <span class="text-bluegray-200">Libero voluptatum atque exercitationem praesentium provident odit aperiam.</span>
         </div>
     </div>
-    <a class="cursor-pointer bg-bluegray-500 text-white px-3 py-2 line-height-3 my-3 hover:bg-bluegray-400 transition-colors transition-duration-150" style="border-radius: 35px">
+    <a pRipple class="cursor-pointer bg-bluegray-500 text-white px-3 py-2 line-height-3 my-3 hover:bg-bluegray-400 transition-colors transition-duration-150" style="border-radius: 35px">
         <span>Confirm Email</span>
         <i class="ml-2 pi pi-arrow-right"></i>
     </a>

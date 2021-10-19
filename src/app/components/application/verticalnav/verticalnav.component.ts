@@ -9,32 +9,32 @@ export class VerticalNavComponent {
 <div class="surface-card shadow-2 border-round select-none">
     <ul class="list-none p-2 m-0">
         <li>
-            <a class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
+            <a pRipple class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
                 <i class="pi pi-home mr-2 text-700"></i>
                 <span class="font-medium text-700">Dashboard</span>
             </a>
         </li>
         <li>
-            <a class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
+            <a pRipple class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
                 <i class="pi pi-bookmark mr-2 text-700"></i>
                 <span class="font-medium text-700">Bookmarks</span>
                 <span class="inline-flex align-items-center justify-content-center ml-auto bg-blue-100 text-blue-900 border-circle" style="min-width: 1.5rem; height: 1.5rem">3</span>
             </a>
         </li>
         <li>
-            <a class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
+            <a pRipple class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
                 <i class="pi pi-users mr-2 text-700"></i>
                 <span class="font-medium text-700">Team</span>
             </a>
         </li>
         <li>
-            <a class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
+            <a pRipple class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
                 <i class="pi pi-comments mr-2 text-700"></i>
                 <span class="font-medium text-700">Messages</span>
             </a>
         </li>
         <li>
-            <a class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
+            <a pRipple class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
                 <i class="pi pi-calendar mr-2 text-700"></i>
                 <span class="font-medium text-700">Calendar</span>
                 <span class="inline-flex align-items-center justify-content-center ml-auto bg-purple-100 text-purple-900 border-circle" style="min-width: 1.5rem; height: 1.5rem">2</span>
@@ -47,38 +47,38 @@ export class VerticalNavComponent {
 <div class="surface-card shadow-2 border-round select-none">
     <ul class="list-none p-2 m-0">
         <li>
-            <div class="p-3 flex align-items-center justify-content-between text-500 cursor-pointer" pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
+            <div pRipple class="p-3 flex align-items-center justify-content-between text-500 cursor-pointer" pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                 <span class="font-medium">HOME</span>
                 <i class="pi pi-chevron-down"></i>
             </div>
             <ul class="list-none p-0 m-0 overflow-hidden">
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
                         <i class="pi pi-home mr-2 text-700"></i>
                         <span class="font-medium text-700">Dashboard</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
                         <i class="pi pi-bookmark mr-2 text-700"></i>
                         <span class="font-medium text-700">Bookmarks</span>
                         <span class="inline-flex align-items-center justify-content-center ml-auto bg-blue-100 text-blue-900 border-circle" style="min-width: 1.5rem; height: 1.5rem">3</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
                         <i class="pi pi-users mr-2 text-700"></i>
                         <span class="font-medium text-700">Team</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
                         <i class="pi pi-comments mr-2 text-700"></i>
                         <span class="font-medium text-700">Messages</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
                         <i class="pi pi-calendar mr-2 text-700"></i>
                         <span class="font-medium text-700">Calendar</span>
                         <span class="inline-flex align-items-center justify-content-center ml-auto bg-purple-100 text-purple-900 border-circle" style="min-width: 1.5rem; height: 1.5rem">2</span>
@@ -89,19 +89,19 @@ export class VerticalNavComponent {
     </ul>
     <ul class="list-none p-2 m-0 border-top-1 surface-border">
         <li>
-            <div class="p-3 flex align-items-center justify-content-between text-500 cursor-pointer" pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
+            <div pRipple class="p-3 flex align-items-center justify-content-between text-500 cursor-pointer" pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                 <span class="font-medium">ORGANIZATION</span>
                 <i class="pi pi-chevron-down"></i>
             </div>
             <ul class="list-none p-0 m-0 overflow-hidden">
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
                         <i class="pi pi-home mr-2 text-700"></i>
                         <span class="font-medium text-700">Overview</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150"
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150"
                         pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                         <i class="pi pi-chart-bar mr-2 text-700"></i>
                         <span class="font-medium text-700">Reports</span>
@@ -109,7 +109,7 @@ export class VerticalNavComponent {
                     </a>
                     <ul class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
                         <li>
-                            <a class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150"
+                            <a pRipple class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150"
                                 pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                                 <i class="pi pi-chart-line mr-2 text-700"></i>
                                 <span class="font-medium text-700">Revenue</span>
@@ -117,13 +117,13 @@ export class VerticalNavComponent {
                             </a>
                             <ul class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
                                 <li>
-                                    <a class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
+                                    <a pRipple class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
                                         <i class="pi pi-table mr-2 text-700"></i>
                                         <span class="font-medium">View</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
+                                    <a pRipple class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
                                         <i class="pi pi-search mr-2 text-700"></i>
                                         <span class="font-medium text-700">Search</span>
                                     </a>
@@ -131,7 +131,7 @@ export class VerticalNavComponent {
                             </ul>
                         </li>
                         <li>
-                            <a class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
+                            <a pRipple class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
                                 <i class="pi pi-chart-line mr-2 text-700"></i>
                                 <span class="font-medium text-700">Expenses</span>
                             </a>
@@ -139,14 +139,14 @@ export class VerticalNavComponent {
                     </ul>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
                         <i class="pi pi-bookmark mr-2 text-700"></i>
                         <span class="font-medium text-700">Security</span>
                         <span class="inline-flex align-items-center justify-content-center ml-auto bg-cyan-100 text-cyan-900 border-circle" style="min-width: 1.5rem; height: 1.5rem">3</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150">
                         <i class="pi pi-users mr-2 text-700"></i>
                         <span class="font-medium text-700">Domains</span>
                     </a>
@@ -160,38 +160,38 @@ export class VerticalNavComponent {
 <div class="bg-indigo-500 shadow-2 select-none" style="border-radius: 30px">
     <ul class="list-none p-2 m-0">
         <li>
-            <div class="p-3 flex align-items-center justify-content-between text-indigo-300 cursor-pointer" pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
+            <div pRipple class="p-3 flex align-items-center justify-content-between text-indigo-300 cursor-pointer" style="border-radius: 30px" pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                 <span class="font-medium">HOME</span>
                 <i class="pi pi-chevron-down"></i>
             </div>
             <ul class="list-none p-0 m-0 overflow-hidden">
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
                         <i class="pi pi-home mr-2"></i>
                         <span class="font-medium">Dashboard</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
                         <i class="pi pi-bookmark mr-2"></i>
                         <span class="font-medium">Bookmarks</span>
                         <span class="inline-flex align-items-center justify-content-center ml-auto bg-blue-100 text-blue-900 border-circle" style="min-width: 1.5rem; height: 1.5rem">3</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
                         <i class="pi pi-users mr-2"></i>
                         <span class="font-medium">Team</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
                         <i class="pi pi-comments mr-2"></i>
                         <span class="font-medium">Messages</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
                         <i class="pi pi-calendar mr-2"></i>
                         <span class="font-medium">Calendar</span>
                         <span class="inline-flex align-items-center justify-content-center ml-auto bg-purple-100 text-purple-900 border-circle" style="min-width: 1.5rem; height: 1.5rem">2</span>
@@ -202,19 +202,19 @@ export class VerticalNavComponent {
     </ul>
     <ul class="list-none p-2 m-0 border-top-1 border-indigo-400">
         <li>
-            <div class="p-3 flex align-items-center justify-content-between text-indigo-300 cursor-pointer" pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
+            <div pRipple class="p-3 flex align-items-center justify-content-between text-indigo-300 cursor-pointer" style="border-radius: 30px" pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                 <span class="font-medium">ORGANIZATION</span>
                 <i class="pi pi-chevron-down"></i>
             </div>
             <ul class="list-none p-0 m-0 overflow-hidden">
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
                         <i class="pi pi-home mr-2"></i>
                         <span class="font-medium">Overview</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px"
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px"
                         pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                         <i class="pi pi-chart-bar mr-2"></i>
                         <span class="font-medium">Reports</span>
@@ -222,7 +222,7 @@ export class VerticalNavComponent {
                     </a>
                     <ul class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
                         <li>
-                            <a class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px"
+                            <a pRipple class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px"
                                 pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                                 <i class="pi pi-chart-line mr-2"></i>
                                 <span class="font-medium">Revenue</span>
@@ -230,13 +230,13 @@ export class VerticalNavComponent {
                             </a>
                             <ul class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
                                 <li>
-                                    <a class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
+                                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
                                         <i class="pi pi-table mr-2"></i>
                                         <span class="font-medium">View</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
+                                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
                                         <i class="pi pi-search mr-2"></i>
                                         <span class="font-medium">Search</span>
                                     </a>
@@ -244,7 +244,7 @@ export class VerticalNavComponent {
                             </ul>
                         </li>
                         <li>
-                            <a class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
+                            <a pRipple class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
                                 <i class="pi pi-chart-line mr-2"></i>
                                 <span class="font-medium">Expenses</span>
                             </a>
@@ -252,14 +252,14 @@ export class VerticalNavComponent {
                     </ul>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
                         <i class="pi pi-bookmark mr-2"></i>
                         <span class="font-medium">Security</span>
                         <span class="inline-flex align-items-center justify-content-center ml-auto bg-cyan-100 text-cyan-900 border-circle" style="min-width: 1.5rem; height: 1.5rem">3</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150" style="border-radius: 30px">
                         <i class="pi pi-users mr-2"></i>
                         <span class="font-medium">Domains</span>
                     </a>
@@ -273,38 +273,38 @@ export class VerticalNavComponent {
 <div class="bg-gray-900 shadow-2 border-round select-none">
     <ul class="list-none p-2 m-0">
         <li>
-            <div class="p-3 flex align-items-center justify-content-between text-gray-600 cursor-pointer" pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
+            <div pRipple class="p-3 flex align-items-center justify-content-between text-gray-600 cursor-pointer" pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                 <span class="font-medium">HOME</span>
                 <i class="pi pi-chevron-down"></i>
             </div>
             <ul class="list-none p-0 m-0 overflow-hidden">
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
                         <i class="pi pi-home mr-2"></i>
                         <span class="font-medium">Dashboard</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
                         <i class="pi pi-bookmark mr-2"></i>
                         <span class="font-medium">Bookmarks</span>
                         <span class="inline-flex align-items-center justify-content-center ml-auto bg-blue-100 text-blue-900 border-circle" style="min-width: 1.5rem; height: 1.5rem">3</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
                         <i class="pi pi-users mr-2"></i>
                         <span class="font-medium">Team</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
                         <i class="pi pi-comments mr-2"></i>
                         <span class="font-medium">Messages</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
                         <i class="pi pi-calendar mr-2"></i>
                         <span class="font-medium">Calendar</span>
                         <span class="inline-flex align-items-center justify-content-center ml-auto bg-purple-100 text-purple-900 border-circle" style="min-width: 1.5rem; height: 1.5rem">2</span>
@@ -315,19 +315,19 @@ export class VerticalNavComponent {
     </ul>
     <ul class="list-none p-2 m-0 border-top-1 border-gray-800">
         <li>
-            <div class="p-3 flex align-items-center justify-content-between text-gray-600 cursor-pointer" pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
+            <div pRipple class="p-3 flex align-items-center justify-content-between text-gray-600 cursor-pointer" pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                 <span class="font-medium">ORGANIZATION</span>
                 <i class="pi pi-chevron-down"></i>
             </div>
             <ul class="list-none p-0 m-0 overflow-hidden">
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
                         <i class="pi pi-home mr-2"></i>
                         <span class="font-medium">Overview</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150"
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150"
                         pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                         <i class="pi pi-chart-bar mr-2"></i>
                         <span class="font-medium">Reports</span>
@@ -335,7 +335,7 @@ export class VerticalNavComponent {
                     </a>
                     <ul class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
                         <li>
-                            <a class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150"
+                            <a pRipple class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150"
                                 pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                                 <i class="pi pi-chart-line mr-2"></i>
                                 <span class="font-medium">Revenue</span>
@@ -343,13 +343,13 @@ export class VerticalNavComponent {
                             </a>
                             <ul class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
                                 <li>
-                                    <a class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
+                                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
                                         <i class="pi pi-table mr-2"></i>
                                         <span class="font-medium">View</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
+                                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
                                         <i class="pi pi-search mr-2"></i>
                                         <span class="font-medium">Search</span>
                                     </a>
@@ -357,7 +357,7 @@ export class VerticalNavComponent {
                             </ul>
                         </li>
                         <li>
-                            <a class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
+                            <a pRipple class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
                                 <i class="pi pi-chart-line mr-2"></i>
                                 <span class="font-medium">Expenses</span>
                             </a>
@@ -365,14 +365,14 @@ export class VerticalNavComponent {
                     </ul>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
                         <i class="pi pi-bookmark mr-2"></i>
                         <span class="font-medium">Security</span>
                         <span class="inline-flex align-items-center justify-content-center ml-auto bg-cyan-100 text-cyan-900 border-circle" style="min-width: 1.5rem; height: 1.5rem">3</span>
                     </a>
                 </li>
                 <li>
-                    <a class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
+                    <a pRipple class="flex align-items-center cursor-pointer p-3 text-gray-300 hover:text-white hover:bg-gray-800 border-round transition-colors transition-duration-150">
                         <i class="pi pi-users mr-2"></i>
                         <span class="font-medium">Domains</span>
                     </a>
@@ -386,7 +386,7 @@ export class VerticalNavComponent {
 <div class="surface-card border-round shadow-2 select-none">
     <ul class="list-none p-2 m-0">
         <li>
-            <a class="flex p-2 align-items-center cursor-pointer" pStyleClass="#pb_profile_submenu" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
+            <a pRipple class="flex p-2 align-items-center cursor-pointer" pStyleClass="#pb_profile_submenu" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
                 <span class="mr-3 inline-flex">
                     <img src="assets/images/blocks/avatars/circle-big/avatar-f-2.png"  width="42" height="42" />
                 </span>
@@ -399,7 +399,7 @@ export class VerticalNavComponent {
             <div class="border-top-1 surface-border my-3" style="height:1px"></div>
             <ul id="pb_profile_submenu" class="list-none p-0 m-0 overflow-hidden">
                 <li class="mb-2">
-                    <a class="flex p-2 align-items-start hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">
+                    <a pRipple class="flex p-2 align-items-start hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">
                         <i class="pi pi-home text-500 mr-3 text-xl"></i>
                         <span>
                             <span class="block text-700 font-medium">Dashboard</span>
@@ -408,7 +408,7 @@ export class VerticalNavComponent {
                     </a>
                 </li>
                 <li class="mb-2">
-                    <a class="flex p-2 align-items-start hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">
+                    <a pRipple class="flex p-2 align-items-start hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">
                         <i class="pi pi-users text-500 mr-3 text-xl"></i>
                         <span>
                             <span class="block text-700 font-medium">Users</span>
@@ -418,7 +418,7 @@ export class VerticalNavComponent {
                     </a>
                 </li>
                 <li class="mb-2">
-                    <a class="flex p-2 align-items-start hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">
+                    <a pRipple class="flex p-2 align-items-start hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">
                         <i class="pi pi-sliders-h text-500 mr-3 text-xl"></i>
                         <span>
                             <span class="block text-700 font-medium">Tools</span>
@@ -427,7 +427,7 @@ export class VerticalNavComponent {
                     </a>
                 </li>
                 <li class="mb-2">
-                    <a class="flex p-2 align-items-start hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">
+                    <a pRipple class="flex p-2 align-items-start hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">
                         <i class="pi pi-th-large text-500 mr-3 text-xl"></i>
                         <span>
                             <span class="block text-700 font-medium">Integrations</span>
@@ -436,7 +436,7 @@ export class VerticalNavComponent {
                     </a>
                 </li>
                 <li class="mb-2">
-                    <a class="flex p-2 align-items-start hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">
+                    <a pRipple class="flex p-2 align-items-start hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">
                         <i class="pi pi-cog text-500 mr-3 text-xl"></i>
                         <span>
                             <span class="block text-700 font-medium">Settings</span>
@@ -447,19 +447,19 @@ export class VerticalNavComponent {
             </ul>
         </li>
         <li class="mb-2">
-            <a class="block p-2 font-medium text-700 hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">Installed Plugins</a>
+            <a pRipple class="block p-2 font-medium text-700 hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">Installed Plugins</a>
         </li>
         <li class="mb-2">
-            <a class="block p-2 font-medium text-700 flex align-items-center justify-content-between hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">
+            <a pRipple class="block p-2 font-medium text-700 flex align-items-center justify-content-between hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">
                 <span>Updates</span>
                 <i class="bg-blue-500 border-circle" style="width:7px;height:7px"></i>
             </a>
         </li>
         <li class="mb-2">
-            <a class="block p-2 font-medium text-700 hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">Reset Server</a>
+            <a pRipple class="block p-2 font-medium text-700 hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">Reset Server</a>
         </li>
         <li class="mb-2">
-            <a class="block p-2 font-medium text-700 hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">Log Out</a>
+            <a pRipple class="block p-2 font-medium text-700 hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">Log Out</a>
         </li>
     </ul>
 </div>`;

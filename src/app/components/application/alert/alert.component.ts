@@ -13,7 +13,7 @@ export class AlertComponent {
         <p class="m-0 p-0 text-green-700 line-height-3">Quis commodo odio aenean sed adipiscing diam. Bibendum enim facilisis gravida neque convallis a cras semper.</p>
     </div>
     <div class="ml-auto">
-        <a class="inline-flex align-items-center justify-content-center ml-auto border-circle hover:bg-green-50 no-underline cursor-pointer transition-colors transition-duration-150" style="width:1.5rem;height:1.5rem">
+        <a pRipple class="inline-flex align-items-center justify-content-center ml-auto border-circle hover:bg-green-50 no-underline cursor-pointer transition-colors transition-duration-150" style="width:1.5rem;height:1.5rem">
             <i class="pi pi-times text-green-900"></i>
         </a>
     </div>
@@ -25,11 +25,11 @@ export class AlertComponent {
     <div class="mr-3">
         <div class="text-yellow-900 font-medium text-xl mb-2 line-height-1">Attention</div>
         <p class="m-0 p-0 text-yellow-700 mb-3 line-height-3">Quis commodo odio aenean sed adipiscing diam. Bibendum enim facilisis gravida neque convallis a cras semper.</p>
-        <a class="font-medium text-yellow-900 mr-4 no-underline cursor-pointer">Accept</a>
-        <a class="font-medium text-yellow-900 no-underline cursor-pointer">Decline</a>
+        <a class="font-medium text-yellow-900 hover:text-yellow-800 mr-4 no-underline cursor-pointer select-none transition-colors transition-duration-150">Accept</a>
+        <a class="font-medium text-yellow-900 hover:text-yellow-800 no-underline cursor-pointer select-none transition-colors transition-duration-150">Decline</a>
     </div>
     <div class="ml-auto">
-        <a class="inline-flex align-items-center justify-content-center ml-auto border-circle hover:bg-yellow-50 no-underline cursor-pointer transition-colors transition-duration-150" style="width:1.5rem;height:1.5rem">
+        <a pRipple class="inline-flex align-items-center justify-content-center ml-auto border-circle hover:bg-yellow-50 no-underline cursor-pointer transition-colors transition-duration-150" style="width:1.5rem;height:1.5rem">
             <i class="pi pi-times text-yellow-900"></i>
         </a>
     </div>
@@ -44,7 +44,7 @@ export class AlertComponent {
             <p class="m-0 p-0 text-blue-700 line-height-3">Quis commodo odio aenean sed adipiscing diam. Bibendum enim facilisis gravida neque convallis a cras semper.</p>
         </div>
     </div>
-    <a class="flex align-items-center ml-auto no-underline text-blue-900 font-medium mt-3 lg:mt-0 cursor-pointer">
+    <a pRipple class="flex align-items-center ml-auto no-underline text-blue-900 font-medium mt-3 lg:mt-0 cursor-pointer">
         <span class="white-space-nowrap">Learn More</span>
         <i class="pi pi-arrow-right text-blue-900 ml-2"></i>
     </a>
@@ -62,7 +62,7 @@ export class AlertComponent {
         </ul>
     </div>
     <div class="ml-auto">
-        <a class="inline-flex align-items-center justify-content-center ml-auto border-circle hover:bg-pink-50 no-underline cursor-pointer transition-colors transition-duration-150" style="width:1.5rem;height:1.5rem">
+        <a pRipple class="inline-flex align-items-center justify-content-center ml-auto border-circle hover:bg-pink-50 no-underline cursor-pointer transition-colors transition-duration-150" style="width:1.5rem;height:1.5rem">
             <i class="pi pi-times text-pink-900"></i>
         </a>
     </div>

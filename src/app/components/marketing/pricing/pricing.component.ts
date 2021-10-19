@@ -372,7 +372,7 @@ export class PricingComponent {
                         <span class="text-900 font-bold text-4xl">$29</span>
                         <span class="font-medium text-500 line-height-3 ml-2 ">per month</span>
                     </div>
-                    <button class="flex align-items-center justify-content-center p-button p-2 w-full mt-auto mb-5">
+                    <button pRipple class="flex align-items-center justify-content-center p-button p-2 w-full mt-auto mb-5">
                         <span>
                             Proceed Monthly
                         </span>
@@ -395,7 +395,7 @@ export class PricingComponent {
                         <span class="font-bold text-4xl text-900">$275</span>
                         <span class="font-medium text-500 line-height-3 ml-2">per year</span>
                     </div>
-                    <button class="flex align-items-center justify-content-center p-button p-2 w-full mt-auto mb-5">
+                    <button pRipple class="flex align-items-center justify-content-center p-button p-2 w-full mt-auto mb-5">
                         <span>
                             Proceed Yearly
                         </span>
