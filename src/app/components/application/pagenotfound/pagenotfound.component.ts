@@ -14,8 +14,8 @@ export class PageNotFoundComponent {
     <div class="mt-6 mb-5 font-bold text-6xl text-900 text-center">Page Not Found</div>
     <p class="text-700 text-3xl mt-0 mb-6 text-center">Sorry, we couldn't find the page.</p>
     <div class="text-center">
-        <button type="button" pButton class="p-button-text mr-2" label="Go Back" icon="pi pi-arrow-left"></button>
-        <button type="button" pButton label="Go to Dashboard" icon="pi pi-home"></button>
+        <button type="button" pButton pRipple class="p-button-text mr-2" label="Go Back" icon="pi pi-arrow-left"></button>
+        <button type="button" pButton pRipple label="Go to Dashboard" icon="pi pi-home"></button>
     </div>
 </div>`;
 
@@ -28,8 +28,8 @@ export class PageNotFoundComponent {
         <div class="mt-6 mb-5 font-bold text-6xl text-900">Page Not Found</div>
         <p class="text-700 text-3xl mt-0 mb-6">Sorry, we couldn't find the page.</p>
         <div>
-            <button type="button" pButton class="p-button-text mr-2" label="Go Back" icon="pi pi-arrow-left"></button>
-            <button type="button" pButton label="Go to Dashboard" icon="pi pi-home"></button>
+            <button type="button" pButton pRipple class="p-button-text mr-2" label="Go Back" icon="pi pi-arrow-left"></button>
+            <button type="button" pButton pRipple label="Go to Dashboard" icon="pi pi-home"></button>
         </div>
     </div>
     <div class="w-6 hidden sm:block" style="background: url('assets/images/blocks/feedback/404.png') no-repeat; background-size: cover">

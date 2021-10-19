@@ -204,11 +204,11 @@ export class FormLayoutComponent implements OnInit {
                 <label for="item" class="font-medium">Price</label>
                 <div class="flex align-content-center">
                     <p-inputNumber mode="currency" currency="USD" inputId="item" type="text" class="flex-1"></p-inputNumber>
-                    <button pButton icon="pi pi-trash" class="p-button-danger p-button-text ml-2"></button>
+                    <button pButton pRipple icon="pi pi-trash" class="p-button-danger p-button-text ml-2"></button>
                 </div>
             </div>
             <div class="field mb-4 col-12 md:col-6">
-                <button pButton icon="pi pi-plus" label="Add Item" class="p-button-secondary p-button-outlined w-auto"></button>
+                <button pButton pRipple icon="pi pi-plus" label="Add Item" class="p-button-secondary p-button-outlined w-auto"></button>
             </div>
             <div class="field mb-4 col-12 md:col-6 text-right">
                 <span class="text-xl text-600 font-medium mr-2">Total</span>
@@ -225,7 +225,7 @@ export class FormLayoutComponent implements OnInit {
             </div>
             <div class="surface-border border-top-1 opacity-50 mb-4 col-12"></div>
         </div>
-        <button pButton label="Create Invoice" icon="pi pi-file-o" class="w-auto"></button>
+        <button pButton pRipple label="Create Invoice" icon="pi pi-file-o" class="w-auto"></button>
     </div>
 </div>`;
 

@@ -137,7 +137,7 @@ export class CtaComponent {
             <div class="text-white text-4xl font-medium mb-3">Magna fringilla urna $0 per month</div>
             <p class="line-height-3 text-indigo-100 text-xl mt-0 mb-4">Quisque sagittis purus sit amet volutpat consequat mauris nunc. 
                 Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p>
-            <button pButton type="button" label="Try It Free" class="p-button-warning font-medium p-button-rounded"></button>
+            <button pButton pRipple type="button" label="Try It Free" class="p-button-warning font-medium p-button-rounded"></button>
         </div>
         <div class="w-full lg:w-6 p-6 bg-indigo-500 ml-0 lg:ml-3" style="border-radius: 12px">
             <div class="mb-3">

@@ -337,7 +337,7 @@ export class MultiColumnLayoutComponent {
             </div>
             <div class="flex flex-column bg-indigo-500 p-4 overflow-y-auto flex-shrink-0 flex-grow-1 md:flex-grow-0" style="width:300px">
                 <div class="justify-content-end mb-3 flex lg:hidden">
-                    <button pRipple icon="pi pi-times" class="cursor-pointer text-white appearance-none bg-transparent border-none inline-flex justify-content-center align-items-center border-circle hover:bg-indigo-600 transition-duration-150 transition-colors"  
+                    <button icon="pi pi-times" class="cursor-pointer text-white appearance-none bg-transparent border-none inline-flex justify-content-center align-items-center border-circle hover:bg-indigo-600 transition-duration-150 transition-colors"  
                     style="width:2rem;height:2rem" pStyleClass="#app-sidebar" leaveToClass="hidden" leaveActiveClass="fadeoutleft">
                     <i class="pi pi-times text-xl text-indigo-100"></i>
                 </button>

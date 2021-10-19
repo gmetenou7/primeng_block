@@ -133,8 +133,8 @@ export class GridListComponent {
                     <span class="text-600 surface-200 p-2 border-round">Subscriber</span>
                 </div>
                 <div class="pt-3 border-top-1 surface-border flex">
-                    <button pButton type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
-                    <button pButton type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton pRipple type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton pRipple type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
                 </div>
             </div>
         </div>
@@ -147,8 +147,8 @@ export class GridListComponent {
                     <span class="text-600 surface-200 p-2 border-round">Editor</span>
                 </div>
                 <div class="pt-3 border-top-1 surface-border flex">
-                    <button pButton type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
-                    <button pButton type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton pRipple type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton pRipple type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
                 </div>
             </div>
         </div>
@@ -161,8 +161,8 @@ export class GridListComponent {
                     <span class="text-600 surface-200 p-2 border-round">Subscriber</span>
                 </div>
                 <div class="pt-3 border-top-1 surface-border flex">
-                    <button pButton type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
-                    <button pButton type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton pRipple type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton pRipple type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
                 </div>
             </div>
         </div>
@@ -175,8 +175,8 @@ export class GridListComponent {
                     <span class="text-600 surface-200 p-2 border-round">Moderator</span>
                 </div>
                 <div class="pt-3 border-top-1 surface-border flex">
-                    <button pButton type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
-                    <button pButton type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton pRipple type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton pRipple type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
                 </div>
             </div>
         </div>
@@ -189,8 +189,8 @@ export class GridListComponent {
                     <span class="text-600 surface-200 p-2 border-round">Contributor</span>
                 </div>
                 <div class="pt-3 border-top-1 surface-border flex">
-                    <button pButton type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
-                    <button pButton type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton pRipple type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton pRipple type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
                 </div>
             </div>
         </div>
@@ -203,8 +203,8 @@ export class GridListComponent {
                     <span class="text-600 surface-200 p-2 border-round">Subscriber</span>
                 </div>
                 <div class="pt-3 border-top-1 surface-border flex">
-                    <button pButton type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
-                    <button pButton type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton pRipple type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton pRipple type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
                 </div>
             </div>
         </div>
@@ -217,8 +217,8 @@ export class GridListComponent {
                     <span class="text-600 surface-200 p-2 border-round">Editor</span>
                 </div>
                 <div class="pt-3 border-top-1 surface-border flex">
-                    <button pButton type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
-                    <button pButton type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton pRipple type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton pRipple type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
                 </div>
             </div>
         </div>
@@ -231,8 +231,8 @@ export class GridListComponent {
                     <span class="text-600 surface-200 p-2 border-round">Author</span>
                 </div>
                 <div class="pt-3 border-top-1 surface-border flex">
-                    <button pButton type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
-                    <button pButton type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton pRipple type="button" icon="pi pi-user-plus" class="flex-auto mr-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
+                    <button pButton pRipple type="button" icon="pi pi-send" class="flex-auto ml-2 p-button-outlined p-button-plain" style="border-radius: 30px"></button>
                 </div>
             </div>
         </div>
@@ -459,7 +459,7 @@ export class GridListComponent {
                         <div class="text-xl font-medium text-900 mb-2">sed-risus</div>
                         <p class="mt-0 mb-3 text-600">PNG image - 971 KB</p>
                     </div>
-                    <button pButton icon="pi pi-download" class="p-button-rounded p-button-text"></button>
+                    <button pButton pRipple icon="pi pi-download" class="p-button-rounded p-button-text"></button>
                 </div>
                 <ul class="list-none m-0 p-0">
                     <li class="px-0 py-2 flex justify-content-between align-items-center border-bottom-1 surface-border">
@@ -485,7 +485,7 @@ export class GridListComponent {
                         <div class="text-xl font-medium text-900 mb-2">morbit-blandit</div>
                         <p class="mt-0 mb-3 text-600">PNG image - 350 KB</p>
                     </div>
-                    <button pButton icon="pi pi-download" class="p-button-rounded p-button-text"></button>
+                    <button pButton pRipple icon="pi pi-download" class="p-button-rounded p-button-text"></button>
                 </div>
                 <ul class="list-none m-0 p-0">
                     <li class="px-0 py-2 flex justify-content-between align-items-center border-bottom-1 surface-border">
@@ -511,7 +511,7 @@ export class GridListComponent {
                         <div class="text-xl font-medium text-900 mb-2">neque-aliquam</div>
                         <p class="mt-0 mb-3 text-600">PNG image - 458 KB</p>
                     </div>
-                    <button pButton icon="pi pi-download" class="p-button-rounded p-button-text"></button>
+                    <button pButton pRipple icon="pi pi-download" class="p-button-rounded p-button-text"></button>
                 </div>
                 <ul class="list-none m-0 p-0">
                     <li class="px-0 py-2 flex justify-content-between align-items-center border-bottom-1 surface-border">
@@ -537,7 +537,7 @@ export class GridListComponent {
                         <div class="text-xl font-medium text-900 mb-2">solestie-ac-final</div>
                         <p class="mt-0 mb-3 text-600">PNG image - 102 KB</p>
                     </div>
-                    <button pButton icon="pi pi-download" class="p-button-rounded p-button-text"></button>
+                    <button pButton pRipple icon="pi pi-download" class="p-button-rounded p-button-text"></button>
                 </div>
                 <ul class="list-none m-0 p-0">
                     <li class="px-0 py-2 flex justify-content-between align-items-center border-bottom-1 surface-border">
@@ -563,7 +563,7 @@ export class GridListComponent {
                         <div class="text-xl font-medium text-900 mb-2">neqeu-viverra</div>
                         <p class="mt-0 mb-3 text-600">PNG image - 432 KB</p>
                     </div>
-                    <button pButton icon="pi pi-download" class="p-button-rounded p-button-text"></button>
+                    <button pButton pRipple icon="pi pi-download" class="p-button-rounded p-button-text"></button>
                 </div>
                 <ul class="list-none m-0 p-0">
                     <li class="px-0 py-2 flex justify-content-between align-items-center border-bottom-1 surface-border">
@@ -589,7 +589,7 @@ export class GridListComponent {
                         <div class="text-xl font-medium text-900 mb-2">enim-nec-dui</div>
                         <p class="mt-0 mb-3 text-600">PNG image - 330 KB</p>
                     </div>
-                    <button pButton icon="pi pi-download" class="p-button-rounded p-button-text"></button>
+                    <button pButton pRipple icon="pi pi-download" class="p-button-rounded p-button-text"></button>
                 </div>
                 <ul class="list-none m-0 p-0">
                     <li class="px-0 py-2 flex justify-content-between align-items-center border-bottom-1 surface-border">
@@ -615,7 +615,7 @@ export class GridListComponent {
                         <div class="text-xl font-medium text-900 mb-2">cursus-sit</div>
                         <p class="mt-0 mb-3 text-600">PNG image - 1001 KB</p>
                     </div>
-                    <button pButton icon="pi pi-download" class="p-button-rounded p-button-text"></button>
+                    <button pButton pRipple icon="pi pi-download" class="p-button-rounded p-button-text"></button>
                 </div>
                 <ul class="list-none m-0 p-0">
                     <li class="px-0 py-2 flex justify-content-between align-items-center border-bottom-1 surface-border">
@@ -641,7 +641,7 @@ export class GridListComponent {
                         <div class="text-xl font-medium text-900 mb-2">odio-ut-enim</div>
                         <p class="mt-0 mb-3 text-600">PNG image - 660 KB</p>
                     </div>
-                    <button pButton icon="pi pi-download" class="p-button-rounded p-button-text"></button>
+                    <button pButton pRipple icon="pi pi-download" class="p-button-rounded p-button-text"></button>
                 </div>
                 <ul class="list-none m-0 p-0">
                     <li class="px-0 py-2 flex justify-content-between align-items-center border-bottom-1 surface-border">
@@ -678,7 +678,7 @@ export class GridListComponent {
                     <p class="mt-0 mb-3 text-700 line-height-3">Eget sit amet tellus cras adipiscing enim. At quis risus sed vulputate odio. Proin libero nunc consequat interdum varius sit amet.</p>
                 </div>
                 <div class="px-4 py-3 surface-100 text-right">
-                    <button pButton icon="pi pi-arrow-right" label="More" class="p-button-rounded p-button-success"></button>
+                    <button pButton pRipple icon="pi pi-arrow-right" label="More" class="p-button-rounded p-button-success"></button>
                 </div>
             </div>
         </div>
@@ -695,7 +695,7 @@ export class GridListComponent {
                     <p class="mt-0 mb-3 text-700 line-height-3">Molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Vulputate odio ut enim blandit volutpat maecenas. Convallis tellus id interdum velit.</p>
                 </div>
                 <div class="px-4 py-3 surface-100 text-right">
-                    <button pButton icon="pi pi-download" label="Load" class="p-button-rounded p-button-warning"></button>
+                    <button pButton pRipple icon="pi pi-download" label="Load" class="p-button-rounded p-button-warning"></button>
                 </div>
             </div>
         </div>
@@ -712,7 +712,7 @@ export class GridListComponent {
                     <p class="mt-0 mb-3 text-700 line-height-3">Rhoncus urna neque viverra justo nec ultrices dui sapien eget. Id neque aliquam vestibulum morbi blandit cursus risus at ipsum.</p>
                 </div>
                 <div class="px-4 py-3 surface-100 text-right">
-                    <button pButton icon="pi pi-bookmark" label="Save" class="p-button-rounded p-button-help"></button>
+                    <button pButton pRipple icon="pi pi-bookmark" label="Save" class="p-button-rounded p-button-help"></button>
                 </div>
             </div>
         </div>
@@ -723,7 +723,7 @@ export class GridListComponent {
 <div class="shadow-2 border-round surface-card p-4">
     <div class="flex align-items-center justify-content-between mb-4">
         <span class="text-xl font-medium text-900">Files</span>
-        <button pButton icon="pi pi-refresh" class="p-button-rounded p-button-outlined"></button>
+        <button pButton pRipple icon="pi pi-refresh" class="p-button-rounded p-button-outlined"></button>
     </div>
     <div class="grid">
         <div class="col-12 sm:col-6 lg:col-3 xl:col-2 p-3">

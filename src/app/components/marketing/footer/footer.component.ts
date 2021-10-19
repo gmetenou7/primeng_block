@@ -123,7 +123,7 @@ export class FooterComponent {
             <img src="assets/images/blocks/logos/bastion-700.svg" alt="Image" height="50">
             <p class="text-600 line-height-3 text-xl mb-0 mt-5">Consequat nisl vel pretium lectus quam. Scelerisque eu ultrices vitae auctor eu augue ut lectus arcu. Integer quis auctor elit sed.</p>
         </div>
-        <button pButton label="Get Started" class="mt-5 lg:mt-0 white-space-nowrap min-w-max"></button>
+        <button pButton pRipple label="Get Started" class="mt-5 lg:mt-0 white-space-nowrap min-w-max"></button>
     </div>
     <div class="py-5 border-bottom-1 border-300">
         <div class="grid">

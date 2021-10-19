@@ -43,7 +43,7 @@ export class NewsletterComponent {
         <span class="block text-indigo-100 font-medium text-xl">Subscribe for updates to ensure that you don’t miss any important news from us.</span>
         <div class="mt-5 mb-3 relative sm:w-20rem mx-auto">
             <input type="text" class="appearance-none bg-indigo-600 border-1 border-indigo-400 py-3 pl-3 w-full p-component text-indigo-100 outline-none" style="border-radius: 35px; padding-right:6rem" value="Your email">
-            <button type="button" pButton class="absolute" label="Join" style="border-radius: 35px; top: .5rem; right: .5rem"></button>
+            <button type="button" pButton pRipple class="absolute" label="Join" style="border-radius: 35px; top: .5rem; right: .5rem"></button>
         </div>
         <span class="text-indigo-200">We ensure to protect your privacy. <a tabindex="0" class="cursor-pointer text-white">Privacy Policy</a></span>
     </div>

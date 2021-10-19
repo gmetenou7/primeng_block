@@ -395,7 +395,7 @@ export class FeatureComponent {
             <div class="text-center lg:text-left mb-3 lg:mb-0">
                 <div class="font-medium text-2xl text-900 mb-3">Vitae semper quis lectus nulla</div>
                 <p class="mt-0 mb-3 line-height-3 text-700">Pretium aenean pharetra magna ac placerat vestibulum. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Fringilla urna porttitor rhoncus dolor purus non enim. Vulputate odio ut enim blandit volutpat.</p>
-                <button pButton label="Learn More" class="p-button-outlined"></button>
+                <button pButton pRipple label="Learn More" class="p-button-outlined"></button>
             </div>
         </div>
         <div class="w-full lg:w-6 text-center lg:text-right">

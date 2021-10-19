@@ -66,7 +66,7 @@ export class CardHeadingComponent implements OnInit {
 <div class="surface-card p-4 shadow-2 border-round">
     <div class="mb-3 flex align-items-center justify-content-between">
         <span class="text-xl font-medium text-900">Title</span>
-        <button pButton label="New" icon="pi pi-plus"></button>
+        <button pButton pRipple label="New" icon="pi pi-plus"></button>
     </div>
     <div style="height: 150px" class="border-2 border-dashed surface-border"></div>
 </div>`;
@@ -86,7 +86,7 @@ export class CardHeadingComponent implements OnInit {
                 </p-avatarGroup>
                 <span class="text-600">+2</span>
             </div>
-            <button pButton label="View All" icon="pi pi-search" class="p-button-outlined"></button>
+            <button pButton pRipple label="View All" icon="pi pi-search" class="p-button-outlined"></button>
         </div>
     </div>
     <div style="height: 150px" class="border-2 border-dashed surface-border"></div>
@@ -99,7 +99,7 @@ export class CardHeadingComponent implements OnInit {
             <div class="text-3xl font-medium text-900 mb-3">Card Title</div>
             <div class="font-medium text-500 mb-3">Vivamus id nisl interdum, blandit augue sit amet, eleifend mi.</div>
         </div>
-        <button pButton label="New" icon="pi pi-plus"></button>
+        <button pButton pRipple label="New" icon="pi pi-plus"></button>
     </div>
     <div style="height: 150px" class="border-2 border-dashed surface-border"></div>
 </div>`;

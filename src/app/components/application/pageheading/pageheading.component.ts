@@ -134,7 +134,7 @@ export class PageHeadingComponent {
                 <i class="pi pi-search"></i>
                 <input type="text" pInputText placeholder="Search" class="mr-3" />
             </span>
-            <button pButton icon="pi pi-user-plus" class="p-button-outlined p-button-rounded"></button>
+            <button pButton pRipple icon="pi pi-user-plus" class="p-button-outlined p-button-rounded"></button>
         </div>
     </div>
 </div>`;
@@ -165,7 +165,7 @@ export class PageHeadingComponent {
                 <i class="pi pi-search"></i>
                 <input type="text" pInputText placeholder="Search" class="mr-3 bg-gray-900" />
             </span>
-            <button pButton icon="pi pi-user-plus" class="p-button-outlined p-button-rounded"></button>
+            <button pButton pRipple icon="pi pi-user-plus" class="p-button-outlined p-button-rounded"></button>
         </div>
     </div>
 </div>`;
@@ -186,9 +186,9 @@ export class PageHeadingComponent {
                 </div>
             </div>
             <div class="mt-3 lg:mt-0">
-                <button pButton label="Follow" icon="pi pi-plus-circle" class="p-button-outlined mr-2"></button>
-                <button pButton label="Website" icon="pi pi-link" class="mr-2"></button>
-                <button pButton icon="pi pi-ellipsis-v" class="p-button-outlined p-button-rounded"></button>
+                <button pButton pRipple label="Follow" icon="pi pi-plus-circle" class="p-button-outlined mr-2"></button>
+                <button pButton pRipple label="Website" icon="pi pi-link" class="mr-2"></button>
+                <button pButton pRipple icon="pi pi-ellipsis-v" class="p-button-outlined p-button-rounded"></button>
             </div>
         </div>
     </div>
@@ -299,8 +299,8 @@ export class PageHeadingComponent {
             <p-avatar image="assets/images/blocks/avatars/circle/avatar-m-2.png" shape="circle"></p-avatar>
             <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-3.png" shape="circle"></p-avatar>
         </p-avatarGroup>
-        <button pButton type="button" label="Invite" icon="pi pi-user-plus" class="mr-3 p-button-rounded"></button>
-        <button pButton type="button" icon="pi pi-ellipsis-v" class="p-button-text p-button-rounded" (click)="menu11_1.toggle($event)"></button>
+        <button pButton pRipple type="button" label="Invite" icon="pi pi-user-plus" class="mr-3 p-button-rounded"></button>
+        <button pButton pRipple type="button" icon="pi pi-ellipsis-v" class="p-button-text p-button-rounded" (click)="menu11_1.toggle($event)"></button>
         <p-menu #menu11_1 [popup]="true" [model]="items1"></p-menu>
     </div>
 </div>`;

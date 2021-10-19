@@ -180,7 +180,7 @@ export class StatsComponent {
                 <div class="w-full lg:w-6 p-3">
                     <div class="p-3 bg-indigo-500 border-round" style="min-height: 150px">
                         <i class="pi pi-globe text-6xl text-indigo-100"></i>
-                        <button pButton label="Learn More" icon="pi pi-arrow-right" class="block mt-5 p-button-warning white-space-nowrap"></button>
+                        <button pButton pRipple label="Learn More" icon="pi pi-arrow-right" class="block mt-5 p-button-warning white-space-nowrap"></button>
                     </div>
                 </div>
             </div>

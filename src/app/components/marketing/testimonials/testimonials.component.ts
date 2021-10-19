@@ -168,7 +168,7 @@ export class TestimonialsComponent implements OnInit {
                 Magna eget est lorem ipsum dolor sit. Bibendum enim facilisis gravida neque convallis a cras semper auctor. 
                 Porttitor massa id neque aliquam vestibulum morbi. 
                 Purus non enim praesent elementum facilisis leo vel fringilla est. Donec massa sapien faucibus et molestie ac feugiat.</p>
-            <button pButton label="Learn More" class="text-2xl"></button>
+            <button pButton pRipple label="Learn More" class="text-2xl"></button>
         </div>
         <div class="flex-1">
             <div class="surface-card shadow-2 p-4 flex flex-column align-items-center md:flex-row md:align-items-start mb-5" style="border-radius: 10px">

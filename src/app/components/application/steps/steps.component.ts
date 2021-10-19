@@ -123,7 +123,7 @@ export class StepsComponent {
     block4 = `
 <div class="flex align-items-center">
     <div>
-        <button pButton class="p-button-outlined p-button-plain p-button-rounded" icon="pi pi-arrow-left"></button>
+        <button pButton pRipple class="p-button-outlined p-button-plain p-button-rounded" icon="pi pi-arrow-left"></button>
     </div>
     <span class="font-medium text-600 text-xl mx-3">1</span>
     <div class="flex-grow-1">
@@ -131,7 +131,7 @@ export class StepsComponent {
     </div>
     <span class="font-medium text-600 text-xl mx-3">6</span>
     <div>
-        <button pButton class="p-button-outlined p-button-plain p-button-rounded" icon="pi pi-arrow-right"></button>
+        <button pButton pRipple class="p-button-outlined p-button-plain p-button-rounded" icon="pi pi-arrow-right"></button>
     </div>
 </div>`;
 
