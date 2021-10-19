@@ -930,7 +930,7 @@ export class SidebarLayoutComponent {
 
     block7 = `
 <div class="min-h-screen flex relative lg:static" style="background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);">
-    <div id="app-sidebar-7" class="h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 border-right-1 select-none animation-duration-300 animation-ease-in-out" style="width:280px; border-color: rgba(255,255,255,.3); background-image: linear-gradient(120deg, #e0c3fc 0%, #ccc3fc 100%);">
+    <div id="app-sidebar-7" class="h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 select-none animation-duration-300 animation-ease-in-out bg-white-alpha-50" style="width:280px; border-color: rgba(255,255,255,.3);backdrop-filter: blur(10px);">
         <div class="flex flex-column h-full">
             <div class="flex align-items-center px-5 flex-shrink-0" style="height:60px">
                 <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="30">
@@ -1082,7 +1082,7 @@ export class SidebarLayoutComponent {
         </div>
     </div>
     <div class="min-h-screen flex flex-column relative flex-auto">
-        <div class="flex justify-content-between align-items-center px-5 border-bottom-1 relative lg:static" style="height:60px; border-color: rgba(255,255,255,.4)">
+        <div class="flex justify-content-between align-items-center px-5 border-bottom-1 relative lg:static bg-white-alpha-50" style="height:60px; border-color: rgba(255,255,255,.4)">
             <div class="flex">
                 <a class="cursor-pointer block lg:hidden text-gray-800 mr-3" pStyleClass="#app-sidebar-7" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                     <i class="pi pi-bars text-4xl"></i>
@@ -1091,7 +1091,7 @@ export class SidebarLayoutComponent {
             <a class="cursor-pointer block lg:hidden text-gray-800" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                 <i class="pi pi-ellipsis-v text-2xl"></i>
             </a>
-            <ul class="list-none p-0 m-0 hidden lg:flex lg:align-items-center select-none lg:flex-row right-0 top-100 z-1 shadow-2 lg:shadow-none absolute lg:static px-3 py-3 lg:py-0 mr-3 lg:mr-0" style="background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); border-radius: 30px">
+            <ul class="list-none p-0 m-0 hidden lg:flex lg:align-items-center select-none lg:flex-row right-0 top-100 z-1 shadow-2 lg:shadow-none absolute lg:static px-3 py-3 lg:py-0 mr-3 lg:mr-0" style="backdrop-filter: blur(10px)">
                 <li class="mr-0 lg:mr-3">
                     <a class="flex p-3 lg:p-2 align-items-center text-gray-800 hover:bg-purple-50 font-medium cursor-pointer
                         transition-duration-150 transition-colors" style="border-radius: 30px">
@@ -1119,7 +1119,7 @@ export class SidebarLayoutComponent {
             </ul>
         </div>
         <div class="p-5 flex flex-column flex-auto">
-            <div class="border-2 border-dashed border-round flex-auto" style="border-color: rgba(255,255,255,.4)">
+            <div class="border-2 border-dashed border-round flex-auto bg-white-alpha-50" style="border-color: rgba(255,255,255,.4)">
                 
             </div>
         </div>
