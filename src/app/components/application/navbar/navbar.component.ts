@@ -615,10 +615,10 @@ export class NavBarComponent {
 <div class="relative">
     <div class="bg-gray-900 px-6 py-3 lg:py-2 flex align-items-center justify-content-between lg:static border-bottom-none" style="min-height: 81px">
         <img src="assets/images/blocks/logos/bastion-300.svg" alt="Image" height="40" class="mr-0 lg:mr-6">
-        <a class="cursor-pointer block lg:hidden text-gray-400" pStyleClass="#navbar-sub-8" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+        <a class="cursor-pointer block lg:hidden text-gray-400" pStyleClass="#navbar-sub-9" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
             <i class="pi pi-ellipsis-v text-2xl"></i>
         </a>
-        <div id="navbar-sub-8" class="hidden lg:block absolute lg:static lg:w-auto w-full bg-gray-900 left-0 top-100 z-1 shadow-2 lg:shadow-none">
+        <div id="navbar-sub-9" class="hidden lg:block absolute lg:static lg:w-auto w-full bg-gray-900 left-0 top-100 z-1 shadow-2 lg:shadow-none">
             <ul class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row border-top-1 border-gray-800  lg:border-top-none">
                 <li>
                     <a class="flex px-6 p-3 lg:px-3 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium border-round cursor-pointer transition-colors transition-duration-150">
@@ -648,7 +648,7 @@ export class NavBarComponent {
         <a class="cursor-pointer flex bg-indigo-700 px-6 py-2 align-items-center hover:bg-indigo-600 transition-colors transition-duration-150 relative"
             pStyleClass="#dashboards" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
             <span class="border-round bg-orange-400 text-gray-900 inline-flex align-items-center justify-content-center flex-shrink-0 mr-3" style="width:40px;height:40px">AD</span>
-            <div class="hidden lg:block">
+            <div class="hidden lg:block select-none">
                 <span class="text-indigo-100 block mb-1 text-lg font-medium white-space-nowrap">Analytics Dashboard</span>
                 <p class="m-0 text-indigo-200">5 New Actions</p>
             </div>
@@ -656,13 +656,13 @@ export class NavBarComponent {
             <div id="dashboards" class="hidden absolute left-0 top-100 shadow-2 bg-indigo-700 border-round-bottom w-full origin-top">
                 <ul class="list-none m-0 px-0 lg:px-6 py-3">
                     <li>
-                        <a class="flex p-3 align-items-center text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150 border-round">
+                        <a class="flex p-3 align-items-center text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150 border-round select-none">
                             <i class="pi pi-shopping-cart mr-2"></i>
                             <span class="font-medium">Sales</span>
                         </a>
                     </li>
                     <li>
-                        <a class="flex p-3 align-items-center text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150 border-round">
+                        <a class="flex p-3 align-items-center text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 transition-colors transition-duration-150 border-round select-none">
                             <i class="pi pi-users mr-2"></i>
                             <span class="font-medium">Users</span>
                         </a>
@@ -732,7 +732,7 @@ export class NavBarComponent {
                             <span>Stats</span>
                         </a>
                     </li>
-                    <li class="border-top-1 lg:border-left-1 my-3 lg:my-0 lg:border-top-none border-indigo-400 lg:ml-auto pl-3">
+                    <li class="border-top-1 xl:border-left-1 my-3 xl:my-0 xl:border-top-none border-indigo-400 xl:ml-auto pl-3">
                         <span class="p-input-icon-left">
                             <i class="pi pi-search text-indigo-200"></i>
                             <input type="text" class="bg-transparent appearance-none border-none py-3 pr-3 pl-5 p-component text-indigo-200 outline-none w-full">        
