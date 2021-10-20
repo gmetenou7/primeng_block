@@ -314,14 +314,13 @@ export class PricingComponent {
 
     block4: string = `
 <div class="surface-ground px-4 py-8 md:px-6 lg:px-8 bg-no-repeat bg-cover" style="background: url('assets/images/blocks/pricing/pricing-4.svg');">
-    <div class="grid">
-        <div class="col-12 lg:col-6 lg:pr-5 lg:mb-5">
+    <div class="flex flex-wrap">
+        <div class="w-full lg:w-6 lg:pr-8">
             <div class="text-900 font-bold text-6xl mb-4">Pricing</div>
-            <div class="text-700 text-xl line-height-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
-                numquam eligendi quos.</div>
+            <div class="text-700 text-xl line-height-3 mb-4 lg:mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velitnumquam eligendi quos.</div>
         </div>
-        <div class="col-12 md:col-6 lg:col-3 lg:mb-5">
-            <ul class="list-none p-0 m-0 flex-grow-1">
+        <div class="w-full md:w-6 lg:w-3">
+            <ul class="list-none p-0 m-0">
                 <li class="flex align-items-center my-4">
                     <i class="pi pi-check text-green-500 mr-3"></i>
                     <span>Arcu vitae elementum</span>
@@ -336,8 +335,8 @@ export class PricingComponent {
                 </li>
             </ul>
         </div>
-        <div class="col-12 md:col-6 lg:col-3 lg:mb-5">
-            <ul class="list-none p-0 m-0 flex-grow-1">
+        <div class="w-full md:w-6 lg:w-3 md:pl-5">
+            <ul class="list-none p-0 m-0">
                 <li class="flex align-items-center my-4">
                     <i class="pi pi-check text-green-500 mr-3"></i>
                     <span>Duis ultricies lacus sed</span>
@@ -352,63 +351,45 @@ export class PricingComponent {
                 </li>
             </ul>
         </div>
-        <div class="col-12 lg:col-4">
-            <div class="h-full lg:pr-3">
-                <div class="shadow-2 p-3 h-full flex flex-column bg-primary" style="border-radius: 6px">
-                    <div class="font-medium text-xl mb-5">Free Forever</div>
-                    <div class="font-bold text-4xl mb-5">Free</div>
-                    <button pButton pRipple label="Create Account" class="p-2 surface-0 text-primary outline-none w-full mt-auto mb-5"></button>
-                    <p class="text-sm line-height-2">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos.
-                    </p>
-                </div>
+    </div>
+    <div class="flex flex-wrap mt-5 -mx-3">
+        <div class="w-full lg:w-4 p-3">
+            <div class="shadow-2 p-3 h-full bg-primary" style="border-radius: 6px">
+                <div class="font-medium text-xl mb-5">Free Forever</div>
+                <div class="font-bold text-5xl mb-5">Free</div>
+                <button type="button" pRipple class="font-medium appearance-none border-none p-2 surface-0 text-primary hover:surface-100 p-component lg:w-full border-rounded cursor-pointer transition-colors transition-duration-150" style="border-radius: 6px">
+                    <span>Create Account</span>
+                </button>
+                <p class="text-sm line-height-3 mb-0 mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </div>
         </div>
-        <div class="col-12 lg:col-4 mt-3 lg:m-0">
-            <div class="h-full lg:px-2">
-                <div class="shadow-2 p-3 h-full flex flex-column surface-card" style="border-radius: 6px">
-                    <div class="text-900 font-medium text-xl mb-5">Monthly</div>
-                    <div class="lex align-items-center mb-5">
-                        <span class="text-900 font-bold text-4xl">$29</span>
-                        <span class="font-medium text-500 line-height-3 ml-2 ">per month</span>
-                    </div>
-                    <button pRipple class="flex align-items-center justify-content-center p-button p-2 w-full mt-auto mb-5">
-                        <span>
-                            Proceed Monthly
-                        </span>
-                        <i class="pi pi-arrow-right ml-2"></i>
-                    </button>
-                    <p class="text-500 text-sm line-height-2">
-                        Nec ultrices dui sapien eget. Amet nulla facilisi morbi tempus.
-                    </p>
+        <div class="w-full lg:w-4 p-3">
+            <div class="shadow-2 p-3 h-full surface-card" style="border-radius: 6px">
+                <div class="font-medium text-xl mb-5 text-900 ">Monthly</div>
+                <div class="flex align-items-center mb-5">
+                    <span class="text-900 font-bold text-5xl">$29</span>
+                    <span class="font-medium text-500 ml-2">per month</span>
                 </div>
+                <button pButton pRipple label="Proceed Monthly" icon="pi pi-arrow-right" iconPos="right" class="lg:w-full font-medium p-2" style="border-radius: 6px"></button>
+                <p class="text-sm line-height-3 mb-0 mt-5">Nec ultrices dui sapien eget. Amet nulla facilisi morbi tempus.</p>
             </div>
         </div>
-        <div class="col-12 lg:col-4 mt-3 lg:m-0">
-            <div class="h-full lg:pl-3">
-                <div class="shadow-2 p-3 h-full flex flex-column surface-card" style="border-radius: 6px">
-                    <div class="flex flex-row justify-content-between mb-5 align-items-center">
-                        <div class="text-900 text-xl font-medium">Yearly</div>
-                        <span class="bg-orange-100 500 text-orange-500 font-semibold px-2">🎉 Save 20%</span>
-                    </div>
-                    <div class="flex align-items-center mb-5">
-                        <span class="font-bold text-4xl text-900">$275</span>
-                        <span class="font-medium text-500 line-height-3 ml-2">per year</span>
-                    </div>
-                    <button pRipple class="flex align-items-center justify-content-center p-button p-2 w-full mt-auto mb-5">
-                        <span>
-                            Proceed Yearly
-                        </span>
-                        <i class="pi pi-arrow-right ml-2"></i>
-                    </button>
-                    <p class="text-500 text-sm line-height-2"> Placerat in egestas erat imperdiet sed euismod nisi porta.
-                    </p>
+        <div class="w-full lg:w-4 p-3">
+            <div class="shadow-2 p-3 h-full flex flex-column surface-card" style="border-radius: 6px">
+                <div class="flex flex-row justify-content-between mb-5 align-items-center">
+                    <div class="text-900 text-xl font-medium">Yearly</div>
+                    <span class="bg-orange-100 500 text-orange-500 font-semibold px-2 border-round">🎉 Save 20%</span>
                 </div>
+                <div class="flex align-items-center mb-5">
+                    <span class="text-900 font-bold text-5xl">$275</span>
+                    <span class="font-medium text-500 ml-2">per year</span>
+                </div>
+                <button pButton pRipple label="Proceed Yearly" icon="pi pi-arrow-right" iconPos="right" class="lg:w-full font-medium p-2" style="border-radius: 6px"></button>
+                <p class="text-sm line-height-3 mb-0 mt-5">Placerat in egestas erat imperdiet sed euismod nisi porta.</p>
             </div>
         </div>
     </div>
-</div>
-`;
+</div>`;
 
     block5: string = `
 <div class="surface-card px-4 py-8 md:px-6 lg:px-8">
@@ -519,6 +500,6 @@ export class PricingComponent {
             </div>
         </div>
     </div>
-</div>
-`;
+</div>`;
+
 }
