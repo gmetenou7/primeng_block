@@ -129,7 +129,7 @@ export class DashboardComponent implements OnInit {
                 </ul>
             </div>
             <div class="mt-auto">
-                <hr class="mb-3 mx-3 border-top-1 surface-border" />
+                <hr class="mb-3 mx-3 border-top-1 border-none surface-border" />
                 <a pRipple class="m-3 flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors">
                     <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-2" style="width: 28px; height: 28px"/>
                     <span class="font-medium">Amy Elsner</span>
@@ -905,7 +905,7 @@ export class DashboardComponent implements OnInit {
                 </ul>
             </div>
             <div class="mt-auto">
-                <hr class="mb-3 mx-3 border-top-1 surface-border" />
+                <hr class="mb-3 mx-3 border-top-1 border-none surface-border" />
                 <a pRipple class="m-3 flex flex-row lg:flex-column align-items-center cursor-pointer p-3 lg:justify-content-center hover:surface-200 border-round text-600 transition-duration-150 transition-colors">
                     <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-2 lg:mr-0" style="width: 32px; height: 32px"/>
                     <span class="font-medium inline lg:hidden">Amy Elsner</span>

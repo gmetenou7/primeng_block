@@ -54,7 +54,7 @@ export class SettingScreenComponent implements OnInit {
                     </ul>
                 </div>
                 <div class="mt-auto">
-                    <hr class="mb-3 mx-3 border-top-1 border-bottom-none border-indigo-300" />
+                    <hr class="mb-3 mx-3 border-top-1 border-none border-indigo-300" />
                     <a pRipple class="m-3 flex align-items-center cursor-pointer py-1 px-0 justify-content-center hover:bg-indigo-400 border-round text-300 hover:text-0
                         transition-duration-150 transition-colors">
                         <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" style="width: 24px; height: 24px"/>

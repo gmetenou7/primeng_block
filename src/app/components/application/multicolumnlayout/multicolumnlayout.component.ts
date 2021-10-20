@@ -58,7 +58,7 @@ export class MultiColumnLayoutComponent {
                     </ul>
                 </div>
                 <div class="mt-auto">
-                    <hr class="mb-3 mx-3 border-top-1 border-bottom-none border-indigo-300" />
+                    <hr class="mb-3 mx-3 border-top-1 border-none border-indigo-300" />
                     <a pRipple class="m-3 flex align-items-center cursor-pointer py-1 px-0 justify-content-center hover:bg-indigo-400 border-round text-300 hover:text-0
                         transition-duration-150 transition-colors">
                         <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" style="width: 24px; height: 24px"/>
@@ -210,7 +210,7 @@ export class MultiColumnLayoutComponent {
                 </ul>
             </div>
             <div class="mt-auto">
-                <hr class="mx-3 border-top-1 surface-border" />
+                <hr class="mx-3 border-top-1 border-none surface-border" />
                 <a pRipple class="my-3 flex flex-row lg:flex-column align-items-center cursor-pointer p-3 lg:justify-content-center text-600 border-left-2 border-transparent hover:border-300 transition-duration-150 transition-colors">
                     <i class="pi pi-sign-out mr-2 lg:mr-0 text-base lg:text-2xl text-pink-500"></i>
                     <span class="font-medium inline lg:hidden">Sign Out</span>
@@ -328,7 +328,7 @@ export class MultiColumnLayoutComponent {
                     </ul>
                 </div>
                 <div class="mt-auto">
-                    <hr class="mb-3 mx-2 border-top-1 border-bottom-none border-indigo-300" />
+                    <hr class="mb-3 mx-2 border-top-1 border-none border-indigo-300" />
                     <a pRipple class="m-3 flex align-items-center cursor-pointer p-2 justify-content-center hover:bg-indigo-600 border-round text-300 hover:text-0
                         transition-duration-150 transition-colors">
                         <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" style="width: 24px; height: 24px"/>
