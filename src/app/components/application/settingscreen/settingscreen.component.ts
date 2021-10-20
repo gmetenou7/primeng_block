@@ -161,7 +161,7 @@ export class SettingScreenComponent implements OnInit {
                 </a>
                 <span class="p-input-icon-left">
                     <i class="pi pi-search"></i>
-                    <input type="search" pInputText class="border-none" placeholder="Search">
+                    <input type="text" pInputText class="border-none w-10rem sm:w-20rem" placeholder="Search">
                 </span>
             </div>
             <a pRipple class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">

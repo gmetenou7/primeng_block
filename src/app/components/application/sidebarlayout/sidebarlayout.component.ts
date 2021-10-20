@@ -144,7 +144,7 @@ export class SidebarLayoutComponent {
                 </a>
                 <span class="p-input-icon-left">
                     <i class="pi pi-search"></i>
-                    <input type="search" pInputText class="border-none" placeholder="Search">
+                    <input type="text" pInputText class="border-none w-10rem sm:w-20rem" placeholder="Search">
                 </span>
             </div>
             <a pRipple class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
@@ -326,7 +326,7 @@ export class SidebarLayoutComponent {
                 </a>
                 <span class="p-input-icon-left">
                     <i class="pi pi-search"></i>
-                    <input type="search" pInputText class="border-none" placeholder="Search">
+                    <input type="text" pInputText class="border-none w-10rem sm:w-20rem" placeholder="Search">
                 </span>
             </div>
             <a pRipple class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
@@ -497,7 +497,7 @@ export class SidebarLayoutComponent {
                 </a>
                 <span class="p-input-icon-left">
                     <i class="pi pi-search"></i>
-                    <input type="search" pInputText class="border-none" placeholder="Search">
+                    <input type="text" pInputText class="border-none w-10rem sm:w-20rem" placeholder="Search">
                 </span>
             </div>
             <a pRipple class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
@@ -636,7 +636,7 @@ export class SidebarLayoutComponent {
                 </a>
                 <span class="p-input-icon-left">
                     <i class="pi pi-search"></i>
-                    <input type="search" pInputText class="border-none" placeholder="Search">
+                    <input type="text" pInputText class="border-none w-10rem sm:w-20rem" placeholder="Search">
                 </span>
             </div>
             <a pRipple class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
@@ -774,7 +774,7 @@ export class SidebarLayoutComponent {
                 </a>
                 <span class="p-input-icon-left">
                     <i class="pi pi-search"></i>
-                    <input type="search" pInputText class="border-none" placeholder="Search">
+                    <input type="text" pInputText class="border-none w-10rem sm:w-20rem" placeholder="Search">
                 </span>
             </div>
             <a pRipple class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
@@ -826,7 +826,7 @@ export class SidebarLayoutComponent {
             <div class="my-3 p-3">
                     <span class="p-input-icon-left">
                         <i class="pi pi-search text-indigo-50"></i>
-                        <input type="search" pInputText class="appearance-none border-none bg-indigo-700 text-indigo-50 w-full">
+                        <input type="text" pInputText class="appearance-none border-none bg-indigo-700 text-indigo-50 w-full">
                     </span>
                 </div>
             <div class="overflow-y-auto">
@@ -1420,7 +1420,7 @@ export class SidebarLayoutComponent {
                 </a>
                 <span class="p-input-icon-left">
                     <i class="pi pi-search"></i>
-                    <input type="search" pInputText class="border-none" placeholder="Search">
+                    <input type="text" pInputText class="border-none w-10rem sm:w-20rem" placeholder="Search">
                 </span>
             </div>
             <a pRipple class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
@@ -1473,7 +1473,7 @@ export class SidebarLayoutComponent {
                 <div class="p-3">
                     <div class="p-input-icon-left w-full">
                         <i class="pi pi-search"></i>
-                        <input type="search" pInputText class="border-1 surface-border w-full" placeholder="Search" style="border-radius: 30px">
+                        <input type="text" pInputText class="border-1 surface-border w-full" placeholder="Search" style="border-radius: 30px">
                     </div>
                 </div>
                 <ul class="list-none p-3 m-0">
@@ -1917,7 +1917,7 @@ export class SidebarLayoutComponent {
                     <div class="p-3">
                         <div class="p-input-icon-left w-full">
                             <i class="pi pi-search"></i>
-                            <input type="search" pInputText class="border-1 surface-border w-full" placeholder="Search" style="border-radius: 30px">
+                            <input type="text" pInputText class="border-1 surface-border w-full" placeholder="Search" style="border-radius: 30px">
                         </div>
                     </div>
                     <ul class="list-none px-3 pb-3 pt-0 m-0">
