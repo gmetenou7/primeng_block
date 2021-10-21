@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --surface-a:#ffffff;
   --surface-b:#f5f5f5;
@@ -41,6 +40,8 @@
   --surface-overlay:#ffffff;
   --surface-border:#ebebeb;
   --surface-hover:#edf0fA;
+  --maskbg: rgba(0, 0, 0, 0.4);
+  --focus-ring: 0 0 0 0.1rem #bbc7ee;
 }
 
 /* poppins-300 - latin-ext_latin */
@@ -115,6 +116,31 @@
   outline: 0 none;
   outline-offset: 0;
   box-shadow: 0 0 0 0.1rem #bbc7ee;
+}
+
+.p-component-overlay-enter {
+  animation: p-component-overlay-enter-animation 150ms forwards;
+}
+
+.p-component-overlay-leave {
+  animation: p-component-overlay-leave-animation 150ms forwards;
+}
+
+@keyframes p-component-overlay-enter-animation {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: var(--maskbg);
+  }
+}
+@keyframes p-component-overlay-leave-animation {
+  from {
+    background-color: var(--maskbg);
+  }
+  to {
+    background-color: transparent;
+  }
 }
 
 :root {
@@ -761,6 +787,7 @@ p-chips.ng-dirty.ng-invalid > .p-chips > .p-inputtext {
 }
 .p-dropdown-panel .p-dropdown-header .p-dropdown-filter {
   padding-right: 1.75rem;
+  margin-right: -1.75rem;
 }
 .p-dropdown-panel .p-dropdown-header .p-dropdown-filter-icon {
   right: 0.75rem;
@@ -929,26 +956,36 @@ p-dropdown.ng-dirty.ng-invalid > .p-dropdown {
 }
 
 .p-inputgroup > .p-component,
+.p-inputgroup > .p-element,
+.p-inputgroup > .p-inputwrapper > .p-component > .p-inputtext,
 .p-inputgroup > .p-float-label > .p-component {
   border-radius: 0;
   margin: 0;
 }
 .p-inputgroup > .p-component + .p-inputgroup-addon,
+.p-inputgroup > .p-element + .p-inputgroup-addon,
+.p-inputgroup > .p-inputwrapper > .p-component > .p-inputtext + .p-inputgroup-addon,
 .p-inputgroup > .p-float-label > .p-component + .p-inputgroup-addon {
   border-left: 0 none;
 }
 .p-inputgroup > .p-component:focus,
+.p-inputgroup > .p-element:focus,
+.p-inputgroup > .p-inputwrapper > .p-component > .p-inputtext:focus,
 .p-inputgroup > .p-float-label > .p-component:focus {
   z-index: 1;
 }
 .p-inputgroup > .p-component:focus ~ label,
+.p-inputgroup > .p-element:focus ~ label,
+.p-inputgroup > .p-inputwrapper > .p-component > .p-inputtext:focus ~ label,
 .p-inputgroup > .p-float-label > .p-component:focus ~ label {
   z-index: 1;
 }
 
 .p-inputgroup-addon:first-child,
 .p-inputgroup button:first-child,
-.p-inputgroup input:first-child {
+.p-inputgroup input:first-child,
+.p-inputgroup > .p-inputwrapper:first-child > .p-component,
+.p-inputgroup > .p-inputwrapper:first-child > .p-component > .p-inputtext {
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
@@ -960,7 +997,9 @@ p-dropdown.ng-dirty.ng-invalid > .p-dropdown {
 
 .p-inputgroup-addon:last-child,
 .p-inputgroup button:last-child,
-.p-inputgroup input:last-child {
+.p-inputgroup input:last-child,
+.p-inputgroup > .p-inputwrapper:last-child > .p-component,
+.p-inputgroup > .p-inputwrapper:last-child > .p-component > .p-inputtext {
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
 }
@@ -2675,7 +2714,7 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   font-size: 1rem;
 }
 .fc.fc-unthemed .fc-toolbar .fc-button .fc-icon-chevron-left:before {
-  content: "";
+  content: "\e900";
 }
 .fc.fc-unthemed .fc-toolbar .fc-button .fc-icon-chevron-right {
   font-family: "PrimeIcons" !important;
@@ -2683,7 +2722,7 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   font-size: 1rem;
 }
 .fc.fc-unthemed .fc-toolbar .fc-button .fc-icon-chevron-right:before {
-  content: "";
+  content: "\e901";
 }
 .fc.fc-unthemed .fc-toolbar .fc-button:focus {
   outline: 0 none;
@@ -2770,7 +2809,7 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 .fc.fc-theme-standard .fc-view-harness .fc-popover .fc-popover-header .fc-popover-close:before {
-  content: "";
+  content: "\e90b";
 }
 .fc.fc-theme-standard .fc-view-harness .fc-popover .fc-popover-header .fc-popover-close:enabled:hover {
   color: #6c6c6c;
@@ -2843,7 +2882,7 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   font-size: 1rem;
 }
 .fc.fc-theme-standard .fc-toolbar .fc-button .fc-icon-chevron-left:before {
-  content: "";
+  content: "\e900";
 }
 .fc.fc-theme-standard .fc-toolbar .fc-button .fc-icon-chevron-right {
   font-family: "PrimeIcons" !important;
@@ -2851,7 +2890,7 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   font-size: 1rem;
 }
 .fc.fc-theme-standard .fc-toolbar .fc-button .fc-icon-chevron-right:before {
-  content: "";
+  content: "\e901";
 }
 .fc.fc-theme-standard .fc-toolbar .fc-button:focus {
   outline: 0 none;
@@ -2895,6 +2934,9 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
 .fc.fc-theme-standard .fc-toolbar .fc-button-group .fc-button:last-child {
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
+}
+.fc.fc-theme-standard a {
+  color: #6c6c6c;
 }
 
 .p-orderlist .p-orderlist-controls {
@@ -3054,6 +3096,13 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
 }
 .p-paginator .p-dropdown .p-dropdown-label {
   padding-right: 0;
+}
+.p-paginator .p-paginator-page-input {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.p-paginator .p-paginator-page-input .p-inputtext {
+  max-width: 2.857rem;
 }
 .p-paginator .p-paginator-current {
   background-color: transparent;
@@ -3788,7 +3837,7 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
 .p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
   outline: 0 none;
   outline-offset: 0;
-  box-shadow: 0 0 0 0.1rem #bbc7ee;
+  box-shadow: inset 0 0 0 0.1rem #bbc7ee;
 }
 .p-tabview .p-tabview-nav li:not(.p-highlight):not(.p-disabled):hover .p-tabview-nav-link {
   background: #ffffff;
@@ -3808,6 +3857,18 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
 }
 .p-tabview .p-tabview-close {
   margin-left: 0.5rem;
+}
+.p-tabview .p-tabview-nav-btn.p-link {
+  background: #ffffff;
+  color: #5472d4;
+  width: 2.857rem;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0;
+}
+.p-tabview .p-tabview-nav-btn.p-link:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: inset 0 0 0 0.1rem #bbc7ee;
 }
 .p-tabview .p-tabview-panels {
   background: #ffffff;
@@ -3937,10 +3998,6 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   margin-left: 1rem;
 }
 
-.p-dialog-mask.p-component-overlay {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
 .p-overlaypanel {
   background: #ffffff;
   color: #6c6c6c;
@@ -4019,10 +4076,6 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
 }
 .p-sidebar .p-sidebar-content {
   padding: 1rem;
-}
-
-.p-sidebar-mask.p-component-overlay {
-  background: rgba(0, 0, 0, 0.4);
 }
 
 .p-tooltip .p-tooltip-text {
@@ -4194,6 +4247,66 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   font-size: 0.875rem;
 }
 
+.p-dock .p-dock-list {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+}
+.p-dock .p-dock-item {
+  padding: 0.5rem;
+}
+.p-dock .p-dock-action {
+  width: 4rem;
+  height: 4rem;
+}
+.p-dock.p-dock-top .p-dock-item-second-prev,
+.p-dock.p-dock-top .p-dock-item-second-next, .p-dock.p-dock-bottom .p-dock-item-second-prev,
+.p-dock.p-dock-bottom .p-dock-item-second-next {
+  margin: 0 0.9rem;
+}
+.p-dock.p-dock-top .p-dock-item-prev,
+.p-dock.p-dock-top .p-dock-item-next, .p-dock.p-dock-bottom .p-dock-item-prev,
+.p-dock.p-dock-bottom .p-dock-item-next {
+  margin: 0 1.3rem;
+}
+.p-dock.p-dock-top .p-dock-item-current, .p-dock.p-dock-bottom .p-dock-item-current {
+  margin: 0 1.5rem;
+}
+.p-dock.p-dock-left .p-dock-item-second-prev,
+.p-dock.p-dock-left .p-dock-item-second-next, .p-dock.p-dock-right .p-dock-item-second-prev,
+.p-dock.p-dock-right .p-dock-item-second-next {
+  margin: 0.9rem 0;
+}
+.p-dock.p-dock-left .p-dock-item-prev,
+.p-dock.p-dock-left .p-dock-item-next, .p-dock.p-dock-right .p-dock-item-prev,
+.p-dock.p-dock-right .p-dock-item-next {
+  margin: 1.3rem 0;
+}
+.p-dock.p-dock-left .p-dock-item-current, .p-dock.p-dock-right .p-dock-item-current {
+  margin: 1.5rem 0;
+}
+
+@media screen and (max-width: 960px) {
+  .p-dock.p-dock-top .p-dock-list-container, .p-dock.p-dock-bottom .p-dock-list-container {
+    overflow-x: auto;
+    width: 100%;
+  }
+  .p-dock.p-dock-top .p-dock-list-container .p-dock-list, .p-dock.p-dock-bottom .p-dock-list-container .p-dock-list {
+    margin: 0 auto;
+  }
+  .p-dock.p-dock-left .p-dock-list-container, .p-dock.p-dock-right .p-dock-list-container {
+    overflow-y: auto;
+    height: 100%;
+  }
+  .p-dock.p-dock-left .p-dock-list-container .p-dock-list, .p-dock.p-dock-right .p-dock-list-container .p-dock-list {
+    margin: auto 0;
+  }
+  .p-dock .p-dock-list .p-dock-item {
+    transform: none;
+    margin: 0;
+  }
+}
 .p-megamenu {
   padding: 0.5rem;
   background: #f5f5f5;
@@ -4912,7 +5025,7 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
 .p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link:not(.p-disabled):focus {
   outline: 0 none;
   outline-offset: 0;
-  box-shadow: 0 0 0 0.1rem #bbc7ee;
+  box-shadow: inset 0 0 0 0.1rem #bbc7ee;
 }
 .p-tabmenu .p-tabmenu-nav .p-tabmenuitem:not(.p-highlight):not(.p-disabled):hover .p-menuitem-link {
   background: #ffffff;
@@ -5317,8 +5430,46 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   box-shadow: 0 0 0 0.1rem #bbc7ee;
 }
 
-.p-galleria-mask.p-component-overlay {
-  background-color: rgba(0, 0, 0, 0.9);
+.p-galleria-mask {
+  --maskbg: rgba(0, 0, 0, 0.9);
+}
+
+.p-image-mask {
+  --maskbg: rgba(0, 0, 0, 0.9);
+}
+
+.p-image-preview-indicator {
+  background-color: transparent;
+  color: #f8f9fa;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.p-image-preview-container:hover > .p-image-preview-indicator {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.p-image-toolbar {
+  padding: 1rem;
+}
+
+.p-image-action.p-link {
+  color: #f8f9fa;
+  background-color: transparent;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  margin-right: 0.5rem;
+}
+.p-image-action.p-link:last-child {
+  margin-right: 0;
+}
+.p-image-action.p-link:hover {
+  color: #f8f9fa;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.p-image-action.p-link i {
+  font-size: 1.5rem;
 }
 
 .p-avatar {
@@ -5386,10 +5537,6 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   min-width: 3rem;
   height: 3rem;
   line-height: 3rem;
-}
-
-.p-blockui.p-component-overlay {
-  background: rgba(0, 0, 0, 0.4);
 }
 
 .p-chip {
@@ -5561,10 +5708,10 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   margin-left: auto;
 }
 .p-accordion .p-accordion-toggle-icon.pi-chevron-right::before {
-  content: "";
+  content: "\e90d";
 }
 .p-accordion .p-accordion-toggle-icon.pi-chevron-down::before {
-  content: "";
+  content: "\e90f";
 }
 .p-accordion .p-accordion-header.p-highlight .p-accordion-header-link {
   padding-bottom: calc(1rem + 2px);
@@ -5624,10 +5771,10 @@ p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   margin-left: auto;
 }
 .p-panelmenu .p-panelmenu-icon.pi-chevron-right::before {
-  content: "";
+  content: "\e90d";
 }
 .p-panelmenu .p-panelmenu-icon.pi-chevron-down::before {
-  content: "";
+  content: "\e90f";
 }
 .p-panelmenu .p-panelmenu-header.p-highlight > a {
   padding-bottom: calc(1rem + 2px);
