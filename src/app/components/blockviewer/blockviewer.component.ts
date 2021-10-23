@@ -18,11 +18,11 @@ enum BlockView {
                 </span>
                 <div class="block-actions">
                     <a tabindex="0" [ngClass]="{'block-action-active': blockView == BlockView.PREVIEW}" (click)="activateView($event, BlockView.PREVIEW)"><span>Preview</span></a>
-                    <a tabindex="0" [ngClass]="{'block-action-active': blockView == BlockView.CODE, 'block-action-disabled': codeDisabled}" (click)="activateView($event, BlockView.CODE)">
+                    <a [attr.tabindex]="codeDisabled ? null: '0'" [ngClass]="{'block-action-active': blockView == BlockView.CODE, 'block-action-disabled': codeDisabled}" (click)="activateView($event, BlockView.CODE)">
                         <i class="pi pi-lock" *ngIf="codeDisabled"></i>
                         <span>Code</span>
                     </a>
-                    <a tabindex="0" class="block-action-copy" [ngClass]="{'block-action-disabled': codeDisabled}" (click)="copyCode($event)" 
+                    <a [attr.tabindex]="codeDisabled ? null: '0'" class="block-action-copy" [ngClass]="{'block-action-disabled': codeDisabled}" (click)="copyCode($event)" 
                         pTooltip="Copied to clipboard" tooltipEvent="focus" tooltipPosition="bottom" [tooltipDisabled]="codeDisabled"><i class="pi pi-copy"></i></a>
                 </div>
             </div>
