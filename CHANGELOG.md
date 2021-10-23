@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.2
+
+- Corrected hover state of sign-out button in Application / Sidebar Layout / Floating Menu.
+
 ## 2.0.1
 
 - Updated to PrimeNG 12.2.1
