@@ -205,7 +205,7 @@ export class SignInComponent implements OnInit {
     <div class="p-6 shadow-2 text-center lg:w-30rem" style="border-radius: 12px;background-color: rgba(255,255,255,.1);color: rgba(255,255,255,.8)">
         <div class="text-4xl font-medium mb-6">Welcome</div>
         <input type="text" class="appearance-none border-none p-3 w-full outline-none text-xl block mb-4 bg-white-alpha-10 text-white-alpha-60" value="Email" style="border-radius: 30px">
-        <input type="text" class="appearance-none border-none p-3 w-full outline-none text-xl mb-4 bg-white-alpha-10 text-white-alpha-60" type="password" value="Password" style="border-radius: 30px">
+        <input type="password" class="appearance-none border-none p-3 w-full outline-none text-xl mb-4 bg-white-alpha-10 text-white-alpha-60" value="Password" style="border-radius: 30px">
         <button type="button" class="appearance-none border-none p-3 w-full outline-none text-xl mb-4 font-medium w-12rem bg-white-alpha-30 hover:bg-white-alpha-40 active:bg-white-alpha-20 text-white-alpha-80 cursor-pointer transition-colors transition-duration-150" style="border-radius: 30px">Sign In</button>
         <a class="cursor-pointer font-medium block text-center">Forgot Password?</a>
     </div>
