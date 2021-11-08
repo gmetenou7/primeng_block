@@ -45,7 +45,7 @@ export class CardHeadingComponent implements OnInit {
 
     block4 = `
 <div class="surface-card p-4 shadow-2 border-round">
-    <div class="mb-3 flex flex-column md:flex-row align-items-end md:align-items-center md:justify-content-between">
+    <div class="mb-3 flex flex-column md:flex-row md:align-items-center md:justify-content-between">
         <div class="flex align-items-start">
             <img src="assets/images/blocks/logos/hyper.svg" alt="Image" height="40" class="mr-3">
             <div>
@@ -58,7 +58,7 @@ export class CardHeadingComponent implements OnInit {
             <button pButton pRipple icon="pi pi-share-alt" class="p-button-rounded p-button-outlined"></button>
         </div>
     </div>
-    
+
     <div style="height: 150px" class="border-2 border-dashed surface-border"></div>
 </div>`;
 
