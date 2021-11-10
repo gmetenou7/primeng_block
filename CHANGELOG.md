@@ -2,7 +2,16 @@
 
 ## 2.0.2
 
-- Corrected hover state of sign-out button in Application / Sidebar Layout / Floating Menu.
+- Corrected hover state of sign-out button in "Application / Sidebar Layout / Block 12".
+- Fixed duplicate IDs on "Application / Form Layout"
+- Add text color to labels of "Application / Form Layout"
+- Fixed hover visuals of "Application / Vertical Nav / Block 5" in dark mode
+- Fixed small scree alignment in "Application / Card Heading / Block 4"
+- Fixed typo in "Application / SidebarLayout / Block 3"
+- Removed duplicate type prop in "Application / SignIn / Block 5"
+- Rename Feedback category to Pages
+- Remove tabindex from blockviewer disabled buttons
+- Add z-index to "Marketing / Landing / Block 2" Navbar
 
 ## 2.0.1
 
