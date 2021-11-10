@@ -32,26 +32,26 @@ export class FormLayoutComponent implements OnInit {
         <div class="col-12 lg:col-10">
             <div class="grid formgrid p-fluid">
                 <div class="field mb-4 col-12">
-                    <label for="nickname" class="font-medium">Nickname</label>
+                    <label for="nickname" class="font-medium text-900">Nickname</label>
                     <input id="nickname" type="text" pInputText>
                 </div>
                 <div class="field mb-4 col-12">
-                    <label for="avatar" class="font-medium">Avatar</label>
+                    <label for="avatar" class="font-medium text-900">Avatar</label>
                     <div class="flex align-items-center">
                         <img src="assets/images/blocks/avatars/circle/avatar-f-4.png" class="mr-4" />
                         <p-fileUpload mode="basic" name="avatar" url="./upload.php" accept="image/*" maxFileSize="1000000" styleClass="p-button-outlined p-button-plain" chooseLabel="Upload Image"></p-fileUpload>
                     </div>
                 </div>
                 <div class="field mb-4 col-12">
-                    <label for="bio" class="font-medium">Bio</label>
+                    <label for="bio" class="font-medium text-900">Bio</label>
                     <textarea id="bio" type="text" pInputTextarea rows="5" [autoResize]="true"></textarea>
                 </div>
                 <div class="field mb-4 col-12 md:col-6">
-                    <label for="email" class="font-medium">Email</label>
+                    <label for="email" class="font-medium text-900">Email</label>
                     <input id="email" type="text" pInputText>
                 </div>
                 <div class="field mb-4 col-12 md:col-6">
-                    <label for="bio" class="font-medium">Country</label>
+                    <label for="bio" class="font-medium text-900">Country</label>
                     <p-dropdown [options]="countries" optionLabel="name" [filter]="true" filterBy="name" [showClear]="true" placeholder="Select a Country">
                         <ng-template let-country pTemplate="item">
                             <div class="flex align-items-center">
@@ -62,25 +62,25 @@ export class FormLayoutComponent implements OnInit {
                     </p-dropdown>
                 </div>
                 <div class="field mb-4 col-12 md:col-6">
-                    <label for="city" class="font-medium">City</label>
+                    <label for="city" class="font-medium text-900">City</label>
                     <input id="city" type="text" pInputText>
                 </div>
                 <div class="field mb-4 col-12 md:col-6">
-                    <label for="state" class="font-medium">State</label>
+                    <label for="state" class="font-medium text-900">State</label>
                     <input id="state" type="text" pInputText>
                 </div>
                 <div class="field mb-4 col-12">
-                    <label for="website" class="font-medium">Website</label>
+                    <label for="website" class="font-medium text-900">Website</label>
                     <div class="p-inputgroup">
                         <span class="p-inputgroup-addon">www</span>
                         <input id="website" type="text" pInputText>      
                     </div>
                 </div>
                 <div class="field mb-4 col-12">
-                    <label for="privacy" class="font-medium">Privacy</label>
+                    <label for="privacy" class="font-medium text-900">Privacy</label>
                     <div class="flex align-items-center">
                         <p-checkbox [binary]="true"></p-checkbox>
-                        <span class="ml-2">Share my data with contacts</span>
+                        <span class="ml-2 text-900">Share my data with contacts</span>
                     </div>
                 </div>
                 <div class="col-12">
@@ -99,16 +99,16 @@ export class FormLayoutComponent implements OnInit {
     <div class="surface-card p-4 shadow-2 border-round">
         <div class="grid formgrid p-fluid">
             <div class="field mb-4 col-12">
-                <label for="nickname" class="font-medium">Nickname</label>
+                <label for="nickname" class="font-medium text-900">Nickname</label>
                 <input id="nickname" type="text" pInputText>
             </div>
             <div class="surface-border border-top-1 opacity-50 mb-3 col-12"></div>
             <div class="field mb-4 col-12 md:col-6">
-                <label for="bio" class="font-medium">Bio</label>
+                <label for="bio" class="font-medium text-900">Bio</label>
                 <textarea id="bio" type="text" pInputTextarea rows="5" [autoResize]="true"></textarea>
             </div>
             <div class="field mb-4 col-12 md:col-6">
-                <label for="avatar" class="font-medium">Avatar</label>
+                <label for="avatar" class="font-medium text-900">Avatar</label>
                 <div class="flex align-items-center">
                     <img src="assets/images/blocks/avatars/circle/avatar-f-4.png" class="mr-4" />
                     <p-fileUpload mode="basic" name="avatar" url="./upload.php" accept="image/*" maxFileSize="1000000" styleClass="p-button-outlined p-button-plain" chooseLabel="Upload Image"></p-fileUpload>
@@ -116,11 +116,11 @@ export class FormLayoutComponent implements OnInit {
             </div>
             <div class="surface-border border-top-1 opacity-50 mb-3 col-12"></div>
             <div class="field mb-4 col-12 md:col-6">
-                <label for="email" class="font-medium">Email</label>
+                <label for="email" class="font-medium text-900">Email</label>
                 <input id="email" type="text" pInputText>
             </div>
             <div class="field mb-4 col-12 md:col-6">
-                <label for="bio" class="font-medium">Country</label>
+                <label for="bio" class="font-medium text-900">Country</label>
                 <p-dropdown [options]="countries" optionLabel="name" [filter]="true" filterBy="name" [showClear]="true" placeholder="Select a Country">
                     <ng-template let-country pTemplate="item">
                         <div class="flex align-items-center">
@@ -131,16 +131,16 @@ export class FormLayoutComponent implements OnInit {
                 </p-dropdown>
             </div>
             <div class="field mb-4 col-12 md:col-6">
-                <label for="city" class="font-medium">City</label>
+                <label for="city" class="font-medium text-900">City</label>
                 <input id="city" type="text" pInputText>
             </div>
             <div class="field mb-4 col-12 md:col-6">
-                <label for="state" class="font-medium">State</label>
+                <label for="state" class="font-medium text-900">State</label>
                 <input id="state" type="text" pInputText>
             </div>
             <div class="surface-border border-top-1 opacity-50 mb-3 col-12"></div>
             <div class="field mb-4 col-12">
-                <label for="website" class="font-medium">Website</label>
+                <label for="website" class="font-medium text-900">Website</label>
                 <div class="p-inputgroup">
                     <span class="p-inputgroup-addon">www</span>
                     <input id="website" type="text" pInputText>      
@@ -148,10 +148,10 @@ export class FormLayoutComponent implements OnInit {
             </div>
             <div class="surface-border border-top-1 opacity-50 mb-3 col-12"></div>
             <div class="field mb-4 col-12">
-                <label for="privacy" class="font-medium">Privacy</label>
+                <label for="privacy" class="font-medium text-900">Privacy</label>
                 <div class="flex align-items-center">
                     <p-inputSwitch></p-inputSwitch>
-                    <span class="ml-2">Share my data with contacts</span>
+                    <span class="ml-2 text-900">Share my data with contacts</span>
                 </div>
             </div>
             <div class="surface-border border-top-1 opacity-50 mb-3 col-12"></div>
@@ -168,40 +168,40 @@ export class FormLayoutComponent implements OnInit {
     <div class="surface-card p-4 shadow-2 border-round p-fluid">
         <div class="grid formgrid p-fluid">
             <div class="field mb-4 col-12 md:col-6">
-                <label for="company_name" class="font-medium">Company Name</label>
+                <label for="company_name" class="font-medium text-900">Company Name</label>
                 <input id="company_name" type="text" pInputText>
             </div>
             <div class="field mb-4 col-12 md:col-6">
-                <label for="invoice_id" class="font-medium">Invoice Id</label>
+                <label for="invoice_id" class="font-medium text-900">Invoice Id</label>
                 <input id="invoice_id" type="text" pInputText>
             </div>
             <div class="field mb-4 col-12 md:col-6">
-                <label for="customer_name" class="font-medium">Customer Name</label>
+                <label for="customer_name" class="font-medium text-900">Customer Name</label>
                 <input id="customer_name" type="text" pInputText>
             </div>
             <div class="field mb-4 col-12 md:col-6">
-                <label for="customer_email" class="font-medium">Customer Email</label>
+                <label for="customer_email" class="font-medium text-900">Customer Email</label>
                 <input id="customer_email" type="text" pInputText>
             </div>
             <div class="field mb-4 col-12 md:col-6">
-                <label for="invoice_date" class="font-medium">Invoice Date</label>
+                <label for="invoice_date" class="font-medium text-900">Invoice Date</label>
                 <p-calendar id="invoice_date" [showIcon]="true"></p-calendar>
             </div>
             <div class="field mb-4 col-12 md:col-6">
-                <label for="due_date" class="font-medium">Due Date</label>
+                <label for="due_date" class="font-medium text-900">Due Date</label>
                 <p-calendar id="due_date" [showIcon]="true"></p-calendar>
             </div>
             <div class="surface-border border-top-1 opacity-50 mb-4 col-12"></div>
             <div class="field mb-4 col-12 md:col-6">
-                <label for="item" class="font-medium">Item</label>
+                <label for="item" class="font-medium text-900">Item</label>
                 <input id="item" type="text" pInputText>
             </div>
             <div class="field mb-4 col-6 md:col-3">
-                <label for="item" class="font-medium">Quantity</label>
+                <label for="item" class="font-medium text-900">Quantity</label>
                 <input id="item" type="text" pInputText>
             </div>
             <div class="field mb-4 col-6 md:col-3">
-                <label for="item" class="font-medium">Price</label>
+                <label for="item" class="font-medium text-900">Price</label>
                 <div class="flex align-content-center">
                     <p-inputNumber mode="currency" currency="USD" inputId="item" type="text" class="flex-1"></p-inputNumber>
                     <button pButton pRipple icon="pi pi-trash" class="p-button-danger p-button-text ml-2"></button>
@@ -220,7 +220,7 @@ export class FormLayoutComponent implements OnInit {
             </div>
             <div class="surface-border border-top-1 opacity-50 mb-4 col-12"></div>
             <div class="field mb-4 col-12">
-                <label for="notes" class="font-medium">Notes</label>
+                <label for="notes" class="font-medium text-900">Notes</label>
                 <textarea id="notes" pInputTextarea [autoResize]="true" [rows]="5"></textarea>
             </div>
             <div class="surface-border border-top-1 opacity-50 mb-4 col-12"></div>
