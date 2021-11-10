@@ -383,7 +383,7 @@ export class VerticalNavComponent {
 </div>`;
 
     block5 = `
-<div class="surface-card border-round shadow-2 select-none">
+    <div class="surface-card border-round shadow-2 select-none">
     <ul class="list-none p-2 m-0">
         <li>
             <a pRipple class="flex p-2 align-items-center cursor-pointer" pStyleClass="#pb_profile_submenu" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
@@ -399,7 +399,7 @@ export class VerticalNavComponent {
             <div class="border-top-1 surface-border my-3" style="height:1px"></div>
             <ul id="pb_profile_submenu" class="list-none p-0 m-0 overflow-hidden">
                 <li class="mb-2">
-                    <a pRipple class="flex p-2 align-items-start hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">
+                    <a pRipple class="flex p-2 align-items-start hover:surface-50 border-transparent border-1 hover:border-100 border-round cursor-pointer transition-colors transition-duration-150">
                         <i class="pi pi-home text-500 mr-3 text-xl"></i>
                         <span>
                             <span class="block text-700 font-medium">Dashboard</span>
@@ -408,7 +408,7 @@ export class VerticalNavComponent {
                     </a>
                 </li>
                 <li class="mb-2">
-                    <a pRipple class="flex p-2 align-items-start hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">
+                    <a pRipple class="flex p-2 align-items-start hover:surface-50 border-transparent border-1 hover:border-100 border-round cursor-pointer transition-colors transition-duration-150">
                         <i class="pi pi-users text-500 mr-3 text-xl"></i>
                         <span>
                             <span class="block text-700 font-medium">Users</span>
@@ -418,7 +418,7 @@ export class VerticalNavComponent {
                     </a>
                 </li>
                 <li class="mb-2">
-                    <a pRipple class="flex p-2 align-items-start hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">
+                    <a pRipple class="flex p-2 align-items-start hover:surface-50 border-transparent border-1 hover:border-100 border-round cursor-pointer transition-colors transition-duration-150">
                         <i class="pi pi-sliders-h text-500 mr-3 text-xl"></i>
                         <span>
                             <span class="block text-700 font-medium">Tools</span>
@@ -427,7 +427,7 @@ export class VerticalNavComponent {
                     </a>
                 </li>
                 <li class="mb-2">
-                    <a pRipple class="flex p-2 align-items-start hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">
+                    <a pRipple class="flex p-2 align-items-start hover:surface-50 border-transparent border-1 hover:border-100 border-round cursor-pointer transition-colors transition-duration-150">
                         <i class="pi pi-th-large text-500 mr-3 text-xl"></i>
                         <span>
                             <span class="block text-700 font-medium">Integrations</span>
@@ -436,7 +436,7 @@ export class VerticalNavComponent {
                     </a>
                 </li>
                 <li class="mb-2">
-                    <a pRipple class="flex p-2 align-items-start hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">
+                    <a pRipple class="flex p-2 align-items-start hover:surface-50 border-transparent border-1 hover:border-100 border-round cursor-pointer transition-colors transition-duration-150">
                         <i class="pi pi-cog text-500 mr-3 text-xl"></i>
                         <span>
                             <span class="block text-700 font-medium">Settings</span>
@@ -447,19 +447,19 @@ export class VerticalNavComponent {
             </ul>
         </li>
         <li class="mb-2">
-            <a pRipple class="block p-2 font-medium text-700 hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">Installed Plugins</a>
+            <a pRipple class="block p-2 font-medium text-700 hover:surface-50 border-transparent border-1 hover:border-100 border-round cursor-pointer transition-colors transition-duration-150">Installed Plugins</a>
         </li>
         <li class="mb-2">
-            <a pRipple class="block p-2 font-medium text-700 flex align-items-center justify-content-between hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">
+            <a pRipple class="block p-2 font-medium text-700 flex align-items-center justify-content-between hover:surface-50 border-transparent border-1 hover:border-100 border-round cursor-pointer transition-colors transition-duration-150">
                 <span>Updates</span>
                 <i class="bg-blue-500 border-circle" style="width:7px;height:7px"></i>
             </a>
         </li>
         <li class="mb-2">
-            <a pRipple class="block p-2 font-medium text-700 hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">Reset Server</a>
+            <a pRipple class="block p-2 font-medium text-700 hover:surface-50 border-transparent border-1 hover:border-100 border-round cursor-pointer transition-colors transition-duration-150">Reset Server</a>
         </li>
         <li class="mb-2">
-            <a pRipple class="block p-2 font-medium text-700 hover:bg-blue-50 border-transparent border-1 hover:border-blue-100 border-round cursor-pointer transition-colors transition-duration-150">Log Out</a>
+            <a class="block p-2 font-medium text-700 hover:surface-50 border-transparent border-1 hover:border-100 border-round cursor-pointer transition-colors transition-duration-150">Log Out</a>
         </li>
     </ul>
 </div>`;
