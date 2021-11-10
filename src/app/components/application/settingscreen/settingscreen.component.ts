@@ -215,7 +215,7 @@ export class SettingScreenComponent implements OnInit {
                             <label for="avatar" class="font-medium">Avatar</label>
                             <div class="flex align-items-center">
                                 <img src="assets/images/blocks/avatars/circle/avatar-f-4.png" class="mr-4" />
-                                <p-fileUpload mode="basic" name="avatar" url="./upload.php" accept="image/*" maxFileSize="1000000" styleClass="p-button-outlined p-button-plain" chooseLabel="Upload Image"></p-fileUpload>
+                                <p-fileUpload id="avatar" mode="basic" name="avatar" url="./upload.php" accept="image/*" maxFileSize="1000000" styleClass="p-button-outlined p-button-plain" chooseLabel="Upload Image"></p-fileUpload>
                             </div>
                         </div>
                         <div class="surface-100 mb-3 col-12" style="height:2px"></div>
@@ -224,8 +224,8 @@ export class SettingScreenComponent implements OnInit {
                             <input id="email" type="text" pInputText>
                         </div>
                         <div class="field mb-4 col-12 md:col-6">
-                            <label for="bio" class="font-medium">Country</label>
-                            <p-dropdown [options]="countries" optionLabel="name" [filter]="true" filterBy="name" [showClear]="true" placeholder="Select a Country">
+                            <label for="country" class="font-medium">Country</label>
+                            <p-dropdown inputId="country" [options]="countries" optionLabel="name" [filter]="true" filterBy="name" [showClear]="true" placeholder="Select a Country">
                                 <ng-template let-country pTemplate="item">
                                     <div class="flex align-items-center">
                                         <img src="assets/images/blocks/flag/flag_placeholder.png" [class]="'mr-2 flag flag-' + country.code.toLowerCase()" style="width:18px"/>
@@ -254,7 +254,7 @@ export class SettingScreenComponent implements OnInit {
                         <div class="field mb-4 col-12">
                             <label for="privacy" class="font-medium">Privacy</label>
                             <div class="flex align-items-center">
-                                <p-inputSwitch></p-inputSwitch>
+                                <p-inputSwitch inputId="privacy"></p-inputSwitch>
                                 <span class="ml-2">Share my data with contacts</span>
                             </div>
                         </div>

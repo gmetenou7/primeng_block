@@ -34,7 +34,7 @@ export class SignInComponent implements OnInit {
         <div class="flex align-items-center justify-content-between mb-6">
             <div class="flex align-items-center">
                 <p-checkbox id="rememberme" [binary]="true" styleClass="mr-2"></p-checkbox>
-                <label for="rememberme">Remember me</label>
+                <label for="rememberme1">Remember me</label>
             </div>
             <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot password?</a>
         </div>
@@ -62,7 +62,7 @@ export class SignInComponent implements OnInit {
              <div class="flex align-items-center justify-content-between mb-6">
                  <div class="flex align-items-center">
                      <p-checkbox id="rememberme" [binary]="true" styleClass="mr-2"></p-checkbox>
-                     <label for="rememberme">Remember me</label>
+                     <label for="rememberme2">Remember me</label>
                  </div>
                  <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot password?</a>
              </div>
@@ -190,7 +190,7 @@ export class SignInComponent implements OnInit {
             <div class="flex align-items-center justify-content-between mb-6">
                 <div class="flex align-items-center">
                     <p-checkbox id="rememberme" [binary]="true" styleClass="mr-2"></p-checkbox>
-                    <label for="rememberme">Remember me</label>
+                    <label for="rememberme4">Remember me</label>
                 </div>
                 <a class="font-medium text-blue-500 hover:text-blue-700 cursor-pointer transition-colors transition-duration-150">Forgot password?</a>
             </div>

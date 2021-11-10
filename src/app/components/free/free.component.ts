@@ -338,8 +338,8 @@ export class FreeComponent {
 
         <div class="flex align-items-center justify-content-between mb-6">
             <div class="flex align-items-center">
-                <p-checkbox id="rememberme" [binary]="true" styleClass="mr-2"></p-checkbox>
-                <label for="rememberme">Remember me</label>
+                <p-checkbox id="rememberme1" [binary]="true" styleClass="mr-2"></p-checkbox>
+                <label for="rememberme1">Remember me</label>
             </div>
             <a class="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot password?</a>
         </div>
