@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 })
 export class AppConfig {
 
-    theme: string = 'saga-blue';
+    theme: string = 'lara-light-indigo';
 
     dark: boolean = false;
 
