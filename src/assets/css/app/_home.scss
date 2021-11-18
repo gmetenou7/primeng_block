@@ -9,7 +9,7 @@
     justify-content: center;
 
     .introduction-content {
-        padding: 4rem;
+        padding: 4rem 12rem;
         border-radius: 8px;
         background-color: rgba(255,255,255,.9);
         text-align: center;
@@ -41,6 +41,15 @@
         button {
             border-radius: 35px;
         }
+
+        .bg-drop {
+            transform: rotate(80deg);
+            width:1200px;
+            height:1200px;
+            bottom:-1000px;
+            position: absolute;
+            left: -20px;
+        }
     }
 }
 
@@ -68,6 +77,24 @@
             p {
                 font-size: 1rem;
             }
+        }
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+    
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     }
 }
