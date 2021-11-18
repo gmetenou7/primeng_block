@@ -105,7 +105,7 @@ export class HeroComponent {
         </div>
         <div class="w-full xl:w-6 p-3 flex align-items-center justify-content-center bg-indigo-50 p-4 lg:p-8 mt-5 xl:mt-0" style="border-radius: 30px">
             <div class="relative w-full" style="padding-bottom:56.25%;height:0;">
-                <iframe class="absolute top-0 left-0 w-full h-full" width="560" height="315" src="https://www.youtube.com/embed/gY9wvf16dp4" title="YouTube video player" frameborder="0" 
+                <iframe class="absolute top-0 left-0 w-full h-full" width="560" height="315" src="https://www.youtube.com/embed/XNRevmRLb70" title="YouTube video player" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
