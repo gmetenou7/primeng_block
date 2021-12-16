@@ -74,7 +74,7 @@ export class RadioGroupComponent {
             <span class="text-sm" [ngClass]="{'text-600': tier1 !== 0, 'bg-primary': tier1 === 0}">Quam nulla porttitor massa.</span>
         </div>
         <div class="border-round border-1 p-1 ml-auto flex flex-nowrap" [ngClass]="{'surface-50 text-600 surface-border': tier1 !== 0, 'bg-primary-reverse': tier1 === 0}">
-            <i class="pi pi-star"></i>
+            <i class="pi pi-star-fill"></i>
         </div>
     </div>
     <div class="surface-border border-1 border-top-none p-3 flex align-items-center cursor-pointer" [ngClass]="{'surface-card': tier1 !== 1, 'bg-primary': tier1 === 1}" (click)="tier1 = 1">
@@ -84,8 +84,8 @@ export class RadioGroupComponent {
             <span class="text-sm" [ngClass]="{'text-600': tier1 !== 1, 'bg-primary': tier1 === 1}">Quam nulla porttitor massa.</span>
         </div>
         <div class="border-round border-1 p-1 ml-auto flex flex-nowrap" [ngClass]="{'surface-50 text-600 surface-border': tier1 !== 1, 'bg-primary-reverse': tier1 === 1}">
-            <i class="pi pi-star mr-2"></i>
-            <i class="pi pi-star"></i>
+            <i class="pi pi-star-fill mr-2"></i>
+            <i class="pi pi-star-fill"></i>
         </div>
     </div>
     <div class="surface-border border-1 border-top-none p-3 border-round-bottom flex align-items-center cursor-pointer" [ngClass]="{'surface-card': tier1 !== 2, 'bg-primary': tier1 === 2}" (click)="tier1 = 2">
@@ -95,9 +95,9 @@ export class RadioGroupComponent {
             <span class="text-sm" [ngClass]="{'text-600': tier1 !== 2, 'bg-primary': tier1 === 2}">Quam nulla porttitor massa.</span>
         </div>
         <div class="border-round border-1 p-1 ml-auto flex flex-nowrap" [ngClass]="{'surface-50 text-600 surface-border': tier1 !== 2, 'bg-primary-reverse': tier1 === 2}">
-            <i class="pi pi-star mr-2"></i>
-            <i class="pi pi-star mr-2"></i>
-            <i class="pi pi-star"></i>
+            <i class="pi pi-star-fill mr-2"></i>
+            <i class="pi pi-star-fill mr-2"></i>
+            <i class="pi pi-star-fill"></i>
         </div>
     </div>
 </div>`;
