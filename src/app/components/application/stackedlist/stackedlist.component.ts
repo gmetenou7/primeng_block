@@ -213,7 +213,7 @@ export class StackedListComponent implements OnInit {
             <div>
                 <div>
                     <span class="inline-flex justify-content-center align-items-center w-2rem h-2rem border-circle border-1" style="border-color:rgba(234,179,10,.5)">
-                        <i class="pi pi-file-o text-yellow-700"></i>
+                        <i class="pi pi-file text-yellow-700"></i>
                     </span>
                     <span class="text-yellow-700 font-bold ml-2">Jenny Wilson</span>
                 </div>
@@ -231,7 +231,7 @@ export class StackedListComponent implements OnInit {
             <div>
                 <div>
                     <span class="inline-flex justify-content-center align-items-center w-2rem h-2rem border-circle border-1" style="border-color:rgba(33,197,94,.5)">
-                        <i class="pi pi-file-o text-green-600"></i>
+                        <i class="pi pi-file text-green-600"></i>
                     </span>
                     <span class="text-green-700 font-bold ml-2">Dianne Russell</span>
                 </div>
@@ -249,7 +249,7 @@ export class StackedListComponent implements OnInit {
             <div>
                 <div>
                     <span class="inline-flex justify-content-center align-items-center w-2rem h-2rem border-circle border-1" style="border-color:rgba(33,197,94,.5)">
-                        <i class="pi pi-file-o text-green-600"></i>
+                        <i class="pi pi-file text-green-600"></i>
                     </span>
                     <span class="text-green-700 font-bold ml-2">Jerome Bell</span>
                 </div>
@@ -267,7 +267,7 @@ export class StackedListComponent implements OnInit {
             <div>
                 <div>
                     <span class="inline-flex justify-content-center align-items-center w-2rem h-2rem border-circle border-1" style="border-color:rgba(330,81,60,.5)">
-                        <i class="pi pi-file-o text-pink-500"></i>
+                        <i class="pi pi-file text-pink-500"></i>
                     </span>
                     <span class="text-pink-500 font-bold ml-2">Courtney Henry</span>
                 </div>

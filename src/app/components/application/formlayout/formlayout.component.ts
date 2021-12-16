@@ -225,7 +225,7 @@ export class FormLayoutComponent implements OnInit {
             </div>
             <div class="surface-border border-top-1 opacity-50 mb-4 col-12"></div>
         </div>
-        <button pButton pRipple label="Create Invoice" icon="pi pi-file-o" class="w-auto"></button>
+        <button pButton pRipple label="Create Invoice" icon="pi pi-file" class="w-auto"></button>
     </div>
 </div>`;
 

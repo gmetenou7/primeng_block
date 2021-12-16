@@ -65,7 +65,7 @@ export class DividerComponent {
     <div class="border-top-1 surface-border absolute top-50 w-full"></div>
     <span class="p-buttonset z-1">
         <button pRipple class="appearance-none border-1 border-round-left surface-border p-2 surface-0 hover:surface-200 active:surface-300 cursor-pointer">
-            <i class="pi pi-star-o text-600"></i>
+            <i class="pi pi-star text-600"></i>
         </button>
         <button pRipple class="appearance-none border-1 border-left-none surface-border p-2 surface-0 hover:surface-200 active:surface-300 cursor-pointer">
             <i class="pi pi-lock text-600"></i>
