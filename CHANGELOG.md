@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.0
+
+- Update to PrimeIcons 5
+
 ## 2.0.2
 
 - Corrected hover state of sign-out button in "Application / Sidebar Layout / Block 12".
