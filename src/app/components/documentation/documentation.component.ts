@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
     templateUrl: './documentation.component.html',
     styles: [`
         :host ::ng-deep i {
-        background-color: var(--surface-a);
+        background-color: var(--surface-card);
         color: #2196f3;
         font-family: Monaco,courier,monospace;
         font-style: normal;

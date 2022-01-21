@@ -7,7 +7,7 @@
     background-color: var(--surface-section);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    border:1px solid var(--surface-d);
+    border:1px solid var(--surface-border);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,7 +50,7 @@
             }
 
             &:not(.block-action-disabled):hover {
-                background-color: var(--surface-c);
+                background-color: var(--surface-hover);
             }
 
             &.block-action-active {
@@ -79,7 +79,7 @@
 
 .block-content {
     padding: 0;
-    border:1px solid var(--surface-d);
+    border:1px solid var(--surface-border);
     border-top: 0 none;
 }
 
@@ -93,7 +93,7 @@ pre[class*="language-"] {
     code {
         border-left: 0 none !important;
         box-shadow: none !important;
-        background: var(--surface-e) !important;
+        background: var(--surface-card) !important;
         margin: 0;
         color: var(--text-color);
         font-size: 14px;

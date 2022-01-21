@@ -1,8 +1,8 @@
 .layout-topbar {
     height: 80px;
-    background-color: var(--surface-a);
+    background-color: var(--surface-card);
     padding: 0 2rem;
-    border-bottom: 1px solid var(--surface-d);
+    border-bottom: 1px solid var(--surface-border);
     display: flex;
     justify-content: space-between;
 
@@ -33,7 +33,7 @@
             justify-content: center;
 
             &:hover {
-                background-color: var(--surface-c);
+                background-color: var(--surface-hover);
             }
 
             i {
@@ -64,7 +64,7 @@
                     padding: 0 1rem;
         
                     &:hover, &:focus {
-                        border-bottom-color: var(--surface-d);
+                        border-bottom-color: var(--surface-border);
                     }
         
                     &.router-link-active {
@@ -83,7 +83,7 @@
                 cursor: pointer;
                 display: flex;
                 align-items: center;
-                border: 1px solid var(--surface-d);
+                border: 1px solid var(--surface-border);
                 border-radius: 4px;
                 padding: .5rem 1rem;
                 font-weight: 700;
@@ -97,7 +97,7 @@
                 }
 
                 &:hover {
-                    background-color: var(--surface-c);
+                    background-color: var(--surface-hover);
                 }
             }
         }
