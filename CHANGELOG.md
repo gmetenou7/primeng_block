@@ -1,5 +1,10 @@
 # Changelog
 
+## #2.2.0
+
+- Updated PrimeNG 13.1.0
+- Updated Lara Dark themes
+
 ## 2.1.0
 
 - Update to PrimeIcons 5
