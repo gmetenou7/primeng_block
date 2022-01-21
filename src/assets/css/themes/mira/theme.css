@@ -860,6 +860,9 @@ p-dropdown.ng-dirty.ng-invalid > .p-dropdown {
 .p-input-filled .p-dropdown:not(.p-disabled).p-focus {
   background-color: #ffffff;
 }
+.p-input-filled .p-dropdown:not(.p-disabled).p-focus .p-inputtext {
+  background-color: transparent;
+}
 
 .p-editor-container .p-editor-toolbar {
   background: #ffffff;
@@ -2382,7 +2385,6 @@ p-treeselect.ng-invalid.ng-dirty > .p-treeselect {
   background: #ffffff;
   color: #4C566A;
   transition: none;
-  outline-color: #C0D0E0;
 }
 .p-datatable .p-datatable-tbody > tr > td {
   text-align: left;
@@ -2420,6 +2422,10 @@ p-treeselect.ng-invalid.ng-dirty > .p-treeselect {
 }
 .p-datatable .p-datatable-tbody > tr > td .p-row-editor-save {
   margin-right: 0.5rem;
+}
+.p-datatable .p-datatable-tbody > tr:focus {
+  outline: 0.15rem solid #C0D0E0;
+  outline-offset: 0.15rem;
 }
 .p-datatable .p-datatable-tbody > tr.p-highlight {
   background: #D8DEE9;
@@ -3308,7 +3314,7 @@ p-treeselect.ng-invalid.ng-dirty > .p-treeselect {
 .p-tree .p-tree-container .p-treenode .p-treenode-content:focus {
   outline: 0 none;
   outline-offset: 0;
-  box-shadow: 0 0 0 0.2rem #C0D0E0;
+  box-shadow: inset 0 0 0 0.15rem #C0D0E0;
 }
 .p-tree .p-tree-container .p-treenode .p-treenode-content.p-highlight {
   background: #D8DEE9;
@@ -3466,7 +3472,6 @@ p-treeselect.ng-invalid.ng-dirty > .p-treeselect {
   background: #ffffff;
   color: #4C566A;
   transition: none;
-  outline-color: #C0D0E0;
 }
 .p-treetable .p-treetable-tbody > tr > td {
   text-align: left;
@@ -3499,6 +3504,10 @@ p-treeselect.ng-invalid.ng-dirty > .p-treeselect {
 }
 .p-treetable .p-treetable-tbody > tr > td p-treetablecheckbox .p-checkbox .p-indeterminate .p-checkbox-icon {
   color: #4C566A;
+}
+.p-treetable .p-treetable-tbody > tr:focus {
+  outline: 0.15rem solid #C0D0E0;
+  outline-offset: -0.15rem;
 }
 .p-treetable .p-treetable-tbody > tr.p-highlight {
   background: #D8DEE9;
