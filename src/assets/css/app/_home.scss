@@ -82,8 +82,11 @@
     }
 }
 
-
 @media screen and (max-width: 960px) {
+    .layout-wrapper { 
+        overflow-x: hidden;
+    }
+
     .video-container {
         position: relative;
         width: 100%;
