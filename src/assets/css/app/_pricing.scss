@@ -53,3 +53,11 @@
 .pricing-users {
     margin: 4rem -2rem 4rem -2rem;
 }
+
+@media screen and (max-width: 960px) {
+    .pricing { 
+        .pricing-content {
+            padding: 1.8rem 4rem;
+        }
+    }
+}
