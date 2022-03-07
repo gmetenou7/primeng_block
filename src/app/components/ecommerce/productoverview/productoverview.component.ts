@@ -5,6 +5,10 @@ import { Component } from '@angular/core';
 })
 export class ProductOverviewComponent {
 
+    color1: string = 'cyan';
+
+    size1: string = 'M';
+
     block1: string = `
 `;
 

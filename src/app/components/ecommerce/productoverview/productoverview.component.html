@@ -1,4 +1,98 @@
 <div class="block-category-title">Product Overview</div>
 <block-viewer header="Image Grid" [code]="block1" [new]="true">
-    
+    <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+        <div class="grid">
+            <div class="col-12 lg:col-6">
+                <div class="flex">
+                    <div>
+                        <img src="assets/images/blocks/product/product-overview-1-1.png" class="w-full" />
+                    </div>
+                    <div class="flex flex-column px-3">
+                        <img src="assets/images/blocks/product/product-overview-1-2.png" class="mb-3 w-full" />
+                        <img src="assets/images/blocks/product/product-overview-1-3.png" class="w-full"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 lg:col-6 p-3">
+                <ol class="flex list-none m-0 p-0 align-items-center text-sm text-600 mb-5">
+                    <li class="mr-2">Category</li>
+                    <li class="mr-2"><i class="pi pi-angle-right text-sm"></i></li>
+                    <li class="mr-2">Category</li>
+                    <li class="mr-2"><i class="pi pi-angle-right text-sm"></i></li>
+                    <li class="mr-2">Category</li>
+                    <li class="mr-2"><i class="pi pi-angle-right text-sm"></i></li>
+                    <li>Category</li>
+                </ol>
+                <div class="flex align-items-center justify-content-between mb-4">
+                    <span class="text-xl font-medium text-900">Product Title Placeholder</span>
+                    <span class="text-xl font-medium text-900">$123</span>
+                </div>
+                <div class="flex align-items-center mb-5">
+                    <span class="mr-3">
+                        <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                        <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                        <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                        <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                        <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                    </span>
+                    <span class="text-500">5.00 | See all <b>20</b> reviews</span>
+                </div>
+                <p class="p-0 mt-0 mb-5 line-height-3 text-700">
+                    Dolor purus non enim praesent. 
+                    At quis risus sed vulputate odio ut. Quis risus sed vulputate odio ut enim blandit volutpat. 
+                    Ornare arcu odio ut sem nulla pharetra diam sit. Augue neque gravida in fermentum et sollicitudin ac orci phasellus.
+                </p>
+
+                <div class="font-bold text-900 mb-3">Color</div>
+                <div class="flex align-items-center mb-5">
+                    <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-cyan-500 mr-3 cursor-pointer border-2 border-white transition-all transition-duration-300" 
+                        [style.box-shadow]="color1 === 'cyan' ? '0 0 0 0.2rem var(--cyan-500)' : null" (click)="color1 = 'cyan'"></div>
+                    <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-purple-500 mr-3 cursor-pointer border-2 border-white transition-all transition-duration-300" 
+                        [style.box-shadow]="color1 === 'purple' ? '0 0 0 0.2rem var(--purple-500)' : null" (click)="color1 = 'purple'"></div>
+                    <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-indigo-500 cursor-pointer border-2 border-white transition-all transition-duration-300" 
+                        [style.box-shadow]="color1 === 'indigo' ? '0 0 0 0.2rem var(--indigo-500)' : null" (click)="color1 = 'indigo'"></div>
+                </div>
+
+                <div class="mb-3 flex align-items-center justify-content-between">
+                    <span class="font-bold text-900">Size</span>
+                    <a tabindex="0" class="cursor-pointer text-600 text-sm flex align-items-center">Size Guide <i class="ml-1 pi pi-angle-right"></i></a>
+                </div>
+                <div class="flex align-items-center mb-5">
+                    <div class="h-3rem w-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors" 
+                        [ngClass]="{'border-blue-500 border-2 text-blue-500': size1 === 'XS'}" (click)="size1 = 'XS'">XS</div>
+                    <div class="h-3rem w-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors" 
+                        [ngClass]="{'border-blue-500 border-2 text-blue-500': size1 === 'S'}" (click)="size1 = 'S'">S</div>
+                    <div class="h-3rem w-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors" 
+                        [ngClass]="{'border-blue-500 border-2 text-blue-500': size1 === 'M'}" (click)="size1 = 'M'">M</div>
+                    <div class="h-3rem w-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors"
+                        [ngClass]="{'border-blue-500 border-2 text-blue-500': size1 === 'L'}"  (click)="size1 = 'L'">L</div>
+                    <div class="h-3rem w-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors" 
+                        [ngClass]="{'border-blue-500 border-2 text-blue-500': size1 === 'XL'}" (click)="size1 = 'XL'">XL</div>
+                </div>
+
+                <div class="bg-yellow-200 text-yellow-900 text-sm inline-flex align-items-center px-2 py-1 font-medium mb-5">
+                    <i class="pi pi-exclamation"></i>
+                    <span>Only a few left!</span>
+                </div>
+
+                <button pButton pRipple icon="pi pi-shopping-cart" class="w-full mb-5" label="Add to Cart"></button>
+
+                <ul class="list-none p-0 m-0 text-sm text-600">
+                    <li class="flex align-items-center mb-3">
+                        <i class="pi pi-credit-card mr-2"></i>
+                        <span>Pay in 21 days</span>
+                    </li>
+                    <li class="flex align-items-center mb-3">
+                        <i class="pi pi-send mr-2"></i>
+                        <span>Free Shipping</span>
+                    </li>
+                    <li class="flex align-items-center">
+                        <i class="pi pi-refresh mr-2"></i>
+                        <span>30 Days Return Policy</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
 </block-viewer>

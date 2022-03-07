@@ -4,7 +4,6 @@ import { ProductOverviewComponent } from './productoverview.component';
 import { ProductOverviewRoutingModule } from './productoverview-routing.module';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
-import { MenuModule } from 'primeng/menu';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 
 @NgModule({
@@ -12,7 +11,6 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
     CommonModule,
     ButtonModule,
     RippleModule,
-    MenuModule,
     ProductOverviewRoutingModule,
     BlockViewerModule
   ],
