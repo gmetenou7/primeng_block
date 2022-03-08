@@ -18,13 +18,25 @@ export class ProductOverviewComponent implements OnInit {
 
     size2: string;
 
-    liked: boolean;
+    color3: string = 'bluegray';
+
+    size3: string = 'M';
+
+    liked1: boolean;
+
+    liked2: boolean;
 
     sizes: size[];
 
     images1: string[];
 
     selectedImageIndex1: number = 0;
+
+    images2: string[];
+
+    selectedImageIndex2: number = 0;
+
+    quantity: number = 1;
 
     ngOnInit(): void {
         this.sizes = [
@@ -38,6 +50,13 @@ export class ProductOverviewComponent implements OnInit {
             'product-overview-2-2.png',
             'product-overview-2-3.png',
             'product-overview-2-4.png'
+        ];
+
+        this.images2 = [
+            'product-overview-3-1.png',
+            'product-overview-3-2.png',
+            'product-overview-3-3.png',
+            'product-overview-3-4.png'
         ]
     }
 
