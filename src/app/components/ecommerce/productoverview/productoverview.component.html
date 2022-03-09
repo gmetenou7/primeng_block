@@ -5,11 +5,11 @@
             <div class="col-12 lg:col-6">
                 <div class="flex">
                     <div>
-                        <img src="assets/images/blocks/ecommerce/product-overview-1-1.png" class="w-full" />
+                        <img src="assets/images/blocks/ecommerce/productoverview/product-overview-1-1.png" class="w-full" />
                     </div>
                     <div class="flex flex-column px-3">
-                        <img src="assets/images/blocks/ecommerce/product-overview-1-2.png" class="mb-3 w-full" />
-                        <img src="assets/images/blocks/ecommerce/product-overview-1-3.png" class="w-full"/>
+                        <img src="assets/images/blocks/ecommerce/productoverview/product-overview-1-2.png" class="mb-3 w-full" />
+                        <img src="assets/images/blocks/ecommerce/productoverview/product-overview-1-3.png" class="w-full"/>
                     </div>
                 </div>
             </div>
@@ -110,10 +110,10 @@
         </ol>
         <div class="grid">
             <div class="col-12 lg:col-6">
-                <img attr.src="assets/images/blocks/ecommerce/{{images1[selectedImageIndex1]}}" class="mb-3 w-full" />
+                <img attr.src="assets/images/blocks/ecommerce/productoverview/{{images1[selectedImageIndex1]}}" class="mb-3 w-full" />
                 <div class="grid">
                     <div *ngFor="let image of images1; let i = index" class="col-3">
-                        <img src="assets/images/blocks/ecommerce/{{image}}" class="w-full cursor-pointer border-2 border-round border-transparent transition-colors transition-duration-150" [ngClass]="{'border-primary': selectedImageIndex1 === i}" (click)="selectedImageIndex1 = i"/>
+                        <img src="assets/images/blocks/ecommerce/productoverview/{{image}}" class="w-full cursor-pointer border-2 border-round border-transparent transition-colors transition-duration-150" [ngClass]="{'border-primary': selectedImageIndex1 === i}" (click)="selectedImageIndex1 = i"/>
                     </div>
                 </div>
             </div>
@@ -164,11 +164,11 @@
             <div class="col-12 lg:col-6">
                 <div class="flex">
                     <div class="flex flex-column">
-                        <img *ngFor="let image of images2; let i = index" src="assets/images/blocks/ecommerce/{{image}}" class="w-6rem h-6rem cursor-pointer border-2 border-round border-transparent transition-colors transition-duration-150 mb-3" 
+                        <img *ngFor="let image of images2; let i = index" src="assets/images/blocks/ecommerce/productoverview/{{image}}" class="w-6rem h-6rem cursor-pointer border-2 border-round border-transparent transition-colors transition-duration-150 mb-3" 
                             [ngClass]="{'border-primary': selectedImageIndex2 === i}" (click)="selectedImageIndex2 = i"/>
                     </div>
                     <div class="pl-3 flex-1">
-                        <img attr.src="assets/images/blocks/ecommerce/{{images2[selectedImageIndex2]}}" class="w-full" />
+                        <img attr.src="assets/images/blocks/ecommerce/productoverview/{{images2[selectedImageIndex2]}}" class="w-full" />
                     </div>
                 </div>
             </div>
@@ -370,11 +370,11 @@
                 <p-galleria [(value)]="galleriaImages" [containerStyle]="{'max-width': '640px'}" [numVisible]="3"
                     [showThumbnails]="false" [showIndicators]="true" [changeItemOnIndicatorHover]="true" [showIndicatorsOnItem]="true"> 
                     <ng-template pTemplate="item" let-item>
-                        <img [src]="'assets/images/blocks/ecommerce/' + item" style="width: 100%; display: block;" />
+                        <img [src]="'assets/images/blocks/ecommerce/productoverview/' + item" style="width: 100%; display: block;" />
                     </ng-template>
                     <ng-template pTemplate="thumbnail" let-item>
                         <div class="grid grid-nogutter justify-content-center">
-                            <img [src]="'assets/images/blocks/ecommerce/' + item" style="display: block;" />
+                            <img [src]="'assets/images/blocks/ecommerce/productoverview/' + item" style="display: block;" />
                         </div>
                     </ng-template>
                 </p-galleria>
@@ -414,7 +414,7 @@
                 <div class="surface-50 border-round p-3 mb-5">
                     <div class="text-900 text-xl mb-4">Goes with</div>
                     <div class="flex align-items-center">
-                        <img src="assets/images/blocks/ecommerce/product-suggestion.png" class="w-5rem h-5rem flex-shrink-0" />
+                        <img src="assets/images/blocks/ecommerce/productoverview/product-suggestion.png" class="w-5rem h-5rem flex-shrink-0" />
                         <div class="pl-3">
                             <span class="text-900 text-xl font-medium">Product Title</span>
                             <p class="mb-0 mt-2 p-0 text-600 font-medium">$24.00</p>
