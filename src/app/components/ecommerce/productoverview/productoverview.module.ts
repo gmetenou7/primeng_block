@@ -8,6 +8,8 @@ import { RippleModule } from 'primeng/ripple';
 import { TabViewModule } from 'primeng/tabview';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { DropdownModule } from 'primeng/dropdown';
+import { GalleriaModule } from 'primeng/galleria';
+import { AccordionModule } from 'primeng/accordion';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 
 @NgModule({
@@ -17,8 +19,10 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
     RippleModule,
     FormsModule,
     DropdownModule,
+    GalleriaModule,
     TabViewModule,
     InputNumberModule,
+    AccordionModule,
     ProductOverviewRoutingModule,
     BlockViewerModule
   ],

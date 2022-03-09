@@ -22,6 +22,8 @@ export class ProductOverviewComponent implements OnInit {
 
     size3: string = 'M';
 
+    color4: string = 'blue';
+
     liked1: boolean;
 
     liked2: boolean;
@@ -36,7 +38,11 @@ export class ProductOverviewComponent implements OnInit {
 
     selectedImageIndex2: number = 0;
 
-    quantity: number = 1;
+    quantity1: number = 1;
+
+    quantity2: number = 1;
+
+    galleriaImages: string[];
 
     ngOnInit(): void {
         this.sizes = [
@@ -57,7 +63,13 @@ export class ProductOverviewComponent implements OnInit {
             'product-overview-3-2.png',
             'product-overview-3-3.png',
             'product-overview-3-4.png'
-        ]
+        ];
+
+        this.galleriaImages = [
+            'product-overview-4-1.png',
+            'product-overview-4-2.png',
+            'product-overview-4-3.png'
+        ];
     }
 
     block1: string = `

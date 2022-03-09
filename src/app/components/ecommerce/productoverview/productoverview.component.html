@@ -217,7 +217,7 @@
 
                 <div class="font-bold text-900 mb-3">Quantity</div>
                 <div class="flex align-items-center justify-content-between">
-                    <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" inputStyleClass="w-3rem text-center" [(ngModel)]="quantity"
+                    <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" inputStyleClass="w-3rem text-center" [(ngModel)]="quantity1"
                         decrementButtonClass="p-button-text" incrementButtonClass="p-button-text" incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus"></p-inputNumber>
                     <button pButton pRipple label="Add to Cart" class="flex-1 mx-5"></button>
                     <i class="pi text-2xl cursor-pointer" [ngClass]="{'pi-heart text-600': !liked1, 'pi-heart-fill text-orange-500': liked1}" (click)="liked1 = !liked1"></i>
@@ -360,5 +360,84 @@
                 </div>
             </p-tabPanel>
         </p-tabView>
+    </div>
+</block-viewer>
+
+<block-viewer header="Galleria and Accordion" [code]="block4" [new]="true">
+    <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+        <div class="grid">
+            <div class="col-12 lg:col-6 flex justify-content-center">
+                <p-galleria [(value)]="galleriaImages" [containerStyle]="{'max-width': '640px'}" [numVisible]="3"
+                    [showThumbnails]="false" [showIndicators]="true" [changeItemOnIndicatorHover]="true" [showIndicatorsOnItem]="true"> 
+                    <ng-template pTemplate="item" let-item>
+                        <img [src]="'assets/images/blocks/ecommerce/' + item" style="width: 100%; display: block;" />
+                    </ng-template>
+                    <ng-template pTemplate="thumbnail" let-item>
+                        <div class="grid grid-nogutter justify-content-center">
+                            <img [src]="'assets/images/blocks/ecommerce/' + item" style="display: block;" />
+                        </div>
+                    </ng-template>
+                </p-galleria>
+            </div>
+            <div class="col-12 lg:col-6 lg:col-6 py-3 pl-5">
+                <div class="flex align-items-center justify-content-between mb-4">
+                    <span class="text-900 text-4xl font">Product Title</span>
+                    <span class="inline-flex align-items-center">
+                        <i class="pi pi-star-fill text-yellow-500 mr-2"></i>
+                        <span class="font-bold text-900">5.0</span>
+                    </span>
+                </div>
+                <div class="text-700 text-3xl mb-5">$56.00</div>
+
+                <div class="font-medium text-900 mb-3 text-xl">Color
+                    <span class="ml-1 text-700 font-normal capitalize">| {{color4}}</span>
+                </div>
+                <div class="flex align-items-center mb-5">
+                    <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-blue-500 mr-3 cursor-pointer border-2 border-white transition-all transition-duration-300" 
+                        [style.box-shadow]="color4 === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color4 = 'blue'"></div>
+                    <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-purple-500 mr-3 cursor-pointer border-2 border-white transition-all transition-duration-300" 
+                        [style.box-shadow]="color4 === 'purple' ? '0 0 0 0.2rem var(--purple-500)' : null" (click)="color4 = 'purple'"></div>
+                    <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-pink-500 cursor-pointer border-2 border-white transition-all transition-duration-300" 
+                        [style.box-shadow]="color1 === 'pink' ? '0 0 0 0.2rem var(--pink-500)' : null" (click)="color4 = 'pink'"></div>
+                </div>
+
+                <div class="border-round p-2 border-1 surface-border inline-flex mb-5">
+                    <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" inputStyleClass="w-3rem text-center border-transparent" [(ngModel)]="quantity2"
+                    decrementButtonClass="p-button-text" incrementButtonClass="p-button-text" incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus"></p-inputNumber>
+                </div>
+
+                <div class="flex mb-5">
+                    <button pButton label="Add to Cart" class="p-button-outlined w-6 mr-1"></button>
+                    <button pButton label="Buy Now" class="w-6 ml-1"></button>
+                </div>
+
+                <div class="surface-50 border-round p-3 mb-5">
+                    <div class="text-900 text-xl mb-4">Goes with</div>
+                    <div class="flex align-items-center">
+                        <img src="assets/images/blocks/ecommerce/product-suggestion.png" class="w-5rem h-5rem flex-shrink-0" />
+                        <div class="pl-3">
+                            <span class="text-900 text-xl font-medium">Product Title</span>
+                            <p class="mb-0 mt-2 p-0 text-600 font-medium">$24.00</p>
+                        </div>
+                        <button pButton class="ml-auto border-circle p-button-outlined" icon="pi pi-plus"></button>
+                    </div>
+                </div>
+
+                <p-accordion>
+                    <p-accordionTab header="About Product">
+                        <div class="line-height-3">Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+                    </p-accordionTab>
+                    <p-accordionTab header="Shipping">
+                        <div class="line-height-3">Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+                    </p-accordionTab>
+                    <p-accordionTab header="Environment">
+                        <div class="line-height-3">Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+                    </p-accordionTab>
+                </p-accordion>
+            </div>
+        </div>
     </div>
 </block-viewer>
