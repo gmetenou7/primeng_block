@@ -29,5 +29,8 @@ export class ProductListComponent {
     block8: string = `
 `;
 
+    block9: string = `
+`;
+
 
 }
