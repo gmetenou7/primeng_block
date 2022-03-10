@@ -1,3 +1,79 @@
 <div class="block-category-title">Shopping Cart</div>
-<block-viewer header="Slide Over" [code]="block1" [new]="true">
+<block-viewer header="Slide Over" [code]="block1" containerClass="flex align-items-start justify-content-end px-4 py-8 md:px-6 lg:px-8 relative overflow-hidden h-screen" [new]="true">
+    <button pButton pRipple label="Display" icon="pi pi-arrow-left"
+        pStyleClass="#slideover-cart" enterClass="hidden" enterActiveClass="fadeinright" leaveToClass="hidden" leaveActiveClass="fadeoutright" [hideOnOutsideClick]="true"></button>
+    
+    <div id="slideover-cart" class="hidden surface-overlay absolute top-0 right-0 shadow-2 w-30rem h-full">
+        <div class="flex flex-column h-full">
+            <div class="surface-100 p-3 flex">
+                <button pButton pRipple icon="pi pi-chevron-right" class="p-button-text p-button-rounded" pStyleClass="#slideover-cart" leaveToClass="hidden" leaveActiveClass="fadeoutright"></button>
+                <div class="border-right-1 border-300 mx-3"></div>
+                <span class="text-900 text-xl font-medium inline-flex align-items-center ml-1">Your Cart</span>
+            </div>
+            <div class="flex-auto overflow-y-auto p-5">
+                <div class="flex align-items-center mb-3">
+                    <img src="assets/images/blocks/ecommerce/shoppingcart/shopping-cart-1-1.png" class="w-8rem h-8rem flex-shrink-0" />
+                    <div class="flex-auto p-3">
+                        <div class="flex align-items-center justify-content-between mb-3">
+                            <span class="text-900 font-medium">Product Name</span>
+                            <span class="text-900 font-bold">$50.00</span>
+                        </div>
+                        <div class="text-600 text-sm mb-3">Green | Small</div>
+                        <div class="flex flex-auto justify-content-between align-items-center">
+                            <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" inputStyleClass="w-3rem text-center py-2 px-1 border-transparent" [(ngModel)]="quantities1[0]" 
+                            class="border-1 surface-border border-round" decrementButtonClass="p-button-text py-1 px-1" incrementButtonClass="p-button-text py-1 px-1" incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus"></p-inputNumber>
+                            <button pButton pRipple icon="pi pi-trash" class="p-button-danger p-button-text p-button-rounded"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex align-items-center bg-green-50 text-green-600 text-sm p-2 border-round mb-3">
+                    <i class="pi pi-check mr-2"></i>
+                    <span>Item has been added to your cart.</span>
+                </div>
+
+                <p-divider styleClass="text-sm text-500">More items</p-divider>
+
+                <ul class="list-none p-0 m-0">
+                    <li class="flex align-items-center mb-3">
+                        <img src="assets/images/blocks/ecommerce/shoppingcart/shopping-cart-1-2.png" class="w-8rem h-8rem flex-shrink-0" />
+                        <div class="flex-auto p-3">
+                            <div class="flex align-items-center justify-content-between mb-3">
+                                <span class="text-900 font-medium">Product Name</span>
+                                <span class="text-900 font-bold">$12.00</span>
+                            </div>
+                            <div class="text-600 text-sm mb-3">Blue | Medium</div>
+                            <div class="flex flex-auto justify-content-between align-items-center">
+                                <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" inputStyleClass="w-3rem text-center py-2 px-1 border-transparent" [(ngModel)]="quantities1[0]" 
+                                class="border-1 surface-border border-round" decrementButtonClass="p-button-text py-1 px-1" incrementButtonClass="p-button-text py-1 px-1" incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus"></p-inputNumber>
+                                <button pButton pRipple icon="pi pi-trash" class="p-button-danger p-button-text p-button-rounded"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex align-items-center mb-3">
+                        <img src="assets/images/blocks/ecommerce/shoppingcart/shopping-cart-1-3.png" class="w-8rem h-8rem flex-shrink-0" />
+                        <div class="flex-auto p-3">
+                            <div class="flex align-items-center justify-content-between mb-3">
+                                <span class="text-900 font-medium">Product Name</span>
+                                <span class="text-900 font-bold">$18.00</span>
+                            </div>
+                            <div class="text-600 text-sm mb-3">White | Large</div>
+                            <div class="flex flex-auto justify-content-between align-items-center">
+                                <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" inputStyleClass="w-3rem text-center py-2 px-1 border-transparent" [(ngModel)]="quantities1[0]" 
+                                class="border-1 surface-border border-round" decrementButtonClass="p-button-text py-1 px-1" incrementButtonClass="p-button-text py-1 px-1" incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus"></p-inputNumber>
+                                <button pButton pRipple icon="pi pi-trash" class="p-button-danger p-button-text p-button-rounded"></button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="border-top-1 surface-border p-3">
+                <div class="flex align-items-center justify-content-between mb-3">
+                    <span class="text-900 font-medium">Total Amount <span class="text-600 text-sm">incl. VAT</span></span>
+                    <span class="text-900 font-bold">$80.00</span>
+                </div>
+                <button pButton pRipple class="p-button-success mb-3 w-full" label="Check Out"></button>
+                <button pButton pRipple class="p-button-outlined p-button-secondary w-full" label="Continue Shopping" pStyleClass="#slideover-cart" leaveToClass="hidden" leaveActiveClass="fadeoutright"></button>
+            </div>
+        </div>
+    </div>
 </block-viewer>

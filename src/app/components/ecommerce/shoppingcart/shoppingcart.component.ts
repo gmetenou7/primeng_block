@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
 })
 export class ShoppingCartComponent {
 
+    quantities1: number[] = [1, 1, 1];
+
     block1: string = `
 `;
 
