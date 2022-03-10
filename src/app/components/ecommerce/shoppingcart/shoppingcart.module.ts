@@ -9,6 +9,7 @@ import { RippleModule } from 'primeng/ripple';
 import { DialogModule } from 'primeng/dialog';
 import { DropdownModule } from 'primeng/dropdown';
 import { DividerModule } from 'primeng/divider';
+import { CheckboxModule } from 'primeng/checkbox';
 import { StyleClassModule } from 'primeng/styleclass';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 
@@ -22,6 +23,7 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
     DialogModule,
     DropdownModule,
     DividerModule,
+    CheckboxModule,
     StyleClassModule,
     ShoppingCartRoutingModule,
     BlockViewerModule

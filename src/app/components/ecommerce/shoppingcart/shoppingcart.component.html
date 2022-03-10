@@ -1,5 +1,5 @@
 <div class="block-category-title">Shopping Cart</div>
-<block-viewer header="Slide Over" [code]="block1" containerClass="flex align-items-start justify-content-end px-4 py-8 md:px-6 lg:px-8 relative overflow-hidden h-screen" [new]="true">
+<block-viewer header="SlideOver" [code]="block1" containerClass="flex align-items-start justify-content-end px-4 py-8 md:px-6 lg:px-8 relative overflow-hidden h-screen" [new]="true">
     <button pButton pRipple label="Display" icon="pi pi-arrow-left"
         pStyleClass="#slideover-cart" enterClass="hidden" enterActiveClass="fadeinright" leaveToClass="hidden" leaveActiveClass="fadeoutright" [hideOnOutsideClick]="true"></button>
     
@@ -163,7 +163,7 @@
                     <span class="text-xl text-900 font-bold text-3xl">$90.00</span>
                 </li>
                 <li class="flex justify-content-end">
-                    <button pButton label="Check Out"></button>
+                    <button pButton pRipple label="Check Out"></button>
                 </li>
             </ul>
         </div>
@@ -270,4 +270,102 @@
             </div>
         </div>
     </div>
+</block-viewer>
+
+<block-viewer header="Extended SlideOver" [code]="block5" containerClass="flex align-items-start justify-content-end px-4 py-8 md:px-6 lg:px-8 relative overflow-hidden h-screen" [new]="true">
+    <button pButton pRipple label="Display" icon="pi pi-arrow-left"
+        pStyleClass="#slideover-cart-ext" enterClass="hidden" enterActiveClass="fadeinright" leaveToClass="hidden" leaveActiveClass="fadeoutright" [hideOnOutsideClick]="true"></button>
+    
+    <div id="slideover-cart-ext" class="hidden surface-overlay absolute top-0 right-0 shadow-2 h-full w-full lg:w-6">
+        <div class="flex flex-column h-full">
+            <div class="surface-overlay p-4 flex align-items-center justify-content-between">
+                <span class="text-900 text-xl font-medium">Your Cart</span>
+                <button pButton pRipple icon="pi pi-times" class="p-button-text p-button-plain p-button-rounded" pStyleClass="#slideover-cart-ext" leaveToClass="hidden" leaveActiveClass="fadeoutright"></button>
+            </div>
+            <div class="flex flex-auto overflow-y-auto">
+                <div class="w-6 p-4 flex flex-column">
+                    <div class="flex align-items-center border-top-1 surface-border pt-4 mb-4">
+                        <img src="assets/images/blocks/ecommerce/shoppingcart/shopping-cart-5-1.png" class="w-7rem h-7rem flex-shrink-0" />
+                        <div class="pl-3 flex-auto">
+                            <div class="flex align-items-center justify-content-between mb-2">
+                                <span class="text-primary font-medium">Product Title</span>
+                                <a class="cursor-pointer text-pink-500 hover:text-pink-700 transition-colors transition-duration-300"><i class="pi pi-trash"></i></a>
+                            </div>
+                            <span class="text-500">Medium</span>
+                            <div class="flex align-items-center justify-content-between mt-2">
+                                <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" inputStyleClass="w-3rem text-center py-2 px-1 border-transparent" [(ngModel)]="quantities1[0]" 
+                                    class="border-1 surface-border border-round" decrementButtonClass="p-button-text py-1 px-1" incrementButtonClass="p-button-text py-1 px-1" incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus"></p-inputNumber>
+                                <span class="text-900 font-medium">$20.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="surface-50 p-3 flex align-items-center border-round">
+                        <p-checkbox [binary]="true"></p-checkbox>
+                        <span class="ml-2">Add Warranty</span>
+                        <span class="text-900 font-medium ml-auto">$5.00</span>
+                    </div>
+                    <div class="border-top-1 border-bottom-1 surface-border mt-4 py-4">
+                        <ul class="list-none m-0 p-0 ">
+                            <li class="flex justify-content-between mb-3">
+                                <span class="text-600">Subtotal</span>
+                                <span class="text-900 font-medium">$20.00</span>
+                            </li>
+                            <li class="flex justify-content-between mb-3">
+                                <span class="text-600">Shipping</span>
+                                <span class="text-900 font-medium">$5.00</span>
+                            </li>
+                            <li class="flex justify-content-between">
+                                <span class="text-600">Total</span>
+                                <span class="text-900 font-medium">$25.00</span>
+                            </li>
+                        </ul>
+                        <button pButton pRipple label="Add Coupon" class="p-button-text block mx-auto mt-4"></button>
+                    </div>
+                    <div class="mt-auto">
+                        <div class="flex align-items-center justify-content-between text-xl text-900">
+                            <span>Grand Total</span>
+                            <span>$25.00</span>
+                        </div>
+                        <button pButton pRipple label="Place Order" class="w-full mt-4"></button>
+                    </div>
+                </div>
+                <div class="w-6 p-4 surface-50">
+                    <div class="text-900 font-medium mb-4">Related Products</div>
+                    <div class="p-3 surface-card border-round shadow-2 flex align-items-start">
+                        <img src="assets/images/blocks/ecommerce/shoppingcart/shopping-cart-5-2.png" class="w-7rem h-7rem flex-shrink-0" />
+                        <div class="pl-3">
+                            <span class="text-primary font-medium">Product Title</span>
+                            <p class="text-sm text-600 line-height-3 my-2 p-0">In ante metus dictum at tempor commodo.</p>
+                            <div class="flex align-items-center justify-content-between">
+                                <span class="text-900 font-medium">$10.00</span>
+                                <button type="button" pButton pRipple icon="pi pi-shopping-cart" class="p-button-rounded"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3 surface-card border-round shadow-2 flex align-items-start mb-3">
+                        <img src="assets/images/blocks/ecommerce/shoppingcart/shopping-cart-5-3.png" class="w-7rem h-7rem flex-shrink-0" />
+                        <div class="pl-3">
+                            <span class="text-primary font-medium">Product Title</span>
+                            <p class="text-sm text-600 line-height-3 my-2 p-0">In ante metus dictum at tempor commodo.</p>
+                            <div class="flex align-items-center justify-content-between">
+                                <span class="text-900 font-medium">$5.00</span>
+                                <button type="button" pButton pRipple icon="pi pi-shopping-cart" class="p-button-rounded"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3 surface-card border-round shadow-2 flex align-items-start mb-3">
+                        <img src="assets/images/blocks/ecommerce/shoppingcart/shopping-cart-5-4.png" class="w-7rem h-7rem flex-shrink-0" />
+                        <div class="pl-3">
+                            <span class="text-primary font-medium">Product Title</span>
+                            <p class="text-sm text-600 line-height-3 my-2 p-0">In ante metus dictum at tempor commodo.</p>
+                            <div class="flex align-items-center justify-content-between">
+                                <span class="text-900 font-medium">$8.00</span>
+                                <button type="button" pButton pRipple icon="pi pi-shopping-cart" class="p-button-rounded"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
 </block-viewer>
