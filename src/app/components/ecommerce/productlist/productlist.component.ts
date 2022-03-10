@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
 })
 export class ProductListComponent {
 
+    hoveredItem: number;
+
     block1: string = `
 `;
 
@@ -27,6 +29,9 @@ export class ProductListComponent {
     `;
 
     block8: string = `
+`;
+
+    block9: string = `
 `;
 
 
