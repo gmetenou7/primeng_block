@@ -6,6 +6,7 @@ import { ShoppingCartRoutingModule } from './shoppingcart-routing.module';
 import { ButtonModule } from 'primeng/button';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { RippleModule } from 'primeng/ripple';
+import { DropdownModule } from 'primeng/dropdown';
 import { DividerModule } from 'primeng/divider';
 import { StyleClassModule } from 'primeng/styleclass';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
@@ -17,6 +18,7 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
     ButtonModule,
     InputNumberModule,
     RippleModule,
+    DropdownModule,
     DividerModule,
     StyleClassModule,
     ShoppingCartRoutingModule,

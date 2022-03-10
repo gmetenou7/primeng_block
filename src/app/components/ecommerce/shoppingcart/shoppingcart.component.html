@@ -77,3 +77,96 @@
         </div>
     </div>
 </block-viewer>
+
+<block-viewer header="Single Column" [code]="block2" [new]="true">
+    <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+        <div class="flex flex-column align-items-center mb-6">
+            <div class="text-900 text-4xl mb-4 font-medium">Your cart total is $82.00</div>
+            <p class="text-600 font-medium text-xl mt-0 mb-4">FREE SHIPPING AND RETURN</p>
+            <button pButton pRipple label="Check Out"></button>
+        </div>
+        <ul class="list-none p-0 m-0">
+            <li class="flex py-6 border-top-1 border-bottom-1 surface-border align-items-center">
+                <div class="w-12rem">
+                    <img src="assets/images/blocks/ecommerce/shoppingcart/shopping-cart-2-1.png" class="w-full" />
+                </div>
+                <div class="flex-auto py-5 pl-5">
+                    <div class="flex justify-content-between surface-border pb-6">
+                        <div class="flex flex-column">
+                            <span class="text-900 text-xl font-medium mb-3">Product Name</span>
+                            <span class="text-600">Medium</span>
+                        </div>
+                        <div>
+                            <p-dropdown [options]="quantityOptions"></p-dropdown>
+                        </div>
+                        <div class="flex flex-column align-items-end">
+                            <span class="text-900 text-xl font-medium mb-3">$20.00</span>
+                            <a class="cursor-pointer text-pink-500 font-medium text-sm hover:text-pink-600 transition-colors transition-duration-300" tabindex="0">Remove</a>
+                        </div>
+                    </div>
+                    <div class="flex align-items-center">
+                        <i class="pi pi-envelope text-600 mr-2"></i>
+                        <span class="text-600 mr-2">Order today. Delivers</span>
+                        <span class="text-900 font-medium">Dec 16 - Dec 23 / Free</span>
+                        <span class="mx-3 text-600">|</span>
+                        <i class="pi pi-exclamation-triangle text-600 mr-2"></i>
+                        <span class="text-600 mr-2">Only 8 Available.</span>
+                    </div>
+                </div>
+            </li>
+            <li class="flex py-6 border-bottom-1 surface-border align-items-center">
+                <div class="w-12rem">
+                    <img src="assets/images/blocks/ecommerce/shoppingcart/shopping-cart-2-2.png" class="w-full" />
+                </div>
+                <div class="flex-auto py-5 pl-5">
+                    <div class="flex justify-content-between surface-border pb-6">
+                        <div class="flex flex-column">
+                            <span class="text-900 text-xl font-medium mb-3">Product Name</span>
+                            <span class="text-600">Medium</span>
+                        </div>
+                        <div>
+                            <p-dropdown [options]="quantityOptions"></p-dropdown>
+                        </div>
+                        <div class="flex flex-column align-items-end">
+                            <span class="text-900 text-xl font-medium mb-3">$62.00</span>
+                            <a class="cursor-pointer text-pink-500 font-medium text-sm hover:text-pink-600 transition-colors transition-duration-300" tabindex="0">Remove</a>
+                        </div>
+                    </div>
+                    <div class="pt-6 flex align-items-center">
+                        <i class="pi pi-envelope text-600 mr-2"></i>
+                        <span class="text-600 mr-2">Order today. Delivers</span>
+                        <span class="text-900 font-medium">Dec 16 - Dec 23 / Free</span>
+                        <span class="mx-3 text-600">|</span>
+                        <i class="pi pi-exclamation-triangle text-600 mr-2"></i>
+                        <span class="text-600 mr-2">Only 2 Available.</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="flex">
+            <div class="w-12rem"></div>
+            <ul class="list-none py-0 pr-0 pl-5 mt-6 mx-0 mb-0 flex-auto">
+                <li class="flex justify-content-between mb-4">
+                    <span class="text-xl text-900">Subtotal</span>
+                    <span class="text-xl text-900">$82.00</span>
+                </li>
+                <li class="flex justify-content-between mb-4">
+                    <span class="text-xl text-900">Shipping</span>
+                    <span class="text-xl text-900">Free</span>
+                </li>
+                <li class="flex justify-content-between mb-4">
+                    <span class="text-xl text-900">VAT</span>
+                    <span class="text-xl text-900">$8.00</span>
+                </li>
+                <li class="flex justify-content-between border-top-1 surface-border mb-4 pt-4">
+                    <span class="text-xl text-900 font-bold text-3xl">Total</span>
+                    <span class="text-xl text-900 font-bold text-3xl">$90.00</span>
+                </li>
+                <li class="flex justify-content-end">
+                    <button pButton label="Check Out"></button>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</block-viewer>
