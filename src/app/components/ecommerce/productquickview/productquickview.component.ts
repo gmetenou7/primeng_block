@@ -5,6 +5,14 @@ import { Component } from '@angular/core';
 })
 export class ProductQuickviewComponent {
 
+    hovered: boolean;
+
+    visibleDialog: boolean;
+
+    color1: string = 'cyan';
+
+    size1: string = 'M';
+
     block1: string = `
 `;
 
