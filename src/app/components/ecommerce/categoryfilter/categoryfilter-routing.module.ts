@@ -1,15 +1,15 @@
 import {NgModule} from '@angular/core';
 import {RouterModule} from '@angular/router';
-import {CategoryPreviewComponent} from './categorypreview.component';
+import {CategoryFilterComponent} from './categoryfilter.component';
 
 @NgModule({
   imports: [
     RouterModule.forChild([
-      {path:'', component: CategoryPreviewComponent}
+      {path: '', component: CategoryFilterComponent}
     ])
   ],
   exports: [
     RouterModule
   ]
 })
-export class CategoryPreviewRoutingModule { }
+export class CategoryFilterRoutingModule { }
