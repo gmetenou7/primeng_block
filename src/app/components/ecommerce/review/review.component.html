@@ -1,4 +1,190 @@
 <div class="block-category-title">Review</div>
 <block-viewer header="2x3 Grid" [code]="block1" [new]="true">
-    
+    <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+        <div class="flex flex-column md:flex-row">
+            <div class="w-full md:w-6">
+                <ul class="list-none p-0 m-0">
+                    <li class="flex align-items-center mb-2">
+                        <span class="text-900 font-medium mr-3">5</span>
+                        <div style="height:7px" class="border-round overflow-hidden flex-auto surface-300">
+                            <div class="h-full bg-yellow-500 w-9 border-round"></div>
+                        </div>
+                    </li>
+                    <li class="flex align-items-center mb-2">
+                        <span class="text-900 font-medium mr-3">4</span>
+                        <div style="height:7px" class="border-round overflow-hidden flex-auto surface-300">
+                            <div class="h-full bg-yellow-500 w-6"></div>
+                        </div>
+                    </li>
+                    <li class="flex align-items-center mb-2">
+                        <span class="text-900 font-medium mr-3">3</span>
+                        <div style="height:7px" class="border-round overflow-hidden flex-auto surface-300">
+                            <div class="h-full bg-yellow-500 w-2"></div>
+                        </div>
+                    </li>
+                    <li class="flex align-items-center mb-2">
+                        <span class="text-900 font-medium mr-3">2</span>
+                        <div style="height:7px" class="border-round overflow-hidden flex-auto surface-300">
+                            <div class="h-full bg-yellow-500 w-4"></div>
+                        </div>
+                    </li>
+                    <li class="flex align-items-center mb-2">
+                        <span class="text-900 font-medium mr-3">1</span>
+                        <div style="height:7px" class="border-round overflow-hidden flex-auto surface-300">
+                            <div class="h-full bg-yellow-500 w-3"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full md:w-6 flex flex-column align-items-center justify-content-center">
+                <span class="text-5xl font-medium text-900 mb-3">3.0</span>
+                <span class="mb-2">
+                    <i class="pi pi-star-fill text-yellow-500 mr-1 text-2xl"></i>
+                    <i class="pi pi-star-fill text-yellow-500 mr-1 text-2xl"></i>
+                    <i class="pi pi-star-fill text-yellow-500 mr-1 text-2xl"></i>
+                    <i class="pi pi-star-fill text-yellow-500 mr-1 text-2xl"></i>
+                    <i class="pi pi-star-fill text-300 text-2xl"></i>
+                </span>
+                <a class="cursor-tabindex text-blue-500 hover:text-blue-500 transition-colors transition-duration-300 font-medium">85 Reviews</a> 
+            </div>
+        </div>
+        <div class="border-top-1 surface-border mt-5 py-5">
+            <div class="flex align-items-center justify-content-between mb-5">
+                <button pButton pRipple label="Write a review"></button>
+                <p-dropdown [(ngModel)]="reviewOrder" [options]="reviewOrderOptions"></p-dropdown>
+            </div>
+            <div class="grid -mt-3 -ml-3 -mr-3">
+                <div class="col-12 md:col-6">
+                    <div class="p-2">
+                        <div class="border-1 surface-border border-round p-3">
+                            <div class="flex align-items-center mb-3">
+                                <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="w-2rem h-2rem flex-shrink-0 mr-2" />
+                                <span class="text-900 font-medium mr-3">Code Fisher</span>
+                                <span class="text-sm font-medium text-500">1d ago</span>
+                                <span class="ml-auto">
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-300"></i>
+                                </span>
+                            </div>
+                            <p class="m-0 p-0 line-height-3 text-600">
+                                Etiam tempor orci eu lobortis elementum nibh tellus. Auctor eu augue ut lectus arcu bibendum at varius vel. 
+                                Id aliquet lectus proin nibh nisl. Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6">
+                    <div class="p-2">
+                        <div class="border-1 surface-border border-round p-3">
+                            <div class="flex align-items-center mb-3">
+                                <img src="assets/images/blocks/avatars/circle/avatar-f-2.png" class="w-2rem h-2rem flex-shrink-0 mr-2" />
+                                <span class="text-900 font-medium mr-3">Eleanor Pena</span>
+                                <span class="text-sm font-medium text-500">3d ago</span>
+                                <span class="ml-auto">
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-yellow-500"></i>
+                                </span>
+                            </div>
+                            <p class="m-0 p-0 line-height-3 text-600">
+                                Scelerisque varius morbi enim nunc. Arcu bibendum at varius vel pharetra vel turpis nunc eget. 
+                                Elit ut aliquam purus sit amet luctus. Aliquam etiam erat velit scelerisque in.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6">
+                    <div class="p-2">
+                        <div class="border-1 surface-border border-round p-3">
+                            <div class="flex align-items-center mb-3">
+                                <img src="assets/images/blocks/avatars/circle/avatar-f-3.png" class="w-2rem h-2rem flex-shrink-0 mr-2" />
+                                <span class="text-900 font-medium mr-3">Darlene Robertson</span>
+                                <span class="text-sm font-medium text-500">4d ago</span>
+                                <span class="ml-auto">
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-300 mr-1"></i>
+                                    <i class="pi pi-star-fill text-300 mr-1"></i>
+                                    <i class="pi pi-star-fill text-300"></i>
+                                </span>
+                            </div>
+                            <p class="m-0 p-0 line-height-3 text-600">
+                                Laoreet id donec ultrices tincidunt arcu non sodales neque. A pellentesque sit amet porttitor eget.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6">
+                    <div class="p-2">
+                        <div class="border-1 surface-border border-round p-3">
+                            <div class="flex align-items-center mb-3">
+                                <img src="assets/images/blocks/avatars/circle/avatar-m-1.png" class="w-2rem h-2rem flex-shrink-0 mr-2" />
+                                <span class="text-900 font-medium mr-3">Robert Fox</span>
+                                <span class="text-sm font-medium text-500">1w ago</span>
+                                <span class="ml-auto">
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-300"></i>
+                                </span>
+                            </div>
+                            <p class="m-0 p-0 line-height-3 text-600">
+                                Orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Vitae elementum curabitur vitae nunc sed velit dignissim sodales ut.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6">
+                    <div class="p-2">
+                        <div class="border-1 surface-border border-round p-3">
+                            <div class="flex align-items-center mb-3">
+                                <img src="assets/images/blocks/avatars/circle/avatar-f-4.png" class="w-2rem h-2rem flex-shrink-0 mr-2" />
+                                <span class="text-900 font-medium mr-3">Kathryn Murphyr</span>
+                                <span class="text-sm font-medium text-500">1w ago</span>
+                                <span class="ml-auto">
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-300"></i>
+                                </span>
+                            </div>
+                            <p class="m-0 p-0 line-height-3 text-600">
+                                Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula.
+                                 Fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6">
+                    <div class="p-2">
+                        <div class="border-1 surface-border border-round p-3">
+                            <div class="flex align-items-center mb-3">
+                                <img src="assets/images/blocks/avatars/circle/avatar-f-5.png" class="w-2rem h-2rem flex-shrink-0 mr-2" />
+                                <span class="text-900 font-medium mr-3">Arlene McCoy</span>
+                                <span class="text-sm font-medium text-500">2d ago</span>
+                                <span class="ml-auto">
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-yellow-500 mr-1"></i>
+                                    <i class="pi pi-star-fill text-300 mr-1"></i>
+                                    <i class="pi pi-star-fill text-300 mr-1"></i>
+                                    <i class="pi pi-star-fill text-300"></i>
+                                </span>
+                            </div>
+                            <p class="m-0 p-0 line-height-3 text-600">
+                                Cursus eget nunc scelerisque viverra mauris in aliquam. Sed ullamcorper morbi tincidunt ornare massa. 
+                                Eu tincidunt tortor aliquam nulla facilisi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </block-viewer>

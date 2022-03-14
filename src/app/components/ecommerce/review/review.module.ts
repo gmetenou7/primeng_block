@@ -5,7 +5,6 @@ import { ReviewComponent } from './review.component';
 import { ReviewRoutingModule } from './review-routing.module';
 import { ButtonModule } from 'primeng/button';
 import { DropdownModule } from 'primeng/dropdown';
-import { ProgressBarModule } from 'primeng/progressbar';
 import { RippleModule } from 'primeng/ripple';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 
@@ -15,7 +14,6 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
     FormsModule,
     ButtonModule,
     RippleModule,
-    ProgressBarModule,
     DropdownModule,
     ReviewRoutingModule,
     BlockViewerModule
