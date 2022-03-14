@@ -13,7 +13,7 @@
     </div>
 
     <p-dialog [(visible)]="visibleDialog" appendTo="body" [modal]="true" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '700px'}" [showHeader]="false" [contentStyle]="{padding:'2rem 2rem 1rem 2rem'}">
-        <div class="grid relative top">
+        <div class="grid relative">
             <div class="col-12 lg:col-6">
                 <img src="assets/images/blocks/ecommerce/productquickview/product-quickview-1-1.png" class="w-full" />
             </div>
@@ -72,5 +72,53 @@
 </block-viewer>
 
 <block-viewer header="Galleria and Features" [code]="block2" [new]="true" [previewStyle]="{height: '640px', backgroundColor: 'var(--maskbg)'}" containerClass="flex align-items-center justify-content-center">
-    
+    <div class="surface-overlay border-round p-4 shadow-4" style="max-width: 800px">
+        <div class="grid relative">
+            <div class="col-12 lg:col-6">
+                <p-galleria [(value)]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="3"> 
+                    <ng-template pTemplate="item" let-item>
+                        <img [src]="'assets/images/blocks/ecommerce/productquickview/' + item" style="width: 100%; display: block;" />
+                    </ng-template>
+                    <ng-template pTemplate="thumbnail" let-item>
+                        <div class="grid grid-nogutter justify-content-center">
+                            <img [src]="'assets/images/blocks/ecommerce/productquickview/'+ item" width="75"/>
+                        </div>
+                    </ng-template>
+                </p-galleria>
+            </div>
+            <div class="col-12 lg:col-6 pl-5">
+                <div class="flex justify-content-end">
+                    <button pButton pRipple class="p-button-text p-button-plain p-button-rounded" icon="pi pi-times pi-2xl"></button>
+                </div>
+                <div class="text-900 text-2xl font-medium mb-3">Product Title</div>
+                <div class="text-900 text-3xl font-bold mb-3">$120.00</div>
+                <p class="text-700 line-height-3 my-4 p-0">Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Urna molestie at elementum eu facilisis.</p>
+                <div class="flex align-items-center mb-4">
+                    <button type="button" pButton pRipple label="Add to Cart" class="mr-3 py-2"></button>
+                    <button type="button" pButton pRipple icon="pi pi-heart" class="p-button-text"></button>
+                </div>
+                <div class="flex align-items-center mb-4">
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="-mr-1 w-2rem h-2rem" />
+                    <img src="assets/images/blocks/avatars/circle/avatar-m-1.png" class="-mr-1 w-2rem h-2rem" />
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-2.png" class="-mr-1 w-2rem h-2rem" />
+                    <img src="assets/images/blocks/avatars/circle/avatar-m-2.png" class="mr-3 w-2rem h-2rem" />
+                    <span class="text-600 text-sm font-medium">11 other people liked it</span>
+                </div>
+                <ul class="list-none p-0 m-0">
+                    <li class="flex align-items-center mb-2">
+                        <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                        <span class="text-900 text-sm">Urna molestie at elementum eu facilisis.</span>
+                    </li>
+                    <li class="flex align-items-center mb-2">
+                        <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                        <span class="text-900 text-sm">Ut tristique et egestas quis ipsum..</span>
+                    </li>
+                    <li class="flex align-items-center">
+                        <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                        <span class="text-900 text-sm">Magna etiam tempor orci..</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </block-viewer>

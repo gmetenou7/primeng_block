@@ -12,7 +12,8 @@ import { EcommerceComponent } from './ecommerce.component';
             {path: 'shoppingcart', loadChildren: () => import('./shoppingcart/shoppingcart.module').then(m => m.ShoppingCartModule), data: {name: 'Shopping Cart'}},
             {path: 'categoryfilter', loadChildren: () => import('./categoryfilter/categoryfilter.module').then(m => m.CategoryFilterModule), data: {name: 'Category Filter'}},
             {path: 'productquickview', loadChildren: () => import('./productquickview/productquickview.module').then(m => m.ProductQuickviewModule), data: {name: 'Product Qucikview'}},
-            {path: 'productfeature', loadChildren: () => import('./productfeature/productfeature.module').then(m => m.ProductFeatureModule), data: {name: 'Product Features'}}
+            {path: 'productfeature', loadChildren: () => import('./productfeature/productfeature.module').then(m => m.ProductFeatureModule), data: {name: 'Product Features'}},
+            {path: 'promosection', loadChildren: () => import('./promosection/promosection.module').then(m => m.ProductSectionModule), data: {name: 'Promo Section'}}
         ])
     ],
     exports: [
