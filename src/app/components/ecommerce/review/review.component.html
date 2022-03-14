@@ -45,7 +45,7 @@
                     <i class="pi pi-star-fill text-yellow-500 mr-1 text-2xl"></i>
                     <i class="pi pi-star-fill text-300 text-2xl"></i>
                 </span>
-                <a class="cursor-tabindex text-blue-500 hover:text-blue-500 transition-colors transition-duration-300 font-medium">85 Reviews</a> 
+                <a tabindex="0" class="cursor-pointer text-blue-500 hover:text-blue-600 transition-colors transition-duration-300 font-medium">85 Reviews</a> 
             </div>
         </div>
         <div class="border-top-1 surface-border mt-5 py-5">
@@ -325,5 +325,109 @@
                 </li>
             </ul>
         </div>
+    </div>
+</block-viewer>
+
+<block-viewer header="With Seller Comment" [code]="block3" [new]="true">
+    <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+        <div class="text-900 text-3xl font-bold mb-4">Customer Reviews</div>
+        <div class="flex align-items-center justify-content-between mb-5">
+            <div class="flex align-items-center">
+                <span class="mr-3">
+                    <i class="pi pi-star-fill text-pink-500 mr-1 text-xl"></i>
+                    <i class="pi pi-star-fill text-pink-500 mr-1 text-xl"></i>
+                    <i class="pi pi-star-fill text-pink-500 mr-1 text-xl"></i>
+                    <i class="pi pi-star-fill text-pink-500 mr-1 text-xl"></i>
+                    <i class="pi pi-star-fill text-pink-500 text-xl"></i>
+                </span>
+                <a tabindex="0" class="cursor-pointer text-blue-500 hover:text-blue-600 transition-colors transition-duration-300 font-medium">20 Reviews</a> 
+            </div>
+            <button pButton label="Write a review" icon="pi pi-edit" class="p-button-outlined"></button>
+        </div>
+        <ul class="list-none p-0 m-0">
+            <li class="border-top-1 surface-border py-5">
+                <div class="flex align-items-center justify-content-between mb-4">
+                    <div>
+                        <span>
+                            <i class="pi pi-star-fill text-pink-500 mr-1"></i>
+                            <i class="pi pi-star-fill text-pink-500 mr-1"></i>
+                            <i class="pi pi-star-fill text-pink-500 mr-1"></i>
+                            <i class="pi pi-star-fill text-pink-500 mr-1"></i>
+                            <i class="pi pi-star-fill text-pink-500"></i>
+                        </span>
+                        <div class="mt-2">
+                            <span class="text-900 font-medium mr-2">Kathryn Murphy</span>
+                            <span class="text-500">on Feb 17, 2022</span>
+                        </div>
+                    </div>
+                    <button pButton pRipple icon="pi pi-exclamation-circle" label="Report" class="p-button-text"></button>
+                </div>
+                <div class="mb-2 text-900 text-2xl font-medium">Spectacular!</div>
+                <p class="text-600 line-height-3 mt-0 mb-3 p-0">Quis varius quam quisque id diam vel quam elementum pulvinar. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Sit amet mauris commodo quis.</p>
+                <div class="mt-5 flex align-items-center">
+                    <img src="assets/images/blocks/logos/peak-500.svg" alt="Image" class="w-6rem h-6rem flex-shrink-0 mr-5">
+                    <div class="border-200 border-1 border-round p-3 surface-50 flex-auto">
+                        <span class="text-900 font-medium">Peak Representative</span>
+                        <p class="text-600 line-height-3 mt-3 mb-0 p-0">Quis varius quam quisque id diam vel quam elementum pulvinar. 
+                            Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Sit amet mauris commodo quis.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="border-top-1 surface-border py-5">
+                <div class="flex align-items-center justify-content-between mb-4">
+                    <div>
+                        <span>
+                            <i class="pi pi-star-fill text-pink-500 mr-1"></i>
+                            <i class="pi pi-star-fill text-pink-500 mr-1"></i>
+                            <i class="pi pi-star-fill text-pink-500 mr-1"></i>
+                            <i class="pi pi-star-fill text-pink-500 mr-1"></i>
+                            <i class="pi pi-star-fill text-pink-500"></i>
+                        </span>
+                        <div class="mt-2">
+                            <span class="text-900 font-medium mr-2">Brooklyn Simmons</span>
+                            <span class="text-500">on Mar 17, 2022</span>
+                        </div>
+                    </div>
+                    <button pButton pRipple icon="pi pi-exclamation-circle" label="Report" class="p-button-text"></button>
+                </div>
+                <div class="mb-2 text-900 text-2xl font-medium">Great Deal!</div>
+                <p class="text-600 line-height-3 mt-0 mb-3 p-0">Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Egestas diam in arcu cursus euismod quis viverra nibh cras.</p>
+                <div class="mt-5 flex align-items-center">
+                    <img src="assets/images/blocks/logos/peak-500.svg" alt="Image" class="w-6rem h-6rem flex-shrink-0 mr-5">
+                    <div class="border-200 border-1 border-round p-3 surface-50 flex-auto">
+                        <span class="text-900 font-medium">Peak Representative</span>
+                        <p class="text-600 line-height-3 mt-3 mb-0 p-0">Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Amet nulla facilisi morbi tempus iaculis. 
+                                Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="border-top-1 surface-border py-5">
+                <div class="flex align-items-center justify-content-between mb-4">
+                    <div>
+                        <span>
+                            <i class="pi pi-star-fill text-pink-500 mr-1"></i>
+                            <i class="pi pi-star-fill text-pink-500 mr-1"></i>
+                            <i class="pi pi-star-fill text-pink-500 mr-1"></i>
+                            <i class="pi pi-star-fill text-pink-500 mr-1"></i>
+                            <i class="pi pi-star-fill text-pink-500"></i>
+                        </span>
+                        <div class="mt-2">
+                            <span class="text-900 font-medium mr-2">Annette Black</span>
+                            <span class="text-500">on Mar 20, 2022</span>
+                        </div>
+                    </div>
+                    <button pButton pRipple icon="pi pi-exclamation-circle" label="Report" class="p-button-text"></button>
+                </div>
+                <div class="mb-2 text-900 text-2xl font-medium">I love it so much!</div>
+                <p class="text-600 line-height-3 mt-0 mb-3 p-0">Ullamcorper malesuada proin libero nunc consequat interdum varius sit. Turpis massa tincidunt dui ut ornare lectus. Sit amet nisl suscipit adipiscing bibendum est.</p>
+                <div class="mt-5 flex align-items-center">
+                    <img src="assets/images/blocks/logos/peak-500.svg" alt="Image" class="w-6rem h-6rem flex-shrink-0 mr-5">
+                    <div class="border-200 border-1 border-round p-3 surface-50 flex-auto">
+                        <span class="text-900 font-medium">Peak Representative</span>
+                        <p class="text-600 line-height-3 mt-3 mb-0 p-0">Ut faucibus pulvinar elementum integer. Neque laoreet suspendisse interdum consectetur libero id faucibus.</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
 </block-viewer>
