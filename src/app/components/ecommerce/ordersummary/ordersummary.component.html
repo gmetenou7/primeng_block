@@ -1,4 +1,81 @@
 <div class="block-category-title">Order Summary</div>
+<block-viewer header="Simple" [code]="block3" [new]="true">
+    <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+        <div class="border-round surface-card p-5 shadow-4">
+            <div class="flex">
+                <div class="pr-8 border-right-1 surface-border">
+                    <ul class="list-none p-0 m-0">
+                        <li class="h-6rem flex">
+                            <div class="flex flex-column align-items-center">
+                                <div class="bg-primary border-primary border-circle flex-shrink-0" style="border: 3px solid; height:1.5rem; width: 1.5rem"></div>
+                                <div class="bg-primary h-6rem" style="width:3px"></div>
+                            </div>
+                            <div class="flex flex-column ml-3">
+                                <span class="font-medium text-900 mb-2">Ordered</span>
+                                <span class="text-600">22 Feb</span>
+                            </div>
+                        </li>
+                        <li class="h-6rem flex">
+                            <div class="flex flex-column align-items-center">
+                                <div class="surface-card border-primary border-circle flex-shrink-0" style="border: 3px solid; height:1.5rem; width: 1.5rem"></div>
+                                <div class="surface-300 h-6rem" style="width:3px"></div>
+                            </div>
+                            <div class="flex flex-column ml-3">
+                                <span class="font-medium text-900 mb-2">Processing</span>
+                                <span class="text-600">23 Feb</span>
+                            </div>
+                        </li>
+                        <li class="h-6rem flex">
+                            <div class="flex flex-column align-items-center">
+                                <div class="surface-300 border-300 border-circle flex-shrink-0" style="border: 3px solid; height:1.5rem; width: 1.5rem"></div>
+                                <div class="surface-300 h-6rem" style="width:3px"></div>
+                            </div>
+                            <div class="flex flex-column ml-3">
+                                <span class="font-medium text-900 mb-2">Shipping</span>
+                                <span class="text-600">Est. 24 Feb</span>
+                            </div>
+                        </li>
+                        <li class="h-6rem flex">
+                            <div class="flex flex-column align-items-center">
+                                <div class="surface-300 border-300 border-circle flex-shrink-0" style="border: 3px solid; height:1.5rem; width: 1.5rem"></div>
+                                <div class="surface-300 h-6rem" style="width:3px"></div>
+                            </div>
+                            <div class="flex flex-column ml-3">
+                                <span class="font-medium text-900 mb-2">Delivered</span>
+                                <span class="text-600">Est. 26 Feb</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-auto px-5 border-right-1 surface-border">
+                    <div class="flex align-items-center justify-content-between mb-3">
+                        <span class="font-medium text-2xl text-900">Product Title</span>
+                        <button pButton pRipple class="p-button-text font-medium">Invoice</button>
+                    </div>
+                    <div class="text-xl text-700 mb-5">$120.00</div>
+                    <div class="mb-5">
+                        <img src="assets/images/blocks/ecommerce/ordersummary/order-summary-3-1.png" class="mr-5" />
+                        <img src="assets/images/blocks/ecommerce/ordersummary/order-summary-3-2.png" />
+                    </div>
+                    <div class="flex flex-column">
+                        <span class="text-xl font-medium mb-3 text-900">Address</span>
+                        <div class="flex flex-column text-700">
+                            <span class="mb-1">Celeste Slater</span>
+                            <span class="mb-1">606-3727 Ullamcorper. Roseville NH 11523</span>
+                            <span>(786) 713-8616</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-column pl-5">
+                    <button pButton pRipple icon="pi pi-star" label="Add a Review" class="p-button-outlined mb-3"></button>
+                    <button pButton pRipple icon="pi pi-refresh" label="Buy Again" class="p-button-outlined p-button-success mb-3"></button>
+                    <button pButton pRipple icon="pi pi-times" label="Add a Review" class="p-button-outlined p-button-danger"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</block-viewer>
+
 <block-viewer header="Simple" [code]="block1" [new]="true">
     <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
         <span class="text-700 text-xl">Thanks!</span>
@@ -75,6 +152,64 @@
                         <span class="text-900 font-bold text-lg">$41.00</span>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </div>
+</block-viewer>
+
+<block-viewer header="Horizontal Steps" [code]="block2" [new]="true">
+    <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+        <div class="flex justify-content-between align-items-center">
+            <span class="text-2xl font-medium text-900">Thanks for your order!</span>
+            <div class="flex">
+                <div class="flex flex-column align-items-center">
+                    <span class="text-900 font-medium mb-2">Order ID</span>
+                    <span class="text-700">451234</span>
+                </div>
+                <div class="flex flex-column align-items-center ml-8">
+                    <span class="text-900 font-medium mb-2">Order Date</span>
+                    <span class="text-700">7 Feb 2023</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex align-items-center border-bottom-1 surface-border py-5">
+            <img src="assets/images/blocks/ecommerce/ordersummary/order-summary-2-1.png" class="w-15rem flex-shrink-0 mr-6" />
+            <div class="flex-auto">
+                <span class="text-xl text-900">Product Name</span>
+                <div class="font-medium text-2xl text-900 mt-3 mb-5">Order Processing</div>
+                <div class="border-round overflow-hidden surface-300 mb-3" style="height:7px">
+                    <div class="bg-primary border-round w-4 h-full"></div>
+                </div>
+                <div class="flex w-full justify-content-between">
+                    <span class="text-900">Ordered</span>
+                    <span class="text-900 font-medium">Processing</span>
+                    <span class="text-500">Shipping</span>
+                    <span class="text-500">Delivered</span>
+                </div>
+            </div>
+        </div>
+        <div class="py-5 flex">
+            <div class="flex flex-auto">
+                <span class="font-medium text-900 text-xl mr-8">Product Name</span>
+                <span class="text-900 text-xl">$21.00</span>
+            </div>
+            <div class="flex flex-column flex-auto">
+                <span class="font-medium text-900 text-xl">Shipping Address</span>
+                <div class="flex flex-column text-900 mt-3">
+                    <span class="mb-1">Celeste Slater</span>
+                    <span class="mb-1">606-3727 Ullamcorper. Roseville NH 11523</span>
+                    <span>(786) 713-8616</span>
+                </div>
+            </div>
+            <div class="flex flex-column flex-auto">
+                <span class="font-medium text-900 text-xl">Payment</span>
+                <div class="flex align-items-center mt-3">
+                    <img src="assets/images/blocks/ecommerce/ordersummary/visa.png" class="w-4rem mr-3" />
+                    <div class="flex flex-column">
+                        <span class="text-900 mb-1">Visa Debit Card</span>
+                        <span class="text-900 font-medium">**** **** **** 1234</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
