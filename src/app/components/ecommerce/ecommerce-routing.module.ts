@@ -15,6 +15,8 @@ import { EcommerceComponent } from './ecommerce.component';
             {path: 'productfeature', loadChildren: () => import('./productfeature/productfeature.module').then(m => m.ProductFeatureModule), data: {name: 'Product Features'}},
             {path: 'promosection', loadChildren: () => import('./promosection/promosection.module').then(m => m.ProductSectionModule), data: {name: 'Promo Section'}},
             {path: 'checkoutform', loadChildren: () => import('./checkoutform/checkoutform.module').then(m => m.CheckoutFormModule), data: {name: 'Checkout Forms'}},
+            {path: 'review', loadChildren: () => import('./review/review.module').then(m => m.ReviewModule), data: {name: 'Review'}},
+            {path: 'ordersummary', loadChildren: () => import('./ordersummary/ordersummary.module').then(m => m.OrderSummaryModule), data: {name: 'Order Summary'}}
         ])
     ],
     exports: [
