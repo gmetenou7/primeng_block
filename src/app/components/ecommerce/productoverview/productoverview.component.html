@@ -167,7 +167,7 @@
                         <img *ngFor="let image of images2; let i = index" src="assets/images/blocks/ecommerce/productoverview/{{image}}" class="w-full cursor-pointer border-2 border-round border-transparent transition-colors transition-duration-150 mb-3" 
                             [ngClass]="{'border-primary': selectedImageIndex2 === i}" (click)="selectedImageIndex2 = i"/>
                     </div>
-                    <div class="pl-3 flex-1 w-10">
+                    <div class="pl-3 w-10">
                         <img attr.src="assets/images/blocks/ecommerce/productoverview/{{images2[selectedImageIndex2]}}" class="w-full" />
                     </div>
                 </div>
