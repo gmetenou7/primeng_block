@@ -9,7 +9,7 @@ export class OrderHistoryComponent {
     block1 = `
     <div class="surface-50 px-4 py-8 md:px-6 lg:px-8">
         <div class="flex flex-column md:flex-row justify-content-between align-items-center mb-4">
-            <div class="flex flex-column text-center lg:text-left">
+            <div class="flex flex-column text-center md:text-left">
                 <span class="text-900 text-3xl mb-2">My Orders</span>
                 <span class="text-600 text-xl">Dignissim diam quis enim lobortis.</span>
             </div>
@@ -20,26 +20,26 @@ export class OrderHistoryComponent {
         </div>
         <div class="surface-card grid grid-nogutter border-round shadow-2">
             <div class="col-12 flex p-2 surface-100 border-round-top">
-                <div class="p-2 flex-auto text-center lg:text-left">
+                <div class="p-2 flex-auto text-center md:text-left">
                     <span class="text-600 block">Order Number</span>
                     <span class="text-900 font-medium block mt-2">45123</span>
                 </div>
                 <p-divider align="center" layout="vertical" styleClass="h-full  mx-0 lg:mx-3"></p-divider>
-                <div class="p-2 flex-auto text-center lg:text-left">
+                <div class="p-2 flex-auto text-center md:text-left">
                     <span class="text-600 block">Order Date</span>
                     <span class="text-900 font-medium block mt-2">7 February 2023</span>
                 </div>
                 <p-divider align="center" layout="vertical" styleClass="h-full  mx-0 lg:mx-3"></p-divider>
-                <div class="p-2 flex-auto text-center lg:text-left">
+                <div class="p-2 flex-auto text-center md:text-left">
                     <span class="text-600 block">Total Amount</span>
                     <span class="text-900 font-medium block mt-2">$123.00</span>
                 </div>
             </div>
             <div class="col-12">
-                <div class="p-2 my-4 flex flex-column md:flex-row justify-content-between align-items-center">
+                <div class="p-2 my-4 flex flex-column lg:flex-row justify-content-between align-items-center">
                     <div class="flex flex-column lg:flex-row justify-content-center align-items-center px-2">
                         <img src="assets/images/blocks/ecommerce/orderhistory/orderhistory-1-1.png" alt="product" class="w-8rem h-8rem mr-3 flex-shrink-0" />
-                        <div class="flex flex-column my-auto text-center lg:text-left">
+                        <div class="flex flex-column my-auto text-center md:text-left">
                             <span class="text-900 font-medium mb-3 mt-3 lg:mt-0">Product Name Placeholder A Little Bit Long One</span>
                             <span class="text-600 text-sm mb-3">White | Small</span>
                             <a pRipple tabindex="0" class="p-2 cursor-pointer w-9rem mx-auto lg:mx-0 border-round font-medium text-center text-primary bg-indigo-50 hover:bg-primary transition-duration-150" >Buy Again | $12</a>
@@ -53,10 +53,10 @@ export class OrderHistoryComponent {
                     </div>
                 </div>
                 <p-divider class="w-full block lg:hidden border-gray-200"></p-divider>
-                <div class="p-2 my-4 flex flex-column md:flex-row justify-content-between align-items-center">
+                <div class="p-2 my-4 flex flex-column lg:flex-row justify-content-between align-items-center">
                     <div class="flex flex-column lg:flex-row justify-content-center align-items-center px-2">
                         <img src="assets/images/blocks/ecommerce/orderhistory/orderhistory-1-2.png" alt="product" class="w-8rem h-8rem mr-3 flex-shrink-0" />
-                        <div class="flex flex-column my-auto text-center lg:text-left">
+                        <div class="flex flex-column my-auto text-center md:text-left">
                             <span class="text-900 font-medium mb-3 mt-3 lg:mt-0">Product Name Placeholder A Little Bit Long One</span>
                             <span class="text-600 text-sm mb-3">White | Small</span>
                             <a pRipple tabindex="0" class="p-2 cursor-pointer w-9rem mx-auto lg:mx-0 border-round font-medium text-center text-primary bg-indigo-50 hover:bg-primary transition-duration-150" >Buy Again | $12</a>
@@ -70,10 +70,10 @@ export class OrderHistoryComponent {
                     </div>
                 </div>
                 <p-divider class="w-full block lg:hidden border-gray-200"></p-divider>
-                <div class="p-2 my-4 flex flex-column md:flex-row justify-content-between align-items-center">
+                <div class="p-2 my-4 flex flex-column lg:flex-row justify-content-between align-items-center">
                     <div class="flex flex-column lg:flex-row justify-content-center align-items-center px-2">
                         <img src="assets/images/blocks/ecommerce/orderhistory/orderhistory-1-3.png" alt="product" class="w-8rem h-8rem mr-3 flex-shrink-0" />
-                        <div class="flex flex-column my-auto text-center lg:text-left">
+                        <div class="flex flex-column my-auto text-center md:text-left">
                             <span class="text-900 font-medium mb-3 mt-3 lg:mt-0">Product Name Placeholder A Little Bit Long One</span>
                             <span class="text-600 text-sm mb-3">White | Small</span>
                             <a pRipple tabindex="0" class="p-2 cursor-pointer w-9rem mx-auto lg:mx-0 border-round font-medium text-center text-primary bg-indigo-50 hover:bg-primary transition-duration-150" >Buy Again | $12</a>
@@ -96,26 +96,26 @@ export class OrderHistoryComponent {
         </div>
         <div class="surface-card grid grid-nogutter mt-5 border-round shadow-2">
             <div class="col-12 flex p-2 surface-100 border-round-top">
-                <div class="p-2 flex-auto text-center lg:text-left">
+                <div class="p-2 flex-auto text-center md:text-left">
                     <span class="text-600 block">Order Number</span>
                     <span class="text-900 font-medium block mt-2">45123</span>
                 </div>
                 <p-divider align="center" layout="vertical" styleClass="h-full  mx-0 lg:mx-3"></p-divider>
-                <div class="p-2 flex-auto text-center lg:text-left">
+                <div class="p-2 flex-auto text-center md:text-left">
                     <span class="text-600 block">Order Date</span>
                     <span class="text-900 font-medium block mt-2">7 February 2023</span>
                 </div>
                 <p-divider align="center" layout="vertical" styleClass="h-full  mx-0 lg:mx-3"></p-divider>
-                <div class="p-2 flex-auto text-center lg:text-left">
+                <div class="p-2 flex-auto text-center md:text-left">
                     <span class="text-600 block">Total Amount</span>
                     <span class="text-900 font-medium block mt-2">$123.00</span>
                 </div>
             </div>
             <div class="col-12">
-                <div class="p-2 my-4 flex flex-column md:flex-row justify-content-between align-items-center">
+                <div class="p-2 my-4 flex flex-column lg:flex-row justify-content-between align-items-center">
                     <div class="flex flex-column lg:flex-row justify-content-center align-items-center px-2">
                         <img src="assets/images/blocks/ecommerce/orderhistory/orderhistory-1-4.png" alt="product" class="w-8rem h-8rem mr-3 flex-shrink-0" />
-                        <div class="flex flex-column my-auto text-center lg:text-left">
+                        <div class="flex flex-column my-auto text-center md:text-left">
                             <span class="text-900 font-medium mb-3 mt-3 lg:mt-0">Product Name Placeholder A Little Bit Long One</span>
                             <span class="text-600 text-sm mb-3">White | Small</span>
                             <a pRipple tabindex="0" class="p-2 cursor-pointer w-9rem mx-auto lg:mx-0 border-round font-medium text-center text-primary bg-indigo-50 hover:bg-primary transition-duration-150" >Buy Again | $12</a>
@@ -129,10 +129,10 @@ export class OrderHistoryComponent {
                     </div>
                 </div>
                 <p-divider class="w-full block lg:hidden border-gray-200"></p-divider>
-                <div class="p-2 my-4 flex flex-column md:flex-row justify-content-between align-items-center">
+                <div class="p-2 my-4 flex flex-column lg:flex-row justify-content-between align-items-center">
                     <div class="flex flex-column lg:flex-row justify-content-center align-items-center px-2">
                         <img src="assets/images/blocks/ecommerce/orderhistory/orderhistory-1-5.png" alt="product" class="w-8rem h-8rem mr-3 flex-shrink-0" />
-                        <div class="flex flex-column my-auto text-center lg:text-left">
+                        <div class="flex flex-column my-auto text-center md:text-left">
                             <span class="text-900 font-medium mb-3 mt-3 lg:mt-0">Product Name Placeholder A Little Bit Long One</span>
                             <span class="text-600 text-sm mb-3">White | Small</span>
                             <a pRipple tabindex="0" class="p-2 cursor-pointer w-9rem mx-auto lg:mx-0 border-round font-medium text-center text-primary bg-indigo-50 hover:bg-primary transition-duration-150" >Buy Again | $12</a>
@@ -146,10 +146,10 @@ export class OrderHistoryComponent {
                     </div>
                 </div>
                 <p-divider class="w-full block lg:hidden border-gray-200"></p-divider>
-                <div class="p-2 my-4 flex flex-column md:flex-row justify-content-between align-items-center">
+                <div class="p-2 my-4 flex flex-column lg:flex-row justify-content-between align-items-center">
                     <div class="flex flex-column lg:flex-row justify-content-center align-items-center px-2">
                         <img src="assets/images/blocks/ecommerce/orderhistory/orderhistory-1-6.png" alt="product" class="w-8rem h-8rem mr-3 flex-shrink-0" />
-                        <div class="flex flex-column my-auto text-center lg:text-left">
+                        <div class="flex flex-column my-auto text-center md:text-left">
                             <span class="text-900 font-medium mb-3 mt-3 lg:mt-0">Product Name Placeholder A Little Bit Long One</span>
                             <span class="text-600 text-sm mb-3">White | Small</span>
                             <a pRipple tabindex="0" class="p-2 cursor-pointer w-9rem mx-auto lg:mx-0 border-round font-medium text-center text-primary bg-indigo-50 hover:bg-primary transition-duration-150" >Buy Again | $12</a>
