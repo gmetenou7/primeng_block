@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 export class OrderHistoryComponent {
 
-    block1 = `
+    block1 = `    
     <div class="surface-50 px-4 py-8 md:px-6 lg:px-8">
       <div class="flex flex-column md:flex-row justify-content-between align-items-center mb-4">
           <div class="flex flex-column">
@@ -42,7 +42,7 @@ export class OrderHistoryComponent {
                       <div class="flex flex-column my-auto">
                           <span class="text-900 font-medium mb-3">Product Name Placeholder A Little Bit Long One</span>
                           <span class="text-600 text-sm mb-3">White | Small</span>
-                          <button pButton pRipple label="Buy Again | $12" class="w-8rem px-0 py-2 p-button-primary"></button>
+                          <a pRipple tabindex="0" class="p-2 cursor-pointer w-9rem border-round font-medium text-center text-primary bg-indigo-50 hover:bg-primary transition-duration-150" >Buy Again | $12</a>
                       </div>
                   </div>
                   <div class="bg-green-50 mr-3 p-2 flex align-items-center mt-4 lg:mt-0" [style.border-radius]="'2.5rem'">
@@ -59,7 +59,7 @@ export class OrderHistoryComponent {
                       <div class="flex flex-column my-auto">
                           <span class="text-900 font-medium mb-3">Product Name Placeholder A Little Bit Long One</span>
                           <span class="text-600 text-sm mb-3">White | Small</span>
-                          <button pButton pRipple label="Buy Again | $12" class="w-8rem px-0 py-2 p-button-primary"></button>
+                          <a pRipple tabindex="0" class="p-2 cursor-pointer w-9rem border-round font-medium text-center text-primary bg-indigo-50 hover:bg-primary transition-duration-150" >Buy Again | $12</a>
                       </div>
                   </div>
                   <div class="bg-green-50 mr-3 p-2 flex align-items-center mt-4 lg:mt-0" [style.border-radius]="'2.5rem'">
@@ -76,7 +76,7 @@ export class OrderHistoryComponent {
                       <div class="flex flex-column my-auto">
                           <span class="text-900 font-medium mb-3">Product Name Placeholder A Little Bit Long One</span>
                           <span class="text-600 text-sm mb-3">White | Small</span>
-                          <button pButton pRipple label="Buy Again | $12" class="w-8rem px-0 py-2 p-button-primary"></button>
+                          <a pRipple tabindex="0" class="p-2 cursor-pointer w-9rem border-round font-medium text-center text-primary bg-indigo-50 hover:bg-primary transition-duration-150" >Buy Again | $12</a>
                       </div>
                   </div>
                   <div class="bg-green-50 mr-3 p-2 flex align-items-center mt-4 lg:mt-0" [style.border-radius]="'2.5rem'">
@@ -118,7 +118,7 @@ export class OrderHistoryComponent {
                       <div class="flex flex-column my-auto">
                           <span class="text-900 font-medium mb-3">Product Name Placeholder A Little Bit Long One</span>
                           <span class="text-600 text-sm mb-3">White | Small</span>
-                          <button pButton pRipple label="Buy Again | $12" class="w-8rem px-0 py-2 p-button-primary"></button>
+                          <a pRipple tabindex="0" class="p-2 cursor-pointer w-9rem border-round font-medium text-center text-primary bg-indigo-50 hover:bg-primary transition-duration-150" >Buy Again | $12</a>
                       </div>
                   </div>
                   <div class="bg-green-50 mr-3 p-2 flex align-items-center mt-4 lg:mt-0" [style.border-radius]="'2.5rem'">
@@ -135,7 +135,7 @@ export class OrderHistoryComponent {
                       <div class="flex flex-column my-auto">
                           <span class="text-900 font-medium mb-3">Product Name Placeholder A Little Bit Long One</span>
                           <span class="text-600 text-sm mb-3">White | Small</span>
-                          <button pButton pRipple label="Buy Again | $12" class="w-8rem px-0 py-2 p-button-primary"></button>
+                          <a pRipple tabindex="0" class="p-2 cursor-pointer w-9rem border-round font-medium text-center text-primary bg-indigo-50 hover:bg-primary transition-duration-150" >Buy Again | $12</a>
                       </div>
                   </div>
                   <div class="bg-green-50 mr-3 p-2 flex align-items-center mt-4 lg:mt-0" [style.border-radius]="'2.5rem'">
@@ -152,7 +152,7 @@ export class OrderHistoryComponent {
                       <div class="flex flex-column my-auto">
                           <span class="text-900 font-medium mb-3">Product Name Placeholder A Little Bit Long One</span>
                           <span class="text-600 text-sm mb-3">White | Small</span>
-                          <button pButton pRipple label="Buy Again | $12" class="w-8rem px-0 py-2 p-button-primary"></button>
+                          <a pRipple tabindex="0" class="p-2 cursor-pointer w-9rem border-round font-medium text-center text-primary bg-indigo-50 hover:bg-primary transition-duration-150" >Buy Again | $12</a>
                       </div>
                   </div>
                   <div class="bg-green-50 mr-3 p-2 flex align-items-center mt-4 lg:mt-0" [style.border-radius]="'2.5rem'">

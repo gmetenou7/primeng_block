@@ -4,6 +4,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 import { DividerModule } from 'primeng/divider';
+import { RippleModule } from 'primeng/ripple';
 import { OrderHistoryRoutingModule } from './orderhistory-routing.module';
 import { OrderHistoryComponent } from './orderhistory.component';
 
@@ -11,6 +12,7 @@ import { OrderHistoryComponent } from './orderhistory.component';
   imports: [
     CommonModule,
     InputTextModule,
+    RippleModule,
     ButtonModule,
     DividerModule,
     BlockViewerModule,
