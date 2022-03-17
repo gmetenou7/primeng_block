@@ -3,7 +3,7 @@
     <div class="shadow-2 border-round surface-card p-4" (mouseenter)="hovered = true" (mouseleave)="hovered = false">
         <div class="relative">
             <img src="assets/images/blocks/ecommerce/productquickview/product-quickview-1-1.png" class="w-15rem"/>
-            <button *ngIf="hovered" pRipple class="fadein absolute p-component border-none bg-black-alpha-40 hover:bg-black-alpha-50 px-3 py-2 text-white font-medium text-base border-round cursor-pointer transition-colors transition-duration-300 w-13rem"
+            <button *ngIf="hovered" class="fadein absolute p-component border-none bg-black-alpha-40 hover:bg-black-alpha-50 px-3 py-2 text-white font-medium text-base border-round cursor-pointer transition-colors transition-duration-300 w-13rem"
                 style="bottom: 1rem; left: 1rem" (click)="visibleDialog = true">View Details</button>
         </div>
         <div class="flex align-items-center justify-content-between text-xl font-medium mt-3 text-900">
@@ -12,14 +12,14 @@
         </div>
     </div>
 
-    <p-dialog [(visible)]="visibleDialog" appendTo="body" [modal]="true" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '700px'}" [showHeader]="false" [contentStyle]="{padding:'2rem 2rem 1rem 2rem'}">
+    <p-dialog [(visible)]="visibleDialog" appendTo="body" [modal]="true" [breakpoints]="{'960px': '75vw', '640px': '90vw'}" [style]="{width: '700px'}" [showHeader]="false" [contentStyle]="{padding:'2rem 2rem 1rem 2rem'}">
         <div class="grid relative">
-            <div class="col-12 lg:col-6">
-                <img src="assets/images/blocks/ecommerce/productquickview/product-quickview-1-1.png" class="w-full" />
+            <div class="col-12 lg:col-6 text-center">
+                <img src="assets/images/blocks/ecommerce/productquickview/product-quickview-1-1.png" class="w-8rem sm:w-15rem lg:w-20rem" />
             </div>
-            <div class="col-12 lg:col-6 py-0 pl-5">
+            <div class="col-12 lg:col-6 py-0 lg:pl-5">
                 <div class="flex justify-content-end">
-                    <button pButton pRipple class="p-button-text p-button-plain p-button-rounded" icon="pi pi-times pi-2xl" (click)="visibleDialog = false"></button>
+                    <button pButton class="absolute lg:static p-button-text p-button-plain p-button-rounded" icon="pi pi-times pi-2xl" (click)="visibleDialog = false" style="right:0rem;top:0rem"></button>
                 </div>
                 <div class="flex align-items-center justify-content-between mb-3">
                     <span class="text-xl font-medium text-900">Product Title</span>
@@ -71,24 +71,24 @@
     </p-dialog>
 </block-viewer>
 
-<block-viewer header="Galleria and Features" [code]="block2" [new]="true" [previewStyle]="{height: '640px', backgroundColor: 'var(--maskbg)'}" containerClass="flex align-items-center justify-content-center">
-    <div class="surface-overlay border-round p-4 shadow-4" style="max-width: 800px">
-        <div class="grid relative">
-            <div class="col-12 lg:col-6">
-                <p-galleria [(value)]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="3"> 
+<block-viewer header="Galleria and Features" [code]="block2" [new]="true" [previewStyle]="{backgroundColor: 'var(--maskbg)'}" containerClass="flex align-items-center justify-content-center h-screen">
+    <div class="surface-overlay border-round p-4 shadow-4 relative" style="max-width: 800px">
+        <div class="grid">
+            <div class="col-12 md:col-6 flex justify-content-center align-items-center mt-6 sm:mt-0">
+                <p-galleria [(value)]="images" [responsiveOptions]="responsiveOptions" [numVisible]="3" [containerStyle]="{maxWidth:'300px'}"> 
                     <ng-template pTemplate="item" let-item>
                         <img [src]="'assets/images/blocks/ecommerce/productquickview/' + item" style="width: 100%; display: block;" />
                     </ng-template>
                     <ng-template pTemplate="thumbnail" let-item>
                         <div class="grid grid-nogutter justify-content-center">
-                            <img [src]="'assets/images/blocks/ecommerce/productquickview/'+ item" width="75"/>
+                            <img [src]="'assets/images/blocks/ecommerce/productquickview/'+ item" width="50"/>
                         </div>
                     </ng-template>
                 </p-galleria>
             </div>
-            <div class="col-12 lg:col-6 pl-5">
+            <div class="col-12 md:col-6 md:pl-5">
                 <div class="flex justify-content-end">
-                    <button pButton pRipple class="p-button-text p-button-plain p-button-rounded" icon="pi pi-times pi-2xl"></button>
+                    <button pButton class="p-button-text p-button-plain p-button-rounded absolute md:static" icon="pi pi-times pi-2xl" style="right:.5rem;top:.5rem"></button>
                 </div>
                 <div class="text-900 text-2xl font-medium mb-3">Product Title</div>
                 <div class="text-900 text-3xl font-bold mb-3">$120.00</div>

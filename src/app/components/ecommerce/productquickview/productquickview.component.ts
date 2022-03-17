@@ -15,17 +15,14 @@ export class ProductQuickviewComponent implements OnInit {
 
     images: string[];
 
-    responsiveOptions:any[] = [{
-        breakpoint: '1024px',
-        numVisible: 5
-    },
+    responsiveOptions:any[] = [
     {
         breakpoint: '768px',
         numVisible: 3
     },
     {
         breakpoint: '560px',
-        numVisible: 1
+        numVisible: 2
     }];
 
     ngOnInit(): void {
