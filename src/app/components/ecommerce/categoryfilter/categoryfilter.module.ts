@@ -8,8 +8,6 @@ import {RippleModule} from 'primeng/ripple';
 import {DropdownModule} from 'primeng/dropdown';
 import {SliderModule} from 'primeng/slider';
 import {CheckboxModule} from 'primeng/checkbox';
-import {ChipsModule} from 'primeng/chips';
-import {AccordionModule} from 'primeng/accordion';
 import {InputTextModule} from 'primeng/inputtext';
 import {BadgeModule} from 'primeng/badge';
 import {FormsModule} from '@angular/forms';
@@ -28,11 +26,9 @@ import {StyleClassModule} from 'primeng/styleclass';
     ButtonModule,
     RippleModule,
     DropdownModule,
-    ChipsModule,
     ChipModule,
     SliderModule,
     CheckboxModule,
-    AccordionModule,
     DividerModule,
     InputTextModule,
     BadgeModule,
