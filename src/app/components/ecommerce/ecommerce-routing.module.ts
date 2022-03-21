@@ -18,7 +18,8 @@ import { EcommerceComponent } from './ecommerce.component';
             {path: 'review', loadChildren: () => import('./review/review.module').then(m => m.ReviewModule), data: {name: 'Review'}},
             {path: 'ordersummary', loadChildren: () => import('./ordersummary/ordersummary.module').then(m => m.OrderSummaryModule), data: {name: 'Order Summary'}},
             {path: 'orderhistory', loadChildren: () => import('./orderhistory/orderhistory.module').then(m => m.OrderHistoryModule), data: {name: 'Order History'}},
-            {path: 'incentive', loadChildren: () => import('./incentive/incentive.module').then(m => m.IncentiveModule), data: {name: 'Incentive'}}
+            {path: 'incentive', loadChildren: () => import('./incentive/incentive.module').then(m => m.IncentiveModule), data: {name: 'Incentive'}},
+            {path: 'storenavigation', loadChildren: () => import('./storenavigation/storenavigation.module').then(m => m.StoreNavigationModule), data: {name: 'Store Navigation'}}
         ])
     ],
     exports: [
