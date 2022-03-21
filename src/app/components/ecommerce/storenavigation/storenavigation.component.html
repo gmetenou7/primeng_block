@@ -58,11 +58,11 @@
                             </ul>
                             <ul class="list-none p-0 m-0">
                                 <li class="mb-8 flex flex-column align-items-center">
-                                    <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-1-1.png" alt="Image">
+                                    <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-1-1.png" alt="Image" style="border-radius:12px">>
                                     <span class="inline-flex surface-0 text-900 px-3 py-2 border-round -mt-5 font-medium">New Products</span>
                                 </li>
                                 <li class="mb-8 flex flex-column align-items-center">
-                                    <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-1-2.png" alt="Image">
+                                    <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-1-2.png" alt="Image" style="border-radius:12px">>
                                     <span class="inline-flex surface-0 text-900 px-3 py-2 border-round -mt-5 font-medium">Discounts</span>
                                 </li>
                             </ul>
@@ -123,6 +123,116 @@
                     <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer px-3 text-700 hover:text-primary">
                         <i class="pi pi-shopping-cart mr-3" pBadge></i>
                         <span>Cart</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</block-viewer>
+
+<block-viewer header="Centered with Category Images" [code]="block2" [new]="true" [previewStyle]="{height:'600px'}">
+    <div class="surface-overlay px-6 flex align-items-stretch justify-content-between relative" style="min-height: 80px">
+        <div class="flex">
+            <ul class="list-none p-0 m-0 flex">
+                <li class="flex">
+                    <a pRipple class="font-medium inline-flex align-items-center cursor-pointer border-bottom-2 border-transparent hover:border-primary px-3 text-700"
+                        pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+                        <span>Women</span>
+                    </a>
+                    <div class="surface-overlay shadow-2 hidden absolute w-full left-0 top-100">
+                        <div class="flex justify-content-between p-6">
+                            <ul class="list-none p-0 m-0 text-700">
+                                <li>
+                                    <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-2-1.png" alt="Image" height="160" style="border-radius:12px">
+                                </li>
+                                <li class="font-bold my-5 text-xl text-900">Clothing</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Dresses</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Jeans</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Pants</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Skirts</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Sweaters</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Blouses</li>
+                            </ul>
+                            <ul class="list-none p-0 m-0 text-700">
+                                <li>
+                                    <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-2-2.png" alt="Image" height="160" style="border-radius:12px">
+                                </li>
+                                <li class="font-bold my-5 text-xl text-900">Shoes</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Athletic</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Boots</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Sneakers</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Flats</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Outdoor</li>
+                            </ul>
+                            <ul class="list-none p-0 m-0 text-700">
+                                <li>
+                                    <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-2-3.png" alt="Image" height="160" style="border-radius:12px">
+                                </li>
+                                <li class="font-bold my-5 text-xl text-900">Accessories</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Handbags</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Gloves</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Belts</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Hats</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Earmuffs</li>
+                            </ul>
+                            <ul class="list-none p-0 m-0 text-700">
+                                <li>
+                                    <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-2-4.png" alt="Image" height="160" style="border-radius:12px">
+                                </li>
+                                <li class="font-bold my-5 text-xl text-900">Beauty</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Anklets</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Bracelets</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Earrings</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Necklaces</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Rings</li>
+                                <li class="mb-3 cursor-pointer hover:text-900">Wedding</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="flex">
+                    <a pRipple class="font-medium inline-flex align-items-center cursor-pointer border-bottom-2 border-transparent hover:border-primary px-3 text-700"
+                        pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+                        <span>Men</span>
+                    </a>
+                    <div class="surface-overlay shadow-2 hidden absolute w-full left-0 top-100 h-30rem"></div>
+                </li>
+                <li class="flex">
+                    <a pRipple class="font-medium inline-flex align-items-center cursor-pointer border-bottom-2 border-transparent hover:border-primary px-3 text-700"
+                        pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+                        <span>Kids</span>
+                    </a>
+                    <div class="surface-overlay shadow-2 hidden absolute w-full left-0 top-100 h-30rem"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="flex align-items-center justify-content-center">
+            <img src="assets/images/blocks/logos/hyper-text-indigo.svg" alt="Image" height="40" class="mr-6">
+        </div>
+        <div class="flex">
+            <ul class="list-none p-0 m-0 flex">
+                <li class="flex">
+                    <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer px-3 text-700 hover:text-primary">
+                        <i class="pi pi-search text-xl"></i>
+                        <span class="hidden">Search</span>
+                    </a>
+                </li>
+                <li class="flex">
+                    <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer px-3 text-700 hover:text-primary">
+                        <i class="pi pi-heart text-xl"></i>
+                        <span class="hidden">Favorites</span>
+                    </a>
+                </li>
+                <li class="flex">
+                    <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer px-3 text-700 hover:text-primary">
+                        <i class="pi pi-user text-xl"></i>
+                        <span class="hidden">Sign In</span>
+                    </a>
+                </li>
+                <li class="flex">
+                    <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer px-3 text-700 hover:text-primary">
+                        <i class="pi pi-shopping-cart text-xl" pBadge></i>
+                        <span class="hidden">Cart</span>
                     </a>
                 </li>
             </ul>
