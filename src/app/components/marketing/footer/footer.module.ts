@@ -6,6 +6,7 @@ import {BlockViewerModule} from '../../blockviewer/blockviewer.module';
 import {InputTextModule} from 'primeng/inputtext';
 import {ButtonModule} from "primeng/button";
 import {RippleModule} from 'primeng/ripple';
+import {DividerModule} from 'primeng/divider';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import {RippleModule} from 'primeng/ripple';
     BlockViewerModule,
     InputTextModule,
     ButtonModule,
+    DividerModule,
     RippleModule
   ],
   declarations: [

@@ -19,6 +19,7 @@ import { EcommerceComponent } from './ecommerce.component';
             {path: 'ordersummary', loadChildren: () => import('./ordersummary/ordersummary.module').then(m => m.OrderSummaryModule), data: {name: 'Order Summary'}},
             {path: 'orderhistory', loadChildren: () => import('./orderhistory/orderhistory.module').then(m => m.OrderHistoryModule), data: {name: 'Order History'}},
             {path: 'incentive', loadChildren: () => import('./incentive/incentive.module').then(m => m.IncentiveModule), data: {name: 'Incentive'}},
+            {path: 'storefront', loadChildren: () => import('./storefront/storefront.module').then(m => m.StoreFrontModule), data: {name: 'Storefront Pages'}},
             {path: 'storenavigation', loadChildren: () => import('./storenavigation/storenavigation.module').then(m => m.StoreNavigationModule), data: {name: 'Store Navigation'}}
         ])
     ],
