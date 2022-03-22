@@ -163,8 +163,8 @@
         <div class="grid mb-7">
             <div class="col-12 lg:col-6">
                 <div class="flex">
-                    <div class="flex flex-column w-2">
-                        <img *ngFor="let image of images2; let i = index" src="assets/images/blocks/ecommerce/productoverview/{{image}}" class="w-full cursor-pointer border-2 border-round border-transparent transition-colors transition-duration-150 mb-3" 
+                    <div class="flex flex-column w-2 justify-content-between">
+                        <img *ngFor="let image of images2; let i = index" src="assets/images/blocks/ecommerce/productoverview/{{image}}" class="w-full cursor-pointer border-2 border-round border-transparent transition-colors transition-duration-150" 
                             [ngClass]="{'border-primary': selectedImageIndex2 === i}" (click)="selectedImageIndex2 = i"/>
                     </div>
                     <div class="pl-3 w-10">
@@ -202,16 +202,16 @@
                     <span class="font-bold text-900">Size</span>
                     <a tabindex="0" class="cursor-pointer text-600 text-sm flex align-items-center">Size Guide <i class="ml-1 pi pi-angle-right"></i></a>
                 </div>
-                <div class="flex align-items-center mb-5">
-                    <div class="h-2rem w-2rem sm:h-3rem sm:w-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors" 
+                <div class="grid grid-nogutter align-items-center mb-5">
+                    <div class="col h-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors" 
                         [ngClass]="{'border-blue-500 border-2 text-blue-500': size3 === 'XS'}" (click)="size3 = 'XS'">XS</div>
-                    <div class="h-2rem w-2rem sm:h-3rem sm:w-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors" 
+                    <div class="col h-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors" 
                         [ngClass]="{'border-blue-500 border-2 text-blue-500': size3 === 'S'}" (click)="size3 = 'S'">S</div>
-                    <div class="h-2rem w-2rem sm:h-3rem sm:w-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors" 
+                    <div class="col h-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors" 
                         [ngClass]="{'border-blue-500 border-2 text-blue-500': size3 === 'M'}" (click)="size3 = 'M'">M</div>
-                    <div class="h-2rem w-2rem sm:h-3rem sm:w-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors"
+                    <div class="col h-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors"
                         [ngClass]="{'border-blue-500 border-2 text-blue-500': size3 === 'L'}"  (click)="size3 = 'L'">L</div>
-                    <div class="h-2rem w-2rem sm:h-3rem sm:w-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors" 
+                    <div class="col h-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round cursor-pointer hover:surface-100 transition-duration-150 transition-colors" 
                         [ngClass]="{'border-blue-500 border-2 text-blue-500': size3 === 'XL'}" (click)="size3 = 'XL'">XL</div>
                 </div>
 
