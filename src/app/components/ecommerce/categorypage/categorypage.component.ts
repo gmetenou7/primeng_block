@@ -40,7 +40,7 @@ export class CategoryPageComponent {
         {name: 'Black', class:'bg-gray-500'}
     ];
 
-    block1 = `
+    block1: string = `
 <div class="bg-cyan-900 px-4 lg:px-8 lg:py-3 text-center">
     <span class="text-white">Free shipping on orders over $100</span>
 </div>
