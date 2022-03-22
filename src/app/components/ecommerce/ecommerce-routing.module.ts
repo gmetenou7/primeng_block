@@ -23,7 +23,8 @@ import { EcommerceComponent } from './ecommerce.component';
             {path: 'storenavigation', loadChildren: () => import('./storenavigation/storenavigation.module').then(m => m.StoreNavigationModule), data: {name: 'Store Navigation'}},
             {path: 'productpage', loadChildren: () => import('./productpage/productpage.module').then(m => m.ProductPageModule), data: {name: 'Product Pages'}},
             {path: 'categorypage', loadChildren: () => import('./categorypage/categorypage.module').then(m => m.CategoryPageModule), data: {name: 'Category Pages'}},
-            {path: 'shoppingcartpage', loadChildren: () => import('./shoppingcartpage/shoppingcartpage.module').then(m => m.ShoppingCartPageModule), data: {name: 'Shopping Cart Pages'}}
+            {path: 'shoppingcartpage', loadChildren: () => import('./shoppingcartpage/shoppingcartpage.module').then(m => m.ShoppingCartPageModule), data: {name: 'Shopping Cart Pages'}},
+            {path: 'checkoutpage', loadChildren: () => import('./checkoutpage/checkoutpage.module').then(m => m.CheckoutPageModule), data: {name: 'Checkout Pages'}},
         ])
     ],
     exports: [
