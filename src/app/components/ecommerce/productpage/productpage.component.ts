@@ -134,11 +134,11 @@ export class ProductPageComponent {
       <div class="col-12 lg:col-6">
           <div class="flex">
               <div class="flex flex-column w-2 justify-content-between">
-                  <img *ngFor="let image of images1; let i = index" src="assets/images/blocks/ecommerce/productoverview/{{image}}" class="w-full cursor-pointer border-2 border-round border-transparent transition-colors transition-duration-150" 
-                      [ngClass]="{'border-primary': selectedImageIndex2 === i}" (click)="selectedImageIndex2 = i"/>
+                  <img *ngFor="let image of images; let i = index" src="assets/images/blocks/ecommerce/productoverview/{{image}}" class="w-full cursor-pointer border-2 border-round border-transparent transition-colors transition-duration-150" 
+                      [ngClass]="{'border-primary': selectedImageIndex === i}" (click)="selectedImageIndex = i"/>
               </div>
               <div class="pl-3 w-10">
-                  <img attr.src="assets/images/blocks/ecommerce/productoverview/{{images1[selectedImageIndex2]}}" class="w-full" />
+                  <img attr.src="assets/images/blocks/ecommerce/productoverview/{{images[selectedImageIndex]}}" class="w-full" />
               </div>
           </div>
       </div>
@@ -161,11 +161,11 @@ export class ProductPageComponent {
           <div class="font-bold text-900 mb-3">Color</div>
           <div class="flex align-items-center mb-5">
               <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-bluegray-500 mr-3 cursor-pointer border-2 border-white transition-all transition-duration-300" 
-                  [style.box-shadow]="color3 === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color3 = 'bluegray'"></div>
+                  [style.box-shadow]="color === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color = 'bluegray'"></div>
               <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-green-500 mr-3 cursor-pointer border-2 border-white transition-all transition-duration-300" 
-                  [style.box-shadow]="color3 === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color3 = 'green'"></div>
+                  [style.box-shadow]="color === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color = 'green'"></div>
               <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-blue-500 cursor-pointer border-2 border-white transition-all transition-duration-300" 
-                  [style.box-shadow]="color3 === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color3 = 'blue'"></div>
+                  [style.box-shadow]="color === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color = 'blue'"></div>
           </div>
 
           <div class="mb-3 flex align-items-center justify-content-between">
@@ -175,24 +175,24 @@ export class ProductPageComponent {
 
           <div class="grid grid-nogutter align-items-center mb-5">
               <div class="col h-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors" 
-                  [ngClass]="{'border-blue-500 border-2 text-blue-500': size3 === 'XS'}" (click)="size3 = 'XS'">XS</div>
+                  [ngClass]="{'border-blue-500 border-2 text-blue-500': size === 'XS'}" (click)="size = 'XS'">XS</div>
               <div class="col h-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors" 
-                  [ngClass]="{'border-blue-500 border-2 text-blue-500': size3 === 'S'}" (click)="size3 = 'S'">S</div>
+                  [ngClass]="{'border-blue-500 border-2 text-blue-500': size === 'S'}" (click)="size = 'S'">S</div>
               <div class="col h-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors" 
-                  [ngClass]="{'border-blue-500 border-2 text-blue-500': size3 === 'M'}" (click)="size3 = 'M'">M</div>
+                  [ngClass]="{'border-blue-500 border-2 text-blue-500': size === 'M'}" (click)="size = 'M'">M</div>
               <div class="col h-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors"
-                  [ngClass]="{'border-blue-500 border-2 text-blue-500': size3 === 'L'}"  (click)="size3 = 'L'">L</div>
+                  [ngClass]="{'border-blue-500 border-2 text-blue-500': size === 'L'}"  (click)="size = 'L'">L</div>
               <div class="col h-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round cursor-pointer hover:surface-100 transition-duration-150 transition-colors" 
-                  [ngClass]="{'border-blue-500 border-2 text-blue-500': size3 === 'XL'}" (click)="size3 = 'XL'">XL</div>
+                  [ngClass]="{'border-blue-500 border-2 text-blue-500': size === 'XL'}" (click)="size = 'XL'">XL</div>
           </div>
 
           <div class="font-bold text-900 mb-3">Quantity</div>
           <div class="flex flex-column sm:flex-row sm:align-items-center sm:justify-content-between">
-              <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" inputStyleClass="w-3rem text-center" [(ngModel)]="quantity1"
+              <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" inputStyleClass="w-3rem text-center" [(ngModel)]="quantity"
                   decrementButtonClass="p-button-text" incrementButtonClass="p-button-text" incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus"></p-inputNumber>
               <div class="flex align-items-center flex-1 mt-3 sm:mt-0 ml-0 sm:ml-5">
                   <button pButton pRipple label="Add to Cart" class="flex-1 mr-5"></button>
-                  <i class="pi text-2xl cursor-pointer" [ngClass]="{'pi-heart text-600': !liked1, 'pi-heart-fill text-orange-500': liked1}" (click)="liked1 = !liked1"></i>
+                  <i class="pi text-2xl cursor-pointer" [ngClass]="{'pi-heart text-600': !liked, 'pi-heart-fill text-orange-500': liked}" (click)="liked = !liked"></i>
               </div>
           </div>
       </div>
@@ -468,7 +468,7 @@ export class ProductPageComponent {
           <li><a tabindex="0" pRipple class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Environmental Initiatives</a></li>
       </ul>
   </div>
-  <div class="col-12 lg:col-3 flex mt-4 lg-mt-0 lg:pl-4 flex-column">
+  <div class="col-12 lg:col-3 flex mt-4 lg:mt-0 lg:pl-4 flex-column">
       <span class="text-900 text-xl font-medium block">Account</span>
       <ul class="list-none p-0">
           <li><a tabindex="0" pRipple class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Manage Account</a></li>
@@ -483,16 +483,16 @@ export class ProductPageComponent {
 <div class="surface-900 py-6 lg:py-4 md:px-6 lg:px-8 flex flex-column lg:flex-row justify-content-between align-items-center">
   <ul class="list-none p-0 mb-0 text-center lg:text-left flex flex-column lg:flex-row flex-order-1 lg:flex-order-0 mt-4 lg:mt-0">
       <li class="lg:mr-4 mt-3 lg:mt-0">
-          <a tabindex="0" class="cursor-pointer text-white">Investor Relations</a>
+          <a tabindex="0" class="cursor-pointer text-0">Investor Relations</a>
       </li>
       <li class="lg:mr-4 mt-3 lg:mt-0">
-          <a tabindex="0" class="cursor-pointer text-white">Data Privacy</a>
+          <a tabindex="0" class="cursor-pointer text-0">Data Privacy</a>
       </li>
       <li class="lg:mr-4 mt-3 lg:mt-0">
-          <a tabindex="0" class="cursor-pointer text-white">Terms of Service</a>
+          <a tabindex="0" class="cursor-pointer text-0">Terms of Service</a>
       </li>
       <li class="lg:mr-4 mt-3 lg:mt-0">
-          <a tabindex="0" class="cursor-pointer text-white">Legal Information</a>
+          <a tabindex="0" class="cursor-pointer text-0">Legal Information</a>
       </li>
   </ul>
 
