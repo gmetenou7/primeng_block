@@ -177,3 +177,25 @@
         </div>
     </div>
 </block-viewer>
+
+<block-viewer header="Two Columns with CTA" [code]="block11" [new]="true">
+    <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+        <div class="grid grid-nogutter p-2 lg:p-4 bg-cyan-50 border-round mb-4 text-center lg:text-left">
+            <div class="col-12 lg:col-6 p-4 flex flex-column justify-content-center">
+                <span class="text-3xl block text-cyan-900 font-bold">Get Deals and Updates from Peak</span>
+                <span class="block text-cyan-600 mt-3">We promise for not sending spam emails. It’ll only good emails.</span>
+                <div class="p-inputgroup relative mt-4" style="border-radius:30px; max-width: 90%;">
+                    <input type="text" pInputText placeholder="Email" style="border-radius:30px; height:3.5rem;" class="bg-white-alpha-90 text-black-alpha-90 px-4 border-cyan-100">         
+                    <button type="button" pButton pRipple label="Subscribe" class="bg-cyan-500 border-none absolute text-white" style="border-radius: 30px; right: 8px; top: 8px; height: 2.5rem; z-index: 9999;"></button>
+                </div>
+            </div>
+            <div class="col-12 lg:col-6 p-4">
+                <div class="w-full h-full bg-no-repeat bg-center bg-cover p-5" style="background: url(assets/images/blocks/ecommerce/categorypage/categorypage-1-1.png); border-radius:30px;">
+                    <span class="text-cyan-500 font-bold block">Exclusive Peak Club</span>
+                    <span class="text-white text-xl font-bold block mt-3 line-height-3">Join Exlusive Peak Club for free shipping, premium service and deals.</span>
+                    <button type="button" pButton pRipple label="Get Your Card Today" class="bg-cyan-500 border-none w-full mt-3 text-white" style="border-radius: 30px;"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</block-viewer>
