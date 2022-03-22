@@ -1,18 +1,19 @@
-<div class="block-category-title">Shopping Cart Pages</div>
+<div class="block-category-title">Order Detail Pages</div>
 
-<block-viewer header="Single Column" [code]="block1" [new]="true">
-    <div class="bg-orange-400 px-4 lg:px-8 lg:py-3 flex w-full justify-content-between align-items-center">
-        <span class="text-0">Sign Up for <span class="text-900 font-bold">15%</span>off your first order</span>
+<block-viewer header="Simple" [code]="block1" [new]="true">
+    <div class="surface-900 px-4 lg:px-8 lg:py-3 flex w-full justify-content-between align-items-center">
+        <span class="text-0">Sign Up for 15% off your first order</span>
         <a tabindex="0" class="cursor-pointer h-full inline-flex align-items-center py-3 lg:py-0 px-3">
             <img src="assets/images/blocks/ecommerce/storefront/storefront-1-19.png" class="mr-2" alt="Flag">
             <span class="text-0">EUR</span>
         </a>
     </div>
-    <div class="surface-900 lg:px-8 flex relative lg:static justify-content-between border-y-1 border-surface-500" style="min-height: 42px">
+
+    <div class="surface-0 lg:px-8 flex relative lg:static justify-content-between border-bottom-1 border-200" style="min-height: 42px">
         <a pRipple class="cursor-pointer inline-flex align-items-center px-3 lg:hidden text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
             <i class="pi pi-bars text-2xl"></i>
         </a>
-        <div class="hidden lg:flex absolute lg:static w-full surface-900 left-0 top-100 z-1 shadow-2 lg:shadow-none">
+        <div class="hidden lg:flex absolute lg:static w-full surface-0 left-0 top-100 z-1 shadow-2 lg:shadow-none">
             <ul class="flex list-none h-auto lg:5rem p-0 m-0 flex-column lg:flex-row">
                 <li class="h-full">
                     <a pRipple class="text-600 hover:text-900 cursor-pointer h-full inline-flex align-items-center border-left-2 lg:border-left-none lg:border-bottom-2 border-transparent hover:border-gray-900 transition-colors transition-duration-150 py-3 lg:py-0 px-3">
@@ -35,7 +36,7 @@
         <a pRipple class="cursor-pointer inline-flex align-items-center px-3 lg:hidden text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
             <i class="pi pi-ellipsis-v text-xl"></i>
         </a>
-        <div class="hidden lg:flex lg:justify-content-end absolute lg:static w-full surface-900 left-0 top-100 z-1 shadow-2 lg:shadow-none">
+        <div class="hidden lg:flex lg:justify-content-end absolute lg:static w-full surface-0 left-0 top-100 z-1 shadow-2 lg:shadow-none">
             <ul class="flex list-none p-0 m-0 flex-column lg:flex-row">
                 <li class="h-full">
                     <a pRipple class="text-900 cursor-pointer h-full inline-flex align-items-center text-600 py-3 lg:py-0 px-3 border-left-2 lg:border-left-none lg:border-bottom-2 border-transparent hover:border-gray-900 transition-colors transition-duration-150">
@@ -64,105 +65,84 @@
             </ul>
         </div>
     </div>
+
     <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
-        <div class="flex flex-column align-items-center mb-6">
-            <div class="text-900 text-4xl mb-4 font-medium">Your cart total is $82.00</div>
-            <p class="text-600 font-medium text-xl mt-0 mb-4">FREE SHIPPING AND RETURN</p>
-            <button pButton pRipple label="Check Out"></button>
+        <span class="text-700 text-xl">Thanks!</span>
+        <div class="font-bold text-4xl my-2">Successful Order 🚀</div>
+        <p class="text-700 text-xl mt-0 mb-4 p-0">Your order is on the way. It'll be shipped today. We'll inform you.</p>
+        <div style="height:3px;background:linear-gradient(90deg, #2196F3 0%, rgba(33, 150, 243, 0) 50%);"></div>
+
+        <div class="flex flex-column sm:flex-row sm:align-items-center sm:justify-content-between py-5">
+            <div class="mb-3 sm:mb-0">
+                <span class="font-medium text-xl text-900 mr-2">Order number:</span>
+                <span class="font-medium text-xl text-blue-500">451234</span>
+            </div>
+            <div>
+                <button pButton pRipple label="Details" icon="pi pi-list" class="p-button-outlined p-button-secondary mr-2"></button>
+                <button pButton pRipple label="Print" icon="pi pi-print" class="p-button-outlined p-button-secondary"></button>
+            </div>
         </div>
-        <ul class="list-none p-0 m-0">
-            <li class="flex flex-column md:flex-row py-6 border-top-1 border-bottom-1 surface-border md:align-items-center">
-                <img src="assets/images/blocks/ecommerce/shoppingcart/shopping-cart-2-1.png" class="w-12rem flex-shrink-0 mx-auto md:mx-0" />
-                <div class="flex-auto py-5 md:pl-5">
-                    <div class="flex flex-wrap align-items-start sm:align-items-center sm:flex-row sm:justify-content-between surface-border pb-6">
-                        <div class="w-full sm:w-6 flex flex-column">
-                            <span class="text-900 text-xl font-medium mb-3">Product Name</span>
-                            <span class="text-600">Medium</span>
-                        </div>
-                        <div class="w-full sm:w-6 flex align-items-start justify-content-between mt-3 sm:mt-0">
-                            <div>
-                                <p-dropdown [options]="quantityOptions"></p-dropdown>
-                            </div>
-                            <div class="flex flex-column sm:align-items-end">
-                                <span class="text-900 text-xl font-medium mb-2 sm:mb-3">$20.00</span>
-                                <a class="cursor-pointer text-pink-500 font-medium text-sm hover:text-pink-600 transition-colors transition-duration-300" tabindex="0">Remove</a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="border-round surface-border border-1">
+            <ul class="list-none p-0 m-0">
+                <li class="p-3 border-bottom-1 surface-border flex align-items-start sm:align-items-center">
+                    <img src="assets/images/blocks/ecommerce/ordersummary/order-summary-1-1.png" class="w-3rem sm:w-8rem flex-shrink-0 mr-3 shadow-2" />
                     <div class="flex flex-column">
-                        <span class="inline-flex align-items-center mb-3">
-                            <i class="pi pi-envelope text-600 mr-2"></i>
-                            <span class="text-600 mr-2">Order today.</span>
-                        </span>
-                        <span class="inline-flex align-items-center mb-3">
-                            <i class="pi pi-send text-600 mr-2"></i>
-                            <span class="text-600 mr-2">Delivery by <span class="font-bold">Dec 23.</span></span>
-                        </span>
-                        <span class="flex align-items-center">
-                            <i class="pi pi-exclamation-triangle text-600 mr-2"></i>
-                            <span class="text-600">Only 8 Available.</span>
-                        </span>
+                        <span class="text-900 font-medium text-xl mb-2">Product Name</span>
+                        <span class="text-600 font-medium mb-3">Blue | Medium</span>
+                        <span class="text-900 font-medium">Quantity 1</span>
                     </div>
-                </div>
-            </li>
-            <li class="flex flex-column md:flex-row py-6 border-top-1 border-bottom-1 surface-border md:align-items-center">
-                <img src="assets/images/blocks/ecommerce/shoppingcart/shopping-cart-2-2.png" class="w-12rem flex-shrink-0 mx-auto md:mx-0" />
-                <div class="flex-auto py-5 md:pl-5">
-                    <div class="flex flex-wrap align-items-start sm:align-items-center sm:flex-row sm:justify-content-between surface-border pb-6">
-                        <div class="w-full sm:w-6 flex flex-column">
-                            <span class="text-900 text-xl font-medium mb-3">Product Name</span>
-                            <span class="text-600">Medium</span>
-                        </div>
-                        <div class="w-full sm:w-6 flex align-items-start justify-content-between mt-3 sm:mt-0">
-                            <div>
-                                <p-dropdown [options]="quantityOptions"></p-dropdown>
-                            </div>
-                            <div class="flex flex-column sm:align-items-end">
-                                <span class="text-900 text-xl font-medium mb-2 sm:mb-3">$62.00</span>
-                                <a class="cursor-pointer text-pink-500 font-medium text-sm hover:text-pink-600 transition-colors transition-duration-300" tabindex="0">Remove</a>
-                            </div>
-                        </div>
-                    </div>
+                    <span class="text-900 font-medium text-lg ml-auto">$12.00</span>
+                </li>
+                <li class="p-3 flex align-items-center">
+                    <img src="assets/images/blocks/ecommerce/ordersummary/order-summary-1-2.png" class="w-3rem sm:w-8rem flex-shrink-0 mr-3 shadow-2" />
                     <div class="flex flex-column">
-                        <span class="inline-flex align-items-center mb-3">
-                            <i class="pi pi-envelope text-600 mr-2"></i>
-                            <span class="text-600 mr-2">Order today.</span>
-                        </span>
-                        <span class="inline-flex align-items-center mb-3">
-                            <i class="pi pi-send text-600 mr-2"></i>
-                            <span class="text-600 mr-2">Delivery by <span class="font-bold">Dec 23.</span></span>
-                        </span>
-                        <span class="flex align-items-center">
-                            <i class="pi pi-exclamation-triangle text-600 mr-2"></i>
-                            <span class="text-600">Only 2 Available.</span>
-                        </span>
+                        <span class="text-900 font-medium text-xl mb-2">Product Name</span>
+                        <span class="text-600 font-medium mb-3">Yellow | Large</span>
+                        <span class="text-900 font-medium">Quantity 1</span>
                     </div>
-                </div>
-            </li>
-        </ul>
-        <div class="flex">
-            <div class="w-12rem hidden md:block"></div>
-            <ul class="list-none py-0 pr-0 pl-0 md:pl-5 mt-6 mx-0 mb-0 flex-auto">
-                <li class="flex justify-content-between mb-4">
-                    <span class="text-xl text-900">Subtotal</span>
-                    <span class="text-xl text-900">$82.00</span>
-                </li>
-                <li class="flex justify-content-between mb-4">
-                    <span class="text-xl text-900">Shipping</span>
-                    <span class="text-xl text-900">Free</span>
-                </li>
-                <li class="flex justify-content-between mb-4">
-                    <span class="text-xl text-900">VAT</span>
-                    <span class="text-xl text-900">$8.00</span>
-                </li>
-                <li class="flex justify-content-between border-top-1 surface-border mb-4 pt-4">
-                    <span class="text-xl text-900 font-bold text-3xl">Total</span>
-                    <span class="text-xl text-900 font-bold text-3xl">$90.00</span>
-                </li>
-                <li class="flex justify-content-end">
-                    <button pButton pRipple label="Check Out"></button>
+                    <span class="text-900 font-medium text-lg ml-auto">$24.00</span>
                 </li>
             </ul>
+        </div>
+        <div class="flex flex-wrap mt-5 pb-3">
+            <div class="w-full lg:w-6 pl-3">
+                <span class="font-medium text-900">Shipping Address</span>
+                <div class="flex flex-column text-900 mt-3 mb-5">
+                    <span class="mb-1">Celeste Slater</span>
+                    <span class="mb-1">606-3727 Ullamcorper. Roseville NH 11523</span>
+                    <span>(786) 713-8616</span>
+                </div>
+
+                <span class="font-medium text-900">Payment</span>
+                <div class="flex align-items-center mt-3">
+                    <img src="assets/images/blocks/ecommerce/ordersummary/visa.png" class="w-4rem mr-3" />
+                    <div class="flex flex-column">
+                        <span class="text-900 mb-1">Visa Debit Card</span>
+                        <span class="text-900 font-medium">**** **** **** 1234</span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-6 pl-3 lg:pl-0 lg:pr-3 flex align-items-end mt-5 lg:mt-0">
+                <ul class="list-none p-0 m-0 w-full">
+                    <li class="mb-3"><span class="font-medium text-900">Summary</span></li>
+                    <li class="flex justify-content-between mb-3">
+                        <span class="text-900">Subtotal</span>
+                        <span class="text-900 font-medium text-lg">$36.00</span>
+                    </li>
+                    <li class="flex justify-content-between mb-3">
+                        <span class="text-900">Shipping</span>
+                        <span class="text-900 font-medium text-lg">$5.00</span>
+                    </li>
+                    <li class="flex justify-content-between mb-3">
+                        <span class="text-900">Tax</span>
+                        <span class="text-900 font-medium text-lg">$4.00</span>
+                    </li>
+                    <li class="flex justify-content-between border-top-1 surface-border py-3">
+                        <span class="text-900 font-medium">Total</span>
+                        <span class="text-900 font-bold text-lg">$41.00</span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <p-divider styleClass="w-full border-gray-200 m-0"></p-divider>
@@ -208,7 +188,6 @@
                     <li><a tabindex="0" pRipple class="text-500 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Pinterest</a></li>
                 </ul>
             </div>
-
         </div>
     </div>
     <div class="surface-200 px-4 py-2 md:px-6 lg:px-8 flex flex-column lg:flex-row justify-content-between align-items-center">
