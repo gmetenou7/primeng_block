@@ -26,6 +26,7 @@ import { EcommerceComponent } from './ecommerce.component';
             {path: 'shoppingcartpage', loadChildren: () => import('./shoppingcartpage/shoppingcartpage.module').then(m => m.ShoppingCartPageModule), data: {name: 'Shopping Cart Pages'}},
             {path: 'checkoutpage', loadChildren: () => import('./checkoutpage/checkoutpage.module').then(m => m.CheckoutPageModule), data: {name: 'Checkout Pages'}},
             {path: 'orderdetailpage', loadChildren: () => import('./orderdetailpage/orderdetailpage.module').then(m => m.OrderDetailPageModule), data: {name: 'Order Detail Pages'}},
+            {path: 'orderhistorypage', loadChildren: () => import('./orderhistorypage/orderhistorypage.module').then(m => m.OrderHistoryPageModule), data: {name: 'Order History Pages'}}
         ])
     ],
     exports: [

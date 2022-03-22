@@ -6,20 +6,20 @@ import { StyleClassModule } from 'primeng/styleclass';
 import { CheckboxModule } from 'primeng/checkbox';
 import { DividerModule } from 'primeng/divider';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
-import { OrderDetailPageRoutingModule } from './orderdetailpage-routing.module';
-import { OrderDetailPageComponent } from './orderdetailpage.component';
+import { OrderHistoryPageRoutingModule } from './orderhistorypage-routing.module';
+import { OrderHistoryPageComponent } from './orderhistorypage.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    BlockViewerModule,
     ButtonModule,
     RippleModule,
-    DividerModule,
     StyleClassModule,
     CheckboxModule,
-    OrderDetailPageRoutingModule
+    DividerModule,
+    BlockViewerModule,
+    OrderHistoryPageRoutingModule
   ],
-  declarations: [OrderDetailPageComponent]
+  declarations: [OrderHistoryPageComponent]
 })
-export class OrderDetailPageModule { }
+export class OrderHistoryPageModule { }
