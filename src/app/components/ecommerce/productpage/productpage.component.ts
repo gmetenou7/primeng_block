@@ -107,26 +107,26 @@ export class ProductPageComponent {
 </div>
 
 <div class="surface-section px-4 md:px-6 lg:px-8">
-  <ul class="list-none py-3 px-0 m-0 surface-card border-y-1 border-100 flex align-items-center font-medium overflow-x-auto">
-      <li class="pr-3">
+  <ul class="list-none py-3 px-0 m-0 border-y-1 border-100 flex flex-wrap align-items-center font-medium overflow-x-auto">
+      <li class="lg:pr-3">
           <a class="cursor-pointer text-900 white-space-nowrap">Home</a>
       </li>
-      <li class="px-2">
+      <li class="lg:px-2">
           <span class="text-900">/</span>
       </li>
-      <li class="px-2">
+      <li class="lg:px-2">
           <a class="cursor-pointer text-900 white-space-nowrap">Women</a>
       </li>
-      <li class="px-2">
+      <li class="lg:px-2">
           <span class="text-900">/</span>
       </li>
-      <li class="px-2">
+      <li class="lg:px-2">
           <a class="cursor-pointer text-900 white-space-nowrap">Tops, Blouses & Shirts</a>
       </li>
-      <li class="px-2">
+      <li class="lg:px-2">
           <span class="text-900">/</span>
       </li>
-      <li class="px-2">
+      <li class="lg:px-2">
           <a class="cursor-pointer text-500 white-space-nowrap">Tops, Blouses & Shirts</a>
       </li>
   </ul>
