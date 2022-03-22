@@ -21,7 +21,8 @@ import { EcommerceComponent } from './ecommerce.component';
             {path: 'incentive', loadChildren: () => import('./incentive/incentive.module').then(m => m.IncentiveModule), data: {name: 'Incentive'}},
             {path: 'storefront', loadChildren: () => import('./storefront/storefront.module').then(m => m.StoreFrontModule), data: {name: 'Storefront Pages'}},
             {path: 'storenavigation', loadChildren: () => import('./storenavigation/storenavigation.module').then(m => m.StoreNavigationModule), data: {name: 'Store Navigation'}},
-            {path: 'productpage', loadChildren: () => import('./productpage/productpage.module').then(m => m.ProductPageModule), data: {name: 'Product Pages'}}
+            {path: 'productpage', loadChildren: () => import('./productpage/productpage.module').then(m => m.ProductPageModule), data: {name: 'Product Pages'}},
+            {path: 'categorypage', loadChildren: () => import('./categorypage/categorypage.module').then(m => m.CategoryPageModule), data: {name: 'Category Pages'}}
         ])
     ],
     exports: [
