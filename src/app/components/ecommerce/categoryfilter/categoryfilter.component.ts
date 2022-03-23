@@ -36,9 +36,7 @@ export class CategoryFilterComponent {
 
     selectedPrice: any;
     
-    selectedColors: any[] = [
-        {name: 'Black', class:'bg-gray-500'}
-    ];
+    selectedColors: any[] = ['Black'];
 
     selectedColors2: number = 1;
 
