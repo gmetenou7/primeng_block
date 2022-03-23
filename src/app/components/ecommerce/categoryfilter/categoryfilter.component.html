@@ -108,13 +108,13 @@
                     </div>
                 </div>
                 <div class="border-bottom-1 border-gray-200 mt-3">
-                    <a tabindex="0" class="cursor-pointer text-900 font-medium mb-3 flex justify-content-between w-full hover:text-primary transition-duration-150"  pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">Size<i class="pi pi-chevron-down"></i></a>
+                    <a tabindex="0" class="cursor-pointer text-900 font-medium mb-3 flex justify-content-between w-full hover:text-primary transition-duration-150"  pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">Size ({{selectedSize.length}})<i class="pi pi-chevron-down"></i></a>
                     <div class="overflow-hidden transition-all transition-duration-400 transition-ease-in-out">
                         <p-galleria [(value)]="sizes" [responsiveOptions]="responsiveOptions" containerClass="h-full" [numVisible]="2"
                         [showThumbnails]="false" [showIndicators]="true"> 
                             <ng-template pTemplate="item" let-item>
                                 <div class="flex flex-wrap w-full h-auto overflow-hidden justify-content-center" style="column-gap: 5px; row-gap: 5px;">
-                                    <div pRipple class="w-4rem h-2rem text-900 flex justify-content-center align-items-center text-sm cursor-pointer border-round" *ngFor="let size of item.page" (click)="selectedSize = size.value;" [ngClass]="{'bg-gray-200': size.value !== selectedSize, 'bg-blue-200': size.value === selectedSize}">{{size.value}}</div>
+                                    <div pRipple class="w-4rem h-2rem text-900 flex justify-content-center align-items-center text-sm cursor-pointer border-round" *ngFor="let size of item.page" (click)="selectedSize.indexOf(size.value) == -1 ? selectedSize.push(size.value) : selectedSize.splice(selectedSize.indexOf(size.value.toString()), 1)" [ngClass]="{'bg-gray-200': selectedSize.indexOf(size.value) == -1, 'bg-blue-200': selectedSize.indexOf(size.value) !== -1}">{{size.value}}</div>
                                 </div>                           
                             </ng-template>
                         </p-galleria>
@@ -228,7 +228,7 @@
                         [showThumbnails]="false" [showIndicators]="true"> 
                             <ng-template pTemplate="item" let-item>
                                 <div class="flex flex-wrap justify-content-between w-full h-15rem overflow-hidden" style="column-gap: 5px; row-gap: 5px;">
-                                    <div pRipple class="w-5rem h-3rem text-900 flex justify-content-center align-items-center text-sm cursor-pointer border-round" *ngFor="let size of item.page" (click)="selectedSize2 = size.value; selectedFilters.push(size.value)" [ngClass]="{'bg-gray-200': size.value !== selectedSize2, 'bg-blue-200': size.value === selectedSize2}">{{size.value}}</div>
+                                    <div pRipple class="w-5rem h-3rem text-900 flex justify-content-center align-items-center text-sm cursor-pointer border-round" *ngFor="let size of item.page" (click)="selectedSize2 = size.value; selectedFilters.push(size.value)" [ngClass]="{'bg-gray-200': selectedFilters.indexOf(size.value) == -1, 'bg-blue-200': selectedFilters.indexOf(size.value) !== -1}">{{size.value}}</div>
                                 </div>                           
                             </ng-template>
                         </p-galleria>

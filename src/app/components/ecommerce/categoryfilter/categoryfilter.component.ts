@@ -99,7 +99,7 @@ export class CategoryFilterComponent {
         ]},
     ];
     
-    selectedSize: string = '';
+    selectedSize: any[] = [];
     
     selectedSize2: string = '';
     
