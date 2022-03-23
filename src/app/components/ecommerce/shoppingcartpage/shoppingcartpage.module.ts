@@ -4,6 +4,7 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
 import { StyleClassModule } from 'primeng/styleclass';
+import { InputTextModule } from 'primeng/inputtext';
 import { ShoppingCartPageRoutingModule } from './shoppingcartpage-routing.module';
 import { ShoppingCartPageComponent } from './shoppingcartpage.component';
 import { DropdownModule } from 'primeng/dropdown';
@@ -13,6 +14,7 @@ import { DividerModule } from 'primeng/divider';
     CommonModule,
     ShoppingCartPageRoutingModule,
     BlockViewerModule,
+    InputTextModule,
     ButtonModule,
     DividerModule,
     RippleModule,

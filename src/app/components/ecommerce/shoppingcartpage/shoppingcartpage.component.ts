@@ -10,69 +10,160 @@ export class ShoppingCartPageComponent {
     quantityOptions: SelectItem[] = [{label: '1', value: 1}, {label: '2', value: 2}, {label: '3', value: 3}, {label: '4', value: 4}];
 
     block1: string = `
-<div class="bg-orange-400 px-4 lg:px-8 lg:py-3 flex w-full justify-content-between align-items-center">
+<div class="bg-orange-400 px-4 lg:px-8 py-2 flex flex-column lg:flex-row w-full justify-content-between align-items-center">
     <span class="text-0">Sign Up for <span class="text-900 font-bold">15%</span>off your first order</span>
     <a tabindex="0" class="cursor-pointer h-full inline-flex align-items-center py-3 lg:py-0 px-3">
         <img src="assets/images/blocks/ecommerce/storefront/storefront-1-19.png" class="mr-2" alt="Flag">
         <span class="text-0">EUR</span>
     </a>
 </div>
-<div class="surface-900 lg:px-8 flex relative lg:static justify-content-between border-y-1 border-surface-500" style="min-height: 42px">
-    <a pRipple class="cursor-pointer inline-flex align-items-center px-3 lg:hidden text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
-        <i class="pi pi-bars text-2xl"></i>
-    </a>
-    <div class="hidden lg:flex absolute lg:static w-full surface-900 left-0 top-100 z-1 shadow-2 lg:shadow-none">
-        <ul class="flex list-none h-auto lg:5rem p-0 m-0 flex-column lg:flex-row">
-            <li class="h-full">
-                <a pRipple class="text-600 hover:text-900 cursor-pointer h-full inline-flex align-items-center border-left-2 lg:border-left-none lg:border-bottom-2 border-transparent hover:border-gray-900 transition-colors transition-duration-150 py-3 lg:py-0 px-3">
-                    <span class="font-bold">Women</span>
-                </a>
-            </li>
-            <li class="h-full">
-                <a pRipple class="text-600 hover:text-900 cursor-pointer h-full inline-flex align-items-center border-left-2 lg:border-left-none lg:border-bottom-2 border-transparent border-transparent hover:border-gray-900 transition-colors transition-duration-150 py-3 lg:py-0 px-3">
-                    <span class="font-bold">Men</span>
-                </a>
-            </li>
-            <li class="h-full">
-                <a pRipple class="text-600 hover:text-900 cursor-pointer h-full inline-flex align-items-center border-left-2 lg:border-left-none lg:border-bottom-2 border-transparent border-transparent hover:border-gray-900 transition-colors transition-duration-150 py-3 lg:py-0 px-3">
-                    <span class="font-bold">Kids</span>
-                </a>
-            </li>
-        </ul>
-    </div>
 
-    <a pRipple class="cursor-pointer inline-flex align-items-center px-3 lg:hidden text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
-        <i class="pi pi-ellipsis-v text-xl"></i>
-    </a>
-    <div class="hidden lg:flex lg:justify-content-end absolute lg:static w-full surface-900 left-0 top-100 z-1 shadow-2 lg:shadow-none">
-        <ul class="flex list-none p-0 m-0 flex-column lg:flex-row">
-            <li class="h-full">
-                <a pRipple class="text-900 cursor-pointer h-full inline-flex align-items-center text-600 py-3 lg:py-0 px-3 border-left-2 lg:border-left-none lg:border-bottom-2 border-transparent hover:border-gray-900 transition-colors transition-duration-150">
-                    <span class="pi pi-search mr-2 lg:mr-0"></span>
-                    <span class="font-medium inline lg:hidden">Search</span>
+<div class="surface-900 px-3 lg:px-8 flex align-items-stretch relative border-bottom-1 border-700" style="min-height: 80px">
+    <div class="flex align-items-center justify-content-center">
+        <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="40" class="hidden lg:inline mr-3 lg:mr-6">
+        <img src="assets/images/blocks/logos/hyper.svg" alt="Image" height="40" class="inline lg:hidden mr-3 lg:mr-6">
+    </div>
+    <div class="flex align-items-center flex-auto">
+        <div class="p-input-icon-left w-full p-input-filled">
+            <i class="pi pi-search"></i>
+            <input pInputText type="text" class="w-full surface-800 border-none" placeholder="Product search">       
+        </div>
+    </div>
+    <div class="flex ml-3 lg:ml-6">
+        <ul class="list-none p-0 m-0 flex">
+            <li class="inline-flex relative">
+                <a pRipple class="text-300 font-medium inline-flex align-items-center cursor-pointer px-1 lg:px-3 mr-2 lg:mr-0 border-bottom-2 border-transparent hover:border-primary select-none"
+                    pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
+                    <i class="pi pi-user text-xl lg:mr-3"></i>
+                    <span class="hidden">My Account</span>
                 </a>
+                <div class="hidden border-round surface-900 p-3 shadow-2 absolute right-0 top-100 z-1 w-15rem origin-top">
+                    <ul class="list-none p-0 m-0">
+                        <li>
+                            <a class="cursor-pointer text-300 hover:text-primary border-round flex align-items-center px-3 py-2">
+                                <i class="pi pi-fw pi-box text-lg mr-2"></i>
+                                <span>Orders</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="cursor-pointer text-300 hover:text-primary border-round flex align-items-center px-3 py-2">
+                                <i class="pi pi-fw pi-heart text-lg mr-2"></i>
+                                <span>Favorites</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="cursor-pointer text-300 hover:text-primary border-round flex align-items-center px-3 py-2">
+                                <i class="pi pi-fw pi-star text-lg mr-2"></i>
+                                <span>Reviews</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="cursor-pointer text-300 hover:text-primary border-round flex align-items-center px-3 py-2">
+                                <i class="pi pi-fw pi-sign-out text-lg mr-2"></i>
+                                <span>Sign Out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </li>
-            <li class="h-full">
-                <a pRipple class="text-900 cursor-pointer h-full inline-flex align-items-center text-600 py-3 lg:py-0 px-3 border-left-2 lg:border-left-none lg:border-bottom-2 border-transparent hover:border-gray-900 transition-colors transition-duration-150">
-                    <span class="pi pi-user mr-2 lg:mr-0"></span>
-                    <span class="font-medium inline lg:hidden">Profile</span>
+            <li class="inline-flex relative">
+                <a pRipple pRipple class="text-300 font-medium inline-flex align-items-center cursor-pointer px-1 lg:px-3 border-bottom-2 border-transparent hover:border-primary select-none"
+                    pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
+                    <i class="pi pi-shopping-cart text-xl lg:mr-3" pBadge></i>
+                    <span class="hidden">My Cart</span>
                 </a>
+                <div class="hidden border-round surface-900 p-4 shadow-2 absolute right-0 top-100 z-1 w-20rem origin-top">
+                    <span class="text-0 font-medium mb-3 block">My Cart (1 Item)</span>
+                    <div class="flex align-items-center border-bottom-1 surface-border pb-3">
+                        <img src="assets/images/blocks/ecommerce/shoppingcart/shopping-cart-2-2.png" class="w-4rem flex-shrink-0 shadow-1" />
+                        <div class="flex flex-column pl-3">
+                            <span class="text-0 font-medium mb-2">Prime Watch</span>
+                            <span class="text-300 mb-2">Standard Size</span>
+                            <span class="text-primary font-bold">$50.00</span>
+                        </div>
+                    </div>
+                    <div class="flex pt-3">
+                        <button pButton pRipple class="p-button-outlined mr-2">View Cart</button>
+                        <button pButton pRipple class="ml-2">Purchase</button>
+                    </div>
+                </div>
             </li>
-            <li class="h-full">
-                <a pRipple class="text-900 cursor-pointer h-full inline-flex align-items-center text-600 py-3 lg:py-0 px-3 border-left-2 lg:border-left-none lg:border-bottom-2 border-transparent hover:border-gray-900 transition-colors transition-duration-150">
-                    <span class="pi pi-heart mr-2 lg:mr-0"></span>
-                    <span class="font-medium inline lg:hidden">Liked Products</span>
-                </a>
-            </li>
-            <li class="h-full">
-                <a pRipple class="text-900 cursor-pointer h-full inline-flex align-items-center text-600 py-3 lg:py-0 px-3 border-left-2 lg:border-left-none lg:border-bottom-2 border-transparent hover:border-gray-900 transition-colors transition-duration-150">
-                    <span class="pi pi-shopping-cart mr-2 lg:mr-0"></span>
-                    <span class="font-medium inline lg:hidden">Shopping Cart</span>
-                </a>
-            </li>       
         </ul>
     </div>
 </div>
+
+<div class="surface-900 px-2 lg:px-8 flex align-items-stretch relative border-bottom-1 border-700" style="min-height: 80px">
+    <div class="flex">
+        <ul class="list-none p-0 m-0 flex">
+            <li class="flex">
+                <a pRipple class="font-medium inline-flex align-items-center cursor-pointer border-bottom-2 border-transparent hover:border-primary px-3 lg:pl-0 lg:pr-3 text-300 select-none"
+                    pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+                    <span>Women</span>
+                </a>
+                <div class="surface-900 shadow-2 hidden absolute w-full left-0 top-100 z-1">
+                    <div class="flex flex-wrap justify-content-between p-4 lg:p-6">
+                        <ul class="list-none px-3 lg:px-0 py-0 m-0 text-300 mb-5">
+                            <li class="font-bold mb-5 text-xl text-0">Clothing</li>
+                            <li class="mb-3 cursor-pointer hover:text-primary">Dresses</li>
+                            <li class="mb-3 cursor-pointer hover:text-primary">Jeans</li>
+                            <li class="mb-3 cursor-pointer hover:text-primary">Pants</li>
+                            <li class="mb-3 cursor-pointer hover:text-primary">Skirts</li>
+                            <li class="mb-3 cursor-pointer hover:text-primary">Sweaters</li>
+                            <li class="mb-3 cursor-pointer hover:text-primary">Blouses</li>
+                        </ul>
+                        <ul class="list-none px-3 lg:px-0 py-0 m-0 text-300 mb-5">
+                            <li class="font-bold mb-5 text-xl text-0">Shoes</li>
+                            <li class="mb-3 cursor-pointer hover:text-primary">Athletic</li>
+                            <li class="mb-3 cursor-pointer hover:text-primary">Boots</li>
+                            <li class="mb-3 cursor-pointer hover:text-primary">Sneakers</li>
+                            <li class="mb-3 cursor-pointer hover:text-primary">Flats</li>
+                            <li class="mb-3 cursor-pointer hover:text-primary">Outdoor</li>
+                        </ul>
+                        <ul class="list-none px-3 lg:px-0 py-0 m-0 text-300 mb-5">
+                            <li class="font-bold mb-5 text-xl text-0">Accessories</li>
+                            <li class="mb-3 cursor-pointer hover:text-primary">Handbags</li>
+                            <li class="mb-3 cursor-pointer hover:text-primary">Gloves</li>
+                            <li class="mb-3 cursor-pointer hover:text-primary">Belts</li>
+                            <li class="mb-3 cursor-pointer hover:text-primary">Hats</li>
+                            <li class="mb-3 cursor-pointer hover:text-primary">Earmuffs</li>
+                        </ul>
+                        <ul class="list-none flex p-0 m-0">
+                            <li class="flex flex-column align-items-center mb-5 lg:mr-5 pr-3 lg:pr-0">
+                                <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-3-1.png" alt="Image" style="border-radius:12px" class="mb-5 w-full lg:w-20rem">
+                                <span class="inline-flex surface-0 text-900 border-round font-semibold mb-3">New Arrivals</span>
+                                <a class="cursor-pointer text-300 font-medium hover:text-0">View All</a>
+                            </li>
+                            <li class="flex flex-column align-items-center pl-3 lg:pl-0">
+                                <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-3-2.png" alt="Image" style="border-radius:12px" class="mb-5 w-full lg:w-20rem">
+                                <span class="inline-flex surface-0 text-900 border-round font-semibold mb-3">Seasonal</span>
+                                <a class="cursor-pointer text-300 font-medium hover:text-0">View All</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="flex">
+                <a pRipple class="font-medium inline-flex align-items-center cursor-pointer border-bottom-2 border-transparent hover:border-primary px-3 text-700 select-none"
+                    pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+                    <span>Men</span>
+                </a>
+                <div class="surface-900 shadow-2 hidden absolute w-full left-0 top-100 h-30rem p-6">
+                    <div class="border-2 border-dashed surface-border border-round h-full"></div>
+                </div>
+            </li>
+            <li class="flex">
+                <a pRipple class="font-medium inline-flex align-items-center cursor-pointer border-bottom-2 border-transparent hover:border-primary px-3 text-700 select-none"
+                    pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+                    <span>Kids</span>
+                </a>
+                <div class="surface-900 shadow-2 hidden absolute w-full left-0 top-100 h-30rem p-6">
+                    <div class="border-2 border-dashed surface-border border-round h-full"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
 <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="flex flex-column align-items-center mb-6">
         <div class="text-900 text-4xl mb-4 font-medium">Your cart total is $82.00</div>
@@ -174,6 +265,7 @@ export class ShoppingCartPageComponent {
         </ul>
     </div>
 </div>
+
 <p-divider styleClass="w-full border-gray-200 m-0"></p-divider>
 <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="grid grid-nogutter flex-column lg:flex-row text-center lg:text-left">
@@ -209,17 +301,18 @@ export class ShoppingCartPageComponent {
         </div>
        
         <div class="col flex flex-column mt-4">
-            <span class="text-700 text-xl block">Legal</span>
+            <span class="text-700 text-xl block">Connect</span>
             <ul class="list-none p-0">
-                <li><a tabindex="0" pRipple class="text-500 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Investor Relations</a></li>
-                <li><a tabindex="0" pRipple class="text-500 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Data Privacy</a></li>
-                <li><a tabindex="0" pRipple class="text-500 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Terms of Service</a></li>
-                <li><a tabindex="0" pRipple class="text-500 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Legal Information</a></li>
+                <li><a tabindex="0" pRipple class="text-500 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Instagram</a></li>
+                <li><a tabindex="0" pRipple class="text-500 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Twitter</a></li>
+                <li><a tabindex="0" pRipple class="text-500 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Facebook</a></li>
+                <li><a tabindex="0" pRipple class="text-500 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Pinterest</a></li>
             </ul>
         </div>
 
     </div>
 </div>
+
 <div class="surface-200 px-4 py-2 md:px-6 lg:px-8 flex flex-column lg:flex-row justify-content-between align-items-center">
     <div class="col-fixed flex flex-wrap flex-order-1 lg:flex-order-0 text-center lg:text-left">
        <span class="text-500">© 2022, Peak. Powered by PrimeBlocks.</span>
