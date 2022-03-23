@@ -23,9 +23,9 @@ export class CheckoutPageComponent {
     selectedCity: string;
 
     block1: string = `
-<div class="surface-900 px-4 lg:px-8 lg:py-2 flex w-full justify-content-between align-items-center">
+<div class="surface-900 px-4 lg:px-8 py-3 lg:py-2 flex flex-column lg:flex-row w-full justify-content-between align-items-center">
     <span class="text-0">Sign Up for 15% off your first order</span>
-    <a tabindex="0" class="cursor-pointer h-full inline-flex align-items-center py-3 lg:py-0 px-3">
+    <a tabindex="0" class="cursor-pointer h-full inline-flex align-items-center mt-3 lg:mt-0 lg:py-0">
         <img src="assets/images/blocks/ecommerce/storefront/storefront-1-19.png" class="mr-2" alt="Flag">
         <span class="text-0">EUR</span>
     </a>
