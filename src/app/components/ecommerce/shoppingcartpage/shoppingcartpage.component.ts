@@ -166,7 +166,7 @@ export class ShoppingCartPageComponent {
 
 <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="flex flex-column align-items-center mb-6">
-        <div class="text-900 text-4xl mb-4 font-medium">Your cart total is $82.00</div>
+        <div class="text-900 text-4xl mb-4 font-medium text-center">Your cart total is $82.00</div>
         <p class="text-600 font-medium text-xl mt-0 mb-4">FREE SHIPPING AND RETURN</p>
         <button pButton pRipple label="Check Out"></button>
     </div>
