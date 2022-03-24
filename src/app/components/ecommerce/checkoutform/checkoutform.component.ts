@@ -1,8 +1,22 @@
 import { Component } from '@angular/core';
-
+import {trigger,state,style,transition,animate} from '@angular/animations';
 @Component({
     selector: 'app-checkoutform',
     templateUrl: './checkoutform.component.html',
+    animations: [
+        trigger('errorState', [
+            state('hidden', style({
+                opacity: 0,
+                height: 0
+            })),
+            state('visible', style({
+                opacity: 1,
+                height: 'auto'
+            })),
+            transition('visible => hidden', animate('400ms ease-in')),
+            transition('hidden => visible', animate('400ms ease-out'))
+        ])
+    ],
 })
 export class CheckoutFormComponent {
 
@@ -21,6 +35,10 @@ export class CheckoutFormComponent {
     value4: string;
 
     checked: boolean = true;
+
+    checked2: boolean = true;
+    
+    checked3: boolean = true;
     
     cities = [
       {name: 'New York', code: 'NY'},
@@ -47,6 +65,18 @@ export class CheckoutFormComponent {
     selectedDelivery: string = 'UPS';
 
     selectedPayment: string = 'Credit Card'
+    
+    ccRegex: RegExp = /[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}$/;
+    
+    cc: string;
+
+    cvc: string;
+
+    cvcRegex: RegExp = /^[0-9]{3,4}$/;
+
+    exp: string;
+
+    expRegex: RegExp = /[0-9]{2}\/[0-9]{2}$/;
 
     block1: string = `
     <div class="surface-50 px-4 py-8 md:px-6 lg:px-8">

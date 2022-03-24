@@ -12,6 +12,8 @@ import {CalendarModule} from 'primeng/calendar';
 import {PasswordModule} from 'primeng/password';
 import {StyleClassModule} from 'primeng/styleclass';
 import {RippleModule} from 'primeng/ripple';
+import {KeyFilterModule} from 'primeng/keyfilter';
+import {MessageModule} from 'primeng/message';
 import {BlockViewerModule} from '../../blockviewer/blockviewer.module';
 import {CheckoutFormRoutingModule} from './checkoutform-routing.module';
 import {CheckoutFormComponent} from './checkoutform.component';
@@ -31,6 +33,8 @@ import {CheckoutFormComponent} from './checkoutform.component';
     InputNumberModule,
     StyleClassModule,
     RippleModule,
+    MessageModule,
+    KeyFilterModule,
     BlockViewerModule,
     CheckoutFormRoutingModule,
   ],
