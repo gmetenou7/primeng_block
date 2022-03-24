@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { MenuItem } from 'primeng/api';
 @Component({
     selector: 'app-categoryfilter',
     templateUrl: './categoryfilter.component.html',
@@ -32,6 +32,12 @@ export class CategoryFilterComponent {
     selectedBrands2: any[] = [
       {name: 'Alfred'},
       {name: 'Hyper'}
+    ];
+
+    items: MenuItem[] = [
+        {label: 'Color'},
+        {label: 'Size'},
+        {label: 'Price'}
     ];
 
     selectedPrice: any;
@@ -99,10 +105,10 @@ export class CategoryFilterComponent {
         ]},
     ];
     
-    selectedSize: any[] = [];
+    selectedSizes1: any[] = [];
     
-    selectedSize2: string = '';
-    
+    selectedSizes2: any[] = [];
+        
     responsiveOptions: any[] = [
         {
             breakpoint: '1024px',
@@ -122,6 +128,10 @@ export class CategoryFilterComponent {
     ];
     
     rangeValues: number[] = [20,80];
+
+    checked1: boolean = true;
+    
+    checked2: boolean = false;
 
     block1: string = ` 
     <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
