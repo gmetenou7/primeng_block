@@ -1,4 +1,5 @@
 <div class="block-category-title">Store Navigation</div>
+
 <block-viewer header="Aligned Left" [code]="block1" [new]="true" [previewStyle]="{height:'600px'}">
     <div class="bg-gray-900 px-3 sm:px-6 py-3 flex align-items-stretch justify-content-center sm:justify-content-end border-bottom-1 surface-border text-sm">
         <a pRipple class="text-white font-medium inline-flex align-items-center cursor-pointer px-3 hover:text-gray-200">
@@ -138,7 +139,7 @@
 
 <block-viewer header="Centered with Category Images" [code]="block2" [new]="true" [previewStyle]="{height:'600px'}">
     <section class="bg-primary text-primary font-medium py-2 text-center text-xs sm:text-base"><strong>15%</strong> off on your first order.</section>
-    <div class="surface-overlay px-3 sm:px-6 flex flex-wrap align-items-stretch justify-content-between relative">
+    <div class="surface-overlay px-3 sm:px-6 flex flex-wrap align-items-stretch justify-content-between relative lg:border-bottom-1 surface-border">
         <a pRipple class="cursor-pointer flex align-items-center lg:hidden text-700 mr-3" pStyleClass="#nav-2" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
             <i class="pi pi-bars text-4xl"></i>
         </a>
@@ -235,11 +236,12 @@
                 </li>
             </ul>
         </div>
+    
         <div class="flex align-items-center justify-content-center py-3">
             <img src="assets/images/blocks/logos/hyper-text-indigo.svg" alt="Image" height="40">
         </div>
-        <div class="flex w-full lg:w-auto border-top-1 surface-border lg:border-top-none py-3 lg:py-0">
-            <ul class="list-none p-0 m-0 flex w-full">
+        <div class="lg:flex w-full lg:w-auto hidden py-3 lg:py-0">
+            <ul class="list-none p-0 m-0 flex w-full" style="min-height:30px;">
                 <li class="flex flex-auto lg:flex-initial justify-content-center">
                     <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer lg:pr-3 text-700 hover:text-primary">
                         <i class="pi pi-search text-xl"></i>
@@ -259,13 +261,41 @@
                     </a>
                 </li>
                 <li class="flex flex-auto lg:flex-initial justify-content-center">
-                    <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer lg:pl-3 text-700 hover:text-primary">
+                    <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer lg:pl-3 pr-3 text-700 hover:text-primary">
                         <i class="pi pi-shopping-cart text-xl" pBadge></i>
                         <span class="hidden">Cart</span>
                     </a>
                 </li>
             </ul>
         </div>
+    </div>
+    <div class="flex w-full lg:w-auto border-y-1 surface-border surface-overlay lg:hidden py-3 lg:py-0">
+        <ul class="list-none p-0 m-0 flex w-full" style="min-height:30px;">
+            <li class="flex flex-auto lg:flex-initial justify-content-center">
+                <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer lg:pr-3 text-700 hover:text-primary">
+                    <i class="pi pi-search text-xl"></i>
+                    <span class="hidden">Search</span>
+                </a>
+            </li>
+            <li class="flex flex-auto lg:flex-initial justify-content-center">
+                <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer lg:px-3 text-700 hover:text-primary">
+                    <i class="pi pi-heart text-xl"></i>
+                    <span class="hidden">Favorites</span>
+                </a>
+            </li>
+            <li class="flex flex-auto lg:flex-initial justify-content-center">
+                <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer lg:px-3 text-700 hover:text-primary">
+                    <i class="pi pi-user text-xl"></i>
+                    <span class="hidden">Sign In</span>
+                </a>
+            </li>
+            <li class="flex flex-auto lg:flex-initial justify-content-center">
+                <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer lg:pl-3 pr-1 text-700 hover:text-primary">
+                    <i class="pi pi-shopping-cart text-xl" pBadge></i>
+                    <span class="hidden">Cart</span>
+                </a>
+            </li>
+        </ul>
     </div>
 </block-viewer>
 
@@ -415,4 +445,3 @@
         </div>
     </div>
 </block-viewer>
-

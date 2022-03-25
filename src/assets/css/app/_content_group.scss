@@ -2,6 +2,7 @@
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    color: var(--surface-900);
     display: flex;
     align-items: center;
 }
@@ -23,6 +24,7 @@
     font-weight: 700;
     padding: 1rem 2rem;
     display: block;
+    color: var(--surface-900);
     background-color: var(--surface-card);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -60,6 +62,7 @@
 }
 
 .block-name {
+    color: var(--surface-900);
     display: block;
     font-weight: 700;
     margin-bottom: .5rem;

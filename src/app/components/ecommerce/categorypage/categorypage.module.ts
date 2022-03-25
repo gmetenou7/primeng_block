@@ -13,6 +13,8 @@ import { InputTextModule } from 'primeng/inputtext';
 import { CheckboxModule } from 'primeng/checkbox';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { DividerModule } from 'primeng/divider';
+import { MenuModule } from 'primeng/menu';
+import { ToggleButtonModule } from 'primeng/togglebutton';
 import { MultiSelectModule } from 'primeng/multiselect';
 
 @NgModule({
@@ -24,7 +26,9 @@ import { MultiSelectModule } from 'primeng/multiselect';
     StyleClassModule,
     RippleModule,
     DropdownModule,
+    MenuModule,
     BadgeModule,
+    ToggleButtonModule,
     InputTextModule,
     MultiSelectModule,
     CheckboxModule,

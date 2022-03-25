@@ -5,6 +5,7 @@ import { RippleModule } from 'primeng/ripple';
 import { StyleClassModule } from 'primeng/styleclass';
 import { CheckboxModule } from 'primeng/checkbox';
 import { DividerModule } from 'primeng/divider';
+import { InputTextModule } from 'primeng/inputtext';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 import { OrderDetailPageRoutingModule } from './orderdetailpage-routing.module';
 import { OrderDetailPageComponent } from './orderdetailpage.component';
@@ -14,6 +15,7 @@ import { OrderDetailPageComponent } from './orderdetailpage.component';
     CommonModule,
     BlockViewerModule,
     ButtonModule,
+    InputTextModule,
     RippleModule,
     DividerModule,
     StyleClassModule,

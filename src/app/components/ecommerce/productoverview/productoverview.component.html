@@ -217,7 +217,7 @@
 
                 <div class="font-bold text-900 mb-3">Quantity</div>
                 <div class="flex flex-column sm:flex-row sm:align-items-center sm:justify-content-between">
-                    <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" inputStyleClass="w-3rem text-center" [(ngModel)]="quantity1"
+                    <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" min="0" inputStyleClass="w-3rem text-center" [(ngModel)]="quantity1"
                         decrementButtonClass="p-button-text" incrementButtonClass="p-button-text" incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus"></p-inputNumber>
                     <div class="flex align-items-center flex-1 mt-3 sm:mt-0 ml-0 sm:ml-5">
                         <button pButton pRipple label="Add to Cart" class="flex-1 mr-5"></button>
@@ -368,7 +368,7 @@
                 </div>
 
                 <div class="border-round p-2 border-1 surface-border inline-flex mb-5">
-                    <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" inputStyleClass="w-3rem text-center border-transparent" [(ngModel)]="quantity2"
+                    <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" min="0" inputStyleClass="w-3rem text-center border-transparent" [(ngModel)]="quantity2"
                     decrementButtonClass="p-button-text" incrementButtonClass="p-button-text" incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus"></p-inputNumber>
                 </div>
 

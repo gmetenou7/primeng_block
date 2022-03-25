@@ -251,13 +251,13 @@
 
 <block-viewer header="Dropdown" [code]="block3" [new]="true">
     <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
-        <div class="flex justify-content-between">
-            <div class="flex align-items-center">
+        <div class="flex justify-content-between flex-wrap">
+            <div class="flex align-items-center mb-3 md:mb-0">
                 <div class="text-900 font-bold text-3xl">Category Title </div>
                 <p-badge [value]="76" styleClass="ml-3 bg-gray-200 text-gray-900 p-0 border-circle"></p-badge>
             </div>
             <div>
-                <button type="button" pButton icon="pi pi-sort-alt" class="text-400 surface-section border-1 surface-border w-7rem p-2"  iconPos="right" label="Sort By" (click)="menu.toggle($event)"></button>
+                <button type="button" pButton icon="pi pi-sort-alt" class="text-400 surface-section border-1 surface-border hover:text-0 w-7rem p-2 transition-duration-150"  iconPos="right" label="Sort By" (click)="menu.toggle($event)"></button>
                 <p-menu #menu [popup]="true" [model]="items"></p-menu>
             </div>
 

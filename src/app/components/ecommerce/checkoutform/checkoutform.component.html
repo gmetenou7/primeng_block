@@ -17,7 +17,7 @@
                         <p-checkbox name="checkbox-1" [(ngModel)]="checked" [binary]="true" label="Email me with news and offers" class="text-900" inputId="id"></p-checkbox>
                     </div>
                     <p-divider class="w-full px-2"></p-divider>
-                    <div class="col-12 mb-4">
+                    <div class="col-12 mt-4 lg:mt-0 mb-4">
                         <div class="text-900 font-medium text-xl">Shipping</div>
                     </div>
                     <div class="col-12 field mb-0">
@@ -49,7 +49,7 @@
                         <input id="phone" type="text" class="p-inputtext w-full mb-3">
                     </div>
                     <p-divider class="w-full px-2"></p-divider>
-                    <div class="text-900 font-medium text-xl mb-4 px-2">Shipping Method</div>
+                    <div class="text-900 font-medium text-xl mt-4 lg:mt-0 mb-4 px-2">Shipping Method</div>
                     <div class="col-12 flex flex-column lg:flex-row">
                         <div class="flex justify-content-between p-3 border-round border-1 surface-border w-full mr-3 hover:border-primary cursor-pointer" (click)="selectedValue = 'UPS'" [ngClass]="{'border-primary surface-50': selectedValue === 'UPS'}">
                             <div class="mr-3 lg:mr-0">
@@ -73,7 +73,7 @@
                         </div>        
                     </div>
                     <p-divider class="w-full px-2"></p-divider>
-                    <div class="text-900 font-medium text-xl mb-4 px-2">Payment</div>
+                    <div class="text-900 font-medium text-xl mt-4 lg:mt-0 mb-4 px-2">Payment</div>
                     <div class="col-12 mb-4">
                         <div class="p-3 border-1 border-round-top surface-border" (click)="selectedValue2 === 'paypal'" [ngClass]="{'border-primary surface-50': selectedValue2 === 'paypal'}">
                             <p-radioButton name="paypal" value="paypal" [(ngModel)]="selectedValue2" inputId="paypal"></p-radioButton>
@@ -130,7 +130,7 @@
                             </div>
                             <div class="text-600 text-sm mb-3">Black | Large</div>
                             <div class="flex flex-auto justify-content-between align-items-center">
-                                <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" inputStyleClass="w-2rem text-center py-2 px-1 border-transparent" [(ngModel)]="quantities1[0]" 
+                                <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" min="0" inputStyleClass="w-2rem text-center py-2 px-1 border-transparent" [(ngModel)]="quantities1[0]" 
                                 class="border-1 surface-border border-round" decrementButtonClass="p-button-text text-600 hover:text-primary py-1 px-1" incrementButtonClass="p-button-text text-600 hover:text-primary py-1 px-1" incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus"></p-inputNumber>
                                 <button pButton pRipple icon="pi pi-trash" class="text-600 p-button-text p-button-rounded"></button>
                             </div>
@@ -204,7 +204,7 @@
                         <p-checkbox name="checkbox-1" [(ngModel)]="checked3" [binary]="true" label="Save for next purchase" class="text-900" inputId="id"></p-checkbox>
                     </div>
                     <div class="col-12 flex flex-column lg:flex-row justify-content-center align-items-center lg:justify-content-end mt-6">
-                        <button pButton pRipple class="p-button-text mt-3 lg:mt-0 w-full lg:w-auto lg:px-6 flex-order-2 lg:flex-order-1" label="Return to Cart"></button>
+                        <button pButton pRipple class="p-button-text mt-3 lg:mt-0 w-full lg:w-auto lg:px-6 flex-order-2 lg:flex-order-1 lg:mr-4" label="Return to Cart"></button>
                         <button pButton pRipple class="p-button-primary w-full lg:w-auto lg:px-6 flex-order-1 lg:flex-order-2" label="Continue to Shipping"></button>
                     </div>
                 </div>
@@ -222,7 +222,7 @@
                         </div>
                         <div class="text-600 text-sm mb-3">Black | Large</div>
                         <div class="flex flex-auto justify-content-between align-items-center">
-                            <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" inputStyleClass="w-2rem text-center py-2 px-1 border-transparent" [(ngModel)]="quantities1[0]" 
+                            <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" min="0" inputStyleClass="w-2rem text-center py-2 px-1 border-transparent" [(ngModel)]="quantities1[0]" 
                             class="border-1 surface-border border-round" decrementButtonClass="p-button-text text-600 hover:text-primary py-1 px-1" incrementButtonClass="p-button-text text-600 hover:text-primary py-1 px-1" incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus"></p-inputNumber>
                             <button pButton pRipple icon="pi pi-trash" class="p-button-text p-button-rounded"></button>
                         </div>
@@ -323,7 +323,7 @@
                                     </div>
                                     <div class="text-600 text-sm mb-3">White</div>
                                     <div class="flex flex-auto justify-content-between align-items-center">
-                                        <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" inputStyleClass="w-2rem text-center p-0 border-none surface-50" [(ngModel)]="quantities1[0]" 
+                                        <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" min="0" inputStyleClass="w-2rem text-center p-0 border-none surface-50" [(ngModel)]="quantities1[0]" 
                                         class="border-none border-round" decrementButtonClass="surface-50 p-button-text text-600 hover:text-primary" incrementButtonClass="p-button-text surface-50 text-600 hover:text-primary py-1 px-1" incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus"></p-inputNumber>
                                         <span class="text-600 cursor-pointer"><i class="pi pi-trash mr-2"></i>Delete</span>
                                     </div>

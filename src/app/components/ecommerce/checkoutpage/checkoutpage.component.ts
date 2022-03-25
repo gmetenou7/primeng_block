@@ -10,7 +10,9 @@ export class CheckoutPageComponent {
 
     value1: string;
 
-    checked: boolean = true;
+    checked1: boolean = true;
+    
+    checked2: boolean = false;
     
     cities = [
       {name: 'New York', code: 'NY'},

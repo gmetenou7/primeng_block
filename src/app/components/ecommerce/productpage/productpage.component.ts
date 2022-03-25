@@ -522,20 +522,20 @@ export class ProductPageComponent {
     <div class="col-12 lg:col-3 mt-4 lg:mt-0 lg:pl-4 flex flex-column">
         <span class="text-900 text-xl font-medium block">Company</span>
         <ul class="list-none p-0">
-            <li><a tabindex="0" pRipple class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">About Peak</a></li>
-            <li><a tabindex="0" pRipple class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Factories</a></li>
-            <li><a tabindex="0" pRipple class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Careers</a></li>
-            <li><a tabindex="0" pRipple class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Environmental Initiatives</a></li>
+            <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">About Peak</a></li>
+            <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Factories</a></li>
+            <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Careers</a></li>
+            <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Environmental Initiatives</a></li>
         </ul>
     </div>
     <div class="col-12 lg:col-3 flex mt-4 lg:mt-0 lg:pl-4 flex-column">
         <span class="text-900 text-xl font-medium block">Account</span>
         <ul class="list-none p-0">
-            <li><a tabindex="0" pRipple class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Manage Account</a></li>
-            <li><a tabindex="0" pRipple class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Saved Items</a></li>
-            <li><a tabindex="0" pRipple class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">My Cart</a></li>
-            <li><a tabindex="0" pRipple class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Wishlist</a></li>
-            <li><a tabindex="0" pRipple class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Orders & Returns</a></li>
+            <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Manage Account</a></li>
+            <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Saved Items</a></li>
+            <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">My Cart</a></li>
+            <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Wishlist</a></li>
+            <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Orders & Returns</a></li>
         </ul>
     </div>
 </div>

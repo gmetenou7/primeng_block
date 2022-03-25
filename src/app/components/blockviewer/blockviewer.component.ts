@@ -12,11 +12,11 @@ enum BlockView {
         <div class="block-section">
             <div class="block-header">
                 <span class="block-title">
-                    <span>{{header}}</span>
-                    <span class="badge-free" *ngIf="free">Free</span>
-                    <span class="badge-new" *ngIf="new">New</span>
+                    <span class="text-900">{{header}}</span>
+                    <span class="badge-free text-white" *ngIf="free">Free</span>
+                    <span class="badge-new text-white" *ngIf="new">New</span>
                 </span>
-                <div class="block-actions">
+                <div class="block-actions text-900">
                     <a tabindex="0" [ngClass]="{'block-action-active': blockView == BlockView.PREVIEW}" (click)="activateView($event, BlockView.PREVIEW)"><span>Preview</span></a>
                     <a [attr.tabindex]="codeDisabled ? null: '0'" [ngClass]="{'block-action-active': blockView == BlockView.CODE, 'block-action-disabled': codeDisabled}" (click)="activateView($event, BlockView.CODE)">
                         <i class="pi pi-lock" *ngIf="codeDisabled"></i>

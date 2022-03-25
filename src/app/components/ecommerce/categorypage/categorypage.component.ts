@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { MenuItem } from 'primeng/api';
 @Component({
     selector: 'app-categorypage',
     templateUrl: './categorypage.component.html',
@@ -38,6 +38,18 @@ export class CategoryPageComponent {
 
     selectedColors: any[] = [
         {name: 'Black', class:'bg-gray-500'}
+    ];
+
+    rangeValues = [20,80];
+
+    checked1: boolean = true;
+
+    checked2: boolean = false;
+
+    items: MenuItem[] = [
+        {label: 'Color'},
+        {label: 'Size'},
+        {label: 'Price'}
     ];
 
     block1: string = `
@@ -461,31 +473,31 @@ export class CategoryPageComponent {
         <div class="col flex flex-column mt-4">
             <span class="text-900 text-xl block">Company</span>
             <ul class="list-none p-0">
-                <li><a tabindex="0" pRipple class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">About Peak</a></li>
-                <li><a tabindex="0" pRipple class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Factories</a></li>
-                <li><a tabindex="0" pRipple class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Careers</a></li>
-                <li><a tabindex="0" pRipple class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Environmental Initiatives</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">About Peak</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Factories</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Careers</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Environmental Initiatives</a></li>
             </ul>
         </div>
        
         <div class="col flex flex-column mt-4">
             <span class="text-900 text-xl block">Account</span>
             <ul class="list-none p-0">
-                <li><a tabindex="0" pRipple class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Manage Account</a></li>
-                <li><a tabindex="0" pRipple class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Saved Items</a></li>
-                <li><a tabindex="0" pRipple class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">My Cart</a></li>
-                <li><a tabindex="0" pRipple class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Wishlist</a></li>
-                <li><a tabindex="0" pRipple class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Orders & Returns</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Manage Account</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Saved Items</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">My Cart</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Wishlist</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Orders & Returns</a></li>
             </ul>
         </div>
        
         <div class="col flex flex-column mt-4">
             <span class="text-900 text-xl block">Legal</span>
             <ul class="list-none p-0">
-                <li><a tabindex="0" pRipple class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Investor Relations</a></li>
-                <li><a tabindex="0" pRipple class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Data Privacy</a></li>
-                <li><a tabindex="0" pRipple class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Terms of Service</a></li>
-                <li><a tabindex="0" pRipple class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Legal Information</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Investor Relations</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Data Privacy</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Terms of Service</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-primary transition-duration-150 cursor-pointer mt-3 block">Legal Information</a></li>
             </ul>
         </div>
        
