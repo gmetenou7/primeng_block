@@ -1,7 +1,7 @@
 <div class="block-category-title">Product Pages</div>
 <block-viewer header="With Galleria, Tabs and Single Column Reviews">
-    <section class="surface-50 font-medium py-2 text-center text-xs sm:text-base text-900"><strong>15%</strong> off on your first order.</section>
-    <div class="surface-overlay px-3 sm:px-8 flex align-items-stretch relative" style="min-height: 80px">
+    <section class="surface-50 font-medium py-3 text-center text-xs sm:text-base text-900"><strong>15%</strong> off on your first order.</section>
+    <div class="surface-overlay px-4 md:px-6 lg:px-8 flex align-items-stretch relative" style="min-height: 80px">
         <a pRipple class="cursor-pointer flex align-items-center lg:hidden text-700 mr-3 sm:mr-5" pStyleClass="#nav-1" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
             <i class="pi pi-bars text-4xl"></i>
         </a>
@@ -180,11 +180,11 @@
 
                 <div class="font-bold text-900 mb-3">Color</div>
                 <div class="flex align-items-center mb-5">
-                    <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-bluegray-500 mr-3 cursor-pointer border-2 border-200 transition-all transition-duration-300" 
+                    <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-bluegray-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
                         [style.box-shadow]="color === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color = 'bluegray'"></div>
-                    <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-green-500 mr-3 cursor-pointer border-2 border-200 transition-all transition-duration-300" 
+                    <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-green-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
                         [style.box-shadow]="color === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color = 'green'"></div>
-                    <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-blue-500 cursor-pointer border-2 border-200 transition-all transition-duration-300" 
+                    <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-blue-500 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
                         [style.box-shadow]="color === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color = 'blue'"></div>
                 </div>
 
