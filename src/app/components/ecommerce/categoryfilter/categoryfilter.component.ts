@@ -42,7 +42,7 @@ export class CategoryFilterComponent {
 
     selectedPrice: any;
     
-    selectedColors: any[] = ['Black'];
+    selectedColors: any = [];
 
     selectedColors2: number = 1;
 
