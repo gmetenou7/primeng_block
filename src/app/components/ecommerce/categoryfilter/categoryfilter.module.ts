@@ -9,6 +9,7 @@ import {CheckboxModule} from 'primeng/checkbox';
 import {InputTextModule} from 'primeng/inputtext';
 import {BadgeModule} from 'primeng/badge';
 import {MenuModule} from 'primeng/menu';
+import {AccordionModule} from 'primeng/accordion';
 import {InputNumberModule} from 'primeng/inputnumber';
 import {MultiSelectModule} from 'primeng/multiselect';
 import {ChipModule} from 'primeng/chip';
@@ -32,6 +33,7 @@ import {BlockViewerModule} from '../../blockviewer/blockviewer.module';
     SliderModule,
     CheckboxModule,
     DividerModule,
+    AccordionModule,
     InputTextModule,
     BadgeModule,
     ToggleButtonModule,

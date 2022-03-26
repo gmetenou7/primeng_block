@@ -34,13 +34,20 @@ export class CategoryFilterComponent {
       {name: 'Hyper'}
     ];
 
+    selectedBrands3: any = [
+        {name: 'Alfred'}
+    ];
+
+    selectedBrand_1: any[];
     items: MenuItem[] = [
         {label: 'Color'},
         {label: 'Size'},
         {label: 'Price'}
     ];
 
-    selectedPrice: any;
+    selectedPrice1: any;
+
+    selectedPrice2: any;
     
     selectedColors: any = [];
 
@@ -132,6 +139,8 @@ export class CategoryFilterComponent {
     checked1: boolean = true;
     
     checked2: boolean = false;
+
+    openDropdown: boolean = true;
 
     block1: string = ` 
     <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
