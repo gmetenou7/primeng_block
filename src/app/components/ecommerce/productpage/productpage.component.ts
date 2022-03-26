@@ -41,8 +41,8 @@ export class ProductPageComponent {
     }
 
     block1: string = `
-<section class="surface-50 font-medium py-2 text-center text-xs sm:text-base"><strong>15%</strong> off on your first order.</section>
-<div class="surface-overlay px-3 sm:px-8 flex align-items-stretch relative" style="min-height: 80px">
+<section class="surface-50 font-medium py-3 text-center text-xs sm:text-base text-900"><strong>15%</strong> off on your first order.</section>
+<div class="surface-overlay px-4 md:px-6 lg:px-8 flex align-items-stretch relative" style="min-height: 80px">
     <a pRipple class="cursor-pointer flex align-items-center lg:hidden text-700 mr-3 sm:mr-5" pStyleClass="#nav-1" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
         <i class="pi pi-bars text-4xl"></i>
     </a>
@@ -167,7 +167,7 @@ export class ProductPageComponent {
 </div>
 
 <div class="surface-section px-4 md:px-6 lg:px-8">
-    <ul class="list-none py-3 px-0 m-0 border-y-1 border-100 flex flex-wrap align-items-center font-medium overflow-x-auto">
+    <ul class="list-none py-3 px-0 m-0 border-y-1 surface-border flex flex-wrap align-items-center font-medium overflow-x-auto">
         <li class="lg:pr-3">
             <a class="cursor-pointer text-900 white-space-nowrap">Home</a>
         </li>
@@ -190,12 +190,13 @@ export class ProductPageComponent {
             <a class="cursor-pointer text-500 white-space-nowrap">Tops, Blouses & Shirts</a>
         </li>
     </ul>
+    
     <div class="grid my-4">
         <div class="col-12 lg:col-6">
             <div class="flex">
                 <div class="flex flex-column w-2 justify-content-between">
                     <img *ngFor="let image of images; let i = index" src="assets/images/blocks/ecommerce/productoverview/{{image}}" class="w-full cursor-pointer border-2 border-round border-transparent transition-colors transition-duration-150" 
-                        [ngClass]="{'border-primary': selectedImageIndex === i}" (click)="selectedImageIndex = i"/>
+                        [ngClass]="{'border-primary': selectedImageIndex2 === i}" (click)="selectedImageIndex = i"/>
                 </div>
                 <div class="pl-3 w-10">
                     <img attr.src="assets/images/blocks/ecommerce/productoverview/{{images[selectedImageIndex]}}" class="w-full" />
@@ -220,11 +221,11 @@ export class ProductPageComponent {
 
             <div class="font-bold text-900 mb-3">Color</div>
             <div class="flex align-items-center mb-5">
-                <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-bluegray-500 mr-3 cursor-pointer border-2 border-white transition-all transition-duration-300" 
+                <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-bluegray-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
                     [style.box-shadow]="color === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color = 'bluegray'"></div>
-                <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-green-500 mr-3 cursor-pointer border-2 border-white transition-all transition-duration-300" 
+                <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-green-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
                     [style.box-shadow]="color === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color = 'green'"></div>
-                <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-blue-500 cursor-pointer border-2 border-white transition-all transition-duration-300" 
+                <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-blue-500 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
                     [style.box-shadow]="color === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color = 'blue'"></div>
             </div>
 
@@ -232,7 +233,6 @@ export class ProductPageComponent {
                 <span class="font-bold text-900">Size</span>
                 <a tabindex="0" class="cursor-pointer text-600 text-sm flex align-items-center">Size Guide <i class="ml-1 pi pi-angle-right"></i></a>
             </div>
-
             <div class="grid grid-nogutter align-items-center mb-5">
                 <div class="col h-3rem border-1 border-300 text-900 inline-flex justify-content-center align-items-center flex-shrink-0 border-round mr-3 cursor-pointer hover:surface-100 transition-duration-150 transition-colors" 
                     [ngClass]="{'border-blue-500 border-2 text-blue-500': size === 'XS'}" (click)="size = 'XS'">XS</div>
@@ -248,7 +248,7 @@ export class ProductPageComponent {
 
             <div class="font-bold text-900 mb-3">Quantity</div>
             <div class="flex flex-column sm:flex-row sm:align-items-center sm:justify-content-between">
-                <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" inputStyleClass="w-3rem text-center" [(ngModel)]="quantity"
+                <p-inputNumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" min="0" inputStyleClass="w-3rem text-center" [(ngModel)]="quantity"
                     decrementButtonClass="p-button-text" incrementButtonClass="p-button-text" incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus"></p-inputNumber>
                 <div class="flex align-items-center flex-1 mt-3 sm:mt-0 ml-0 sm:ml-5">
                     <button pButton pRipple label="Add to Cart" class="flex-1 mr-5"></button>
@@ -257,9 +257,10 @@ export class ProductPageComponent {
             </div>
         </div>
     </div>
-    <p-tabView >
+
+    <p-tabView>
         <p-tabPanel header="Details">
-            <div class="grid">
+            <div class="grid mt-4">
                 <div class="col-12 lg:col-4">
                     <div class="font-medium text-xl text-900 mb-3">Share your experience</div>
                     <p class="text-600 p-0 mt-0 mb-3 line-height-3">Orci a scelerisque purus semper eget duis at tellus at. Ut diam quam nulla porttitor.</p>
@@ -513,13 +514,13 @@ export class ProductPageComponent {
     </div>
 </div>
 
-<div class="grid grid-nogutter text-center lg:text-left surface-section px-4 py-4 md:px-6 lg:px-8 border-top-1 border-gray-200">
-    <div class="col-12 lg:col-6  lg:border-right-1 border-gray-200">
-        <img src="assets/images/blocks/ecommerce/storefront/storefront-1-20.svg" class="w-9rem mx-auto lg:mx-0" alt="Peak logo">
-        <span class="text-900 block mt-4">Aliquam id diam maecenas ultricies. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae.</span>
+<div class="grid grid-nogutter surface-section px-4 py-4 md:px-6 lg:px-8 border-top-1 surface-border">
+    <div class="col-12 lg:col-6 lg:border-right-1 surface-border">
+        <img src="assets/images/blocks/logos/peak-700.svg" class="w-9rem mx-auto lg:mx-0" alt="Peak logo">
+        <span class="text-900 block mt-4 mr-3">Aliquam id diam maecenas ultricies. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae.</span>
         <span class="text-500 block mt-4">© 2022, Peak. Powered by PrimeBlocks.</span>
     </div>
-    <div class="col-12 lg:col-3 mt-4 lg:mt-0 lg:pl-4 flex flex-column">
+    <div class="col-12 md:col-6 lg:col-3 mt-4 lg:mt-0 lg:pl-4 flex flex-column">
         <span class="text-900 text-xl font-medium block">Company</span>
         <ul class="list-none p-0">
             <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">About Peak</a></li>
@@ -528,7 +529,7 @@ export class ProductPageComponent {
             <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Environmental Initiatives</a></li>
         </ul>
     </div>
-    <div class="col-12 lg:col-3 flex mt-4 lg:mt-0 lg:pl-4 flex-column">
+    <div class="col-12 lg:col-3 md:col-6 flex mt-4 lg:mt-0 lg:pl-4 flex-column">
         <span class="text-900 text-xl font-medium block">Account</span>
         <ul class="list-none p-0">
             <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Manage Account</a></li>
@@ -541,17 +542,17 @@ export class ProductPageComponent {
 </div>
 
 <div class="surface-900 py-6 lg:py-4 md:px-6 lg:px-8 flex flex-column lg:flex-row justify-content-between align-items-center">
-    <ul class="list-none p-0 mb-0 text-center lg:text-left flex flex-column lg:flex-row flex-order-1 lg:flex-order-0 mt-4 lg:mt-0">
-        <li class="lg:mr-4 mt-3 lg:mt-0">
+    <ul class="list-none p-0 mb-0 flex flex-column md:flex-row flex-order-1 lg:flex-order-0 mt-4 lg:mt-0">
+        <li class="mr-4 mt-3 lg:mt-0">
             <a tabindex="0" class="cursor-pointer text-0">Investor Relations</a>
         </li>
-        <li class="lg:mr-4 mt-3 lg:mt-0">
+        <li class="mr-4 mt-3 lg:mt-0">
             <a tabindex="0" class="cursor-pointer text-0">Data Privacy</a>
         </li>
-        <li class="lg:mr-4 mt-3 lg:mt-0">
+        <li class="mr-4 mt-3 lg:mt-0">
             <a tabindex="0" class="cursor-pointer text-0">Terms of Service</a>
         </li>
-        <li class="lg:mr-4 mt-3 lg:mt-0">
+        <li class="mr-4 mt-3 lg:mt-0">
             <a tabindex="0" class="cursor-pointer text-0">Legal Information</a>
         </li>
     </ul>
