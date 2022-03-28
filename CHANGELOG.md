@@ -1,6 +1,11 @@
 # Changelog
 
-## #2.1.1
+## 3.0.0
+
+- Adds new E-Commerce Blocks
+- Updates PrimeNG to v13.3.1
+
+## 2.1.1
 
 - Updated PrimeNG 13.1.0
 - Updated Lara Dark themes
