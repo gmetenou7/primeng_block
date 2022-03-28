@@ -35,22 +35,22 @@ export class CategoryPreviewComponent {
             image:'category-preview-1-20'
         },
         {
-            image:'category-preview-1-18'
+            image:'category-preview-1-26'
         },
         {
-            image:'category-preview-1-19'
+            image:'category-preview-1-27'
         },
         {
-            image:'category-preview-1-20'
+            image:'category-preview-1-28'
         },
         {
-            image:'category-preview-1-18'
+            image:'category-preview-1-29'
         },
         {
-            image:'category-preview-1-19'
+            image:'category-preview-1-30'
         },
         {
-            image:'category-preview-1-20'
+            image:'category-preview-1-31'
         },
     ];
 
