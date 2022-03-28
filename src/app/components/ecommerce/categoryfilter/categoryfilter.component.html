@@ -250,7 +250,7 @@
                 <p-badge [value]="76" styleClass="ml-3 bg-gray-200 text-gray-900 p-0 border-circle"></p-badge>
             </div>
             <div>
-                <button type="button" pButton icon="pi pi-sort-alt" class="text-400 surface-section border-1 surface-border hover:text-0 w-7rem p-2 transition-duration-150"  iconPos="right" label="Sort By" (click)="menu.toggle($event)"></button>
+                <button type="button" pButton icon="pi pi-sort-alt" class="p-button-outlined p-button-secondary w-7rem p-2"  iconPos="right" label="Sort By" (click)="menu.toggle($event)"></button>
                 <p-menu #menu [popup]="true" [model]="items"></p-menu>
             </div>
 
