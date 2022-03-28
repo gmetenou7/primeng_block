@@ -201,10 +201,192 @@ export class FooterComponent {
     </div>
 </div>`;
  
-    block5 = ``;
+    block5 = `
+<div class="surface-50 px-4 md:px-6 lg:px-8 border-1 surface-border border-x-none">
+    <div class="grid flex-wrap -mr-3 -ml-3 md:text-left">
+        <div class="col-12 sm:col-6 md:col-4 lg:col-3 flex flex-column mt-2 py-4 px-4 border-bottom-1 lg:border-y-none md:border-right-1 surface-border">
+            <span class="text-900 text-xl block">Company</span>
+            <ul class="list-none p-0">
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">About Peak</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Factories</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Careers</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Environmental Initiatives</a></li>
+            </ul>
+        </div>
+        <div class="col-12 sm:col-6 md:col-4 lg:col-3 flex flex-column mt-2 py-4 px-4 border-bottom-1 lg:border-y-none md:border-right-1 surface-border">
+            <span class="text-900 text-xl block">Account</span>
+            <ul class="list-none p-0">
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Manage Account</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Saved Items</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">My Cart</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Wishlist</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Orders & Returns</a></li>
+            </ul>
+        </div>
+        <div class="col-12 sm:col-6 md:col-4 lg:col-3 flex flex-column mt-2 py-4 px-4 border-bottom-1 lg:border-y-none lg:border-right-1 surface-border">
+            <span class="text-900 text-xl block">Legal</span>
+            <ul class="list-none p-0">
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Investor Relations</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Data Privacy</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Terms of Service</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Legal Information</a></li>
+            </ul>
+        </div>
+        <div class="col-12 sm:col-6 md:col-4 lg:col-3 flex flex-column mt-2 py-4 px-4 mb-4 lg:mb-0">
+            <span class="text-900 text-xl block">Subscribe</span>
+            <span class="text-500 block mt-4 line-height-3">Join our community to receieve the latest updates and special promotions.</span>
+            <div class="p-inputgroup mt-3 mx-auto lg:mx-0" style="max-width:30rem;">
+                <button type="button" pButton icon="pi pi-envelope" class="text-500 surface-100 surface-border"></button>    
+                <input type="text" pInputText placeholder="Email" class="border-y-1 text-500 border-x-none surface-border">   
+                <button type="button" pButton icon="pi pi-arrow-right" class="text-500 surface-100 surface-border"></button>      
+            </div>
+        </div>
+    </div>
+</div>
+<div class="surface-section px-3 py-4 lg:px-8 flex flex-column lg:flex-row justify-content-between align-items-center">
+    <div class="col-fixed flex flex-wrap flex-order-1 lg:flex-order-0">
+        <img src="assets/images/blocks/ecommerce/storefront/storefront-1-21.svg" class="w-3rem mr-3" alt="Amex">
+        <img src="assets/images/blocks/ecommerce/storefront/storefront-1-22.svg" class="w-3rem mr-3" alt="Apple Pay">
+        <img src="assets/images/blocks/ecommerce/storefront/storefront-1-23.svg" class="w-3rem mr-3" alt="Mastercard">
+        <img src="assets/images/blocks/ecommerce/storefront/storefront-1-25.svg" class="w-3rem mr-3" alt="Visa">
+        <img src="assets/images/blocks/ecommerce/storefront/storefront-1-24.svg" class="w-3rem" alt="PayPal">
+    </div>
+    <div class="col-fixed flex align-items-center flex-order-0 lg:flex-order-1">
+        <a tabindex="0" class="cursor-pointer mr-3">
+            <i class="pi pi-facebook surface-900 p-1 text-sm border-circle text-0"></i>
+        </a>
+        <a tabindex="0" class="cursor-pointer mr-3">
+            <i class="pi pi-twitter surface-900 p-1 text-sm border-circle text-0"></i>
+        </a>
+        <a tabindex="0" class="cursor-pointer mr-3">
+            <i class="pi pi-youtube surface-900 p-1 text-sm border-circle text-0"></i>
+        </a>
+        <a tabindex="0" class="cursor-pointer">
+            <i class="pi pi-google surface-900 p-1 text-sm border-circle text-0"></i>
+        </a>
+    </div>
+</div>`;
 
-    block6 = ``;
+    block6 = `
+<div class="surface-50 px-4 py-8 md:px-6 lg:px-8">
+    <span class="text-900 text-3xl font-medium block text-center lg:text-left">Get 25% Discount Today!</span>
+    <span class="text-600 text-2xl block mt-4 text-center lg:text-left">Sign up our email list and know all about new collections of Peak</span>
+    <div class="mt-4 mx-auto lg:mx-0" style="max-width:38rem;">
+        <div class="p-inputgroup">
+            <input type="text" pInputText placeholder="Enter your email address">         
+            <button type="button" pButton pRipple label="Subscribe" class="surface-900 text-0 px-5 border-none"></button>
+        </div>
+    </div>
+    <p-divider layout="horizontal" class="surface-border"></p-divider>
+    <div class="grid grid-nogutter text-center lg:text-left">
+        <div class="col-12 sm:col-6 md:col-4 lg:col-3 mt-4 flex flex-column align-items-center lg:align-items-start">
+            <img src="assets/images/blocks/logos/peak-700.svg" class="w-9rem mx-auto lg:mx-0" alt="Peak logo">
+            <div class="flex align-items-center w-full mt-5 justify-content-center lg:justify-content-start">
+                <a tabindex="0" class="cursor-pointer mr-3">
+                    <i class="pi pi-facebook surface-900 p-1 text-sm border-circle text-0"></i>
+                </a>
+                <a tabindex="0" class="cursor-pointer mr-3">
+                    <i class="pi pi-twitter surface-900 p-1 text-sm border-circle text-0"></i>
+                </a>
+                <a tabindex="0" class="cursor-pointer mr-3">
+                    <i class="pi pi-youtube surface-900 p-1 text-sm border-circle text-0"></i>
+                </a>
+                <a tabindex="0" class="cursor-pointer">
+                    <i class="pi pi-google surface-900 p-1 text-sm border-circle text-0"></i>
+                </a>
+            </div>
+            <span class="text-600 block mt-4"><i class="pi pi-phone mr-2"></i>1234 / 12 34 567</span>
+            <a tabindex="0" class="text-600 block mt-4 cursor-pointer hover:text-900 transition-duration-150 select-none w-8rem"><i class="pi pi-map-marker mr-2"></i>Contact Us</a>
+        </div>
+        <div class="col-12 sm:col-6 md:col-4 lg:col-3 mt-4 flex flex-column">
+            <span class="text-900 text-xl font-medium block">Company</span>
+            <ul class="list-none p-0">
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">About Peak</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Factories</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Careers</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Environmental Initiatives</a></li>
+            </ul>
+        </div>
+        <div class="col-12 sm:col-6 md:col-4 lg:col-3 mt-4 flex flex-column">
+            <span class="text-900 text-xl font-medium block">Account</span>
+            <ul class="list-none p-0">
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Manage Account</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Saved Items</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">My Cart</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Wishlist</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Orders & Returns</a></li>
+            </ul>
+        </div>
+        <div class="col-12 sm:col-6 md:col-4 lg:col-3 mt-4 flex flex-column">
+            <span class="text-900 text-xl font-medium block">Legal</span>
+            <ul class="list-none p-0">
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Investor Relations</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Data Privacy</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Terms of Service</a></li>
+                <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Legal Information</a></li>
+            </ul>
+        </div>
+    </div>
+</div>`;
 
-    block7 = ``;
+    block7 = `
+<div class="grid grid-nogutter surface-section px-4 py-4 md:px-6 lg:px-8 border-top-1 surface-border">
+    <div class="col-12 lg:col-6 lg:border-right-1 surface-border">
+        <img src="assets/images/blocks/logos/peak-700.svg" class="w-9rem mx-auto lg:mx-0" alt="Peak logo">
+        <span class="text-900 block mt-4 mr-3">Aliquam id diam maecenas ultricies. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae.</span>
+        <span class="text-500 block mt-4">© 2022, Peak. Powered by PrimeBlocks.</span>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3 mt-4 lg:mt-0 lg:pl-4 flex flex-column">
+        <span class="text-900 text-xl font-medium block">Company</span>
+        <ul class="list-none p-0">
+            <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">About Peak</a></li>
+            <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Factories</a></li>
+            <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Careers</a></li>
+            <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Environmental Initiatives</a></li>
+        </ul>
+    </div>
+    <div class="col-12 lg:col-3 md:col-6 flex mt-4 lg:mt-0 lg:pl-4 flex-column">
+        <span class="text-900 text-xl font-medium block">Account</span>
+        <ul class="list-none p-0">
+            <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Manage Account</a></li>
+            <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Saved Items</a></li>
+            <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">My Cart</a></li>
+            <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Wishlist</a></li>
+            <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Orders & Returns</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="surface-900 py-6 lg:py-4 md:px-6 lg:px-8 flex flex-column lg:flex-row justify-content-between align-items-center">
+    <ul class="list-none p-0 mb-0 flex flex-column md:flex-row flex-order-1 lg:flex-order-0 mt-4 lg:mt-0">
+        <li class="mr-4 mt-3 lg:mt-0">
+            <a tabindex="0" class="cursor-pointer text-0">Investor Relations</a>
+        </li>
+        <li class="mr-4 mt-3 lg:mt-0">
+            <a tabindex="0" class="cursor-pointer text-0">Data Privacy</a>
+        </li>
+        <li class="mr-4 mt-3 lg:mt-0">
+            <a tabindex="0" class="cursor-pointer text-0">Terms of Service</a>
+        </li>
+        <li class="mr-4 mt-3 lg:mt-0">
+            <a tabindex="0" class="cursor-pointer text-0">Legal Information</a>
+        </li>
+    </ul>
+
+    <div class="flex align-items-center flex-order-0 lg:flex-order-1">
+        <a tabindex="0" class="cursor-pointer mr-3 lg:mt-0 block">
+            <i class="pi pi-facebook surface-section p-1 text-sm border-circle text-900"></i>
+        </a>
+        <a tabindex="0" class="cursor-pointer mr-3 lg:mt-0 block">
+            <i class="pi pi-twitter surface-section p-1 text-sm border-circle text-900"></i>
+        </a>
+        <a tabindex="0" class="cursor-pointer mr-3 lg:mt-0 block">
+            <i class="pi pi-youtube surface-section p-1 text-sm border-circle text-900"></i>
+        </a>
+        <a tabindex="0" class="cursor-pointer lg:mt-0 block">
+            <i class="pi pi-google surface-section p-1 text-sm border-circle text-900"></i>
+        </a>
+    </div>
+</div>`;
     
 }
