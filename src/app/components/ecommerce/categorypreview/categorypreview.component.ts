@@ -175,7 +175,7 @@ export class CategoryPreviewComponent {
   
     block4: string = `
 <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
-    <div class="grid -mt-3 -ml-3 -mr-3 md:flex-wrap" style="row-gap: 2rem; column-gap:2rem;">
+    <div class="grid -mt-3 -ml-3 -mr-3 md:flex-wrap justify-content-center" style="row-gap: 2rem; column-gap:2rem;">
         <div class="col-12 px-4 flex flex-column lg:flex-row align-items-center justify-content-center lg:justify-content-between">
             <div class="text-900 font-medium text-4xl mb-4">Top Categories</div>
             <a tabindex="0" class="cursor-pointer text-primary flex align-items-center">See All Categories<i class="pi pi-arrow-right ml-3"></i></a>
