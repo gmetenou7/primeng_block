@@ -14,15 +14,15 @@
 
 @media screen and (min-width: 1921px) {
     .layout-content {
-        width: 1478px;
-        margin: 0 auto;
-
-        .introduction,
-        .pricing {
-            min-height: auto;
-            padding-top: 4rem;
-            padding-bottom: 4rem;
-            margin-top: 2rem;
+        .block-category-title, 
+        .block-category,
+        block-viewer,
+        .documentation,
+        .pricing-inner {
+            display: block;
+            width: 1478px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }
