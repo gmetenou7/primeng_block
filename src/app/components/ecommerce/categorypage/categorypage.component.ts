@@ -52,7 +52,7 @@ export class CategoryPageComponent {
         {label: 'Price'}
     ];
 
-    block1: string = `    
+    block1: string = `
 <div class="bg-cyan-700 px-4 lg:px-8 py-2 text-center">
     <span class="text-white">Free shipping on orders over $100</span>
 </div>
@@ -185,7 +185,7 @@ export class CategoryPageComponent {
                     pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
                     <span>Men</span>
                 </a>
-                <div class="surface-overlay shadow-2 hidden absolute w-full left-0 top-100 h-30rem p-6">
+                <div class="surface-overlay shadow-2 hidden absolute w-full left-0 top-100 h-30rem p-6 z-1">
                     <div class="border-2 border-dashed surface-border border-round h-full"></div>
                 </div>
             </li>
@@ -194,7 +194,7 @@ export class CategoryPageComponent {
                     pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
                     <span>Kids</span>
                 </a>
-                <div class="surface-overlay shadow-2 hidden absolute w-full left-0 top-100 h-30rem p-6">
+                <div class="surface-overlay shadow-2 hidden absolute w-full left-0 top-100 h-30rem p-6 z-1">
                     <div class="border-2 border-dashed surface-border border-round h-full"></div>
                 </div>
             </li>
@@ -209,9 +209,10 @@ export class CategoryPageComponent {
             <p-badge [value]="76" styleClass="ml-3 bg-gray-200 text-gray-900 p-0 border-circle"></p-badge>
         </div>
         <div>
-            <button type="button" pButton icon="pi pi-sort-alt" class="text-400 surface-section border-1 surface-border hover:text-0 w-7rem p-2 transition-duration-150"  iconPos="right" label="Sort By" (click)="menu.toggle($event)"></button>
+            <button type="button" pButton icon="pi pi-sort-alt" class="p-button-outlined p-button-secondary w-7rem p-2"  iconPos="right" label="Sort By" (click)="menu.toggle($event)"></button>
             <p-menu #menu [popup]="true" [model]="items"></p-menu>
-        </div>        </div>
+        </div>        
+    </div>
     <p class="text-600 text-xl">Nullam faucibus, sem et bibendum finibus, sapien ipsum congue felis, sit amet pretium ex nisl ut eros.</p>
     <p-divider styleClass="w-full border-gray-200"></p-divider>
     <div class="grid grid-nogutter align-items-center">
@@ -340,7 +341,7 @@ export class CategoryPageComponent {
                 </div>
                 <div class="col-12 md:col-6 lg:col-3 mt-5 mb-5 lg:mb-0">
                     <div class="mb-3 relative">
-                        <img src="assets/images/blocks/ecommerce/productlist/product-list-2-1.png" class="w-full" />
+                        <img src="assets/images/blocks/ecommerce/categorypreview/category-preview-1-28.png" class="w-full" />
                         <button type="button" pRipple class="border-1 border-white border-round py-2 px-3 absolute bg-black-alpha-30 text-white inline-flex align-items-center justify-content-center hover:bg-black-alpha-40 transition-colors transition-duration-300 cursor-pointer" 
                             style="bottom: 1rem; left: 1rem; width: calc(100% - 2rem)">
                             <i class="pi pi-shopping-cart mr-3 text-base"></i>
@@ -365,7 +366,7 @@ export class CategoryPageComponent {
                 </div>
                 <div class="col-12 md:col-6 lg:col-3 mt-5 mb-5 lg:mb-0">
                     <div class="mb-3 relative">
-                        <img src="assets/images/blocks/ecommerce/productlist/product-list-2-2.png" class="w-full" />
+                        <img src="assets/images/blocks/ecommerce/categorypreview/category-preview-1-29.png" class="w-full" />
                         <button type="button" pRipple class="border-1 border-white border-round py-2 px-3 absolute bg-black-alpha-30 text-white inline-flex align-items-center justify-content-center hover:bg-black-alpha-40 transition-colors transition-duration-300 cursor-pointer" 
                             style="bottom: 1rem; left: 1rem; width: calc(100% - 2rem)">
                             <i class="pi pi-shopping-cart mr-3 text-base"></i>
@@ -390,7 +391,7 @@ export class CategoryPageComponent {
                 </div>
                 <div class="col-12 md:col-6 lg:col-3 mt-5 mb-5 lg:mb-0">
                     <div class="mb-3 relative">
-                        <img src="assets/images/blocks/ecommerce/productlist/product-list-2-3.png" class="w-full" />
+                        <img src="assets/images/blocks/ecommerce/categorypreview/category-preview-1-30.png" class="w-full" />
                         <button type="button" pRipple class="border-1 border-white border-round py-2 px-3 absolute bg-black-alpha-30 text-white inline-flex align-items-center justify-content-center hover:bg-black-alpha-40 transition-colors transition-duration-300 cursor-pointer" 
                             style="bottom: 1rem; left: 1rem; width: calc(100% - 2rem)">
                             <i class="pi pi-shopping-cart mr-3 text-base"></i>
@@ -415,7 +416,7 @@ export class CategoryPageComponent {
                 </div>
                 <div class="col-12 md:col-6 lg:col-3 mt-5">
                     <div class="mb-3 relative">
-                        <img src="assets/images/blocks/ecommerce/productlist/product-list-2-4.png" class="w-full" />
+                        <img src="assets/images/blocks/ecommerce/categorypreview/category-preview-1-31.png" class="w-full" />
                         <button type="button" pRipple class="border-1 border-white border-round py-2 px-3 absolute bg-black-alpha-30 text-white inline-flex align-items-center justify-content-center hover:bg-black-alpha-40 transition-colors transition-duration-300 cursor-pointer" 
                             style="bottom: 1rem; left: 1rem; width: calc(100% - 2rem)">
                             <i class="pi pi-shopping-cart mr-3 text-base"></i>

@@ -103,7 +103,7 @@ export class StoreNavigationComponent {
                     pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
                     <span>Men</span>
                 </a>
-                <div class="surface-overlay shadow-none lg:shadow-2 hidden lg:absolute w-full left-0 top-100 px-6 py-0 lg:py-6 h-10rem lg:h-30rem">
+                <div class="surface-overlay shadow-none lg:shadow-2 hidden lg:absolute w-full left-0 top-100 px-6 py-0 lg:py-6 h-10rem lg:h-30rem z-1">
                     <div class="border-2 border-dashed surface-border border-round h-full"></div>
                 </div>
             </li>
@@ -113,7 +113,7 @@ export class StoreNavigationComponent {
                     pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
                     <span>Kids</span>
                 </a>
-                <div class="surface-overlay shadow-none lg:shadow-2 hidden lg:absolute w-full left-0 top-100 px-6 py-0 lg:py-6 h-10rem lg:h-30rem">
+                <div class="surface-overlay shadow-none lg:shadow-2 hidden lg:absolute w-full left-0 top-100 px-6 py-0 lg:py-6 h-10rem lg:h-30rem z-1">
                     <div class="border-2 border-dashed surface-border border-round h-full"></div>
                 </div>
             </li>
@@ -226,7 +226,7 @@ export class StoreNavigationComponent {
                     pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
                     <span>Men</span>
                 </a>
-                <div class="surface-overlay shadow-none lg:shadow-2 hidden lg:absolute w-full left-0 top-100 px-6 py-0 lg:py-6 h-10rem lg:h-30rem">
+                <div class="surface-overlay shadow-none lg:shadow-2 hidden lg:absolute w-full left-0 top-100 px-6 py-0 lg:py-6 h-10rem lg:h-30rem z-1">
                     <div class="border-2 border-dashed surface-border border-round h-full"></div>
                 </div>
             </li>
@@ -236,7 +236,7 @@ export class StoreNavigationComponent {
                     pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
                     <span>Kids</span>
                 </a>
-                <div class="surface-overlay shadow-none lg:shadow-2 hidden lg:absolute w-full left-0 top-100 px-6 py-0 lg:py-6 h-10rem lg:h-30rem">
+                <div class="surface-overlay shadow-none lg:shadow-2 hidden lg:absolute w-full left-0 top-100 px-6 py-0 lg:py-6 h-10rem lg:h-30rem z-1">
                     <div class="border-2 border-dashed surface-border border-round h-full"></div>
                 </div>
             </li>
@@ -433,7 +433,7 @@ export class StoreNavigationComponent {
                     pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
                     <span>Men</span>
                 </a>
-                <div class="surface-overlay shadow-2 hidden absolute w-full left-0 top-100 h-30rem p-6">
+                <div class="surface-overlay shadow-2 hidden absolute w-full left-0 top-100 h-30rem p-6 z-1">
                     <div class="border-2 border-dashed surface-border border-round h-full"></div>
                 </div>
             </li>
@@ -442,7 +442,7 @@ export class StoreNavigationComponent {
                     pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
                     <span>Kids</span>
                 </a>
-                <div class="surface-overlay shadow-2 hidden absolute w-full left-0 top-100 h-30rem p-6">
+                <div class="surface-overlay shadow-2 hidden absolute w-full left-0 top-100 h-30rem p-6 z-1">
                     <div class="border-2 border-dashed surface-border border-round h-full"></div>
                 </div>
             </li>
