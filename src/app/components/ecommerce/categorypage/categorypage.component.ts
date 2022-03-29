@@ -216,8 +216,8 @@ export class CategoryPageComponent {
     <p class="text-600 text-xl">Nullam faucibus, sem et bibendum finibus, sapien ipsum congue felis, sit amet pretium ex nisl ut eros.</p>
     <p-divider styleClass="w-full border-gray-200"></p-divider>
     <div class="grid grid-nogutter align-items-center">
-        <p-multiSelect [options]="brands" [(ngModel)]="selectedBrands" defaultLabel="Brand" optionLabel="name" styleClass="w-full" class="flex-auto lg:flex-1 mb-3 lg:mt-0 w-full mr-0 lg:mr-4 text-900"></p-multiSelect>
-        <p-multiSelect [options]="colors" [(ngModel)]="selectedColors" defaultLabel="Color" optionLabel="name" styleClass="w-full" class="flex-auto lg:flex-1 mb-3 lg:mt-0 w-full mr-0 lg:mr-4 text-900">
+        <p-multiSelect [options]="brands" [(ngModel)]="selectedBrands" defaultLabel="Brand" optionLabel="name" styleClass="w-full" maxSelectedLabels="2" selectedItemsLabel="{0} brands selected" class="flex-auto lg:flex-1 mb-3 lg:mt-0 w-full mr-0 lg:mr-4 text-900"></p-multiSelect>
+        <p-multiSelect [options]="colors" [(ngModel)]="selectedColors" defaultLabel="Color" optionLabel="name" styleClass="w-full" maxSelectedLabels="2" selectedItemsLabel="{0} colors selected" class="flex-auto lg:flex-1 mb-3 lg:mt-0 w-full mr-0 lg:mr-4 text-900">
             <ng-template let-value pTemplate="selectedColors">
                 <div *ngFor="let color of selectedColors">
                     <div class="w-3rem h-3rem border-circle cursor-pointer border-none"></div>
@@ -232,7 +232,7 @@ export class CategoryPageComponent {
                 </div>
             </ng-template>
         </p-multiSelect>         
-        <p-multiSelect [options]="prices" [(ngModel)]="selectedPrice" defaultLabel="Price" optionLabel="range" styleClass="w-full" class="flex-auto lg:flex-1 mb-3 lg:mt-0 lg:col w-full mr-0 lg:mr-4 text-900"></p-multiSelect>
+        <p-multiSelect [options]="prices" [(ngModel)]="selectedPrice" defaultLabel="Price" optionLabel="range" styleClass="w-full" maxSelectedLabels="2" selectedItemsLabel="{0} prices selected" class="flex-auto lg:flex-1 mb-3 lg:mt-0 lg:col w-full mr-0 lg:mr-4 text-900"></p-multiSelect>
         <p-toggleButton [(ngModel)]="checked1"  onLabel="Sustainable" offLabel="Unsustainable" onIcon="pi pi-check" offIcon="pi pi-times" styleClass="mb-3 lg:mt-0 mr-4 flex-shrink-0 w-12rem" ></p-toggleButton>
         <p-toggleButton [(ngModel)]="checked2"  onLabel="Sale" offLabel="Not Sale" onIcon="pi pi-check" offIcon="pi pi-times" styleClass="mb-3 lg:mt-0 mr-4 flex-shrink-0 w-9rem" ></p-toggleButton>
         <a pRipple tabindex="0" class="cursor-pointer flex align-items-center mb-3 lg:mt-0 text-900">Clear All</a>
@@ -474,7 +474,7 @@ export class CategoryPageComponent {
                 <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Environmental Initiatives</a></li>
             </ul>
         </div>
-       
+        
         <div class="col-12 sm:col-6 md:col-4 lg:col-3 flex-column mt-4">
             <span class="text-900 text-xl block">Account</span>
             <ul class="list-none p-0">
@@ -485,7 +485,7 @@ export class CategoryPageComponent {
                 <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Orders & Returns</a></li>
             </ul>
         </div>
-       
+        
         <div class="col-12 sm:col-6 md:col-4 lg:col-3 flex-column mt-4">
             <span class="text-900 text-xl block">Legal</span>
             <ul class="list-none p-0">
@@ -495,7 +495,7 @@ export class CategoryPageComponent {
                 <li><a tabindex="0" class="text-600 hover:text-900 transition-duration-150 cursor-pointer mt-3 block">Legal Information</a></li>
             </ul>
         </div>
-       
+        
         <div class="col-12 sm:col-6 md:col-4 lg:col-3 flex-column mt-4">
             <span class="text-900 text-xl block">Connect</span>
             <ul class="list-none p-0">
@@ -510,7 +510,7 @@ export class CategoryPageComponent {
 
 <div class="surface-200 px-4 py-2 md:px-6 lg:px-8 flex flex-column lg:flex-row justify-content-between align-items-center">
     <div class="col-fixed flex flex-wrap flex-order-1 lg:flex-order-0 text-center lg:text-left">
-       <span class="text-500">© 2022, Peak. Powered by PrimeBlocks.</span>
+        <span class="text-500">© 2022, Peak. Powered by PrimeBlocks.</span>
     </div>
     <div class="col-fixed flex align-items-center flex-order-0 lg:flex-order-1">
         <i class="pi pi-twitter p-1 text-sm text-900 cursor-pointer mr-3"></i>
