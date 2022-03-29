@@ -12,6 +12,21 @@
     font-size: .875rem;
 }
 
+@media screen and (min-width: 1921px) {
+    .layout-content {
+        .block-category-title, 
+        .block-category,
+        block-viewer,
+        .documentation,
+        .pricing-inner {
+            display: block;
+            width: 1478px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
 @media screen and (max-width: 992px) {
     .layout-content {
         padding: 2rem 1rem;
