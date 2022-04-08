@@ -1,5 +1,15 @@
 # Changelog
 
+## 3.0.1
+
+- Adds missing code preview of Product Pages / With Galleria, Tabs and Single Column Reviews.
+- Fixed z-index of navbars in Store Navigation.
+- Adds limitation to max selection of dropdowns in Category Filters.
+- Category Preview / fixed responsive alignment problems and image ratios for all blocks.
+- Fixed E-Commerce / Category Filters / Horizontal Expandable chip remove bug.
+- Category Filters / static dropdowns are replaced by panel component.
+- Fixed bug in Clear All button in Category Filters / Dropdown.
+  
 ## 3.0.0
 
 - Adds new E-Commerce Blocks
