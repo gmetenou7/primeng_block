@@ -34,9 +34,6 @@ export class CategoryFilterComponent {
       {name: 'Hyper'}
     ];
 
-    selectedBrands3: any = [
-        {name: 'Alfred'}
-    ];
 
     selectedBrand_1: any[];
     items: MenuItem[] = [
@@ -51,7 +48,7 @@ export class CategoryFilterComponent {
     
     selectedColors: any = [];
 
-    selectedColors2: number = 1;
+    selectedColors2: any = ['Black'];
 
     selectedFilters: any[] = ['Alfred', 'Hyper', 'Black'];
     
@@ -141,7 +138,22 @@ export class CategoryFilterComponent {
     checked2: boolean = false;
 
     openDropdown: boolean = true;
-    
+
+    removeChip( filter) {
+        this.selectedFilters.splice(this.selectedFilters.indexOf(filter.toString()), 1)
+        this.selectedColors2.splice(this.selectedColors2.indexOf(filter.toString()), 1)
+        this.selectedBrands = this.selectedBrands.filter(i => i !== filter);
+        
+    }
+
+    clearAll() {
+        this.selectedFilters = [];
+        this.selectedColors2 = [];
+        this.selectedSizes2 = [];
+        this.selectedBrands = [];
+        this.selectedBrands2 = [];
+    }
+
     block1: string = `
 <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="text-900 font-bold text-3xl text-center">Category Title</div>
@@ -277,8 +289,8 @@ export class CategoryFilterComponent {
             <button pButton class="p-button-rounded bg-gray-900 text-white px-5 lg:mr-4 sm w-full lg:w-auto border-none" label="Filters" icon="pi pi-chevron-{{openDropdown ? 'down' : 'up'}} ml-3" iconPos="right" pStyleClass=".filter-container" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup" (click)="openDropdown = !openDropdown"></button>
             <div class="grid flex-column lg:flex-row w-full h-full">
                 <div class="col-12 lg:col lg:flex lg:align-items-center flex-wrap" style="column-gap: 5px; row-gap:5px;">
-                    <p-chip *ngFor="let filter of selectedFilters" [label]="filter" [removable]="true" styleClass="mr-3 h-auto lg:h-full px-4 mt-3 lg:mt-0" removeIcon="pi pi-times" [style]="{'border-radius':'50px'}"></p-chip>
-                    <a pRipple *ngIf="selectedFilters.length > 0 || selectedColors2 !== 0" tabindex="0" class="text-900 cursor-pointer text-center px-3 py-2 mt-3 md:mt-0 border-1 border-200 lg:border-none block md:inline hover:bg-primary hover:border-primary transition-duration-150" style="border-radius:50px; max-width: 7rem;" (click)="selectedFilters = []; selectedColors2 = 0; selectedSizes2 = [];">Clear All</a>
+                    <p-chip *ngFor="let filter of selectedFilters" [label]="filter" [removable]="true" styleClass="mr-3 h-auto lg:h-full px-4 mt-3 lg:mt-0" removeIcon="pi pi-times" [style]="{'border-radius':'50px'}" (onRemove)="removeChip(filter)"></p-chip>
+                    <a pRipple *ngIf="selectedFilters.length > 0 || selectedColors2 !== 0" tabindex="0" class="text-900 cursor-pointer text-center px-3 py-2 mt-3 md:mt-0 border-1 border-200 lg:border-none block md:inline hover:bg-primary hover:border-primary transition-duration-150" style="border-radius:50px; max-width: 7rem;" (click)="clearAll()">Clear All</a>
                 </div>
             </div>
         </div>
@@ -295,28 +307,28 @@ export class CategoryFilterComponent {
                         </div>
                         <div class="flex w-full justify-content-between">
                             <div class="field-checkbox">
-                                <p-checkbox value="Alfred" inputId="alfred2" [(ngModel)]="selectedFilters"></p-checkbox>
+                                <p-checkbox value="Alfred" inputId="alfred2" [(ngModel)]="selectedBrands" (onChange)="selectedFilters.indexOf('Alfred') === -1 ? selectedFilters.push('Alfred') : selectedFilters.splice(selectedFilters.indexOf('Alfred'),1)"></p-checkbox>
                                 <label for="alfred2" class="text-900">Alfred</label>
                             </div>
                             <p-badge [value]="42" styleClass="mr-2 bg-gray-200 text-gray-900 p-0 border-circle"></p-badge>
                         </div>
                         <div class="flex w-full justify-content-between">
                             <div class="field-checkbox">
-                                <p-checkbox value="Hyper" inputId="hyper2" [(ngModel)]="selectedFilters"></p-checkbox>
+                                <p-checkbox value="Hyper" inputId="hyper2" [(ngModel)]="selectedBrands" (onChange)="selectedFilters.indexOf('Hyper') === -1 ? selectedFilters.push('Hyper') : selectedFilters.splice(selectedFilters.indexOf('Hyper'),1)"></p-checkbox>
                                 <label for="hyper2" class="text-900">Hyper</label>
                             </div>
                             <p-badge [value]="18" styleClass="mr-2 bg-gray-200 text-gray-900 p-0 border-circle"></p-badge>
                         </div>
                         <div class="flex w-full justify-content-between">
                             <div class="field-checkbox">
-                                <p-checkbox value="Bastion" inputId="bastion2" [(ngModel)]="selectedFilters"></p-checkbox>
+                                <p-checkbox value="Bastion" inputId="bastion2" [(ngModel)]="selectedBrands" (onChange)="selectedFilters.indexOf('Bastion') === -1 ? selectedFilters.push('Bastion') : selectedFilters.splice(selectedFilters.indexOf('Bastion'),1)"></p-checkbox>
                                 <label for="bastion2" class="text-900">Bastion</label>
                             </div>
                             <p-badge [value]="7" styleClass="mr-2 bg-gray-200 text-gray-900 p-0 border-circle"></p-badge>
                         </div>
                         <div class="flex w-full justify-content-between">
                             <div class="field-checkbox">
-                                <p-checkbox value="Peak" inputId="peak2" [(ngModel)]="selectedFilters"></p-checkbox>
+                                <p-checkbox value="Peak" inputId="peak2" [(ngModel)]="selectedBrands" (onChange)="selectedFilters.indexOf('Peak') === -1 ? selectedFilters.push('Peak') : selectedFilters.splice(selectedFilters.indexOf('Peak'),1)"></p-checkbox>
                                 <label for="peak2" class="text-900">Peak</label>
                             </div>
                             <p-badge [value]="36" styleClass="mr-2 bg-gray-200 text-gray-900 p-0 border-circle"></p-badge>
@@ -325,40 +337,40 @@ export class CategoryFilterComponent {
                     </div>
                 </div>
                 <div class="flex-auto lg:flex-1 col mt-4 lg:mt-2 lg:mr-4 p-4 flex-column border-1 surface-border border-round">
-                    <a tabindex="0" class="cursor-pointer text-900 font-medium mb-3 flex justify-content-between w-full hover:text-primary transition-duration-150">Color ({{selectedColors2}})</a>
+                    <a tabindex="0" class="cursor-pointer text-900 font-medium mb-3 flex justify-content-between w-full hover:text-primary transition-duration-150">Color ({{selectedColors2.length}})</a>
                     <div class="grid mb-3">
                         <div class="col-4 flex flex-column align-items-center">
-                            <div class="w-3rem h-3rem border-circle bg-gray-900 cursor-pointer border-none flex justify-content-center align-items-center" (click)="selectedFilters.indexOf('Black') == -1 ? selectedFilters.push('Black') && selectedColors2 = selectedColors2 + 1 : selectedFilters.splice(selectedFilters.indexOf('Black'), 1) && selectedColors2 = selectedColors2 -1">
+                            <div class="w-3rem h-3rem border-circle bg-gray-900 cursor-pointer border-none flex justify-content-center align-items-center" (click)="selectedFilters.indexOf('Black') == -1 && selectedColors2.indexOf('Black') == -1 ? selectedFilters.push('Black') && selectedColors2.push('Black')  : selectedFilters.splice(selectedFilters.indexOf('Black'), 1) && selectedColors2.splice(selectedColors2.indexOf('Black'), 1)">
                                 <i class="pi pi-check text-2xl text-white" *ngIf="selectedFilters.indexOf('Black') !== -1"></i>
                             </div>
                             <p class="text-900 text-center mt-1">Black</p>
                         </div>
                         <div class="col-4 flex flex-column align-items-center">
-                            <div class="w-3rem h-3rem border-circle bg-orange-500 cursor-pointer border-none flex justify-content-center align-items-center" (click)="selectedFilters.indexOf('Orange') == -1 ? selectedFilters.push('Orange') && selectedColors2 = selectedColors2 + 1 : selectedFilters.splice(selectedFilters.indexOf('Orange'), 1) && selectedColors2 = selectedColors2 -1">
+                            <div class="w-3rem h-3rem border-circle bg-orange-500 cursor-pointer border-none flex justify-content-center align-items-center" (click)="selectedFilters.indexOf('Orange') == -1 && selectedColors2.indexOf('Orange') == -1 ? selectedFilters.push('Orange') && selectedColors2.push('Orange') : selectedFilters.splice(selectedFilters.indexOf('Orange'), 1) && selectedColors2.splice(selectedColors2.indexOf('Orange'), 1)">
                                 <i class="pi pi-check text-2xl text-white" *ngIf="selectedFilters.indexOf('Orange') !== -1"></i>
                             </div>
                             <p class="text-900 text-center mt-1">Orange</p>
                         </div>
                         <div class="col-4 flex flex-column align-items-center">
-                            <div class="w-3rem h-3rem border-circle bg-indigo-500 cursor-pointer border-none flex justify-content-center align-items-center" (click)="selectedFilters.indexOf('Indigo') == -1 ? selectedFilters.push('Indigo') && selectedColors2 = selectedColors2 + 1 : selectedFilters.splice(selectedFilters.indexOf('Indigo'), 1) && selectedColors2 = selectedColors2 -1">
+                            <div class="w-3rem h-3rem border-circle bg-indigo-500 cursor-pointer border-none flex justify-content-center align-items-center" (click)="selectedFilters.indexOf('Indigo') == -1 && selectedColors2.indexOf('Indigo') == -1 ? selectedFilters.push('Indigo') && selectedColors2.push('Indigo') : selectedFilters.splice(selectedFilters.indexOf('Indigo'), 1) && selectedColors2.splice(selectedColors2.indexOf('Indigo'), 1)">
                                 <i class="pi pi-check text-2xl text-white"*ngIf="selectedFilters.indexOf('Indigo') !== -1"></i>
                             </div>
                             <p class="text-900 text-center mt-1">Indigo</p>
                         </div>
                         <div class="col-4 flex flex-column align-items-center">
-                            <div class="w-3rem h-3rem border-circle bg-gray-500 cursor-pointer border-none flex justify-content-center align-items-center" (click)="selectedFilters.indexOf('Gray') == -1 ? selectedFilters.push('Gray') && selectedColors2 = selectedColors2 + 1 : selectedFilters.splice(selectedFilters.indexOf('Gray'), 1) && selectedColors2 = selectedColors2 -1">
+                            <div class="w-3rem h-3rem border-circle bg-gray-500 cursor-pointer border-none flex justify-content-center align-items-center" (click)="selectedFilters.indexOf('Gray') == -1 && selectedColors2.indexOf('Gray') == -1 ? selectedFilters.push('Gray') && selectedColors2.push('Gray') : selectedFilters.splice(selectedFilters.indexOf('Gray'), 1) && selectedColors2.splice(selectedColors2.indexOf('Gray'), 1)">
                                 <i class="pi pi-check text-2xl text-white" *ngIf="selectedFilters.indexOf('Gray') !== -1"></i>
                             </div>
                             <p class="text-900 text-center mt-1">Gray</p>
                         </div>
                         <div class="col-4 flex flex-column align-items-center">
-                            <div class="w-3rem h-3rem border-circle bg-cyan-500 cursor-pointer border-none flex justify-content-center align-items-center" (click)="selectedFilters.indexOf('Cyan') == -1 ? selectedFilters.push('Cyan') && selectedColors2 = selectedColors2 + 1 : selectedFilters.splice(selectedFilters.indexOf('Cyan'), 1) && selectedColors2 = selectedColors2 -1">
+                            <div class="w-3rem h-3rem border-circle bg-cyan-500 cursor-pointer border-none flex justify-content-center align-items-center" (click)="selectedFilters.indexOf('Cyan') == -1 && selectedColors2.indexOf('Cyan') == -1 ? selectedFilters.push('Cyan') && selectedColors2.push('Cyan') : selectedFilters.splice(selectedFilters.indexOf('Cyan'), 1) && selectedColors2.splice(selectedColors2.indexOf('Cyan'), 1)">
                                 <i class="pi pi-check text-2xl text-white" *ngIf="selectedFilters.indexOf('Cyan') !== -1"></i>
                             </div>
                             <p class="text-900 text-center mt-1">Cyan</p>
                         </div>
                         <div class="col-4 flex flex-column align-items-center">
-                            <div class="w-3rem h-3rem border-circle bg-pink-500 cursor-pointer border-none flex justify-content-center align-items-center" (click)="selectedFilters.indexOf('Pink') == -1 ? selectedFilters.push('Pink') && selectedColors2 = selectedColors2 + 1 : selectedFilters.splice(selectedFilters.indexOf('Pink'), 1) && selectedColors2 = selectedColors2 -1">
+                            <div class="w-3rem h-3rem border-circle bg-pink-500 cursor-pointer border-none flex justify-content-center align-items-center" (click)="selectedFilters.indexOf('Pink') == -1 && selectedColors2.indexOf('Pink') == -1 ? selectedFilters.push('Pink') && selectedColors2.push('Pink') : selectedFilters.splice(selectedFilters.indexOf('Pink'), 1) && selectedColors2.splice(selectedColors2.indexOf('Pink'), 1)">
                                 <i class="pi pi-check text-2xl text-white" *ngIf="selectedFilters.indexOf('Pink') !== -1"></i>
                             </div>
                             <p class="text-900 text-center mt-1">Pink</p>
