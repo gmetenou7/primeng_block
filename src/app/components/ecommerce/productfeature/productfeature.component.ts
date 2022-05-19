@@ -163,7 +163,7 @@ export class ProductFeatureComponent {
 </div>`; 
     
     block5: string = `    
-<div class="surface-section grid grid-nogutter px-4 py-8 md:px-6 lg:px-8 bg-no-repeat bg-cover bg-center" style="background: url(assets/images/blocks/ecommerce/productfeature/product-features-1-8.jpg);">
+<div class="surface-section grid grid-nogutter px-4 py-8 md:px-6 lg:px-8 bg-no-repeat bg-cover" style="background: url(assets/images/blocks/ecommerce/productfeature/product-features-1-8.jpg); background-position: center top">
     <div class="col-12 lg:col-6 p-4 flex flex-column shadow-2 border-round" style="background: rgba(255, 255, 255, 0.9);">
         <div class="text-black-alpha-90 text-3xl font-bold mb-4">Feature Details</div>
         <p class="text-black-alpha-60 text-xl line-height-3">Vulputate eu scelerisque felis imperdiet proin. Eget arcu dictum varius duis at consectetur lorem donec.</p>
