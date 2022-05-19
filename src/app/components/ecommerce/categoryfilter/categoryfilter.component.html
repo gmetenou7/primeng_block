@@ -58,7 +58,7 @@
                         </div>
                     </p-accordionTab>
                     <p-accordionTab [selected]="true" header="Price Range">
-                        <div class="overflow-hidden transition-all transition-duration-400 transition-ease-in-out">
+                        <div class="transition-all transition-duration-400 transition-ease-in-out">
                             <p-slider [(ngModel)]="rangeValues" [range]="true" styleClass="mt-3 mx-auto" [style]="{'max-width':'93%'}"></p-slider>
                             <div class="flex my-4">
                                 <p-inputNumber placeholder="$10" [(ngModel)]="rangeValues[0]" min="10" inputStyleClass="w-full mr-3"></p-inputNumber>
@@ -67,7 +67,7 @@
                         </div>
                     </p-accordionTab>
                     <p-accordionTab [selected]="true" header="Color ({{selectedColors.length}})">
-                        <div class="overflow-hidden transition-all transition-duration-400 transition-ease-in-out">
+                        <div class="transition-all transition-duration-400 transition-ease-in-out">
                             <div class="grid mb-3">
                                 <div class="col-4 flex flex-column align-items-center">
                                     <div class="w-3rem h-3rem border-circle bg-gray-900 cursor-pointer border-none flex justify-content-center align-items-center" (click)="selectedColors.indexOf('Black') == -1 ? selectedColors.push('Black') : selectedColors.splice(selectedColors.indexOf('Black'), 1)">
@@ -109,7 +109,7 @@
                         </div>
                     </p-accordionTab>
                     <p-accordionTab [selected]="true" header="Size ({{selectedSizes1.length}})">
-                        <div class="overflow-hidden transition-all transition-duration-400 transition-ease-in-out">
+                        <div class="transition-all transition-duration-400 transition-ease-in-out">
                             <p-galleria [(value)]="sizes" [responsiveOptions]="responsiveOptions" containerClass="h-full" [numVisible]="2"
                             [showThumbnails]="false" [showIndicators]="true"> 
                                 <ng-template pTemplate="item" let-item>
