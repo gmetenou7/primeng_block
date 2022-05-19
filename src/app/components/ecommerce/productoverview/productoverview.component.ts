@@ -410,7 +410,7 @@ export class ProductOverviewComponent implements OnInit {
             [showThumbnails]="false" [showIndicators]="true"> 
                 <ng-template pTemplate="item" let-item>
                     <div class="w-full h-full overflow-hidden">
-                        <img [src]="'assets/images/blocks/ecommerce/productoverview/' + item" style="width: 100%; display: block;" />
+                        <img [src]="'assets/images/blocks/ecommerce/productoverview/' + item" class="w-full block"/>
                     </div>                           
                 </ng-template>
             </p-galleria>
