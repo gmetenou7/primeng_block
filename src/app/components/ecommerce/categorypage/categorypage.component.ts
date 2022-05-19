@@ -106,7 +106,7 @@ export class CategoryPageComponent {
                 </div>
             </li>
             <li class="inline-flex relative">
-                <a pRipple pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer px-1 lg:px-3 border-bottom-2 border-transparent hover:border-primary select-none"
+                <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer px-1 lg:px-3 border-bottom-2 border-transparent hover:border-primary select-none"
                     pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                     <i class="pi pi-shopping-cart text-xl" pBadge></i>
                     <span class="hidden">My Cart</span>
