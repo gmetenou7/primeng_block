@@ -203,7 +203,7 @@ export class ShoppingCartComponent {
         <span class="font-medium text-2xl text-900">Your Cart</span>
     </ng-template>
     <ul class="list-none m-0 p-0">
-        <li class="py-3 border-top-1 surface-border flex align-items-start sm:align-items-center">
+        <li class="py-3 flex align-items-start sm:align-items-center">
             <img src="assets/images/blocks/ecommerce/shoppingcart/shopping-cart-3-1.png" class="w-6rem sm:w-8rem flex-shrink-0" />
             <div class="pl-3 flex-auto">
                 <div class="flex align-items-center justify-content-between mb-3">
