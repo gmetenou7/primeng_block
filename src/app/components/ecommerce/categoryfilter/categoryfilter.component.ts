@@ -140,10 +140,10 @@ export class CategoryFilterComponent {
     openDropdown: boolean = true;
 
     removeChip( filter) {
-        this.selectedFilters.splice(this.selectedFilters.indexOf(filter.toString()), 1)
-        this.selectedColors2.splice(this.selectedColors2.indexOf(filter.toString()), 1)
+        this.selectedFilters = this.selectedFilters.filter(i => i !== filter);
+        this.selectedColors2 = this.selectedColors2.filter(i => i !== filter);
         this.selectedBrands = this.selectedBrands.filter(i => i !== filter);
-        
+        this.selectedSizes2 = this.selectedSizes2.filter(i => i !== filter);
     }
 
     clearAll() {
