@@ -37,6 +37,18 @@ npm install primeflex --save
 import &#123;StyleClassModule&#125; from 'primeng/api';
     </app-code>
     
+    <h3 class="text-xl mb-3">Font Settings</h3>
+    <p class="mb-3 line-height-3">PrimeBlocks use the font derived from the PrimeNG theme being used, you may still use them with a font of your choice however to have the same look
+    when a block is copied to your own page, add the config below to your application.</p>
+
+    <app-code lang="css" ngNonBindable ngPreserveWhitespaces>
+body &#123;
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+&#125;
+    </app-code>
+
     <h3 class="text-xl mb-3">Run the Samples</h3>
     <p class="mb-3 line-height-3">PrimeBlocks are distributed as an Angular CLI project, download the file from PrimeStore, extract the contents of the zip file and execute the following commands to run the application at <i>http://localhost:4200</i>.</p>
     
