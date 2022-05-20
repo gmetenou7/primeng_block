@@ -239,7 +239,7 @@ export class ProductOverviewComponent implements OnInit {
                         [ngClass]="{'border-primary': selectedImageIndex2 === i}" (click)="selectedImageIndex2 = i"/>
                 </div>
                 <div class="pl-3 w-10">
-                    <img attr.src="assets/images/blocks/ecommerce/productoverview/{{images2[selectedImageIndex2]}}" class="w-full" />
+                    <img attr.src="assets/images/blocks/ecommerce/productoverview/{{images2[selectedImageIndex2]}}" class="w-full border-round" />
                 </div>
             </div>
         </div>
@@ -410,7 +410,7 @@ export class ProductOverviewComponent implements OnInit {
             [showThumbnails]="false" [showIndicators]="true"> 
                 <ng-template pTemplate="item" let-item>
                     <div class="w-full h-full overflow-hidden">
-                        <img [src]="'assets/images/blocks/ecommerce/productoverview/' + item" style="width: 100%; display: block;" />
+                        <img [src]="'assets/images/blocks/ecommerce/productoverview/' + item" class="w-full block"/>
                     </div>                           
                 </ng-template>
             </p-galleria>

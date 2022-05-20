@@ -140,10 +140,10 @@ export class CategoryFilterComponent {
     openDropdown: boolean = true;
 
     removeChip( filter) {
-        this.selectedFilters.splice(this.selectedFilters.indexOf(filter.toString()), 1)
-        this.selectedColors2.splice(this.selectedColors2.indexOf(filter.toString()), 1)
+        this.selectedFilters = this.selectedFilters.filter(i => i !== filter);
+        this.selectedColors2 = this.selectedColors2.filter(i => i !== filter);
         this.selectedBrands = this.selectedBrands.filter(i => i !== filter);
-        
+        this.selectedSizes2 = this.selectedSizes2.filter(i => i !== filter);
     }
 
     clearAll() {
@@ -288,9 +288,9 @@ export class CategoryFilterComponent {
         <div class="col-12 p-0 mt-5 flex flex-column lg:flex-row align-items-center mb-4">
             <button pButton class="p-button-rounded bg-gray-900 text-white px-5 lg:mr-4 sm w-full lg:w-auto border-none" label="Filters" icon="pi pi-chevron-{{openDropdown ? 'down' : 'up'}} ml-3" iconPos="right" pStyleClass=".filter-container" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup" (click)="openDropdown = !openDropdown"></button>
             <div class="grid flex-column lg:flex-row w-full h-full">
-                <div class="col-12 lg:col lg:flex lg:align-items-center flex-wrap" style="column-gap: 5px; row-gap:5px;">
+                <div class="col-12 lg:col flex align-items-center flex-wrap" style="column-gap: 5px; row-gap:5px;">
                     <p-chip *ngFor="let filter of selectedFilters" [label]="filter" [removable]="true" styleClass="mr-3 h-auto lg:h-full px-4 mt-3 lg:mt-0" removeIcon="pi pi-times" [style]="{'border-radius':'50px'}" (onRemove)="removeChip(filter)"></p-chip>
-                    <a pRipple *ngIf="selectedFilters.length > 0 || selectedColors2 !== 0" tabindex="0" class="text-900 cursor-pointer text-center px-3 py-2 mt-3 md:mt-0 border-1 border-200 lg:border-none block md:inline hover:bg-primary hover:border-primary transition-duration-150" style="border-radius:50px; max-width: 7rem;" (click)="clearAll()">Clear All</a>
+                    <a pRipple *ngIf="selectedFilters.length > 0 || selectedColors2 !== 0" tabindex="0" class="text-900 cursor-pointer text-center px-3 py-2 mt-3 lg:mt-0 border-1 border-200 lg:border-none inline-block hover:bg-primary hover:border-primary transition-duration-150" style="border-radius:50px; max-width: 7rem;" (click)="clearAll()">Clear All</a>
                 </div>
             </div>
         </div>

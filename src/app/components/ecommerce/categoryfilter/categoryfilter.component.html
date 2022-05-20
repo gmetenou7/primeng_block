@@ -19,7 +19,7 @@
 
                 <p-accordion [multiple]="true" styleClass="-mb-1 mt-3">
                     <p-accordionTab [selected]="true" header="Brand ({{selectedBrand_1 ? selectedBrand_1.length : '0'}})">
-                        <div class="overflow-hidden transition-all transition-duration-400 transition-ease-in-out">
+                        <div class="transition-all transition-duration-400 transition-ease-in-out">
                             <div class="mb-3">
                                 <span class="p-input-icon-right w-full">
                                     <i class="pi pi-search"></i>
@@ -58,7 +58,7 @@
                         </div>
                     </p-accordionTab>
                     <p-accordionTab [selected]="true" header="Price Range">
-                        <div class="overflow-hidden transition-all transition-duration-400 transition-ease-in-out">
+                        <div class="transition-all transition-duration-400 transition-ease-in-out">
                             <p-slider [(ngModel)]="rangeValues" [range]="true" styleClass="mt-3 mx-auto" [style]="{'max-width':'93%'}"></p-slider>
                             <div class="flex my-4">
                                 <p-inputNumber placeholder="$10" [(ngModel)]="rangeValues[0]" min="10" inputStyleClass="w-full mr-3"></p-inputNumber>
@@ -67,7 +67,7 @@
                         </div>
                     </p-accordionTab>
                     <p-accordionTab [selected]="true" header="Color ({{selectedColors.length}})">
-                        <div class="overflow-hidden transition-all transition-duration-400 transition-ease-in-out">
+                        <div class="transition-all transition-duration-400 transition-ease-in-out">
                             <div class="grid mb-3">
                                 <div class="col-4 flex flex-column align-items-center">
                                     <div class="w-3rem h-3rem border-circle bg-gray-900 cursor-pointer border-none flex justify-content-center align-items-center" (click)="selectedColors.indexOf('Black') == -1 ? selectedColors.push('Black') : selectedColors.splice(selectedColors.indexOf('Black'), 1)">
@@ -109,7 +109,7 @@
                         </div>
                     </p-accordionTab>
                     <p-accordionTab [selected]="true" header="Size ({{selectedSizes1.length}})">
-                        <div class="overflow-hidden transition-all transition-duration-400 transition-ease-in-out">
+                        <div class="transition-all transition-duration-400 transition-ease-in-out">
                             <p-galleria [(value)]="sizes" [responsiveOptions]="responsiveOptions" containerClass="h-full" [numVisible]="2"
                             [showThumbnails]="false" [showIndicators]="true"> 
                                 <ng-template pTemplate="item" let-item>
@@ -134,9 +134,9 @@
             <div class="col-12 p-0 mt-5 flex flex-column lg:flex-row align-items-center mb-4">
                 <button pButton class="p-button-rounded bg-gray-900 text-white px-5 lg:mr-4 sm w-full lg:w-auto border-none" label="Filters" icon="pi pi-chevron-{{openDropdown ? 'down' : 'up'}} ml-3" iconPos="right" pStyleClass=".filter-container" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup" (click)="openDropdown = !openDropdown"></button>
                 <div class="grid flex-column lg:flex-row w-full h-full">
-                    <div class="col-12 lg:col lg:flex lg:align-items-center flex-wrap" style="column-gap: 5px; row-gap:5px;">
+                    <div class="col-12 lg:col flex align-items-center flex-wrap" style="column-gap: 5px; row-gap:5px;">
                         <p-chip *ngFor="let filter of selectedFilters" [label]="filter" [removable]="true" styleClass="mr-3 h-auto lg:h-full px-4 mt-3 lg:mt-0" removeIcon="pi pi-times" [style]="{'border-radius':'50px'}" (onRemove)="removeChip(filter)"></p-chip>
-                        <a pRipple *ngIf="selectedFilters.length > 0 || selectedColors2 !== 0" tabindex="0" class="text-900 cursor-pointer text-center px-3 py-2 mt-3 md:mt-0 border-1 border-200 lg:border-none block md:inline hover:bg-primary hover:border-primary transition-duration-150" style="border-radius:50px; max-width: 7rem;" (click)="clearAll()">Clear All</a>
+                        <a pRipple *ngIf="selectedFilters.length > 0 || selectedColors2 !== 0" tabindex="0" class="text-900 cursor-pointer text-center px-3 py-2 mt-3 lg:mt-0 border-1 border-200 lg:border-none inline-block hover:bg-primary hover:border-primary transition-duration-150" style="border-radius:50px; max-width: 7rem;" (click)="clearAll()">Clear All</a>
                     </div>
                 </div>
             </div>

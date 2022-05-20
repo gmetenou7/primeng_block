@@ -175,32 +175,32 @@ export class CategoryPreviewComponent {
   
     block4: string = `
 <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
-    <div class="grid -mt-3 -ml-3 -mr-3 md:flex-wrap justify-content-center" style="row-gap: 2rem; column-gap:2rem;">
-        <div class="col-12 px-4 flex flex-column lg:flex-row align-items-center justify-content-center lg:justify-content-between">
+    <div class="grid -mt-3 -ml-3 -mr-3 sm:justify-content-center xl:justify-content-between">
+        <div class="col-12 flex flex-column sm:flex-row align-items-center justify-content-center sm:justify-content-between">
             <div class="text-900 font-medium text-4xl mb-4">Top Categories</div>
             <a tabindex="0" class="cursor-pointer text-primary flex align-items-center">See All Categories<i class="pi pi-arrow-right ml-3"></i></a>
         </div>
-        <div class="col flex px-3 flex-column h-30rem" style="max-width: 30rem">
+        <div class="col-12 sm:col-6 lg:col-4 xl:col xl:w-16rem flex flex-column h-25rem">
             <div class="flex h-full bg-no-repeat bg-cover bg-center border-round shadow-2 lg:mx-0" style="background:linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%), url(assets/images/blocks/ecommerce/categorypreview/category-preview-1-12.jpg); min-width: 15rem;">
                 <p class="font-medium text-2xl text-white text-center w-full align-self-end">Category</p>
             </div>
         </div>
-        <div class="col flex px-3 flex-column h-30rem" style="max-width: 30rem">
+        <div class="col-12 sm:col-6 lg:col-4 xl:col xl:w-16rem flex flex-column h-25rem">
             <div class="flex h-full bg-no-repeat bg-cover bg-center border-round shadow-2 lg:mx-0" style="background:linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%), url(assets/images/blocks/ecommerce/categorypreview/category-preview-1-13.jpg); min-width: 15rem;">
                 <p class="font-medium text-2xl text-white text-center w-full align-self-end">Category</p>
             </div>
         </div>
-        <div class="col flex px-3 flex-column h-30rem" style="max-width: 30rem">
+        <div class="col-12 sm:col-6 lg:col-4 xl:col xl:w-16rem flex flex-column h-25rem">
             <div class="flex h-full bg-no-repeat bg-cover bg-center border-round shadow-2 lg:mx-0" style="background:linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%), url(assets/images/blocks/ecommerce/categorypreview/category-preview-1-14.jpg); min-width: 15rem;">
                 <p class="font-medium text-2xl text-white text-center w-full align-self-end">Category</p>
             </div>
         </div>
-        <div class="col flex px-3 flex-column h-30rem" style="max-width: 30rem">
+        <div class="col-12 sm:col-6 lg:col-4 xl:col xl:w-16rem flex flex-column h-25rem">
             <div class="flex h-full bg-no-repeat bg-cover bg-center border-round shadow-2 lg:mx-0" style="background:linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%), url(assets/images/blocks/ecommerce/categorypreview/category-preview-1-15.jpg); min-width: 15rem;">
                 <p class="font-medium text-2xl text-white text-center w-full align-self-end">Category</p>
             </div>
         </div>
-        <div class="col flex px-3 flex-column h-30rem" style="max-width: 30rem">
+        <div class="col-12 sm:col-6 lg:col-4 xl:col xl:w-16rem flex flex-column h-25rem">
             <div class="flex h-full bg-no-repeat bg-cover bg-center border-round shadow-2 lg:mx-0" style="background:linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%), url(assets/images/blocks/ecommerce/categorypreview/category-preview-1-16.jpg); min-width: 15rem;">
                 <p class="font-medium text-2xl text-white text-center w-full align-self-end">Category</p>
             </div>

@@ -85,12 +85,12 @@
                     <span class="text-xl text-900 font-medium mb-3">Product Name</span>
                     <span class="text-xl text-900 mb-3">$150.00</span>
                     <div class="flex align-items-center mb-3">
-                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-bluegray-500 hover:border-bluegray-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
-                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-indigo-500 hover:border-indigo-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
-                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-purple-500 hover:border-purple-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
-                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-cyan-500 hover:border-cyan-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
+                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-bluegray-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300" [ngStyle]="{'box-shadow': color1 === 'Bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null}" (click)="color1 = 'Bluegray'"></div>
+                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-indigo-500 hover:border-indigo-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"  [ngStyle]="{'box-shadow': color1 === 'Indigo' ? '0 0 0 0.2rem var(--indigo-500)' : null}" (click)="color1 = 'Indigo'"></div>
+                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-purple-500 hover:border-purple-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"  [ngStyle]="{'box-shadow': color1 === 'Purple' ? '0 0 0 0.2rem var(--purple-500)' : null}" (click)="color1 = 'Purple'"></div>
+                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-cyan-500 hover:border-cyan-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"  [ngStyle]="{'box-shadow': color1 === 'Cyan' ? '0 0 0 0.2rem var(--cyan-500)' : null}" (click)="color1 = 'Cyan'"></div>
                     </div>
-                    <span class="text-500">Black</span>
+                    <span class="text-500">{{color1}}</span>
                 </div>
             </div>
             <div class="col-12 md:col-6 lg:col-3 mb-5 lg:mb-0">
@@ -106,12 +106,12 @@
                     <span class="text-xl text-900 font-medium mb-3">Product Name</span>
                     <span class="text-xl text-900 mb-3">$150.00</span>
                     <div class="flex align-items-center mb-3">
-                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-bluegray-500 hover:border-bluegray-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
-                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-indigo-500 hover:border-indigo-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
-                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-purple-500 hover:border-purple-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
-                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-cyan-500 hover:border-cyan-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
+                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-bluegray-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300" [ngStyle]="{'box-shadow': color2 === 'Bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null}" (click)="color2 = 'Bluegray'"></div>
+                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-indigo-500 hover:border-indigo-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"  [ngStyle]="{'box-shadow': color2 === 'Indigo' ? '0 0 0 0.2rem var(--indigo-500)' : null}" (click)="color2 = 'Indigo'"></div>
+                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-purple-500 hover:border-purple-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"  [ngStyle]="{'box-shadow': color2 === 'Purple' ? '0 0 0 0.2rem var(--purple-500)' : null}" (click)="color2 = 'Purple'"></div>
+                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-cyan-500 hover:border-cyan-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"  [ngStyle]="{'box-shadow': color2 === 'Cyan' ? '0 0 0 0.2rem var(--cyan-500)' : null}" (click)="color2 = 'Cyan'"></div>
                     </div>
-                    <span class="text-500">Indigo</span>
+                    <span class="text-500">{{color2}}</span>
                 </div>
             </div>
             <div class="col-12 md:col-6 lg:col-3 mb-5 lg:mb-0">
@@ -127,12 +127,12 @@
                     <span class="text-xl text-900 font-medium mb-3">Product Name</span>
                     <span class="text-xl text-900 mb-3">$150.00</span>
                     <div class="flex align-items-center mb-3">
-                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-bluegray-500 hover:border-bluegray-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
-                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-indigo-500 hover:border-indigo-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
-                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-purple-500 hover:border-purple-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
-                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-cyan-500 hover:border-cyan-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
+                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-bluegray-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300" [ngStyle]="{'box-shadow': color3 === 'Bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null}" (click)="color3 = 'Bluegray'"></div>
+                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-indigo-500 hover:border-indigo-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"  [ngStyle]="{'box-shadow': color3 === 'Indigo' ? '0 0 0 0.2rem var(--indigo-500)' : null}" (click)="color3 = 'Indigo'"></div>
+                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-purple-500 hover:border-purple-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"  [ngStyle]="{'box-shadow': color3 === 'Purple' ? '0 0 0 0.2rem var(--purple-500)' : null}" (click)="color3 = 'Purple'"></div>
+                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-cyan-500 hover:border-cyan-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"  [ngStyle]="{'box-shadow': color3 === 'Cyan' ? '0 0 0 0.2rem var(--cyan-500)' : null}" (click)="color3 = 'Cyan'"></div>
                     </div>
-                    <span class="text-500">Purple</span>
+                    <span class="text-500">{{color3}}</span>
                 </div>
             </div>
             <div class="col-12 md:col-6 lg:col-3">
@@ -148,12 +148,12 @@
                     <span class="text-xl text-900 font-medium mb-3">Product Name</span>
                     <span class="text-xl text-900 mb-3">$150.00</span>
                     <div class="flex align-items-center mb-3">
-                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-bluegray-500 hover:border-bluegray-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
-                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-indigo-500 hover:border-indigo-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
-                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-purple-500 hover:border-purple-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
-                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-cyan-500 hover:border-cyan-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"></div>
+                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-bluegray-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300" [ngStyle]="{'box-shadow': color4 === 'Bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null}" (click)="color4 = 'Bluegray'"></div>
+                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-indigo-500 hover:border-indigo-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"  [ngStyle]="{'box-shadow': color4 === 'Indigo' ? '0 0 0 0.2rem var(--indigo-500)' : null}" (click)="color4 = 'Indigo'"></div>
+                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-purple-500 hover:border-purple-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"  [ngStyle]="{'box-shadow': color4 === 'Purple' ? '0 0 0 0.2rem var(--purple-500)' : null}" (click)="color4 = 'Purple'"></div>
+                        <div class="w-2rem h-2rem flex-shrink-0 border-circle bg-cyan-500 hover:border-cyan-500 mr-3 cursor-pointer border-2 surface-border transition-all transition-duration-300"  [ngStyle]="{'box-shadow': color4 === 'Cyan' ? '0 0 0 0.2rem var(--cyan-500)' : null}" (click)="color4 = 'Cyan'"></div>
                     </div>
-                    <span class="text-500">Cyan</span>
+                    <span class="text-500">{{color4}}</span>
                 </div>
             </div>
         </div>
