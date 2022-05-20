@@ -173,8 +173,8 @@ export class CategoryFilterComponent {
             <p-divider styleClass="w-full m-0 p-0"></p-divider>
 
             <p-accordion [multiple]="true" styleClass="-mb-1 mt-3">
-                <p-accordionTab [selected]="true" header="Brand ({{selectedBrand_1 ? selectedBrand_1 : '0'}})">
-                    <div class="overflow-hidden transition-all transition-duration-400 transition-ease-in-out">
+                <p-accordionTab [selected]="true" header="Brand ({{selectedBrand_1 ? selectedBrand_1.length : '0'}})">
+                    <div class="transition-all transition-duration-400 transition-ease-in-out">
                         <div class="mb-3">
                             <span class="p-input-icon-right w-full">
                                 <i class="pi pi-search"></i>
@@ -213,7 +213,7 @@ export class CategoryFilterComponent {
                     </div>
                 </p-accordionTab>
                 <p-accordionTab [selected]="true" header="Price Range">
-                    <div class="overflow-hidden transition-all transition-duration-400 transition-ease-in-out">
+                    <div class="transition-all transition-duration-400 transition-ease-in-out">
                         <p-slider [(ngModel)]="rangeValues" [range]="true" styleClass="mt-3 mx-auto" [style]="{'max-width':'93%'}"></p-slider>
                         <div class="flex my-4">
                             <p-inputNumber placeholder="$10" [(ngModel)]="rangeValues[0]" min="10" inputStyleClass="w-full mr-3"></p-inputNumber>
@@ -222,7 +222,7 @@ export class CategoryFilterComponent {
                     </div>
                 </p-accordionTab>
                 <p-accordionTab [selected]="true" header="Color ({{selectedColors.length}})">
-                    <div class="overflow-hidden transition-all transition-duration-400 transition-ease-in-out">
+                    <div class="transition-all transition-duration-400 transition-ease-in-out">
                         <div class="grid mb-3">
                             <div class="col-4 flex flex-column align-items-center">
                                 <div class="w-3rem h-3rem border-circle bg-gray-900 cursor-pointer border-none flex justify-content-center align-items-center" (click)="selectedColors.indexOf('Black') == -1 ? selectedColors.push('Black') : selectedColors.splice(selectedColors.indexOf('Black'), 1)">
@@ -264,11 +264,11 @@ export class CategoryFilterComponent {
                     </div>
                 </p-accordionTab>
                 <p-accordionTab [selected]="true" header="Size ({{selectedSizes1.length}})">
-                    <div class="overflow-hidden transition-all transition-duration-400 transition-ease-in-out">
+                    <div class="transition-all transition-duration-400 transition-ease-in-out">
                         <p-galleria [(value)]="sizes" [responsiveOptions]="responsiveOptions" containerClass="h-full" [numVisible]="2"
                         [showThumbnails]="false" [showIndicators]="true"> 
                             <ng-template pTemplate="item" let-item>
-                                <div class="flex flex-wrap w-full h-auto overflow-hidden justify-content-center" style="column-gap: 5px; row-gap: 5px;">
+                                <div class="flex flex-wrap w-full h-auto overflow-hidden justify-content-center gap-1">
                                     <div pRipple class="w-4rem h-2rem text-900 flex justify-content-center align-items-center text-sm cursor-pointer border-round" *ngFor="let size of item.page" (click)="selectedSizes1.indexOf(size.value) == -1 ? selectedSizes1.push(size.value) : selectedSizes1.splice(selectedSizes1.indexOf(size.value.toString()), 1)" [ngClass]="{'surface-100': selectedSizes1.indexOf(size.value) == -1, 'bg-blue-200': selectedSizes1.indexOf(size.value) !== -1}">{{size.value}}</div>
                                 </div>                           
                             </ng-template>
@@ -279,7 +279,7 @@ export class CategoryFilterComponent {
         </div>
         <div class="w-full border-2 border-dashed surface-border surface-section mt-3 lg:mt-0" style="min-height:25rem;"></div>
     </div>
-</div`;
+</div>`;
     
     block2: string = `
 <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
@@ -288,7 +288,7 @@ export class CategoryFilterComponent {
         <div class="col-12 p-0 mt-5 flex flex-column lg:flex-row align-items-center mb-4">
             <button pButton class="p-button-rounded bg-gray-900 text-white px-5 lg:mr-4 sm w-full lg:w-auto border-none" label="Filters" icon="pi pi-chevron-{{openDropdown ? 'down' : 'up'}} ml-3" iconPos="right" pStyleClass=".filter-container" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup" (click)="openDropdown = !openDropdown"></button>
             <div class="grid flex-column lg:flex-row w-full h-full">
-                <div class="col-12 lg:col flex align-items-center flex-wrap" style="column-gap: 5px; row-gap:5px;">
+                <div class="col-12 lg:col flex align-items-center flex-wrap gap-1">
                     <p-chip *ngFor="let filter of selectedFilters" [label]="filter" [removable]="true" styleClass="mr-3 h-auto lg:h-full px-4 mt-3 lg:mt-0" removeIcon="pi pi-times" [style]="{'border-radius':'50px'}" (onRemove)="removeChip(filter)"></p-chip>
                     <a pRipple *ngIf="selectedFilters.length > 0 || selectedColors2 !== 0" tabindex="0" class="text-900 cursor-pointer text-center px-3 py-2 mt-3 lg:mt-0 border-1 border-200 lg:border-none inline-block hover:bg-primary hover:border-primary transition-duration-150" style="border-radius:50px; max-width: 7rem;" (click)="clearAll()">Clear All</a>
                 </div>
@@ -382,7 +382,7 @@ export class CategoryFilterComponent {
                     <p-galleria [(value)]="sizes" [responsiveOptions]="responsiveOptions" containerClass="h-full" [numVisible]="2"
                     [showThumbnails]="false" [showIndicators]="true"> 
                         <ng-template pTemplate="item" let-item>
-                            <div class="flex flex-wrap justify-content-between w-full h-full mb-5 overflow-hidden" style="column-gap: 5px; row-gap: 5px;">
+                            <div class="flex flex-wrap justify-content-between w-full h-full mb-5 overflow-hidden gap-1">
                                 <div pRipple class="w-5rem h-3rem text-900 flex justify-content-center align-items-center text-sm cursor-pointer border-round" *ngFor="let size of item.page" (click)="selectedSizes2.indexOf(size.value) == -1 ? selectedSizes2.push(size.value) && selectedFilters.push(size.value) : selectedSizes2.splice(selectedSizes2.indexOf(size.value.toString()), 1) && selectedFilters.splice(selectedFilters.indexOf(size.value.toString()), 1)" [ngClass]="{'surface-100': selectedFilters.indexOf(size.value) == -1, 'bg-blue-200': selectedFilters.indexOf(size.value) !== -1}">{{size.value}}</div>
                             </div>                           
                         </ng-template>

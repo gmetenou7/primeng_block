@@ -113,7 +113,7 @@
                             <p-galleria [(value)]="sizes" [responsiveOptions]="responsiveOptions" containerClass="h-full" [numVisible]="2"
                             [showThumbnails]="false" [showIndicators]="true"> 
                                 <ng-template pTemplate="item" let-item>
-                                    <div class="flex flex-wrap w-full h-auto overflow-hidden justify-content-center" style="column-gap: 5px; row-gap: 5px;">
+                                    <div class="flex flex-wrap w-full h-auto overflow-hidden justify-content-center gap-1">
                                         <div pRipple class="w-4rem h-2rem text-900 flex justify-content-center align-items-center text-sm cursor-pointer border-round" *ngFor="let size of item.page" (click)="selectedSizes1.indexOf(size.value) == -1 ? selectedSizes1.push(size.value) : selectedSizes1.splice(selectedSizes1.indexOf(size.value.toString()), 1)" [ngClass]="{'surface-100': selectedSizes1.indexOf(size.value) == -1, 'bg-blue-200': selectedSizes1.indexOf(size.value) !== -1}">{{size.value}}</div>
                                     </div>                           
                                 </ng-template>
@@ -134,7 +134,7 @@
             <div class="col-12 p-0 mt-5 flex flex-column lg:flex-row align-items-center mb-4">
                 <button pButton class="p-button-rounded bg-gray-900 text-white px-5 lg:mr-4 sm w-full lg:w-auto border-none" label="Filters" icon="pi pi-chevron-{{openDropdown ? 'down' : 'up'}} ml-3" iconPos="right" pStyleClass=".filter-container" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup" (click)="openDropdown = !openDropdown"></button>
                 <div class="grid flex-column lg:flex-row w-full h-full">
-                    <div class="col-12 lg:col flex align-items-center flex-wrap" style="column-gap: 5px; row-gap:5px;">
+                    <div class="col-12 lg:col flex align-items-center flex-wrap gap-1">
                         <p-chip *ngFor="let filter of selectedFilters" [label]="filter" [removable]="true" styleClass="mr-3 h-auto lg:h-full px-4 mt-3 lg:mt-0" removeIcon="pi pi-times" [style]="{'border-radius':'50px'}" (onRemove)="removeChip(filter)"></p-chip>
                         <a pRipple *ngIf="selectedFilters.length > 0 || selectedColors2 !== 0" tabindex="0" class="text-900 cursor-pointer text-center px-3 py-2 mt-3 lg:mt-0 border-1 border-200 lg:border-none inline-block hover:bg-primary hover:border-primary transition-duration-150" style="border-radius:50px; max-width: 7rem;" (click)="clearAll()">Clear All</a>
                     </div>
@@ -228,7 +228,7 @@
                         <p-galleria [(value)]="sizes" [responsiveOptions]="responsiveOptions" containerClass="h-full" [numVisible]="2"
                         [showThumbnails]="false" [showIndicators]="true"> 
                             <ng-template pTemplate="item" let-item>
-                                <div class="flex flex-wrap justify-content-between w-full h-full mb-5 overflow-hidden" style="column-gap: 5px; row-gap: 5px;">
+                                <div class="flex flex-wrap justify-content-between w-full h-full mb-5 overflow-hidden gap-1">
                                     <div pRipple class="w-5rem h-3rem text-900 flex justify-content-center align-items-center text-sm cursor-pointer border-round" *ngFor="let size of item.page" (click)="selectedSizes2.indexOf(size.value) == -1 ? selectedSizes2.push(size.value) && selectedFilters.push(size.value) : selectedSizes2.splice(selectedSizes2.indexOf(size.value.toString()), 1) && selectedFilters.splice(selectedFilters.indexOf(size.value.toString()), 1)" [ngClass]="{'surface-100': selectedFilters.indexOf(size.value) == -1, 'bg-blue-200': selectedFilters.indexOf(size.value) !== -1}">{{size.value}}</div>
                                 </div>                           
                             </ng-template>
