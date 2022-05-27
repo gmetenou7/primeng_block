@@ -2,13 +2,16 @@
 
 ## 3.0.1
 
-- Adds missing code preview of Product Pages / With Galleria, Tabs and Single Column Reviews.
-- Fixed z-index of navbars in Store Navigation.
-- Adds limitation to max selection of dropdowns in Category Filters.
-- Category Preview / fixed responsive alignment problems and image ratios for all blocks.
-- Fixed E-Commerce / Category Filters / Horizontal Expandable chip remove bug.
-- Category Filters / static dropdowns are replaced by panel component.
-- Fixed bug in Clear All button in Category Filters / Dropdown.
+- Fixed image sizing for last picture in "E-Commerce / Product Overview / Tabs"
+- Fixed divider color change on dark mode in "E-Commerce / Product Features / Overlay With Accordion"
+- Fixed flex-wrap and alignment problem in "E-Commerce / Category Preview / Columns With Title Overlay"
+- Removed duplicate ripples
+- Fixed select functionality in "E-Commerce / Category Filter / Horizontal Expandable"
+- Fixed double border-top problem of first element on Bootstrap themes in "E-Commerce / Shopping Cart / Overlay"
+- Fixed focus overflow problem on checkboxes in "E-Commerce / Category Filter / Sidebar"
+- Remove inline image styling in "E-Commerce / Product Overview"
+- Updates to PrimeFlex v3.2.0
+- Documentation updated
   
 ## 3.0.0
 
