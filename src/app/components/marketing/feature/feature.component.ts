@@ -588,4 +588,6 @@ export class FeatureComponent {
     </ul>
 </div>`;
 
+    block13: string = ``;
+
 }
