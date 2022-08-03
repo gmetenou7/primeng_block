@@ -510,7 +510,7 @@
             <ul class="bg-white p-2 m-0 list-none flex overflow-x-auto select-none" style="border-radius: 30px">
                 <li class="mr-2">
                     <a pRipple
-                        class="cursor-pointer  px-4 py-3 flex align-items-center  transition-colors transition-duration-150"
+                        class="cursor-pointer px-4 py-3 flex align-items-center transition-colors transition-duration-150"
                         [ngClass]="{'bg-primary': plan === 0, 'text-600': plan !== 0}"
                         (click)="plan = 0;price=9;selectedPlan='month'" style="border-radius: 30px">
                         <span class="font-medium">Monthly</span>
@@ -530,18 +530,18 @@
             <div class="col-12 lg:col-6">
                 <div class="grid">
     
-                    <div class="col-12 ">
+                    <div class="col-12">
                         <div class="shadow-2 surface-card p-4 border-2 border-transparent cursor-pointer border-round-lg"
                             (click)="userPlan = 0"
                             [ngClass]="{'surface-card surface-border': userPlan !== 0, 'bg-blue-100': userPlan === 0}">
                             <div [ngClass]="{'text-blue-900': userPlan == 0, 'text-900': userPlan !== 0}">
     
                                 <div class="flex flex-column lg:flex-row align-items-center mb-4">
-                                    <div class="mr-3  pb-3 lg:pb-0">
+                                    <div class="mr-3 pb-3 lg:pb-0">
                                         <span
                                             class="inline-flex justify-content-center border-circle align-items-center bg-indigo-100 w-3rem h-3rem"
                                             [ngClass]="{'bg-primary-reverse text-primary': userPlan == 0, 'bg-primary text-primary': userPlan !== 0}">
-                                            <i class="pi pi-pencil text-2xl "></i>
+                                            <i class="pi pi-pencil text-2xl"></i>
                                         </span>
                                     </div>
                                     <div>
@@ -556,7 +556,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 ">
+                    <div class="col-12">
                         <div class="shadow-2 surface-card p-4 border-2 border-transparent cursor-pointer border-round-lg"
                             (click)="userPlan = 1"
                             [ngClass]="{'surface-card surface-border': userPlan !== 1,'bg-blue-100': userPlan === 1}">
@@ -582,7 +582,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 ">
+                    <div class="col-12">
                         <div class="shadow-2 surface-card p-4 border-2 border-transparent cursor-pointer border-round-lg"
                             (click)="userPlan = 2"
                             [ngClass]="{'surface-card surface-border': userPlan !== 2, 'bg-blue-100': userPlan === 2}">
@@ -611,10 +611,10 @@
                 </div>
             </div>
             <div *ngIf="userPlan==0" class="col-12 lg:col-6 lg:pl-4">
-                <div class="shadow-2 bg-blue-100  p-4 border-2 border-transparent border-noround-bottom border-round-lg">
+                <div class="shadow-2 bg-blue-100 p-4 border-2 border-transparent border-noround-bottom border-round-lg">
                     <div class="flex flex-row justify-content-between mb-5 align-items-center">
                         <div class="text-blue-900 text-4xl font-bold mr-2 lg:mr-0">Sketchers</div>
-                        <span class="surface-0 text-700  font-light px-3 py-2 border-round-lg"><span
+                        <span class="surface-0 text-700 font-light px-3 py-2 border-round-lg"><span
                                 class="font-bold text-900 text-xl m-1">{{price}}$</span> per {{selectedPlan}}</span>
                     </div>
                     <p class="text-blue-800 m-0 line-height-3">Pharetra magna ac placerat vestibulum lectus mauris
@@ -644,10 +644,10 @@
                 </div>
             </div>
             <div *ngIf="userPlan==1" class="col-12 lg:col-6 lg:pl-4">
-                <div class="shadow-2 bg-blue-100  p-4 border-2 border-transparent border-noround-bottom border-round-lg">
+                <div class="shadow-2 bg-blue-100 p-4 border-2 border-transparent border-noround-bottom border-round-lg">
                     <div class="flex flex-row justify-content-between mb-5 align-items-center">
                         <div class="text-blue-900 text-4xl font-bold mr-2 lg:mr-0">Painter</div>
-                        <span class="surface-0 text-700  font-light px-3 py-2 border-round-lg"><span
+                        <span class="surface-0 text-700 font-light px-3 py-2 border-round-lg"><span
                                 class="font-bold text-900 text-xl m-1">{{price}}$</span> per {{selectedPlan}}</span>
                     </div>
                     <p class="text-blue-800 m-0 line-height-3">Pharetra magna ac placerat vestibulum lectus mauris
@@ -676,10 +676,10 @@
                 </div>
             </div>
             <div *ngIf="userPlan==2" class="col-12 lg:col-6 lg:pl-4">
-                <div class="shadow-2 bg-blue-100  p-4 border-2 border-transparent border-noround-bottom border-round-lg">
+                <div class="shadow-2 bg-blue-100 p-4 border-2 border-transparent border-noround-bottom border-round-lg">
                     <div class="flex flex-row justify-content-between mb-5 align-items-center">
                         <div class="text-blue-900 text-4xl font-bold mr-2 lg:mr-0">Artist</div>
-                        <span class="surface-0 text-700  font-light px-3 py-2 border-round-lg"><span
+                        <span class="surface-0 text-700 font-light px-3 py-2 border-round-lg"><span
                                 class="font-bold text-900 text-xl m-1">{{price}}$</span> per {{selectedPlan}}</span>
                     </div>
                     <p class="text-blue-800 m-0 line-height-3">Pharetra magna ac placerat vestibulum lectus mauris
