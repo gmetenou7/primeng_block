@@ -201,15 +201,13 @@ export class TestimonialsComponent implements OnInit {
 
 block5 = `
 <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
-<div class="bg-no-repeat  bg-cover bg-center border-round-xl px-6 py-8" style="background: url('assets/images/blocks/testimonial/testimonials-5.jpg')">
-     <div class="text-white flex align-items-center border-round-top h-5rem px-4">
-        <div class="flex align-items-center justify-content-center ">
+<div class="bg-no-repeat bg-cover bg-center border-round-xl px-6 py-8" style="background: url('assets/images/blocks/testimonial/testimonials-5.jpg')">
+     <div class="align-items-center pb-4 pl-4">
             <img src="assets/images/blocks/logos/franki-300.svg" alt="Image">
-        </div>
     </div>
-    <div class="ml-4 line-height-3">
-        <p class="text-white  text-4xl mt-0  mb-0 ">"Very easy to use. I made back the purchase price in just 48 hours! It's great. It's is both attractive and highly adaptable."</p>
-        <div class="text-white font-medium mb-2 mt-3">Esther Howard</div>
+    <div class="pl-4 line-height-3">
+        <p class="text-white text-4xl mt-0 mb-0">"Very easy to use. I made back the purchase price in just 48 hours! It's great. It's is both attractive and highly adaptable."</p>
+        <div class="text-white font-medium py-3">Esther Howard</div>
         <div class="text-indigo-200 text-sm">Marketing Coordinator</div>
     </div>
 </div>
