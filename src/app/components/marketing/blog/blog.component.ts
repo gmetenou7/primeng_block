@@ -350,5 +350,91 @@ export class BlogComponent {
     </div>
 </div>`;
 
+block7: string = `
+    <div class="surface-50 px-4 py-8 md:px-6 lg:px-8">
+        <div class="font-bold text-5xl text-900 mb-3">Recent News</div>
+        <div class="text-700 line-height-3 text-xl mb-6">Elementum nibh tellus molestie nunc non blandit. Enim eu turpis
+            egestas pretium aenean pharetra.</div>
+        <div class="relative flex flex-row grid nogutter">
+            <div class="col-12 lg:col-4 p-3  border-round-xl">
+                <div class="static flex shadow-2 border-round-xl border-transparent h-full" style="
+              background: 
+              linear-gradient(#fff 0 0) padding-box, 
+              linear-gradient(15deg, #F91616, #F97316) border-box;
+             border-left: 10px solid transparent;">
+                <div class="static p-4  shadow-2 border-round  border-round-top-lg surface-card">
+                    <div class="flex mb-3">
+                        <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-4.png" shape="circle"></p-avatar>
+                        <div class="ml-2">
+                            <div class="text-xs font-bold text-900 mb-1">Arlene McCoy</div>
+                            <div class="text-xs flex align-items-center text-700">
+                                <span>9 July, 2022</span>
+                                <div class="border-2 border-circle border-300 ml-2 mr-2"
+                                    style="width: 0.25rem;height: 0.25rem;"></div>
+                                <span>16 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-xl text-900 font-medium mb-3 line-height-3 ">'Real and imminent' extinction risk
+                    </div>
+                    <div class="text-sm line-height-3 mb-3 text-700">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+            </div>
+            </div>
+            <div class="col-12 lg:col-4 p-3 border-round-xl">
+                <div class="static flex shadow-2 border-round-xl border-transparent h-full" style="
+              background: 
+              linear-gradient(#fff 0 0) padding-box, 
+              linear-gradient(15deg, #CC63F1, #6366F1) border-box;
+             border-left: 10px solid transparent;">
+                <div class="static p-4 shadow-2 border-round  border-round-top-lg surface-card">
+                    <div class="flex mb-3">
+                        <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-11.png" shape="circle"></p-avatar>
+                        <div class="ml-2">
+                            <div class="text-xs font-bold text-900 mb-1">Dianne Russell</div>
+                            <div class="text-xs flex align-items-center text-700">
+                                <span>10 July, 2022</span>
+                                <div class="border-2 border-circle border-300 ml-2 mr-2"
+                                    style="width: 0.25rem;height: 0.25rem;"></div>
+                                <span>11 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-xl text-900 font-medium mb-3 line-height-3 ">Climate standards for power plants
+                    </div>
+                    <div class="text-sm line-height-3 mb-3 text-700">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+            </div>
+            </div>
+            <div class="col-12 lg:col-4 p-3 border-round-xl">
+                <div class="static flex shadow-2 border-round-xl border-transparent h-full" style="
+              background: 
+              linear-gradient(#fff 0 0) padding-box, 
+              linear-gradient(15deg, #06D465, #06B6D4) border-box;
+             border-left: 10px solid transparent;">
+                <div class="static p-4 shadow-2 border-round  border-round-top-lg surface-card">
+                    <div class="flex mb-3">
+                        <p-avatar image="assets/images/blocks/avatars/circle/avatar-m-9.png" shape="circle"></p-avatar>
+                        <div class="ml-2">
+                            <div class="text-xs font-bold text-900 mb-1">Ronald Richards</div>
+                            <div class="text-xs flex align-items-center text-700">
+                                <span>11 July, 2022</span>
+                                <div class="border-2 border-circle border-300 ml-2 mr-2"
+                                    style="width: 0.25rem;height: 0.25rem;"></div>
+                                <span>7 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-xl text-900 font-medium mb-3 line-height-3 ">Heat Waves Around the World</div>
+                    <div class="text-sm line-height-3 mb-3 text-700">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>`;
+
     
 }

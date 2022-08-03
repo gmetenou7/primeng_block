@@ -198,4 +198,24 @@ export class CtaComponent {
     </div>
 </div>`;
 
+block12:string = `
+<div class="relative surface-section px-4 py-8 md:px-6 lg:px-8">
+    <div class="static flex flex-column w-full lg:flex-row bg-no-repeat bg-cover px-6 py-6 border-round-xl relative"
+        style="background: url(/assets/images/blocks/cta/row.jpeg);"><img
+        src="/assets/images/blocks/cta/cta-building.png"
+        class="lg:absolute static lg:flex-column flex-column w-20rem h-10rem lg:h-22rem border-round-xl -mt-6 lg:-mt-8 -ml-6 lg:-ml-8">
+        <div class="z-1 sm:ml-0 md:ml-auto sm:w-full md:w-full lg:w-8">
+            <div class="text-indigo-50 text-4xl font-semibold mb-3">Supercharge your workflow</div>
+            <p class="font-medium text-indigo-100 text-l mt-0 mb-5 line-height-3">Phasellus vestibulum lorem sed
+            risus ultricies. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est. Aenean euismod
+            elementum nisi quis eleifend quam.</p>
+            <button pbutton="" pripple="" icon="pi pi-wallet" label="Start  Free Trial"
+            class="p-element p-ripple p-button-warning px-5 flex font-bold mr-3 white-space-nowrap mb-3 lg:mb-0 p-button p-component"
+            ng-reflect-icon="pi pi-wallet" ng-reflect-label="Start  Free Trial"><span
+                class="p-button-icon p-button-icon-left pi pi-wallet" aria-hidden="true"></span><span
+                class="p-button-label">Start Free Trial</span><span class="p-ink"></span></button>
+        </div>
+    </div>
+</div>`;
+
 }

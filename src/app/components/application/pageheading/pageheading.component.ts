@@ -337,4 +337,61 @@ export class PageHeadingComponent {
     </div>
 </div>`;
 
+block13 = ` 
+<div class="surface-50 px-4 py-5 md:px-6 lg:px-8 ">
+<div class="surface-card shadow-2 border-round-xl p-5">
+    <div class="flex align-items-start flex-column lg:justify-content-between lg:flex-row">
+        <div class="flex flex-row align-items-center md:align-items-stretch  mt-4 md:mt-0">
+            <span>
+                <img src="assets/images/blocks/avatars/circle/avatar-f-4.png"  />
+            </span>
+            <div class="ml-3 flex flex-column">
+                <div class="text-900 font-medium mb-1 mt-2">Eleanor Pena</div>
+                <div class="text-600 text-sm mt-2">Marketing Coordinator</div>
+            </div>
+        </div>
+        <div class="mt-5 lg:mt-0" style="left: 0;">
+            <button pButton pRipple label="Settings" class="p-button-outlined text-700 mr-2"></button>
+        </div>
+    </div>
+    <ul class="list-none surface-100 flex flex-column lg:flex-row overflow-y-hidden overflow-x-auto border-round p-3">
+        <li class="col-12 lg:col-4  relative pl-3 flex flex-column justify-content-center border-bottom-1 lg:border-bottom-none lg:border-right-1  p-3 surface-border">
+            <div class="flex flex-column align-items-center lg:align-items-start md:flex-row">
+                <span>
+                    <img src="/assets/images/blocks/pageheading/stat-1.svg" class="w-4rem">
+                </span>
+                <div class="flex flex-column align-items-center lg:align-items-start ml-3">
+                    <div class="text-lg font-medium text-800 mb-2">Top Followers </div>
+            <span class="text-600 white-space-nowrap">Tuesday, 432</span>
+                </div>
+            </div>
+        </li>
+        <li class="col-12 lg:col-4  relative pl-3 flex flex-column justify-content-center border-bottom-1 lg:border-bottom-none lg:border-right-1  p-3 surface-border">
+            <div class="flex flex-column align-items-center lg:align-items-start md:flex-row lg:ml-3">
+                <span>
+                    <img src="/assets/images/blocks/pageheading/stat-2.svg" class="w-4rem">
+                </span>
+                <div class="flex flex-column align-items-center lg:align-items-start ml-3">
+                    <div class="text-lg font-medium text-800 mb-2">Top Favorites</div>
+                    <span class="text-600 white-space-nowrap">Thursday, 970</span>
+                </div>
+            </div>
+        </li>
+        <li class="col-12 lg:col-4 relative pl-3 flex flex-column justify-content-center">
+            <div class="flex flex-column align-items-center lg:align-items-start md:flex-row lg:ml-3">
+                <span>
+                    <img src="/assets/images/blocks/pageheading/stat-3.svg" class="w-4rem">
+                </span>
+                <div class="flex flex-column align-items-center lg:align-items-start ml-3">
+                    <div class="text-lg font-medium text-800 mb-2">Top Unfollows</div>
+                    <span class="text-600 white-space-nowrap">Monday, 91</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+</div> `;
+
+
+
 }

@@ -6,6 +6,7 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 import { ButtonModule } from 'primeng/button';
 import { AccordionModule } from 'primeng/accordion';
 import { RippleModule } from 'primeng/ripple';
+import {CarouselModule} from 'primeng/carousel';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { RippleModule } from 'primeng/ripple';
     BlockViewerModule,
     ButtonModule,
     AccordionModule,
-    RippleModule
+    RippleModule,
+    CarouselModule
   ],
   declarations: [
     FeatureComponent

@@ -611,3 +611,113 @@
         </ul>
     </div>
 </block-viewer>
+
+<block-viewer header="Cards with Progress Bar" [code]="block10" [new]="true">
+    <div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
+        <div class="grid lg:p-8">
+            <div class="col-12 flex lg:flex-column flex-row lg:col-6 p-2 pr-5">
+                <div class="shadow-2 surface-card border-round p-4 w-full mt-4 lg:mt-0 mb-8 text-center">
+                    <div class="flex flex-column mb-5 relative">
+                        <img src="/assets/images/blocks/stats/shoes.png" width="100" height="100"
+                            class="absolute left-50" style="margin-left:-50px; top: -50px">
+                        <div class="pt-8 ">
+                            <span class="block text-900 mb-1 text-xl font-medium">Shoes</span>
+                            <p class="text-600 mt-0 mb-0">500 per Month</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-content-between align-items-center">
+                        <span class="text-900 inline-flex justify-content-between align-items-center">
+                            <span class="text-600">Monthly Goal</span>
+                        </span>
+                        <span class="text-900 font-medium">70%</span>
+                    </div>
+                    <div class="surface-300 w-full mt-2 mb-3" style="height: 7px; border-radius: 4px">
+                        <div class="bg-blue-500 h-full" style="width:70%; border-radius: 4px"></div>
+                    </div>
+                    <div class="flex justify-content-between align-items-center">
+                        <span class="text-900 inline-flex justify-content-between align-items-center">
+                            <span class="text-900">350/500</span>
+                        </span>
+                        <span class="text-blue-500 font-medium">2 weeks left</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 flex lg:flex-column flex-row lg:col-6 p-2 pr-5">
+                <div class="shadow-2 surface-card border-round p-4 w-full mb-8 text-center">
+                    <div class="flex flex-column mb-5 relative">
+                        <img src="/assets/images/blocks/stats/hats.png" width="100" height="100"
+                            class="absolute left-50" style="margin-left:-50px; top: -50px">
+                        <div class="pt-8 ">
+                            <span class="block text-900 mb-1 text-xl font-medium">Hats</span>
+                            <p class="text-600 mt-0 mb-0">500 per Month</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-content-between align-items-center">
+                        <span class="text-900 inline-flex justify-content-between align-items-center">
+                            <span class="text-600">Monthly Goal</span>
+                        </span>
+                        <span class="text-900 font-medium">20%</span>
+                    </div>
+                    <div class="surface-300 w-full mt-2 mb-3" style="height: 7px; border-radius: 4px">
+                        <div class="bg-yellow-500 h-full" style="width:20%; border-radius: 4px"></div>
+                    </div>
+                    <div class="flex justify-content-between align-items-center">
+                        <span class="text-900 inline-flex justify-content-between align-items-center">
+                            <span class="text-900">100/500</span>
+                        </span>
+                        <span class="text-blue-500 font-medium">2 weeks left</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block-viewer>
+
+<block-viewer header="Date Picker" [code]="block11" [new]="true">
+    <div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
+        <div class="grid bg-blue-600 border-round-xl pt-3 pb-3 ">
+            <div class=" pl-8 ml-7 lg:ml-4 lg:col-2 bg-blue-600 text-blue-100  p-4 ">
+                <a pRipple class="flex align-items-center ml-auto no-underline font-medium mt-3 lg:mt-0 cursor-pointer"
+                    (click)="next();">
+                    <i class="pi pi-angle-up  "></i>
+                </a>
+                <div class="mt-2 mb-2">
+                    <span class="block text-0 mb-1 text-3xl font-semibold">{{date.getDate()}}</span>
+                    <p class="mt-0 ">{{monthNames[date.getMonth()]}}</p>
+                </div>
+                <a pRipple
+                    class="flex text-blue-200 align-items-center ml-auto no-underline font-medium mt-3 lg:mt-0 cursor-pointer"
+                    (click)="previous();">
+                    <i class="pi pi-angle-down  "></i>
+                </a>
+            </div>
+            <div class="col-12 md:col-6 lg:col-3">
+                <div class="bg-blue-500 text-0 shadow-2 p-3 border-round-md">
+                    <div class="text-center ">
+                        <i class="pi pi-eye text-blue-200 text-5xl"></i>
+                        <div class=" text-sm font-700 my-3 font-semibold">VIEWS</div>
+                        <span class="font-medium text-blue-100 -mt-3">{{date.getDay()*1000+1000}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 md:col-6 lg:col-3 lg:ml-2 ">
+                <div class="bg-blue-500 text-0 shadow-2 p-3 border-round-md">
+                    <div class="text-center ">
+                        <i class="pi pi-users text-blue-200 text-5xl"></i>
+                        <div class=" text-sm font-700 my-3 font-semibold">FOLLOWS</div>
+                        <span class="font-medium text-blue-100 -mt-3">{{date.getDay()*10+10}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 md:col-6 lg:col-3 lg:ml-2 ">
+                <div class="bg-blue-500 text-0 shadow-2 p-3 border-round-md">
+                    <div class="text-center ">
+                        <i class="pi pi-heart text-blue-200 text-5xl"></i>
+                        <div class=" text-sm font-700 my-3 font-semibold">LIKES</div>
+                        <span class="font-medium text-blue-100 -mt-3">{{date.getDay()*100+100}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block-viewer>

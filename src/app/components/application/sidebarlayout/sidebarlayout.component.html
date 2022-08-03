@@ -2049,3 +2049,155 @@
         </div>
     </div>
 </block-viewer>
+
+<block-viewer header="SelectButton and Gradient Menu" [code]="block13" [new]="true"
+    [previewStyle]="{height: '100vh', overflow: 'hidden'}">
+    <div class="min-h-screen flex relative lg:static surface-ground">
+        <div id="app-sidebar-13"
+            class="surface-section h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 surface-border select-none"
+            style="width:280px">
+            <div class="flex flex-column h-full">
+                <div class="flex align-items-center px-5 py-6  flex-shrink-0 border-bottom-1 border-bluegray-200"
+                    style="height:60px">
+                    <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="30">
+                </div>
+                <div class="overflow-y-auto">
+                    <div class=" flex align-items-center justify-content-center mb-6 mt-5">
+                        <p-selectButton [options]="menuOptions" [(ngModel)]="menuOption" optionLabel="name"
+                            optionValue="value"></p-selectButton>
+                    </div>
+                    <ul class="list-none p-0 m-0 overflow-hidden" *ngIf="menuOption==0">
+                        <li>
+                            <a pRipple
+                                class="flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent  hover:surface-100 transition-duration-150 transition-colors text-indigo-500"
+                                style="border-radius: 12px">
+                                <i class="pi pi-home mr-2"></i>
+                                <span class="font-medium">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a pRipple
+                                class="flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent  hover:surface-100 transition-duration-150 transition-colors"
+                                style="border-radius: 12px">
+                                <i class="pi pi-bookmark mr-2 "></i>
+                                <span class="font-medium">Bookmarks</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a pRipple
+                                class="flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent  hover:surface-100 transition-duration-150 transition-colors"
+                                style="border-radius: 12px">
+                                <i class="pi pi-users mr-2 "></i>
+                                <span class="font-medium">Team</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a pRipple
+                                class="flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent hover:surface-100 transition-duration-150 transition-colors"
+                                style="border-radius: 12px">
+                                <i class="pi pi-comments mr-2  "></i>
+                                <span class="font-medium">Messages</span>
+                                <span
+                                    class="inline-flex align-items-center justify-content-center ml-auto bg-indigo-500 text-0 border-circle"
+                                    style="min-width: 1.5rem; height: 1.5rem">3</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a pRipple
+                                class="flex align-items-center cursor-pointer p-3 text-700 border-2 border-transparent  hover:surface-100 transition-duration-150 transition-colors"
+                                style="border-radius: 12px">
+                                <i class="pi pi-calendar mr-2  "></i>
+                                <span class="font-medium">Calendar</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list-none p-0 m-0 overflow-hidden" *ngIf="menuOption==1">
+                        <li>
+                            <a pRipple
+                                class="flex align-items-center cursor-pointer p-3 border-2 border-transparent  hover:surface-100 text-700 transition-duration-150 transition-colors"
+                                style="border-radius: 12px">
+                                <i class="pi pi-discord mr-2 "></i>
+                                <span class="font-medium">Discord</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a pRipple
+                                class="flex align-items-center cursor-pointer p-3 border-2 border-transparent hover:surface-100 text-700 transition-duration-150 transition-colors"
+                                style="border-radius: 12px">
+                                <i class="pi pi-slack mr-2 "></i>
+                                <span class="font-medium">Slack</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a pRipple
+                                class="flex align-items-center cursor-pointer p-3 border-2 border-transparent  hover:surface-100 text-700 transition-duration-150 transition-colors"
+                                style="border-radius: 12px">
+                                <i class="pi pi-github mr-2 "></i>
+                                <span class="font-medium">GitHub</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-auto">
+                    <div class="mt-auto border-top-1 surface-border p-3 flex justify-content-center ">
+                        <a pRipple
+                            class="cursor-pointer mr-5 text-purple-500 inline-flex align-items-center justify-content-center  hover:surface-100 transition-colors transition-duration-150 "
+                            style="width: 42px; height: 42px">
+                            <i class="pi pi-chart-pie text-3xl"></i>
+                        </a>
+                        <a pRipple
+                            class="cursor-pointer mr-5 text-yellow-500 inline-flex align-items-center justify-content-center  hover:surface-100  transition-colors transition-duration-150 "
+                            style="width: 42px; height: 42px">
+                            <i class="pi pi-bolt text-3xl"></i>
+                        </a>
+                        <a pRipple
+                            class="cursor-pointer  align-items-center justify-content-center  hover:surface-100  transition-colors transition-duration-150 "
+                            style="width: 42px; height: 42px">
+                            <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-2"
+                                style="width: 42px; height: 42px" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="min-h-screen flex flex-column relative flex-auto">
+            <div class="flex flex-column surface-0 h-full border-round-xl  m-4">
+                <div class="flex justify-content-between align-items-center px-5 m-1  relative lg:static"
+                    style="height:80px">
+                    <div class="flex">
+                        <a pRipple class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-13"
+                            enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden"
+                            leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+                            <i class="pi pi-bars text-4xl"></i>
+                        </a>
+                        <div class="font-medium -mb-5">Welcome back, <span class="font-bold">Christina!</span> 👋</div>
+                    </div>
+                    <a pRipple class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden"
+                        enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout"
+                        [hideOnOutsideClick]="true">
+                        <i class="pi pi-ellipsis-v text-2xl"></i>
+                    </a>
+                    <ul
+                        class="list-none p-0 m-0 hidden lg:flex lg:align-items-center select-none lg:flex-row 
+                        surface-section border-1 lg:border-none surface-border right-0 top-100 z-1 shadow-2 lg:shadow-none absolute lg:static">
+                        <li>
+                            <span class="p-input-icon-left m-2 lg:mb-0 lg:mt-0">
+                                <i class="pi pi-search"></i>
+                                <input type="text" pInputText class="border-round-3xl surface-50 w-10rem sm:w-15rem"
+                                    placeholder="Search">
+                            </span>
+                        </li>
+                        <li>
+                            <button class="border-round-3xl m-2  lg:mb-0 lg:mt-0  " iconPos="right" pButton pRipple
+                                icon="pi pi-plus" label="Add Task"></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-5 pt-1 flex w-full h-full relative">
+                    <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block-viewer>
