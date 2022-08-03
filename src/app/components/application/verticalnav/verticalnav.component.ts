@@ -468,8 +468,8 @@ export class VerticalNavComponent {
 </div>`;
 
 block6 = `
-<div class="surface-card  select-none p-3">
-<div pRipple class="p-3 flex align-items-center  text-900 ">
+<div class="surface-card select-none p-3">
+<div pRipple class="p-3 flex align-items-center text-900 ">
     <i class="pi pi-book text-900 pr-2"></i>
     <span class="font-medium">Organization</span>
 </div>
@@ -484,7 +484,6 @@ block6 = `
     </li>
     <li class="ml-2 border-left-1 text-700 border-300"
         [ngClass]="{'text-blue-500 bg-blue-50 border-blue-500': activeTab1 === 1}">
-
         <a pRipple
             class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150 "
             (click)="activeTab1 = 1">
@@ -493,7 +492,6 @@ block6 = `
     </li>
     <li class="ml-2 border-left-1 text-700 border-300"
         [ngClass]="{'text-blue-500 bg-blue-50 border-blue-500': activeTab1 === 2}">
-
         <a pRipple
             class="flex align-items-center cursor-pointer p-3 hover:surface-100 border-round transition-colors transition-duration-150"
             (click)="activeTab1 = 2">
@@ -502,12 +500,11 @@ block6 = `
     </li>
     <li class="ml-2 ">
         <div class="border-left-1 text-700 border-300">
-
             <a pRipple class=" flex align-items-center p-3 ">
                 <span class="font-medium ">Domains</span>
             </a>
         </div>
-        <ul class="list-none py-0 pr-0 m-0 pl-0">
+        <ul class="list-none py-0 px-0">
             <li class=" border-left-1 text-700 border-300"
                 [ngClass]="{'text-blue-500 bg-blue-50 border-blue-500': activeTab1 === 3}">
                 <a pRipple
@@ -531,14 +528,14 @@ block6 = `
 `;
 
 block7 = `
- <div class="surface-card  select-none p-3">
-        <div pRipple class="p-3 flex align-items-center  text-900 ">
+<div class="surface-card select-none p-3">
+        <div pRipple class="p-3 flex align-items-center text-900 ">
             <i class="pi pi-book text-900 pr-2"></i>
             <span class="font-medium">Organization</span>
         </div>
         <ul class="list-none pl-3 m-0 pb-2 overflow-hidden ">
             <li class="text-700 relative border-left-1 surface-border"
-                [ngClass]="{'text-blue-500 bg-blue-50  border-blue-500': activeTab2 === 0}">
+                [ngClass]="{'text-blue-500 bg-blue-50 border-blue-500': activeTab2 === 0}">
                 <div *ngIf="activeTab2==0" class="absolute border-2 border-circle border-blue-500 surface-section"
                     style="width: 0.75rem; height:0.75rem; left:-6.5px; top: 40%;"></div>
                 <a pRipple
@@ -548,7 +545,7 @@ block7 = `
                 </a>
             </li>
             <li class="text-700 relative border-left-1 surface-border"
-                [ngClass]="{'text-blue-500 bg-blue-50  border-blue-500': activeTab2 === 1}">
+                [ngClass]="{'text-blue-500 bg-blue-50 border-blue-500': activeTab2 === 1}">
                 <div *ngIf="activeTab2==1" class="absolute border-2 border-circle border-blue-500 surface-section"
                     style="width: 0.75rem; height:0.75rem; left:-6.5px; top: 40%;"></div>
                 <a pRipple
@@ -558,7 +555,7 @@ block7 = `
                 </a>
             </li>
             <li class="text-700 relative border-left-1 surface-border"
-                [ngClass]="{'text-blue-500 bg-blue-50  border-blue-500': activeTab2 === 2}">
+                [ngClass]="{'text-blue-500 bg-blue-50 border-blue-500': activeTab2 === 2}">
                 <div *ngIf="activeTab2==2" class="absolute border-2 border-circle border-blue-500 surface-section"
                     style="width: 0.75rem; height:0.75rem; left:-6.5px; top: 40%;"></div>
                 <a pRipple
@@ -567,17 +564,16 @@ block7 = `
                     <span class="font-medium ">Reports</span>
                 </a>
             </li>
-            <li class="text-700 relative  surface-border ">
+            <li class="text-700 relative surface-border ">
                 <div class="border-left-1 text-700 border-300 surface-border pl-2">
                     <a pRipple class=" flex align-items-center p-3 ">
                         <span class="font-medium ">Domains</span>
                     </a>
                 </div>
-                <ul class="list-none py-0 pr-0 m-0 pl-0">
+                <ul class="list-none py-0 px-0 ">
                     <li class="text-700 relative border-left-1 surface-border"
-                        [ngClass]="{'text-blue-500 bg-blue-50  border-blue-500': activeTab2 === 3}">
-                        <div *ngIf="activeTab2==3"
-                            class="absolute border-2 border-circle border-blue-500 surface-section"
+                        [ngClass]="{'text-blue-500 bg-blue-50 border-blue-500': activeTab2 === 3}">
+                        <div *ngIf="activeTab2==3" class="absolute border-2 border-circle border-blue-500 surface-section"
                             style="width: 0.75rem; height:0.75rem; left:-6.5px; top: 40%;"></div>
                         <a pRipple
                             class="flex align-items-center cursor-pointer p-3 ml-2 hover:surface-100 border-round transition-colors transition-duration-150"
@@ -586,9 +582,8 @@ block7 = `
                         </a>
                     </li>
                     <li class="text-700 relative border-left-1 surface-border"
-                        [ngClass]="{'text-blue-500 bg-blue-50  border-blue-500': activeTab2 === 4}">
-                        <div *ngIf="activeTab2==4"
-                            class="absolute border-2 border-circle border-blue-500 surface-section"
+                        [ngClass]="{'text-blue-500 bg-blue-50 border-blue-500': activeTab2 === 4}">
+                        <div *ngIf="activeTab2==4" class="absolute border-2 border-circle border-blue-500 surface-section"
                             style="width: 0.75rem; height:0.75rem; left:-6.5px; top: 40%;"></div>
                         <a pRipple
                             class="flex align-items-center cursor-pointer p-3 ml-2 hover:surface-100 border-round transition-colors transition-duration-150"
@@ -599,7 +594,7 @@ block7 = `
                 </ul>
             </li>
         </ul>
-    </div>
+</div>
 `;
 
 

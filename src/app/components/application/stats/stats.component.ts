@@ -616,8 +616,8 @@ block10 = `
     <div class="col-12 flex lg:flex-column flex-row lg:col-6 p-2 pr-5">
         <div class="shadow-2 surface-card border-round p-4 w-full mt-4 lg:mt-0 mb-8 text-center">
             <div class="flex flex-column mb-5 relative">
-                <img src="/assets/images/blocks/stats/shoes.png" width="100" height="100"
-                    class="absolute left-50" style="margin-left:-50px; top: -50px">
+                <img src="/assets/images/blocks/stats/shoes.png" width="100" height="100" class="absolute left-50"
+                    style="margin-left:-50px; top: -50px">
                 <div class="pt-8 ">
                     <span class="block text-900 mb-1 text-xl font-medium">Shoes</span>
                     <p class="text-600 mt-0 mb-0">500 per Month</p>
@@ -643,8 +643,8 @@ block10 = `
     <div class="col-12 flex lg:flex-column flex-row lg:col-6 p-2 pr-5">
         <div class="shadow-2 surface-card border-round p-4 w-full mb-8 text-center">
             <div class="flex flex-column mb-5 relative">
-                <img src="/assets/images/blocks/stats/hats.png" width="100" height="100"
-                    class="absolute left-50" style="margin-left:-50px; top: -50px">
+                <img src="/assets/images/blocks/stats/hats.png" width="100" height="100" class="absolute left-50"
+                    style="margin-left:-50px; top: -50px">
                 <div class="pt-8 ">
                     <span class="block text-900 mb-1 text-xl font-medium">Hats</span>
                     <p class="text-600 mt-0 mb-0">500 per Month</p>
@@ -674,26 +674,26 @@ block10 = `
 block11 = `
 <div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
 <div class="grid bg-blue-600 border-round-xl pt-3 pb-3 ">
-    <div class=" pl-8 ml-7 lg:ml-4 lg:col-2 bg-blue-600 text-blue-100  p-4 ">
+    <div class=" pl-8 ml-7 lg:ml-4 lg:col-2 bg-blue-600 text-blue-100 p-4 ">
         <a pRipple class="flex align-items-center ml-auto no-underline font-medium mt-3 lg:mt-0 cursor-pointer"
             (click)="next();">
-            <i class="pi pi-angle-up  "></i>
+            <i class="pi pi-angle-up"></i>
         </a>
         <div class="mt-2 mb-2">
-            <span class="block text-0 mb-1 text-3xl font-semibold">{{date.getDate()}}</span>
+            <span class="block mb-1 text-3xl font-semibold">{{date.getDate()}}</span>
             <p class="mt-0 ">{{monthNames[date.getMonth()]}}</p>
         </div>
         <a pRipple
             class="flex text-blue-200 align-items-center ml-auto no-underline font-medium mt-3 lg:mt-0 cursor-pointer"
             (click)="previous();">
-            <i class="pi pi-angle-down  "></i>
+            <i class="pi pi-angle-down"></i>
         </a>
     </div>
     <div class="col-12 md:col-6 lg:col-3">
         <div class="bg-blue-500 text-0 shadow-2 p-3 border-round-md">
             <div class="text-center ">
                 <i class="pi pi-eye text-blue-200 text-5xl"></i>
-                <div class=" text-sm font-700 my-3 font-semibold">VIEWS</div>
+                <div class="text-sm text-white font-700 my-3 font-semibold">VIEWS</div>
                 <span class="font-medium text-blue-100 -mt-3">{{date.getDay()*1000+1000}}</span>
             </div>
         </div>
@@ -702,7 +702,7 @@ block11 = `
         <div class="bg-blue-500 text-0 shadow-2 p-3 border-round-md">
             <div class="text-center ">
                 <i class="pi pi-users text-blue-200 text-5xl"></i>
-                <div class=" text-sm font-700 my-3 font-semibold">FOLLOWS</div>
+                <div class="text-sm text-white font-700 my-3 font-semibold">FOLLOWS</div>
                 <span class="font-medium text-blue-100 -mt-3">{{date.getDay()*10+10}}</span>
             </div>
         </div>
@@ -711,7 +711,7 @@ block11 = `
         <div class="bg-blue-500 text-0 shadow-2 p-3 border-round-md">
             <div class="text-center ">
                 <i class="pi pi-heart text-blue-200 text-5xl"></i>
-                <div class=" text-sm font-700 my-3 font-semibold">LIKES</div>
+                <div class="text-sm text-white font-700 my-3 font-semibold">LIKES</div>
                 <span class="font-medium text-blue-100 -mt-3">{{date.getDay()*100+100}}</span>
             </div>
         </div>
