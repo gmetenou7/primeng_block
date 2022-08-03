@@ -359,7 +359,6 @@ block7: string = `
             <div class="col-12 lg:col-4 p-3  border-round-xl">
                 <div class="static flex shadow-2 border-round-xl border-transparent h-full" style="
               background: 
-              linear-gradient(#fff 0 0) padding-box, 
               linear-gradient(15deg, #F91616, #F97316) border-box;
              border-left: 10px solid transparent;">
                 <div class="static p-4  shadow-2 border-round  border-round-top-lg surface-card">
@@ -385,7 +384,6 @@ block7: string = `
             <div class="col-12 lg:col-4 p-3 border-round-xl">
                 <div class="static flex shadow-2 border-round-xl border-transparent h-full" style="
               background: 
-              linear-gradient(#fff 0 0) padding-box, 
               linear-gradient(15deg, #CC63F1, #6366F1) border-box;
              border-left: 10px solid transparent;">
                 <div class="static p-4 shadow-2 border-round  border-round-top-lg surface-card">
@@ -411,7 +409,6 @@ block7: string = `
             <div class="col-12 lg:col-4 p-3 border-round-xl">
                 <div class="static flex shadow-2 border-round-xl border-transparent h-full" style="
               background: 
-              linear-gradient(#fff 0 0) padding-box, 
               linear-gradient(15deg, #06D465, #06B6D4) border-box;
              border-left: 10px solid transparent;">
                 <div class="static p-4 shadow-2 border-round  border-round-top-lg surface-card">

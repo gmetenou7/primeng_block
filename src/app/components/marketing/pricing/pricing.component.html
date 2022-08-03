@@ -529,13 +529,13 @@
         <div class="grid">
             <div class="col-12 lg:col-6">
                 <div class="grid">
-
+    
                     <div class="col-12 ">
                         <div class="shadow-2 surface-card p-4 border-2 border-transparent cursor-pointer border-round-lg"
                             (click)="userPlan = 0"
                             [ngClass]="{'surface-card surface-border': userPlan !== 0, 'bg-blue-100': userPlan === 0}">
                             <div [ngClass]="{'text-blue-900': userPlan == 0, 'text-900': userPlan !== 0}">
-
+    
                                 <div class="flex flex-column lg:flex-row align-items-center mb-4">
                                     <div class="mr-3  pb-3 lg:pb-0">
                                         <span
@@ -551,7 +551,8 @@
                                 </div>
                                 <p class="lg:ml-7 m-0 font-light line-height-3">Nunc consequat interdum varius sit.
                                     <span class="font-medium">{{price}}$/{{selectedPlan}} | </span>Save $67 on Annual
-                                    Plan</p>
+                                    Plan
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -560,7 +561,7 @@
                             (click)="userPlan = 1"
                             [ngClass]="{'surface-card surface-border': userPlan !== 1,'bg-blue-100': userPlan === 1}">
                             <div [ngClass]="{'text-blue-900': userPlan == 1, 'text-900': userPlan !== 1}">
-
+    
                                 <div class="flex flex-column lg:flex-row align-items-center mb-4">
                                     <div class="mr-3 pb-3 lg:pb-0">
                                         <span
@@ -576,7 +577,8 @@
                                 </div>
                                 <p class="lg:ml-7 m-0 font-light line-height-3">Nunc consequat interdum varius sit.
                                     <span class="font-medium">{{price}}$/{{selectedPlan}} | </span>Save $67 on Annual
-                                    userPlan</p>
+                                    userPlan
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -585,7 +587,7 @@
                             (click)="userPlan = 2"
                             [ngClass]="{'surface-card surface-border': userPlan !== 2, 'bg-blue-100': userPlan === 2}">
                             <div [ngClass]="{'text-blue-900': userPlan == 2, 'text-900': userPlan !== 2}">
-
+    
                                 <div class="flex flex-column lg:flex-row align-items-center mb-4">
                                     <div class="mr-3 pb-3 lg:pb-0">
                                         <span
@@ -601,18 +603,18 @@
                                 </div>
                                 <p class="lg:ml-7 m-0 font-light line-height-3">Nunc consequat interdum varius sit.
                                     <span class="font-medium">{{price}}$/{{selectedPlan}} | </span>Save $67 on Annual
-                                    userPlan</p>
+                                    userPlan
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div *ngIf="userPlan==0" class="col-12 lg:col-6 lg:pl-4">
-                <div
-                    class="shadow-2 bg-blue-100  p-4 border-2 border-transparent border-noround-bottom border-round-lg">
+                <div class="shadow-2 bg-blue-100  p-4 border-2 border-transparent border-noround-bottom border-round-lg">
                     <div class="flex flex-row justify-content-between mb-5 align-items-center">
                         <div class="text-blue-900 text-4xl font-bold mr-2 lg:mr-0">Sketchers</div>
-                        <span class="bg-white text-700  font-light px-3 py-2 border-round-lg"><span
+                        <span class="surface-0 text-700  font-light px-3 py-2 border-round-lg"><span
                                 class="font-bold text-900 text-xl m-1">{{price}}$</span> per {{selectedPlan}}</span>
                     </div>
                     <p class="text-blue-800 m-0 line-height-3">Pharetra magna ac placerat vestibulum lectus mauris
@@ -642,18 +644,16 @@
                 </div>
             </div>
             <div *ngIf="userPlan==1" class="col-12 lg:col-6 lg:pl-4">
-                <div
-                    class="shadow-2 bg-blue-100  p-4 border-2 border-transparent border-noround-bottom border-round-lg">
+                <div class="shadow-2 bg-blue-100  p-4 border-2 border-transparent border-noround-bottom border-round-lg">
                     <div class="flex flex-row justify-content-between mb-5 align-items-center">
                         <div class="text-blue-900 text-4xl font-bold mr-2 lg:mr-0">Painter</div>
-                        <span class="bg-white text-700  font-light px-3 py-2 border-round-lg"><span
+                        <span class="surface-0 text-700  font-light px-3 py-2 border-round-lg"><span
                                 class="font-bold text-900 text-xl m-1">{{price}}$</span> per {{selectedPlan}}</span>
                     </div>
                     <p class="text-blue-800 m-0 line-height-3">Pharetra magna ac placerat vestibulum lectus mauris
                         ultrices. Nec dui nunc mattis enim ut tellus elementum sagittis vitae.</p>
                 </div>
-                <div
-                    class="shadow-2 border-round-lg border-noround-top surface-card shadow-2 p-4 flex flex-column ">
+                <div class="shadow-2 border-round-lg border-noround-top surface-card shadow-2 p-4 flex flex-column ">
                     <ul class="list-none p-0 m-0">
                         <li class="flex align-items-center my-4">
                             <i class="pi pi-reply text-700 mr-3"></i>
@@ -676,11 +676,10 @@
                 </div>
             </div>
             <div *ngIf="userPlan==2" class="col-12 lg:col-6 lg:pl-4">
-                <div
-                    class="shadow-2 bg-blue-100  p-4 border-2 border-transparent border-noround-bottom border-round-lg">
+                <div class="shadow-2 bg-blue-100  p-4 border-2 border-transparent border-noround-bottom border-round-lg">
                     <div class="flex flex-row justify-content-between mb-5 align-items-center">
                         <div class="text-blue-900 text-4xl font-bold mr-2 lg:mr-0">Artist</div>
-                        <span class="bg-white text-700  font-light px-3 py-2 border-round-lg"><span
+                        <span class="surface-0 text-700  font-light px-3 py-2 border-round-lg"><span
                                 class="font-bold text-900 text-xl m-1">{{price}}$</span> per {{selectedPlan}}</span>
                     </div>
                     <p class="text-blue-800 m-0 line-height-3">Pharetra magna ac placerat vestibulum lectus mauris
