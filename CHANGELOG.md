@@ -1,5 +1,4 @@
 # Changelog
-
 ## 3.0.1
 
 - Fixed image sizing for last picture in "E-Commerce / Product Overview / Tabs"
