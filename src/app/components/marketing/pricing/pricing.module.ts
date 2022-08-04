@@ -6,6 +6,8 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
 import { InputSwitchModule } from 'primeng/inputswitch';
+import { FormsModule } from '@angular/forms';
+import { RadioButtonModule } from 'primeng/radiobutton';
 
 @NgModule({
   imports: [
@@ -14,7 +16,9 @@ import { InputSwitchModule } from 'primeng/inputswitch';
     BlockViewerModule,
     ButtonModule,
     RippleModule,
-    InputSwitchModule
+    InputSwitchModule,
+    RadioButtonModule,
+    FormsModule
   ],
   declarations: [
     PricingComponent

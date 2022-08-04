@@ -610,17 +610,143 @@ export class StatsComponent implements OnInit {
     </ul>
 </div>`;
 
-    items: MenuItem[];
+block10 = `
+<div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
+<div class="grid lg:p-8">
+    <div class="col-12 flex lg:flex-column flex-row lg:col-6 p-2 pr-5">
+        <div class="shadow-2 surface-card border-round p-4 w-full mt-4 lg:mt-0 mb-8 text-center">
+            <div class="flex flex-column mb-5 relative">
+                <img src="/assets/images/blocks/stats/shoes.png" width="100" height="100" class="absolute left-50"
+                    style="margin-left:-50px; top: -50px">
+                <div class="pt-8 ">
+                    <span class="block text-900 mb-1 text-xl font-medium">Shoes</span>
+                    <p class="text-600 mt-0 mb-0">500 per Month</p>
+                </div>
+            </div>
+            <div class="flex justify-content-between align-items-center">
+                <span class="text-900 inline-flex justify-content-between align-items-center">
+                    <span class="text-600">Monthly Goal</span>
+                </span>
+                <span class="text-900 font-medium">70%</span>
+            </div>
+            <div class="surface-300 w-full mt-2 mb-3" style="height: 7px; border-radius: 4px">
+                <div class="bg-blue-500 h-full" style="width:70%; border-radius: 4px"></div>
+            </div>
+            <div class="flex justify-content-between align-items-center">
+                <span class="text-900 inline-flex justify-content-between align-items-center">
+                    <span class="text-900">350/500</span>
+                </span>
+                <span class="text-blue-500 font-medium">2 weeks left</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 flex lg:flex-column flex-row lg:col-6 p-2 pr-5">
+        <div class="shadow-2 surface-card border-round p-4 w-full mb-8 text-center">
+            <div class="flex flex-column mb-5 relative">
+                <img src="/assets/images/blocks/stats/hats.png" width="100" height="100" class="absolute left-50"
+                    style="margin-left:-50px; top: -50px">
+                <div class="pt-8 ">
+                    <span class="block text-900 mb-1 text-xl font-medium">Hats</span>
+                    <p class="text-600 mt-0 mb-0">500 per Month</p>
+                </div>
+            </div>
+            <div class="flex justify-content-between align-items-center">
+                <span class="text-900 inline-flex justify-content-between align-items-center">
+                    <span class="text-600">Monthly Goal</span>
+                </span>
+                <span class="text-900 font-medium">20%</span>
+            </div>
+            <div class="surface-300 w-full mt-2 mb-3" style="height: 7px; border-radius: 4px">
+                <div class="bg-yellow-500 h-full" style="width:20%; border-radius: 4px"></div>
+            </div>
+            <div class="flex justify-content-between align-items-center">
+                <span class="text-900 inline-flex justify-content-between align-items-center">
+                    <span class="text-900">100/500</span>
+                </span>
+                <span class="text-blue-500 font-medium">2 weeks left</span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+`;
+
+block11 = `
+<div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
+<div class="flex flex-column lg:flex-row bg-primary text-primary border-round-xl pt-3 pb-3">
+    <div class="col-6 col-offset-6 lg:col-offset-0 lg:col-2 flex flex-column pt-4 lg:pl-8">
+        <a pRipple class="flex align-items-center no-underline font-medium cursor-pointer -ml-3 lg:ml-0"
+            (click)="next();">
+            <i class="pi pi-angle-up"></i>
+        </a>
+        <div class="flex flex-column mt-2 -ml-3 lg:ml-0">
+            <span class="block mb-1 text-3xl font-semibold">{{date.getDate()}}</span>
+            <p class="mt-0">{{monthNames[date.getMonth()]}}</p>
+        </div>
+        <a pRipple
+            class="flex align-items-center no-underline font-medium cursor-pointer -ml-3 lg:ml-0"
+            (click)="previous();">
+            <i class="pi pi-angle-down"></i>
+        </a>
+    </div>
+    <div class="col-12 lg:col-3">
+        <div class="bg-primary text-primary shadow-2 p-3 border-round-md">
+            <div class="text-center">
+                <i class="pi pi-eye text-5xl"></i>
+                <div class="text-sm font-700 my-3 font-semibold">VIEWS</div>
+                <span class="font-medium -mt-3">{{date.getDay()*1000+1000}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 lg:col-3 lg:ml-2 ">
+        <div class="bg-primary text-primary shadow-2 p-3 border-round-md">
+            <div class="text-center ">
+                <i class="pi pi-users text-5xl"></i>
+                <div class="text-sm font-700 my-3 font-semibold">FOLLOWS</div>
+                <span class="font-medium -mt-3">{{date.getDay()*10+10}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 lg:col-3 lg:ml-2 ">
+        <div class="bg-primary text-primary shadow-2 p-3 border-round-md">
+            <div class="text-center">
+                <i class="pi pi-heart text-5xl"></i>
+                <div class="text-sm font-700 my-3 font-semibold">LIKES</div>
+                <span class="font-medium -mt-3">{{date.getDay()*100+100}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+`;
+
+items: MenuItem[];
 
     ngOnInit() {
         this.items = [
-        {
-            label: 'Options',
-            items: [
-                {label: 'Add New', icon: 'pi pi-fw pi-plus'},
-                {label: 'Search', icon: 'pi pi-fw pi-search'}
-            ]
-        }];
+            {
+                label: 'Options',
+                items: [
+                    { label: 'Add New', icon: 'pi pi-fw pi-plus' },
+                    { label: 'Search', icon: 'pi pi-fw pi-search' }
+                ]
+            }];
     }
+
+    monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+  
+      date: Date = new Date();
+  
+      previous() {
+          this.date.setDate(this.date.getDate()-1);
+      }
+  
+      next() {
+          this.date.setDate(this.date.getDate()+1);
+  
+      }
+  
 
 }

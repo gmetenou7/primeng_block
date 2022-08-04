@@ -5,6 +5,19 @@ import { Component } from '@angular/core';
 })
 export class FeatureComponent {
 
+    screenshots: any[] = [
+        {
+            'name': 'Screenshot 1',
+            'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'image': 'assets/images/blocks/feature/col.png',
+        },
+        {
+            'name': 'Screenshot 2',
+            'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'image': 'assets/images/blocks/feature/col1.png',
+        },
+    ];
+
     activeTab1 = 0;
 
     activeTab2 = 0;
@@ -588,6 +601,105 @@ export class FeatureComponent {
     </ul>
 </div>`;
 
-    block13: string = ``;
+    block13: string = `
+    <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+        <div class="text-center bg-no-repeat bg-cover px-6 py-8" style="background: url('assets/images/blocks/feature/overlapping-cards.jpg')">
+            <div class="text-white text-6xl font-semibold mb-3">Augue Lacus <span class="text-primary">Viverra</span> Vitae</div>
+            <p class="text-gray-300 text-xl mt-0 mb-8 line-height-3">Phasellus vestibulum lorem sed risus ultricies. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est. 
+                Aenean euismod elementum nisi quis eleifend quam.</p>
+        </div>
+        <div class="flex flex-column lg:flex-row px-4 lg:px-6 gap-5 -mt-8">
+            <div class="flex flex-column lg:w-4">
+                <div class="flex align-items-center border-round-top bg-primary text-primary h-5rem px-4">
+                    <i class="pi pi-sliders-v mr-2 text-2xl"></i>
+                    <span class="font-semibold text-2xl">Lectus Arcu</span>
+                </div>
+                <div class="surface-card shadow-2 p-4 flex flex-column justify-content-between flex-1">
+                    <p class="mt-0 mb-6 line-height-3 text-xl text-00">Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Sollicitudin ac orci phasellus egestas tellus rutrum.</p>
+                    <div class="text-center">
+                        <button pButton label="Learn More" icon="pi pi-arrow-right" iconPos="right" class="p-button-text"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-column lg:w-4">
+                <div class="flex align-items-center border-round-top bg-primary text-primary h-5rem px-4">
+                    <i class="pi pi-moon mr-2 text-2xl"></i>
+                    <span class="font-semibold text-2xl">Sollicitudin Ac</span>
+                </div>
+                <div class="surface-card shadow-2 p-4 flex flex-column justify-content-between flex-1">
+                    <p class="mt-0 mb-6 line-height-3 text-xl text-00">Faucibus ornare suspendisse sed nisi lacus. Urna nunc id cursus metus aliquam eleifend. Augue lacus viverra vitae congue eu consequat ac.</p>
+                    <div class="text-center">
+                        <button pButton label="Learn More" icon="pi pi-arrow-right" iconPos="right" class="p-button-text"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-column lg:w-4">
+                <div class="flex align-items-center border-round-top bg-primary text-primary h-5rem px-4">
+                    <i class="pi pi-sun mr-2 text-2xl"></i>
+                    <span class="font-semibold text-2xl">Nec Nisl</span>
+                </div>
+                <div class="surface-card shadow-2 p-4 flex flex-column justify-content-between flex-1">
+                    <p class="mt-0 mb-6 line-height-3 text-xl text-00">Montes nascetur ridiculus mus mauris. Enim tortor at auctor urna nunc id cursus metus. Sed odio morbi quis commodo odio.</p>
+                    <div class="text-center">
+                        <button pButton label="Learn More" icon="pi pi-arrow-right" iconPos="right" class="p-button-text"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    `;
+    block14: string = `
+    <div class="surface-section px-4 py-2 md:px-6 lg:px-8 ">
+    <div class="text-center px-6 py-8">
+        <div class="text-900 text-4xl font-semibold mb-3">Move Work Forward</div>
+        <p class="text-700 text-xl mt-0 mb-0 line-height-3">Orci dapibus ultrices in iaculis. Quam adipiscing vitae proin sagittis nisl. 
+            Amet massa vitae tortor condimentum lacinia quis vel eros donec.</p>
+    </div>
+    <div class="grid mb-4">
+        <div class="col-12 md:col-4 mb-2 px-5">
+            <span class="p-3 shadow-2 mb-3 inline-block bg-primary text-primary" style="border-radius: 10px">
+                <i class="pi pi-map text-4xl"></i>
+            </span>
+            <div class="text-primary mb-3 font-medium text-base">Dynamic Mapping</div>
+            <div class="text-900 mb-3 font-medium text-xl">Collect and organize mappings</div>
+            <span class="text-600 line-height-3">Diam sollicitudin tempor id eu. Ut consequat
+                semper viverra nam libero justo laoreet sit. Mi sit amet mauris commodo quis imperdiet massa. Euismod
+                quis viverra.</span>
+        </div>
+        <div class="col-12 md:col-4 mb-4 px-5">
+            <span class="p-3 shadow-2 mb-3 inline-block bg-bluegray-400 text-0" style="border-radius: 10px">
+                <i class="pi pi-sync text-4xl"></i>
+            </span>
+            <div class="text-bluegray-500 mb-3 font-medium text-base">Seamless Sync</div>
+            <div class="text-900 mb-3 font-medium text-xl">Never touch plaintext data</div>
+            <span class="text-600 line-height-3">Massa id neque aliquam vestibulum. Tristique
+                senectus et netus et malesuada fames ac. A scelerisque purus semper eget duis at tellus at. Orci
+                phasellus egestas tellus rutrum.</span>
+        </div>
+        <div class="col-12 md:col-4 mb-4 px-5">
+            <span class="p-3 shadow-2 mb-3 inline-block bg-bluegray-400 text-0" style="border-radius: 10px">
+                <i class="pi pi-shield text-4xl"></i>
+            </span>
+            <div class="text-bluegray-500 mb-3 font-medium text-base">Maximum Security</div>
+            <div class="text-900 mb-3 font-medium text-xl">Process encrypted data</div>
+            <span class="text-600 line-height-3">Pellentesque eu tincidunt tortor aliquam nulla.
+                Nulla facilisi cras fermentum odio eu. Ultrices in iaculis nunc sed augue. Nullam vehicula ipsum a arcu
+                cursus.</span>
+        </div>
+    </div>
+    <div class="bg-bluegray-100 align-items-center flex flex-row border-round mb-8">
+        <div class="col-12 lg:col w-full">
+            <p-carousel [value]="screenshots" [numVisible]="1" [numScroll]="1" [circular]="false"
+                indicatorStyleClass="h-1rem w-1rem" contentClass="m-0" [indicatorStyle]="{'border-radius':'100%'}"
+                [showNavigators]="false">
+                <ng-template let-screenshot pTemplate="item">
+                    <div class="p-5 text-center">
+                        <img src="{{screenshot.image}}" class="w-full h-full" alt="{{screenshot.description}}"/>
+                    </div>
+                </ng-template>
+            </p-carousel>
+        </div>
+    </div>
+</div>`;
 
 }

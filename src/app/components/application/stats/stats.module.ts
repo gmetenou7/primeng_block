@@ -1,3 +1,4 @@
+import { CalendarModule } from 'primeng/calendar';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StatsComponent } from './stats.component';
@@ -12,7 +13,8 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
     StatsRoutingModule,
     ButtonModule,
     MenuModule,
-    BlockViewerModule
+    BlockViewerModule,
+    CalendarModule
   ],
   declarations: [
     StatsComponent
