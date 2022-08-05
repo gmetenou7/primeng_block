@@ -612,16 +612,13 @@ export class StatsComponent implements OnInit {
 
 block10 = `
 <div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
-<div class="grid lg:p-8">
-    <div class="col-12 flex lg:flex-column flex-row lg:col-6 p-2 pr-5">
-        <div class="shadow-2 surface-card border-round p-4 w-full mt-4 lg:mt-0 mb-8 text-center">
-            <div class="flex flex-column mb-5 relative">
-                <img src="/assets/images/blocks/stats/shoes.png" width="100" height="100" class="absolute left-50"
-                    style="margin-left:-50px; top: -50px">
-                <div class="pt-8 ">
+<div class="flex flex-column lg:flex-row gap-4 align-item-center px-6 py-6">
+    <div class="flex lg:flex-column flex-row w-12 lg:w-6 mb-4 lg:mb-0">
+        <div class="shadow-2 surface-card border-round p-4 w-full mb-4 text-center">
+            <div class="mb-4">
+                <img src="/assets/images/blocks/stats/shoes.png" width="100" height="100" class="-mt-8">
                     <span class="block text-900 mb-1 text-xl font-medium">Shoes</span>
                     <p class="text-600 mt-0 mb-0">500 per Month</p>
-                </div>
             </div>
             <div class="flex justify-content-between align-items-center">
                 <span class="text-900 inline-flex justify-content-between align-items-center">
@@ -633,22 +630,17 @@ block10 = `
                 <div class="bg-blue-500 h-full" style="width:70%; border-radius: 4px"></div>
             </div>
             <div class="flex justify-content-between align-items-center">
-                <span class="text-900 inline-flex justify-content-between align-items-center">
-                    <span class="text-900">350/500</span>
-                </span>
-                <span class="text-blue-500 font-medium">2 weeks left</span>
+                <span class="text-900 justify-content-between align-items-center">350/500</span>
+                <span class="text-primary font-medium">2 weeks left</span>
             </div>
         </div>
     </div>
-    <div class="col-12 flex lg:flex-column flex-row lg:col-6 p-2 pr-5">
-        <div class="shadow-2 surface-card border-round p-4 w-full mb-8 text-center">
-            <div class="flex flex-column mb-5 relative">
-                <img src="/assets/images/blocks/stats/hats.png" width="100" height="100" class="absolute left-50"
-                    style="margin-left:-50px; top: -50px">
-                <div class="pt-8 ">
+    <div class="flex lg:flex-column flex-row w-12 lg:w-6">
+        <div class="shadow-2 surface-card border-round p-4 w-full text-center">
+                <div class="mb-4">
+                    <img src="/assets/images/blocks/stats/hats.png" width="100" height="100" class="-mt-8">
                     <span class="block text-900 mb-1 text-xl font-medium">Hats</span>
                     <p class="text-600 mt-0 mb-0">500 per Month</p>
-                </div>
             </div>
             <div class="flex justify-content-between align-items-center">
                 <span class="text-900 inline-flex justify-content-between align-items-center">
@@ -660,10 +652,8 @@ block10 = `
                 <div class="bg-yellow-500 h-full" style="width:20%; border-radius: 4px"></div>
             </div>
             <div class="flex justify-content-between align-items-center">
-                <span class="text-900 inline-flex justify-content-between align-items-center">
-                    <span class="text-900">100/500</span>
-                </span>
-                <span class="text-blue-500 font-medium">2 weeks left</span>
+                <span class="text-900 justify-content-between align-items-center">100/500</span>
+                <span class="text-primary font-medium">2 weeks left</span>
             </div>
         </div>
     </div>
