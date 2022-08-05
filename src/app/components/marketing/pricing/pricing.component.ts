@@ -1,18 +1,59 @@
 import { Component } from '@angular/core';
 
+interface Plan{
+    name: string;
+    price: number;
+    icon: string;
+    description: any[];
+}
+
 @Component({
     templateUrl: './pricing.component.html'
 })
 export class PricingComponent {
 
-    plan: number = 0;
+    plans: Plan[] = [
+        {
+            name: 'Sketchers',
+            price: 10.99,
+            icon:'pi pi-pencil',
+            description: [
+                {name: 'Arcu vitae elementum', icon:'pi pi-check-circle'},
+                {name: 'Dui faucibus in ornare', icon:'pi pi-check-circle'},
+                {name: 'Morbi tincidunt augue', icon:'pi pi-check-circle'},
+                {name: 'Sed euismod nisi', icon:'pi pi-check-circle'},
+            ]
+        },
+        {
+            name: 'Painter',
+            price: 15.99,
+            icon:'pi pi-palette',
+            description: [
+                {name: 'includes all the features of sketchers', icon:'pi pi-reply'},
+                {name: 'Dui faucibus in ornare', icon:'pi pi-check-circle'},
+                {name: 'Morbi tincidunt augue', icon:'pi pi-check-circle'},
+                {name: 'Sed euismod nisi', icon:'pi pi-check-circle'},
+            ]
+        },
+        {
+            name: 'Artist',
+            price: 24.99,
+            icon:'pi pi-image',
+            description: [
+                {name: 'includes all the features of painter', icon:'pi pi-reply'},
+                {name: 'Dui faucibus in ornare', icon:'pi pi-check-circle'},
+                {name: 'Morbi tincidunt augue', icon:'pi pi-check-circle'},
+                {name: 'Sed euismod nisi', icon:'pi pi-check-circle'},
+            ]
+        }
+    ];
 
-    userPlan: number = 1;
+    selectedPlan: Plan= this.plans[1];    
+    selectedInterval: string ="month";
 
-    price : number = 9;
-
-    selectedPlan: string ="month";
-    
+    setSelectedPlan(plan: string){
+        this.selectedPlan = this.plans.find(p => p.name === plan);
+    }
 
     block1: string = `
 <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
@@ -514,205 +555,86 @@ export class PricingComponent {
 block6:string=`
 <div class="surface-50 px-4 py-8 md:px-6 lg:px-8">
 <div class="text-900 font-bold text-5xl mb-4 text-center">Pricing</div>
-<div class="text-700 text-xl mb-6 text-center line-height-3">Lorem ipsum dolor sit, amet consectetur adipisicing
-    elit. Velit numquam eligendi quos.</div>
+<div class="text-700 text-xl mb-6 text-center line-height-3">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam
+    eligendi quos.
+</div>
 <div class="flex align-items-center justify-content-center mb-6">
     <ul class="bg-white p-2 m-0 list-none flex overflow-x-auto select-none" style="border-radius: 30px">
         <li class="mr-2">
-            <a pRipple
-                class="cursor-pointer  px-4 py-3 flex align-items-center  transition-colors transition-duration-150"
-                [ngClass]="{'bg-primary': plan === 0, 'text-600': plan !== 0}"
-                (click)="plan = 0;price=9;selectedPlan='month'" style="border-radius: 30px">
+            <a pRipple class="cursor-pointer px-4 py-3 flex align-items-center transition-colors transition-duration-150"
+            [ngClass]="{'bg-primary': selectedInterval == 'month','text-600': selectedInterval != 'month'}" (click)="selectedInterval = 'month'" style="border-radius: 30px">
                 <span class="font-medium">Monthly</span>
             </a>
         </li>
         <li class="mr-2">
             <a pRipple
                 class="cursor-pointer px-4 py-3 flex align-items-center transition-colors transition-duration-150"
-                [ngClass]="{'bg-primary': plan === 1, 'text-600': plan !== 1}"
-                (click)="plan = 1; price = 41;selectedPlan='year'" style="border-radius: 30px">
+                [ngClass]="{'bg-primary': selectedInterval == 'year','text-600': selectedInterval != 'year'}" (click)="selectedInterval = 'year'" style="border-radius: 30px">
                 <span class="font-medium">Yearly</span>
             </a>
         </li>
     </ul>
 </div>
-<div class="grid">
-    <div class="col-12 lg:col-6">
-        <div class="grid">
-
-            <div class="col-12 ">
-                <div class="shadow-2 surface-card p-4 border-2 border-transparent cursor-pointer border-round-lg"
-                    (click)="userPlan = 0"
-                    [ngClass]="{'surface-card surface-border': userPlan !== 0, 'bg-blue-100': userPlan === 0}">
-                    <div [ngClass]="{'text-blue-900': userPlan == 0, 'text-900': userPlan !== 0}">
-
-                        <div class="flex flex-column lg:flex-row align-items-center mb-4">
-                            <div class="mr-3  pb-3 lg:pb-0">
-                                <span
-                                    class="inline-flex justify-content-center border-circle align-items-center bg-indigo-100 w-3rem h-3rem"
-                                    [ngClass]="{'bg-primary-reverse text-primary': userPlan == 0, 'bg-primary text-primary': userPlan !== 0}">
-                                    <i class="pi pi-pencil text-2xl "></i>
-                                </span>
-                            </div>
-                            <div>
-                                <span class=" text-xl mb-2 font-bold">Sketchers</span>
-                                <p class="m-0 mt-2 font-light text-sm">Magna fermentum iaculis</p>
-                            </div>
-                        </div>
-                        <p class="lg:ml-7 m-0 font-light line-height-3">Nunc consequat interdum varius sit.
-                            <span class="font-medium">{{price}}$/{{selectedPlan}} | </span>Save $67 on Annual
-                            Plan
+<div class="flex flex-column gap-4 lg:flex-row lg:align-items-center lg:w-8 lg:col-offset-2">
+    <div class="flex flex-column gap-4">
+        <div *ngFor="let plan of plans" class="shadow-2 surface-card p-4 border-2 border-transparent cursor-pointer border-round-lg"
+            (click)="selectedPlan=plan" [ngClass]="{'surface-card surface-border': selectedPlan != plan,'bg-primary-100': selectedPlan == plan}">
+            <div [ngClass]="{'text-primary-900': selectedPlan == plan,'text-900': selectedPlan != plan}">
+                <div class="flex flex-column lg:flex-row align-items-center mb-4">
+                    <div class="mr-3 pb-3 lg:pb-0">
+                        <span
+                            class="inline-flex justify-content-center border-circle align-items-center bg-indigo-100 w-3rem h-3rem"
+                            [ngClass]="{'bg-primary-reverse text-primary':selectedPlan == plan,'bg-primary text-primary': selectedPlan != plan}">
+                            <i [ngClass]="plan.icon" class="text-2xl"></i>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="text-xl mb-2 font-bold">{{plan.name}}</span>
+                        <p class="m-0 mt-2 font-light text-sm">
+                            Magna fermentum iaculis
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 ">
-                <div class="shadow-2 surface-card p-4 border-2 border-transparent cursor-pointer border-round-lg"
-                    (click)="userPlan = 1"
-                    [ngClass]="{'surface-card surface-border': userPlan !== 1,'bg-blue-100': userPlan === 1}">
-                    <div [ngClass]="{'text-blue-900': userPlan == 1, 'text-900': userPlan !== 1}">
-
-                        <div class="flex flex-column lg:flex-row align-items-center mb-4">
-                            <div class="mr-3 pb-3 lg:pb-0">
-                                <span
-                                    class="inline-flex justify-content-center border-circle align-items-center bg-indigo-100 w-3rem h-3rem"
-                                    [ngClass]="{'bg-primary-reverse text-primary': userPlan == 1, 'bg-primary text-primary': userPlan !== 1}">
-                                    <i class="pi pi-palette text-2xl "></i>
-                                </span>
-                            </div>
-                            <div>
-                                <span class=" text-xl mb-2 font-bold">Painter</span>
-                                <p class="m-0 mt-2 font-light text-sm">Magna fermentum iaculis</p>
-                            </div>
-                        </div>
-                        <p class="lg:ml-7 m-0 font-light line-height-3">Nunc consequat interdum varius sit.
-                            <span class="font-medium">{{price}}$/{{selectedPlan}} | </span>Save $67 on Annual
-                            userPlan
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 ">
-                <div class="shadow-2 surface-card p-4 border-2 border-transparent cursor-pointer border-round-lg"
-                    (click)="userPlan = 2"
-                    [ngClass]="{'surface-card surface-border': userPlan !== 2, 'bg-blue-100': userPlan === 2}">
-                    <div [ngClass]="{'text-blue-900': userPlan == 2, 'text-900': userPlan !== 2}">
-
-                        <div class="flex flex-column lg:flex-row align-items-center mb-4">
-                            <div class="mr-3 pb-3 lg:pb-0">
-                                <span
-                                    class="inline-flex justify-content-center border-circle align-items-center bg-indigo-100 w-3rem h-3rem"
-                                    [ngClass]="{'bg-primary-reverse text-primary': userPlan == 2, 'bg-primary text-primary': userPlan !== 2}">
-                                    <i class="pi pi-image text-2xl "></i>
-                                </span>
-                            </div>
-                            <div>
-                                <span class="text-xl mb-2 font-bold">Artist</span>
-                                <p class="m-0 mt-2 font-light text-sm">Magna fermentum iaculis</p>
-                            </div>
-                        </div>
-                        <p class="lg:ml-7 m-0 font-light line-height-3">Nunc consequat interdum varius sit.
-                            <span class="font-medium">{{price}}$/{{selectedPlan}} | </span>Save $67 on Annual
-                            userPlan
-                        </p>
-                    </div>
-                </div>
+                <p *ngIf="selectedInterval == 'month'" class="lg:ml-7 m-0 font-light line-height-3">
+                    Nunc consequat interdum varius sit.
+                    <span class="font-medium">$ {{plan.price}} | </span>Save $67 on Annual
+                    Plan
+                </p>
+                <p *ngIf="selectedInterval == 'year'" class="lg:ml-7 m-0 font-light line-height-3">
+                    Nunc consequat interdum varius sit.
+                    <span class="font-medium">$ {{ plan.price * 12 - 67}} | </span>Save $67 on Annual
+                    Plan
+                </p>
             </div>
         </div>
     </div>
-    <div *ngIf="userPlan==0" class="col-12 lg:col-6 lg:pl-4">
-        <div class="shadow-2 bg-blue-100  p-4 border-2 border-transparent border-noround-bottom border-round-lg">
-            <div class="flex flex-row justify-content-between mb-5 align-items-center">
-                <div class="text-blue-900 text-4xl font-bold mr-2 lg:mr-0">Sketchers</div>
-                <span class="surface-0 text-700  font-light px-3 py-2 border-round-lg"><span
-                        class="font-bold text-900 text-xl m-1">{{price}}$</span> per {{selectedPlan}}</span>
-            </div>
-            <p class="text-blue-800 m-0 line-height-3">Pharetra magna ac placerat vestibulum lectus mauris
-                ultrices. Nec dui nunc mattis enim ut tellus elementum sagittis vitae.</p>
-        </div>
+    <div class="w-12 lg:w-6">
         <div
-            class="shadow-2 border-round-lg border-noround-top surface-card shadow-2 p-4 flex flex-column justify-content-between flex-1">
-            <ul class="list-none p-0 m-0">
-                <li class="flex align-items-center my-4">
-                    <i class="pi pi-check-circle text-primary mr-3"></i>
-                    <span>Arcu vitae elementum</span>
-                </li>
-                <li class="flex align-items-center my-4">
-                    <i class="pi pi-check-circle text-primary mr-3"></i>
-                    <span>Dui faucibus in ornare</span>
-                </li>
-                <li class="flex align-items-center my-4">
-                    <i class="pi pi-check-circle text-primary mr-3"></i>
-                    <span>Morbi tincidunt augue</span>
-                </li>
-                <li class="flex align-items-center my-4">
-                    <i class="pi pi-check-circle text-primary mr-3"></i>
-                    <span>Sed euismod nisi</span>
-                </li>
-            </ul>
-            <button pButton pRipple label="Buy Now" class="m-5"></button>
-        </div>
-    </div>
-    <div *ngIf="userPlan==1" class="col-12 lg:col-6 lg:pl-4">
-        <div class="shadow-2 bg-blue-100  p-4 border-2 border-transparent border-noround-bottom border-round-lg">
+            class="shadow-2 bg-primary-100 p-4 border-2 border-transparent border-noround-bottom border-round-lg">
             <div class="flex flex-row justify-content-between mb-5 align-items-center">
-                <div class="text-blue-900 text-4xl font-bold mr-2 lg:mr-0">Painter</div>
-                <span class="surface-0 text-700  font-light px-3 py-2 border-round-lg"><span
-                        class="font-bold text-900 text-xl m-1">{{price}}$</span> per {{selectedPlan}}</span>
+                <div class="text-primary-900 text-4xl font-bold mr-2 lg:mr-0">
+                    {{ selectedPlan.name }}
+                </div>
+                <span *ngIf="selectedInterval == 'month'"
+                    class="surface-0 text-700 font-light p-1 border-round-lg ml-2"><span
+                        class="font-bold text-900 text-xl m-1">$ {{selectedPlan.price}}</span>
+                    per {{ selectedInterval }}</span>
+                <span *ngIf="selectedInterval == 'year'"
+                    class="surface-0 text-700 font-light p-1 border-round-lg ml-2"><span
+                        class="font-bold text-900 text-xl m-1">$ {{selectedPlan.price * 12 - 67}}</span>
+                    per {{ selectedInterval }}</span>
             </div>
-            <p class="text-blue-800 m-0 line-height-3">Pharetra magna ac placerat vestibulum lectus mauris
-                ultrices. Nec dui nunc mattis enim ut tellus elementum sagittis vitae.</p>
+            <p class="text-primary-800 m-0 line-height-3">
+                Pharetra magna ac placerat vestibulum lectus mauris ultrices. Nec
+                dui nunc mattis enim ut tellus elementum sagittis vitae.
+            </p>
         </div>
-        <div class="shadow-2 border-round-lg border-noround-top surface-card shadow-2 p-4 flex flex-column ">
-            <ul class="list-none p-0 m-0">
-                <li class="flex align-items-center my-4">
-                    <i class="pi pi-reply text-700 mr-3"></i>
-                    <span>includes all from Sketchers</span>
-                </li>
-                <li class="flex align-items-center my-4">
-                    <i class="pi pi-check-circle text-primary mr-3"></i>
-                    <span>Arcu vitae elementum</span>
-                </li>
-                <li class="flex align-items-center my-4">
-                    <i class="pi pi-check-circle text-primary mr-3"></i>
-                    <span>Dui faucibus in ornare</span>
-                </li>
-                <li class="flex align-items-center my-4">
-                    <i class="pi pi-check-circle text-primary mr-3"></i>
-                    <span>Morbi tincidunt augue</span>
-                </li>
-            </ul>
-            <button pButton pRipple label="Buy Now" class="m-5"></button>
-        </div>
-    </div>
-    <div *ngIf="userPlan==2" class="col-12 lg:col-6 lg:pl-4">
-        <div class="shadow-2 bg-blue-100  p-4 border-2 border-transparent border-noround-bottom border-round-lg">
-            <div class="flex flex-row justify-content-between mb-5 align-items-center">
-                <div class="text-blue-900 text-4xl font-bold mr-2 lg:mr-0">Artist</div>
-                <span class="surface-0 text-700  font-light px-3 py-2 border-round-lg"><span
-                        class="font-bold text-900 text-xl m-1">{{price}}$</span> per {{selectedPlan}}</span>
-            </div>
-            <p class="text-blue-800 m-0 line-height-3">Pharetra magna ac placerat vestibulum lectus mauris
-                ultrices. Nec dui nunc mattis enim ut tellus elementum sagittis vitae.</p>
-        </div>
-        <div
-            class="shadow-2 border-round-lg border-noround-top surface-card shadow-2 p-4 flex flex-column justify-content-between flex-1">
-            <ul class="list-none p-0 m-0">
-                <li class="flex align-items-center my-4">
-                    <i class="pi pi-reply text-700 mr-3"></i>
-                    <span>includes all from Artist</span>
-                </li>
-                <li class="flex align-items-center my-4">
-                    <i class="pi pi-check-circle text-primary mr-3"></i>
-                    <span>Arcu vitae elementum</span>
-                </li>
-                <li class="flex align-items-center my-4">
-                    <i class="pi pi-check-circle text-primary mr-3"></i>
-                    <span>Dui faucibus in ornare</span>
-                </li>
-                <li class="flex align-items-center my-4">
-                    <i class="pi pi-check-circle text-primary mr-3"></i>
-                    <span>Morbi tincidunt augue</span>
+        <div class="shadow-2 border-round-lg border-noround-top surface-card shadow-2 p-4 flex flex-column">
+            <ul class="list-none p-0 m-0" *ngFor="let description of selectedPlan.description">
+                <li class="flex align-items-center my-3">
+                    <i [ngClass]="description.icon" class="text-primary mr-3"></i>
+                    <span>{{ description.name }}</span>
                 </li>
             </ul>
             <button pButton pRipple label="Buy Now" class="m-5"></button>
@@ -720,5 +642,4 @@ block6:string=`
     </div>
 </div>
 </div>`;
-
 }
