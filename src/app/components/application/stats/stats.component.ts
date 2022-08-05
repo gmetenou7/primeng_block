@@ -673,46 +673,43 @@ block10 = `
 
 block11 = `
 <div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
-<div class="flex flex-column lg:flex-row bg-primary text-primary border-round-xl pt-3 pb-3">
-    <div class="col-6 col-offset-6 lg:col-offset-0 lg:col-2 flex flex-column pt-4 lg:pl-8">
-        <a pRipple class="flex align-items-center no-underline font-medium cursor-pointer -ml-3 lg:ml-0"
-            (click)="next();">
+<div class="flex flex-column lg:flex-row gap-4 align-item-center bg-primary border-round-xl py-3 px-3">
+    <div class="flex flex-column align-item-center px-2 lg:px-4 col-offset-6 lg:col-offset-0">
+        <a pRipple class="flex align-items-center no-underline font-medium cursor-pointer -ml-3 lg:ml-1" (click)="next();">
             <i class="pi pi-angle-up"></i>
         </a>
         <div class="flex flex-column mt-2 -ml-3 lg:ml-0">
             <span class="block mb-1 text-3xl font-semibold">{{date.getDate()}}</span>
             <p class="mt-0">{{monthNames[date.getMonth()]}}</p>
         </div>
-        <a pRipple
-            class="flex align-items-center no-underline font-medium cursor-pointer -ml-3 lg:ml-0"
-            (click)="previous();">
+        <a pRipple class="flex align-items-center no-underline font-medium cursor-pointer -ml-3 lg:ml-1" (click)="previous();">
             <i class="pi pi-angle-down"></i>
         </a>
     </div>
-    <div class="col-12 lg:col-3">
-        <div class="bg-primary text-primary shadow-2 p-3 border-round-md">
-            <div class="text-center">
-                <i class="pi pi-eye text-5xl"></i>
-                <div class="text-sm font-700 my-3 font-semibold">VIEWS</div>
-                <span class="font-medium -mt-3">{{date.getDay()*1000+1000}}</span>
+    <div class="w-12 lg:w-4">
+        <div class="bg-primary-400 shadow-1 p-3 border-round-md">
+            <div class="text-center line-height-3">
+                <i class="pi pi-eye text-5xl mb-2"></i>
+                <div class="text-sm font-700 font-semibold">VIEWS</div>
+                <span class="font-medium m">{{date.getDay()*1000+1000}}</span>
             </div>
         </div>
     </div>
-    <div class="col-12 lg:col-3 lg:ml-2 ">
-        <div class="bg-primary text-primary shadow-2 p-3 border-round-md">
-            <div class="text-center ">
-                <i class="pi pi-users text-5xl"></i>
-                <div class="text-sm font-700 my-3 font-semibold">FOLLOWS</div>
-                <span class="font-medium -mt-3">{{date.getDay()*10+10}}</span>
+    <div class="w-12 lg:w-4">
+        <div class="bg-primary-400 shadow-1 p-3 border-round-md">
+            <div class="text-center line-height-3">
+                <i class="pi pi-users text-5xl mb-2"></i>
+                <div class="text-sm font-700 font-semibold">FOLLOWS</div>
+                <span class="font-medium">{{date.getDay()*10+10}}</span>
             </div>
         </div>
     </div>
-    <div class="col-12 lg:col-3 lg:ml-2 ">
-        <div class="bg-primary text-primary shadow-2 p-3 border-round-md">
-            <div class="text-center">
-                <i class="pi pi-heart text-5xl"></i>
-                <div class="text-sm font-700 my-3 font-semibold">LIKES</div>
-                <span class="font-medium -mt-3">{{date.getDay()*100+100}}</span>
+    <div class="w-12 lg:w-4">
+        <div class="bg-primary-400 shadow-1 p-3 border-round-md">
+            <div class="text-center line-height-3">
+                <i class="pi pi-heart text-5xl mb-2"></i>
+                <div class="text-sm font-700 font-semibold">LIKES</div>
+                <span class="font-medium">{{date.getDay()*100+100}}</span>
             </div>
         </div>
     </div>
