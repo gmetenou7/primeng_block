@@ -17,6 +17,10 @@ export class RadioGroupComponent {
 
     payment: number = 1;
 
+    amount: number = 1;
+
+    selectedDate:number;
+
     block1 = `
 <div class="w-full">
     <div class="text-900 text-xl mb-3 text-left font-medium">Choose your favorite animal</div>
@@ -326,5 +330,7 @@ export class RadioGroupComponent {
         </div>
     </div>
 </div>`;
+
+block7 = ``;
 
 }

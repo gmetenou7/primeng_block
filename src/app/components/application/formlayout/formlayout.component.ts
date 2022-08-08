@@ -19,7 +19,7 @@ export class FormLayoutComponent implements OnInit {
             {name: 'Japan', code: 'JP'},
             {name: 'Spain', code: 'ES'},
             {name: 'United States', code: 'US'}
-        ]; 
+        ];
     }
 
     block1 = `
@@ -73,7 +73,7 @@ export class FormLayoutComponent implements OnInit {
                     <label for="website" class="font-medium text-900">Website</label>
                     <div class="p-inputgroup">
                         <span class="p-inputgroup-addon">www</span>
-                        <input id="website" type="text" pInputText>      
+                        <input id="website" type="text" pInputText>
                     </div>
                 </div>
                 <div class="field mb-4 col-12">
@@ -94,7 +94,7 @@ export class FormLayoutComponent implements OnInit {
     block2 = `
     <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="text-900 font-medium text-xl mb-3">Profile</div>
-    <p class="m-0 mb-4 p-0 text-600 line-height-3 mr-3">Odio euismod lacinia at quis risus sed vulputate odio. Non nisi est sit amet. 
+    <p class="m-0 mb-4 p-0 text-600 line-height-3 mr-3">Odio euismod lacinia at quis risus sed vulputate odio. Non nisi est sit amet.
         Egestas integer eget aliquet nibh praesent tristique magna.</p>
     <div class="surface-card p-4 shadow-2 border-round">
         <div class="grid formgrid p-fluid">
@@ -143,7 +143,7 @@ export class FormLayoutComponent implements OnInit {
                 <label for="website2" class="font-medium text-900">Website</label>
                 <div class="p-inputgroup">
                     <span class="p-inputgroup-addon">www</span>
-                    <input id="website2" type="text" pInputText>      
+                    <input id="website2" type="text" pInputText>
                 </div>
             </div>
             <div class="surface-border border-top-1 opacity-50 mb-3 col-12"></div>
@@ -228,5 +228,7 @@ export class FormLayoutComponent implements OnInit {
         <button pButton pRipple label="Create Invoice" icon="pi pi-file" class="w-auto"></button>
     </div>
 </div>`;
+
+     block4 = ``;
 
 }

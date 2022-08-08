@@ -35,7 +35,7 @@ export class StackedLayoutComponent {
                             </a>
                         </li>
                         <li class="relative">
-                            <a pRipple class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 transition-colors transition-duration-150" 
+                            <a pRipple class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 transition-colors transition-duration-150"
                                 pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                                 <i class="pi pi-search mr-2"></i>
                                 <span class="font-medium">Search</span>
@@ -123,7 +123,7 @@ export class StackedLayoutComponent {
     </ul>
     <div class="p-5 flex flex-column flex-auto">
         <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
-            
+
         </div>
     </div>
 </div>`;
@@ -158,7 +158,7 @@ export class StackedLayoutComponent {
                             </a>
                         </li>
                         <li class="relative">
-                            <a pRipple class="flex p-3 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors transition-duration-150" 
+                            <a pRipple class="flex p-3 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors transition-duration-150"
                                 pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                                 <i class="pi pi-search mr-2"></i>
                                 <span class="font-medium">Search</span>
@@ -242,7 +242,7 @@ export class StackedLayoutComponent {
     </ul>
     <div class="p-5 flex flex-column flex-auto">
         <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
-            
+
         </div>
     </div>
 </div>`;
@@ -277,7 +277,7 @@ export class StackedLayoutComponent {
                             </a>
                         </li>
                         <li class="relative">
-                            <a pRipple class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 transition-colors transition-duration-150" 
+                            <a pRipple class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 transition-colors transition-duration-150"
                                 pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                                 <i class="pi pi-search mr-2"></i>
                                 <span class="font-medium">Search</span>
@@ -365,7 +365,7 @@ export class StackedLayoutComponent {
     </ul>
     <div class="p-5 flex flex-column flex-auto">
         <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
-            
+
         </div>
     </div>
 </div>`;
@@ -401,7 +401,7 @@ export class StackedLayoutComponent {
                                 </a>
                             </li>
                             <li class="relative">
-                                <a pRipple class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 transition-colors transition-duration-150" 
+                                <a pRipple class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 transition-colors transition-duration-150"
                                     pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                                     <i class="pi pi-search mr-2"></i>
                                     <span class="font-medium">Search</span>
@@ -490,7 +490,7 @@ export class StackedLayoutComponent {
     </div>
     <div class="p-5 flex flex-column flex-auto" style="margin-top: -8rem">
         <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
-            
+
         </div>
     </div>
 </div>`;
@@ -526,7 +526,7 @@ export class StackedLayoutComponent {
                                 </a>
                             </li>
                             <li class="relative">
-                                <a pRipple class="flex p-3 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors transition-duration-150" 
+                                <a pRipple class="flex p-3 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors transition-duration-150"
                                     pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                                     <i class="pi pi-search mr-2"></i>
                                     <span class="font-medium">Search</span>
@@ -615,9 +615,16 @@ export class StackedLayoutComponent {
     </div>
     <div class="p-5 flex flex-column flex-auto" style="margin-top: -8rem">
         <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
-            
+
         </div>
     </div>
-</div>`;
+</div>`
+
+    block6 = ``
+
+
+    block7 = ``
+
+;
 
 }

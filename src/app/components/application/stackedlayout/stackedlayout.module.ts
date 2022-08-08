@@ -6,6 +6,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { RippleModule } from 'primeng/ripple';
 import { StackedLayoutRoutingModule } from './stackedlayout-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
+import { BadgeModule } from 'primeng/badge';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
     StyleClassModule,
     InputTextModule,
     RippleModule,
-    BlockViewerModule
+    BlockViewerModule,
+    BadgeModule
   ],
   declarations: [
     StackedLayoutComponent

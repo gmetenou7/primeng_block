@@ -86,4 +86,6 @@ export class PageNotFoundComponent {
     </div>
 </div>`;
 
+block4 = ``;
+
 }

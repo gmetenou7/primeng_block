@@ -11,7 +11,7 @@
                     <li>
                         <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-900 hover:surface-100 font-medium border-round cursor-pointer transition-colors transition-duration-150">
                             <i class="pi pi-home mr-2"></i>
-                            <span>Home</span>
+                            <span>Dashboard</span>
                         </a>
                     </li>
                     <li class="lg:relative">
@@ -29,7 +29,7 @@
                                 </a>
                             </li>
                             <li class="relative">
-                                <a pRipple class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 transition-colors transition-duration-150" 
+                                <a pRipple class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 transition-colors transition-duration-150"
                                     pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                                     <i class="pi pi-search mr-2"></i>
                                     <span class="font-medium">Search</span>
@@ -117,7 +117,7 @@
         </ul>
         <div class="p-5 flex flex-column flex-auto">
             <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
-                
+
             </div>
         </div>
     </div>
@@ -153,7 +153,7 @@
                                 </a>
                             </li>
                             <li class="relative">
-                                <a pRipple class="flex p-3 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors transition-duration-150" 
+                                <a pRipple class="flex p-3 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors transition-duration-150"
                                     pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                                     <i class="pi pi-search mr-2"></i>
                                     <span class="font-medium">Search</span>
@@ -237,7 +237,7 @@
         </ul>
         <div class="p-5 flex flex-column flex-auto">
             <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
-                
+
             </div>
         </div>
     </div>
@@ -273,7 +273,7 @@
                                 </a>
                             </li>
                             <li class="relative">
-                                <a pRipple class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 transition-colors transition-duration-150" 
+                                <a pRipple class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 transition-colors transition-duration-150"
                                     pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                                     <i class="pi pi-search mr-2"></i>
                                     <span class="font-medium">Search</span>
@@ -309,7 +309,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row border-top-1 border-indigo-400 lg:border-top-none">
+                <ul class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row border-top-1 border-surface-400 lg:border-top-none">
                     <li>
                         <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-indigo-100 hover:text-indigo-50 hover:bg-indigo-600 font-medium border-round cursor-pointer transition-colors transition-duration-150">
                             <i class="pi pi-inbox text-base lg:text-2xl mr-2 lg:mr-0"></i>
@@ -361,7 +361,7 @@
         </ul>
         <div class="p-5 flex flex-column flex-auto">
             <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
-                
+
             </div>
         </div>
     </div>
@@ -398,7 +398,7 @@
                                     </a>
                                 </li>
                                 <li class="relative">
-                                    <a pRipple class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 transition-colors transition-duration-150" 
+                                    <a pRipple class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 transition-colors transition-duration-150"
                                         pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                                         <i class="pi pi-search mr-2"></i>
                                         <span class="font-medium">Search</span>
@@ -487,7 +487,7 @@
         </div>
         <div class="p-5 flex flex-column flex-auto" style="margin-top: -8rem">
             <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
-                
+
             </div>
         </div>
     </div>
@@ -524,7 +524,7 @@
                                     </a>
                                 </li>
                                 <li class="relative">
-                                    <a pRipple class="flex p-3 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors transition-duration-150" 
+                                    <a pRipple class="flex p-3 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 transition-colors transition-duration-150"
                                         pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
                                         <i class="pi pi-search mr-2"></i>
                                         <span class="font-medium">Search</span>
@@ -613,8 +613,190 @@
         </div>
         <div class="p-5 flex flex-column flex-auto" style="margin-top: -8rem">
             <div class="border-2 border-dashed surface-border border-round surface-section flex-auto">
-                
+
             </div>
         </div>
     </div>
+</block-viewer>
+
+<block-viewer header="Tabs" [code]="block6" [new]="true">
+  <div class="min-h-screen flex flex-column surface-50">
+    <div class="surface-200 px-6 flex justify-content-between relative lg:static" style="min-height: 84px">
+      <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="40" class="mr-0 lg:mr-6 align-self-center">
+      <a pRipple class="cursor-pointer block lg:hidden align-self-center text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+          <i class="pi pi-bars text-4xl"></i>
+      </a>
+      <div class="flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full surface-ground-200 left-0 top-100 z-1 shadow-2 lg:shadow-none">
+          <ul class="list-none p-0 m-0 flex select-none flex-column lg:flex-row">
+            <li class="surface-50 mr-2 lg:mt-6" style="border-radius: 6px 6px 0px 0px;">
+              <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-surface-50 hover:bg-surface-600 font-medium border-round cursor-pointer transition-colors transition-duration-150  h-3rem">
+                      <i class="pi pi-home mr-2"></i>
+                      <span>Home</span>
+                  </a>
+              </li>
+              <li class="surface-50 mr-2 lg:mt-6" style="border-radius: 6px 6px 0px 0px;">
+                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-surface-50 hover:bg-surface-600 font-medium border-round cursor-pointer transition-colors transition-duration-150  h-3rem">
+                    <i class="pi pi-bookmark mr-2"></i>
+                    <span>Bookmarks</span>
+                </a>
+            </li>
+            <li class="surface-50 mr-2 lg:mt-6" style="border-radius: 6px 6px 0px 0px;">
+              <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-surface-50 hover:bg-surface-600 font-medium border-round cursor-pointer transition-colors transition-duration-150  h-3rem">
+                      <i class="pi pi-users mr-2"></i>
+                      <span>Team</span>
+                  </a>
+              </li>
+              <li class="surface-50 mr-2 lg:mt-6" style="border-radius: 6px 6px 0px 0px;">
+                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-surface-50 hover:bg-surface-600 font-medium border-round cursor-pointer transition-colors transition-duration-150  h-3rem">
+                    <i class="pi pi-inbox mr-2"></i>
+                    <span>Messages</span>
+                    <span class="inline-flex align-items-center justify-content-center ml-2 bg-cyan-500 text-0 border-circle" style="min-width: 1.5rem; height: 1.5rem">3</span>
+                </a>
+            </li>
+            <li class="surface-50 mr-2 lg:mt-6" style="border-radius: 6px 6px 0px 0px;">
+              <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-surface-50 hover:bg-surface-600 font-medium border-round cursor-pointer transition-colors transition-duration-150  h-3rem">
+                      <i class="pi pi-calendar mr-2"></i>
+                      <span>Calendar</span>
+                  </a>
+              </li>
+              <li class="surface-50 mr-2 lg:mt-6" style="border-radius: 6px 6px 0px 0px;">
+                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:text-surface-50 hover:bg-surface-600 font-medium border-round cursor-pointer transition-colors transition-duration-150  h-3rem">
+                      <i class="pi pi-cog mr-2"></i>
+                      <span>Settings</span>
+                  </a>
+          </ul>
+          <ul class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row border-top-1 border-500 lg:border-top-none">
+            <li>
+                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-yellow-500 hover:text-yellow-50 hover:bg-yellow-600 font-medium border-round cursor-pointer transition-colors transition-duration-150">
+                    <i class="pi pi-inbox text-base lg:text-2xl mr-2 lg:mr-0"></i>
+                    <span class="block lg:hidden font-medium">Inbox</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-cyan-500 hover:text-cyan-50 hover:bg-cyan-600 font-medium border-round cursor-pointer transition-colors transition-duration-150">
+                    <i class="pi pi-bell text-base lg:text-2xl mr-2 lg:mr-0"></i>
+                    <span class="block lg:hidden font-medium">Notifications</span>
+                </a>
+            </li>
+            <li class="border-top-1 border-500 lg:border-top-none">
+                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center hover:bg-surface-600 font-medium border-round cursor-pointer transition-colors transition-duration-150">
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-3 lg:mr-0" style="width: 32px; height: 32px"/>
+                    <div class="block lg:hidden">
+                        <div class="text-indigo-500 font-medium">Josephine Lillard</div>
+                        <span class="text-indigo-900 font-medium text-sm">Marketing Specialist</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+      </div>
+  </div>
+    <div class="p-5 flex flex-column flex-auto">
+        <div class="border-2 border-dashed surface-border surface-section flex-auto" style="border-radius: 2px;">
+        </div>
+    </div>
+  </div>
+  </block-viewer>
+
+<block-viewer header="Hover Borders" [code]="block7" [new]="true">
+<div class="min-h-screen flex flex-column surface-50">
+  <div class="surface-overlay px-6 shadow-2 flex justify-content-between relative lg:static" style="min-height: 84px">
+    <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="40" class="mr-0 lg:mr-6 align-self-center">
+    <a pRipple class="cursor-pointer block lg:hidden align-self-center text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+        <i class="pi pi-bars text-4xl"></i>
+    </a>
+    <div class="flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full surface-overlay left-0 top-100 z-1 shadow-2 lg:shadow-none">
+        <ul class="list-none p-0 m-0 flex select-none flex-column lg:flex-row">
+            <li>
+                <a pRipple class="cursor-pointer h-full inline-flex align-items-center text-600 border-left-2 lg:border-left-none lg:border-bottom-2 border-blue-500 transition-colors transition-duration-150 py-3 lg:py-0 px-3">
+                    <i class="pi pi-home mr-2"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+              <a pRipple class="flex px-6 p-3 h-full lg:px-3 lg:py-2 align-items-center text-600 border-left-2 lg:border-bottom-2 lg:border-left-none border-transparent hover:border-blue-500 font-medium cursor-pointer transition-colors transition-duration-150">
+                  <i class="pi pi-bookmark mr-2"></i>
+                  <span>Bookmarks</span>
+              </a>
+          </li>
+            <li>
+                <a pRipple class="flex px-6 p-3 h-full lg:px-3 lg:py-2 align-items-center text-600 border-left-2 lg:border-bottom-2 lg:border-left-none border-transparent hover:border-blue-500 font-medium cursor-pointer transition-colors transition-duration-150">
+                    <i class="pi pi-users mr-2"></i>
+                    <span>Team</span>
+                </a>
+            </li>
+            <li>
+              <a pRipple class="flex px-6 p-3 h-full lg:px-3 lg:py-2 align-items-center text-600 border-left-2 lg:border-bottom-2 lg:border-left-none border-transparent hover:border-blue-500 font-medium cursor-pointer transition-colors transition-duration-150">
+                  <i class="pi pi-inbox mr-2"></i>
+                  <span>Messages</span>
+                  <span class="inline-flex align-items-center justify-content-center ml-2 bg-orange-100 text-orange-500 text-0 border-circle" style="min-width: 1.5rem; height: 1.5rem">3</span>
+              </a>
+          </li>
+            <li>
+                <a pRipple class="flex px-6 p-3 h-full lg:px-3 lg:py-2 align-items-center text-600 border-left-2 lg:border-bottom-2 lg:border-left-none border-transparent hover:border-blue-500 font-medium cursor-pointer transition-colors transition-duration-150">
+                    <i class="pi pi-calendar mr-2"></i>
+                    <span>Calendar</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple class="flex px-6 p-3 h-full lg:px-3 lg:py-2 align-items-center text-600 border-left-2 lg:border-bottom-2 lg:border-left-none border-transparent hover:border-blue-500 font-medium cursor-pointer transition-colors transition-duration-150">
+                    <i class="pi pi-cog mr-2"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="list-none p-0 m-0 flex select-none flex-column lg:flex-row border-top-1 surface-border lg:border-top-none">
+            <li>
+                <a pRipple class="flex px-6 p-3 h-full lg:px-3 lg:py-2 align-items-center text-600 border-left-2 lg:border-bottom-2 lg:border-left-none border-transparent hover:border-blue-500 font-medium cursor-pointer transition-colors transition-duration-150">
+                    <i class="pi pi-inbox text-base lg:text-2xl mr-2 lg:mr-0"></i>
+                    <span class="block lg:hidden font-medium">Inbox</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple class="flex px-6 p-3 h-full lg:px-3 lg:py-2 align-items-center text-600 border-left-2 lg:border-bottom-2 lg:border-left-none border-transparent hover:border-blue-500 font-medium cursor-pointer transition-colors transition-duration-150">
+                    <i class="pi pi-bell text-base lg:text-2xl mr-2 lg:mr-0"></i>
+                    <span class="block lg:hidden font-medium">Notifications</span>
+                </a>
+            </li>
+            <li class="border-top-1 surface-border lg:border-top-none">
+                <a pRipple class="flex px-6 p-3 h-full lg:px-3 lg:py-2 align-items-center text-600 border-left-2 lg:border-bottom-2 lg:border-left-none border-transparent hover:border-blue-500 font-medium cursor-pointer transition-colors transition-duration-150">
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-3 lg:mr-0" style="width: 28px; height: 28px"/>
+                    <div class="block lg:hidden">
+                        <div class="text-900 font-medium">Josephine Lillard</div>
+                        <span class="text-600 font-medium text-sm">Marketing Specialist</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<ul class="list-none py-3 px-5 m-0 surface-section flex align-items-center font-medium overflow-x-auto border-top-1 border-bottom-1 surface-border shadow-2 lg:shadow-none">
+  <li class="pr-3">
+      <a class="cursor-pointer">
+          <i class="pi pi-home text-blue-500"></i>
+      </a>
+  </li>
+  <li class="px-2">
+      <i class="pi pi-angle-right text-500"></i>
+  </li>
+  <li class="px-2">
+      <a class="cursor-pointer text-blue-500 white-space-nowrap">Level 3</a>
+  </li>
+  <li class="px-2">
+      <i class="pi pi-angle-right text-500"></i>
+  </li>
+  <li class="px-2">
+      <a class="cursor-pointer text-blue-500 white-space-nowrap">Level 2</a>
+  </li>
+  <li class="px-2">
+      <i class="pi pi-angle-right text-500"></i>
+  </li>
+  <li class="px-2">
+      <a class="cursor-pointer text-900 white-space-nowrap">Level 1</a>
+  </li>
+</ul>
+  <div class="p-5 flex flex-column flex-auto">
+      <div class="border-2 border-dashed surface-border surface-section flex-auto" style="border-radius: 2px;">
+      </div>
+  </div>
+</div>
 </block-viewer>

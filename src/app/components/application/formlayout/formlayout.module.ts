@@ -4,16 +4,17 @@ import { CommonModule } from '@angular/common';
 import { FormLayoutComponent } from './formlayout.component';
 import { FormLayoutRoutingModule } from './formlayout-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
-import { InputTextModule } from 'primeng/inputtext'; 
-import { InputTextareaModule } from 'primeng/inputtextarea'; 
+import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
 import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple'; 
-import { CalendarModule } from 'primeng/calendar'; 
-import { DropdownModule } from 'primeng/dropdown'; 
-import { InputNumberModule } from 'primeng/inputnumber'; 
-import { FileUploadModule } from 'primeng/fileupload'; 
+import { RippleModule } from 'primeng/ripple';
+import { CalendarModule } from 'primeng/calendar';
+import { DropdownModule } from 'primeng/dropdown';
+import { InputNumberModule } from 'primeng/inputnumber';
+import { FileUploadModule } from 'primeng/fileupload';
 import { CheckboxModule } from 'primeng/checkbox';
 import { InputSwitchModule } from 'primeng/inputswitch';
+import { DividerModule } from 'primeng/divider';
 
 @NgModule({
   imports: [
@@ -30,7 +31,8 @@ import { InputSwitchModule } from 'primeng/inputswitch';
     FileUploadModule,
     CheckboxModule,
     InputSwitchModule,
-    BlockViewerModule
+    BlockViewerModule,
+    DividerModule
   ],
   declarations: [
     FormLayoutComponent

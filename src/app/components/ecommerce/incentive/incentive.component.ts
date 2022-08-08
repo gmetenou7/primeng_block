@@ -85,4 +85,7 @@ export class IncentiveComponent {
         </div>
     </div>
 </div>`;
+
+   block4: string = `
+  `
 }
