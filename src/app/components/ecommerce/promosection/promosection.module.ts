@@ -6,6 +6,7 @@ import { PromoSectionRoutingModule } from './promosection-routing.module';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
+import { AvatarModule } from 'primeng/avatar';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
     RippleModule,
     FormsModule,
     PromoSectionRoutingModule,
-    BlockViewerModule
+    BlockViewerModule,
+    AvatarModule
   ],
   declarations: [
     PromoSectionComponent

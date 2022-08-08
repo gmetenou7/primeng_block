@@ -174,5 +174,7 @@ export class StepsComponent {
     </div>
 </div>`;
 
+block6 = ``;
+
 
 }

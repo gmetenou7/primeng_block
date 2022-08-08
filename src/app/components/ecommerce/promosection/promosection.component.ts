@@ -153,4 +153,6 @@ export class PromoSectionComponent {
     </div>
 </div>`;
 
+block6: string =  ``;
+
 }
