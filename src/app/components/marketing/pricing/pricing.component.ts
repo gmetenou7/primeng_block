@@ -21,7 +21,7 @@ export class PricingComponent {
                 {name: 'Arcu vitae elementum', icon:'pi pi-check-circle'},
                 {name: 'Dui faucibus in ornare', icon:'pi pi-check-circle'},
                 {name: 'Morbi tincidunt augue', icon:'pi pi-check-circle'},
-                {name: 'Sed euismod nisi', icon:'pi pi-check-circle'},
+                {name: 'Sed euismod nisi', icon:'pi pi-check-circle'}
             ]
         },
         {
@@ -32,7 +32,7 @@ export class PricingComponent {
                 {name: 'includes all the features of sketchers', icon:'pi pi-reply'},
                 {name: 'Dui faucibus in ornare', icon:'pi pi-check-circle'},
                 {name: 'Morbi tincidunt augue', icon:'pi pi-check-circle'},
-                {name: 'Sed euismod nisi', icon:'pi pi-check-circle'},
+                {name: 'Sed euismod nisi', icon:'pi pi-check-circle'}
             ]
         },
         {
@@ -43,7 +43,7 @@ export class PricingComponent {
                 {name: 'includes all the features of painter', icon:'pi pi-reply'},
                 {name: 'Dui faucibus in ornare', icon:'pi pi-check-circle'},
                 {name: 'Morbi tincidunt augue', icon:'pi pi-check-circle'},
-                {name: 'Sed euismod nisi', icon:'pi pi-check-circle'},
+                {name: 'Sed euismod nisi', icon:'pi pi-check-circle'}
             ]
         }
     ];
