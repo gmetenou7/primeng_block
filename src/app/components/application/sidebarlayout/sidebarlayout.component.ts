@@ -7,7 +7,7 @@ export class SidebarLayoutComponent {
 
     menuOptions = [
         { name: 'Favorites', value: 0 },
-        { name: 'Applications', value: 1 },
+        { name: 'Apps', value: 1 },
     ];
 
     menuOption: number = 0;
