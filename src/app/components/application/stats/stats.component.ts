@@ -1,10 +1,39 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem, PrimeNGConfig } from 'primeng/api';
 
 @Component({
     templateUrl: './stats.component.html'
 })
 export class StatsComponent implements OnInit {
+
+    items: MenuItem[];
+
+    monthNames: string[];
+
+    date: Date = new Date();
+
+    constructor(private config: PrimeNGConfig) {}
+
+    ngOnInit() {
+        this.items = [
+            {
+                label: 'Options',
+                items: [
+                    { label: 'Add New', icon: 'pi pi-fw pi-plus' },
+                    { label: 'Search', icon: 'pi pi-fw pi-search' }
+                ]
+            }];
+
+        this.monthNames = this.config.getTranslation('monthNames');
+    }
+
+    previousDate() {
+        this.date.setDate(this.date.getDate() - 1);
+    }
+
+    nextDate() {
+        this.date.setDate(this.date.getDate() + 1);
+    }
 
     block1 = `
 <div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
@@ -612,7 +641,7 @@ export class StatsComponent implements OnInit {
 
 block10 = `
 <div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
-<div class="flex flex-column lg:flex-row gap-4 align-item-center px-6 py-6">
+<div class="flex flex-column lg:flex-row gap-4 align-items-center px-6 py-6">
     <div class="flex lg:flex-column flex-row w-12 lg:w-6 mb-4 lg:mb-0">
         <div class="shadow-2 surface-card border-round p-4 w-full mb-4 text-center">
             <div class="mb-4">
@@ -663,8 +692,8 @@ block10 = `
 
 block11 = `
 <div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
-<div class="flex flex-column lg:flex-row gap-4 align-item-center bg-primary border-round-xl py-3 px-3">
-    <div class="flex flex-column align-item-center px-2 lg:px-4 col-offset-6 lg:col-offset-0">
+<div class="flex flex-column lg:flex-row gap-4 align-items-center bg-primary border-round-xl py-3 px-3">
+    <div class="flex flex-column align-items-center px-2 lg:px-4 col-offset-6 lg:col-offset-0">
         <a pRipple class="flex align-items-center no-underline font-medium cursor-pointer -ml-3 lg:ml-1" (click)="next();">
             <i class="pi pi-angle-up"></i>
         </a>
@@ -706,34 +735,5 @@ block11 = `
 </div>
 </div>
 `;
-
-items: MenuItem[];
-
-    ngOnInit() {
-        this.items = [
-            {
-                label: 'Options',
-                items: [
-                    { label: 'Add New', icon: 'pi pi-fw pi-plus' },
-                    { label: 'Search', icon: 'pi pi-fw pi-search' }
-                ]
-            }];
-    }
-
-    monthNames = ["January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-  ];
-  
-      date: Date = new Date();
-  
-      previous() {
-          this.date.setDate(this.date.getDate()-1);
-      }
-  
-      next() {
-          this.date.setDate(this.date.getDate()+1);
-  
-      }
-  
 
 }
