@@ -9,12 +9,12 @@ export class FeatureComponent {
         {
             'name': 'Screenshot 1',
             'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'image': 'assets/images/blocks/feature/col.png',
+            'image': 'assets/images/blocks/feature/screen-shoot1.png',
         },
         {
             'name': 'Screenshot 2',
             'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'image': 'assets/images/blocks/feature/col1.png',
+            'image': 'assets/images/blocks/feature/screen-shoot2.png',
         },
     ];
 
