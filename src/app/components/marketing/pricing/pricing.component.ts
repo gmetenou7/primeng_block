@@ -30,9 +30,9 @@ export class PricingComponent {
             icon:'pi pi-palette',
             description: [
                 {name: 'includes all the features of sketchers', icon:'pi pi-reply'},
-                {name: 'Dui faucibus in ornare', icon:'pi pi-check-circle'},
-                {name: 'Morbi tincidunt augue', icon:'pi pi-check-circle'},
-                {name: 'Sed euismod nisi', icon:'pi pi-check-circle'}
+                {name: 'Sed eget facilisis turpis', icon:'pi pi-check-circle'},
+                {name: 'Duis tincidunt ullamcorper libero', icon:'pi pi-check-circle'},
+                {name: 'Proin purus orci', icon:'pi pi-check-circle'}
             ]
         },
         {
@@ -41,9 +41,9 @@ export class PricingComponent {
             icon:'pi pi-image',
             description: [
                 {name: 'includes all the features of painter', icon:'pi pi-reply'},
-                {name: 'Dui faucibus in ornare', icon:'pi pi-check-circle'},
-                {name: 'Morbi tincidunt augue', icon:'pi pi-check-circle'},
-                {name: 'Sed euismod nisi', icon:'pi pi-check-circle'}
+                {name: 'Maecenas luctus nisl', icon:'pi pi-check-circle'},
+                {name: 'Aliquam erat volutpat', icon:'pi pi-check-circle'},
+                {name: 'Phasellus ante nulla', icon:'pi pi-check-circle'}
             ]
         }
     ];
