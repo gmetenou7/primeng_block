@@ -174,52 +174,20 @@
 </block-viewer>
 
 <block-viewer header="Simple" [code]="block6" [new]="true">
-  <div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
-    <div class="grid">
-        <div class="col-12 lg:col-4 p-2">
-                <ul class="list-none p-0 m-0">
-                    <li>
-                        <div class="flex justify-content-between align-items-center">
-                        </div>
-                        <div class="surface-300 w-full mt-2" style="height: 7px; border-radius: 4px">
-                            <div class="bg-blue-500 h-full" style="width:100%; border-radius: 4px"></div>
-                        </div>
-                        <div class="flex flex-column">
-                          <span class="inline-flex font-medium text-900 text-blue-500 mt-2">STEP 1</span>
-                          <span class="text-900 line-height-1 mt-2">Select Seat</span>
-                        </div>
-                    </li>
-                </ul>
+    <div class="surface-section px-4 py-5 md:px-6 lg:px-8">
+        <div class="flex flex-column md:flex-row lg:gap-5">
+            <div class="flex-auto border-primary border-left-3 border-top-none md:border-left-none md:border-top-3 pl-3 py-3">
+                <div class="font-bold text-primary mb-2">STEP 1</div>
+                <span class="text-900 font-medium">Select Seat</span>
             </div>
-            <div class="col-12 lg:col-4 p-2">
-              <ul class="list-none p-0 m-0">
-                  <li>
-                      <div class="flex justify-content-between align-items-center">
-                      </div>
-                      <div class="surface-300 w-full mt-2" style="height: 7px; border-radius: 4px">
-                          <div class="bg-blue-500 h-full" style="width:100%; border-radius: 4px"></div>
-                      </div>
-                      <div class="flex flex-column">
-                        <span class="inline-flex font-medium text-900 text-blue-500 mt-2">STEP 2</span>
-                        <span class="text-900 line-height-1 mt-2">Payment</span>
-                      </div>
-                  </li>
-              </ul>
-          </div>
-          <div class="col-12 lg:col-4 p-2">
-            <ul class="list-none p-0 m-0">
-                <li>
-                    <div class="flex justify-content-between align-items-center">
-                    </div>
-                    <div class="surface-300 w-full mt-2" style="height: 7px; border-radius: 4px">
-                        <div class="bg-gray-300 h-full" style="width:100%; border-radius: 4px"></div>
-                    </div>
-                    <div class="flex flex-column">
-                      <span class="inline-flex font-medium text-900 text-gray-500 mt-2">STEP 3</span>
-                      <span class="text-900 line-height-1 mt-2">Confirmation</span>
-                    </div>
-                </li>
-            </ul>
+            <div class="flex-auto border-primary border-left-3 border-top-none md:border-left-none md:border-top-3 pl-3 py-3">
+                <div class="font-bold text-primary mb-2">STEP 2</div>
+                <span class="text-900 font-medium">Payment</span>
+            </div>
+            <div class="flex-auto surface-border border-left-3 border-top-none md:border-left-none md:border-top-3 pl-3 py-3">
+                <div class="font-bold text-500 mb-2">STEP 3</div>
+                <span class="text-900 font-medium">Confirmation</span>
+            </div>
         </div>
     </div>
-</div>
+</block-viewer>
