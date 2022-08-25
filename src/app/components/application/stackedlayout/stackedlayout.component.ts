@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
 })
 export class StackedLayoutComponent {
 
+    activeTab: number = 0;
+
     block1 = `
 <div class="min-h-screen flex flex-column surface-ground">
     <div class="surface-overlay py-3 px-6 flex align-items-center justify-content-between relative lg:static" style="min-height: 80px">
