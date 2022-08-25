@@ -331,6 +331,27 @@ export class RadioGroupComponent {
     </div>
 </div>`;
 
-block7 = ``;
+block7 = `
+<div class="flex flex-wrap justify-content-center align-items-center gap-3">
+  <div class="font-medium text-900 text-lg">Choose Payment Amount</div>
+  <div class="flex justify-content-center flex-wrap gap-3">
+      <div class="inline-flex align-items-center justify-content-center px-3 py-2 text-900 text-lg cursor-pointer border-round transition-colors transition-duration-150" (click)="amount = 0"
+          [ngClass]="{'surface-card surface-border hover:surface-hover ': amount !== 0, 'bg-primary border-primary': amount === 0}">
+          10$
+      </div>
+      <div class="inline-flex align-items-center justify-content-center px-3 py-2 text-900 text-lg cursor-pointer border-round transition-colors transition-duration-150" (click)="amount = 1"
+          [ngClass]="{'surface-card surface-border hover:surface-hover ': amount !== 1, 'bg-primary border-primary': amount === 1}">
+          25$
+      </div>
+      <div class="inline-flex align-items-center justify-content-center px-3 py-2 text-900 text-lg cursor-pointer border-round transition-colors transition-duration-150" (click)="amount = 2"
+          [ngClass]="{'surface-card surface-border hover:surface-hover ': amount !== 2, 'bg-primary border-primary': amount === 2}">
+          50$
+      </div>
+      <div class="inline-flex align-items-center justify-content-center px-3 py-2 text-900 text-lg cursor-pointer border-round transition-colors transition-duration-150" (click)="amount = 3"
+          [ngClass]="{'surface-card surface-border hover:surface-hover ': amount !== 3, 'bg-primary border-primary': amount === 3}">
+          100$
+      </div>
+  </div>
+</div>`;
 
 }

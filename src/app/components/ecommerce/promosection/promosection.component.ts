@@ -153,6 +153,41 @@ export class PromoSectionComponent {
     </div>
 </div>`;
 
-block6: string =  ``;
+block6: string =  `
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+        <div class="flex flex-column text-center align-items-center px-5 py-8 bg-cover mb-3" style="background: url('assets/images/blocks/ecommerce/promosection/promo-section-6-1.jpg')">
+            <div class="text-5xl font-bold text-gray-900 mb-3">This Is Your Last Chance to Save 50% Off </div>
+            <p class="line-height-3 text-gray-700 text-xl font-medium mt-0 mb-5">Black Friday will
+                soon be leaving PrimeLand There is still time to save big this season. </p>
+            <button pButton pRipple label="Get Started Today" class="p-button-success text-xl"></button>
+        </div>
+        <div class="flex flex-column lg:flex-row">
+            <div class="flex-1 p-5">
+                <img src="/assets/images/blocks/avatars/circle/avatar-f-1.png" class="w-3rem h-3rem block mb-3" />
+                <div class="text-900 line-height-3 mb-3">
+                    "You won't regret it. I was amazed at the quality of it. I am really satisfied with my it."
+                </div>
+                <span class="text-xs font-medium text-900">Brooklyn Simmons</span>
+            </div>
+            <div class="flex-1 p-5">
+                <img src="/assets/images/blocks/avatars/circle/avatar-f-4.png" class="w-3rem h-3rem block mb-3" />
+                <div class="text-900 line-height-3 mb-3">
+                    "No matter where you go, It's is the coolest, most happening thing around! Not able to tell
+                    you how happy
+                    I am with it. "
+                </div>
+                <span class="text-xs font-medium text-900">Jenny Wilson</span>
+            </div>
+            <div class="flex-1 p-5">
+                <img src="/assets/images/blocks/avatars/circle/avatar-f-6.png" class="w-3rem h-3rem mb-3" />
+                <div class="text-900 line-height-3 mb-3">
+                    "We're loving it. This is simply unbelievable! I like it more and more each day because it
+                    makes my life a
+                    lot easier."
+                </div>
+                <span class="text-xs font-medium text-900">Floyd Miles</span>
+            </div>
+        </div>
+    </div>`;
 
 }

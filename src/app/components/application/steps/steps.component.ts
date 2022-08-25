@@ -174,7 +174,22 @@ export class StepsComponent {
     </div>
 </div>`;
 
-block6 = ``;
-
+block6 = `
+<div class="surface-section px-4 py-5 md:px-6 lg:px-8">
+  <div class="flex flex-column md:flex-row lg:gap-5">
+      <div class="flex-auto border-primary border-left-3 border-top-none md:border-left-none md:border-top-3 pl-3 py-3">
+          <div class="font-bold text-primary mb-2">STEP 1</div>
+          <span class="text-900 font-medium">Select Seat</span>
+      </div>
+      <div class="flex-auto border-primary border-left-3 border-top-none md:border-left-none md:border-top-3 pl-3 py-3">
+          <div class="font-bold text-primary mb-2">STEP 2</div>
+          <span class="text-900 font-medium">Payment</span>
+      </div>
+      <div class="flex-auto surface-border border-left-3 border-top-none md:border-left-none md:border-top-3 pl-3 py-3">
+          <div class="font-bold text-500 mb-2">STEP 3</div>
+          <span class="text-900 font-medium">Confirmation</span>
+      </div>
+  </div>
+</div>`;
 
 }

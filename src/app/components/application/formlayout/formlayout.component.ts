@@ -229,6 +229,77 @@ export class FormLayoutComponent implements OnInit {
     </div>
 </div>`;
 
-     block4 = ``;
+     block4 = `
+<div class="surface-ground px-4 py-8 md:px-6 lg:px-">
+  <div class="p-fluid flex flex-column lg:flex-row">
+      <ul class="list-none m-0 p-0 flex flex-row lg:flex-column justify-content-evenly md:justify-content-between lg:justify-content-start mb-5 lg:pr-8 lg:mb-0">
+          <li>
+              <a pRipple class="flex align-items-center cursor-pointer p-3 border-round text-800 hover:surface-hover transition-duration-150 transition-colors">
+                  <i class="pi pi-user mr-2"></i>
+                  <span class="font-medium hidden md:block">Profile</span>
+              </a>
+          </li>
+          <li>
+              <a pRipple class="flex align-items-center cursor-pointer p-3 border-round text-800 hover:surface-hover transition-duration-150 transition-colors">
+                  <i class="pi pi-cog mr-2"></i>
+                  <span class="font-medium hidden md:block">Account</span>
+              </a>
+          </li>
+          <li>
+              <a pRipple class="flex align-items-center cursor-pointer p-3 border-round text-800 hover:surface-hover transition-duration-150 transition-colors">
+                  <i class="pi pi-palette mr-2"></i>
+                  <span class="font-medium hidden md:block">Appearance</span>
+              </a>
+          </li>
+          <li>
+              <a pRipple class="flex align-items-center cursor-pointer p-3 border-round text-800 hover:surface-hover transition-duration-150 transition-colors">
+                  <i class="pi pi-sun mr-2"></i>
+                  <span class="font-medium hidden md:block">Accessibility</span>
+              </a>
+          </li>
+          <li>
+              <a pRipple class="flex align-items-center cursor-pointer p-3 border-round text-800 hover:surface-hover transition-duration-150 transition-colors">
+                  <i class="pi pi-bell mr-2"></i>
+                  <span class="font-medium hidden md:block">Notifications</span>
+              </a>
+          </li>
+      </ul>
+      <div class="surface-card p-5 shadow-2 border-round flex-auto">
+          <div class="text-900 font-semibold text-lg mt-3">Profile</div>
+          <p-divider></p-divider>
+          <div class="flex gap-5 flex-column-reverse md:flex-row">
+              <div class="flex-auto p-fluid">
+                  <div class="mb-4">
+                      <label for="email" class="block font-medium text-900 mb-2">Name</label>
+                      <input id="email" type="text" pInputText>
+                  </div>
+                  <div class="mb-4">
+                      <label for="bio" class="block font-medium text-900 mb-2">Bio</label>
+                      <textarea id="bio" type="text" pInputTextarea rows="5" [autoResize]="true"></textarea>
+                  </div>
+                  <div class="mb-4">
+                      <label for="website" class="block font-medium text-900 mb-2">URL</label>
+                      <div class="p-inputgroup">
+                          <span class="p-inputgroup-addon">https://</span>
+                          <input id="website" type="text" pInputText>
+                      </div>
+                  </div>
+                  <div class="mb-4">
+                      <label for="state" class="block font-medium text-900 mb-2">Company</label>
+                      <input id="state" type="text" pInputText>
+                  </div>
+                  <div>
+                      <button pButton pRipple label="Update Profile" class="w-auto"></button>
+                  </div>
+              </div>
+              <div class="flex flex-column align-items-center flex-or">
+                  <span class="font-medium text-900 mb-2">Profile Picture</span>
+                  <img src="assets/images/blocks/avatars/circle-big/avatar-f-2.png" class="h-10rem w-10rem"/>
+                  <button pButton type="button" icon="pi pi-pencil" class="p-button-rounded -mt-4"></button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>`;
 
 }

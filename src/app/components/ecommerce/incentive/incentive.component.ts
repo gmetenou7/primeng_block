@@ -86,6 +86,33 @@ export class IncentiveComponent {
     </div>
 </div>`;
 
-   block4: string = `
-  `
+   block4: string = `  <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+   <div class="flex flex-wrap align-items-center justify-content-center gap-5">
+       <div class="p-3 flex align-items-center bg-blue-100" style="border-radius:50px">
+           <div class="bg-blue-500 inline-flex align-items-center justify-content-center mr-3 h-3rem w-3rem border-circle">
+               <i class="pi pi-shopping-bag text-white text-2xl"></i>
+           </div>
+           <span class="text-blue-900 text-lg font-medium">Free Shipping</span>
+       </div>
+       <div class="p-3 flex align-items-center bg-cyan-100" style="border-radius:50px">
+           <div class="bg-cyan-500 inline-flex align-items-center justify-content-center mr-3 h-3rem w-3rem border-circle">
+               <i class="pi pi-arrow-right text-white text-2xl"></i>
+           </div>
+           <span class="text-cyan-900 text-lg font-medium">120 Days Return Policy</span>
+       </div>
+       <div class="p-3 flex align-items-center bg-orange-100" style="border-radius:50px">
+           <div class="bg-orange-500 inline-flex align-items-center justify-content-center mr-3 h-3rem w-3rem border-circle">
+               <i class="pi pi-shield text-white text-2xl"></i>
+           </div>
+           <span class="text-orange-900 text-lg font-medium">10 Year Warranty</span>
+       </div>
+       <div class="p-3 flex align-items-center bg-green-100" style="border-radius:50px">
+           <div class="bg-green-500 inline-flex align-items-center justify-content-center mr-3 h-3rem w-3rem border-circle">
+               <i class="pi pi-refresh text-white text-2xl"></i>
+           </div>
+           <span class="text-green-900 text-lg font-medium">Environment Friendly</span>
+       </div>
+   </div>
+</div>`;
+
 }
