@@ -146,7 +146,7 @@ export class SidebarLayoutComponent {
     <div class="min-h-screen flex flex-column relative flex-auto">
         <div class="flex justify-content-between align-items-center px-5 surface-0 border-bottom-1 surface-border relative lg:static" style="height:60px">
             <div class="flex">
-                <a pRipple class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-1" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+                <a pRipple class="cursor-pointer inline-flex align-items-center justify-content-center lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-1" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                     <i class="pi pi-bars text-4xl"></i>
                 </a>
                 <span class="p-input-icon-left">
@@ -328,7 +328,7 @@ export class SidebarLayoutComponent {
     <div class="min-h-screen flex flex-column relative flex-auto">
         <div class="flex justify-content-between align-items-center px-5 surface-section shadow-2 relative lg:static border-bottom-1 surface-border" style="height:60px">
             <div class="flex">
-                <a pRipple class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-2" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+                <a pRipple class="cursor-pointer inline-flex align-items-center justify-content-center lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-2" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                     <i class="pi pi-bars text-4xl"></i>
                 </a>
                 <span class="p-input-icon-left">
@@ -499,7 +499,7 @@ export class SidebarLayoutComponent {
     <div class="min-h-screen flex flex-column relative flex-auto">
         <div class="flex justify-content-between align-items-center px-5 surface-0 border-bottom-1 surface-border relative lg:static" style="height:60px">
             <div class="flex">
-                <a pRipple class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-3" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+                <a pRipple class="cursor-pointer inline-flex align-items-center justify-content-center lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-3" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                     <i class="pi pi-bars text-4xl"></i>
                 </a>
                 <span class="p-input-icon-left">
@@ -638,7 +638,7 @@ export class SidebarLayoutComponent {
     <div class="min-h-screen flex flex-column relative flex-auto">
         <div class="flex justify-content-between align-items-center px-5 surface-section relative lg:static border-bottom-1 surface-border" style="height:60px">
             <div class="flex">
-                <a pRipple class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-4" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+                <a pRipple class="cursor-pointer inline-flex align-items-center justify-content-center lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-4" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                     <i class="pi pi-bars text-4xl"></i>
                 </a>
                 <span class="p-input-icon-left">
@@ -776,7 +776,7 @@ export class SidebarLayoutComponent {
     <div class="min-h-screen flex flex-column relative flex-auto">
         <div class="flex justify-content-between align-items-center px-5 surface-section relative lg:static border-bottom-1 surface-border" style="height:60px">
             <div class="flex">
-                <a pRipple class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-5" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+                <a pRipple class="cursor-pointer inline-flex align-items-center justify-content-center lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-5" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                     <i class="pi pi-bars text-4xl"></i>
                 </a>
                 <span class="p-input-icon-left">
@@ -892,7 +892,7 @@ export class SidebarLayoutComponent {
     <div class="min-h-screen flex flex-column relative flex-auto">
         <div class="flex justify-content-between align-items-center px-5 surface-section shadow-2 relative lg:static border-bottom-1 surface-border" style="height:60px">
             <div class="flex">
-                <a pRipple class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-6" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+                <a pRipple class="cursor-pointer inline-flex align-items-center justify-content-center lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-6" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                     <i class="pi pi-bars text-4xl"></i>
                 </a>
             </div>
@@ -1091,7 +1091,7 @@ export class SidebarLayoutComponent {
     <div class="min-h-screen flex flex-column relative flex-auto">
         <div class="flex justify-content-between align-items-center px-5 border-bottom-1 relative lg:static bg-white-alpha-50 border-white-alpha-40" style="height:60px">
             <div class="flex">
-                <a pRipple class="cursor-pointer block lg:hidden text-gray-800 mr-3" pStyleClass="#app-sidebar-7" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+                <a pRipple class="cursor-pointer inline-flex align-items-center justify-content-center lg:hidden text-gray-800 mr-3" pStyleClass="#app-sidebar-7" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                     <i class="pi pi-bars text-4xl"></i>
                 </a>
             </div>
@@ -1289,7 +1289,7 @@ export class SidebarLayoutComponent {
     <div class="min-h-screen flex flex-column relative flex-auto">
         <div class="flex justify-content-between align-items-center px-5 border-bottom-1 relative lg:static border-white-alpha-10" style="height:60px">
             <div class="flex">
-                <a pRipple class="cursor-pointer block lg:hidden text-gray-300 mr-3" pStyleClass="#app-sidebar-8" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+                <a pRipple class="cursor-pointer inline-flex align-items-center justify-content-center lg:hidden text-gray-300 mr-3" pStyleClass="#app-sidebar-8" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                     <i class="pi pi-bars text-4xl"></i>
                 </a>
             </div>
@@ -1422,7 +1422,7 @@ export class SidebarLayoutComponent {
     <div class="min-h-screen flex flex-column relative flex-auto">
         <div class="flex justify-content-between align-items-center px-5 surface-section relative lg:static border-bottom-1 surface-border" style="height:60px">
             <div class="flex">
-                <a pRipple class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-9" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+                <a pRipple class="cursor-pointer inline-flex align-items-center justify-content-center lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-9" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                     <i class="pi pi-bars text-4xl"></i>
                 </a>
                 <span class="p-input-icon-left">
@@ -1605,7 +1605,7 @@ export class SidebarLayoutComponent {
     </div>
     <div class="min-h-screen flex flex-column relative flex-auto">
         <div class="flex align-items-center justify-content-between lg:justify-content-start px-5 relative lg:static" style="height:60px">
-            <a pRipple class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-10" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+            <a pRipple class="cursor-pointer inline-flex align-items-center justify-content-center lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-10" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                 <i class="pi pi-bars text-4xl"></i>
             </a>
             <a pRipple class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
@@ -1794,7 +1794,7 @@ export class SidebarLayoutComponent {
     </div>
     <div class="min-h-screen flex flex-column relative flex-auto">
         <div class="flex justify-content-between align-items-center px-5 surface-0 border-bottom-1 surface-border relative lg:static" style="height:60px">
-            <a pRipple class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-11" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+            <a pRipple class="cursor-pointer inline-flex align-items-center justify-content-center lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-11" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                 <i class="pi pi-bars text-4xl"></i>
             </a>
             <a pRipple class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
@@ -1867,7 +1867,7 @@ export class SidebarLayoutComponent {
     block12 = `
 <div class="min-h-screen flex flex-column surface-ground">
     <div class="surface-overlay py-3 px-6 flex align-items-center justify-content-between relative lg:static">
-        <a pRipple class="cursor-pointer block lg:hidden text-700" pStyleClass="#app-sidebar-12" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+        <a pRipple class="cursor-pointer inline-flex align-items-center justify-content-center lg:hidden text-700" pStyleClass="#app-sidebar-12" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
             <i class="pi pi-bars text-4xl"></i>
         </a>
         <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="40" class="mr-0 lg:mr-6">
@@ -2165,7 +2165,7 @@ export class SidebarLayoutComponent {
             <div class="flex justify-content-between align-items-center px-5 m-1 relative lg:static"
                 style="height:80px">
                 <div class="flex">
-                    <a pRipple class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-13"
+                    <a pRipple class="cursor-pointer inline-flex align-items-center justify-content-center lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-13"
                         enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden"
                         leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
                         <i class="pi pi-bars text-4xl"></i>
