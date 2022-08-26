@@ -641,94 +641,82 @@ export class StatsComponent implements OnInit {
 
 block10 = `
 <div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
-<div class="flex flex-column lg:flex-row gap-4 align-items-center px-6 py-6">
-    <div class="flex lg:flex-column flex-row w-12 lg:w-6 mb-4 lg:mb-0">
-        <div class="shadow-2 surface-card border-round p-4 w-full mb-4 text-center">
-            <div class="mb-4">
-                <img src="/assets/images/blocks/stats/shoes.png" width="100" height="100" class="-mt-8">
-                    <span class="block text-900 mb-1 text-xl font-medium">Shoes</span>
-                    <p class="text-600 mt-0 mb-0">500 per Month</p>
-            </div>
-            <div class="flex justify-content-between align-items-center">
-                <span class="text-900 inline-flex justify-content-between align-items-center">
+        <div class="flex flex-column md:flex-row gap-4 md:align-items-center xl:px-6 pt-6">
+            <div class="shadow-2 surface-card border-round p-4 flex-1 text-center mb-6 md:mb-0">
+                <div class="mb-4">
+                    <img src="/assets/images/blocks/stats/shoes.png" width="100" height="100" class="-mt-8">
+                    <span class="block text-900 mb-1 text-xl font-bold">Shoes</span>
+                    <p class="text-600 m-0 font-medium">500 per Month</p>
+                </div>
+                <div class="flex justify-content-between align-items-center">
                     <span class="text-600">Monthly Goal</span>
-                </span>
-                <span class="text-900 font-medium">70%</span>
+                    <span class="text-900 font-medium">50%</span>
+                </div>
+                <div class="surface-300 mt-2 mb-3 border-round" style="height: 7px">
+                    <div class="bg-blue-500 h-full border-round w-6"></div>
+                </div>
+                <div class="flex justify-content-between align-items-center">
+                    <span class="text-900">250/500</span>
+                    <span class="text-primary font-medium">2 weeks left</span>
+                </div>
             </div>
-            <div class="surface-300 w-full mt-2 mb-3" style="height: 7px; border-radius: 4px">
-                <div class="bg-blue-500 h-full" style="width:70%; border-radius: 4px"></div>
-            </div>
-            <div class="flex justify-content-between align-items-center">
-                <span class="text-900 justify-content-between align-items-center">350/500</span>
-                <span class="text-primary font-medium">2 weeks left</span>
-            </div>
-        </div>
-    </div>
-    <div class="flex lg:flex-column flex-row w-12 lg:w-6">
-        <div class="shadow-2 surface-card border-round p-4 w-full text-center">
+            <div class="shadow-2 surface-card border-round p-4 flex-1 text-center">
                 <div class="mb-4">
                     <img src="/assets/images/blocks/stats/hats.png" width="100" height="100" class="-mt-8">
-                    <span class="block text-900 mb-1 text-xl font-medium">Hats</span>
-                    <p class="text-600 mt-0 mb-0">500 per Month</p>
-            </div>
-            <div class="flex justify-content-between align-items-center">
-                <span class="text-900 inline-flex justify-content-between align-items-center">
+                    <span class="block text-900 mb-1 text-xl font-bold">Hats</span>
+                    <p class="text-600 m-0 font-medium">500 per Month</p>
+                </div>
+                <div class="flex justify-content-between align-items-center">
                     <span class="text-600">Monthly Goal</span>
-                </span>
-                <span class="text-900 font-medium">20%</span>
-            </div>
-            <div class="surface-300 w-full mt-2 mb-3" style="height: 7px; border-radius: 4px">
-                <div class="bg-yellow-500 h-full" style="width:20%; border-radius: 4px"></div>
-            </div>
-            <div class="flex justify-content-between align-items-center">
-                <span class="text-900 justify-content-between align-items-center">100/500</span>
-                <span class="text-primary font-medium">2 weeks left</span>
+                    <span class="text-900 font-medium">40%</span>
+                </div>
+                <div class="surface-300 mt-2 mb-3 border-round" style="height: 7px">
+                    <div class="bg-yellow-500 h-full border-round w-4"></div>
+                </div>
+                <div class="flex justify-content-between align-items-center">
+                    <span class="text-900">200/500</span>
+                    <span class="text-primary font-medium">2 weeks left</span>
+                </div>
             </div>
         </div>
     </div>
-</div>
-</div>
 `;
 
 block11 = `
 <div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
-<div class="flex flex-column lg:flex-row gap-4 align-items-center bg-primary border-round-xl py-3 px-3">
-    <div class="flex flex-column align-items-center px-2 lg:px-4 col-offset-6 lg:col-offset-0">
-        <a pRipple class="flex align-items-center no-underline font-medium cursor-pointer -ml-3 lg:ml-1" (click)="next();">
+<div class="flex flex-column md:flex-row gap-3 md:align-items-center bg-primary border-round-xl p-3">
+    <div class="flex-none flex flex-column align-items-center md:w-8rem">
+        <button pRipple class="p-link inline-flex align-items-center no-underline font-medium cursor-pointer bg-primary" (click)="nextDate()">
             <i class="pi pi-angle-up"></i>
-        </a>
-        <div class="flex flex-column mt-2 -ml-3 lg:ml-0">
+        </button>
+        <div class="flex flex-column align-items-center my-3">
             <span class="block mb-1 text-3xl font-semibold">{{date.getDate()}}</span>
-            <p class="mt-0">{{monthNames[date.getMonth()]}}</p>
+            <span class="mt-0">{{monthNames[date.getMonth()]}}</span>
         </div>
-        <a pRipple class="flex align-items-center no-underline font-medium cursor-pointer -ml-3 lg:ml-1" (click)="previous();">
+        <button pRipple class="p-link inline-flex align-items-center no-underline font-medium cursor-pointer bg-primary" (click)="previousDate()">
             <i class="pi pi-angle-down"></i>
-        </a>
+        </button>
     </div>
-    <div class="w-12 lg:w-4">
-        <div class="bg-primary-400 shadow-1 p-3 border-round-md">
-            <div class="text-center line-height-3">
-                <i class="pi pi-eye text-5xl mb-2"></i>
-                <div class="text-sm font-700 font-semibold">VIEWS</div>
-                <span class="font-medium m">{{date.getDay()*1000+1000}}</span>
+    <div class="flex-1 gap-3 flex flex-column sm:flex-row">
+        <div class="flex-1 bg-primary-400 shadow-1 p-3 border-round-md">
+            <div class="text-center">
+                <i class="pi pi-eye text-5xl mb-3"></i>
+                <div class="text-sm font-700 font-semibold mb-2">VIEWS</div>
+                <span class="font-bold">{{date.getDay()*1000+1000}}</span>
             </div>
         </div>
-    </div>
-    <div class="w-12 lg:w-4">
-        <div class="bg-primary-400 shadow-1 p-3 border-round-md">
-            <div class="text-center line-height-3">
-                <i class="pi pi-users text-5xl mb-2"></i>
-                <div class="text-sm font-700 font-semibold">FOLLOWS</div>
-                <span class="font-medium">{{date.getDay()*10+10}}</span>
+        <div class="flex-1 bg-primary-400 shadow-1 p-3 border-round-md">
+            <div class="text-center">
+                <i class="pi pi-users text-5xl mb-3"></i>
+                <div class="text-sm font-700 font-semibold mb-2">FOLLOWS</div>
+                <span class="font-bold">{{date.getDay()*10+10}}</span>
             </div>
         </div>
-    </div>
-    <div class="w-12 lg:w-4">
-        <div class="bg-primary-400 shadow-1 p-3 border-round-md">
-            <div class="text-center line-height-3">
-                <i class="pi pi-heart text-5xl mb-2"></i>
-                <div class="text-sm font-700 font-semibold">LIKES</div>
-                <span class="font-medium">{{date.getDay()*100+100}}</span>
+        <div class="flex-1 bg-primary-400 shadow-1 p-3 border-round-md">
+            <div class="text-center">
+                <i class="pi pi-heart text-5xl mb-3"></i>
+                <div class="text-sm font-700 font-semibold mb-2">LIKES</div>
+                <span class="font-bold">{{date.getDay()*100+100}}</span>
             </div>
         </div>
     </div>

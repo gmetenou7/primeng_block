@@ -806,81 +806,74 @@ export class GridListComponent {
 </div>`;
 
 block8 = `
- <div class=" grid shadow-2 border-round surface-card ">
-
-        <div class="col-6 border-right-1 border-bottom-1 text-300">
-            <div class="flex flex-column align-items-start m-3">
-                <span class="inline-flex border-circle align-items-center justify-content-center bg-blue-50 "
-                    style="width:44px;height:44px">
-                    <i class="pi pi-image text-xl text-blue-500"></i>
-                </span>
-                <span class="text-900 font-medium text-xl pb-2 pt-4">Card Title</span>
-                <p class="mt-0 mb-3 text-600 line-height-3">Velit aliquet sagittis id consectetur purus. Proin libero
-                    nunc consequat interdum. Amet nisl purus in mollis nunc sed id semper risus. Feugiat pretium nibh
-                    ipsum consequat nisl vel pretium lectus.</p>
-            </div>
-        </div>
-        <div class="col-6 border-right-1 border-bottom-1 text-300">
-            <div class="flex flex-column align-items-start m-3">
-                <span class="inline-flex border-circle align-items-center justify-content-center bg-yellow-50 "
-                    style="width:44px;height:44px">
-                    <i class="pi pi-map text-xl text-yellow-500"></i>
-                </span>
-                <span class="text-900 font-medium text-xl pb-2 pt-4">Card Title</span>
-                <p class="mt-0 mb-3 text-600 line-height-3">Ut morbi tincidunt augue interdum velit euismod in
-                    pellentesque massa. Facilisi etiam dignissim diam quis enim lobortis scelerisque. Feugiat nibh sed
-                    pulvinar proin gravida hendrerit.</p>
-            </div>
-        </div>
-        <div class="col-6 border-right-1 border-bottom-1 text-300">
-            <div class="flex flex-column align-items-start m-3">
-                <span class="inline-flex border-circle align-items-center justify-content-center bg-cyan-50 "
-                    style="width:44px;height:44px">
-                    <i class="pi pi-tag text-xl text-cyan-500"></i>
-                </span>
-                <span class="text-900 font-medium text-xl pb-2 pt-4">Card Title</span>
-                <p class="mt-0 mb-3 text-600 line-height-3">Integer eget aliquet nibh praesent tristique magna. Aliquet
-                    porttitor lacus luctus accumsan tortor posuere ac ut consequat. Enim nunc faucibus a pellentesque
-                    sit amet porttitor.</p>
-            </div>
-        </div>
-        <div class="col-6 border-right-1 border-bottom-1 text-300">
-            <div class="flex flex-column align-items-start m-3">
-                <span class="inline-flex border-circle align-items-center justify-content-center bg-green-50 "
-                    style="width:44px;height:44px">
-                    <i class="pi pi-send text-xl text-green-500"></i>
-                </span>
-                <span class="text-900 font-medium text-xl pb-2 pt-4">Card Title</span>
-                <p class="mt-0 mb-3 text-600 line-height-3">Aliquet porttitor lacus luctus accumsan tortor. Lorem mollis
-                    aliquam ut porttitor leo a diam sollicitudin tempor. Mauris vitae ultricies leo integer malesuada
-                    nunc. Leo duis ut diam quam nulla porttitor massa id.</p>
-            </div>
-        </div>
-        <div class="col-6 border-right-1 border-bottom-1 text-300">
-            <div class="flex flex-column align-items-start m-3">
-                <span class="inline-flex border-circle align-items-center justify-content-center bg-pink-50 "
-                    style="width:44px;height:44px">
-                    <i class="pi pi-qrcode text-xl text-pink-500"></i>
-                </span>
-                <span class="text-900 font-medium text-xl pb-2 pt-4">Card Title</span>
-                <p class="mt-0 mb-3 text-600 line-height-3">Ultricies mi quis hendrerit dolor magna eget est lorem.
-                    Porttitor massa id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant
-                    morbi tristique senectus et netus et malesuada.</p>
-            </div>
-        </div>
-        <div class="col-6 border-right-1 border-bottom-1 text-300">
-            <div class="flex flex-column align-items-start m-3">
-                <span class="inline-flex border-circle align-items-center justify-content-center bg-orange-50 "
-                    style="width:44px;height:44px">
-                    <i class="pi pi-users text-xl text-orange-500"></i>
-                </span>
-                <span class="text-900 font-medium text-xl pb-2 pt-4">Card Title</span>
-                <p class="mt-0 mb-3 text-600 line-height-3">Nunc sed id semper risus in hendrerit gravida rutrum. Congue
-                    mauris rhoncus aenean vel elit scelerisque. Massa sed elementum tempus egestas sed sed risus.
-                    Feugiat vivamus at augue eget arcu dictum.</p>
-            </div>
-        </div>
+<div class="grid shadow-2 border-round surface-card">
+<div class="col-12 md:col-6 md:border-right-1 border-bottom-1 surface-border">
+    <div class="m-3">
+        <span class="inline-flex border-circle align-items-center justify-content-center bg-blue-50 w-3rem h-3rem mb-4">
+            <i class="pi pi-image text-xl text-blue-500"></i>
+        </span>
+        <div class="text-900 font-medium text-xl mb-3">Card Title</div>
+        <p class="mt-0 text-600 line-height-3">Velit aliquet sagittis id consectetur purus. Proin libero
+            nunc consequat interdum. Amet nisl purus in mollis nunc sed id semper risus. Feugiat pretium nibh
+            ipsum consequat nisl vel pretium lectus.</p>
     </div>
+</div>
+<div class="col-12 md:col-6 border-bottom-1 surface-border">
+    <div class="m-3">
+        <span class="inline-flex border-circle align-items-center justify-content-center bg-yellow-50 w-3rem h-3rem mb-4">
+            <i class="pi pi-map text-xl text-yellow-500"></i>
+        </span>
+        <div class="text-900 font-medium text-xl mb-3">Card Title</div>
+        <p class="mt-0 text-600 line-height-3">Ut morbi tincidunt augue interdum velit euismod in
+            pellentesque massa. Facilisi etiam dignissim diam quis enim lobortis scelerisque. Feugiat nibh sed
+            pulvinar proin gravida hendrerit.</p>
+    </div>
+</div>
+<div class="col-12 md:col-6 md:border-right-1 border-bottom-1 surface-border">
+    <div class="m-3">
+        <span class="inline-flex border-circle align-items-center justify-content-center bg-cyan-50 w-3rem h-3rem mb-4">
+            <i class="pi pi-tag text-xl text-cyan-500"></i>
+        </span>
+        <div class="text-900 font-medium text-xl mb-3">Card Title</div>
+        <p class="mt-0 text-600 line-height-3">Integer eget aliquet nibh praesent tristique magna. Aliquet
+            porttitor lacus luctus accumsan tortor posuere ac ut consequat. Enim nunc faucibus a pellentesque
+            sit amet porttitor.</p>
+    </div>
+</div>
+<div class="col-12 md:col-6 border-bottom-1 surface-border">
+    <div class="m-3">
+        <span class="inline-flex border-circle align-items-center justify-content-center bg-green-50 w-3rem h-3rem mb-4">
+            <i class="pi pi-send text-xl text-green-500"></i>
+        </span>
+        <div class="text-900 font-medium text-xl mb-3">Card Title</div>
+        <p class="mt-0 text-600 line-height-3">Aliquet porttitor lacus luctus accumsan tortor. Lorem mollis
+            aliquam ut porttitor leo a diam sollicitudin tempor. Mauris vitae ultricies leo integer malesuada
+            nunc. Leo duis ut diam quam nulla porttitor massa id.</p>
+    </div>
+</div>
+<div class="col-12 md:col-6 md:border-right-1 border-bottom-1 md:border-bottom-none surface-border">
+    <div class="m-3">
+        <span class="inline-flex border-circle align-items-center justify-content-center bg-pink-50 w-3rem h-3rem mb-4">
+            <i class="pi pi-qrcode text-xl text-pink-500"></i>
+        </span>
+        <div class="text-900 font-medium text-xl mb-3">Card Title</div>
+        <p class="mt-0 text-600 line-height-3">Ultricies mi quis hendrerit dolor magna eget est lorem.
+            Porttitor massa id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant
+            morbi tristique senectus et netus et malesuada.</p>
+    </div>
+</div>
+<div class="col-12 md:col-6">
+    <div class="m-3">
+        <span class="inline-flex border-circle align-items-center justify-content-center bg-orange-50 w-3rem h-3rem mb-4">
+            <i class="pi pi-users text-xl text-orange-500"></i>
+        </span>
+        <div class="text-900 font-medium text-xl mb-3">Card Title</div>
+        <p class="mt-0 text-600 line-height-3">Nunc sed id semper risus in hendrerit gravida rutrum. Congue
+            mauris rhoncus aenean vel elit scelerisque. Massa sed elementum tempus egestas sed sed risus.
+            Feugiat vivamus at augue eget arcu dictum.</p>
+    </div>
+</div>
+</div>
 `;
 
 }
