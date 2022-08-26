@@ -181,7 +181,7 @@ block3: string = `
                 </div>
                 <div class="flex flex-wrap justify-content-between align-items-center gap-3 bg-primary text-primary-700 p-3 border-round">
                     <span class="font-medium text-2xl">Content Section Title</span>
-                    <div class="flex align-items-center">
+                    <div class="flex align-items-center cursor-pointer">
                         <span class="font-bold mr-3">View Post Statistics</span>
                         <i class="pi pi-arrow-right"></i>
                     </div>
