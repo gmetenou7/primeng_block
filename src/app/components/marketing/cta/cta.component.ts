@@ -201,7 +201,7 @@ export class CtaComponent {
 block12:string = `
 <div class="relative surface-section px-4 py-8 md:px-6 lg:px-8">
 <div class="static flex flex-column w-full lg:flex-row bg-no-repeat lg:max-h-18rem bg-cover px-6 py-6 border-round-xl relative"
-    style="background: url(/assets/images/blocks/cta/row.jpeg);">
+    style="background: url(/assets/images/blocks/cta/row.jpg);">
     <img src="/assets/images/blocks/cta/cta-building.png" style="top:0%;"
         class="lg:absolute static lg:flex-column flex-column w-18rem h-10rem lg:h-23rem border-round-xl -mt-6 -ml-6 lg:-ml-8">
     <div class="z-1 sm:ml-0 md:ml-auto sm:w-full md:w-full lg:w-9">
