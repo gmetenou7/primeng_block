@@ -603,7 +603,7 @@ export class FeatureComponent {
 
     block13: string = `
     <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
-        <div class="text-center bg-no-repeat bg-cover px-6 py-8" style="background: url('assets/images/blocks/feature/overlapping-cards.jpg')">
+        <div class="text-center bg-no-repeat bg-cover border-round px-6 py-8" style="background: url('assets/images/blocks/feature/overlapping-cards.jpg')">
             <div class="text-white text-6xl font-semibold mb-3">Augue Lacus <span class="text-primary">Viverra</span> Vitae</div>
             <p class="text-gray-300 text-xl mt-0 mb-8 line-height-3">Phasellus vestibulum lorem sed risus ultricies. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est. 
                 Aenean euismod elementum nisi quis eleifend quam.</p>
