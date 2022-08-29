@@ -235,31 +235,31 @@ export class FormLayoutComponent implements OnInit {
       <ul class="list-none m-0 p-0 flex flex-row lg:flex-column justify-content-evenly md:justify-content-between lg:justify-content-start mb-5 lg:pr-8 lg:mb-0">
           <li>
               <a pRipple class="flex align-items-center cursor-pointer p-3 border-round text-800 hover:surface-hover transition-duration-150 transition-colors">
-                  <i class="pi pi-user mr-2"></i>
+                  <i class="pi pi-user md:mr-2"></i>
                   <span class="font-medium hidden md:block">Profile</span>
               </a>
           </li>
           <li>
               <a pRipple class="flex align-items-center cursor-pointer p-3 border-round text-800 hover:surface-hover transition-duration-150 transition-colors">
-                  <i class="pi pi-cog mr-2"></i>
+                  <i class="pi pi-cog md:mr-2"></i>
                   <span class="font-medium hidden md:block">Account</span>
               </a>
           </li>
           <li>
               <a pRipple class="flex align-items-center cursor-pointer p-3 border-round text-800 hover:surface-hover transition-duration-150 transition-colors">
-                  <i class="pi pi-palette mr-2"></i>
+                  <i class="pi pi-palette md:mr-2"></i>
                   <span class="font-medium hidden md:block">Appearance</span>
               </a>
           </li>
           <li>
               <a pRipple class="flex align-items-center cursor-pointer p-3 border-round text-800 hover:surface-hover transition-duration-150 transition-colors">
-                  <i class="pi pi-sun mr-2"></i>
+                  <i class="pi pi-sun md:mr-2"></i>
                   <span class="font-medium hidden md:block">Accessibility</span>
               </a>
           </li>
           <li>
               <a pRipple class="flex align-items-center cursor-pointer p-3 border-round text-800 hover:surface-hover transition-duration-150 transition-colors">
-                  <i class="pi pi-bell mr-2"></i>
+                  <i class="pi pi-bell md:mr-2"></i>
                   <span class="font-medium hidden md:block">Notifications</span>
               </a>
           </li>
