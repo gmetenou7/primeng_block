@@ -2052,7 +2052,7 @@ export class SidebarLayoutComponent {
 </div>`;
 
     block13 = `
-    <div class="min-h-screen flex surface-ground">
+<div class="min-h-screen flex surface-ground">
     <div id="app-sidebar-13" class="surface-section h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 surface-border select-none" style="width:280px">
         <div class="flex flex-column h-full">
             <div class="flex align-items-center justify-content-center px-3 py-5 border-bottom-1 surface-border" style="height:60px">
