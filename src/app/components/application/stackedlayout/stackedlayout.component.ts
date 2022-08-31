@@ -29,7 +29,7 @@ export class StackedLayoutComponent {
                         <span>Customers</span>
                         <i class="pi pi-angle-down ml-auto lg:ml-3"></i>
                     </a>
-                    <ul class="list-none py-3 px-6 m-0 lg:px-0 lg:py-0 border-round shadow-0 lg:shadow-2 lg:border-1 border-50 lg:absolute surface-overlay hidden origin-top w-full lg:w-15rem cursor-pointer">
+                    <ul class="list-none py-0 px-6 m-0 lg:px-0 border-round shadow-0 lg:shadow-2 lg:border-1 border-50 lg:absolute surface-overlay hidden origin-top w-full lg:w-15rem cursor-pointer">
                         <li>
                             <a pRipple class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 transition-colors transition-duration-150">
                                 <i class="pi pi-user-plus mr-2"></i>
@@ -43,7 +43,7 @@ export class StackedLayoutComponent {
                                 <span class="font-medium">Search</span>
                                 <i class="pi pi-angle-down ml-auto lg:-rotate-90"></i>
                             </a>
-                            <ul class="list-none py-3 pl-3 m-0 lg:px-0 lg:py-0 border-round shadow-0 lg:shadow-2 lg:border-1 border-50 lg:absolute surface-overlay hidden origin-top w-full lg:w-15rem cursor-pointer left-100 top-0">
+                            <ul class="list-none py-0 pl-3 m-0 lg:px-0 border-round shadow-0 lg:shadow-2 lg:border-1 border-50 lg:absolute surface-overlay hidden origin-top w-full lg:w-15rem cursor-pointer left-100 top-0">
                                 <li>
                                     <a pRipple class="flex p-3 align-items-center text-600 hover:text-900 hover:surface-100 transition-colors transition-duration-150">
                                         <i class="pi pi-shopping-cart mr-2"></i>
@@ -715,7 +715,7 @@ export class StackedLayoutComponent {
                             <span>Customers</span>
                             <i class="pi pi-angle-down ml-auto lg:ml-3"></i>
                         </a>
-                        <ul class="list-none py-3 px-6 m-0 lg:px-0 lg:py-0 border-round shadow-0 lg:shadow-2 lg:border-1 border-50 lg:absolute surface-overlay hidden origin-top w-full lg:w-15rem cursor-pointer">
+                        <ul class="list-none py-0 px-6 m-0 lg:px-0 border-round shadow-0 lg:shadow-2 lg:border-1 border-50 lg:absolute surface-overlay hidden origin-top w-full lg:w-15rem cursor-pointer">
                             <li>
                                 <a pRipple class="flex p-3 align-items-center text-600 hover:text-900 border-left-2 border-transparent hover:border-primary transition-colors transition-duration-150">
                                     <i class="pi pi-user-plus mr-2"></i>
@@ -729,7 +729,7 @@ export class StackedLayoutComponent {
                                     <span class="font-medium">Search</span>
                                     <i class="pi pi-angle-down ml-auto lg:-rotate-90"></i>
                                 </a>
-                                <ul class="list-none py-3 pl-3 m-0 lg:px-0 lg:py-0 border-round shadow-0 lg:shadow-2 lg:border-1 border-50 lg:absolute surface-overlay hidden origin-top w-full lg:w-15rem cursor-pointer left-100 top-0">
+                                <ul class="list-none py-0 pl-3 m-0 lg:px-0 border-round shadow-0 lg:shadow-2 lg:border-1 border-50 lg:absolute surface-overlay hidden origin-top w-full lg:w-15rem cursor-pointer left-100 top-0">
                                     <li>
                                         <a pRipple class="flex p-3 align-items-center text-600 hover:text-900 border-left-2 border-transparent hover:border-primary transition-colors transition-duration-150">
                                             <i class="pi pi-shopping-cart mr-2"></i>
