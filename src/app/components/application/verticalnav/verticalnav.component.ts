@@ -475,7 +475,7 @@ block6 = `
     </div>
     <ul class="list-none pl-3 m-0">
         <li class="flex overflow-hidden">
-            <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
+            <div class="surface-200 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
                 <div *ngIf="activeTab1 == 0" class="bg-primary border-2 border-circle border-primary" style="width:.75rem; height: .75rem"></div>
             </div>
             <a pRipple class="flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab1 === 0}" (click)="activeTab1 = 0">
@@ -483,7 +483,7 @@ block6 = `
             </a>
         </li>
         <li class="flex overflow-hidden">
-            <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
+            <div class="surface-200 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
                 <div *ngIf="activeTab1 == 1" class="bg-primary border-2 border-circle border-primary" style="width:.75rem; height: .75rem"></div>
             </div>
             <a pRipple class="flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab1 === 1}" (click)="activeTab1 = 1">
@@ -491,7 +491,7 @@ block6 = `
             </a>
         </li>
         <li class="flex overflow-hidden">
-            <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
+            <div class="surface-200 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
                 <div *ngIf="activeTab1 == 2" class="bg-primary border-2 border-circle border-primary" style="width:.75rem; height: .75rem"></div>
             </div>
             <a pRipple class="flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab1 === 2}" (click)="activeTab1 = 2">
@@ -499,7 +499,7 @@ block6 = `
             </a>
         </li>
         <li class="flex flex-wrap overflow-hidden">
-            <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
+            <div class="surface-200 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
                 <div *ngIf="activeTab1 == 3" class="bg-primary border-2 border-circle border-primary" style="width:.75rem; height: .75rem"></div>
             </div>
             <a pRipple class="flex align-items-center justify-content-between flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" 
@@ -510,7 +510,7 @@ block6 = `
             </a>
             <ul class="w-full m-0 p-0 overflow-hidden">
                 <li class="flex align-items-stretch">
-                    <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
+                    <div class="surface-200 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
                         <div *ngIf="activeTab1 == 4" class="bg-primary border-2 border-circle border-primary" style="width:.75rem; height: .75rem"></div>
                     </div>
                     <a pRipple class="flex-1 cursor-pointer py-2 pl-5 pr-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab1 === 4}" (click)="activeTab1 = 4">
@@ -518,7 +518,7 @@ block6 = `
                     </a>
                 </li>
                 <li class="flex align-items-stretch">
-                    <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
+                    <div class="surface-200 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
                         <div *ngIf="activeTab1 == 5" class="bg-primary border-2 border-circle border-primary" style="width:.75rem; height: .75rem"></div>
                     </div>
                     <a pRipple class="flex-1 cursor-pointer py-2 pl-5 pr-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab1 === 5}" (click)="activeTab1 = 5">
