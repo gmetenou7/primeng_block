@@ -469,118 +469,118 @@ export class VerticalNavComponent {
 
 block6 = `
 <div class="surface-card select-none p-3">
-<div class="p-3 flex align-items-center text-900">
-    <i class="pi pi-book mr-2"></i>
-    <span class="font-medium">Organization</span>
-</div>
-<ul class="list-none pl-3 m-0">
-    <li class="flex">
-        <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
-            <div *ngIf="activeTab1 == 0" class="border-2 border-circle border-primary surface-section" style="width:.75rem; height: .75rem"></div>
-        </div>
-        <a pRipple class="flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab1 === 0}" (click)="activeTab1 = 0">
-            <span class="font-medium">Overview</span>
-        </a>
-    </li>
-    <li class="flex">
-        <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
-            <div *ngIf="activeTab1 == 1" class="border-2 border-circle border-primary surface-section" style="width:.75rem; height: .75rem"></div>
-        </div>
-        <a pRipple class="flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab1 === 1}" (click)="activeTab1 = 1">
-            <span class="font-medium">Security</span>
-        </a>
-    </li>
-    <li class="flex">
-        <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
-            <div *ngIf="activeTab1 == 2" class="border-2 border-circle border-primary surface-section" style="width:.75rem; height: .75rem"></div>
-        </div>
-        <a pRipple class="flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab1 === 2}" (click)="activeTab1 = 2">
-            <span class="font-medium">Reports</span>
-        </a>
-    </li>
-    <li class="flex flex-wrap">
-        <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
-            <div *ngIf="activeTab1 == 3" class="border-2 border-circle border-primary surface-section" style="width:.75rem; height: .75rem"></div>
-        </div>
-        <a pRipple class="flex align-items-center justify-content-between flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" 
-            [ngClass]="{'text-primary': activeTab1 === 3}" (click)="activeTab1 = 3"
-            pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
-            <span class="font-medium">Domains</span>
-            <span class="pi pi-angle-down text-600"></span>
-        </a>
-        <ul class="w-full m-0 p-0 overflow-hidden">
-            <li class="flex align-items-stretch">
-                <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
-                    <div *ngIf="activeTab1 == 4" class="border-2 border-circle border-primary surface-section" style="width:.75rem; height: .75rem"></div>
-                </div>
-                <a pRipple class="flex-1 cursor-pointer py-2 pl-5 pr-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab1 === 4}" (click)="activeTab1 = 4">
-                    <span class="font-medium">DNS Settings</span>
-                </a>
-            </li>
-            <li class="flex align-items-stretch">
-                <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
-                    <div *ngIf="activeTab1 == 5" class="border-2 border-circle border-primary surface-section" style="width:.75rem; height: .75rem"></div>
-                </div>
-                <a pRipple class="flex-1 cursor-pointer py-2 pl-5 pr-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab1 === 5}" (click)="activeTab1 = 5">
-                    <span class="font-medium">Renewal</span>
-                </a>
-            </li>
-        </ul>
-    </li>
-</ul>
+    <div class="p-3 flex align-items-center text-900">
+        <i class="pi pi-book mr-2"></i>
+        <span class="font-medium">Organization</span>
+    </div>
+    <ul class="list-none pl-3 m-0">
+        <li class="flex overflow-hidden">
+            <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
+                <div *ngIf="activeTab1 == 0" class="bg-primary border-2 border-circle border-primary" style="width:.75rem; height: .75rem"></div>
+            </div>
+            <a pRipple class="flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab1 === 0}" (click)="activeTab1 = 0">
+                <span class="font-medium">Overview</span>
+            </a>
+        </li>
+        <li class="flex overflow-hidden">
+            <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
+                <div *ngIf="activeTab1 == 1" class="bg-primary border-2 border-circle border-primary" style="width:.75rem; height: .75rem"></div>
+            </div>
+            <a pRipple class="flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab1 === 1}" (click)="activeTab1 = 1">
+                <span class="font-medium">Security</span>
+            </a>
+        </li>
+        <li class="flex overflow-hidden">
+            <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
+                <div *ngIf="activeTab1 == 2" class="bg-primary border-2 border-circle border-primary" style="width:.75rem; height: .75rem"></div>
+            </div>
+            <a pRipple class="flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab1 === 2}" (click)="activeTab1 = 2">
+                <span class="font-medium">Reports</span>
+            </a>
+        </li>
+        <li class="flex flex-wrap overflow-hidden">
+            <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
+                <div *ngIf="activeTab1 == 3" class="bg-primary border-2 border-circle border-primary" style="width:.75rem; height: .75rem"></div>
+            </div>
+            <a pRipple class="flex align-items-center justify-content-between flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" 
+                [ngClass]="{'text-primary': activeTab1 === 3}" (click)="activeTab1 = 3"
+                pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
+                <span class="font-medium">Domains</span>
+                <span class="pi pi-angle-down text-600"></span>
+            </a>
+            <ul class="w-full m-0 p-0 overflow-hidden">
+                <li class="flex align-items-stretch">
+                    <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
+                        <div *ngIf="activeTab1 == 4" class="bg-primary border-2 border-circle border-primary" style="width:.75rem; height: .75rem"></div>
+                    </div>
+                    <a pRipple class="flex-1 cursor-pointer py-2 pl-5 pr-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab1 === 4}" (click)="activeTab1 = 4">
+                        <span class="font-medium">DNS Settings</span>
+                    </a>
+                </li>
+                <li class="flex align-items-stretch">
+                    <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" style="width:2px">
+                        <div *ngIf="activeTab1 == 5" class="bg-primary border-2 border-circle border-primary" style="width:.75rem; height: .75rem"></div>
+                    </div>
+                    <a pRipple class="flex-1 cursor-pointer py-2 pl-5 pr-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab1 === 5}" (click)="activeTab1 = 5">
+                        <span class="font-medium">Renewal</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
 </div>
 `;
 
 block7 = `
 <div class="surface-card select-none p-3">
-        <div class="p-3 flex align-items-center text-900">
-            <i class="pi pi-book mr-2"></i>
-            <span class="font-medium">Organization</span>
-        </div>
-        <ul class="list-none pl-3 m-0">
-            <li class="flex">
-                <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" [ngClass]="{'bg-primary': activeTab2 == 0}" style="width:2px"></div>
-                <a pRipple class="flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab2 === 0, 'bg-primary-50': activeTab2 == 0}" (click)="activeTab2 = 0">
-                    <span class="font-medium">Overview</span>
-                </a>
-            </li>
-            <li class="flex">
-                <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" [ngClass]="{'bg-primary': activeTab2 == 1}" style="width:2px"></div>
-                <a pRipple class="flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab2 === 1, 'bg-primary-50': activeTab2 == 1}" (click)="activeTab2 = 1">
-                    <span class="font-medium">Security</span>
-                </a>
-            </li>
-            <li class="flex">
-                <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" [ngClass]="{'bg-primary': activeTab2 == 2}" style="width:2px"></div>
-                <a pRipple class="flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab2 === 2, 'bg-primary-50': activeTab2 == 2}" (click)="activeTab2 = 2">
-                    <span class="font-medium">Reports</span>
-                </a>
-            </li>
-            <li class="flex flex-wrap">
-                <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" [ngClass]="{'bg-primary': activeTab2 == 3}" style="width:2px"></div>
-                <a pRipple class="flex align-items-center justify-content-between flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" 
-                    [ngClass]="{'text-primary': activeTab2 === 3, 'bg-primary-50': activeTab2 == 3}" (click)="activeTab2 = 3"
-                    pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
-                    <span class="font-medium">Domains</span>
-                    <span class="pi pi-angle-down text-600"></span>
-                </a>
-                <ul class="w-full m-0 p-0 overflow-hidden">
-                    <li class="flex">
-                        <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" [ngClass]="{'bg-primary': activeTab2 == 4}" style="width:2px"></div>
-                        <a pRipple class="flex-1 cursor-pointer py-2 pl-5 pr-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab2 === 4, 'bg-primary-50': activeTab2 == 4}" (click)="activeTab2 = 4">
-                            <span class="font-medium">DNS Settings</span>
-                        </a>
-                    </li>
-                    <li class="flex">
-                        <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" [ngClass]="{'bg-primary': activeTab2 == 5}" style="width:2px"></div>
-                        <a pRipple class="flex-1 cursor-pointer py-2 pl-5 pr-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab2 === 5, 'bg-primary-50': activeTab2 == 5}" (click)="activeTab2 = 5">
-                            <span class="font-medium">Renewal</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+    <div class="p-3 flex align-items-center text-900">
+        <i class="pi pi-book mr-2"></i>
+        <span class="font-medium">Organization</span>
     </div>
+    <ul class="list-none pl-3 m-0">
+        <li class="flex">
+            <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" [ngClass]="{'bg-primary': activeTab2 == 0}" style="width:2px"></div>
+            <a pRipple class="flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab2 === 0, 'bg-primary-50': activeTab2 == 0}" (click)="activeTab2 = 0">
+                <span class="font-medium">Overview</span>
+            </a>
+        </li>
+        <li class="flex">
+            <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" [ngClass]="{'bg-primary': activeTab2 == 1}" style="width:2px"></div>
+            <a pRipple class="flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab2 === 1, 'bg-primary-50': activeTab2 == 1}" (click)="activeTab2 = 1">
+                <span class="font-medium">Security</span>
+            </a>
+        </li>
+        <li class="flex">
+            <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" [ngClass]="{'bg-primary': activeTab2 == 2}" style="width:2px"></div>
+            <a pRipple class="flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab2 === 2, 'bg-primary-50': activeTab2 == 2}" (click)="activeTab2 = 2">
+                <span class="font-medium">Reports</span>
+            </a>
+        </li>
+        <li class="flex flex-wrap">
+            <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" [ngClass]="{'bg-primary': activeTab2 == 3}" style="width:2px"></div>
+            <a pRipple class="flex align-items-center justify-content-between flex-1 cursor-pointer py-2 px-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" 
+                [ngClass]="{'text-primary': activeTab2 === 3, 'bg-primary-50': activeTab2 == 3}" (click)="activeTab2 = 3"
+                pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
+                <span class="font-medium">Domains</span>
+                <span class="pi pi-angle-down text-600"></span>
+            </a>
+            <ul class="w-full m-0 p-0 overflow-hidden">
+                <li class="flex">
+                    <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" [ngClass]="{'bg-primary': activeTab2 == 4}" style="width:2px"></div>
+                    <a pRipple class="flex-1 cursor-pointer py-2 pl-5 pr-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab2 === 4, 'bg-primary-50': activeTab2 == 4}" (click)="activeTab2 = 4">
+                        <span class="font-medium">DNS Settings</span>
+                    </a>
+                </li>
+                <li class="flex">
+                    <div class="surface-300 flex flex-column align-items-center justify-content-center z-1" [ngClass]="{'bg-primary': activeTab2 == 5}" style="width:2px"></div>
+                    <a pRipple class="flex-1 cursor-pointer py-2 pl-5 pr-3 hover:surface-hover transition-colors transition-duration-150 text-700 font-medium line-height-3" [ngClass]="{'text-primary': activeTab2 === 5, 'bg-primary-50': activeTab2 == 5}" (click)="activeTab2 = 5">
+                        <span class="font-medium">Renewal</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
 `;
 
 
