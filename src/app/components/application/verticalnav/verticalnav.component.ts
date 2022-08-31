@@ -386,7 +386,7 @@ export class VerticalNavComponent {
 </div>`;
 
     block5 = `
-    <div class="surface-card border-round shadow-2 select-none">
+<div class="surface-card border-round shadow-2 select-none">
     <ul class="list-none p-2 m-0">
         <li>
             <a pRipple class="flex p-2 align-items-center cursor-pointer" pStyleClass="#pb_profile_submenu" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
@@ -467,7 +467,7 @@ export class VerticalNavComponent {
     </ul>
 </div>`;
 
-block6 = `
+    block6 = `
 <div class="surface-card select-none p-3">
     <div class="p-3 flex align-items-center text-900">
         <i class="pi pi-book mr-2"></i>
@@ -528,10 +528,9 @@ block6 = `
             </ul>
         </li>
     </ul>
-</div>
-`;
+</div>`;
 
-block7 = `
+    block7 = `
 <div class="surface-card select-none p-3">
     <div class="p-3 flex align-items-center text-900">
         <i class="pi pi-book mr-2"></i>
@@ -580,8 +579,6 @@ block7 = `
             </ul>
         </li>
     </ul>
-</div>
-`;
-
+</div>`;
 
 }

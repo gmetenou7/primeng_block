@@ -653,8 +653,7 @@ export class FeatureComponent {
             </div>
         </div>
     </div>
-</div>
-    `;
+</div>`;
 
     block14: string = `
 <div class="surface-section px-4 py-2 md:px-6 lg:px-8">
