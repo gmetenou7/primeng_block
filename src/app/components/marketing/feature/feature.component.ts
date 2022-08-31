@@ -9,17 +9,17 @@ export class FeatureComponent {
         {
             'name': 'Screenshot 1',
             'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'image': 'assets/images/blocks/feature/screen-shoot1.png',
+            'image': 'assets/images/blocks/feature/feature-sliding-1.jpg',
         },
         {
             'name': 'Screenshot 2',
             'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'image': 'assets/images/blocks/feature/screen-shoot2.png',
+            'image': 'assets/images/blocks/feature/feature-sliding-2.jpg',
         },
         {
             'name': 'Screenshot 3',
             'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'image': 'assets/images/blocks/feature/screen-shoot2.png',
+            'image': 'assets/images/blocks/feature/feature-sliding-3.jpg',
         }
     ];
 
