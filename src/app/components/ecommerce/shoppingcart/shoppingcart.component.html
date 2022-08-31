@@ -1,5 +1,5 @@
 <div class="block-category-title">Shopping Cart</div>
-<block-viewer header="SlideOver" [code]="block1" containerClass="flex align-items-start justify-content-end px-4 py-8 md:px-6 lg:px-8 relative overflow-hidden h-screen" [new]="true">
+<block-viewer header="SlideOver" [code]="block1" containerClass="flex align-items-start justify-content-end px-4 py-8 md:px-6 lg:px-8 relative overflow-hidden h-screen">
     <button pButton pRipple label="Display" icon="pi pi-arrow-left"
         pStyleClass="#slideover-cart" enterClass="hidden" enterActiveClass="fadeinright" leaveToClass="hidden" leaveActiveClass="fadeoutright" [hideOnOutsideClick]="true"></button>
     
@@ -78,7 +78,7 @@
     </div>
 </block-viewer>
 
-<block-viewer header="Full Width" [code]="block2" [new]="true">
+<block-viewer header="Full Width" [code]="block2">
     <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
         <div class="flex flex-column align-items-center mb-6">
             <div class="text-900 text-4xl mb-4 font-medium">Your cart total is $82.00</div>
@@ -182,7 +182,7 @@
     </div>
 </block-viewer>
 
-<block-viewer header="Overlay" [code]="block3" containerClass="surface-section px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center" [new]="true">
+<block-viewer header="Overlay" [code]="block3" containerClass="surface-section px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center">
     <button pButton pRipple label="Display" (click)="visibleDialog = true"></button>
 
     <p-dialog [(visible)]="visibleDialog" appendTo="body" [modal]="true" [breakpoints]="{'960px': '75vw', '640px': '95vw'}" [style]="{width: '40vw'}">
@@ -240,7 +240,7 @@
     </p-dialog>
 </block-viewer>
 
-<block-viewer header="Popover" [code]="block4" containerClass="surface-ground relative" [new]="true" [previewStyle]="{height:'600px'}">
+<block-viewer header="Popover" [code]="block4" containerClass="surface-ground relative" [previewStyle]="{height:'600px'}">
     <div class="surface-overlay shadow-2 py-3 px-6 flex justify-content-between align-items-center">
         <img src="assets/images/blocks/logos/bastion-purple.svg" alt="Image" height="50">
         <div class="sm:relative">
@@ -284,7 +284,7 @@
     </div>
 </block-viewer>
 
-<block-viewer header="Extended SlideOver" [code]="block5" containerClass="flex align-items-start justify-content-end px-4 py-8 md:px-6 lg:px-8 relative overflow-hidden h-screen" [new]="true">
+<block-viewer header="Extended SlideOver" [code]="block5" containerClass="flex align-items-start justify-content-end px-4 py-8 md:px-6 lg:px-8 relative overflow-hidden h-screen">
     <button pButton pRipple label="Display" icon="pi pi-arrow-left"
         pStyleClass="#slideover-cart-ext" enterClass="hidden" enterActiveClass="fadeinright" leaveToClass="hidden" leaveActiveClass="fadeoutright" [hideOnOutsideClick]="true"></button>
     
