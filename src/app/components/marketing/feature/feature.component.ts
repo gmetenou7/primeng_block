@@ -602,7 +602,7 @@ export class FeatureComponent {
 </div>`;
 
     block13: string = `
-    <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="text-center bg-no-repeat bg-cover border-round px-6 py-8" style="background: url('assets/images/blocks/feature/overlapping-cards.jpg')">
         <div class="text-white text-6xl font-semibold mb-3">Augue Lacus <span class="text-primary">Viverra</span> Vitae</div>
         <p class="text-gray-300 text-xl mt-0 mb-8 line-height-3">Phasellus vestibulum lorem sed risus ultricies. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est. 
@@ -614,7 +614,7 @@ export class FeatureComponent {
                 <i class="pi pi-sliders-v mr-2 text-2xl"></i>
                 <span class="font-semibold text-2xl">Lectus Arcu</span>
             </div>
-            <div class="surface-card shadow-2 p-4 flex flex-column justify-content-between flex-1">
+            <div class="surface-card shadow-2 p-4 flex flex-column justify-content-between flex-1 border-round-bottom">
                 <p class="mt-0 mb-6 line-height-3 text-xl text-00">Aliquam vestibulum morbi blandit cursus risus at ultrices mi. Sollicitudin ac orci phasellus egestas tellus rutrum.</p>
                 <div class="text-center">
                     <button pButton label="Learn More" icon="pi pi-arrow-right" iconPos="right" class="p-button-text"></button>
@@ -626,7 +626,7 @@ export class FeatureComponent {
                 <i class="pi pi-moon mr-2 text-2xl"></i>
                 <span class="font-semibold text-2xl">Sollicitudin Ac</span>
             </div>
-            <div class="surface-card shadow-2 p-4 flex flex-column justify-content-between flex-1">
+            <div class="surface-card shadow-2 p-4 flex flex-column justify-content-between flex-1 border-round-bottom">
                 <p class="mt-0 mb-6 line-height-3 text-xl text-00">Faucibus ornare suspendisse sed nisi lacus. Urna nunc id cursus metus aliquam eleifend. Augue lacus viverra vitae congue eu consequat ac.</p>
                 <div class="text-center">
                     <button pButton label="Learn More" icon="pi pi-arrow-right" iconPos="right" class="p-button-text"></button>
@@ -638,7 +638,7 @@ export class FeatureComponent {
                 <i class="pi pi-sun mr-2 text-2xl"></i>
                 <span class="font-semibold text-2xl">Nec Nisl</span>
             </div>
-            <div class="surface-card shadow-2 p-4 flex flex-column justify-content-between flex-1">
+            <div class="surface-card shadow-2 p-4 flex flex-column justify-content-between flex-1 border-round-bottom">
                 <p class="mt-0 mb-6 line-height-3 text-xl text-00">Montes nascetur ridiculus mus mauris. Enim tortor at auctor urna nunc id cursus metus. Sed odio morbi quis commodo odio.</p>
                 <div class="text-center">
                     <button pButton label="Learn More" icon="pi pi-arrow-right" iconPos="right" class="p-button-text"></button>
@@ -648,8 +648,9 @@ export class FeatureComponent {
     </div>
 </div>
     `;
+
     block14: string = `
-    <div class="surface-section px-4 py-2 md:px-6 lg:px-8">
+<div class="surface-section px-4 py-2 md:px-6 lg:px-8">
     <div class="text-center px-6 py-8">
         <div class="text-900 text-4xl font-semibold mb-3">Move Work Forward</div>
         <p class="text-700 text-xl my-0 line-height-3">Orci dapibus ultrices in iaculis. Quam adipiscing vitae proin sagittis nisl. 
