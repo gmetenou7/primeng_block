@@ -679,8 +679,7 @@
         </div>
         <div class="surface-100 align-items-center flex flex-row border-round mb-8">
             <div class="col-12 lg:col w-full">
-                <p-carousel [value]="screenshots" [numVisible]="1" [numScroll]="1" [circular]="false"
-                    indicatorStyleClass="h-1rem w-1rem border-circle" [showNavigators]="false" [(page)]="carouselPage">
+                <p-carousel [value]="screenshots" [numVisible]="1" [numScroll]="1" [circular]="false" [showNavigators]="false" [(page)]="carouselPage" [showIndicators]="false">
                     <ng-template let-screenshot pTemplate="item">
                         <div class="p-5 text-center">
                             <img src="{{screenshot.image}}" class="w-full h-full" alt="{{screenshot.description}}"/>
