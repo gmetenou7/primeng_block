@@ -359,7 +359,7 @@ export class TeamComponent {
         <div class="col-12 md:col-6 lg:col-3 p-3">
             <div class="relative overflow-hidden" (mouseenter)="visibleMember = 0" (mouseleave)="visibleMember = null">
                 <img src="assets/images/blocks/team/team-5.png" class="w-full block" />
-                <div class="absolute top-0 left-0 h-full w-full border-round fadein animation-duration-300 select-none" style="background-color: rgba(0,0,0,0.7)" *ngIf="visibleMember === 0" >
+                <div class="absolute top-0 left-0 h-full w-full border-round fadein animation-duration-300 select-none" style="background-color: rgba(0,0,0,0.7)" *ngIf="visibleMember === 0">
                     <div class="flex flex-column p-5 h-full">
                         <span class="block font-medium text-white text-xl mb-3">Jeff Davies</span>
                         <span class="font-medium text-400">Software Developer</span>
@@ -375,7 +375,7 @@ export class TeamComponent {
         <div class="col-12 md:col-6 lg:col-3 p-3">
             <div class="relative overflow-hidden" (mouseenter)="visibleMember = 1" (mouseleave)="visibleMember = null">
                 <img src="assets/images/blocks/team/team-6.png" class="w-full block" />
-                <div class="absolute top-0 left-0 h-full w-full border-round fadein animation-duration-300 select-none" style="background-color: rgba(0,0,0,0.7)" *ngIf="visibleMember === 1" >
+                <div class="absolute top-0 left-0 h-full w-full border-round fadein animation-duration-300 select-none" style="background-color: rgba(0,0,0,0.7)" *ngIf="visibleMember === 1">
                     <div class="flex flex-column p-5 h-full">
                         <span class="block font-medium text-white text-xl mb-3">Kristin Watson</span>
                         <span class="font-medium text-400">UI/UX Designer</span>
@@ -391,7 +391,7 @@ export class TeamComponent {
         <div class="col-12 md:col-6 lg:col-3 p-3">
             <div class="relative overflow-hidden" (mouseenter)="visibleMember = 2" (mouseleave)="visibleMember = null">
                 <img src="assets/images/blocks/team/team-7.png" class="w-full block" />
-                <div class="absolute top-0 left-0 h-full w-full border-round fadein animation-duration-300 select-none" style="background-color: rgba(0,0,0,0.7)" *ngIf="visibleMember === 2" >
+                <div class="absolute top-0 left-0 h-full w-full border-round fadein animation-duration-300 select-none" style="background-color: rgba(0,0,0,0.7)" *ngIf="visibleMember === 2">
                     <div class="flex flex-column p-5 h-full">
                         <span class="block font-medium text-white text-xl mb-3">Jenna Williams</span>
                         <span class="font-medium text-400">Marketing Specialist</span>
@@ -407,7 +407,7 @@ export class TeamComponent {
         <div class="col-12 md:col-6 lg:col-3 p-3">
             <div class="relative overflow-hidden" (mouseenter)="visibleMember = 3" (mouseleave)="visibleMember = null">
                 <img src="assets/images/blocks/team/team-8.png" class="w-full block" />
-                <div class="absolute top-0 left-0 h-full w-full border-round fadein animation-duration-300 select-none" style="background-color: rgba(0,0,0,0.7)" *ngIf="visibleMember === 3" >
+                <div class="absolute top-0 left-0 h-full w-full border-round fadein animation-duration-300 select-none" style="background-color: rgba(0,0,0,0.7)" *ngIf="visibleMember === 3">
                     <div class="flex flex-column p-5 h-full">
                         <span class="block font-medium text-white text-xl mb-3">Joe Clifford</span>
                         <span class="font-medium text-400">Customer Relations</span>

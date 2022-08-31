@@ -184,7 +184,7 @@ export class PricingComponent {
 
     <div class="flex flex-column md:flex-row mt-6">
         <div class="mb-6 md:mb-0 mr-0 md:mr-4 flex flex-column flex-grow-1">
-            <div class="bg-bluegray-100 text-center p-3" style="border-radius: 6px 6px 0 0" >
+            <div class="bg-bluegray-100 text-center p-3" style="border-radius: 6px 6px 0 0">
                 <div class="text-2xl font-bold text-bluegray-900 mb-3">Basic</div>
                 <div class="flex align-items-center justify-content-center">
                     <span class="font-bold text-bluegray-900 text-5xl mr-2">10$</span>
@@ -243,7 +243,7 @@ export class PricingComponent {
         </div>
 
         <div class="mb-6 md:mb-0 flex flex-column flex-grow-1">
-            <div class="bg-blue-800 text-center p-3" style="border-radius: 6px 6px 0 0" >
+            <div class="bg-blue-800 text-center p-3" style="border-radius: 6px 6px 0 0">
                 <div class="text-2xl font-bold text-white mb-3">Enterprise</div>
                 <div class="flex align-items-center justify-content-center">
                     <span class="font-bold text-white text-5xl mr-2">30$</span>
@@ -275,7 +275,7 @@ export class PricingComponent {
                     </li>
                 </ul>
 
-                <button pButton pRipple class="p-button-outlined w-full mt-auto" label="Contact Us" ></button>
+                <button pButton pRipple class="p-button-outlined w-full mt-auto" label="Contact Us"></button>
             </div>
         </div>
     </div>
