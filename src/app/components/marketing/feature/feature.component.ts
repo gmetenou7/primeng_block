@@ -16,7 +16,14 @@ export class FeatureComponent {
             'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             'image': 'assets/images/blocks/feature/screen-shoot2.png',
         },
+        {
+            'name': 'Screenshot 3',
+            'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'image': 'assets/images/blocks/feature/screen-shoot2.png',
+        }
     ];
+
+    carouselPage: number = 0;
 
     activeTab1 = 0;
 
@@ -658,19 +665,19 @@ export class FeatureComponent {
     </div>
     <div class="grid mb-4">
         <div class="col-12 md:col-4 mb-4 px-5">
-            <span class="p-3 shadow-2 mb-3 inline-block bg-primary" style="border-radius: 10px">
+            <button class="p-link p-3 shadow-2 mb-3 inline-block" style="border-radius: 10px" (click)="carouselPage = 0" [ngClass]="{'bg-primary': carouselPage === 0, 'bg-bluegray-400 text-white': carouselPage !== 0}">
                 <i class="pi pi-map text-4xl"></i>
-            </span>
-            <div class="text-primary mb-3 font-medium">Dynamic Mapping</div>
+            </button>
+            <div class="text-bluegray-500 mb-3 font-medium">Dynamic Mapping</div>
             <div class="text-900 mb-3 font-medium text-xl">Collect and organize mappings</div>
             <span class="text-600 line-height-3">Diam sollicitudin tempor id eu. Ut consequat
                 semper viverra nam libero justo laoreet sit. Mi sit amet mauris commodo quis imperdiet massa. Euismod
                 quis viverra.</span>
         </div>
         <div class="col-12 md:col-4 mb-4 px-5">
-            <span class="p-3 shadow-2 mb-3 inline-block bg-bluegray-400 text-white" style="border-radius: 10px">
+            <button class="p-link p-3 shadow-2 mb-3 inline-block" style="border-radius: 10px" (click)="carouselPage = 1" [ngClass]="{'bg-primary': carouselPage === 1, 'bg-bluegray-400 text-white': carouselPage !== 1}">
                 <i class="pi pi-sync text-4xl"></i>
-            </span>
+            </button>
             <div class="text-bluegray-500 mb-3 font-medium">Seamless Sync</div>
             <div class="text-900 mb-3 font-medium text-xl">Never touch plaintext data</div>
             <span class="text-600 line-height-3">Massa id neque aliquam vestibulum. Tristique
@@ -678,9 +685,9 @@ export class FeatureComponent {
                 phasellus egestas tellus rutrum.</span>
         </div>
         <div class="col-12 md:col-4 mb-4 px-5">
-            <span class="p-3 shadow-2 mb-3 inline-block bg-bluegray-400 text-white" style="border-radius: 10px">
+            <button class="p-link p-3 shadow-2 mb-3 inline-block" style="border-radius: 10px" (click)="carouselPage = 2" [ngClass]="{'bg-primary': carouselPage === 2, 'bg-bluegray-400 text-white': carouselPage !== 2}">
                 <i class="pi pi-shield text-4xl"></i>
-            </span>
+            </button>
             <div class="text-bluegray-500 mb-3 font-medium">Maximum Security</div>
             <div class="text-900 mb-3 font-medium text-xl">Process encrypted data</div>
             <span class="text-600 line-height-3">Pellentesque eu tincidunt tortor aliquam nulla.
@@ -691,7 +698,7 @@ export class FeatureComponent {
     <div class="surface-100 align-items-center flex flex-row border-round mb-8">
         <div class="col-12 lg:col w-full">
             <p-carousel [value]="screenshots" [numVisible]="1" [numScroll]="1" [circular]="false"
-                indicatorStyleClass="h-1rem w-1rem border-circle" [showNavigators]="false">
+                indicatorStyleClass="h-1rem w-1rem border-circle" [showNavigators]="false" [(page)]="carouselPage">
                 <ng-template let-screenshot pTemplate="item">
                     <div class="p-5 text-center">
                         <img src="{{screenshot.image}}" class="w-full h-full" alt="{{screenshot.description}}"/>
