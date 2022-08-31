@@ -163,14 +163,14 @@ block6: string =  `
         </div>
         <div class="flex flex-column lg:flex-row">
             <div class="flex-1 p-5">
-                <img src="/assets/images/blocks/avatars/circle/avatar-f-1.png" class="w-3rem h-3rem block mb-3" />
+                <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="w-3rem h-3rem block mb-3" />
                 <div class="text-900 line-height-3 mb-3">
                     "You won't regret it. I was amazed at the quality of it. I am really satisfied with my it."
                 </div>
                 <span class="text-xs font-medium text-900">Brooklyn Simmons</span>
             </div>
             <div class="flex-1 p-5">
-                <img src="/assets/images/blocks/avatars/circle/avatar-f-4.png" class="w-3rem h-3rem block mb-3" />
+                <img src="assets/images/blocks/avatars/circle/avatar-f-4.png" class="w-3rem h-3rem block mb-3" />
                 <div class="text-900 line-height-3 mb-3">
                     "No matter where you go, It's is the coolest, most happening thing around! Not able to tell
                     you how happy
@@ -179,7 +179,7 @@ block6: string =  `
                 <span class="text-xs font-medium text-900">Jenny Wilson</span>
             </div>
             <div class="flex-1 p-5">
-                <img src="/assets/images/blocks/avatars/circle/avatar-f-6.png" class="w-3rem h-3rem mb-3" />
+                <img src="assets/images/blocks/avatars/circle/avatar-f-6.png" class="w-3rem h-3rem mb-3" />
                 <div class="text-900 line-height-3 mb-3">
                     "We're loving it. This is simply unbelievable! I like it more and more each day because it
                     makes my life a
