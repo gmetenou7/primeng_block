@@ -552,86 +552,87 @@ export class PricingComponent {
     </div>
 </div>`;
 
-block6:string=`
+    block6:string=`
 <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
-<div class="text-900 font-bold text-5xl mb-4 text-center">Pricing</div>
-<p class="text-700 text-xl mt-0 mb-6 text-center line-height-3">
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam
-    eligendi quos.
-</p>
-<div class="flex align-items-center justify-content-center mb-6">
-    <ul class="surface-card p-2 m-0 list-none flex column-gap-2 overflow-x-auto select-none shadow-2 border-1 surface-border" style="border-radius: 30px">
-        <li>
-            <button pRipple class="p-link cursor-pointer px-4 py-3 flex align-items-center transition-color transition-duration-150"
-                [ngClass]="{'bg-primary': selectedInterval == 'month','text-600': selectedInterval != 'month','hover:surface-hover': selectedInterval != 'month'}" (click)="selectedInterval = 'month'" style="border-radius: 30px">
-                <span class="font-medium">Monthly</span>
-            </button>
-        </li>
-        <li>
-            <button pRipple
-                class="p-link cursor-pointer px-4 py-3 flex align-items-center transition-colors transition-duration-150"
-                [ngClass]="{'bg-primary': selectedInterval == 'year','text-600': selectedInterval != 'year', 'hover:surface-hover': selectedInterval != 'year'}" (click)="selectedInterval = 'year'" style="border-radius: 30px">
-                <span class="font-medium">Yearly</span>
-            </button>
-        </li>
-    </ul>
-</div>
-<div class="flex flex-column lg:flex-row gap-4 xl:px-8 xl:mx-8">
-    <div class="flex flex-column gap-4 flex-1">
-        <div *ngFor="let plan of plans" class="shadow-2 surface-card p-4 cursor-pointer border-round-lg border-2 border-transparent text-900 hover:surface-hover transition-colors transition-duration-150"
-            (click)="selectedPlan=plan" [ngClass]="{'border-primary': selectedPlan == plan}">
-            <div class="flex flex-column lg:flex-row align-items-start">
-                <div class="mr-3">
-                    <span class="inline-flex justify-content-center border-circle align-items-center bg-indigo-100 w-3rem h-3rem bg-primary">
-                        <i [ngClass]="plan.icon" class="text-2xl"></i>
-                    </span>
+    <div class="text-900 font-bold text-5xl mb-4 text-center">Pricing</div>
+    <p class="text-700 text-xl mt-0 mb-6 text-center line-height-3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam
+        eligendi quos.
+    </p>
+    <div class="flex align-items-center justify-content-center mb-6">
+        <ul class="surface-card p-2 m-0 list-none flex column-gap-2 overflow-x-auto select-none shadow-2 border-1 surface-border" style="border-radius: 30px">
+            <li>
+                <button pRipple class="p-link cursor-pointer px-4 py-3 flex align-items-center transition-color transition-duration-150"
+                    [ngClass]="{'bg-primary': selectedInterval == 'month','text-600': selectedInterval != 'month','hover:surface-hover': selectedInterval != 'month'}" (click)="selectedInterval = 'month'" style="border-radius: 30px">
+                    <span class="font-medium">Monthly</span>
+                </button>
+            </li>
+            <li>
+                <button pRipple
+                    class="p-link cursor-pointer px-4 py-3 flex align-items-center transition-colors transition-duration-150"
+                    [ngClass]="{'bg-primary': selectedInterval == 'year','text-600': selectedInterval != 'year', 'hover:surface-hover': selectedInterval != 'year'}" (click)="selectedInterval = 'year'" style="border-radius: 30px">
+                    <span class="font-medium">Yearly</span>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="flex flex-column lg:flex-row gap-4 xl:px-8 xl:mx-8">
+        <div class="flex flex-column gap-4 flex-1">
+            <div *ngFor="let plan of plans" class="shadow-2 surface-card p-4 cursor-pointer border-round-lg border-2 border-transparent text-900 hover:surface-hover transition-colors transition-duration-150"
+                (click)="selectedPlan=plan" [ngClass]="{'border-primary': selectedPlan == plan}">
+                <div class="flex flex-column lg:flex-row align-items-start">
+                    <div class="mr-3">
+                        <span class="inline-flex justify-content-center border-circle align-items-center bg-indigo-100 w-3rem h-3rem bg-primary">
+                            <i [ngClass]="plan.icon" class="text-2xl"></i>
+                        </span>
+                    </div>
+                    <div>
+                        <div class="text-xl mb-1 font-bold">{{plan.name}}</div>
+                        <p class="mt-0 mb-4 font-light text-sm">Magna fermentum iaculis</p>
+                        <p *ngIf="selectedInterval == 'month'" class="m-0 font-light line-height-3">
+                            Nunc consequat interdum varius sit.
+                            <span class="font-medium">$ {{plan.price}} | </span>Save $67 on Annual
+                            Plan
+                        </p>
+                        <p *ngIf="selectedInterval == 'year'" class="m-0 font-light line-height-3">
+                            Nunc consequat interdum varius sit.
+                            <span class="font-medium">$ {{plan.price * 12 - 67}} | </span>Save $67 on Annual Plan
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <div class="text-xl mb-1 font-bold">{{plan.name}}</div>
-                    <p class="mt-0 mb-4 font-light text-sm">Magna fermentum iaculis</p>
-                    <p *ngIf="selectedInterval == 'month'" class="m-0 font-light line-height-3">
-                        Nunc consequat interdum varius sit.
-                        <span class="font-medium">$ {{plan.price}} | </span>Save $67 on Annual
-                        Plan
+            </div>
+        </div>
+        <div class="flex-1">
+            <div class="flex flex-column shadow-2 h-full border-round-lg overflow-hidden">
+                <div class="bg-primary p-5">
+                    <div class="flex justify-content-between flex-wrap gap-3 mb-4 align-items-center">
+                        <div class="text-4xl font-bold">
+                            {{selectedPlan.name}}
+                        </div>
+                        <div class="surface-0 py-1 border-round-lg flex justify-content-center align-items-center w-11rem bg-primary-reverse">
+                            <span class="font-bold text-xl">{{(selectedInterval == 'year' ? selectedPlan.price * 12 - 67 : selectedPlan.price) | currency}}</span>
+                            <span class="font-medium ml-2">per {{ selectedInterval }}</span>
+                        </div>
+                    </div>
+                    <p class="m-0 line-height-3">
+                        Pharetra magna ac placerat vestibulum lectus mauris ultrices. Nec
+                        dui nunc mattis enim ut tellus elementum sagittis vitae.
                     </p>
-                    <p *ngIf="selectedInterval == 'year'" class="m-0 font-light line-height-3">
-                        Nunc consequat interdum varius sit.
-                        <span class="font-medium">$ {{plan.price * 12 - 67}} | </span>Save $67 on Annual Plan
-                    </p>
+                </div>
+                <div class="flex-1 border-round-lg border-noround-top surface-card p-5 flex flex-column">
+                    <div class="flex-1 mb-3">
+                        <ul class="list-none p-0 m-0" *ngFor="let description of selectedPlan.description">
+                            <li class="flex align-items-center py-3">
+                                <i [ngClass]="description.icon" class="text-primary mr-3"></i>
+                                <span class="text-700">{{description.name}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button pButton pRipple label="Buy Now"></button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="flex-1">
-        <div class="flex flex-column shadow-2 h-full border-round-lg overflow-hidden">
-            <div class="bg-primary p-5">
-                <div class="flex justify-content-between flex-wrap gap-3 mb-4 align-items-center">
-                    <div class="text-4xl font-bold">
-                        {{selectedPlan.name}}
-                    </div>
-                    <div class="surface-0 py-1 border-round-lg flex justify-content-center align-items-center w-11rem bg-primary-reverse">
-                        <span class="font-bold text-xl">{{(selectedInterval == 'year' ? selectedPlan.price * 12 - 67 : selectedPlan.price) | currency}}</span>
-                        <span class="font-medium ml-2">per {{ selectedInterval }}</span>
-                    </div>
-                </div>
-                <p class="m-0 line-height-3">
-                    Pharetra magna ac placerat vestibulum lectus mauris ultrices. Nec
-                    dui nunc mattis enim ut tellus elementum sagittis vitae.
-                </p>
-            </div>
-            <div class="flex-1 border-round-lg border-noround-top surface-card p-5 flex flex-column">
-                <div class="flex-1 mb-3">
-                    <ul class="list-none p-0 m-0" *ngFor="let description of selectedPlan.description">
-                        <li class="flex align-items-center py-3">
-                            <i [ngClass]="description.icon" class="text-primary mr-3"></i>
-                            <span class="text-700">{{description.name}}</span>
-                        </li>
-                    </ul>
-                </div>
-                <button pButton pRipple label="Buy Now"></button>
-            </div>
-        </div>
-    </div>
-</div>
 </div>`;
+
 }

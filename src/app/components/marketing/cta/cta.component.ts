@@ -198,17 +198,17 @@ export class CtaComponent {
     </div>
 </div>`;
 
-block12:string = `
+    block12:string = `
 <div class="surface-section flex flex-column lg:flex-row px-4 py-8 md:px-6 lg:px-8 align-items-center">
-<img src="assets/images/blocks/cta/cta-building.png" class="h-25rem border-round hidden lg:block">
-<div style="background: url(assets/images/blocks/cta/row.jpg)" class="bg-no-repeat bg-cover lg:border-noround-left border-round-xl px-4 py-7 sm:px-7 md:px-6">
-    <img src="assets/images/blocks/cta/cta-building.png" class="w-full sm:w-15rem border-round block lg:hidden mx-auto mb-5">
-    <div class="text-indigo-50 text-4xl font-semibold mb-3">Supercharge your workflow</div>
-    <p class="text-indigo-100 mt-0 mb-5 line-height-3">Phasellus vestibulum lorem sed
-        risus ultricies. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est. Aenean euismod
-        elementum nisi quis eleifend quam.</p>
-    <button type="button" pButton pRipple icon="pi pi-wallet" label="Start Free Trial" class="p-button-warning px-5 font-bold white-space-nowrap"></button>
-</div>
+    <img src="assets/images/blocks/cta/cta-building.png" class="h-25rem border-round hidden lg:block">
+    <div style="background: url(assets/images/blocks/cta/row.jpg)" class="bg-no-repeat bg-cover lg:border-noround-left border-round-xl px-4 py-7 sm:px-7 md:px-6">
+        <img src="assets/images/blocks/cta/cta-building.png" class="w-full sm:w-15rem border-round block lg:hidden mx-auto mb-5">
+        <div class="text-indigo-50 text-4xl font-semibold mb-3">Supercharge your workflow</div>
+        <p class="text-indigo-100 mt-0 mb-5 line-height-3">Phasellus vestibulum lorem sed
+            risus ultricies. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est. Aenean euismod
+            elementum nisi quis eleifend quam.</p>
+        <button type="button" pButton pRipple icon="pi pi-wallet" label="Start Free Trial" class="p-button-warning px-5 font-bold white-space-nowrap"></button>
+    </div>
 </div>`;
 
 }
