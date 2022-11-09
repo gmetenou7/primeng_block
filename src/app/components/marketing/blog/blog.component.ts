@@ -6,7 +6,7 @@ export class BlogComponent {
 
     block1: string = `
 <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
-    <div class="font-bold text-6xl text-900 mb-5 text-center">Featured Articles</div>
+    <div class="font-bold text-5xl text-900 mb-5 text-center">Featured Articles</div>
     <div class="grid nogutter">
         <div class="col-12 lg:col-4 p-3">
             <div class="shadow-2 border-round h-full surface-card">
@@ -14,13 +14,13 @@ export class BlogComponent {
                 <div class="p-4">
                     <span class="block font-medium text-blue-600 mb-3">Crime</span>
                     <div class="text-xl text-900 font-medium mb-3 line-height-3 ">Fugitive flamingo spotted in Florida</div>
-                    <div class="text-sm line-height-3 mb-3 text-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="line-height-3 mb-3 text-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                     <div class="flex">
                         <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-1.png" shape="circle"></p-avatar>
                         <div class="ml-2">
-                            <div class="text-xs font-bold text-900 mb-1">Anna Lane</div>
-                            <div class="text-xs flex align-items-center text-700">
-                                <i class="pi pi-calendar mr-1 text-xs"></i>
+                            <div class="text-sm font-bold text-900 mb-1">Anna Lane</div>
+                            <div class="text-sm flex align-items-center text-700">
+                                <i class="pi pi-calendar mr-1 text-sm"></i>
                                 <span>Apr 5, 2021</span>
                             </div>
                         </div>
@@ -32,15 +32,15 @@ export class BlogComponent {
             <div class="shadow-2 border-round h-full surface-card">
                 <img src="assets/images/blocks/blog/blog-2.jpg" alt="Image" class="block w-full border-round-top">
                 <div class="p-4 flex flex-column">
-                    <span class="block font-medium text-blue-600 mb-3">Wildlife</span>
+                    <span class="block font-medium text-pink-600 mb-3">Wildlife</span>
                     <div class="text-xl text-900 font-medium mb-3 line-height-3 ">Journey to the Ends of the Earth</div>
-                    <div class="text-sm line-height-3 mb-3 text-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="line-height-3 mb-3 text-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                     <div class="flex">
                         <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-2.png" shape="circle"></p-avatar>
                         <div class="ml-2">
-                            <div class="text-xs font-bold text-900 mb-1">Arlene McCoy</div>
-                            <div class="text-xs flex align-items-center text-700">
-                                <i class="pi pi-calendar mr-1 text-xs"></i>
+                            <div class="text-sm font-bold text-900 mb-1">Arlene McCoy</div>
+                            <div class="text-sm flex align-items-center text-700">
+                                <i class="pi pi-calendar mr-1 text-sm"></i>
                                 <span>Apr 6, 2021</span>
                             </div>
                         </div>
@@ -52,15 +52,15 @@ export class BlogComponent {
             <div class="shadow-2 border-round h-full surface-card">
                 <img src="assets/images/blocks/blog/blog-3.jpg" alt="Image" class="block w-full border-round-top">
                 <div class="p-4">
-                    <span class="block font-medium text-blue-600 mb-3">Marie</span>
+                    <span class="block font-medium text-orange-600 mb-3">Marine</span>
                     <div class="text-xl text-900 font-medium mb-3 line-height-3 ">'Real and imminent' extinction risk</div>
-                    <div class="text-sm line-height-3 mb-3 text-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="line-height-3 mb-3 text-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                     <div class="flex">
                         <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-3.png" shape="circle"></p-avatar>
                         <div class="ml-2">
-                            <div class="text-xs font-bold text-900 mb-1">Diane Miles</div>
-                            <div class="text-xs flex align-items-center text-700">
-                                <i class="pi pi-calendar mr-1 text-xs"></i>
+                            <div class="text-sm font-bold text-900 mb-1">Diane Miles</div>
+                            <div class="text-sm flex align-items-center text-700">
+                                <i class="pi pi-calendar mr-1 text-sm"></i>
                                 <span>Apr 9, 2021</span>
                             </div>
                         </div>
@@ -80,15 +80,15 @@ export class BlogComponent {
             <div class="border-top-3 border-blue-600"></div>
             <div class="text-blue-600 font-medium my-2">Animals</div>
             <div class="text-900 font-medium text-xl line-height-3 mb-4">Why Earth's most beloved creatures are headed toward extinction</div>
-            <div class="font-sm text-700 line-height-3">
+            <div class="text-700 line-height-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             </div>
             <div class="flex mt-4">
                 <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-1.png" shape="circle"></p-avatar>
                 <div class="ml-2">
-                    <div class="text-xs font-bold text-900 mb-1">Anna Miles</div>
-                    <div class="text-xs flex align-items-center text-700">
-                        <i class="pi pi-calendar mr-1 text-xs"></i>
+                    <div class="text-sm font-bold text-900 mb-1">Anna Miles</div>
+                    <div class="text-sm flex align-items-center text-700">
+                        <i class="pi pi-calendar mr-1 text-sm"></i>
                         <span>Apr 9, 2021</span>
                     </div>
                 </div>
@@ -98,15 +98,15 @@ export class BlogComponent {
             <div class="border-top-3 border-pink-600"></div>
             <div class="text-pink-600 font-medium my-2">Oxygen</div>
             <div class="text-900 font-medium text-xl line-height-3 mb-4">Only one-third of tropical rainforests remain intact, study says </div>
-            <div class="font-sm text-700 line-height-3">
+            <div class="text-700 line-height-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             </div>
             <div class="flex mt-4">
                 <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-2.png" shape="circle"></p-avatar>
                 <div class="ml-2">
-                    <div class="text-xs font-bold text-900 mb-1">Arlene Miles</div>
-                    <div class="text-xs flex align-items-center text-700">
-                        <i class="pi pi-calendar mr-1 text-xs"></i>
+                    <div class="text-sm font-bold text-900 mb-1">Arlene Miles</div>
+                    <div class="text-sm flex align-items-center text-700">
+                        <i class="pi pi-calendar mr-1 text-sm"></i>
                         <span>Apr 9, 2021</span>
                     </div>
                 </div>
@@ -116,15 +116,15 @@ export class BlogComponent {
             <div class="border-top-3 border-orange-600"></div>
             <div class="text-orange-600 font-medium my-2">Nature</div>
             <div class="text-900 font-medium text-xl line-height-3 mb-4">Does planting a tree really offset your carbon footprint?</div>
-            <div class="font-sm text-700 line-height-3">
+            <div class="text-700 line-height-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             </div>
             <div class="flex mt-4">
                 <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-3.png" shape="circle"></p-avatar>
                 <div class="ml-2">
-                    <div class="text-xs font-bold text-900 mb-1">Diane Miles</div>
-                    <div class="text-xs flex align-items-center text-700">
-                        <i class="pi pi-calendar mr-1 text-xs"></i>
+                    <div class="text-sm font-bold text-900 mb-1">Diane Miles</div>
+                    <div class="text-sm flex align-items-center text-700">
+                        <i class="pi pi-calendar mr-1 text-sm"></i>
                         <span>Apr 9, 2021</span>
                     </div>
                 </div>
@@ -143,11 +143,11 @@ export class BlogComponent {
             <img src="assets/images/blocks/blog/blog-4.jpg" alt="Image" class="border-round-left" style="max-height: 234px;">
             <div class="p-4">
                 <div class="flex justify-content-between mb-3">
-                    <span class="text-orange-500 font-medum">Good News</span>
+                    <span class="text-orange-500 text-lg font-medum">Good News</span>
                     <span class="text-500 font-medium">3 days ago</span>
                 </div>
-                <div class="font-medium text-900 mb-3 line-height-3 ">Our Four-Legged Warriors</div>
-                <div class="line-height-3 text-700 text-sm mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                <div class="font-medium text-lg text-900 mb-3 line-height-3">Our Four-Legged Warriors</div>
+                <div class="line-height-3 text-700 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
                 <div class="flex align-items-center">
                     <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-1.png" shape="circle"></p-avatar>
                     <span class="font-bold text-sm block ml-2 text-blue-600">Anna Lane</span>
@@ -158,11 +158,11 @@ export class BlogComponent {
             <img src="assets/images/blocks/blog/blog-5.jpg" alt="Image" class="border-round-left" style="max-height: 234px;">
             <div class="p-4">
                 <div class="flex justify-content-between mb-3">
-                    <span class="text-orange-500 font-medum">Science</span>
+                    <span class="text-teal-500 text-lg font-medum">Science</span>
                     <span class="text-500 font-medium">4 days ago</span>
                 </div>
-                <div class="font-medium text-900 mb-3 line-height-3 ">Can We Learn From Horses?</div>
-                <div class="line-height-3 text-700 text-sm mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                <div class="font-medium text-lg text-900 mb-3 line-height-3">Can We Learn From Horses?</div>
+                <div class="line-height-3 text-700 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
                 <div class="flex align-items-center">
                     <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-2.png" shape="circle"></p-avatar>
                     <span class="font-bold text-sm block ml-2 text-blue-600">Arlene McCoy</span>
@@ -185,7 +185,7 @@ export class BlogComponent {
                         <span>12 min</span>
                     </span>
                 </div>
-                <p class="line-height-3 mt-3 mb-7 text-900 font-medium">It is time to step up and protect our world. Little actions will lead to huge differences.</p>
+                <p class="line-height-3 mt-3 mb-7 text-900 font-medium text-xl">It is time to step up and protect our world. Little actions will lead to huge differences.</p>
                 <div>
                     <span class="bg-blue-100 text-blue-600 font-medium py-1 px-3 mr-2" style="border-radius: 30px">Environment</span>
                     <span class="bg-teal-100 text-teal-600 font-medium py-1 px-3" style="border-radius: 30px">Climate</span>
@@ -202,7 +202,7 @@ export class BlogComponent {
                         <span>9 min</span>
                     </span>
                 </div>
-                <p class="line-height-3 mt-3 mb-7 text-900 font-medium">New sustainable energy alternatives and how we can utilize them efficiently.</p>
+                <p class="line-height-3 mt-3 mb-7 text-900 font-medium text-xl">New sustainable energy alternatives and how we can utilize them efficiently.</p>
                 <div>
                     <span class="bg-blue-100 text-blue-600 font-medium py-1 px-3 mr-2" style="border-radius: 30px">Environment</span>
                     <span class="bg-green-100 text-green-600 font-medium py-1 px-3" style="border-radius: 30px">Energy</span>
@@ -219,7 +219,7 @@ export class BlogComponent {
                         <span>5 min</span>
                     </span>
                 </div>
-                <p class="line-height-3 mt-3 mb-7 text-900 font-medium">Upcoming technology is what we've been waiting for to shape our future.</p>
+                <p class="line-height-3 mt-3 mb-7 text-900 font-medium text-xl">Upcoming technology is what we've been waiting for to shape our future.</p>
                 <div>
                     <span class="bg-purple-100 text-purple-600 font-medium py-1 px-3 mr-2" style="border-radius: 30px">Tech</span>
                     <span class="bg-indigo-100 text-indigo-600 font-medium py-1 px-3" style="border-radius: 30px">Opinion</span>
@@ -351,7 +351,7 @@ export class BlogComponent {
 </div>`;
 
     block7: string = `
-<div class="surface-50 px-4 py-8 md:px-6 lg:px-8">
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="font-bold text-5xl text-900 mb-3">Recent News</div>
     <div class="text-700 line-height-3 text-xl mb-6">Elementum nibh tellus molestie nunc non blandit. Enim eu turpis
         egestas pretium aenean pharetra.</div>
@@ -362,8 +362,8 @@ export class BlogComponent {
                 <div class="flex mb-3">
                     <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-4.png" shape="circle"></p-avatar>
                     <div class="ml-2">
-                        <div class="text-xs font-bold text-900 mb-1">Arlene McCoy</div>
-                        <div class="text-xs flex align-items-center text-700">
+                        <div class="font-medium text-900 mb-1">Arlene McCoy</div>
+                        <div class="text-sm flex align-items-center text-700">
                             <span>9 July, 2022</span>
                             <div class="border-circle surface-300 mx-2" style="width: 0.25rem;height: 0.25rem;"></div>
                             <span>16 min read</span>
@@ -371,7 +371,7 @@ export class BlogComponent {
                     </div>
                 </div>
                 <div class="text-xl text-900 font-medium mb-3 line-height-3">'Real and imminent' extinction risk</div>
-                <div class="text-sm line-height-3 text-700">Lorem ipsum dolor sit amet, consectetur adipiscing
+                <div class="line-height-3 text-700">Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
             </div>
         </div>
@@ -381,8 +381,8 @@ export class BlogComponent {
                 <div class="flex mb-3">
                     <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-11.png" shape="circle"></p-avatar>
                     <div class="ml-2">
-                        <div class="text-xs font-bold text-900 mb-1">Dianne Russell</div>
-                        <div class="text-xs flex align-items-center text-700">
+                        <div class="font-medium text-900 mb-1">Dianne Russell</div>
+                        <div class="text-sm flex align-items-center text-700">
                             <span>10 July, 2022</span>
                             <div class="border-circle surface-300 mx-2" style="width: 0.25rem;height: 0.25rem;"></div>
                             <span>11 min read</span>
@@ -390,7 +390,7 @@ export class BlogComponent {
                     </div>
                 </div>
                 <div class="text-xl text-900 font-medium mb-3 line-height-3">Climate standards for power plants</div>
-                <div class="text-sm line-height-3 text-700">Lorem ipsum dolor sit amet, consectetur adipiscing
+                <div class="line-height-3 text-700">Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
             </div>
         </div>
@@ -400,8 +400,8 @@ export class BlogComponent {
                 <div class="flex mb-3">
                     <p-avatar image="assets/images/blocks/avatars/circle/avatar-m-9.png" shape="circle"></p-avatar>
                     <div class="ml-2">
-                        <div class="text-xs font-bold text-900 mb-1">Ronald Richards</div>
-                        <div class="text-xs flex align-items-center text-700">
+                        <div class="font-medium text-900 mb-1">Ronald Richards</div>
+                        <div class="text-sm flex align-items-center text-700">
                             <span>11 July, 2022</span>
                             <div class="border-circle surface-300 mx-2" style="width: 0.25rem;height: 0.25rem;"></div>
                             <span>7 min read</span>
@@ -409,7 +409,7 @@ export class BlogComponent {
                     </div>
                 </div>
                 <div class="text-xl text-900 font-medium mb-3 line-height-3">Heat Waves Around the World</div>
-                <div class="text-sm line-height-3 text-700">Lorem ipsum dolor sit amet, consectetur adipiscing
+                <div class="line-height-3 text-700">Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
             </div>
         </div>
