@@ -131,7 +131,7 @@ export class LogoCloudComponent {
 </div>`;
 
     block5: string = `
-<div class="surface-section surface-section px-4 py-8 md:px-6 lg:px-8 bg-indigo-500">
+<div class="bg-indigo-500 px-4 py-8 md:px-6 lg:px-8">
     <div class="text-white mb-3 font-bold text-5xl text-center ">Who Uses Our Technology</div>
     <div class="text-indigo-200 mb-6 line-height-3 text-xl text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 
