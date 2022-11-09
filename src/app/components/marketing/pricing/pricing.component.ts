@@ -75,15 +75,15 @@ export class PricingComponent {
                     <ul class="list-none p-0 m-0 flex-grow-1">
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
-                            <span>Arcu vitae elementum</span>
+                            <span class="text-900">Arcu vitae elementum</span>
                         </li>
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
-                            <span>Dui faucibus in ornare</span>
+                            <span class="text-900">Dui faucibus in ornare</span>
                         </li>
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
-                            <span>Morbi tincidunt augue</span>
+                            <span class="text-900">Morbi tincidunt augue</span>
                         </li>
                     </ul>
                     <hr class="mb-3 mx-0 border-top-1 border-none surface-border mt-auto" />
@@ -106,19 +106,19 @@ export class PricingComponent {
                     <ul class="list-none p-0 m-0 flex-grow-1">
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
-                            <span>Arcu vitae elementum</span>
+                            <span class="text-900">Arcu vitae elementum</span>
                         </li>
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
-                            <span>Dui faucibus in ornare</span>
+                            <span class="text-900">Dui faucibus in ornare</span>
                         </li>
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
-                            <span>Morbi tincidunt augue</span>
+                            <span class="text-900">Morbi tincidunt augue</span>
                         </li>
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
-                            <span>Duis ultricies lacus sed</span>
+                            <span class="text-900">Duis ultricies lacus sed</span>
                         </li>
                     </ul>
                     <hr class="mb-3 mx-0 border-top-1 border-none surface-border" />
@@ -141,27 +141,27 @@ export class PricingComponent {
                     <ul class="list-none p-0 m-0 flex-grow-1">
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
-                            <span>Arcu vitae elementum</span>
+                            <span class="text-900">Arcu vitae elementum</span>
                         </li>
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
-                            <span>Dui faucibus in ornare</span>
+                            <span class="text-900">Dui faucibus in ornare</span>
                         </li>
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
-                            <span>Morbi tincidunt augue</span>
+                            <span class="text-900">Morbi tincidunt augue</span>
                         </li>
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
-                            <span>Duis ultricies lacus sed</span>
+                            <span class="text-900">Duis ultricies lacus sed</span>
                         </li>
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
-                            <span>Imperdiet proin</span>
+                            <span class="text-900">Imperdiet proin</span>
                         </li>
                         <li class="flex align-items-center mb-3">
                             <i class="pi pi-check-circle text-green-500 mr-2"></i>
-                            <span>Nisi scelerisque</span>
+                            <span class="text-900">Nisi scelerisque</span>
                         </li>
                     </ul>
                     <hr class="mb-3 mx-0 border-top-1 border-none surface-border" />
@@ -282,7 +282,7 @@ export class PricingComponent {
 </div>`;
 
     block3: string = `
-<div class="surface-section px-4 py-8 md:px-6 lg:px-8 border-round">
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="overflow-x-auto">
         <table class="w-full white-space-nowrap" style="border-collapse: collapse; border-spacing: 0">
             <thead>
@@ -298,11 +298,11 @@ export class PricingComponent {
                     </td>
                     <td class="surface-100 p-3 text-center">
                         <div class="text-900 text-xl font-medium mb-3">Premium</div>
-                        <div class="text-600 mb-3"><span class="text-3xl text-900">$10</span> /month</div>
+                        <div class="text-600 mb-3"><span class="text-3xl text-900">$20</span> /month</div>
                         <button pButton pRipple type="button" class="p-button-rounded" label="Buy Now"></button>
                     </td>
                     <td class="surface-100 p-3 text-center">
-                        <div class="text-900 text-xl font-medium mb-3">Premium</div>
+                        <div class="text-900 text-xl font-medium mb-3">Enterprise</div>
                         <div class="text-600 mb-3"><span class="text-3xl text-900">$30</span> /month</div>
                         <button pButton pRipple type="button" class="p-button-rounded p-button-outlined" label="Contact Us"></button>
                     </td>
@@ -428,7 +428,7 @@ export class PricingComponent {
             <div class="shadow-2 p-3 h-full flex flex-column surface-card" style="border-radius: 6px">
                 <div class="flex flex-row justify-content-between mb-5 align-items-center">
                     <div class="text-900 text-xl font-medium">Yearly</div>
-                    <span class="bg-orange-100 500 text-orange-500 font-semibold px-2 border-round">🎉 Save 20%</span>
+                    <span class="bg-orange-100 500 text-orange-500 font-semibold px-2 py-1 border-round">🎉 Save 20%</span>
                 </div>
                 <div class="flex align-items-center mb-5">
                     <span class="text-900 font-bold text-5xl">$275</span>
@@ -442,7 +442,7 @@ export class PricingComponent {
 </div>`;
 
     block5: string = `
-<div class="surface-card px-4 py-8 md:px-6 lg:px-8">
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="grid">
         <div class="col-12 p-1 mb-3 lg:mb-5">
             <div class="text-900 font-bold text-6xl mb-4">Pricing</div>
@@ -560,7 +560,7 @@ export class PricingComponent {
         eligendi quos.
     </p>
     <div class="flex align-items-center justify-content-center mb-6">
-        <ul class="surface-card p-2 m-0 list-none flex column-gap-2 overflow-x-auto select-none shadow-2 border-1 surface-border" style="border-radius: 30px">
+        <ul class="surface-card p-2 m-0 list-none flex column-gap-2 overflow-x-auto select-none shadow-2 border-1 surface-border" style="border-radius: 35px">
             <li>
                 <button pRipple class="p-link cursor-pointer px-4 py-3 flex align-items-center transition-color transition-duration-150"
                     [ngClass]="{'bg-primary': selectedInterval == 'month','text-600': selectedInterval != 'month','hover:surface-hover': selectedInterval != 'month'}" (click)="selectedInterval = 'month'" style="border-radius: 30px">
