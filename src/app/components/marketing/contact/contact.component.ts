@@ -80,17 +80,17 @@ export class ContactComponent {
         </div>
         <div class="col-12 md:col-6">
             <div class="p-fluid formgrid grid px-4 py-8 md:px-6 lg:px-8">
-                <div class="field col-12 lg:col-6 p-float-label mb-4">
+                <div class="field col-12 lg:col-6 mb-4">
                     <input id="firstname" type="text" class="py-3 px-2 text-lg" pInputText placeholder="First Name"> 
                 </div>
-                <div class="field col-12 lg:col-6 p-float-label mb-4">
+                <div class="field col-12 lg:col-6 mb-4">
                     <input id="lastname" type="text"  class="py-3 px-2 text-lg" pInputText placeholder="Last Name"> 
                 </div>
                 <div class="field col-12 mb-4">
                     <input id="email" type="text" pInputText class="py-3 px-2 text-lg" placeholder="Email"> 
                 </div>
                 <div class="field col-12 mb-4">
-                    <input id="email" type="text" pInputText class="py-3 px-2 text-lg" placeholder="Phone"> 
+                    <input id="phone" type="text" pInputText class="py-3 px-2 text-lg" placeholder="Phone"> 
                 </div>
                 <div class="field col-12 mb-4">
                     <textarea id="message" pInputTextarea rows="3" [autoResize]="true" class="py-3 px-2 text-lg" placeholder="Message"></textarea> 
@@ -120,7 +120,7 @@ export class ContactComponent {
                         </span>
                     </div>
                     <div>
-                        <span class="text-2xl text-900 mb-2 font-medium">Address</span>
+                        <span class="text-xl text-900 mb-2 font-medium">Address</span>
                         <p class="text-700 line-height-3">Jacob Obrechtstraat 5, 1071 KC Amsterdam The Netherlands</p>
                     </div>
                 </div>
@@ -133,7 +133,7 @@ export class ContactComponent {
                         </span>
                     </div>
                     <div>
-                        <span class="text-2xl text-900 mb-2 font-medium">Email</span>
+                        <span class="text-xl text-900 mb-2 font-medium">Email</span>
                         <p class="text-700 line-height-3">info@company.com</p>
                     </div>
                 </div>
