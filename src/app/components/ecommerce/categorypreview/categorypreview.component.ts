@@ -89,7 +89,7 @@ export class CategoryPreviewComponent {
 </div>`;
   
     block2: string = `
-<div class="surface-50 px-4 py-8 md:px-6 lg:px-8">
+<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="text-900 text-4xl font-bold mb-5 text-center">Best Gifts</div>
     <div class="flex justify-content-center align-items-center mb-5">
         <a tabindex="0" class="cursor-pointer py-2 mx-3 text-xl text-700 font-medium uppercase text-600 border-bottom-3 border-left-none border-transparent hover:border-gray-900 hover:text-900 transition-duration-150">Women</a>
@@ -98,17 +98,17 @@ export class CategoryPreviewComponent {
     </div>
     <div class="grid -mt-3 -ml-3 -mr-3 align-items-center justify-content-center lg:justify-content-start">
         <div class="xs:col-12 sm:col-6 lg:col-4 p-0">
-            <div class="surface-0 m-3 border-round shadow-2">
+            <div class="surface-card m-3 border-round shadow-2">
                 <img src="assets/images/blocks/ecommerce/categorypreview/category-preview-1-6.png" class="border-round-top w-full" alt="product">
                 <div class="flex flex-column w-full p-4">
                     <span class="text-900 font-medium text-xl border-200 pb-2" style="border-bottom:1px solid;">Category Title</span>
-                    <span class="text-600 pt-2"><i class="pi pi-fw pi-users mr-2 text-2xl"></i>People's Choice</span>
+                    <span class="text-600 pt-2"><i class="pi pi-fw pi-users mr-2"></i>People's Choice</span>
                 </div>
             </div>
             
         </div>
         <div class="xs:col-12 sm:col-6 lg:col-4 p-0">
-            <div class="surface-0 m-3 border-round shadow-2">
+            <div class="surface-card m-3 border-round shadow-2">
                 <img src="assets/images/blocks/ecommerce/categorypreview/category-preview-1-7.png" class="border-round-top w-full" alt="product">
                 <div class="flex flex-column w-full p-4">
                     <span class="text-900 font-medium text-xl border-200 pb-2" style="border-bottom:1px solid;">Category Title</span>
@@ -118,7 +118,7 @@ export class CategoryPreviewComponent {
             
         </div>
         <div class="xs:col-12 sm:col-6 lg:col-4 p-0">
-            <div class="surface-0 m-3 border-round shadow-2">
+            <div class="surface-card m-3 border-round shadow-2">
 
                 <img src="assets/images/blocks/ecommerce/categorypreview/category-preview-1-8.png" class="border-round-top w-full" alt="product">
                 <div class="flex flex-column w-full p-4">
@@ -131,7 +131,7 @@ export class CategoryPreviewComponent {
 </div>`;
   
     block3: string = `
-<div class="surface-50 px-4 py-8 md:px-6 lg:px-8">
+<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="grid grid-nogutter -mt-3 -ml-3 -mr-3">
         <div class="col-12 lg:col-6 p-3">
             <div class="flex flex-column justify-content-between h-full w-full border-round bg-no-repeat bg-cover" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(assets/images/blocks/ecommerce/categorypreview/category-preview-1-9.png); min-height:50rem;">
@@ -211,7 +211,7 @@ export class CategoryPreviewComponent {
 </div>`;
   
     block5: string = `
-<div class="surface-50 px-4 py-8 md:px-6 lg:px-8">
+<div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="bg-no-repeat bg-cover border-round shadow-2 h-23rem sm:h-20rem w-full" style="background:linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), url(assets/images/blocks/ecommerce/categorypreview/category-preview-1-17.jpg);">
         <div class="h-full w-full p-4 md:p-6">
             <div class="text-primary text-5xl font-bold">Category Title</div>
@@ -230,23 +230,23 @@ export class CategoryPreviewComponent {
         </div>
         <div class="xs:col-12 sm:col-6 md:col-4 xl:col-2 flex flex-column align-items-center mx-auto lg:mx-0 mb-3 md:mb-0">
             <img src="assets/images/blocks/ecommerce/categorypreview/category-preview-1-25.png" alt="avatar">
-            <span class="text-900 font-medium mt-3">Hoodies</span>
+            <span class="text-900 text-xl font-medium mt-3">Hoodies</span>
         </div>
         <div class="xs:col-12 sm:col-6 md:col-4 xl:col-2 flex flex-column align-items-center mx-auto lg:mx-0 mb-3 md:mb-0">
             <img src="assets/images/blocks/ecommerce/categorypreview/category-preview-1-24.png" alt="avatar">
-            <span class="text-900 font-medium mt-3">T-Shirts</span>
+            <span class="text-900 text-xl font-medium mt-3">T-Shirts</span>
         </div>
         <div class="xs:col-12 sm:col-6 md:col-4 xl:col-2 flex flex-column align-items-center mx-auto lg:mx-0 mb-3 md:mb-0">
             <img src="assets/images/blocks/ecommerce/categorypreview/category-preview-1-23.png" alt="avatar">
-            <span class="text-900 font-medium mt-3">Accessories</span>
+            <span class="text-900 text-xl font-medium mt-3">Accessories</span>
         </div>
         <div class="xs:col-12 sm:col-6 md:col-4 xl:col-2 flex flex-column align-items-center mx-auto lg:mx-0 mb-3 md:mb-0">
             <img src="assets/images/blocks/ecommerce/categorypreview/category-preview-1-22.png" alt="avatar">
-            <span class="text-900 font-medium mt-3">Jeans</span>
+            <span class="text-900 text-xl font-medium mt-3">Jeans</span>
         </div>
         <div class="xs:col-12 sm:col-6 md:col-4 xl:col-2 flex flex-column align-items-center mx-auto lg:mx-0 mb-3 md:mb-0">
             <img src="assets/images/blocks/ecommerce/categorypreview/category-preview-1-21.png" alt="avatar">
-            <span class="text-900 font-medium mt-3">Bags</span>
+            <span class="text-900 text-xl font-medium mt-3">Bags</span>
         </div>
     </div>
 </div>`;
