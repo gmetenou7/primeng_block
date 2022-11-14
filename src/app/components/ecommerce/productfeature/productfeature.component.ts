@@ -135,7 +135,7 @@ export class ProductFeatureComponent {
     block4: string = `
 <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <p class="text-600 font-medium text-xl text-center">Subtitle</p>
-    <div class="text-900 font-medium text-2xl text-center mt-4">Feature Title</div>
+    <div class="text-900 font-bold text-3xl text-center mt-4">Feature Title</div>
     <p class="text-600 font-medium text-xl text-center mt-4">Vulputate eu scelerisque felis imperdiet proin. Eget arcu dictum varius duis at consectetur lorem donec.</p>
     
     <div class="grid mt-7 -mr-3 -ml-3">
@@ -170,25 +170,25 @@ export class ProductFeatureComponent {
         <a tabindex="0" class="cursor-pointer text-black-alpha-90 text-2xl font-medium mt-3 mb-2 py-3 flex justify-content-between w-full border-black-alpha-10 border-bottom-1 hover:text-black-alpha-60 transition-duration-150"  pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">Eu non diam phasellus<i class="pi pi-fw pi-plus text-3xl"></i></a>
         <div class="overflow-hidden transition-all transition-duration-400 transition-ease-in-out">
             <ul class="list-none">
-                <li class="text-black-alpha-60 line-height-3 flex align-items-center mb-4"><i class="pi pi-circle-fill mr-3" style="font-size:7px;"></i>Vulputate eu scelerisque felis imperdiet proin. Eget arcu dictum varius duis at consectetur lorem donec.</li>
-                <li class="text-black-alpha-60 line-height-3 flex align-items-center my-4"><i class="pi pi-circle-fill mr-3" style="font-size:7px;"></i>Hendrerit gravida rutrum quisque non tellus. Tempus egestas sed sed risus pretium quam.</li>
-                <li class="text-black-alpha-60 line-height-3 flex align-items-center my-4"><i class="pi pi-circle-fill mr-3" style="font-size:7px;"></i>Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet. Vulputate enim nulla aliquet porttitor lacus.</li>
+                <li class="text-black-alpha-60 line-height-3 flex align-items-center mb-3"><i class="pi pi-circle-fill mr-3" style="font-size:7px;"></i>Vulputate eu scelerisque felis imperdiet proin. Eget arcu dictum varius duis at consectetur lorem donec.</li>
+                <li class="text-black-alpha-60 line-height-3 flex align-items-center my-3"><i class="pi pi-circle-fill mr-3" style="font-size:7px;"></i>Hendrerit gravida rutrum quisque non tellus. Tempus egestas sed sed risus pretium quam.</li>
+                <li class="text-black-alpha-60 line-height-3 flex align-items-center my-3"><i class="pi pi-circle-fill mr-3" style="font-size:7px;"></i>Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet. Vulputate enim nulla aliquet porttitor lacus.</li>
             </ul>
         </div>
         <a tabindex="0" class="cursor-pointer text-black-alpha-90 text-2xl font-medium mb-2 py-3 flex justify-content-between w-full border-black-alpha-10 border-bottom-1 hover:text-black-alpha-60 transition-duration-150"  pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">Nulla facilisi morbi<i class="pi pi-fw pi-plus text-3xl"></i></a>
         <div class="overflow-hidden hidden transition-all transition-duration-400 transition-ease-in-out">
             <ul class="list-none">
-                <li class="text-black-alpha-60 line-height-3 flex align-items-center mb-4"><i class="pi pi-circle-fill mr-3" style="font-size:7px;"></i>Vulputate eu scelerisque felis imperdiet proin. Eget arcu dictum varius duis at consectetur lorem donec.</li>
-                <li class="text-black-alpha-60 line-height-3 flex align-items-center my-4"><i class="pi pi-circle-fill mr-3" style="font-size:7px;"></i>Hendrerit gravida rutrum quisque non tellus. Tempus egestas sed sed risus pretium quam.</li>
-                <li class="text-black-alpha-60 line-height-3 flex align-items-center my-4"><i class="pi pi-circle-fill mr-3" style="font-size:7px;"></i>Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet. Vulputate enim nulla aliquet porttitor lacus.</li>
+                <li class="text-black-alpha-60 line-height-3 flex align-items-center mb-3"><i class="pi pi-circle-fill mr-3" style="font-size:7px;"></i>Vulputate eu scelerisque felis imperdiet proin. Eget arcu dictum varius duis at consectetur lorem donec.</li>
+                <li class="text-black-alpha-60 line-height-3 flex align-items-center my-3"><i class="pi pi-circle-fill mr-3" style="font-size:7px;"></i>Hendrerit gravida rutrum quisque non tellus. Tempus egestas sed sed risus pretium quam.</li>
+                <li class="text-black-alpha-60 line-height-3 flex align-items-center my-3"><i class="pi pi-circle-fill mr-3" style="font-size:7px;"></i>Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet. Vulputate enim nulla aliquet porttitor lacus.</li>
             </ul>
         </div>
         <a tabindex="0" class="cursor-pointer text-black-alpha-90 text-2xl font-medium mb-2 py-3 flex justify-content-between w-full border-black-alpha-10 border-bottom-1 hover:text-black-alpha-60 transition-duration-150"  pStyleClass="@next" enterClass="hidden" enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">Tortor id aliquet lectus<i class="pi pi-fw pi-plus text-3xl"></i></a>
         <div class="overflow-hidden hidden transition-all transition-duration-400 transition-ease-in-out">
             <ul class="list-none">
-                <li class="text-black-alpha-60 line-height-3 flex align-items-center mb-4"><i class="pi pi-circle-fill mr-3" style="font-size:7px;"></i>Vulputate eu scelerisque felis imperdiet proin. Eget arcu dictum varius duis at consectetur lorem donec.</li>
-                <li class="text-black-alpha-60 line-height-3 flex align-items-center my-4"><i class="pi pi-circle-fill mr-3" style="font-size:7px;"></i>Hendrerit gravida rutrum quisque non tellus. Tempus egestas sed sed risus pretium quam.</li>
-                <li class="text-black-alpha-60 line-height-3 flex align-items-center my-4"><i class="pi pi-circle-fill mr-3" style="font-size:7px;"></i>Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet. Vulputate enim nulla aliquet porttitor lacus.</li>  
+                <li class="text-black-alpha-60 line-height-3 flex align-items-center mb-3"><i class="pi pi-circle-fill mr-3" style="font-size:7px;"></i>Vulputate eu scelerisque felis imperdiet proin. Eget arcu dictum varius duis at consectetur lorem donec.</li>
+                <li class="text-black-alpha-60 line-height-3 flex align-items-center my-3"><i class="pi pi-circle-fill mr-3" style="font-size:7px;"></i>Hendrerit gravida rutrum quisque non tellus. Tempus egestas sed sed risus pretium quam.</li>
+                <li class="text-black-alpha-60 line-height-3 flex align-items-center my-3"><i class="pi pi-circle-fill mr-3" style="font-size:7px;"></i>Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet. Vulputate enim nulla aliquet porttitor lacus.</li>  
             </ul>
         </div>
     </div>
