@@ -10,7 +10,7 @@ export class OrderHistoryComponent {
 <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="flex flex-column md:flex-row justify-content-between align-items-center mb-4">
         <div class="flex flex-column text-center md:text-left">
-            <span class="text-900 text-3xl mb-2">My Orders</span>
+            <span class="text-900 text-3xl font-medium mb-2">My Orders</span>
             <span class="text-600 text-xl">Dignissim diam quis enim lobortis.</span>
         </div>
         <span class="p-input-icon-right mt-5 mb-2 md:mt-0 md:mb-0 w-full lg:w-25rem">
@@ -21,17 +21,17 @@ export class OrderHistoryComponent {
     <div class="surface-card grid grid-nogutter border-round shadow-2">
         <div class="col-12 flex p-2 surface-100 border-round-top">
             <div class="p-2 flex-auto text-center md:text-left">
-                <span class="text-600 block">Order Number</span>
+                <span class="text-700 block">Order Number</span>
                 <span class="text-900 font-medium block mt-2">45123</span>
             </div>
             <p-divider align="center" layout="vertical" styleClass="h-full  mx-0 lg:mx-3 surface-border"></p-divider>
             <div class="p-2 flex-auto text-center md:text-left">
-                <span class="text-600 block">Order Date</span>
+                <span class="text-700 block">Order Date</span>
                 <span class="text-900 font-medium block mt-2">7 February 2023</span>
             </div>
             <p-divider align="center" layout="vertical" styleClass="h-full  mx-0 lg:mx-3 surface-border"></p-divider>
             <div class="p-2 flex-auto text-center md:text-left">
-                <span class="text-600 block">Total Amount</span>
+                <span class="text-700 block">Total Amount</span>
                 <span class="text-900 font-medium block mt-2">$123.00</span>
             </div>
         </div>
@@ -49,7 +49,7 @@ export class OrderHistoryComponent {
                     <span class="bg-green-500 text-white flex align-items-center justify-content-center border-circle mr-2" style="min-width:2rem; min-height: 2rem">
                         <i class="pi pi-check"></i>
                     </span>
-                    <span class="text-green-500">Delivered on 7 February 2023</span>
+                    <span class="text-green-600">Delivered on 7 February 2023</span>
                 </div>
             </div>
             <p-divider class="w-full block lg:hidden surface-border"></p-divider>
@@ -66,7 +66,7 @@ export class OrderHistoryComponent {
                     <span class="bg-green-500 text-white flex align-items-center justify-content-center border-circle mr-2" style="min-width:2rem; min-height: 2rem">
                         <i class="pi pi-check"></i>
                     </span>
-                    <span class="text-green-500">Delivered on 7 February 2023</span>
+                    <span class="text-green-600">Delivered on 7 February 2023</span>
                 </div>
             </div>
             <p-divider class="w-full block lg:hidden surface-border"></p-divider>
@@ -83,31 +83,31 @@ export class OrderHistoryComponent {
                     <span class="bg-green-500 text-white flex align-items-center justify-content-center border-circle mr-2" style="min-width:2rem; min-height: 2rem">
                         <i class="pi pi-check"></i>
                     </span>
-                    <span class="text-green-500">Delivered on 7 February 2023</span>
+                    <span class="text-green-600">Delivered on 7 February 2023</span>
                 </div>
             </div>
         </div>
         <div class="col-12 p-0 flex border-top-1 surface-border">
-            <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full" style="border-bottom-left-radius: 6px;"><i class="pi pi-folder mr-2 mb-2 md:mb-0"></i>Archive Order</a>
-            <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full"><i class="pi pi-refresh mr-2 mb-2 md:mb-0"></i>Return</a>
-            <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full"><i class="pi pi-file mr-2 mb-2 md:mb-0"></i>View Invoice</a>
-            <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full" style="border-bottom-right-radius: 6px;"><i class="pi pi-comment mr-2 mb-2 md:mb-0"></i>Write a Review</a>
+            <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center font-medium text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full" style="border-bottom-left-radius: 6px;"><i class="pi pi-folder mr-2 mb-2 md:mb-0"></i>Archive Order</a>
+            <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center font-medium text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full"><i class="pi pi-refresh mr-2 mb-2 md:mb-0"></i>Return</a>
+            <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center font-medium text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full"><i class="pi pi-file mr-2 mb-2 md:mb-0"></i>View Invoice</a>
+            <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center font-medium text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full" style="border-bottom-right-radius: 6px;"><i class="pi pi-comment mr-2 mb-2 md:mb-0"></i>Write a Review</a>
         </div>
     </div>
     <div class="surface-card grid grid-nogutter mt-5 border-round shadow-2">
         <div class="col-12 flex p-2 surface-100 border-round-top">
             <div class="p-2 flex-auto text-center md:text-left">
-                <span class="text-600 block">Order Number</span>
+                <span class="text-700 block">Order Number</span>
                 <span class="text-900 font-medium block mt-2">45123</span>
             </div>
             <p-divider align="center" layout="vertical" styleClass="h-full  mx-0 lg:mx-3 surface-border"></p-divider>
             <div class="p-2 flex-auto text-center md:text-left">
-                <span class="text-600 block">Order Date</span>
+                <span class="text-700 block">Order Date</span>
                 <span class="text-900 font-medium block mt-2">7 February 2023</span>
             </div>
             <p-divider align="center" layout="vertical" styleClass="h-full  mx-0 lg:mx-3 surface-border"></p-divider>
             <div class="p-2 flex-auto text-center md:text-left">
-                <span class="text-600 block">Total Amount</span>
+                <span class="text-700 block">Total Amount</span>
                 <span class="text-900 font-medium block mt-2">$123.00</span>
             </div>
         </div>
@@ -125,7 +125,7 @@ export class OrderHistoryComponent {
                     <span class="bg-green-500 text-white flex align-items-center justify-content-center border-circle mr-2" style="min-width:2rem; min-height: 2rem">
                         <i class="pi pi-check"></i>
                     </span>
-                    <span class="text-green-500">Delivered on 7 February 2023</span>
+                    <span class="text-green-600">Delivered on 7 February 2023</span>
                 </div>
             </div>
             <p-divider class="w-full block lg:hidden surface-border"></p-divider>
@@ -142,7 +142,7 @@ export class OrderHistoryComponent {
                     <span class="bg-green-500 text-white flex align-items-center justify-content-center border-circle mr-2" style="min-width:2rem; min-height: 2rem">
                         <i class="pi pi-check"></i>
                     </span>
-                    <span class="text-green-500">Delivered on 7 February 2023</span>
+                    <span class="text-green-600">Delivered on 7 February 2023</span>
                 </div>
             </div>
             <p-divider class="w-full block lg:hidden surface-border"></p-divider>
@@ -159,15 +159,15 @@ export class OrderHistoryComponent {
                     <span class="bg-green-500 text-white flex align-items-center justify-content-center border-circle mr-2" style="min-width:2rem; min-height: 2rem">
                         <i class="pi pi-check"></i>
                     </span>
-                    <span class="text-green-500">Delivered on 7 February 2023</span>
+                    <span class="text-green-600">Delivered on 7 February 2023</span>
                 </div>
             </div>
         </div>
         <div class="col-12 p-0 flex border-top-1 surface-border">
-            <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full" style="border-bottom-left-radius: 6px;"><i class="pi pi-folder  mr-2 mb-2 md:mb-0"></i>Archive Order</a>
-            <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full"><i class="pi pi-refresh  mr-2 mb-2 md:mb-0"></i>Return</a>
-            <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full"><i class="pi pi-file  mr-2 mb-2 md:mb-0"></i>View Invoice</a>
-            <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full" style="border-bottom-right-radius: 6px;"><i class="pi pi-comment  mr-2 mb-2 md:mb-0"></i>Write a Review</a>
+            <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center font-medium text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full" style="border-bottom-left-radius: 6px;"><i class="pi pi-folder  mr-2 mb-2 md:mb-0"></i>Archive Order</a>
+            <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center font-medium text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full"><i class="pi pi-refresh  mr-2 mb-2 md:mb-0"></i>Return</a>
+            <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center font-medium text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full"><i class="pi pi-file  mr-2 mb-2 md:mb-0"></i>View Invoice</a>
+            <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center font-medium text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full" style="border-bottom-right-radius: 6px;"><i class="pi pi-comment  mr-2 mb-2 md:mb-0"></i>Write a Review</a>
         </div>
     </div>
 </div>`;
