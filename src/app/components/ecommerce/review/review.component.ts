@@ -122,25 +122,25 @@ export class ReviewComponent {
                 <li class="flex align-items-center mb-2">
                     <span class="text-900 font-medium mr-2 w-1rem">4</span>
                     <div style="height:7px" class="border-round overflow-hidden flex-auto surface-300">
-                        <div class="h-full bg-yellow-500 w-6"></div>
+                        <div class="h-full bg-yellow-500 w-6 border-round"></div>
                     </div>
                 </li>
                 <li class="flex align-items-center mb-2">
                     <span class="text-900 font-medium mr-2 w-1rem">3</span>
                     <div style="height:7px" class="border-round overflow-hidden flex-auto surface-300">
-                        <div class="h-full bg-yellow-500 w-2"></div>
+                        <div class="h-full bg-yellow-500 w-2 border-round"></div>
                     </div>
                 </li>
                 <li class="flex align-items-center mb-2">
                     <span class="text-900 font-medium mr-2 w-1rem">2</span>
                     <div style="height:7px" class="border-round overflow-hidden flex-auto surface-300">
-                        <div class="h-full bg-yellow-500 w-4"></div>
+                        <div class="h-full bg-yellow-500 w-4 border-round"></div>
                     </div>
                 </li>
                 <li class="flex align-items-center mb-2">
                     <span class="text-900 font-medium mr-2 w-1rem">1</span>
                     <div style="height:7px" class="border-round overflow-hidden flex-auto surface-300">
-                        <div class="h-full bg-yellow-500 w-3"></div>
+                        <div class="h-full bg-yellow-500 w-3 border-round"></div>
                     </div>
                 </li>
             </ul>
@@ -332,7 +332,7 @@ export class ReviewComponent {
                     <span class="text-900 font-medium mr-1 w-1rem">4</span>
                     <i class="pi pi-star-fill text-yellow-500 mr-2"></i>
                     <div style="height:7px" class="border-round overflow-hidden flex-auto surface-300">
-                        <div class="h-full bg-yellow-500 w-6"></div>
+                        <div class="h-full bg-yellow-500 w-6 border-round"></div>
                     </div>
                     <span class="text-500 font-medium ml-2">50%</span>
                 </li>
@@ -340,7 +340,7 @@ export class ReviewComponent {
                     <span class="text-900 font-medium mr-1 w-1rem">3</span>
                     <i class="pi pi-star-fill text-yellow-500 mr-2"></i>
                     <div style="height:7px" class="border-round overflow-hidden flex-auto surface-300">
-                        <div class="h-full bg-yellow-500 w-2"></div>
+                        <div class="h-full bg-yellow-500 w-2 border-round"></div>
                     </div>
                     <span class="text-500 font-medium ml-2">20%</span>
                 </li>
@@ -348,7 +348,7 @@ export class ReviewComponent {
                     <span class="text-900 font-medium mr-1 w-1rem">2</span>
                     <i class="pi pi-star-fill text-yellow-500 mr-2"></i>
                     <div style="height:7px" class="border-round overflow-hidden flex-auto surface-300">
-                        <div class="h-full bg-yellow-500 w-4"></div>
+                        <div class="h-full bg-yellow-500 w-4 border-round"></div>
                     </div>
                     <span class="text-500 font-medium ml-2">40%</span>
                 </li>
@@ -356,7 +356,7 @@ export class ReviewComponent {
                     <span class="text-900 font-medium mr-1 w-1rem">1</span>
                     <i class="pi pi-star-fill text-yellow-500 mr-2"></i>
                     <div style="height:7px" class="border-round overflow-hidden flex-auto surface-300">
-                        <div class="h-full bg-yellow-500 w-3"></div>
+                        <div class="h-full bg-yellow-500 w-3 border-round"></div>
                     </div>
                     <span class="text-500 font-medium ml-2">30%</span>
                 </li>
