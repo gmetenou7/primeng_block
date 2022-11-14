@@ -8,7 +8,7 @@ export class CardHeadingComponent implements OnInit {
 
     block1 = `
 <div class="surface-card p-4 shadow-2 border-round">
-    <div class="text-3xl font-medium text-900 mb-3">Card Title</div>
+    <div class="text-3xl font-medium text-900 mb-2">Card Title</div>
     <div class="font-medium text-500 mb-3">Vivamus id nisl interdum, blandit augue sit amet, eleifend mi.</div>
     <div style="height: 150px" class="border-2 border-dashed surface-border"></div>
 </div>`;
@@ -53,8 +53,8 @@ export class CardHeadingComponent implements OnInit {
                 <div class="font-medium text-500 mb-3 text-sm">Vivamus id nisl interdum, blandit augue sit amet, eleifend mi.</div>
             </div>
         </div>
-        <div class="flex">
-            <button pButton pRipple icon="pi pi-heart" class="p-button-rounded mr-2 p-button-outlined"></button>
+        <div class="flex gap-3">
+            <button pButton pRipple icon="pi pi-heart" class="p-button-rounded p-button-outlined"></button>
             <button pButton pRipple icon="pi pi-share-alt" class="p-button-rounded p-button-outlined"></button>
         </div>
     </div>
