@@ -7,7 +7,7 @@ export class DividerComponent {
 
     block1 = `
 <div class="flex w-full relative align-items-center justify-content-start my-3 px-4">
-    <div class="border-top-1 border-300 top-50 left-0 absolute w-full"></div>
+    <div class="border-top-1 surface-border top-50 left-0 absolute w-full"></div>
     <div class="px-2 z-1 surface-0 flex align-items-center">
         <i class="pi pi-search text-900 mr-2"></i>
         <span class="text-900 font-medium">Title Placeholder</span>
@@ -16,7 +16,7 @@ export class DividerComponent {
 
     block2 = `
 <div class="flex w-full relative align-items-center justify-content-center my-3 px-4">
-    <div class="border-top-1 border-300 top-50 left-0 absolute w-full"></div>
+    <div class="border-top-1 surface-border top-50 left-0 absolute w-full"></div>
     <div class="px-2 z-1 surface-0 flex align-items-center">
         <i class="pi pi-search text-900 mr-2"></i>
         <span class="text-900 font-medium">Title Placeholder</span>
@@ -25,7 +25,7 @@ export class DividerComponent {
 
     block3 = `
 <div class="flex w-full relative align-items-center justify-content-end my-3 px-4">
-    <div class="border-top-1 border-300 top-50 left-0 absolute w-full"></div>
+    <div class="border-top-1 surface-border top-50 left-0 absolute w-full"></div>
     <div class="px-2 z-1 surface-0 flex align-items-center">
         <i class="pi pi-search text-900 mr-2"></i>
         <span class="text-900 font-medium">Title Placeholder</span>
@@ -34,7 +34,7 @@ export class DividerComponent {
 
     block4 = `
 <div class="flex w-full relative align-items-center justify-content-between my-3 px-4">
-    <div class="border-top-1 border-300 top-50 left-0 absolute w-full"></div>
+    <div class="border-top-1 surface-border top-50 left-0 absolute w-full"></div>
     <div class="px-2 z-1 surface-0 flex align-items-center">
         <i class="pi pi-list text-900 mr-2"></i>
         <span class="text-900 font-medium">Results</span>
@@ -49,7 +49,7 @@ export class DividerComponent {
     </div>
     <div class="w-2">
         <div class="flex relative align-items-center justify-content-center mx-3 py-3 min-h-full">
-            <div class="border-left-1 border-300 top-0 left-50 absolute h-full"></div>
+            <div class="border-left-1 surface-border top-0 left-50 absolute h-full"></div>
             <div class="py-2 z-1 surface-0">
                 <span class="text-900 font-medium">OR</span>
             </div>
