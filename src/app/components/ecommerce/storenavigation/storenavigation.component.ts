@@ -165,7 +165,7 @@ export class StoreNavigationComponent {
                                 <li class="hidden lg:block">
                                     <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-2-1.png" alt="Image" height="160" style="border-radius:12px">
                                 </li>
-                                <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Clothing</li>
+                                <li class="font-bold my-5 text-xl text-900 hidden lg:block">Clothing</li>
                                 <li class="mb-3 cursor-pointer hover:text-900">Dresses</li>
                                 <li class="mb-3 cursor-pointer hover:text-900">Jeans</li>
                                 <li class="mb-3 cursor-pointer hover:text-900">Pants</li>
@@ -180,7 +180,7 @@ export class StoreNavigationComponent {
                                 <li class="hidden lg:block">
                                     <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-2-2.png" alt="Image" height="160" style="border-radius:12px">
                                 </li>
-                                <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Shoes</li>
+                                <li class="font-bold my-5 text-xl text-900 hidden lg:block">Shoes</li>
                                 <li class="mb-3 cursor-pointer hover:text-900">Athletic</li>
                                 <li class="mb-3 cursor-pointer hover:text-900">Boots</li>
                                 <li class="mb-3 cursor-pointer hover:text-900">Sneakers</li>
@@ -194,7 +194,7 @@ export class StoreNavigationComponent {
                                 <li class="hidden lg:block">
                                     <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-2-3.png" alt="Image" height="160" style="border-radius:12px">
                                 </li>
-                                <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Accessories</li>
+                                <li class="font-bold my-5 text-xl text-900 hidden lg:block">Accessories</li>
                                 <li class="mb-3 cursor-pointer hover:text-900">Handbags</li>
                                 <li class="mb-3 cursor-pointer hover:text-900">Gloves</li>
                                 <li class="mb-3 cursor-pointer hover:text-900">Belts</li>
@@ -208,7 +208,7 @@ export class StoreNavigationComponent {
                                 <li class="hidden lg:block">
                                     <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-2-4.png" alt="Image" height="160" style="border-radius:12px">
                                 </li>
-                                <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Beauty</li>
+                                <li class="font-bold my-5 text-xl text-900 hidden lg:block">Beauty</li>
                                 <li class="mb-3 cursor-pointer hover:text-900">Anklets</li>
                                 <li class="mb-3 cursor-pointer hover:text-900">Bracelets</li>
                                 <li class="mb-3 cursor-pointer hover:text-900">Earrings</li>
@@ -416,12 +416,12 @@ export class StoreNavigationComponent {
                         <ul class="list-none flex p-0 m-0">
                             <li class="flex flex-column align-items-center mb-5 lg:mr-5 pr-3 lg:pr-0">
                                 <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-3-1.png" alt="Image" style="border-radius:12px" class="mb-5 w-full lg:w-20rem">
-                                <span class="inline-flex surface-0 text-900 border-round font-semibold mb-3">New Arrivals</span>
+                                <span class="inline-flex surface-0 text-900 border-round font-semibold text-xl mb-3">New Arrivals</span>
                                 <a class="cursor-pointer text-700 font-medium hover:text-900">View All</a>
                             </li>
                             <li class="flex flex-column align-items-center pl-3 lg:pl-0">
                                 <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-3-2.png" alt="Image" style="border-radius:12px" class="mb-5 w-full lg:w-20rem">
-                                <span class="inline-flex surface-0 text-900 border-round font-semibold mb-3">Seasonal</span>
+                                <span class="inline-flex surface-0 text-900 border-round font-semibold text-xl mb-3">Seasonal</span>
                                 <a class="cursor-pointer text-700 font-medium hover:text-900">View All</a>
                             </li>
                         </ul>
