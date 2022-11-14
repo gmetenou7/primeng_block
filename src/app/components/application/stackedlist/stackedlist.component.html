@@ -83,7 +83,7 @@
     </div>
 </block-viewer>
 
-<block-viewer header="Stats with ProgressBars" [code]="block2" containerClass="px-4 py-8 md:px-6 lg:px-8">
+<block-viewer header="Stats with Progress Bars" [code]="block2" containerClass="px-4 py-8 md:px-6 lg:px-8">
     <div class="surface-card shadow-2 border-round p-4">
         <div class="flex justify-content-between align-items-center mb-5">
             <span class="text-xl text-900 font-medium">Best Selling Products</span>
@@ -205,10 +205,10 @@
             </div>
         </div>
         <ul class="list-none p-0 m-0">
-            <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between p-3 border-1 mb-3" style="border-radius: 10px; background-color: rgba(234,179,10,.1); border-color:rgba(234,179,10,.5)">
+            <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between p-3 border-1 mb-3 bg-yellow-50 border-yellow-500" style="border-radius: 10px;">
                 <div>
                     <div>
-                        <span class="inline-flex justify-content-center align-items-center w-2rem h-2rem border-circle border-1" style="border-color:rgba(234,179,10,.5)">
+                        <span class="inline-flex justify-content-center align-items-center w-2rem h-2rem border-circle border-1 border-yellow-200">
                             <i class="pi pi-file text-yellow-700"></i>
                         </span>
                         <span class="text-yellow-700 font-bold ml-2">Jenny Wilson</span>
@@ -223,10 +223,10 @@
                     </div>
                 </div>
             </li>
-            <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between p-3 border-1 mb-3" style="border-radius: 10px; background-color: rgba(33,197,94,.1); border-color:rgba(33,197,94,.5)">
+            <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between p-3 border-1 mb-3 bg-green-50 border-green-500" style="border-radius: 10px;">
                 <div>
                     <div>
-                        <span class="inline-flex justify-content-center align-items-center w-2rem h-2rem border-circle border-1" style="border-color:rgba(33,197,94,.5)">
+                        <span class="inline-flex justify-content-center align-items-center w-2rem h-2rem border-circle border-1 border-green-200">
                             <i class="pi pi-file text-green-600"></i>
                         </span>
                         <span class="text-green-700 font-bold ml-2">Dianne Russell</span>
@@ -241,10 +241,10 @@
                     </div>
                 </div>
             </li>
-            <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between p-3 border-1 mb-3" style="border-radius: 10px; background-color: rgba(33,197,94,.1); border-color:rgba(33,197,94,.5)">
+            <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between p-3 border-1 mb-3 bg-green-50 border-green-500" style="border-radius: 10px;">
                 <div>
                     <div>
-                        <span class="inline-flex justify-content-center align-items-center w-2rem h-2rem border-circle border-1" style="border-color:rgba(33,197,94,.5)">
+                        <span class="inline-flex justify-content-center align-items-center w-2rem h-2rem border-circle border-1 border-green-200">
                             <i class="pi pi-file text-green-600"></i>
                         </span>
                         <span class="text-green-700 font-bold ml-2">Jerome Bell</span>
@@ -259,10 +259,10 @@
                     </div>
                 </div>
             </li>
-            <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between p-3 border-1 mb-3" style="border-radius: 10px; background-color: rgba(330,81,60,.1); border-color:rgba(330,81,60,.5)">
+            <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between p-3 border-1 mb-3 bg-pink-50 border-pink-500" style="border-radius: 10px;">
                 <div>
                     <div>
-                        <span class="inline-flex justify-content-center align-items-center w-2rem h-2rem border-circle border-1" style="border-color:rgba(330,81,60,.5)">
+                        <span class="inline-flex justify-content-center align-items-center w-2rem h-2rem border-circle border-1 border-pink-200">
                             <i class="pi pi-file text-pink-500"></i>
                         </span>
                         <span class="text-pink-500 font-bold ml-2">Courtney Henry</span>
@@ -392,8 +392,8 @@
 </block-viewer>
 
 <block-viewer header="With Graph" [code]="block6" containerClass="px-4 py-8 md:px-6 lg:px-8">
-    <div class="surface-card shadow-2 border-round p-4">
-        <div class="flex justify-content-between align-items-center mb-5">
+    <div class="surface-card shadow-2 border-round px-4 py-2">
+        <div class="flex justify-content-between align-items-center mb-2">
             <span class="text-xl text-900 font-medium">Browsers</span>
             <div>
                 <button pButton pRipple icon="pi pi-ellipsis-v" class="p-button-text p-button-plain p-button-rounded" (click)="menu5.toggle($event)"></button>
@@ -401,53 +401,53 @@
             </div>
         </div>
         <ul class="list-none p-0 m-0">
-            <li class="mb-4 border-bottom-1 surface-border py-3 flex flex-column md:flex-row md:align-items-center md:justify-content-between">
-                <div class="inline-flex align-items-center">
-                    <img src="assets/images/blocks/logos/chrome.svg" class="mr-3" style="width: 32px; height: 32px" />
-                    <span class="text-900 font-medium">Chrome</span>
+            <li class="border-bottom-1 surface-border py-3 flex flex-row md:align-items-center md:justify-content-between">
+                <div class="inline-flex align-items-center flex-1">
+                    <img src="assets/images/blocks/logos/chrome.svg" class="mr-2 md:mr-3" style="width: 32px; height: 32px" />
+                    <span class="text-900 font-medium">Google Chrome</span>
                 </div>
-                <div class="flex align-items-center mt-3 md:mt-3">
-                    <span class="text-900 font-medium mr-3 text-xl">%70</span>
+                <div class="flex align-items-center">
+                    <span class="text-900 font-medium mr-2 text-base md:text-xl">%70</span>
                     <p-knob [ngModel]="70" [readonly]="true" size="50" valueColor="orange" [showValue]="false"></p-knob>
                 </div>
             </li>
-            <li class="mb-4 border-bottom-1 surface-border py-3 flex flex-column md:flex-row md:align-items-center md:justify-content-between">
-                <div class="inline-flex align-items-center">
-                    <img src="assets/images/blocks/logos/firefox.svg" class="mr-3" style="width: 32px; height: 32px" />
+            <li class="border-bottom-1 surface-border py-3 flex flex-row md:align-items-center md:justify-content-between">
+                <div class="inline-flex align-items-center flex-1">
+                    <img src="assets/images/blocks/logos/firefox.svg" class="mr-2 md:mr-3" style="width: 32px; height: 32px" />
                     <span class="text-900 font-medium">Firefox</span>
                 </div>
-                <div class="flex align-items-center mt-3 md:mt-3">
-                    <span class="text-900 font-medium mr-3 text-xl">%40</span>
+                <div class="flex align-items-center">
+                    <span class="text-900 font-medium mr-2 text-base md:text-xl">%40</span>
                     <p-knob [ngModel]="40" [readonly]="true" size="50" valueColor="royalblue" [showValue]="false"></p-knob>
                 </div>
             </li>
-            <li class="mb-4 border-bottom-1 surface-border py-3 flex flex-column md:flex-row md:align-items-center md:justify-content-between">
-                <div class="inline-flex align-items-center">
-                    <img src="assets/images/blocks/logos/safari.svg" class="mr-3" style="width: 32px; height: 32px" />
+            <li class="border-bottom-1 surface-border py-3 flex flex-row md:align-items-center md:justify-content-between">
+                <div class="inline-flex align-items-center flex-1">
+                    <img src="assets/images/blocks/logos/safari.svg" class="mr-2 md:mr-3" style="width: 32px; height: 32px" />
                     <span class="text-900 font-medium">Safari</span>
                 </div>
-                <div class="flex align-items-center mt-3 md:mt-3">
-                    <span class="text-900 font-medium mr-3 text-xl">%20</span>
+                <div class="flex align-items-center">
+                    <span class="text-900 font-medium mr-2 text-base md:text-xl">%20</span>
                     <p-knob [ngModel]="20" [readonly]="true" size="50" valueColor="slategray" [showValue]="false"></p-knob>
                 </div>
             </li>
-            <li class="mb-4 border-bottom-1 surface-border py-3 flex flex-column md:flex-row md:align-items-center md:justify-content-between">
-                <div class="inline-flex align-items-center">
-                    <img src="assets/images/blocks/logos/opera.svg" class="mr-3" style="width: 32px; height: 32px" />
+            <li class="border-bottom-1 surface-border py-3 flex flex-row md:align-items-center md:justify-content-between">
+                <div class="inline-flex align-items-center flex-1">
+                    <img src="assets/images/blocks/logos/opera.svg" class="mr-2 md:mr-3" style="width: 32px; height: 32px" />
                     <span class="text-900 font-medium">Opera</span>
                 </div>
-                <div class="flex align-items-center mt-3 md:mt-3">
-                    <span class="text-900 font-medium mr-3 text-xl">%10</span>
+                <div class="flex align-items-center">
+                    <span class="text-900 font-medium mr-2 text-base md:text-xl">%10</span>
                     <p-knob [ngModel]="10" [readonly]="true" size="50" valueColor="darkslateblue" [showValue]="false"></p-knob>
                 </div>
             </li>
-            <li class="mb-4 border-bottom-1 surface-border py-3 flex flex-column md:flex-row md:align-items-center md:justify-content-between">
-                <div class="inline-flex align-items-center">
-                    <img src="assets/images/blocks/logos/edge.svg" class="mr-3" style="width: 32px; height: 32px" />
+            <li class="py-3 flex flex-row md:align-items-center md:justify-content-between">
+                <div class="inline-flex align-items-center flex-1">
+                    <img src="assets/images/blocks/logos/edge.svg" class="mr-2 md:mr-3" style="width: 32px; height: 32px" />
                     <span class="text-900 font-medium">Edge</span>
                 </div>
-                <div class="flex align-items-center mt-3 md:mt-3">
-                    <span class="text-900 font-medium mr-3 text-xl">%8</span>
+                <div class="flex align-items-center">
+                    <span class="text-900 font-medium mr-2 text-base md:text-xl">%8</span>
                     <p-knob [ngModel]="8" [readonly]="true" size="50" valueColor="mediumpurple" [showValue]="false"></p-knob>
                 </div>
             </li>
