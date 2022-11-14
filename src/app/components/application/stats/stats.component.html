@@ -117,7 +117,7 @@
     </div>
 </block-viewer>
 
-<block-viewer header="Icons and Footnotes" [code]="block3">
+<block-viewer header="With Graph" [code]="block3">
     <div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
         <div class="grid">
             <div class="col-12 md:col-6 lg:col-3">
@@ -192,11 +192,11 @@
                                 <span class="text-700">Achieved</span>
                                 <span class="font-bold text-700">12/12</span>
                             </div>
-                            <ul class="list-none p-0 m-0 flex align-content-center mt-2">
-                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-blue-500 mr-2"></li>
-                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-blue-500 mr-2"></li>
-                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-blue-500 mr-2"></li>
-                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-blue-500 mr-2"></li>
+                            <ul class="list-none p-0 m-0 flex align-content-center mt-2 gap-2">
+                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-blue-500"></li>
+                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-blue-500"></li>
+                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-blue-500"></li>
+                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-blue-500"></li>
                                 <li style="height:7px; border-radius: 3px" class="flex-1 bg-blue-500"></li>
                             </ul>
                         </div>
@@ -216,12 +216,12 @@
                                 <span class="text-700">In Progress</span>
                                 <span class="font-bold text-700">4/12</span>
                             </div>
-                            <ul class="list-none p-0 m-0 flex align-content-center mt-2">
-                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-orange-500 mr-2"></li>
-                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-orange-500 mr-2"></li>
-                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-orange-500 mr-2"></li>
-                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-orange-500 mr-2"></li>
+                            <ul class="list-none p-0 m-0 flex align-content-center mt-2 gap-2">
                                 <li style="height:7px; border-radius: 3px" class="flex-1 bg-orange-500"></li>
+                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-orange-500"></li>
+                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-gray-300"></li>
+                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-gray-300"></li>
+                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-gray-300"></li>
                             </ul>
                         </div>
                     </div>
@@ -240,12 +240,12 @@
                                 <span class="text-700">In Progress</span>
                                 <span class="font-bold text-700">8/12</span>
                             </div>
-                            <ul class="list-none p-0 m-0 flex align-content-center mt-2">
-                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-purple-500 mr-2"></li>
-                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-purple-500 mr-2"></li>
-                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-purple-500 mr-2"></li>
-                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-purple-500 mr-2"></li>
+                            <ul class="list-none p-0 m-0 flex align-content-center mt-2 gap-2">
                                 <li style="height:7px; border-radius: 3px" class="flex-1 bg-purple-500"></li>
+                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-purple-500"></li>
+                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-purple-500"></li>
+                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-gray-300"></li>
+                                <li style="height:7px; border-radius: 3px" class="flex-1 bg-gray-300"></li>
                             </ul>
                         </div>
                     </div>
@@ -472,7 +472,7 @@
         <div class="grid">
             <div class="col-12 md:col-6 lg:col-3 p-3">
                 <div class="p-3 text-center bg-blue-500" style="border-radius: 12px">
-                    <span class="inline-flex justify-content-center align-items-center bg-blue-600 border-circle mb-3" style="width:49px; height: 49px">
+                    <span class="inline-flex justify-content-center align-items-center bg-blue-600 border-circle mb-3 p-3">
                         <i class="pi pi-inbox text-xl text-white"></i>
                     </span>
                     <div class="text-2xl font-medium text-white mb-2">123K</div>
@@ -481,7 +481,7 @@
             </div>
             <div class="col-12 md:col-6 lg:col-3 p-3">
                 <div class="p-3 text-center bg-purple-500" style="border-radius: 12px">
-                    <span class="inline-flex justify-content-center align-items-center bg-purple-600 border-circle mb-3" style="width:49px; height: 49px">
+                    <span class="inline-flex justify-content-center align-items-center bg-purple-600 border-circle mb-3 p-3">
                         <i class="pi pi-map-marker text-xl text-white"></i>
                     </span>
                     <div class="text-2xl font-medium text-white mb-2">23K</div>
@@ -490,7 +490,7 @@
             </div>
             <div class="col-12 md:col-6 lg:col-3 p-3">
                 <div class="p-3 text-center bg-indigo-500" style="border-radius: 12px">
-                    <span class="inline-flex justify-content-center align-items-center bg-indigo-600 border-circle mb-3" style="width:49px; height: 49px">
+                    <span class="inline-flex justify-content-center align-items-center bg-indigo-600 border-circle mb-3 p-3">
                         <i class="pi pi-file text-xl text-white"></i>
                     </span>
                     <div class="text-2xl font-medium text-white mb-2">23K</div>
@@ -499,7 +499,7 @@
             </div>
             <div class="col-12 md:col-6 lg:col-3 p-3">
                 <div class="p-3 text-center bg-orange-500" style="border-radius: 12px">
-                    <span class="inline-flex justify-content-center align-items-center bg-orange-600 border-circle mb-3" style="width:49px; height: 49px">
+                    <span class="inline-flex justify-content-center align-items-center bg-orange-600 border-circle mb-3 p-3">
                         <i class="pi pi-users text-xl text-white"></i>
                     </span>
                     <div class="text-2xl font-medium text-white mb-2">40K</div>
@@ -510,7 +510,7 @@
     </div>
 </block-viewer>
 
-<block-viewer header="Colored and Centered" [code]="block8">
+<block-viewer header="With Illustration" [code]="block8">
     <div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
         <div class="grid">
             <div class="col-12 lg:col-4 p-3">
@@ -518,7 +518,7 @@
                     <div class="flex align-items-center justify-content-between">
                         <div>
                             <span class="text-3xl text-900 font-bold">40K</span>
-                            <p class="mt-2 mb-0 text-600 text-2xl">Users Online</p>
+                            <p class="mt-1 mb-0 text-600 text-xl">Users Online</p>
                         </div>
                         <div>
                             <img src="assets/images/blocks/illustration/stats-illustration-4.svg" />
@@ -531,7 +531,7 @@
                     <div class="flex align-items-center justify-content-between">
                         <div>
                             <span class="text-3xl text-900 font-bold">24K</span>
-                            <p class="mt-2 mb-0 text-600 text-2xl">Payments Processed</p>
+                            <p class="mt-1 mb-0 text-600 text-xl">Payments Processed</p>
                         </div>
                         <div>
                             <img src="assets/images/blocks/illustration/stats-illustration-5.svg" />
@@ -544,7 +544,7 @@
                     <div class="flex align-items-center justify-content-between">
                         <div>
                             <span class="text-3xl text-900 font-bold">15K</span>
-                            <p class="mt-2 mb-0 text-600 text-2xl">Daily Revenue</p>
+                            <p class="mt-1 mb-0 text-600 text-xl">Daily Revenue</p>
                         </div>
                         <div>
                             <img src="assets/images/blocks/illustration/stats-illustration-6.svg" />
@@ -658,38 +658,38 @@
 <block-viewer header="Date Picker" [code]="block11" [new]="true">
     <div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
         <div class="flex flex-column md:flex-row gap-3 md:align-items-center bg-primary border-round-xl p-3">
-            <div class="flex-none flex flex-column align-items-center md:w-8rem">
-                <button pRipple class="p-link inline-flex align-items-center no-underline font-medium cursor-pointer bg-primary" (click)="nextDate()">
-                    <i class="pi pi-angle-up"></i>
+            <div class="flex flex-column align-items-center md:w-8rem">
+                <button pRipple class="p-button p-button-icon-only p-button-rounded p-button-sm bg-primary" (click)="nextDate()">
+                    <span class="p-button-icon pi pi-chevron-up"></span>
                 </button>
-                <div class="flex flex-column align-items-center my-3">
+                <div class="flex flex-column align-items-center">
                     <span class="block mb-1 text-3xl font-semibold">{{date.getDate()}}</span>
                     <span class="mt-0">{{monthNames[date.getMonth()]}}</span>
                 </div>
-                <button pRipple class="p-link inline-flex align-items-center no-underline font-medium cursor-pointer bg-primary" (click)="previousDate()">
-                    <i class="pi pi-angle-down"></i>
+                <button pRipple class="p-button p-button-icon-only p-button-rounded p-button-sm bg-primary" (click)="previousDate()">
+                    <span class="p-button-icon pi pi-chevron-down"></span>
                 </button>
             </div>
             <div class="flex-1 gap-3 flex flex-column sm:flex-row">
-                <div class="flex-1 bg-primary-400 shadow-1 p-3 border-round-md">
+                <div class="flex-1 flex justify-content-center align-items-center bg-primary-400 shadow-1 p-3 border-round-md">
                     <div class="text-center">
-                        <i class="pi pi-eye text-5xl mb-3"></i>
-                        <div class="text-sm font-700 font-semibold mb-2">VIEWS</div>
-                        <span class="font-bold">{{date.getDay()*1000+1000}}</span>
+                        <i class="pi pi-eye text-4xl mb-2 text-primary-200"></i>
+                        <div class="text-sm font-semibold mb-2">VIEWS</div>
+                        <span class="font-semibold text-primary-100">{{date.getDay()*1000+1000}}</span>
                     </div>
                 </div>
-                <div class="flex-1 bg-primary-400 shadow-1 p-3 border-round-md">
+                <div class="flex-1 flex justify-content-center align-items-center bg-primary-400 shadow-1 p-3 border-round-md">
                     <div class="text-center">
-                        <i class="pi pi-users text-5xl mb-3"></i>
-                        <div class="text-sm font-700 font-semibold mb-2">FOLLOWS</div>
-                        <span class="font-bold">{{date.getDay()*10+10}}</span>
+                        <i class="pi pi-users text-4xl mb-2 text-primary-200"></i>
+                        <div class="text-sm font-semibold mb-2">FOLLOWS</div>
+                        <span class="font-semibold text-primary-100">{{date.getDay()*10+10}}</span>
                     </div>
                 </div>
-                <div class="flex-1 bg-primary-400 shadow-1 p-3 border-round-md">
+                <div class="flex-1 flex justify-content-center align-items-center bg-primary-400 shadow-1 p-3 border-round-md">
                     <div class="text-center">
-                        <i class="pi pi-heart text-5xl mb-3"></i>
-                        <div class="text-sm font-700 font-semibold mb-2">LIKES</div>
-                        <span class="font-bold">{{date.getDay()*100+100}}</span>
+                        <i class="pi pi-heart text-4xl mb-2 text-primary-200"></i>
+                        <div class="text-sm font-semibold mb-2">LIKES</div>
+                        <span class="font-semibold text-primary-100">{{date.getDay()*100+100}}</span>
                     </div>
                 </div>
             </div>
