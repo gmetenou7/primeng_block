@@ -28,7 +28,7 @@ export class OrderSummaryComponent {
                 <img src="assets/images/blocks/ecommerce/ordersummary/order-summary-1-1.png" class="w-3rem sm:w-8rem flex-shrink-0 mr-3 shadow-2" />
                 <div class="flex flex-column">
                     <span class="text-900 font-medium text-xl mb-2">Product Name</span>
-                    <span class="text-600 font-medium mb-3">Blue | Medium</span>
+                    <span class="text-600 mb-3">Blue | Medium</span>
                     <span class="text-900 font-medium">Quantity 1</span>
                 </div>
                 <span class="text-900 font-medium text-lg ml-auto">$12.00</span>
@@ -37,7 +37,7 @@ export class OrderSummaryComponent {
                 <img src="assets/images/blocks/ecommerce/ordersummary/order-summary-1-2.png" class="w-3rem sm:w-8rem flex-shrink-0 mr-3 shadow-2" />
                 <div class="flex flex-column">
                     <span class="text-900 font-medium text-xl mb-2">Product Name</span>
-                    <span class="text-600 font-medium mb-3">Yellow | Large</span>
+                    <span class="text-600 mb-3">Yellow | Large</span>
                     <span class="text-900 font-medium">Quantity 1</span>
                 </div>
                 <span class="text-900 font-medium text-lg ml-auto">$24.00</span>
@@ -145,7 +145,7 @@ export class OrderSummaryComponent {
 
     block3: string = `
 <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
-    <div class="border-round surface-card p-5 shadow-4">
+    <div class="border-round surface-card p-5 shadow-2">
         <div class="flex flex-column lg:flex-row">
             <div class="flex flex-auto flex-column md:flex-row">
                 <div class="md:pr-5 lg:pr-8 border-bottom-1 pb-5 md:border-bottom-none md:border-right-1 surface-border flex justify-content-center md:justify-content-start">

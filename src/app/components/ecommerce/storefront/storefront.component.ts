@@ -34,7 +34,7 @@ export class StoreFrontComponent{
                                     <li class="hidden lg:block">
                                         <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-2-1.png" alt="Image" height="160" style="border-radius:12px">
                                     </li>
-                                    <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Clothing</li>
+                                    <li class="font-bold my-5 text-xl text-900 hidden lg:block">Clothing</li>
                                     <li class="mb-3 cursor-pointer hover:text-900">Dresses</li>
                                     <li class="mb-3 cursor-pointer hover:text-900">Jeans</li>
                                     <li class="mb-3 cursor-pointer hover:text-900">Pants</li>
@@ -49,7 +49,7 @@ export class StoreFrontComponent{
                                     <li class="hidden lg:block">
                                         <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-2-2.png" alt="Image" height="160" style="border-radius:12px">
                                     </li>
-                                    <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Shoes</li>
+                                    <li class="font-bold my-5 text-xl text-900 hidden lg:block">Shoes</li>
                                     <li class="mb-3 cursor-pointer hover:text-900">Athletic</li>
                                     <li class="mb-3 cursor-pointer hover:text-900">Boots</li>
                                     <li class="mb-3 cursor-pointer hover:text-900">Sneakers</li>
@@ -63,7 +63,7 @@ export class StoreFrontComponent{
                                     <li class="hidden lg:block">
                                         <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-2-3.png" alt="Image" height="160" style="border-radius:12px">
                                     </li>
-                                    <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Accessories</li>
+                                    <li class="font-bold my-5 text-xl text-900 hidden lg:block">Accessories</li>
                                     <li class="mb-3 cursor-pointer hover:text-900">Handbags</li>
                                     <li class="mb-3 cursor-pointer hover:text-900">Gloves</li>
                                     <li class="mb-3 cursor-pointer hover:text-900">Belts</li>
@@ -77,7 +77,7 @@ export class StoreFrontComponent{
                                     <li class="hidden lg:block">
                                         <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-2-4.png" alt="Image" height="160" style="border-radius:12px">
                                     </li>
-                                    <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Beauty</li>
+                                    <li class="font-bold my-5 text-xl text-900 hidden lg:block">Beauty</li>
                                     <li class="mb-3 cursor-pointer hover:text-900">Anklets</li>
                                     <li class="mb-3 cursor-pointer hover:text-900">Bracelets</li>
                                     <li class="mb-3 cursor-pointer hover:text-900">Earrings</li>
@@ -176,7 +176,7 @@ export class StoreFrontComponent{
     <div class="surface-section h-30rem bg-no-repeat bg-cover bg-center flex align-items-center" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/images/blocks/ecommerce/storefront/storefront-1-18.png);">
         <div class="px-4 mx-4 lg:px-6 lg:mx-6">
             <span class="block text-3xl text-white mb-4">New Trend</span>
-            <span class="block text-4xl font-medium text-white mb-4">Special Collection</span>
+            <span class="block text-5xl font-medium text-white mb-4">Special Collection</span>
             <a tabindex="0" pRipple class="py-2 w-13rem text-center block mb-4 text-xl text-white font-medium border-2 cursor-pointer surface-border-0 border-round bg-white-alpha-30">Explore Collection</a>
         </div>
     </div>
@@ -302,7 +302,7 @@ export class StoreFrontComponent{
         </div>
     </div>
 
-    <div class="flex flex-wrap px-4 py-8 md:px-6 lg:px-8">
+    <div class="flex flex-wrap surface-section px-4 py-8 md:px-6 lg:px-8">
         <div class="w-full md:w-6 px-4 py-8 md:px-6 lg:px-8 surface-900">
             <div class="text-4xl text-0 mb-3 font-medium">Promo Title Placeholder</div>
             <p class="line-height-3 mt-0 mb-7 p-0 text-0 text-2xl">Malesuada bibendum arcu vitae elementum curabitur vitae nunc. Aliquam nulla facilisi cras fermentum. Et egestas quis ipsum suspendisse ultrices.</p>
@@ -490,19 +490,19 @@ export class StoreFrontComponent{
         <div class="flex ml-auto">
             <ul class="list-none p-0 m-0 flex">
                 <li class="flex">
-                    <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer px-2 sm:px-3 text-700 hover:text-primary">
+                    <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer px-2 sm:px-3 hover:text-primary">
                         <i class="pi pi-search mr-2 lg:mr-3 text-xl sm:text-base"></i>
                         <span class="hidden lg:inline">Search</span>
                     </a>
                 </li>
                 <li class="flex">
-                    <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer px-2 sm:px-3 text-700 hover:text-primary">
+                    <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer px-2 sm:px-3 hover:text-primary">
                         <i class="pi pi-heart mr-2 lg:mr-3 text-xl sm:text-base"></i>
                         <span class="hidden lg:inline">Favorites</span>
                     </a>
                 </li>
                 <li class="flex">
-                    <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer px-2 sm:px-3 text-700 hover:text-primary">
+                    <a pRipple class="text-900 font-medium inline-flex align-items-center cursor-pointer px-2 sm:px-3 hover:text-primary">
                         <i class="pi pi-shopping-cart lg:mr-3 text-xl sm:text-base" pBadge></i>
                         <span class="hidden lg:inline">Cart</span>
                     </a>

@@ -1,6 +1,6 @@
 <div class="block-category-title">Checkout Forms</div>
 <block-viewer header="2 Columns" [code]="block1">
-    <div class="surface-50 px-4 py-8 md:px-6 lg:px-8">
+    <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
         <div class="grid -mr-3 -ml-3">
             <div class="col-12 lg:col-8 p-4">
                 <div class="surface-card grid formgrid p-fluid border-round shadow-2 p-4">
@@ -11,12 +11,12 @@
                             <a tabindex="0" class="cursor-pointer text-900 hover:text-primary transition-duration-150">Login</a>
                         </div>
                     </div>
-                    <div class="col-12 field mb-0">
+                    <div class="col-12 field">
                         <label for="email2" class="text-900 font-medium mb-3">Email</label>
                         <input id="email2" type="text" class="p-inputtext w-full mb-3">
                         <p-checkbox name="checkbox-1" [(ngModel)]="checked" [binary]="true" label="Email me with news and offers" class="text-900" inputId="id"></p-checkbox>
                     </div>
-                    <p-divider class="w-full px-2"></p-divider>
+                    <p-divider class="w-full px-2 mb-3"></p-divider>
                     <div class="col-12 mt-4 lg:mt-0 mb-4">
                         <div class="text-900 font-medium text-xl">Shipping</div>
                     </div>
@@ -48,16 +48,16 @@
                         <label for="phone" class="text-900 font-medium mb-3">Phone</label>
                         <input id="phone" type="text" class="p-inputtext w-full mb-3">
                     </div>
-                    <p-divider class="w-full px-2"></p-divider>
+                    <p-divider class="w-full px-2 mb-3"></p-divider>
                     <div class="text-900 font-medium text-xl mt-4 lg:mt-0 mb-4 px-2">Shipping Method</div>
-                    <div class="col-12 flex flex-column lg:flex-row">
+                    <div class="col-12 flex flex-column lg:flex-row field">
                         <div class="flex justify-content-between p-3 border-round border-1 surface-border w-full mr-3 hover:border-primary cursor-pointer" (click)="selectedValue = 'UPS'" [ngClass]="{'border-primary surface-50': selectedValue === 'UPS'}">
                             <div class="mr-3 lg:mr-0">
                                 <div class="text-900 font-bold mb-2">UPS</div>
                                 <span class="text-600">Delivery: Tomorrow</span>
                             </div>
                             <div class="flex justify-content-between align-items-center">
-                                <span class="text-primary mr-2">$9.00</span>
+                                <span class="text-primary mr-2 font-medium">$9.00</span>
                                 <p-radioButton name="ups" value="UPS" [(ngModel)]="selectedValue"></p-radioButton>
                             </div>
                         </div>
@@ -67,12 +67,12 @@
                                 <span class="text-600">Delivery: Next Week</span>
                             </div>
                             <div class="flex justify-content-between align-items-center">
-                                <span class="text-primary mr-2">$1.00</span>
+                                <span class="text-primary mr-2 font-medium">$1.00</span>
                                 <p-radioButton name="fedex" value="FedEx" [(ngModel)]="selectedValue"></p-radioButton>
                             </div>
                         </div>        
                     </div>
-                    <p-divider class="w-full px-2"></p-divider>
+                    <p-divider class="w-full px-2 mb-3"></p-divider>
                     <div class="text-900 font-medium text-xl mt-4 lg:mt-0 mb-4 px-2">Payment</div>
                     <div class="col-12 mb-4">
                         <div class="p-3 border-1 border-round-top surface-border" (click)="selectedValue2 = 'paypal'" [ngClass]="{'border-primary surface-50': selectedValue2 === 'paypal'}">
@@ -121,7 +121,7 @@
                         <span class="text-900 font-medium text-lg lg:text-xl"><i class="pi pi-shopping-cart text-xl mr-2"></i>Your Order (1)</span>
                         <a tabindex="0" class="text-600 font-medium cursor-pointer hover:text-primary">Edit Cart</a>
                     </div>
-                    <div class="flex flex-column lg:flex-row flex-wrap lg:align-items-center py-2 mt-3 border-bottom-1 surface-border">
+                    <div class="flex flex-column lg:flex-row flex-wrap lg:align-items-center py-3 my-3 border-bottom-1 surface-border">
                         <img src="assets/images/blocks/ecommerce/checkoutform/checkoutform-1-1.png" class="w-8rem h-8rem flex-shrink-0 mb-3" />
                         <div class="flex-auto lg:ml-3">
                             <div class="flex align-items-center justify-content-between mb-3">
@@ -265,7 +265,7 @@
                     <div class="flex">
                         <div class="flex flex-column align-items-center ml-3" style="width:2rem">
                             <span class="bg-green-500 text-0 flex align-items-center justify-content-center border-circle" style="min-width:3rem; min-height: 3rem">
-                                <i class="pi pi-directions"></i>
+                                <i class="pi pi-directions text-xl"></i>
                             </span>
                             <div class="h-full border-dashed border-1 border-green-500" style="min-height: 12rem"></div>
                         </div>
@@ -306,7 +306,7 @@
                     <div class="flex">
                         <div class="flex flex-column align-items-center ml-3" style="width:2rem">
                             <span class="bg-green-500 text-0 flex align-items-center justify-content-center border-circle" style="min-width:3rem; min-height: 3rem">
-                                <i class="pi pi-image"></i>
+                                <i class="pi pi-image text-xl"></i>
                             </span>
                             <div class="h-full border-dashed border-1 surface-border" style="min-height: 12rem"></div>
                         </div>
@@ -333,8 +333,8 @@
                     </div>
                     <div class="flex">
                         <div class="flex flex-column align-items-center ml-3" style="width:2rem">
-                            <span class="bg-gray-300 text-0 flex align-items-center justify-content-center border-circle" style="min-width:3rem; min-height: 3rem">
-                                <i class="pi pi-credit-card"></i>
+                            <span class="bg-gray-200 text-500 flex align-items-center justify-content-center border-circle" style="min-width:3rem; min-height: 3rem">
+                                <i class="pi pi-credit-card text-xl"></i>
                             </span>
                         </div>
                         <div class="ml-0 lg:ml-5 p-2 flex-auto">
