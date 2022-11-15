@@ -140,7 +140,7 @@ export class DetailScreenComponent implements OnInit {
             <div class="font-medium text-3xl text-900 mb-3">Applicant Profile</div>
             <div class="text-500 mb-5">Egestas sed tempus urna et pharetra pharetra massa massa ultricies.</div>
             <ul class="list-none p-0 m-0 border-top-1 border-300">
-                <li class="flex align-items-center py-3 px-2 flex-wrap surface-50">
+                <li class="flex align-items-center py-3 px-2 flex-wrap surface-ground">
                     <div class="text-500 w-full md:w-2 font-medium">Name</div>
                     <div class="text-900 w-full md:w-10">Elliot Alderson</div>
                 </li>
@@ -148,7 +148,7 @@ export class DetailScreenComponent implements OnInit {
                     <div class="text-500 w-full md:w-2 font-medium">Bio</div>
                     <div class="text-900 w-full md:w-10 line-height-3">Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Eget felis eget nunc lobortis mattis aliquam faucibus purus in.</div>
                 </li>
-                <li class="flex align-items-center py-3 px-2 flex-wrap surface-50">
+                <li class="flex align-items-center py-3 px-2 flex-wrap surface-ground">
                     <div class="text-500 w-full md:w-2 font-medium">Salary Expectation</div>
                     <div class="text-900 w-full md:w-10">$150,000</div>
                 </li>
@@ -161,12 +161,12 @@ export class DetailScreenComponent implements OnInit {
                         <p-tag severity="warning" value="SQL" [rounded]="true"></p-tag>
                     </div>
                 </li>
-                <li class="flex align-items-center py-3 px-2 flex-wrap surface-50">
+                <li class="flex align-items-center py-3 px-2 flex-wrap surface-ground">
                     <div class="text-500 w-full md:w-2 font-medium">Repositories</div>
                     <div class="text-900 w-full md:w-10">
                         <div class="grid mt-0 mr-0">
                             <div class="col-12 md:col-6">
-                                <div class="p-3 border-1 border-300 border-round surface-0">
+                                <div class="p-3 border-1 surface-border border-round surface-card">
                                     <div class="text-900 mb-2">
                                         <i class="pi pi-github mr-2"></i>
                                         <span class="font-medium">PrimeFaces</span>
@@ -175,7 +175,7 @@ export class DetailScreenComponent implements OnInit {
                                 </div>
                             </div>
                             <div class="col-12 md:col-6">
-                                <div class="p-3 border-1 border-300 border-round surface-0">
+                                <div class="p-3 border-1 surface-border border-round surface-card">
                                     <div class="text-900 mb-2">
                                         <i class="pi pi-github mr-2"></i>
                                         <span class="font-medium">PrimeNG</span>
@@ -184,7 +184,7 @@ export class DetailScreenComponent implements OnInit {
                                 </div>
                             </div>
                             <div class="col-12 md:col-6">
-                                <div class="p-3 border-1 border-300 border-round surface-0">
+                                <div class="p-3 border-1 surface-border border-round surface-card">
                                     <div class="text-900 mb-2">
                                         <i class="pi pi-github mr-2"></i>
                                         <span class="font-medium">PrimeReact</span>
@@ -193,7 +193,7 @@ export class DetailScreenComponent implements OnInit {
                                 </div>
                             </div>
                             <div class="col-12 md:col-6">
-                                <div class="p-3 border-1 border-300 border-round surface-0">
+                                <div class="p-3 border-1 surface-border border-round surface-card">
                                     <div class="text-900 mb-2">
                                         <i class="pi pi-github mr-2"></i>
                                         <span class="font-medium">PrimeVue</span>
@@ -244,8 +244,7 @@ export class DetailScreenComponent implements OnInit {
     <div class="surface-section py-6 px-6 border-top-1 surface-border">
         <div class="flex flex flex-column lg:flex-row lg:align-items-center justify-content-between">
             <div class="flex align-items-center">
-                <img src="assets/images/blocks/footer/footer-1.png" alt="Logo" width="50" height="50" class="mr-3">
-                <div class="text-700 font-bold text-5xl">Bastion</div>
+                <img src="assets/images/blocks/logos/bastion-700.svg" alt="Image" height="40" class="mr-0 lg:mr-6">
             </div>
             <div class="flex flex-column lg:flex-row lg:align-items-center lg:my-0 my-4">
                 <a class="text-700 cursor-pointer mb-2 lg:mb-0">Brand Policy</a>
