@@ -26,10 +26,10 @@ export class SignInComponent implements OnInit {
 
     <div>
         <label for="email1" class="block text-900 font-medium mb-2">Email</label>
-        <input id="email1" type="text" pInputText class="w-full mb-3">
+        <input id="email1" type="text" placeholder="Email address" pInputText class="w-full mb-3">
 
         <label for="password1" class="block text-900 font-medium mb-2">Password</label>
-        <input id="password1" type="password" pInputText class="w-full mb-3">
+        <input id="password1" type="password" placeholder="Password" pInputText class="w-full mb-3">
 
         <div class="flex align-items-center justify-content-between mb-6">
             <div class="flex align-items-center">
@@ -54,10 +54,10 @@ export class SignInComponent implements OnInit {
          </div>
          <div>
              <label for="email2" class="block text-900 font-medium mb-2">Email</label>
-             <input id="email2" type="text" pInputText class="w-full mb-3 p-3">
+             <input id="email2" type="text" placeholder="Email address" pInputText class="w-full mb-3 p-3">
  
              <label for="password2" class="block text-900 font-medium mb-2">Password</label>
-             <input id="password2" type="password" pInputText class="w-full mb-3 p-3">
+             <input id="password2" type="password" placeholder="Password" pInputText class="w-full mb-3 p-3">
  
              <div class="flex align-items-center justify-content-between mb-6">
                  <div class="flex align-items-center">
@@ -119,10 +119,10 @@ export class SignInComponent implements OnInit {
         <div class="w-full lg:w-6 p-4 lg:p-7 surface-card">
             <div class="text-900 text-2xl font-medium mb-6">Login</div>
             <label for="email3" class="block text-900 font-medium mb-2">Email</label>
-            <input id="email3" type="text" pInputText class="w-full mb-4">
+            <input id="email3" type="text" placeholder="Email address" pInputText class="w-full mb-4">
 
             <label for="password3" class="block text-900 font-medium mb-2">Password</label>
-            <input id="password3" type="password" pInputText class="w-full mb-4">
+            <input id="password3" type="password" placeholder="Password" pInputText class="w-full mb-4">
 
             <div class="flex align-items-center justify-content-between mb-6">
                 <div class="flex align-items-center">
@@ -169,11 +169,11 @@ export class SignInComponent implements OnInit {
             </div>
             <div class="flex justify-content-between">
                 <button pRipple class="mr-2 w-6 font-medium border-1 surface-border surface-100 py-3 px-2 p-component hover:surface-200 active:surface-300 text-900 cursor-pointer transition-colors transition-duration-150 inline-flex align-items-center justify-content-center">
-                    <i class="pi pi-facebook text-indigo-400 mr-2"></i>
+                    <i class="pi pi-facebook text-indigo-500 mr-2"></i>
                     <span>Sign in With Facebook</span>
                 </button>
                 <button pRipple class="ml-2 w-6 font-medium border-1 surface-border surface-100 py-3 px-2 p-component hover:surface-200 active:surface-300 text-900 cursor-pointer transition-colors transition-duration-150 inline-flex align-items-center justify-content-center">
-                    <i class="pi pi-google text-pink-400 mr-2"></i>
+                    <i class="pi pi-google text-red-500 mr-2"></i>
                     <span>Sign in With Google</span>
                 </button>
             </div>
@@ -182,10 +182,10 @@ export class SignInComponent implements OnInit {
             </p-divider>
 
             <label for="email4" class="block text-900 font-medium mb-2">Email</label>
-            <input id="email4" type="text" pInputText class="w-full mb-3 p-3">
+            <input id="email4" type="text" placeholder="Email address" pInputText class="w-full mb-3 p-3">
 
             <label for="password4" class="block text-900 font-medium mb-2">Password</label>
-            <input id="password4" type="password" pInputText class="w-full mb-3 p-3">
+            <input id="password4" type="password" placeholder="Password" pInputText class="w-full mb-3 p-3">
 
             <div class="flex align-items-center justify-content-between mb-6">
                 <div class="flex align-items-center">
