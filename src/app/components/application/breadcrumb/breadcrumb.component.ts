@@ -81,7 +81,7 @@ export class BreadcrumbComponent {
 </ul>`;
 
     block4 = `
-<ul class="list-none p-0 m-0 flex font-medium overflow-x-auto">
+<ul class="list-none p-0 m-0 flex font-medium overflow-x-auto" style="border-radius: 30px;">
     <li class="bg-cyan-500 z-5">
         <a class="cursor-pointer bg-cyan-500 flex align-items-center justify-content-center px-5 py-3 shadow-2 h-full" style="border-top-right-radius: 30px; border-bottom-right-radius: 30px">
             <i class="pi pi-home text-white"></i>
