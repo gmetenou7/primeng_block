@@ -21,7 +21,7 @@ export class AlertComponent {
 
     block2 = `
 <div class="flex align-items-start p-4 bg-yellow-100 border-round border-1 border-yellow-300">
-    <i class="pi pi-check-circle text-yellow-900 text-2xl mr-3"></i>
+    <i class="pi pi-exclamation-triangle text-yellow-900 text-2xl mr-3"></i>
     <div class="mr-3">
         <div class="text-yellow-900 font-medium text-xl mb-2 line-height-1">Attention</div>
         <p class="m-0 p-0 text-yellow-700 mb-3 line-height-3">Quis commodo odio aenean sed adipiscing diam. Bibendum enim facilisis gravida neque convallis a cras semper.</p>
@@ -45,7 +45,7 @@ export class AlertComponent {
         </div>
     </div>
     <a pRipple class="flex align-items-center ml-auto no-underline text-blue-900 font-medium mt-3 lg:mt-0 cursor-pointer">
-        <span class="white-space-nowrap">Learn More</span>
+        <span>Learn More</span>
         <i class="pi pi-arrow-right text-blue-900 ml-2"></i>
     </a>
 </div>`;
