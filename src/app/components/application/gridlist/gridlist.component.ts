@@ -23,11 +23,11 @@ export class GridListComponent {
 <div class="surface-ground">
     <div class="grid">
         <div class="col-12 md:col-6 xl:col-4 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex border-bottom-1 surface-border pb-4">
                     <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" style="width: 70px;height: 70px" class="mr-3" />
                     <div class="flex flex-column align-items-start">
-                        <span class="text-lg text-900 font-medium mb-1">Lindsay Connor</span>
+                        <span class="text-xl text-900 font-medium mb-1">Lindsay Connor</span>
                         <span class="text-600 font-medium mb-2">Test Engineer</span>
                         <span class="bg-blue-50 text-blue-400 border-round inline-flex py-1 px-2 text-sm">Editor</span>
                     </div>
@@ -39,11 +39,11 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-4 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex border-bottom-1 surface-border pb-4">
                     <img src="assets/images/blocks/avatars/circle/avatar-m-1.png" style="width: 70px;height: 70px" class="mr-3" />
                     <div class="flex flex-column align-items-start">
-                        <span class="text-lg text-900 font-medium mb-1">James McAvoy</span>
+                        <span class="text-xl text-900 font-medium mb-1">James McAvoy</span>
                         <span class="text-600 font-medium mb-2">Project Manager</span>
                         <span class="bg-purple-50 text-purple-400 border-round inline-flex py-1 px-2 text-sm">Contributor</span>
                     </div>
@@ -55,11 +55,11 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-4 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex border-bottom-1 surface-border pb-4">
                     <img src="assets/images/blocks/avatars/circle/avatar-f-2.png" style="width: 70px;height: 70px" class="mr-3" />
                     <div class="flex flex-column align-items-start">
-                        <span class="text-lg text-900 font-medium mb-1">Aisha Jones</span>
+                        <span class="text-xl text-900 font-medium mb-1">Aisha Jones</span>
                         <span class="text-600 font-medium mb-2">Designer</span>
                         <span class="bg-blue-50 text-blue-400 border-round inline-flex py-1 px-2 text-sm">Editor</span>
                     </div>
@@ -71,11 +71,11 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-4 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex border-bottom-1 surface-border pb-4">
                     <img src="assets/images/blocks/avatars/circle/avatar-m-2.png" style="width: 70px;height: 70px" class="mr-3" />
                     <div class="flex flex-column align-items-start">
-                        <span class="text-lg text-900 font-medium mb-1">Roberto Fox</span>
+                        <span class="text-xl text-900 font-medium mb-1">Roberto Fox</span>
                         <span class="text-600 font-medium mb-2">QA Engineer</span>
                         <span class="bg-orange-50 text-orange-400 border-round inline-flex py-1 px-2 text-sm">Author</span>
                     </div>
@@ -87,11 +87,11 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-4 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex border-bottom-1 surface-border pb-4">
                     <img src="assets/images/blocks/avatars/circle/avatar-f-4.png" style="width: 70px;height: 70px" class="mr-3" />
                     <div class="flex flex-column align-items-start">
-                        <span class="text-lg text-900 font-medium mb-1">Jenny Wilson</span>
+                        <span class="text-xl text-900 font-medium mb-1">Jenny Wilson</span>
                         <span class="text-600 font-medium mb-2">Scrum Master</span>
                         <span class="bg-purple-50 text-purple-400 border-round inline-flex py-1 px-2 text-sm">Contributor</span>
                     </div>
@@ -103,11 +103,11 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-4 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex border-bottom-1 surface-border pb-4">
                     <img src="assets/images/blocks/avatars/circle/avatar-f-5.png" style="width: 70px;height: 70px" class="mr-3" />
                     <div class="flex flex-column align-items-start">
-                        <span class="text-lg text-900 font-medium mb-1">Claire Flores</span>
+                        <span class="text-xl text-900 font-medium mb-1">Claire Flores</span>
                         <span class="text-600 font-medium mb-2">Developer</span>
                         <span class="bg-teal-50 text-teal-400 border-round inline-flex py-1 px-2 text-sm">Subscriber</span>
                     </div>
@@ -125,10 +125,10 @@ export class GridListComponent {
 <div class="surface-ground">
     <div class="grid">
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex flex-column align-items-center mb-3">
                     <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" style="width: 70px;height: 70px" class="mb-3" />
-                    <span class="font-medium text-900 text-xl mb-3">Jane Fox</span>
+                    <span class="font-medium text-900 text-xl mb-2">Jane Fox</span>
                     <span class="text-600 font-medium mb-2">Project Manager</span>
                     <span class="text-600 surface-200 p-2 border-round">Subscriber</span>
                 </div>
@@ -139,10 +139,10 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex flex-column align-items-center mb-3">
                     <img src="assets/images/blocks/avatars/circle/avatar-m-1.png" style="width: 70px;height: 70px" class="mb-3" />
-                    <span class="font-medium text-900 text-xl mb-3">Robert Wilkins</span>
+                    <span class="font-medium text-900 text-xl mb-2">Robert Wilkins</span>
                     <span class="text-600 font-medium mb-2">Developer</span>
                     <span class="text-600 surface-200 p-2 border-round">Editor</span>
                 </div>
@@ -153,10 +153,10 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex flex-column align-items-center mb-3">
                     <img src="assets/images/blocks/avatars/circle/avatar-f-2.png" style="width: 70px;height: 70px" class="mb-3" />
-                    <span class="font-medium text-900 text-xl mb-3">Jenny Wilson</span>
+                    <span class="font-medium text-900 text-xl mb-2">Jenny Wilson</span>
                     <span class="text-600 font-medium mb-2">Marketing</span>
                     <span class="text-600 surface-200 p-2 border-round">Subscriber</span>
                 </div>
@@ -167,10 +167,10 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex flex-column align-items-center mb-3">
                     <img src="assets/images/blocks/avatars/circle/avatar-m-2.png" style="width: 70px;height: 70px" class="mb-3" />
-                    <span class="font-medium text-900 text-xl mb-3">Alberto Flores</span>
+                    <span class="font-medium text-900 text-xl mb-2">Alberto Flores</span>
                     <span class="text-600 font-medium mb-2">Accounting</span>
                     <span class="text-600 surface-200 p-2 border-round">Moderator</span>
                 </div>
@@ -181,10 +181,10 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex flex-column align-items-center mb-3">
                     <img src="assets/images/blocks/avatars/circle/avatar-f-3.png" style="width: 70px;height: 70px" class="mb-3" />
-                    <span class="font-medium text-900 text-xl mb-3">Regina Miles</span>
+                    <span class="font-medium text-900 text-xl mb-2">Regina Miles</span>
                     <span class="text-600 font-medium mb-2">Developer</span>
                     <span class="text-600 surface-200 p-2 border-round">Contributor</span>
                 </div>
@@ -195,10 +195,10 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex flex-column align-items-center mb-3">
                     <img src="assets/images/blocks/avatars/circle/avatar-m-3.png" style="width: 70px;height: 70px" class="mb-3" />
-                    <span class="font-medium text-900 text-xl mb-3">Gary Richards</span>
+                    <span class="font-medium text-900 text-xl mb-2">Gary Richards</span>
                     <span class="text-600 font-medium mb-2">Designer</span>
                     <span class="text-600 surface-200 p-2 border-round">Subscriber</span>
                 </div>
@@ -209,10 +209,10 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex flex-column align-items-center mb-3">
                     <img src="assets/images/blocks/avatars/circle/avatar-f-4.png" style="width: 70px;height: 70px" class="mb-3" />
-                    <span class="font-medium text-900 text-xl mb-3">Nelly Cooper</span>
+                    <span class="font-medium text-900 text-xl mb-2">Nelly Cooper</span>
                     <span class="text-600 font-medium mb-2">Sales Specialist</span>
                     <span class="text-600 surface-200 p-2 border-round">Editor</span>
                 </div>
@@ -223,10 +223,10 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex flex-column align-items-center mb-3">
                     <img src="assets/images/blocks/avatars/circle/avatar-m-4.png" style="width: 70px;height: 70px" class="mb-3" />
-                    <span class="font-medium text-900 text-xl mb-3">Cody Roberts</span>
+                    <span class="font-medium text-900 text-xl mb-2">Cody Roberts</span>
                     <span class="text-600 font-medium mb-2">Designer</span>
                     <span class="text-600 surface-200 p-2 border-round">Author</span>
                 </div>
@@ -243,10 +243,10 @@ export class GridListComponent {
 <div class="surface-ground">
     <div class="grid">
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex flex-column align-items-center border-bottom-1 surface-border pb-3">
                     <img src="assets/images/blocks/products/bracelet.jpg" class="mb-3 w-9" />
-                    <span class="text-lg text-900 font-medium mb-2">Bamboo Watch</span>
+                    <span class="text-xl text-900 font-medium mb-2">Bamboo Watch</span>
                     <span class="text-600 font-medium mb-3">Duis Aute Irure</span>
                     <span class="text-2xl text-800 block mb-3 font-semibold">$9.66</span>
                     <p-rating [ngModel]="3" readonly="true" stars="5" [cancel]="false"></p-rating>
@@ -258,10 +258,10 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex flex-column align-items-center border-bottom-1 surface-border pb-3">
                     <img src="assets/images/blocks/products/galaxy-earrings.jpg" class="mb-3 w-9" />
-                    <span class="text-lg text-900 font-medium mb-2">Black Watch</span>
+                    <span class="text-xl text-900 font-medium mb-2">Black Watch</span>
                     <span class="text-600 font-medium mb-3">Ullam libero</span>
                     <span class="text-2xl text-800 block mb-3 font-semibold">$12.45</span>
                     <p-rating [ngModel]="3" readonly="true" stars="5" [cancel]="false"></p-rating>
@@ -273,10 +273,10 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex flex-column align-items-center border-bottom-1 surface-border pb-3">
                     <img src="assets/images/blocks/products/shoes.jpg" class="mb-3 w-9" />
-                    <span class="text-lg text-900 font-medium mb-2">Shoes</span>
+                    <span class="text-xl text-900 font-medium mb-2">Shoes</span>
                     <span class="text-600 font-medium mb-3">Eveniet magnam</span>
                     <span class="text-2xl text-800 block mb-3 font-semibold">$21.50</span>
                     <p-rating [ngModel]="3" readonly="true" stars="5" [cancel]="false"></p-rating>
@@ -288,10 +288,10 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex flex-column align-items-center border-bottom-1 surface-border pb-3">
                     <img src="assets/images/blocks/products/yoga-mat.jpg" class="mb-3 w-9" />
-                    <span class="text-lg text-900 font-medium mb-2">Yoga-Mat</span>
+                    <span class="text-xl text-900 font-medium mb-2">Yoga-Mat</span>
                     <span class="text-600 font-medium mb-3">Quis minus soluta</span>
                     <span class="text-2xl text-800 block mb-3 font-semibold">$15.00</span>
                     <p-rating [ngModel]="3" readonly="true" stars="5" [cancel]="false"></p-rating>
@@ -303,10 +303,10 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex flex-column align-items-center border-bottom-1 surface-border pb-3">
                     <img src="assets/images/blocks/products/headphones.jpg" class="mb-3 w-9" />
-                    <span class="text-lg text-900 font-medium mb-2">Headphones</span>
+                    <span class="text-xl text-900 font-medium mb-2">Headphones</span>
                     <span class="text-600 font-medium mb-3">Sunt facere tempora</span>
                     <span class="text-2xl text-800 block mb-3 font-semibold">$44.50</span>
                     <p-rating [ngModel]="3" readonly="true" stars="5" [cancel]="false"></p-rating>
@@ -318,10 +318,10 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex flex-column align-items-center border-bottom-1 surface-border pb-3">
                     <img src="assets/images/blocks/products/pink-purse.jpg" class="mb-3 w-9" />
-                    <span class="text-lg text-900 font-medium mb-2">Lime Band</span>
+                    <span class="text-xl text-900 font-medium mb-2">Lime Band</span>
                     <span class="text-600 font-medium mb-3">Lorem Ipsum Dolor</span>
                     <span class="text-2xl text-800 block mb-3 font-semibold">$5.90</span>
                     <p-rating [ngModel]="3" readonly="true" stars="5" [cancel]="false"></p-rating>
@@ -333,10 +333,10 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex flex-column align-items-center border-bottom-1 surface-border pb-3">
                     <img src="assets/images/blocks/products/purple-gemstone-necklace.jpg" class="mb-3 w-9" />
-                    <span class="text-lg text-900 font-medium mb-2">Necklace</span>
+                    <span class="text-xl text-900 font-medium mb-2">Necklace</span>
                     <span class="text-600 font-medium mb-3">Sit amet consectetur</span>
                     <span class="text-2xl text-800 block mb-3 font-semibold">$21.90</span>
                     <p-rating [ngModel]="3" readonly="true" stars="5" [cancel]="false"></p-rating>
@@ -348,10 +348,10 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-4">
+            <div class="surface-card shadow-2 border-round p-4">
                 <div class="flex flex-column align-items-center border-bottom-1 surface-border pb-3">
                     <img src="assets/images/blocks/products/purple-t-shirt.jpg" class="mb-3 w-9" />
-                    <span class="text-lg text-900 font-medium mb-2">T-Shirt</span>
+                    <span class="text-xl text-900 font-medium mb-2">T-Shirt</span>
                     <span class="text-600 font-medium mb-3">Adipisicing elit</span>
                     <span class="text-2xl text-800 block mb-3 font-semibold">$18.50</span>
                     <p-rating [ngModel]="3" readonly="true" stars="5" [cancel]="false"></p-rating>
@@ -420,7 +420,7 @@ export class GridListComponent {
 <div class="surface-ground">
     <div class="grid">
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-3" style="border-radius: 6px">
+            <div class="surface-card shadow-2 border-round p-3" style="border-radius: 6px">
                 <img src="assets/images/blocks/nature/nature-1.png" class="mb-3 w-full" />
                 <div class="flex justify-content-between align-items-start">
                     <div>
@@ -446,7 +446,7 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-3" style="border-radius: 6px">
+            <div class="surface-card shadow-2 border-round p-3" style="border-radius: 6px">
                 <img src="assets/images/blocks/nature/nature-2.png" class="mb-3 w-full" />
                 <div class="flex justify-content-between align-items-start">
                     <div>
@@ -472,7 +472,7 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-3" style="border-radius: 6px">
+            <div class="surface-card shadow-2 border-round p-3" style="border-radius: 6px">
                 <img src="assets/images/blocks/nature/nature-3.png" class="mb-3 w-full" />
                 <div class="flex justify-content-between align-items-start">
                     <div>
@@ -498,7 +498,7 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-3" style="border-radius: 6px">
+            <div class="surface-card shadow-2 border-round p-3" style="border-radius: 6px">
                 <img src="assets/images/blocks/nature/nature-4.png" class="mb-3 w-full" />
                 <div class="flex justify-content-between align-items-start">
                     <div>
@@ -524,7 +524,7 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-3" style="border-radius: 6px">
+            <div class="surface-card shadow-2 border-round p-3" style="border-radius: 6px">
                 <img src="assets/images/blocks/nature/nature-5.png" class="mb-3 w-full" />
                 <div class="flex justify-content-between align-items-start">
                     <div>
@@ -550,7 +550,7 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-3" style="border-radius: 6px">
+            <div class="surface-card shadow-2 border-round p-3" style="border-radius: 6px">
                 <img src="assets/images/blocks/nature/nature-6.png" class="mb-3 w-full" />
                 <div class="flex justify-content-between align-items-start">
                     <div>
@@ -576,7 +576,7 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-3" style="border-radius: 6px">
+            <div class="surface-card shadow-2 border-round p-3" style="border-radius: 6px">
                 <img src="assets/images/blocks/nature/nature-7.png" class="mb-3 w-full" />
                 <div class="flex justify-content-between align-items-start">
                     <div>
@@ -602,7 +602,7 @@ export class GridListComponent {
             </div>
         </div>
         <div class="col-12 md:col-6 xl:col-3 p-3">
-            <div class="surface-card shadow-2 border-rounded p-3" style="border-radius: 6px">
+            <div class="surface-card shadow-2 border-round p-3" style="border-radius: 6px">
                 <img src="assets/images/blocks/nature/nature-8.png" class="mb-3 w-full" />
                 <div class="flex justify-content-between align-items-start">
                     <div>
@@ -646,7 +646,7 @@ export class GridListComponent {
                     <p class="mt-0 mb-3 text-700 line-height-3">Eget sit amet tellus cras adipiscing enim. At quis risus sed vulputate odio. Proin libero nunc consequat interdum varius sit amet.</p>
                 </div>
                 <div class="px-4 py-3 surface-100 text-right">
-                    <button pButton pRipple icon="pi pi-arrow-right" label="More" class="p-button-rounded p-button-success"></button>
+                    <button pButton pRipple icon="pi pi-arrow-right" iconPos="right" label="More" class="p-button-rounded p-button-success"></button>
                 </div>
             </div>
         </div>
@@ -655,7 +655,7 @@ export class GridListComponent {
                 <div class="p-4">
                     <div class="flex align-items-center">
                         <span class="inline-flex border-circle align-items-center justify-content-center bg-yellow-100 mr-3" style="width:38px;height:38px">
-                            <i class="pi pi-globe text-xl text-yellow-600"></i>
+                            <i class="pi pi-briefcase text-xl text-yellow-600"></i>
                         </span>
                         <span class="text-900 font-medium text-2xl">Card Title</span>
                     </div>
@@ -663,7 +663,7 @@ export class GridListComponent {
                     <p class="mt-0 mb-3 text-700 line-height-3">Molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Vulputate odio ut enim blandit volutpat maecenas. Convallis tellus id interdum velit.</p>
                 </div>
                 <div class="px-4 py-3 surface-100 text-right">
-                    <button pButton pRipple icon="pi pi-download" label="Load" class="p-button-rounded p-button-warning"></button>
+                    <button pButton pRipple icon="pi pi-download" iconPos="right" label="Load" class="p-button-rounded p-button-warning"></button>
                 </div>
             </div>
         </div>
@@ -672,7 +672,7 @@ export class GridListComponent {
                 <div class="p-4">
                     <div class="flex align-items-center">
                         <span class="inline-flex border-circle align-items-center justify-content-center bg-purple-100 mr-3" style="width:38px;height:38px">
-                            <i class="pi pi-globe text-xl text-purple-600"></i>
+                            <i class="pi pi-image text-xl text-purple-600"></i>
                         </span>
                         <span class="text-900 font-medium text-2xl">Card Title</span>
                     </div>
@@ -680,7 +680,7 @@ export class GridListComponent {
                     <p class="mt-0 mb-3 text-700 line-height-3">Rhoncus urna neque viverra justo nec ultrices dui sapien eget. Id neque aliquam vestibulum morbi blandit cursus risus at ipsum.</p>
                 </div>
                 <div class="px-4 py-3 surface-100 text-right">
-                    <button pButton pRipple icon="pi pi-bookmark" label="Save" class="p-button-rounded p-button-help"></button>
+                    <button pButton pRipple icon="pi pi-bookmark" iconPos="right" label="Save" class="p-button-rounded p-button-help"></button>
                 </div>
             </div>
         </div>
