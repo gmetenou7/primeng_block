@@ -224,15 +224,24 @@ export class SlideOverComponent {
                 <div class="text-900 mt-3 mb-2 text-xl font-medium">Isabel Rio</div>
                 <span class="text-700">Sales Manager</span>
             </div>
-            <div class="flex align-items-center justify-content-between mb-5">
-                <a pRipple class="cursor-pointer flex-shrink-0 border-round inline-flex justify-content-center align-items-center surface-100 hover:surface-200 transition-colors transition-duration-150 border-circle" style="width:38px;height:38px">
-                    <i class="pi pi-comment text-xl text-600"></i>
+            <div class="flex align-items-center mb-5">
+                <a class="flex flex-column flex-grow-1 align-items-center gap-2">
+                    <div pRipple class="border-round surface-100 hover:surface-200 transition-colors transition-duration-150 p-3 border-round-2xl">
+                        <i class="pi pi-comment text-xl text-600"></i>
+                    </div>
+                    <span class="text-sm font-medium text-700">Message</span>
                 </a>
-                <a pRipple class="cursor-pointer flex-shrink-0 border-round inline-flex justify-content-center align-items-center surface-100 hover:surface-200 transition-colors transition-duration-150 border-circle" style="width:38px;height:38px">
-                    <i class="pi pi-phone text-xl text-600"></i>
+                <a class="flex flex-column flex-grow-1 align-items-center gap-2">
+                    <div pRipple class="border-round surface-100 hover:surface-200 transition-colors transition-duration-150 p-3 border-round-2xl">
+                        <i class="pi pi-phone text-xl text-600"></i>
+                    </div>
+                    <span class="text-sm font-medium text-700">Call</span>
                 </a>
-                <a pRipple class="cursor-pointer flex-shrink-0 border-round inline-flex justify-content-center align-items-center surface-100 hover:surface-200 transition-colors transition-duration-150 border-circle" style="width:38px;height:38px">
-                    <i class="pi pi-video text-xl text-600"></i>
+                <a class="flex flex-column flex-grow-1 align-items-center gap-2">
+                    <div pRipple class="border-round surface-100 hover:surface-200 transition-colors transition-duration-150 p-3 border-round-2xl">
+                        <i class="pi pi-video text-xl text-600"></i>
+                    </div>
+                    <span class="text-sm font-medium text-700">Video Call</span>
                 </a>
             </div>
             <ul class="list-none p-0 m-0">
@@ -352,15 +361,15 @@ export class SlideOverComponent {
     pStyleClass="#slideover-9" enterClass="hidden" enterActiveClass="fadeinright" leaveToClass="hidden" leaveActiveClass="fadeoutright" [hideOnOutsideClick]="true"></button>
 
 <div id="slideover-9" class="hidden surface-overlay h-full absolute top-0 right-0 shadow-2 w-30rem">
-    <div class="flex flex-column p-4 h-full">
-        <div class="flex align-items-center justify-content-between mb-4">
+    <div class="flex flex-column h-full">
+        <div class="flex align-items-center justify-content-between p-4">
             <span class="flex align-items-center">
                 <img src="assets/images/blocks/avatars/circle/avatar-{{users[user].picture}}" class="mr-3 flex-shrink-0" style="width:42px;height:42px" />
                 <span class="text-900 text-xl font-medium">{{users[user].name}}</span>
             </span>
             <button pButton pRipple icon="pi pi-times" class="p-button-rounded p-button-text p-button-plain" pStyleClass="#slideover-9" leaveToClass="hidden" leaveActiveClass="fadeoutright"></button>
         </div>
-        <div class="flex border-1 border-round surface-border flex-auto">
+        <div class="flex border-top-1 surface-border flex-auto">
             <div style="width:70px" class="flex border-right-1 surface-border flex-shrink-0">
                 <ul class="flex flex-column list-none p-0 m-0 w-full">
                     <li *ngFor="let usr of users; let i = index">
@@ -403,10 +412,10 @@ export class SlideOverComponent {
                         </p>
                     </li>
                 </ul>
-                <div class="p-4 border-top-1 surface-border p-input-filled">
+                <div class="p-4 surface-overlay border-top-1 surface-border p-input-filled">
                     <span class="p-input-icon-right block">
                         <i class="pi pi-send"></i>
-                        <input type="text" pInputText class="p-3 w-full" placeholder="Message">
+                        <input type="text" pInputText class="p-3 w-full" placeholder="Type...">
                     </span>
                 </div>
             </div>
