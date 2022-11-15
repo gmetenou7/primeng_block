@@ -126,12 +126,12 @@ export class OrderDetailPageComponent {
                         <ul class="list-none flex p-0 m-0">
                             <li class="flex flex-column align-items-center mb-5 lg:mr-5 pr-3 lg:pr-0">
                                 <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-3-1.png" alt="Image" style="border-radius:12px" class="mb-5 w-full lg:w-20rem">
-                                <span class="inline-flex surface-0 text-900 border-round font-semibold mb-3">New Arrivals</span>
+                                <span class="inline-flex surface-0 text-900 border-round font-semibold text-xl mb-3">New Arrivals</span>
                                 <a class="cursor-pointer text-700 font-medium hover:text-900">View All</a>
                             </li>
                             <li class="flex flex-column align-items-center pl-3 lg:pl-0">
                                 <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-3-2.png" alt="Image" style="border-radius:12px" class="mb-5 w-full lg:w-20rem">
-                                <span class="inline-flex surface-0 text-900 border-round font-semibold mb-3">Seasonal</span>
+                                <span class="inline-flex surface-0 text-900 border-round font-semibold text-xl mb-3">Seasonal</span>
                                 <a class="cursor-pointer text-700 font-medium hover:text-900">View All</a>
                             </li>
                         </ul>
@@ -182,7 +182,7 @@ export class OrderDetailPageComponent {
                 <img src="assets/images/blocks/ecommerce/ordersummary/order-summary-1-1.png" class="w-3rem sm:w-8rem flex-shrink-0 mr-3 shadow-2" />
                 <div class="flex flex-column">
                     <span class="text-900 font-medium text-xl mb-2">Product Name</span>
-                    <span class="text-600 font-medium mb-3">Blue | Medium</span>
+                    <span class="text-600 mb-3">Blue | Medium</span>
                     <span class="text-900 font-medium">Quantity 1</span>
                 </div>
                 <span class="text-900 font-medium text-lg ml-auto">$12.00</span>
@@ -191,7 +191,7 @@ export class OrderDetailPageComponent {
                 <img src="assets/images/blocks/ecommerce/ordersummary/order-summary-1-2.png" class="w-3rem sm:w-8rem flex-shrink-0 mr-3 shadow-2" />
                 <div class="flex flex-column">
                     <span class="text-900 font-medium text-xl mb-2">Product Name</span>
-                    <span class="text-600 font-medium mb-3">Yellow | Large</span>
+                    <span class="text-600 mb-3">Yellow | Large</span>
                     <span class="text-900 font-medium">Quantity 1</span>
                 </div>
                 <span class="text-900 font-medium text-lg ml-auto">$24.00</span>
