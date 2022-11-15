@@ -34,7 +34,7 @@ export class OrderHistoryPageComponent {
                                   <li class="hidden lg:block">
                                       <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-2-1.png" alt="Image" height="160" style="border-radius:12px">
                                   </li>
-                                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Clothing</li>
+                                  <li class="font-bold my-5 text-xl text-900 hidden lg:block">Clothing</li>
                                   <li class="mb-3 cursor-pointer hover:text-900">Dresses</li>
                                   <li class="mb-3 cursor-pointer hover:text-900">Jeans</li>
                                   <li class="mb-3 cursor-pointer hover:text-900">Pants</li>
@@ -49,7 +49,7 @@ export class OrderHistoryPageComponent {
                                   <li class="hidden lg:block">
                                       <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-2-2.png" alt="Image" height="160" style="border-radius:12px">
                                   </li>
-                                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Shoes</li>
+                                  <li class="font-bold my-5 text-xl text-900 hidden lg:block">Shoes</li>
                                   <li class="mb-3 cursor-pointer hover:text-900">Athletic</li>
                                   <li class="mb-3 cursor-pointer hover:text-900">Boots</li>
                                   <li class="mb-3 cursor-pointer hover:text-900">Sneakers</li>
@@ -63,7 +63,7 @@ export class OrderHistoryPageComponent {
                                   <li class="hidden lg:block">
                                       <img src="assets/images/blocks/ecommerce/storenavigation/storenavigation-2-3.png" alt="Image" height="160" style="border-radius:12px">
                                   </li>
-                                  <li class="font-bold mb-5 text-xl text-900 hidden lg:block">Accessories</li>
+                                  <li class="font-bold my-5 text-xl text-900 hidden lg:block">Accessories</li>
                                   <li class="mb-3 cursor-pointer hover:text-900">Handbags</li>
                                   <li class="mb-3 cursor-pointer hover:text-900">Gloves</li>
                                   <li class="mb-3 cursor-pointer hover:text-900">Belts</li>
@@ -173,10 +173,10 @@ export class OrderHistoryPageComponent {
       </ul>
   </div>
 
-  <div class="surface-0 px-4 py-8 md:px-6 lg:px-8">
+  <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
       <div class="flex flex-column md:flex-row justify-content-between align-items-center mb-4">
           <div class="flex flex-column text-center md:text-left">
-              <span class="text-900 text-3xl mb-2">My Orders</span>
+              <span class="text-900 text-3xl font-medium mb-2">My Orders</span>
               <span class="text-600 text-xl">Dignissim diam quis enim lobortis.</span>
           </div>
           <span class="p-input-icon-right mt-5 mb-2 md:mt-0 md:mb-0 w-full lg:w-25rem">
@@ -187,17 +187,17 @@ export class OrderHistoryPageComponent {
       <div class="surface-card grid grid-nogutter border-round shadow-2">
           <div class="col-12 flex p-2 surface-100 border-round-top">
               <div class="p-2 flex-auto text-center md:text-left">
-                  <span class="text-600 block">Order Number</span>
+                  <span class="text-700 block">Order Number</span>
                   <span class="text-900 font-medium block mt-2">45123</span>
               </div>
               <p-divider align="center" layout="vertical" styleClass="h-full  mx-0 lg:mx-3"></p-divider>
               <div class="p-2 flex-auto text-center md:text-left">
-                  <span class="text-600 block">Order Date</span>
+                  <span class="text-700 block">Order Date</span>
                   <span class="text-900 font-medium block mt-2">7 February 2023</span>
               </div>
               <p-divider align="center" layout="vertical" styleClass="h-full  mx-0 lg:mx-3"></p-divider>
               <div class="p-2 flex-auto text-center md:text-left">
-                  <span class="text-600 block">Total Amount</span>
+                  <span class="text-700 block">Total Amount</span>
                   <span class="text-900 font-medium block mt-2">$123.00</span>
               </div>
           </div>
@@ -215,7 +215,7 @@ export class OrderHistoryPageComponent {
                       <span class="bg-green-500 text-white flex align-items-center justify-content-center border-circle mr-2" style="min-width:2rem; min-height: 2rem">
                           <i class="pi pi-check"></i>
                       </span>
-                      <span class="text-green-500">Delivered on 7 February 2023</span>
+                      <span class="text-green-600">Delivered on 7 February 2023</span>
                   </div>
               </div>
               <p-divider class="w-full block lg:hidden surface-border"></p-divider>
@@ -232,7 +232,7 @@ export class OrderHistoryPageComponent {
                       <span class="bg-green-500 text-white flex align-items-center justify-content-center border-circle mr-2" style="min-width:2rem; min-height: 2rem">
                           <i class="pi pi-check"></i>
                       </span>
-                      <span class="text-green-500">Delivered on 7 February 2023</span>
+                      <span class="text-green-600">Delivered on 7 February 2023</span>
                   </div>
               </div>
               <p-divider class="w-full block lg:hidden surface-border"></p-divider>
@@ -249,7 +249,7 @@ export class OrderHistoryPageComponent {
                       <span class="bg-green-500 text-white flex align-items-center justify-content-center border-circle mr-2" style="min-width:2rem; min-height: 2rem">
                           <i class="pi pi-check"></i>
                       </span>
-                      <span class="text-green-500">Delivered on 7 February 2023</span>
+                      <span class="text-green-600">Delivered on 7 February 2023</span>
                   </div>
               </div>
           </div>
@@ -263,17 +263,17 @@ export class OrderHistoryPageComponent {
       <div class="surface-card grid grid-nogutter mt-5 border-round shadow-2">
           <div class="col-12 flex p-2 surface-100 border-round-top">
               <div class="p-2 flex-auto text-center md:text-left">
-                  <span class="text-600 block">Order Number</span>
+                  <span class="text-700 block">Order Number</span>
                   <span class="text-900 font-medium block mt-2">45123</span>
               </div>
               <p-divider align="center" layout="vertical" styleClass="h-full  mx-0 lg:mx-3"></p-divider>
               <div class="p-2 flex-auto text-center md:text-left">
-                  <span class="text-600 block">Order Date</span>
+                  <span class="text-700 block">Order Date</span>
                   <span class="text-900 font-medium block mt-2">7 February 2023</span>
               </div>
               <p-divider align="center" layout="vertical" styleClass="h-full  mx-0 lg:mx-3"></p-divider>
               <div class="p-2 flex-auto text-center md:text-left">
-                  <span class="text-600 block">Total Amount</span>
+                  <span class="text-700 block">Total Amount</span>
                   <span class="text-900 font-medium block mt-2">$123.00</span>
               </div>
           </div>
@@ -291,7 +291,7 @@ export class OrderHistoryPageComponent {
                       <span class="bg-green-500 text-white flex align-items-center justify-content-center border-circle mr-2" style="min-width:2rem; min-height: 2rem">
                           <i class="pi pi-check"></i>
                       </span>
-                      <span class="text-green-500">Delivered on 7 February 2023</span>
+                      <span class="text-green-600">Delivered on 7 February 2023</span>
                   </div>
               </div>
               <p-divider class="w-full block lg:hidden surface-border"></p-divider>
@@ -308,7 +308,7 @@ export class OrderHistoryPageComponent {
                       <span class="bg-green-500 text-white flex align-items-center justify-content-center border-circle mr-2" style="min-width:2rem; min-height: 2rem">
                           <i class="pi pi-check"></i>
                       </span>
-                      <span class="text-green-500">Delivered on 7 February 2023</span>
+                      <span class="text-green-600">Delivered on 7 February 2023</span>
                   </div>
               </div>
               <p-divider class="w-full block lg:hidden surface-border"></p-divider>
@@ -325,7 +325,7 @@ export class OrderHistoryPageComponent {
                       <span class="bg-green-500 text-white flex align-items-center justify-content-center border-circle mr-2" style="min-width:2rem; min-height: 2rem">
                           <i class="pi pi-check"></i>
                       </span>
-                      <span class="text-green-500">Delivered on 7 February 2023</span>
+                      <span class="text-green-600">Delivered on 7 February 2023</span>
                   </div>
               </div>
           </div>
