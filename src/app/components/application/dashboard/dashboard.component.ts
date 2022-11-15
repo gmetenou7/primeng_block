@@ -7,8 +7,8 @@ import { MenuItem } from 'primeng/api';
 export class DashboardComponent implements OnInit {
 
     block1 = `
-<div class="min-h-screen flex surface-ground">
-    <div id="app-sidebar" class="surface-section h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 border-right-1 surface-border select-none" style="width:280px">
+<div class="min-h-screen flex relative lg:static surface-ground">
+    <div id="app-sidebar" class="surface-section h-full lg:h-auto hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 surface-border select-none" style="width:280px">
         <div class="flex flex-column h-full">
             <div class="flex align-items-center px-5 flex-shrink-0" style="height:60px">
                 <img src="assets/images/blocks/logos/hyper-700.svg" alt="Image" height="30">
@@ -389,8 +389,8 @@ export class DashboardComponent implements OnInit {
                             <div class="text-xl text-900 font-medium mb-5">Timeline</div>
                             <div class="mb-5 flex">
                                 <div class="flex flex-column align-items-center" style="width:2rem">
-                                    <span class="bg-blue-500 text-0 flex align-items-center justify-content-center border-circle" style="min-width:2.5rem; min-height: 2.5rem">
-                                        <i class="pi pi-image"></i>
+                                    <span class="bg-blue-500 text-0 flex align-items-center justify-content-center border-circle p-2">
+                                        <i class="pi pi-compass text-xl"></i>
                                     </span>
                                     <div class="h-full bg-blue-500" style="width: 2px; min-height: 4rem"></div>
                                 </div>
@@ -403,22 +403,26 @@ export class DashboardComponent implements OnInit {
                                         Eu tincidunt tortor aliquam nulla facilisi cras fermentum. 
                                         Sollicitudin nibh sit amet commodo nulla. Mauris in aliquam sem fringilla ut morbi.
                                     </div>
-                                    <div class="text-500 flex align-items-center">
-                                        <i class="pi pi-heart mr-1"></i>
-                                        <span class="mr-3">0</span>
-                    
-                                        <i class="pi pi-comment mr-1"></i>
-                                        <span class="mr-3">1</span>
-                    
-                                        <i class="pi pi-eye mr-1"></i>
-                                        <span>24</span>
+                                    <div class="text-500 flex align-items-center gap-4">
+                                        <div class="flex align-items-center gap-1">
+                                            <i class="pi pi-heart mr-1"></i>
+                                            <span>0</span>
+                                        </div>
+                                        <div class="flex align-items-center gap-1">
+                                            <i class="pi pi-comment mr-1"></i>
+                                            <span>1</span>
+                                        </div>
+                                        <div class="flex align-items-center gap-1">
+                                            <i class="pi pi-eye"></i>
+                                            <span>24</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="mb-5 flex">
                                 <div class="flex flex-column align-items-center" style="width:2rem">
-                                    <span class="bg-orange-500 text-0 flex align-items-center justify-content-center border-circle" style="min-width:2.5rem; min-height: 2.5rem">
-                                        <i class="pi pi-image"></i>
+                                    <span class="bg-orange-500 text-0 flex align-items-center justify-content-center border-circle p-2">
+                                        <i class="pi pi-list text-xl"></i>
                                     </span>
                                     <div class="h-full bg-orange-500" style="width: 2px; min-height: 4rem"></div>
                                 </div>
@@ -431,22 +435,26 @@ export class DashboardComponent implements OnInit {
                                         Purus sit amet volutpat consequat mauris. Pretium lectus quam id leo in vitae. 
                                         Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper.
                                     </div>
-                                    <div class="text-500 flex align-items-center">
-                                        <i class="pi pi-heart mr-1"></i>
-                                        <span class="mr-3">26</span>
-                    
-                                        <i class="pi pi-comment mr-1"></i>
-                                        <span class="mr-3">6</span>
-                    
-                                        <i class="pi pi-eye mr-1"></i>
-                                        <span>673</span>
+                                    <div class="text-500 flex align-items-center gap-4">
+                                        <div class="flex align-items-center gap-1">
+                                            <i class="pi pi-heart mr-1"></i>
+                                            <span>26</span>
+                                        </div>
+                                        <div class="flex align-items-center gap-1">
+                                            <i class="pi pi-comment mr-1"></i>
+                                            <span>6</span>
+                                        </div>
+                                        <div class="flex align-items-center gap-1">
+                                            <i class="pi pi-eye"></i>
+                                            <span>673</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="mb-5 flex">
                                 <div class="flex flex-column align-items-center" style="width:2rem">
-                                    <span class="bg-purple-500 text-0 flex align-items-center justify-content-center border-circle" style="min-width:2.5rem; min-height: 2.5rem">
-                                        <i class="pi pi-image"></i>
+                                    <span class="bg-purple-500 text-0 flex align-items-center justify-content-center border-circle p-2">
+                                        <i class="pi pi-inbox text-xl"></i>
                                     </span>
                                     <div class="h-full bg-purple-500" style="width: 2px; min-height: 4rem"></div>
                                 </div>
@@ -459,15 +467,19 @@ export class DashboardComponent implements OnInit {
                                         Euismod in pellentesque massa placerat duis ultricies lacus. 
                                         Vitae sapien pellentesque habitant morbi tristique senectus et netus et.
                                     </div>
-                                    <div class="text-500 flex align-items-center">
-                                        <i class="pi pi-heart mr-1"></i>
-                                        <span class="mr-3">62</span>
-                    
-                                        <i class="pi pi-comment mr-1"></i>
-                                        <span class="mr-3">36</span>
-                    
-                                        <i class="pi pi-eye mr-1"></i>
-                                        <span>21</span>
+                                    <div class="text-500 flex align-items-center gap-4">
+                                        <div class="flex align-items-center gap-1">
+                                            <i class="pi pi-heart mr-1"></i>
+                                            <span>62</span>
+                                        </div>
+                                        <div class="flex align-items-center gap-1">
+                                            <i class="pi pi-comment mr-1"></i>
+                                            <span>36</span>
+                                        </div>
+                                        <div class="flex align-items-center gap-1">
+                                            <i class="pi pi-eye"></i>
+                                            <span>21</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -661,7 +673,7 @@ export class DashboardComponent implements OnInit {
                                 <div>
                                     <span class="text-900 font-medium block mb-2">Jane Cooper</span>
                                     <div class="text-700 mb-2">responded to an issue.</div>
-                                    <a class="text-blue-500 cursor-pointer">
+                                    <a class="text-primary cursor-pointer">
                                         <i class="pi pi-github text-sm mr-2"></i>
                                         <span>Issue #1185</span>
                                     </a>
@@ -674,7 +686,7 @@ export class DashboardComponent implements OnInit {
                                 <img src="assets/images/blocks/avatars/circle-big/avatar-m-1.png" class="mr-3 w-3rem h-3rem"/>
                                 <div>
                                     <span class="text-900 font-medium block mb-2">Robert Fox</span>
-                                    <div class="text-700">changed team size from <span class="text-900">5</span> to <span class="text-900">6</span>.</div>
+                                    <div class="text-700">changed team size from <span class="text-900 font-medium">5</span> to <span class="text-900 font-medium">6</span>.</div>
                                 </div>
                             </div>
                             <span class="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">20 mins ago</span>
@@ -685,7 +697,7 @@ export class DashboardComponent implements OnInit {
                                 <div>
                                     <span class="text-900 font-medium block mb-2">Kristin Watson Cooper</span>
                                     <div class="text-700 mb-2">created a Q4 presentation to an issue.</div>
-                                    <a class="text-blue-500 cursor-pointer">
+                                    <a class="text-primary cursor-pointer">
                                         <i class="pi pi-file-pdf text-sm mr-2"></i>
                                         <span>q4_presentation.pdf</span>
                                     </a>
@@ -698,7 +710,7 @@ export class DashboardComponent implements OnInit {
                                 <img src="assets/images/blocks/avatars/circle-big/avatar-f-3.png" class="mr-3 w-3rem h-3rem"/>
                                 <div>
                                     <span class="text-900 font-medium block mb-2">Annette Black</span>
-                                    <div class="text-700">added <span class="text-900">Nico Greenberg</span> to <span class="text-blue-500">Watchlist Tier-1</span>.</div>
+                                    <div class="text-700">added <span class="text-900 font-medium">Nico Greenberg</span> to <span class="text-primary">Watchlist Tier-1</span>.</div>
                                 </div>
                             </div>
                             <span class="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">1 day ago</span>
@@ -708,7 +720,7 @@ export class DashboardComponent implements OnInit {
                                 <img src="assets/images/blocks/avatars/circle-big/avatar-m-2.png" class="mr-3 w-3rem h-3rem"/>
                                 <div>
                                     <span class="text-900 font-medium block mb-2">Floyd Miles</span>
-                                    <div class="text-700">has refunded a blue t-shirt for <span class="text-blue-500">79$</span>.</div>
+                                    <div class="text-700">has refunded a blue t-shirt for <span class="text-primary font-medium">$79</span>.</div>
                                 </div>
                             </div>
                             <span class="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">4 days ago</span>
@@ -732,15 +744,15 @@ export class DashboardComponent implements OnInit {
                             <div class="w-3rem h-3rem flex align-items-center justify-content-center bg-blue-100 border-circle mr-3 flex-shrink-0">
                                 <i class="pi pi-dollar text-xl text-blue-500"></i>
                             </div>
-                            <span class="text-900 line-height-3">Richard Jones
-                                <span class="text-700">has purchased a blue t-shirt for <span class="text-blue-500">79$</span></span>
+                            <span class="text-900 line-height-3 font-medium">Richard Jones
+                                <span class="text-700 font-normal">has purchased a blue t-shirt for <span class="text-primary font-medium">$79</span></span>
                             </span>
                         </li>
                         <li class="flex align-items-center py-2">
                             <div class="w-3rem h-3rem flex align-items-center justify-content-center bg-orange-100 border-circle mr-3 flex-shrink-0">
                                 <i class="pi pi-download text-xl text-orange-500"></i>
                             </div>
-                            <span class="text-700 line-height-3">Your request for withdrawal of <span class="text-blue-500 font-medium">2500$</span> has been initiated.</span>
+                            <span class="text-700 line-height-3">Your request for withdrawal of <span class="text-primary font-medium">$2500</span> has been initiated.</span>
                         </li>
                     </ul>
             
@@ -750,24 +762,24 @@ export class DashboardComponent implements OnInit {
                             <div class="w-3rem h-3rem flex align-items-center justify-content-center bg-blue-100 border-circle mr-3 flex-shrink-0">
                                 <i class="pi pi-dollar text-xl text-blue-500"></i>
                             </div>
-                            <span class="text-900 line-height-3">Keyser Wick
-                                <span class="text-700">has purchased a black jacket for <span class="text-blue-500">59$</span></span>
+                            <span class="text-900 line-height-3 font-medium">Keyser Wick
+                                <span class="text-700 font-normal">has purchased a black jacket for <span class="text-primary font-medium">$59</span></span>
                             </span>
                         </li>
                         <li class="flex align-items-center py-2 border-bottom-1 surface-border">
                             <div class="w-3rem h-3rem flex align-items-center justify-content-center bg-pink-100 border-circle mr-3 flex-shrink-0">
                                 <i class="pi pi-question text-xl text-pink-500"></i>
                             </div>
-                            <span class="text-900 line-height-3">Jane Davis
-                                <span class="text-700">has posted a new questions about your product.</span>
+                            <span class="text-900 line-height-3 font-medium">Jane Davis
+                                <span class="text-700 font-normal">has posted a new questions about your product.</span>
                             </span>
                         </li>
                         <li class="flex align-items-center py-2">
                             <div class="w-3rem h-3rem flex align-items-center justify-content-center bg-green-100 border-circle mr-3 flex-shrink-0">
                                 <i class="pi pi-arrow-up text-xl text-green-500"></i>
                             </div>
-                            <span class="text-900 line-height-3">Claire Smith
-                                <span class="text-700">has upvoted your store along with a comment.</span>
+                            <span class="text-900 line-height-3 font-medium">Claire Smith
+                                <span class="text-700 font-normal">has upvoted your store along with a comment.</span>
                             </span>
                         </li>
                     </ul>
@@ -776,7 +788,7 @@ export class DashboardComponent implements OnInit {
             <div class="col-12 lg:col-4">
                 <div class="surface-card border-round shadow-2 p-4 text-center">
                     <img src="assets/images/blocks/illustration/windows.svg" alt="Image" class="mx-auto block mb-4">
-                    <div class="text-900 font-medium mb-3 text-xl">Title Placeholder</div>
+                    <div class="text-900 font-medium mb-2 text-xl">Title Placeholder</div>
                     <p class="mt-0 mb-4 p-0 line-height-3">Nunc mi ipsum faucibus vitae aliquet nec. Lacus sed viverra tellus in hac habitasse platea dictumst.</p>
                     <button pButton pRipple label="Learn More" icon="pi pi-arrow-right p-button-rounded"></button>
                 </div>
@@ -784,7 +796,7 @@ export class DashboardComponent implements OnInit {
             <div class="col-12 lg:col-4">
                 <div class="surface-card border-round shadow-2 p-4 text-center">
                     <img src="assets/images/blocks/illustration/security.svg" alt="Image" class="mx-auto block mb-4">
-                    <div class="text-900 font-medium mb-3 text-xl">Title Placeholder</div>
+                    <div class="text-900 font-medium mb-2 text-xl">Title Placeholder</div>
                     <p class="mt-0 mb-4 p-0 line-height-3">Nunc mi ipsum faucibus vitae aliquet nec. Lacus sed viverra tellus in hac habitasse platea dictumst.</p>
                     <button pButton pRipple label="Learn More" icon="pi pi-arrow-right p-button-rounded"></button>
                 </div>
@@ -792,7 +804,7 @@ export class DashboardComponent implements OnInit {
             <div class="col-12 lg:col-4">
                 <div class="surface-card border-round shadow-2 p-4 text-center">
                     <img src="assets/images/blocks/illustration/live-collaboration.svg" alt="Image" class="mx-auto block mb-4">
-                    <div class="text-900 font-medium mb-3 text-xl">Title Placeholder</div>
+                    <div class="text-900 font-medium mb-2 text-xl">Title Placeholder</div>
                     <p class="mt-0 mb-4 p-0 line-height-3">Nunc mi ipsum faucibus vitae aliquet nec. Lacus sed viverra tellus in hac habitasse platea dictumst.</p>
                     <button pButton pRipple label="Learn More" icon="pi pi-arrow-right p-button-rounded"></button>
                 </div>
@@ -960,8 +972,8 @@ export class DashboardComponent implements OnInit {
                 <div class="col-12">
                     <div class="grid">
                         <div class="col-12 md:col-6 lg:col-3 p-3">
-                            <div class="p-3 text-center bg-blue-500" style="border-radius: 12px">
-                                <span class="inline-flex justify-content-center align-items-center bg-blue-600 border-circle mb-3" style="width:49px; height: 49px">
+                            <div class="p-3 text-center bg-blue-500 border-round">
+                                <span class="inline-flex justify-content-center align-items-center bg-blue-600 border-circle mb-3 p-3">
                                     <i class="pi pi-inbox text-xl text-white"></i>
                                 </span>
                                 <div class="text-2xl font-medium text-white mb-2">123K</div>
@@ -969,8 +981,8 @@ export class DashboardComponent implements OnInit {
                             </div>
                         </div>
                         <div class="col-12 md:col-6 lg:col-3 p-3">
-                            <div class="p-3 text-center bg-purple-500" style="border-radius: 12px">
-                                <span class="inline-flex justify-content-center align-items-center bg-purple-600 border-circle mb-3" style="width:49px; height: 49px">
+                            <div class="p-3 text-center bg-purple-500 border-round">
+                                <span class="inline-flex justify-content-center align-items-center bg-purple-600 border-circle mb-3 p-3">
                                     <i class="pi pi-map-marker text-xl text-white"></i>
                                 </span>
                                 <div class="text-2xl font-medium text-white mb-2">23K</div>
@@ -978,8 +990,8 @@ export class DashboardComponent implements OnInit {
                             </div>
                         </div>
                         <div class="col-12 md:col-6 lg:col-3 p-3">
-                            <div class="p-3 text-center bg-indigo-500" style="border-radius: 12px">
-                                <span class="inline-flex justify-content-center align-items-center bg-indigo-600 border-circle mb-3" style="width:49px; height: 49px">
+                            <div class="p-3 text-center bg-indigo-500 border-round">
+                                <span class="inline-flex justify-content-center align-items-center bg-indigo-600 border-circle mb-3 p-3">
                                     <i class="pi pi-file text-xl text-white"></i>
                                 </span>
                                 <div class="text-2xl font-medium text-white mb-2">23K</div>
@@ -987,8 +999,8 @@ export class DashboardComponent implements OnInit {
                             </div>
                         </div>
                         <div class="col-12 md:col-6 lg:col-3 p-3">
-                            <div class="p-3 text-center bg-orange-500" style="border-radius: 12px">
-                                <span class="inline-flex justify-content-center align-items-center bg-orange-600 border-circle mb-3" style="width:49px; height: 49px">
+                            <div class="p-3 text-center bg-orange-500 border-round">
+                                <span class="inline-flex justify-content-center align-items-center bg-orange-600 border-circle mb-3 p-3">
                                     <i class="pi pi-users text-xl text-white"></i>
                                 </span>
                                 <div class="text-2xl font-medium text-white mb-2">40K</div>
