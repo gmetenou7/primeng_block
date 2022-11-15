@@ -52,7 +52,7 @@ export class PageNotFoundComponent {
                         <i class="pi pi-envelope text-white text-3xl"></i>
                     </span>
                     <div class="ml-3">
-                        <span class="text-900 font-medium text-2xl mb-3">Messages</span>
+                        <span class="text-900 font-medium text-2xl inline-block mb-1">Messages</span>
                         <p class="text-600 m-0 line-height-3">Sed egestas egestas fringilla</p>
                     </div>
                     <i class="text-600 pi pi-chevron-right ml-auto"></i>
@@ -64,7 +64,7 @@ export class PageNotFoundComponent {
                         <i class="pi pi-chart-bar text-white text-3xl"></i>
                     </span>
                     <div class="ml-3">
-                        <span class="text-900 font-medium text-2xl mb-3">Dashboard</span>
+                        <span class="text-900 font-medium text-2xl inline-block mb-1">Dashboard</span>
                         <p class="text-600 m-0 line-height-3">Eu Ornare quam viverra orci sagittis odio</p>
                     </div>
                     <i class="text-600 pi pi-chevron-right ml-auto"></i>
@@ -76,7 +76,7 @@ export class PageNotFoundComponent {
                         <i class="pi pi-cog text-white text-3xl"></i>
                     </span>
                     <div class="ml-3">
-                        <span class="text-900 font-medium text-2xl mb-3">Settings</span>
+                        <span class="text-900 font-medium text-2xl inline-block mb-1">Settings</span>
                         <p class="text-600 m-0 line-height-3">Tincidunt nunc pulvinar sapien et</p>
                     </div>
                     <i class="text-600 pi pi-chevron-right ml-auto"></i>
