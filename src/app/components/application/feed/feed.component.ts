@@ -123,14 +123,14 @@ export class FeedComponent {
                 <i class="pi pi-dollar text-xl text-blue-500"></i>
             </div>
             <span class="text-900 line-height-3 font-medium">
-                Richard Jones<span class="text-700 font-normal"> has purchased a blue t-shirt for <span class="text-blue-500 font-medium">$79</span></span>
+                Richard Jones<span class="text-700 font-normal"> has purchased a blue t-shirt for <span class="text-primary font-medium">$79</span></span>
             </span>
         </li>
         <li class="flex align-items-center py-2">
             <div class="w-3rem h-3rem flex align-items-center justify-content-center bg-orange-100 border-circle mr-3 flex-shrink-0">
                 <i class="pi pi-download text-xl text-orange-500"></i>
             </div>
-            <span class="text-700 line-height-3">Your request for withdrawal of <span class="text-blue-500 font-medium">$2500</span> has been initiated.</span>
+            <span class="text-700 line-height-3">Your request for withdrawal of <span class="text-primary font-medium">$2500</span> has been initiated.</span>
         </li>
     </ul>
 
@@ -141,7 +141,7 @@ export class FeedComponent {
                 <i class="pi pi-dollar text-xl text-blue-500"></i>
             </div>
             <span class="text-900 line-height-3 font-medium">Keyser Wick
-                <span class="text-700 font-normal">has purchased a black jacket for <span class="text-blue-500 font-medium">$59</span></span>
+                <span class="text-700 font-normal">has purchased a black jacket for <span class="text-primary font-medium">$59</span></span>
             </span>
         </li>
         <li class="flex align-items-center py-2 border-bottom-1 surface-border">
@@ -179,7 +179,7 @@ export class FeedComponent {
                 <div>
                     <span class="text-900 font-medium block mb-2">Jane Cooper</span>
                     <div class="text-700 mb-2">responded to an issue.</div>
-                    <a class="text-blue-500 cursor-pointer">
+                    <a class="text-primary cursor-pointer">
                         <i class="pi pi-github text-sm mr-2"></i>
                         <span>Issue #1185</span>
                     </a>
@@ -203,7 +203,7 @@ export class FeedComponent {
                 <div>
                     <span class="text-900 font-medium block mb-2">Kristin Watson Cooper</span>
                     <div class="text-700 mb-2">created a Q4 presentation to an issue.</div>
-                    <a class="text-blue-500 cursor-pointer">
+                    <a class="text-primary cursor-pointer">
                         <i class="pi pi-file-pdf text-sm mr-2"></i>
                         <span>q4_presentation.pdf</span>
                     </a>
@@ -216,7 +216,7 @@ export class FeedComponent {
                 <img src="assets/images/blocks/avatars/circle-big/avatar-f-3.png" class="mr-3 w-3rem h-3rem"/>
                 <div>
                     <span class="text-900 font-medium block mb-2">Annette Black</span>
-                    <div class="text-700">added <span class="text-900 font-medium">Nico Greenberg</span> to <span class="text-blue-500">Watchlist Tier-1</span>.</div>
+                    <div class="text-700">added <span class="text-900 font-medium">Nico Greenberg</span> to <span class="text-primary">Watchlist Tier-1</span>.</div>
                 </div>
             </div>
             <span class="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">1 day ago</span>
@@ -226,7 +226,7 @@ export class FeedComponent {
                 <img src="assets/images/blocks/avatars/circle-big/avatar-m-2.png" class="mr-3 w-3rem h-3rem"/>
                 <div>
                     <span class="text-900 font-medium block mb-2">Floyd Miles</span>
-                    <div class="text-700">has refunded a blue t-shirt for <span class="text-blue-500">79$</span>.</div>
+                    <div class="text-700">has refunded a blue t-shirt for <span class="text-primary">$79</span>.</div>
                 </div>
             </div>
             <span class="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">4 days ago</span>
