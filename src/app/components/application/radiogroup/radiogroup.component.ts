@@ -24,17 +24,17 @@ export class RadioGroupComponent {
     block1 = `
 <div class="w-full">
     <div class="text-900 text-xl mb-3 text-left font-medium">Choose your favorite animal</div>
-    <div class="border-1 p-5 mb-3 border-round flex flex-column md:flex-row align-items-start md:align-items-center md:justify-content-between cursor-pointer"
+    <div class="surface-card border-2 p-5 mb-3 border-round flex flex-column md:flex-row align-items-start md:align-items-center md:justify-content-between cursor-pointer"
         (click)="animal=0"
-        [ngClass]="{'surface-card surface-border': animal !== 0, 'bg-primary border-primary': animal === 0}">
+        [ngClass]="{'surface-border': animal !== 0, 'border-primary': animal === 0}">
         <div class="flex align-items-start mr-0 md:mr-8">
             <img src="assets/images/blocks/animals/a1.jpg" class="mr-3 border-round" style="width:50px" />
             <div>
-                <div class="font-medium mb-2" [ngClass]="{'text-900': animal !== 0, 'bg-primary': animal === 0}">Owl
+                <div class="font-medium mb-2" [ngClass]="{'text-900': animal !== 0}">Owl
                 </div>
                 <div class="flex flex-grow gap-2">
-                    <span class="p-1 border-round"
-                        [ngClass]="{'surface-100 text-600': animal !== 0, 'bg-primary-reverse': animal === 0}">Sharp
+                    <span class="p-1 border-round surface-100"
+                        [ngClass]="{'text-primary-600': animal === 0}">Sharp
                         Talons</span>
                 </div>
             </div>
@@ -45,20 +45,20 @@ export class RadioGroupComponent {
             <span>702</span>
         </div>
     </div>
-    <div class="border-1 p-5 mb-3 border-round flex flex-column md:flex-row align-items-start md:align-items-center md:justify-content-between cursor-pointer"
+    <div class="surface-card border-2 p-5 mb-3 border-round flex flex-column md:flex-row align-items-start md:align-items-center md:justify-content-between cursor-pointer"
         (click)="animal=1"
-        [ngClass]="{'surface-card surface-border': animal !== 1, 'bg-primary border-primary': animal === 1}">
+        [ngClass]="{'surface-border': animal !== 1, 'border-primary': animal === 1}">
         <div class="flex align-items-start mr-0 md:mr-8">
             <img src="assets/images/blocks/animals/a2.jpg" class="mr-3 border-round" style="width:50px" />
             <div>
-                <div class="font-medium mb-2" [ngClass]="{'text-900': animal !== 1, 'bg-primary': animal === 1}">Fox
+                <div class="font-medium mb-2" [ngClass]="{'text-primary-600': animal === 1}">Fox
                 </div>
                 <div class="flex flex-grow gap-2">
-                    <span class="p-1 border-round"
-                        [ngClass]="{'surface-100 text-600': animal !== 1, 'bg-primary-reverse': animal === 1}">Flattened
+                    <span class="p-1 border-round surface-100"
+                        [ngClass]="{'text-primary-600': animal === 1}">Flattened
                         Skull</span>
-                    <span class="p-1 border-round"
-                    [ngClass]="{'surface-100 text-600': animal !== 1, 'bg-primary-reverse': animal === 1}">Upturned
+                    <span class="p-1 border-round surface-100"
+                    [ngClass]="{'text-primary-600': animal === 1}">Upturned
                     Snout</span>
                 </div>
             </div>
@@ -69,17 +69,17 @@ export class RadioGroupComponent {
             <span>702</span>
         </div>
     </div>
-    <div class="border-1 p-5 border-round flex flex-column md:flex-row align-items-start md:align-items-center md:justify-content-between cursor-pointer"
+    <div class="surface-card border-2 p-5 mb-3 border-round flex flex-column md:flex-row align-items-start md:align-items-center md:justify-content-between cursor-pointer"
         (click)="animal=2"
-        [ngClass]="{'surface-card surface-border': animal !== 2, 'bg-primary border-primary': animal === 2}">
+        [ngClass]="{'surface-border': animal !== 2, 'border-primary': animal === 2}">
         <div class="flex align-items-start mr-0 md:mr-8">
             <img src="assets/images/blocks/animals/a3.jpg" class="mr-3 border-round" style="width:50px" />
             <div>
-                <div class="font-medium mb-2" [ngClass]="{'text-900': animal !== 2, 'bg-primary': animal === 2}">
+                <div class="font-medium mb-2" [ngClass]="{'text-900': animal !== 2}">
                     Sheep</div>
                 <div class="flex flex-grow gap-2">
-                    <span class="p-1 border-round"
-                        [ngClass]="{'surface-100 text-600': animal !== 2, 'bg-primary-reverse': animal === 2}">Just
+                    <span class="p-1 border-round surface-100"
+                        [ngClass]="{'text-primary-600': animal === 2}">Just
                         Sheep</span>
                 </div>
             </div>
@@ -95,34 +95,49 @@ export class RadioGroupComponent {
     block2 = `
 <div class="w-full">
     <div class="text-900 text-xl mb-3 text-left font-medium">Change your account tier1</div>
-    <div class="surface-border border-1 p-3 border-round-top flex align-items-center cursor-pointer" [ngClass]="{'surface-card': tier1 !== 0, 'bg-primary': tier1 === 0}" (click)="tier1 = 0">
+    <div class="surface-card border-2 p-3 border-round-top flex align-items-center cursor-pointer"
+        [ngClass]="{'border-transparent': tier1 !== 0, 'border-primary': tier1 === 0}" (click)="tier1 = 0">
         <p-radioButton name="tier1" [value]="0" [(ngModel)]="tier1" styleClass="mr-3"></p-radioButton>
         <div class="mr-4 md:mr-8">
-            <div class="font-medium mb-1" [ngClass]="{'text-900': tier1 !== 0, 'bg-primary': tier1 === 0}">Basic</div>
-            <span class="text-sm" [ngClass]="{'text-600': tier1 !== 0, 'bg-primary': tier1 === 0}">Quam nulla porttitor massa.</span>
+            <div class="font-medium mb-1">Basic
+            </div>
+            <span class="text-sm">Quam nulla
+                porttitor
+                massa.</span>
         </div>
-        <div class="border-round border-1 p-1 ml-auto flex flex-nowrap" [ngClass]="{'surface-50 text-600 surface-border': tier1 !== 0, 'bg-primary-reverse': tier1 === 0}">
+        <div class="border-round border-1 p-1 ml-auto flex flex-nowrap"
+            [ngClass]="{'surface-50 text-600 surface-border': tier1 !== 0, 'bg-primary-reverse': tier1 === 0}">
             <i class="pi pi-star-fill"></i>
         </div>
     </div>
-    <div class="surface-border border-1 border-top-none p-3 flex align-items-center cursor-pointer" [ngClass]="{'surface-card': tier1 !== 1, 'bg-primary': tier1 === 1}" (click)="tier1 = 1">
+    <div class="surface-card border-2 p-3 flex align-items-center cursor-pointer"
+        [ngClass]="{'surface-border': tier1 !== 1, 'border-primary': tier1 === 1}" (click)="tier1 = 1">
         <p-radioButton name="tier1" [value]="1" [(ngModel)]="tier1" styleClass="mr-3"></p-radioButton>
         <div class="mr-4 md:mr-8">
-            <div class="font-medium mb-1" [ngClass]="{'text-900': tier1 !== 1, 'bg-primary': tier1 === 1}">Premium</div>
-            <span class="text-sm" [ngClass]="{'text-600': tier1 !== 1, 'bg-primary': tier1 === 1}">Quam nulla porttitor massa.</span>
+            <div class="font-medium mb-1">Premium
+            </div>
+            <span class="text-sm">Quam nulla
+                porttitor
+                massa.</span>
         </div>
-        <div class="border-round border-1 p-1 ml-auto flex flex-nowrap" [ngClass]="{'surface-50 text-600 surface-border': tier1 !== 1, 'bg-primary-reverse': tier1 === 1}">
+        <div class="border-round border-1 p-1 ml-auto flex flex-nowrap"
+            [ngClass]="{'surface-50 text-600 surface-border': tier1 !== 1, 'bg-primary-reverse': tier1 === 1}">
             <i class="pi pi-star-fill mr-2"></i>
             <i class="pi pi-star-fill"></i>
         </div>
     </div>
-    <div class="surface-border border-1 border-top-none p-3 border-round-bottom flex align-items-center cursor-pointer" [ngClass]="{'surface-card': tier1 !== 2, 'bg-primary': tier1 === 2}" (click)="tier1 = 2">
+    <div class="surface-card border-2 p-3 border-round-bottom flex align-items-center cursor-pointer"
+        [ngClass]="{'surface-border': tier1 !== 2, 'border-primary': tier1 === 2}" (click)="tier1 = 2">
         <p-radioButton name="tier1" [value]="2" [(ngModel)]="tier1" styleClass="mr-3"></p-radioButton>
         <div class="mr-4 md:mr-8">
-            <div class="font-medium mb-1" [ngClass]="{'text-900': tier1 !== 2, 'bg-primary': tier1 === 2}">Enterprise</div>
-            <span class="text-sm" [ngClass]="{'text-600': tier1 !== 2, 'bg-primary': tier1 === 2}">Quam nulla porttitor massa.</span>
+            <div class="font-medium mb-1">
+                Enterprise</div>
+            <span class="text-sm">Quam nulla
+                porttitor
+                massa.</span>
         </div>
-        <div class="border-round border-1 p-1 ml-auto flex flex-nowrap" [ngClass]="{'surface-50 text-600 surface-border': tier1 !== 2, 'bg-primary-reverse': tier1 === 2}">
+        <div class="border-round border-1 p-1 ml-auto flex flex-nowrap"
+            [ngClass]="{'surface-50 text-600 surface-border': tier1 !== 2, 'bg-primary-reverse': tier1 === 2}">
             <i class="pi pi-star-fill mr-2"></i>
             <i class="pi pi-star-fill mr-2"></i>
             <i class="pi pi-star-fill"></i>
@@ -133,43 +148,47 @@ export class RadioGroupComponent {
     block3 = `
 <div class="w-full">
     <div class="text-900 text-xl mb-3 text-left font-medium">Change your account tier</div>
-    <div class="surface-border border-1 p-3 border-round-top flex align-items-center cursor-pointer" [ngClass]="{'surface-card': tier2 !== 0, 'bg-primary': tier2 === 0}" (click)="tier2 = 0">
+    <div class="surface-card border-2 p-3 border-round-top flex align-items-center cursor-pointer"
+        [ngClass]="{'surface-border': tier2 !== 0, 'border-primary': tier2 === 0}" (click)="tier2 = 0">
         <div class="w-4 flex align-items-center pr-4">
             <p-radioButton name="tier2" [value]="0" [(ngModel)]="tier2" styleClass="mr-2"></p-radioButton>
-            <div class="font-medium" [ngClass]="{'text-900': tier2 !== 0, 'bg-primary': tier2 === 0}">Basic</div>
+            <div class="font-medium">Basic</div>
         </div>
         <div class="w-4 text-center">
-            <span class="bg-blue-100 text-blue-700 font-medium px-2 py-1" style="border-radius:12px">Save 20%</span>
+            <span class="bg-primary-100 text-primary-700 font-medium px-2 py-1" style="border-radius:12px">Save 20%</span>
         </div>
         <div class="w-4 text-right">
-            <span class="font-medium" [ngClass]="{'text-900': tier2 !== 0, 'bg-primary': tier2 === 0}">19$</span>
-            <span [ngClass]="{'text-600': tier2 !== 0, 'bg-primary': tier2 === 0}"> / Month</span>
+            <span class="font-medium">19$</span>
+            <span> / Month</span>
         </div>
     </div>
-    <div class="surface-border border-1 p-3 border-top-none flex align-items-center cursor-pointer" [ngClass]="{'surface-card': tier2 !== 1, 'bg-primary': tier2 === 1}" (click)="tier2 = 1">
+    <div class="surface-card border-2 p-3 flex align-items-center cursor-pointer"
+        [ngClass]="{'surface-border': tier2 !== 1, 'border-primary': tier2 === 1}" (click)="tier2 = 1">
         <div class="w-4 flex align-items-center pr-4">
             <p-radioButton name="tier2" [value]="1" [(ngModel)]="tier2" styleClass="mr-2"></p-radioButton>
-            <div class="font-medium" [ngClass]="{'text-900': tier2 !== 1, 'bg-primary': tier2 === 1}">Premium</div>
+            <div class="font-medium">Premium</div>
         </div>
         <div class="w-4 text-center">
-            <span class="bg-blue-100 text-blue-700 font-medium px-2 py-1" style="border-radius:12px">Save 25%</span>
+            <span class="bg-primary-100 text-primary-700 font-medium px-2 py-1" style="border-radius:12px">Save 25%</span>
         </div>
         <div class="w-4 text-right">
-            <span class="font-medium" [ngClass]="{'text-900': tier2 !== 1, 'bg-primary': tier2 === 1}">29$</span>
-            <span [ngClass]="{'text-600': tier2 !== 1, 'bg-primary': tier2 === 1}"> / Month</span>
+            <span class="font-medium">29$</span>
+            <span> / Month</span>
         </div>
     </div>
-    <div class="surface-border border-1 border-top-none p-3 border-round-bottom flex align-items-center cursor-pointer" [ngClass]="{'surface-card': tier2 !== 2, 'bg-primary': tier2 === 2}" (click)="tier2 = 2">
+    <div class="surface-card border-2 p-3 border-round-bottom flex align-items-center cursor-pointer"
+        [ngClass]="{'surface-border': tier2 !== 2, 'border-primary': tier2 === 2}" (click)="tier2 = 2">
         <div class="w-4 flex align-items-center pr-4">
             <p-radioButton name="tier2" [value]="2" [(ngModel)]="tier2" styleClass="mr-2"></p-radioButton>
-            <div class="font-medium" [ngClass]="{'text-900': tier2 !== 2, 'bg-primary': tier2 === 2}">Enterprise</div>
+            <div class="font-medium">Enterprise
+            </div>
         </div>
         <div class="w-4 text-center">
-            <span class="bg-blue-100 text-blue-700 font-medium px-2 py-1" style="border-radius:12px">Save 50%</span>
+            <span class="bg-primary-100 text-primary-700 font-medium px-2 py-1" style="border-radius:12px">Save 50%</span>
         </div>
         <div class="w-4 text-right">
-            <span class="font-medium" [ngClass]="{'text-900': tier2 !== 2, 'bg-primary': tier2 === 2}">39$</span>
-            <span [ngClass]="{'text-600': tier2 !== 2, 'bg-primary': tier2 === 2}"> / Month</span>
+            <span class="font-medium">39$</span>
+            <span> / Month</span>
         </div>
     </div>
 </div>`;
