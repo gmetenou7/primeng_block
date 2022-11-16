@@ -51,7 +51,7 @@ export class RadioGroupComponent {
         <div class="flex align-items-start mr-0 md:mr-8">
             <img src="assets/images/blocks/animals/a2.jpg" class="mr-3 border-round" style="width:50px" />
             <div>
-                <div class="font-medium mb-2" [ngClass]="{'text-primary-600': animal === 1}">Fox
+                <div class="font-medium mb-2" [ngClass]="{'text-900': animal === 1}">Fox
                 </div>
                 <div class="flex flex-grow gap-2">
                     <span class="p-1 border-round surface-100"
