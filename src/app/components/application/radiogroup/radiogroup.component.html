@@ -75,14 +75,11 @@
     <div class="w-full">
         <div class="text-900 text-xl mb-3 text-left font-medium">Change your account tier1</div>
         <div class="surface-card border-2 p-3 border-round-top flex align-items-center cursor-pointer"
-            [ngClass]="{'border-transparent': tier1 !== 0, 'border-primary': tier1 === 0}" (click)="tier1 = 0">
+            [ngClass]="{'surface-border': tier1 !== 0, 'border-primary': tier1 === 0}" (click)="tier1 = 0">
             <p-radioButton name="tier1" [value]="0" [(ngModel)]="tier1" styleClass="mr-3"></p-radioButton>
             <div class="mr-4 md:mr-8">
-                <div class="font-medium mb-1">Basic
-                </div>
-                <span class="text-sm">Quam nulla
-                    porttitor
-                    massa.</span>
+                <div class="font-medium mb-1">Basic</div>
+                <span class="text-sm">Quam nulla porttitor massa.</span>
             </div>
             <div class="border-round border-1 p-1 ml-auto flex flex-nowrap"
                 [ngClass]="{'surface-50 text-600 surface-border': tier1 !== 0, 'bg-primary-reverse': tier1 === 0}">
@@ -93,11 +90,8 @@
             [ngClass]="{'surface-border': tier1 !== 1, 'border-primary': tier1 === 1}" (click)="tier1 = 1">
             <p-radioButton name="tier1" [value]="1" [(ngModel)]="tier1" styleClass="mr-3"></p-radioButton>
             <div class="mr-4 md:mr-8">
-                <div class="font-medium mb-1">Premium
-                </div>
-                <span class="text-sm">Quam nulla
-                    porttitor
-                    massa.</span>
+                <div class="font-medium mb-1">Premium</div>
+                <span class="text-sm">Quam nulla porttitor massa.</span>
             </div>
             <div class="border-round border-1 p-1 ml-auto flex flex-nowrap"
                 [ngClass]="{'surface-50 text-600 surface-border': tier1 !== 1, 'bg-primary-reverse': tier1 === 1}">
@@ -109,11 +103,8 @@
             [ngClass]="{'surface-border': tier1 !== 2, 'border-primary': tier1 === 2}" (click)="tier1 = 2">
             <p-radioButton name="tier1" [value]="2" [(ngModel)]="tier1" styleClass="mr-3"></p-radioButton>
             <div class="mr-4 md:mr-8">
-                <div class="font-medium mb-1">
-                    Enterprise</div>
-                <span class="text-sm">Quam nulla
-                    porttitor
-                    massa.</span>
+                <div class="font-medium mb-1">Enterprise</div>
+                <span class="text-sm">Quam nulla porttitor massa.</span>
             </div>
             <div class="border-round border-1 p-1 ml-auto flex flex-nowrap"
                 [ngClass]="{'surface-50 text-600 surface-border': tier1 !== 2, 'bg-primary-reverse': tier1 === 2}">
