@@ -155,7 +155,7 @@ export class SettingScreenComponent implements OnInit {
     </div>
     <div class="min-h-screen flex flex-column relative flex-auto">
         <div class="flex justify-content-between align-items-center px-5 surface-section border-bottom-1 surface-border relative lg:static" style="height:60px">
-            <div class="flex">
+            <div class="flex align-items-center">
                 <a pRipple class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft">
                     <i class="pi pi-bars text-4xl"></i>
                 </a>
