@@ -21,7 +21,7 @@ import { MarketingComponent } from './marketing.component';
             {path: 'team', loadChildren: () => import('./team/team.module').then(m => m.TeamModule), data: {name: 'Team'}},
             {path: 'footer', loadChildren: () => import('./footer/footer.module').then(m => m.FooterModule), data: {name: 'Footer'}},
             {path: 'logocloud', loadChildren: () => import('./logocloud/logocloud.module').then(m => m.LogoCloudModule), data: {name: 'Logo Cloud'}},
-            {path: 'navbar', loadChildren: () => import('./navbar/navbar.module').then(m => m.NavBarModule), data: {name: 'NavBar'}},
+            {path: 'navbar', loadChildren: () => import('./navbar/navbar.module').then(m => m.NavBarModule), data: {name: 'Navbar'}},
             {path: 'banner', loadChildren: () => import('./banner/banner.module').then(m => m.BannerModule), data: {name: 'Banner'}},
             {path: 'landing', loadChildren: () => import('./landing/landing.module').then(m => m.LandingModule), data: {name: 'Landing'}}
         ])
