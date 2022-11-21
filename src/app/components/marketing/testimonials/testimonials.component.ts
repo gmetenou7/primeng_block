@@ -164,9 +164,9 @@ export class TestimonialsComponent implements OnInit {
     <div class="flex flex-column lg:flex-row">
         <div class="flex-1 pr-0 lg:pr-6 pb-6 lg:pb-0">
             <div class="mb-5 text-900 font-bold text-5xl">Cursus metus aliquam eleifend</div>
-            <p class="line-height-3 text-600 text-xl mb-5">Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Viverra vitae congue eu consequat ac felis. 
-                Magna eget est lorem ipsum dolor sit. Bibendum enim facilisis gravida neque convallis a cras semper auctor. 
-                Porttitor massa id neque aliquam vestibulum morbi. 
+            <p class="line-height-3 text-600 text-xl mb-5">Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Viverra vitae congue eu consequat ac felis.
+                Magna eget est lorem ipsum dolor sit. Bibendum enim facilisis gravida neque convallis a cras semper auctor.
+                Porttitor massa id neque aliquam vestibulum morbi.
                 Purus non enim praesent elementum facilisis leo vel fringilla est. Donec massa sapien faucibus et molestie ac feugiat.</p>
             <button pButton pRipple label="Learn More" class="text-xl"></button>
         </div>
@@ -209,6 +209,20 @@ export class TestimonialsComponent implements OnInit {
             <div class="text-primary font-semibold">Marketing Coordinator</div>
         </div>
     </div>
+</div>`;
+
+    block6 = `
+<div class="surface-ground text-center px-0 sm:px-4 py-8 md:px-6 lg:px-8">
+    <div class="flex justify-content-center text-center mb-4 gap-2">
+       <img src="assets/images/blocks/testimonial/testimonials-6.png" width="35" height="28"/>
+       <div class="text-800 font-semibold text-2xl">Hodly</div>
+       </div>
+          <div class="flex justify-content-center text-center">
+          <div class="px-2 md:px-6 text-900 text-3xl font-medium line-height-3" style="max-width: 850px">“For some     unfathomable reason, the response team didn't consider a lack of milk for my cereal as a proper emergency.”</div>
+       </div>
+          <img src="assets/images/blocks/testimonial/testimonials-3.png" width="56" height="56" class="mt-4" />
+          <div class="text-900 font-semibold text-xl line-height-3 text-center">Annie Lanphear</div>
+          <div class="text-600 font-normal line-height-1 mt-2 text-md text-center">Software Engineer</div>
 </div>`;
 
 }
