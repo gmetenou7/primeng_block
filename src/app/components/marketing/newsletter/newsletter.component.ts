@@ -49,4 +49,51 @@ export class NewsletterComponent {
     </div>
 </div>`;
 
+    block4 = `
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8">
+    <div class="w-full lg:hidden mb-5">
+        <div class="text-900 text-3xl font-medium">Interactively Enpower
+          Installed Base Users</div>
+    </div>
+    <div class="grid justify-content-center flex-column lg:flex-row">
+        <div class="col-12 lg:col-6 py-4 lg:pr-4 flex-order-2 lg:flex-order-1">
+            <div class="w-full hidden lg:block mb-5">
+                <div class="text-900 text-3xl font-medium">Interactively Enpower
+                  Installed Base Users</div>
+            </div>
+            <ul class="p-0 m-0 list-none">
+              <li class="flex align-items-center py-2">
+                  <div class="flex align-items-center justify-content-center mr-3">
+                      <i class="pi pi-check-circle text-xl text-primary"></i>
+                  </div>
+                  <span class="text-700 text-base line-height-3 font-normal">Fully responsive sections.
+                  </span>
+              </li>
+              <li class="flex align-items-center py-2">
+                  <div class="flex align-items-center justify-content-center mr-3">
+                      <i class="pi pi-check-circle text-xl text-primary"></i>
+                  </div>
+                  <span class="text-700 text-base line-height-3 font-normal">Clean code blocks.
+                  </span>
+              </li>
+              <li class="flex align-items-center py-2">
+                  <div class="flex align-items-center justify-content-center mr-3">
+                      <i class="pi pi-check-circle text-xl text-primary"></i>
+                  </div>
+                  <span class="text-700 text-base line-height-3 font-normal">Lifetime accessing to source code.
+                  </span>
+              </li>
+          </ul>
+          <div class="flex gap-3 mt-5">
+            <input pInputText type="text" placeholder="Enter your email">
+            <button pButton pRipple label="Subscribe" type="button" class="p-button-raised"></button>
+        </div>
+        <div class="text-600 font-normal text-base text-xs mt-1">We exist to protect your privacy. <span class="text-primary">Privacy Policy</span></div>
+        </div>
+        <div class="col-12 lg:col-6 flex-order-1 lg:flex-order-2">
+            <img src="assets/images/blocks/newsletter/newsleter.png" class="border-round w-full" alt="product">
+        </div>
+    </div>
+</div>`;
+
 }
