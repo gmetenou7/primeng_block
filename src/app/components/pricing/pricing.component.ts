@@ -3,26 +3,24 @@ import { Subscription } from 'rxjs';
 import { PricingService } from './pricing.service';
 
 @Component({
-  templateUrl: './pricing.component.html'
+  templateUrl: './pricing.component.html',
 })
 export class PricingComponent implements OnInit, OnDestroy {
-  subscription: Subscription
+  subscription: Subscription;
 
-  pricing: any
+  pricing: any;
 
-
-  constructor(private pricingService: PricingService) { }
+  constructor(private pricingService: PricingService) {}
+  
   ngOnInit(): void {
     this.subscription = this.pricingService.getPricing().subscribe((data) => {
-      this.pricing = data
-    }
-    )
-  }
-  
-  ngOnDestroy(): void {
-    if (this.subscription) {
-      this.subscription.unsubscribe()
-    }
+      this.pricing = data;
+    });
   }
 
+  ngOnDestroy(): void {
+    if (this.subscription) {
+      this.subscription.unsubscribe();
+    }
+  }
 }
