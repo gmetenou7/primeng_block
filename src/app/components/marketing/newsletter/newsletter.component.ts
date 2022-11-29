@@ -50,7 +50,7 @@ export class NewsletterComponent {
 </div>`;
 
     block4 = `
-    <div class="surface-section pl-4 pt-8 md:pl-6 lg:pl-8">
+<div class="surface-section pl-4 pt-8 md:pl-6 lg:pl-8">
     <div class="w-full lg:hidden mb-5">
         <div class="text-900 text-4xl font-bold">Interactively Enpower
           Installed Base Users</div>
