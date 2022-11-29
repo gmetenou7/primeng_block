@@ -52,8 +52,8 @@ export class NewsletterComponent {
     block4 = `
 <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="w-full lg:hidden mb-5">
-        <div class="text-900 text-3xl font-medium">Interactively Enpower
-          Installed Base Users</div>
+    <div class="text-900 text-4xl font-bold">Interactively Enpower
+  Installed Base Users</div>
     </div>
     <div class="grid justify-content-center flex-column lg:flex-row">
         <div class="col-12 lg:col-6 py-4 lg:pr-4 flex-order-2 lg:flex-order-1">
@@ -91,7 +91,7 @@ export class NewsletterComponent {
         <div class="text-600 font-normal text-base text-xs mt-1">We exist to protect your privacy. <span class="text-primary">Privacy Policy</span></div>
         </div>
         <div class="col-12 lg:col-6 flex-order-1 lg:flex-order-2">
-            <img src="assets/images/blocks/newsletter/newsleter.png" class="border-round w-full" alt="product">
+            <img src="assets/images/blocks/newsletter/newsletter-1.png" class="border-round w-full" alt="product">
         </div>
     </div>
 </div>`;
