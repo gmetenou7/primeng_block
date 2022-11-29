@@ -14,7 +14,8 @@ import { RippleModule } from 'primeng/ripple';
     BlockViewerModule,
     CarouselModule,
     ButtonModule,
-    RippleModule
+    RippleModule,
+
   ],
   declarations: [
     TestimonialsComponent

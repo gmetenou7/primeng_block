@@ -187,7 +187,7 @@
     </div>
 </block-viewer>
 
-<block-viewer header="Background Image" [code]="block5" [new]="true">
+<block-viewer header="Background Image" [code]="block5">
     <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
         <div class="bg-no-repeat bg-cover bg-center border-round-xl p-7" style="background: url('assets/images/blocks/testimonial/testimonials-5.jpg')">
             <img src="assets/images/blocks/logos/franki-300.svg" alt="Image" class="block mb-4">
@@ -200,14 +200,44 @@
     </div>
 </block-viewer>
 
-<block-viewer header="Centered With Logo" [code]="block6" [new]="true">
+<block-viewer header="Side-by-Side" [code]="block6" [new]="true">
+<div class="flex surface-section">
+  <div class="w-12 sm:w-6 px-4 md:px-6 lg:px-8" style="padding-bottom:13.5%;padding-top:13.5%;" >
+      <div class="block text-7xl text-900 font-bold mb-5" style="max-width:500px">Designed for
+        Developers</div>
+        <ul class="list-none p-0 m-0 flex-grow-1">
+          <li class="flex align-items-center mb-3">
+              <i class="pi pi-check-circle text-blue-500 mr-2"></i>
+              <span class="text-700">Fully responsive sections</span>
+          </li>
+          <li class="flex align-items-center mb-3">
+              <i class="pi pi-check-circle text-blue-500 mr-2"></i>
+              <span class="text-700">Clean code blocks</span>
+          </li>
+          <li class="flex align-items-center mb-5">
+              <i class="pi pi-check-circle text-blue-500 mr-2"></i>
+              <span class="text-700">Lifetime access to source code</span>
+          </li>
+      </ul>
+      <div class="flex gap-3">
+        <button pButton pRipple class="p-button-text" label="Try it free" class="p-button-outlined"></button>
+        <button type="button" pButton pRipple label="Upgrade now" icon="pi pi-bolt" iconPos="right"></button>
+      </div>
+      <div>
+      </div>
+  </div>
+  <div class="w-6 sm:block" style="background: url('./assets/images/blocks/testimonial/testimonials-7.jpeg') no-repeat; background-size: cover; background-position: center;">
+  </div>
+</div>
+</block-viewer>
+
+<block-viewer header="Centered With Logo" [code]="block7" [new]="true">
   <div class="surface-ground text-center px-0 sm:px-4 py-8 md:px-6 lg:px-8">
     <div class="flex justify-content-center text-center mb-4 gap-2">
-       <img src="assets/images/blocks/testimonial/testimonials-6.png" width="35" height="28"/>
-       <div class="text-800 font-semibold text-2xl">Hodly</div>
+       <img src="assets/images/blocks/logos/hodly-indigo-500.svg" height="38"/>
        </div>
-          <div class="flex justify-content-center text-center">
-          <div class="px-2 md:px-6 text-900 text-3xl font-medium line-height-3" style="max-width: 850px">“For some     unfathomable reason, the response team didn't consider a lack of milk for my cereal as a proper emergency.”</div>
+          <div class="flex justify-content-center">
+          <div class="px-2 md:px-6 text-900 text-5xl font-medium line-height-3" style="max-width: 1350px">“For some     unfathomable reason, the response team didn't consider a lack of milk for my cereal as a proper emergency.”</div>
        </div>
           <img src="assets/images/blocks/testimonial/testimonials-3.png" width="56" height="56" class="mt-4" />
           <div class="text-900 font-semibold text-xl line-height-3 text-center">Annie Lanphear</div>
