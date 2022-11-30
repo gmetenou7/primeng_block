@@ -555,11 +555,12 @@ export class TeamComponent {
                           <a class="cursor-pointer text-white"><i class="pi pi-discord text-2xl mr-3"></i></a>
                           <a class="cursor-pointer text-white"><i class="pi pi-linkedin text-2xl"></i></a>
                       </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-    </div>
-  </div>`;
+                    </div>
+                </div>
+             </div>
+          </div>
+      </div>
+   </div>
+</div>`;
 
 }
