@@ -124,7 +124,7 @@ export class CtaComponent {
             <div class="font-bold">Discover&nbsp;</div>
             True Power
         </div>
-        <div class="text-2xl text-gray-400 line-height-3 text-center mx-auto mb-5" style="max-width: 500px">Your perfect companion for Angular featuring elegant, high-performance, accessible and fully customizable UI Components.</div>
+        <div class="text-2xl text-white-alpha-70 line-height-3 text-center mx-auto mb-5" style="max-width: 500px">Your perfect companion for Angular featuring elegant, high-performance, accessible and fully customizable UI Components.</div>
         <button pButton pRipple label="Learn More" class="font-bold px-5 py-3 mr-4 p-button-warning p-button-rounded p-button-raised white-space-nowrap"></button>
         <button pButton pRipple label="Live Demo" class="font-bold px-5 py-3 p-button-warning p-button-rounded p-button-raised p-button-outlined white-space-nowrap"></button>
     </div>

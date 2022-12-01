@@ -40,8 +40,7 @@ export class NotificationComponent  {
             summary: 'Custom Icon',
             detail: 'Sagittis eu volutpat odio facilisis mauris sit amet.',
             styleClass: 'surface-overlay',
-            contentStyleClass: 'p-3',
-            closable: false
+            contentStyleClass: 'p-3'
         });
     }
 
@@ -52,8 +51,7 @@ export class NotificationComponent  {
             severity: 'custom-4',
             detail: 'You received 1 new message.',
             styleClass: 'surface-overlay',
-            contentStyleClass: 'p-3',
-            closable: false
+            contentStyleClass: 'p-3'
         });
     }
 
@@ -65,8 +63,7 @@ export class NotificationComponent  {
             summary: 'Arlene McCoy',
             detail: 'Tristique nulla aliquet enim tortor at auctor 😅... Urna nunc id.',
             styleClass: 'surface-overlay',
-            contentStyleClass: 'p-4',
-            closable: false
+            contentStyleClass: 'p-4'
         });
     }
 
@@ -78,7 +75,8 @@ export class NotificationComponent  {
             summary: 'Custom Icon',
             detail: 'Sagittis eu volutpat odio facilisis mauris sit amet.',
             styleClass: 'bg-cyan-500',
-            contentStyleClass: 'p-3'
+            contentStyleClass: 'p-3',
+            closable: false
         });
     }
 
@@ -89,7 +87,8 @@ export class NotificationComponent  {
             severity: 'custom-7',
             detail: 'You received 1 new message.',
             styleClass: 'bg-orange-300',
-            contentStyleClass: 'p-3'
+            contentStyleClass: 'p-3',
+            closable: false
         });
     }
 

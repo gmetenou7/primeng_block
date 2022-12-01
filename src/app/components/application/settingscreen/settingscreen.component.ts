@@ -155,7 +155,7 @@ export class SettingScreenComponent implements OnInit {
     </div>
     <div class="min-h-screen flex flex-column relative flex-auto">
         <div class="flex justify-content-between align-items-center px-5 surface-section border-bottom-1 surface-border relative lg:static" style="height:60px">
-            <div class="flex">
+            <div class="flex align-items-center">
                 <a pRipple class="cursor-pointer block lg:hidden text-700 mr-3" pStyleClass="#app-sidebar" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft">
                     <i class="pi pi-bars text-4xl"></i>
                 </a>
@@ -215,7 +215,7 @@ export class SettingScreenComponent implements OnInit {
                             <label for="avatar" class="font-medium">Avatar</label>
                             <div class="flex align-items-center">
                                 <img src="assets/images/blocks/avatars/circle/avatar-f-4.png" class="mr-4" />
-                                <p-fileUpload id="avatar" mode="basic" name="avatar" url="./upload.php" accept="image/*" maxFileSize="1000000" styleClass="p-button-outlined p-button-plain" chooseLabel="Upload Image"></p-fileUpload>
+                                <p-fileUpload id="avatar" mode="basic" name="avatar" url="./upload.php" accept="image/*" maxFileSize="1000000" styleClass="p-button-outlined p-button-plain" chooseLabel="Upload Image" chooseIcon="pi pi-upload"></p-fileUpload>
                             </div>
                         </div>
                         <div class="surface-100 mb-3 col-12" style="height:2px"></div>

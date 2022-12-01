@@ -699,23 +699,23 @@ export class StatsComponent implements OnInit {
         <div class="flex-1 gap-3 flex flex-column sm:flex-row">
             <div class="flex-1 flex justify-content-center align-items-center bg-primary-400 shadow-1 p-3 border-round-md">
                 <div class="text-center">
-                    <i class="pi pi-eye text-4xl mb-2 text-primary-200"></i>
+                    <i class="pi pi-eye text-4xl mb-2"></i>
                     <div class="text-sm font-semibold mb-2">VIEWS</div>
-                    <span class="font-semibold text-primary-100">{{date.getDay()*1000+1000}}</span>
+                    <span class="font-semibold">{{date.getDay()*1000+1000}}</span>
                 </div>
             </div>
             <div class="flex-1 flex justify-content-center align-items-center bg-primary-400 shadow-1 p-3 border-round-md">
                 <div class="text-center">
-                    <i class="pi pi-users text-4xl mb-2 text-primary-200"></i>
+                    <i class="pi pi-users text-4xl mb-2"></i>
                     <div class="text-sm font-semibold mb-2">FOLLOWS</div>
-                    <span class="font-semibold text-primary-100">{{date.getDay()*10+10}}</span>
+                    <span class="font-semibold">{{date.getDay()*10+10}}</span>
                 </div>
             </div>
             <div class="flex-1 flex justify-content-center align-items-center bg-primary-400 shadow-1 p-3 border-round-md">
                 <div class="text-center">
-                    <i class="pi pi-heart text-4xl mb-2 text-primary-200"></i>
+                    <i class="pi pi-heart text-4xl mb-2"></i>
                     <div class="text-sm font-semibold mb-2">LIKES</div>
-                    <span class="font-semibold text-primary-100">{{date.getDay()*100+100}}</span>
+                    <span class="font-semibold">{{date.getDay()*100+100}}</span>
                 </div>
             </div>
         </div>
