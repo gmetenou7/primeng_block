@@ -151,9 +151,9 @@
         <div class="flex flex-column lg:flex-row">
             <div class="flex-1 pr-0 lg:pr-6 pb-6 lg:pb-0">
                 <div class="mb-5 text-900 font-bold text-5xl">Cursus metus aliquam eleifend</div>
-                <p class="line-height-3 text-600 text-xl mb-5">Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Viverra vitae congue eu consequat ac felis. 
-                    Magna eget est lorem ipsum dolor sit. Bibendum enim facilisis gravida neque convallis a cras semper auctor. 
-                    Porttitor massa id neque aliquam vestibulum morbi. 
+                <p class="line-height-3 text-600 text-xl mb-5">Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Viverra vitae congue eu consequat ac felis.
+                    Magna eget est lorem ipsum dolor sit. Bibendum enim facilisis gravida neque convallis a cras semper auctor.
+                    Porttitor massa id neque aliquam vestibulum morbi.
                     Purus non enim praesent elementum facilisis leo vel fringilla est. Donec massa sapien faucibus et molestie ac feugiat.</p>
                 <button pButton pRipple label="Learn More" class="text-xl"></button>
             </div>
@@ -187,7 +187,7 @@
     </div>
 </block-viewer>
 
-<block-viewer header="Background Image" [code]="block5" [new]="true">
+<block-viewer header="Background Image" [code]="block5">
     <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
         <div class="bg-no-repeat bg-cover bg-center border-round-xl p-7" style="background: url('assets/images/blocks/testimonial/testimonials-5.jpg')">
             <img src="assets/images/blocks/logos/franki-300.svg" alt="Image" class="block mb-4">
@@ -198,4 +198,51 @@
             </div>
         </div>
     </div>
+</block-viewer>
+
+<block-viewer header="Side-by-Side" [code]="block6" [new]="true">
+<div class="flex surface-section">
+  <div class="w-12 sm:w-6 px-4 md:px-6 lg:px-8" style="padding-bottom:13.5%;padding-top:13.5%;" >
+      <div class="block text-7xl text-900 font-bold mb-5" style="max-width:500px">Designed for
+        Developers</div>
+        <ul class="list-none p-0 m-0 flex-grow-1">
+          <li class="flex align-items-center mb-3">
+              <i class="pi pi-check-circle text-blue-500 mr-2"></i>
+              <span class="text-700 text-base font-normal line-height-3">Fully responsive sections</span>
+          </li>
+          <li class="flex align-items-center mb-3">
+              <i class="pi pi-check-circle text-blue-500 mr-2"></i>
+              <span class="text-700 text-base font-normal line-height-3">Clean code blocks</span>
+          </li>
+          <li class="flex align-items-center mb-5">
+              <i class="pi pi-check-circle text-blue-500 mr-2"></i>
+              <span class="text-700 text-base font-normal line-height-3">Lifetime access to source code</span>
+          </li>
+      </ul>
+      <div class="flex gap-3">
+        <button pButton pRipple class="p-button-text" label="Try it free" class="p-button-outlined"></button>
+        <button type="button" pButton pRipple label="Upgrade now" icon="pi pi-bolt" iconPos="right"></button>
+      </div>
+      <div>
+      </div>
+  </div>
+  <div class="w-6 sm:block relative" style="background: url('./assets/images/blocks/testimonial/testimonials-7.jpeg') no-repeat; background-size: cover; background-position: center;">
+    <div class="absolute bottom-0 left-0 right-0 select-none m-3 border-round-lg shadow-6" style="left: 0.5rem; right: 0.5rem;background-color: rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px);">
+    </div>
+  </div>
+</div>
+</block-viewer>
+
+<block-viewer header="Centered With Logo" [code]="block7" [new]="true">
+  <div class="surface-ground text-center px-0 sm:px-4 py-8 md:px-6 lg:px-8">
+    <div class="flex justify-content-center text-center mb-4 gap-2">
+       <img src="assets/images/blocks/logos/hodly-indigo-500.svg" height="38"/>
+       </div>
+          <div class="flex justify-content-center">
+          <div class="text-900 text-5xl font-medium line-height-3">“For some     unfathomable reason, the response team didn't consider a lack of milk for my cereal as a proper emergency.”</div>
+       </div>
+          <img src="assets/images/blocks/testimonial/testimonials-3.png" width="56" height="56" class="mt-4" />
+          <div class="text-900 font-semibold text-xl line-height-3 text-center">Annie Lanphear</div>
+          <div class="text-600 font-normal line-height-1 mt-2 text-md text-center">Software Engineer</div>
+  </div>
 </block-viewer>
