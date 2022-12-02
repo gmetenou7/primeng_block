@@ -48,4 +48,27 @@ export class NewsletterComponent {
         <span class="text-indigo-200">We ensure to protect your privacy. <a tabindex="0" class="cursor-pointer text-white">Privacy Policy</a></span>
     </div>
 </div>`;
+
+    block4 = `
+<div class="flex flex-column lg:flex-row justify-content-between overflow-hidden gap-4 surface-section px-4 py-8 md:px-6 lg:px-8">
+    <div class="flex flex-column gap-5">
+        <h1 class="m-0 font-bold text-900 text-4xl line-height-3">Interactively Enpower <br/> Installed Base Users</h1>
+        <div class="flex flex-column gap-4">
+            <span class="flex align-items-center gap-3 text-base text-700"><i class="pi pi-check-circle text-primary-500 text-2xl"></i>Fully responsive sections.</span>
+            <span class="flex align-items-center gap-3 text-base text-700"><i class="pi pi-check-circle text-primary-500 text-2xl"></i>Clean code blocks.</span>
+            <span class="flex align-items-center gap-3 text-base text-700"><i class="pi pi-check-circle text-primary-500 text-2xl"></i>Lifetime accessing to source code.</span>
+        </div>
+        <div class="flex flex-column gap-4 lg:gap-2">
+            <div class="flex flex-column align-items-start md:flex-row md:align-items-center gap-3">
+                <input pInputText placeholder="Email address" class="w-20rem">
+                <button pButton pRipple label="Subscribe"></button>
+            </div>
+            <div>
+                <span class="text-base text-600">We exist to protect your privacy. <a class="text-base text-primary-500 cursor-pointer">Privacy Policy</a></span>
+            </div>
+        </div>
+    </div>
+    <img src="assets/images/blocks/newsletter/with-image.png" alt="Image" class="mr-4 -mb-8 lg:-mr-8">
+</div>
+    `;
 }
