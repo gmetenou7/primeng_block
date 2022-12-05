@@ -262,4 +262,17 @@ export class TestimonialsComponent implements OnInit {
     </div>
 </div>`;
 
+    block7 = `
+<div class="surface-ground text-center px-0 sm:px-4 py-8 md:px-6 lg:px-8">
+    <div class="flex justify-content-center text-center mb-4 gap-2">
+       <img src="assets/images/blocks/logos/hodly-indigo-500.svg" height="38"/>
+    </div>
+    <div class="flex justify-content-center">
+        <div class="px-2 md:px-6 text-900 text-5xl font-medium line-height-3" style="max-width: 1350px">“For some unfathomable reason, the response team didn't consider a lack of milk for my cereal as a proper emergency.”</div>
+    </div>
+    <img src="assets/images/blocks/testimonial/testimonials-3.png" width="56" height="56" class="mt-4" />
+    <div class="text-900 font-semibold text-xl line-height-3 text-center">Annie Lanphear</div>
+    <div class="text-600 font-normal line-height-1 mt-2 text-md text-center">Software Engineer</div>
+</div>`;
+
 }
