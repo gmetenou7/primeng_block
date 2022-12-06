@@ -293,7 +293,7 @@ export class TeamComponent {
     <div class="grid">
         <div class="col-12 lg:col-4 pr-0 lg:pr-4">
             <div class="text-900 text-5xl font-bold mb-3">Meet our team</div>
-            <p class="text-700 text-lg line-height-3">Enim diam vulputate ut pharetra sit amet aliquam id. Consequat nisl vel pretium lectus quam id leo in. 
+            <p class="text-700 text-lg line-height-3">Enim diam vulputate ut pharetra sit amet aliquam id. Consequat nisl vel pretium lectus quam id leo in.
                 Nibh sit amet commodo nulla facilisi nullam vehicula. Nunc eget lorem dolor sed viverra ipsum nunc aliquet.</p>
         </div>
         <div class="col-12 lg:col-8">
@@ -302,7 +302,7 @@ export class TeamComponent {
                     <img src="assets/images/blocks/team/team-1.png" class="mb-4 w-full" />
                     <div class="font-medium text-xl mb-1 text-900">Jacob Jones</div>
                     <span class="text-600 font-medium">UI/UX Designer</span>
-                    <p class="line-height-3 mt-3 mb-3">Vulputate ut pharetra sit amet. Netus et malesuada fames ac turpis egestas. 
+                    <p class="line-height-3 mt-3 mb-3">Vulputate ut pharetra sit amet. Netus et malesuada fames ac turpis egestas.
                         Elit eget gravida cum sociis natoque penatibus. Urna id volutpat lacus laoreet non curabitur. In ante metus dictum at.</p>
                     <div class="mb-2">
                         <a tabindex="0" class="cursor-pointer"><i class="pi pi-twitter text-600 text-xl mr-3"></i></a>
@@ -314,7 +314,7 @@ export class TeamComponent {
                     <img src="assets/images/blocks/team/team-2.png" class="mb-4 w-full" />
                     <div class="font-medium text-xl mb-1 text-900">Theresa Webb</div>
                     <span class="text-600 font-medium">Project Manager</span>
-                    <p class="line-height-3 mt-3 mb-3">Risus feugiat in ante metus dictum. Et egestas quis ipsum suspendisse ultrices. 
+                    <p class="line-height-3 mt-3 mb-3">Risus feugiat in ante metus dictum. Et egestas quis ipsum suspendisse ultrices.
                         Risus pretium quam vulputate dignissim suspendisse. Justo nec ultrices dui sapien.</p>
                         <div class="mb-2">
                         <a tabindex="0" class="cursor-pointer"><i class="pi pi-twitter text-600 text-xl mr-3"></i></a>
@@ -326,7 +326,7 @@ export class TeamComponent {
                     <img src="assets/images/blocks/team/team-3.png" class="mb-4 w-full" />
                     <div class="font-medium text-xl mb-1 text-900">Esther Howard</div>
                     <span class="text-600 font-medium">Software Developer</span>
-                    <p class="line-height-3 mt-3 mb-3">Donec et odio pellentesque diam volutpat commodo sed egestas. 
+                    <p class="line-height-3 mt-3 mb-3">Donec et odio pellentesque diam volutpat commodo sed egestas.
                         Blandit massa enim nec dui nunc mattis enim ut tellus. Suspendisse faucibus interdum posuere lorem ipsum.</p>
                         <div class="mb-2">
                         <a tabindex="0" class="cursor-pointer"><i class="pi pi-twitter text-600 text-xl mr-3"></i></a>
@@ -338,7 +338,7 @@ export class TeamComponent {
                     <img src="assets/images/blocks/team/team-4.png" class="mb-4 w-full" />
                     <div class="font-medium text-xl mb-1 text-900">Darlene Robertson</div>
                     <span class="text-600 font-medium">UI/UX Designer</span>
-                    <p class="line-height-3 mt-3 mb-3">Pretium aenean pharetra magna ac placerat vestibulum. 
+                    <p class="line-height-3 mt-3 mb-3">Pretium aenean pharetra magna ac placerat vestibulum.
                         Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Fringilla urna porttitor rhoncus dolor purus non enim..</p>
                     <div class="mb-2">
                         <a tabindex="0" class="cursor-pointer"><i class="pi pi-twitter text-600 text-xl mr-3"></i></a>
@@ -422,5 +422,4 @@ export class TeamComponent {
         </div>
     </div>
 </div>`;
-
 }
