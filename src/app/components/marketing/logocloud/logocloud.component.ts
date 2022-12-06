@@ -153,4 +153,17 @@ export class LogoCloudComponent {
         </div>
     </div>
 </div>`;
+
+    block6: string = `
+<div class="surface-section flex flex-column justify-content-center align-items-center gap-3 px-4 py-8 md:px-6 lg:px-8">
+    <h1 class="m-0 font-normal text-xl text-700 line-height-3">Trusted by Fortune 500 companies</h1>
+    <section class="flex flex-wrap gap-3 align-items-center">
+        <img src="assets/images/blocks/logos/peak-indigo.png" alt="Peak">
+        <img src="assets/images/blocks/logos/charot-purple.png" alt="Charot">
+        <img src="assets/images/blocks/logos/hyper-cyan.png" alt="Hyper">
+        <img src="assets/images/blocks/logos/hodly-orange.png" alt="Hodly">
+        <img src="assets/images/blocks/logos/franki-green.png" alt="Franki">
+    </section>
+</div>`;
+
 }
