@@ -39,7 +39,7 @@ export class FormLayoutComponent implements OnInit {
                     <label for="avatar" class="font-medium text-900">Avatar</label>
                     <div class="flex align-items-center">
                         <img src="assets/images/blocks/avatars/circle/avatar-f-4.png" class="mr-4" />
-                        <p-fileUpload mode="basic" name="avatar" url="./upload.php" accept="image/*" maxFileSize="1000000" styleClass="p-button-outlined p-button-plain" chooseLabel="Upload Image" chooseIcon="pi pi-upload"></p-fileUpload>
+                        <p-fileUpload mode="basic" name="avatar" url="./upload.php" accept="image/*" maxFileSize="1000000" styleClass="p-button-outlined p-button-plain" chooseLabel="Upload Image"></p-fileUpload>
                     </div>
                 </div>
                 <div class="field mb-4 col-12">

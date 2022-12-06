@@ -226,19 +226,19 @@ export class SlideOverComponent {
             </div>
             <div class="flex align-items-center mb-5">
                 <a class="flex flex-column flex-grow-1 align-items-center gap-2">
-                    <div pRipple class="border-round surface-100 hover:surface-200 transition-colors transition-duration-150 p-3 border-round-2xl">
+                    <div pRipple class="cursor-pointer border-round surface-100 hover:surface-200 transition-colors transition-duration-150 p-3 border-round-2xl">
                         <i class="pi pi-comment text-xl text-600"></i>
                     </div>
                     <span class="text-sm font-medium text-700">Message</span>
                 </a>
                 <a class="flex flex-column flex-grow-1 align-items-center gap-2">
-                    <div pRipple class="border-round surface-100 hover:surface-200 transition-colors transition-duration-150 p-3 border-round-2xl">
+                    <div pRipple class="cursor-pointer border-round surface-100 hover:surface-200 transition-colors transition-duration-150 p-3 border-round-2xl">
                         <i class="pi pi-phone text-xl text-600"></i>
                     </div>
                     <span class="text-sm font-medium text-700">Call</span>
                 </a>
                 <a class="flex flex-column flex-grow-1 align-items-center gap-2">
-                    <div pRipple class="border-round surface-100 hover:surface-200 transition-colors transition-duration-150 p-3 border-round-2xl">
+                    <div pRipple class="cursor-pointer border-round surface-100 hover:surface-200 transition-colors transition-duration-150 p-3 border-round-2xl">
                         <i class="pi pi-video text-xl text-600"></i>
                     </div>
                     <span class="text-sm font-medium text-700">Video Call</span>

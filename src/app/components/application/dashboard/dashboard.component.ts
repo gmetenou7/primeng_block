@@ -405,11 +405,11 @@ export class DashboardComponent implements OnInit {
                                     </div>
                                     <div class="text-500 flex align-items-center gap-4">
                                         <div class="flex align-items-center gap-1">
-                                            <i class="pi pi-heart mr-1"></i>
+                                            <i class="pi pi-heart"></i>
                                             <span>0</span>
                                         </div>
                                         <div class="flex align-items-center gap-1">
-                                            <i class="pi pi-comment mr-1"></i>
+                                            <i class="pi pi-comment"></i>
                                             <span>1</span>
                                         </div>
                                         <div class="flex align-items-center gap-1">
@@ -437,11 +437,11 @@ export class DashboardComponent implements OnInit {
                                     </div>
                                     <div class="text-500 flex align-items-center gap-4">
                                         <div class="flex align-items-center gap-1">
-                                            <i class="pi pi-heart mr-1"></i>
+                                            <i class="pi pi-heart"></i>
                                             <span>26</span>
                                         </div>
                                         <div class="flex align-items-center gap-1">
-                                            <i class="pi pi-comment mr-1"></i>
+                                            <i class="pi pi-comment"></i>
                                             <span>6</span>
                                         </div>
                                         <div class="flex align-items-center gap-1">
@@ -469,11 +469,11 @@ export class DashboardComponent implements OnInit {
                                     </div>
                                     <div class="text-500 flex align-items-center gap-4">
                                         <div class="flex align-items-center gap-1">
-                                            <i class="pi pi-heart mr-1"></i>
+                                            <i class="pi pi-heart"></i>
                                             <span>62</span>
                                         </div>
                                         <div class="flex align-items-center gap-1">
-                                            <i class="pi pi-comment mr-1"></i>
+                                            <i class="pi pi-comment"></i>
                                             <span>36</span>
                                         </div>
                                         <div class="flex align-items-center gap-1">

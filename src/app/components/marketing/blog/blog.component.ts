@@ -143,7 +143,7 @@ export class BlogComponent {
             <img src="assets/images/blocks/blog/blog-4.jpg" alt="Image" class="border-round-left" style="max-height: 234px;">
             <div class="p-4">
                 <div class="flex justify-content-between mb-3">
-                    <span class="text-orange-500 text-lg font-medum">Good News</span>
+                    <span class="text-orange-500 text-lg font-medium">Good News</span>
                     <span class="text-500 font-medium">3 days ago</span>
                 </div>
                 <div class="font-medium text-lg text-900 mb-3 line-height-3">Our Four-Legged Warriors</div>
@@ -158,7 +158,7 @@ export class BlogComponent {
             <img src="assets/images/blocks/blog/blog-5.jpg" alt="Image" class="border-round-left" style="max-height: 234px;">
             <div class="p-4">
                 <div class="flex justify-content-between mb-3">
-                    <span class="text-teal-500 text-lg font-medum">Science</span>
+                    <span class="text-teal-500 text-lg font-medium">Science</span>
                     <span class="text-500 font-medium">4 days ago</span>
                 </div>
                 <div class="font-medium text-lg text-900 mb-3 line-height-3">Can We Learn From Horses?</div>

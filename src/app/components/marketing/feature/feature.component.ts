@@ -76,7 +76,7 @@ export class FeatureComponent {
             <span class="p-3 shadow-2 mb-3 inline-block surface-card" style="border-radius: 10px">
                 <i class="pi pi-shield text-4xl text-blue-500"></i>
             </span>
-            <div class="text-900 text-xl mb-3 font-medium">Trusted Securitty</div>
+            <div class="text-900 text-xl mb-3 font-medium">Trusted Security</div>
             <span class="text-700 line-height-3">Mattis rhoncus urna neque viverra justo nec ultrices. Id cursus metus aliquam eleifend.</span>
         </div>
     </div>
@@ -84,7 +84,7 @@ export class FeatureComponent {
 
     block2: string = `
 <div class="px-4 py-8 md:px-6 lg:px-8" style="background:radial-gradient(69.84% 69.84% at 50% 100%, rgba(21, 101, 192, 0.15) 0%, rgba(255, 255, 255, 0) 100%);">
-    <div class="text-blue-600 font-xl font-medium mb-3">ALL-IN-ONE</div>
+    <div class="text-blue-600 text-xl font-medium mb-3">ALL-IN-ONE</div>
     <div class="text-900 text-3xl font-bold mb-3">Focus on the work that matters</div>
     <div class="text-700">Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna.</div>
     <div class="grid mt-7">
