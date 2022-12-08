@@ -655,8 +655,8 @@ export class PricingComponent {
                     <h1 class="m-0 font-semibold text-xl text-900">Started Plan</h1>
                     <span class="text-base text-600">Scelerisque viverra mauris.</span>
                 </div>
-                <div class="flex align-items-center gap-2"><span class="font-semibold text-4xl text-900"><span
-                            class="text-xl">$</span>123</span> <span class="text-base text-600">per month</span>
+                <div class="flex align-items-center gap-2"><span class="font-semibold text-4xl text-900">
+                <span class="text-xl">$</span>10</span> <span class="text-base text-600">per month</span>
                 </div>
             </div>
             <div class="flex flex-column gap-3 border-bottom-1 surface-border pb-4">
@@ -712,8 +712,8 @@ export class PricingComponent {
                     <h1 class="m-0 font-semibold text-xl text-900">Professional Plan</h1>
                     <span class="text-base text-600">Eget mauris pharetra et ultrices.</span>
                 </div>
-                <div class="flex align-items-center gap-2"><span class="font-semibold text-4xl text-900"><span
-                            class="text-xl">$</span>123</span> <span class="text-base text-600">per month</span>
+                <div class="flex align-items-center gap-2"><span class="font-semibold text-4xl text-900">
+                <span class="text-xl">$</span>100</span> <span class="text-base text-600">per month</span>
                 </div>
             </div>
             <div class="flex flex-column gap-3 border-bottom-1 surface-border pb-4">
