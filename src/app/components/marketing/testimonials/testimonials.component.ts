@@ -218,15 +218,15 @@ export class TestimonialsComponent implements OnInit {
         <div class="flex flex-column gap-4">
             <div class="flex align-items-center gap-2">
                 <i class="pi pi-check-circle text-primary-500 text-2xl"></i>
-                <span class="text-base text-700 line-height-3">Fully responsive sections</span>
+                <span class="text-base text-700 line-height-3">Aliquet nibh praesent tristique magna</span>
             </div>
             <div class="flex align-items-center gap-2">
                 <i class="pi pi-check-circle text-primary-500 text-2xl"></i>
-                <span class="text-base text-700 line-height-3">Fully responsive sections</span>
+                <span class="text-base text-700 line-height-3">Ut enim blandit volutpat maecenas</span>
             </div>
             <div class="flex align-items-center gap-2">
                 <i class="pi pi-check-circle text-primary-500 text-2xl"></i>
-                <span class="text-base text-700 line-height-3">Fully responsive sections</span>
+                <span class="text-base text-700 line-height-3">Quisque non tellus orci ac auctor</span>
             </div>
         </div>
         <div class="flex align-items-center gap-3">
