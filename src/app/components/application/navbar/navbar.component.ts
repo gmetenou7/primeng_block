@@ -926,4 +926,116 @@ export class NavBarComponent {
     </div>
 </div>`;
     
+    block12: string = `
+<section class="surface-section py-3 px-6 shadow-2 flex align-items-center justify-content-between relative lg:static border-bottom-1 surface-border" style="min-height: 84px">
+    <img src="assets/images/blocks/logos/bastion-700.svg" alt="Image" height="40" class="mr-0 lg:mr-6">
+    <a pRipple class="cursor-pointer block lg:hidden text-600" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+        <i class="pi pi-bars text-4xl"></i>
+    </a>
+    <nav class="align-items-center flex-grow-1 hidden lg:flex absolute lg:static w-full surface-section left-0 top-100 z-1 shadow-2 lg:shadow-none border-1 lg:border-none surface-border">
+        <ul class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row">
+            <li>
+                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:bg-primary-50 hover:text-primary-900 font-medium border-round cursor-pointer transition-colors transition-duration-150">
+                    <i class="pi pi-home mr-2 lg:mr-0"></i>
+                    <span class="font-medium lg:hidden">Home</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:bg-primary-50 hover:text-primary-900 font-medium border-round cursor-pointer transition-colors transition-duration-150"
+                    pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
+                    <i class="pi pi-comments mr-2 lg:mr-0"></i>
+                    <span class="font-medium lg:hidden">Comments</span>
+                </a>
+                <ul class="list-none py-3 px-6 m-0 lg:px-0 lg:py-0 hidden border-round shadow-0 lg:shadow-2 lg:absolute surface-section origin-top w-full lg:w-15rem cursor-pointer lg:border-1 surface-border z-2">
+                    <li>
+                        <a pRipple class="flex p-3 align-items-center text-600 hover:bg-primary-50 hover:text-primary-900  border-round transition-colors transition-duration-150">
+                            <i class="pi pi-comment mr-2"></i>
+                            <span class="font-medium">View all</span>
+                        </a>
+                    </li>
+                    <li class="relative">
+                        <a pRipple class="flex p-3 align-items-center text-600 hover:bg-primary-50 hover:text-primary-900 transition-colors transition-duration-150" 
+                            pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
+                            <i class="pi pi-search mr-2"></i>
+                            <span class="font-medium">Search</span>
+                        </a>
+                        <ul class="list-none py-3 pl-3 m-0 lg:px-0 lg:py-0 border-round shadow-0 lg:shadow-2 lg:absolute surface-section hidden origin-top w-full lg:w-15rem cursor-pointer left-100 top-0 lg:border-1 border-gray-800">
+                            <li>
+                                <a pRipple class="flex p-3 align-items-center text-600 hover:bg-primary-50 hover:text-primary-900 transition-colors transition-duration-150">
+                                    <i class="pi pi-shopping-cart"></i>
+                                </a>
+                            </li>
+                            <li class="relative">
+                                <a pRipple class="flex p-3 align-items-center text-600 hover:bg-primary-50 hover:text-primary-900 transition-colors transition-duration-150">
+                                    <i class="pi pi-comments mr-2 lg:mr-0"></i>
+                                    <span class="font-medium lg:hidden">View All</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:bg-primary-50 hover:text-primary-900 font-medium border-round cursor-pointer transition-colors transition-duration-150">
+                    <i class="pi pi-heart mr-2 lg:mr-0"></i>
+                    <span class="font-medium lg:hidden">Favorites</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:bg-primary-50 hover:text-primary-900 font-medium border-round cursor-pointer transition-colors transition-duration-150">
+                    <i class="pi pi-calendar mr-2 lg:mr-0"></i>
+                    <span class="font-medium lg:hidden">Calendar</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:bg-primary-50 hover:text-primary-900 font-medium border-round cursor-pointer transition-colors transition-duration-150">
+                    <i class="pi pi-bolt mr-2 lg:mr-0"></i>
+                    <span class="font-medium lg:hidden">Likes</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row flex-grow-1">
+            <li class="flex-order-2 lg:flex-order-0 flex-grow-1">
+                <div class="flex px-6 p-3 lg:px-3 lg:py-2">
+                    <span class="p-input-icon-left w-full">
+                        <i class="pi pi-search text-600"></i>
+                        <input type="text" pInputText placeholder="Search" class="surface-section text-600 surface-border w-full" />
+                    </span>
+                </div>
+            </li>
+            <li>
+                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:bg-primary-50 hover:text-primary-900 font-medium border-round cursor-pointer transition-colors transition-duration-150 mr-2">
+                    <i class="pi pi-bell mr-2 lg:mr-0"></i>
+                    <span class="font-medium lg:hidden">Notifications</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:bg-primary-50 hover:text-primary-900 font-medium border-round cursor-pointer transition-colors transition-duration-150 mr-2">
+                    <i class="pi pi-cog mr-2 lg:mr-0"></i>
+                    <span class="font-medium lg:hidden">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a class="hidden lg:flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-green-600 bg-green-100 font-medium border-round cursor-pointer transition-colors transition-duration-150 mr-2">
+                    Available
+                </a>
+            </li>
+            <li class="border-top-1 surface-border lg:border-top-none flex-grow-0">
+                <a class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center font-medium border-round cursor-pointer">
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-3 lg:mr-0" style="width: 28px; height: 28px"/>
+                    <div class="flex align-items-center lg:hidden">
+                        <div class="mr-3">
+                            <p class="text-900 font-medium mb-0 mt-0">Josephine Lillard</p>
+                            <span class="text-600 font-medium text-sm">Marketing Specialist</span>
+                        </div>
+
+                        <a class="flex px-3 py-2 align-items-center text-green-600 bg-green-100 font-medium border-round cursor-pointer transition-colors transition-duration-150">
+                            Available
+                        </a>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</section>`;
 }
