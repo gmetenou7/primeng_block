@@ -11,6 +11,16 @@ export class DialogComponent {
 
     visible3: boolean = false;
 
+    visible4: boolean = false;
+
+    selectedMember: any = {name: 'Robert Fox', avatar: 'avatar-m-13' };
+
+    members = [
+        {name: 'Robert Fox', avatar: 'avatar-m-11' },
+        {name: 'John Walter', avatar: 'avatar-m-12' },
+        {name: 'Jane Doe', avatar: 'avatar-f-12' }
+    ];
+
     block1 = `
 <button pButton pRipple label="Display" (click)="visible1 = true"></button>
 
@@ -78,4 +88,35 @@ export class DialogComponent {
     </ng-template>
 </p-dialog>`;
 
+    block4: string = `
+<p-dialog [(visible)]="visible4" [modal]="false" [closable]="false" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '40vw', height: '22rem'}">
+    <section class="flex flex-column w-full mt-4">
+        <div class="flex w-full justify-content-between mb-4">
+            <span class="w-4rem h-4rem border-circle flex justify-content-center align-items-center bg-blue-100"><i class="pi pi-users text-blue-700 text-4xl"></i></span>
+            <button pButton pRipple type="button" icon="pi pi-times" class="p-button-rounded p-button-secondary p-button-text align-self-start" (click)="visible4 = false"></button>
+        </div>
+        <p class="font-semibold text-xl mt-0 mb-2 text-900">Invite Team Member</p>
+        <p class="font-normal text-base mt-0 mb-3 text-600">Sagittis eu volutpat odio facilisis mauris sit amet.</p>
+        <p-dropdown [options]="members" [(ngModel)]="selectedMember" optionLabel="name" appendTo="body" styleClass="w-full border-round-lg">
+            <ng-template pTemplate="selectedItem">
+                <div class="flex align-items-center" *ngIf="selectedMember">
+                    <img [src]="'assets/images/blocks/avatars/circle/' + selectedMember.avatar +'.png'" class="mr-3" style="height: 1.50rem; width: 1.50rem;"/>
+                    <p class="mt-0 mb-0 font-normal text-base text-600">{{selectedMember.name}}</p>
+                </div>
+            </ng-template>
+            <ng-template let-member pTemplate="item">
+                <div class="flex align-items-center">
+                    <img [src]="'assets/images/blocks/avatars/circle/' + member.avatar +'.png'" class="mr-3" style="height: 1.50rem; width: 1.50rem;"/>
+                    <p class="mt-0 mb-0 font-normal text-base text-600">{{member.name}}</p>
+                </div>
+            </ng-template>
+        </p-dropdown>
+    </section>
+    <ng-template pTemplate="footer">
+        <div class="pt-3 flex">
+            <button pButton pRipple (click)="visible4 = false" label="Cancel" class="p-button-text flex-grow-1"></button>
+            <button pButton pRipple (click)="visible4 = false" label="Invite" class="flex-grow-1"></button>
+        </div>
+    </ng-template>
+</p-dialog>`;
 }
