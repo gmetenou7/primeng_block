@@ -8,6 +8,7 @@ import { RippleModule } from 'primeng/ripple';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
 import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
+import { InputNumberModule } from 'primeng/inputnumber';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { FormsModule } from '@angular/forms';
     ButtonModule,
     RippleModule,
     DropdownModule,
+    InputNumberModule,
     FormsModule,
     DialogRoutingModule,
     BlockViewerModule

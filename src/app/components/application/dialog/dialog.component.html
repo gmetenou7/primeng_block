@@ -103,3 +103,35 @@
         </ng-template>
     </p-dialog>
 </block-viewer>
+
+<block-viewer header="Verification" [code]="block5" [new]="true" containerClass="surface-section px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center">
+    <button pButton pRipple label="Display" (click)="visible5 = true"></button>
+
+    <p-dialog [(visible)]="visible5" [modal]="false" [closable]="false" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '52vw', height: '24rem'}">
+        <section class="flex flex-column w-full mt-4">
+            <div class="flex w-full justify-content-between mb-4">
+                <span class="w-4rem h-4rem border-circle flex justify-content-center align-items-center bg-blue-100"><i class="pi pi-lock text-blue-700 text-4xl"></i></span>
+                <button pButton pRipple type="button" icon="pi pi-times" class="p-button-rounded p-button-secondary p-button-text align-self-start" (click)="visible5 = false"></button>
+            </div>
+            <p class="font-semibold text-xl mt-0 mb-2 text-900">Authenticate Your Account</p>
+            <p class="font-normal text-base mt-0 mb-3 text-600">Protecting your profile is our first priority. Please confirm your account by entering the authorization code sent to ***-***1052.</p>
+            <div class="flex justify-content-between w-full align-items-center mb-4 gap-2">
+                <p-inputNumber [(ngModel)]="val1" inputStyleClass="w-6rem text-center" [maxlength]="1"></p-inputNumber>
+                <p-inputNumber [(ngModel)]="val2" inputStyleClass="w-6rem text-center" [maxlength]="1"></p-inputNumber>
+                <p-inputNumber [(ngModel)]="val3" inputStyleClass="w-6rem text-center" [maxlength]="1"></p-inputNumber>
+                <p-inputNumber [(ngModel)]="val4" inputStyleClass="w-6rem text-center" [maxlength]="1"></p-inputNumber>
+                <p-inputNumber [(ngModel)]="val5" inputStyleClass="w-6rem text-center" [maxlength]="1"></p-inputNumber>
+                <p-inputNumber [(ngModel)]="val6" inputStyleClass="w-6rem text-center" [maxlength]="1"></p-inputNumber>
+            </div>
+        </section>
+        <ng-template pTemplate="footer">
+            <div class="pt-3 flex justify-content-between align-items-center">
+                <div class="text-left">
+                    <p class="font-normal text-base text-600 mb-0 mt-0">It may take a minute to receive.</p>
+                    <a class="font-normal text-base text-primary-500 mb-0 mt-0 cursor-pointer">Resend a new code.</a>
+                </div>
+                <button pButton pRipple (click)="visible5 = false" label="Submit Code" class="m-0"></button>
+            </div>
+        </ng-template>
+    </p-dialog>
+</block-viewer>
