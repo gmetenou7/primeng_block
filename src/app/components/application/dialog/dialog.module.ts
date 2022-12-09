@@ -10,6 +10,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { RadioButtonModule } from 'primeng/radiobutton';
+import { CheckboxModule } from 'primeng/checkbox';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { RadioButtonModule } from 'primeng/radiobutton';
     ButtonModule,
     RippleModule,
     DropdownModule,
+    CheckboxModule,
     InputNumberModule,
     RadioButtonModule,
     FormsModule,
