@@ -8,9 +8,9 @@ export class CommandMenuComponent {
 
     block1: string = `
 <div class="w-30rem border-1 surface-border border-round-lg">
-    <div class="flex w-full align-items-center justify-content-between px-1"  >
+    <div class="flex w-full align-items-center justify-content-between px-1">
         <span class="p-input-icon-left w-full">
-            <i class="pi pi-search"></i>
+            <i class="pi pi-search text-500"></i>
             <input type="text" pInputText placeholder="Search menus, shortcuts, contact and more..." [(ngModel)]="value1" class="w-full border-none shadow-none outline-none" pStyleClass="#command-menu-1" enterClass="hidden" leaveToClass="hidden"/> 
         </span>
         <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs">⌘K</span>
