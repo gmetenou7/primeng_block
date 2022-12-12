@@ -79,4 +79,93 @@ export class CommandMenuComponent {
         </div>
     </div>
 </div>`;
+
+    block2: string = `
+<div class="w-30rem border-1 surface-border border-round-lg">
+    <div class="flex w-full align-items-center justify-content-between px-1">
+        <span class="p-input-icon-left w-full">
+            <i class="pi pi-search text-500"></i>
+            <input type="text" pInputText placeholder="Search menus, shortcuts, contact and more..." [(ngModel)]="value1" class="w-full border-none shadow-none outline-none" pStyleClass="#command-menu-2" enterClass="hidden" leaveToClass="hidden"/> 
+        </span>
+        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs">⌘K</span>
+    </div>
+    <div id="command-menu-2" class="hidden">
+        <div class="border-y-1 surface-border p-3">
+            <h2 class="font-semibold text-xs text-500 mb-2 mt-0 px-1">RECENT</h2>
+            <ul class="list-none m-0 p-0">
+                <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
+                    <span class="flex align-items-center"><i class="pi pi-file mr-2"></i>Add new file</span>
+                    <div class="flex align-items-center">
+                        <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">CMD</span>
+                        <span class="mx-2 text-600">+</span>
+                        <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">N</span>
+                    </div>
+                </li>
+                <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
+                    <span class="flex align-items-center"><i class="pi pi-lock mr-2"></i>Lock Session</span>
+                    <div class="flex align-items-center">
+                        <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">CMD</span>
+                        <span class="mx-2 text-600">+</span>
+                        <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">L</span>
+                    </div>
+                </li>
+                <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
+                    <span class="flex align-items-center"><i class="pi pi-moon mr-2"></i>Dark Mode</span>
+                </li>
+            </ul>
+        </div>
+        <div class="p-3">
+            <ul class="list-none m-0 p-0">
+                <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
+                    <span class="flex align-items-center"><i class="pi pi-bell mr-2"></i>Notifications</span>
+                    <div class="flex align-items-center">
+                        <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">CMD</span>
+                        <span class="mx-2 text-600">+</span>
+                        <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">C</span>
+                    </div>
+                </li>
+                <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
+                    <span class="flex align-items-center"><i class="pi pi-bookmark mr-2"></i>Bookmarks</span>
+                    <div class="flex align-items-center">
+                        <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">CMD</span>
+                        <span class="mx-2 text-600">+</span>
+                        <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">B</span>
+                    </div>
+                </li>
+                <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
+                    <span class="flex align-items-center"><i class="pi pi-bolt mr-2"></i>Quick Actions</span>
+                    <div class="flex align-items-center">
+                        <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">SHIFT</span>
+                        <span class="mx-2 text-600">+</span>
+                        <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">Q</span>
+                    </div>
+                </li>
+                <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
+                    <span class="flex align-items-center"><i class="pi pi-users mr-2"></i>Manage User Groups</span>
+                    <div class="flex align-items-center">
+                        <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">CMD</span>
+                        <span class="mx-2 text-600">+</span>
+                        <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">U</span>
+                    </div>
+                </li>
+                <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
+                    <span class="flex align-items-center"><i class="pi pi-book mr-2"></i>Go to Documentation</span>
+                    <div class="flex align-items-center">
+                        <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">SHIFT</span>
+                        <span class="mx-2 text-600">+</span>
+                        <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">L</span>
+                    </div>
+                </li>
+                <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
+                    <span class="flex align-items-center"><i class="pi pi-cog mr-2"></i>System Preferences</span>
+                    <div class="flex align-items-center">
+                        <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">CMD</span>
+                        <span class="mx-2 text-600">+</span>
+                        <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">P</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>`;
 }
