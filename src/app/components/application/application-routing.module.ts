@@ -39,7 +39,8 @@ import { ApplicationComponent } from './application.component';
             {path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboadModule), data: {name: 'Dashboard'}},
             {path: 'detailscreen', loadChildren: () => import('./detailscreen/detailscreen.module').then(m => m.DetailScreenModule), data: {name: 'Detail'}},
             {path: 'settingscreen', loadChildren: () => import('./settingscreen/settingscreen.module').then(m => m.SettingScreenModule), data: {name: 'Setting'}},
-            {path: 'pagenotfound', loadChildren: () => import('./pagenotfound/pagenotfound.module').then(m => m.PageNotFoundModule), data: {name: 'Page Not Found'}}
+            {path: 'pagenotfound', loadChildren: () => import('./pagenotfound/pagenotfound.module').then(m => m.PageNotFoundModule), data: {name: 'Page Not Found'}},
+            {path: 'commandmenu', loadChildren: () => import('./commandmenu/commandmenu.module').then(m => m.CommandMenuModule), data: {name: 'Command Menu'}}
         ])
     ],
     exports: [
