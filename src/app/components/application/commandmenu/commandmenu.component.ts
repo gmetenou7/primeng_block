@@ -14,6 +14,8 @@ export class CommandMenuComponent {
 
     value5: string = 'Search menus, shortcuts, contact and more...';
 
+    value6: string = 'Sign';
+
     block1: string = `
 <div class="w-30rem border-1 surface-border border-round-lg">
     <div class="flex w-full align-items-center justify-content-between px-1">
@@ -392,4 +394,110 @@ export class CommandMenuComponent {
         </div>
     </div>
 </div>`;
+
+    block6: string = `
+<section class="bg-black-alpha-50 border-round-lg" style="backdrop-filter: blur(70px); width: 40rem;">
+    <div class="flex w-full align-items-center justify-content-between px-1">
+        <span class="p-input-icon-left w-full">
+            <i class="pi pi-search text-white-alpha-80"></i>
+            <input type="text" pInputText [(ngModel)]="value6" class="w-full border-none bg-transparent shadow-none outline-none text-white-alpha-80 text-sm" pStyleClass="#command-menu-6" enterClass="hidden" leaveToClass="hidden"/> 
+        </span>
+        <span class="p-1 border-white-alpha-20 border-1 border-round mr-2 text-white-alpha-80 text-xs bg-white-alpha-20">⌘K</span>
+    </div>
+    <div id="command-menu-6" class="">
+        <div class="flex flex-column md:flex-row border-top-1 border-white-alpha-20">
+            <div class="w-full md:w-6 p-3 border-right-1 border-white-alpha-20">
+                <ul class="list-none m-0 p-0">
+                    <li class="flex justify-content-between align-items-center select-none p-2 text-white-alpha-80 font-normal text-base cursor-pointer border-round-lg hover:bg-white-alpha-20 hover:text-white">
+                        <span><i class="pi pi-image mr-2"></i>mail-sign.jpg</span>
+                        <i class="pi pi-chevron-right text-xs"></i>
+                    </li>
+                    <li class="flex justify-content-between align-items-center select-none p-2 text-white-alpha-80 font-normal text-base cursor-pointer border-round-lg hover:bg-white-alpha-20 hover:text-white">
+                        <span><i class="pi pi-image mr-2"></i>portrait-sign.jpg</span>
+                        <i class="pi pi-chevron-right text-xs"></i>
+                    </li>
+                    <li class="flex justify-content-between align-items-center select-none p-2 text-white-alpha-80 font-normal text-base cursor-pointer border-round-lg hover:bg-white-alpha-20 hover:text-white">
+                        <span><i class="pi pi-image mr-2"></i>sign-in.png</span>
+                        <i class="pi pi-chevron-right text-xs"></i>
+                    </li>
+                    <li class="flex justify-content-between align-items-center select-none p-2 text-white-alpha-80 font-normal text-base cursor-pointer border-round-lg hover:bg-white-alpha-20 hover:text-white">
+                        <span><i class="pi pi-image mr-2"></i>sign-out.png</span>
+                        <i class="pi pi-chevron-right text-xs"></i>
+                    </li>
+                    <li class="flex justify-content-between align-items-center select-none p-2 text-white-alpha-80 font-normal text-base cursor-pointer border-round-lg hover:bg-white-alpha-20 hover:text-white">
+                        <span><i class="pi pi-file-excel mr-2"></i>sign-terms.xls</span>
+                        <i class="pi pi-chevron-right text-xs"></i>
+                    </li>
+                    <li class="flex justify-content-between align-items-center select-none p-2 text-white-alpha-80 font-normal text-base cursor-pointer border-round-lg hover:bg-white-alpha-20 hover:text-white">
+                        <span><i class="pi pi-file-pdf mr-2"></i>sign-present.pdf</span>
+                        <i class="pi pi-chevron-right text-xs"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full md:w-6 p-3 flex flex-column align-items-center md:align-items-start">
+                <img src="assets/images/blocks/commandmenu/commandmenu-3.jpeg" class="w-10rem h-6rem mx-auto border-round shadow-2" alt="Image">
+                <p class="font-medium text-sm text-white mt-2 mb-2 w-full text-center">portrait-sign.jpg</p>
+                <div class="flex gap-2 text-white-alpha-80">
+                    <span class="flex justify-content-center align-items-center border-round bg-white-alpha-20 text-white hover:bg-white-alpha-30" style="height: 2rem; width: 4rem;"><i class="pi pi-eye"></i></span>
+                    <span class="flex justify-content-center align-items-center border-round bg-white-alpha-20 text-white hover:bg-white-alpha-30" style="height: 2rem; width: 4rem;"><i class="pi pi-star"></i></span>
+                    <span class="flex justify-content-center align-items-center border-round bg-white-alpha-20 text-white hover:bg-white-alpha-30" style="height: 2rem; width: 4rem;"><i class="pi pi-copy"></i></span>
+                    <span class="flex justify-content-center align-items-center border-round bg-white-alpha-20 text-white hover:bg-white-alpha-30" style="height: 2rem; width: 4rem;"><i class="pi pi-upload"></i></span>
+                </div>
+                <table class="w-full mt-2">
+                    <tr>
+                        <td>
+                            <p class="text-white font-medium text-xs my-1">File Size</p>
+                        </td>
+                        <td>
+                            <p class="text-white font-medium text-xs text-right my-1">345 kb</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="text-white font-medium text-xs my-1">Location</p>
+                        </td>
+                        <td>
+                            <div class="inline-flex w-full align-items-center justify-content-end">
+                                <p class="text-white font-medium text-xs text-right my-1">My Drive/Personal/Images/</p>
+                                <span class="bg-white-alpha-20 border-circle ml-1 p-1"><i class="pi pi-folder-open text-white"></i></span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="text-white font-medium text-xs my-1">Tags</p>
+                        </td>
+                        <td>
+                            <div class="inline-flex w-full justify-content-end">
+                                <div class="flex align-items-center mr-2">
+                                    <div class="bg-green-500 flex-shrink-0 border-circle mr-1" style="width:10px; height:10px;"></div>
+                                    <p class="text-white font-medium text-xs mt-0 mb-0">Green</p>
+                                </div>
+                                <div class="flex align-items-center">
+                                    <div class="bg-yellow-500 flex-shrink-0 border-circle mr-1" style="width:10px; height:10px;"></div>
+                                    <p class="text-white font-medium text-xs mt-0 mb-0">Yellow</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="p-2 bg-white-alpha-10 border-top-1 border-white-alpha-20 flex flex-wrap md:flex-nowrap align-items-center justify-content-center sm:justify-content-start">
+            <p class="sm:mt-0 mb-0 mr-3 text-xs text-white-alpha-70">
+                <span class="px-2 py-1 border-white-alpha-20 border-1 border-round mr-1 text-white-alpha-80 text-xs bg-white-alpha-20">⏎</span>
+                Select
+            </p>
+            <p class="sm:mt-0 mb-0 mr-3 text-xs text-white-alpha-70">
+                <span class="px-2 py-1 border-white-alpha-20 border-1 border-round mr-1 text-white-alpha-80 text-xs bg-white-alpha-20">↑</span>
+                <span class="px-2 py-1 border-white-alpha-20 border-1 border-round mr-1 text-white-alpha-80 text-xs bg-white-alpha-20">↓</span>
+                Navigate
+            </p>
+            <p class="sm:mt-0 mb-0 mr-3 text-xs text-white-alpha-70 flex-align-items-center justify-content-center flex-row">
+                <span class="px-2 py-1 border-white-alpha-20 border-1 border-round mr-1 text-white-alpha-80 text-xs bg-white-alpha-20 inline-flex">esc</span>
+                Close
+            </p>
+        </div>
+    </div>
+</section>`;
 }
