@@ -17,7 +17,7 @@ export class CommandMenuComponent {
     value6: string = 'Sign';
 
     block1: string = `
-<div class="w-30rem border-1 surface-border border-round-lg">
+<section class="w-30rem border-1 surface-border border-round-lg">
     <div class="flex w-full align-items-center justify-content-between px-1">
         <span class="p-input-icon-left w-full">
             <i class="pi pi-search text-500"></i>
@@ -88,10 +88,10 @@ export class CommandMenuComponent {
             </article>
         </div>
     </div>
-</div>`;
+</section>`;
 
     block2: string = `
-<div class="w-30rem border-1 surface-border border-round-lg">
+<section class="w-30rem border-1 surface-border border-round-lg">
     <div class="flex w-full align-items-center justify-content-between px-1">
         <span class="p-input-icon-left w-full">
             <i class="pi pi-search text-500"></i>
@@ -101,7 +101,7 @@ export class CommandMenuComponent {
     </div>
     <div id="command-menu-2" class="hidden">
        <section class="border-y-1 surface-border p-5 flex flex-column align-items-center gap-2">
-        <h1 class="m-0 font-semibold text-900 text-xl">No emails found</h1>
+        <h2 class="m-0 font-semibold text-900 text-xl">No emails found</h2>
         <span class="text-sm text-600 text-center">"{{ value2 }}" could not match any emails.
             Would you like to write a new email?</span>
         <div class="flex justfiy-content-center gap-3 mt-3">
@@ -110,10 +110,10 @@ export class CommandMenuComponent {
         </div>
        </section>
     </div>
-</div>`;
+</section>`;
 
     block3: string = `
-<div class="w-30rem border-1 surface-border border-round-lg">
+<section class="w-30rem border-1 surface-border border-round-lg">
     <div class="flex w-full align-items-center justify-content-between px-1">
         <span class="p-input-icon-left w-full">
             <i class="pi pi-search text-500"></i>
@@ -199,14 +199,14 @@ export class CommandMenuComponent {
             </ul>
         </div>
     </div>
-</div>`;
+</section>`;
     
     block4: string = `
-<div class="w-30rem border-1 surface-border border-round-lg">
+<section class="w-30rem border-1 surface-border border-round-lg">
     <div class="flex w-full align-items-center justify-content-between px-1">
         <span class="p-input-icon-left w-full">
             <i class="pi pi-search text-500"></i>
-            <input type="text" pInputText placeholder="Find someone quickly..." [(ngModel)]="value1" class="w-full border-none shadow-none outline-none" pStyleClass="#command-menu-4" enterClass="hidden" leaveToClass="hidden"/> 
+            <input type="text" pInputText placeholder="Find someone quickly..." [(ngModel)]="value4" class="w-full border-none shadow-none outline-none" pStyleClass="#command-menu-4" enterClass="hidden" leaveToClass="hidden"/> 
         </span>
         <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs">⌘K</span>
     </div>
@@ -284,10 +284,10 @@ export class CommandMenuComponent {
             </ul>
         </div>
     </div>
-</div>`;
+</section>`;
 
     block5: string = `
-<div class="w-30rem bg-black-alpha-50 border-round-lg" style="backdrop-filter: blur(70px)">
+<section class="w-30rem bg-black-alpha-50 border-round-lg" style="backdrop-filter: blur(70px)">
     <div class="flex w-full align-items-center justify-content-between px-1">
         <span class="p-input-icon-left w-full">
             <i class="pi pi-search text-white-alpha-80"></i>
@@ -393,7 +393,7 @@ export class CommandMenuComponent {
             <p class="w-full sm:w-auto sm:mt-0 mb-0 sm:ml-auto text-xs text-white-alpha-70">4 results</p>
         </div>
     </div>
-</div>`;
+</section>`;
 
     block6: string = `
 <section class="bg-black-alpha-50 border-round-lg" style="backdrop-filter: blur(70px); width: 40rem;">
