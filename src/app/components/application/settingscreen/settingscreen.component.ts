@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuItem } from 'primeng/api';
 
 @Component({
     templateUrl: './settingscreen.component.html'
@@ -15,6 +16,39 @@ export class SettingScreenComponent implements OnInit {
 
     countries: any[];
 
+    members: any = [
+        { image: 'avatar-f-13', name: 'Jenny Wilson', username:'@jnnywlsn', date: 'Oct 30, 2022', active: '2 hours ago' },
+        { image: 'avatar-f-14', name: 'Kathryn Murphy', username: '@murphyyy', date: 'Jul 14, 2022', active: '5 days ago' },
+        { image: 'avatar-f-15', name: 'Leslie Alexander', username:'@leslie98', date: 'Dec 19, 2022', active: '4 days ago' },
+        { image: 'avatar-m-13', name: 'Ralph Edwards', username:'@ralphadator', date: 'Feb 11, 2022', active: '9 hours ago' },
+        { image: 'avatar-m-14', name: 'Guy Hawkins', username:'@guyman', date: 'Aug 02, 2022', active: '2 hours ago' },
+        { image: 'avatar-f-16', name: 'Wade Warren', username:'@wayyyd', date: 'May 20, 2022', active: '6 days ago' },
+        { image: 'avatar-f-17', name: 'Kristin Watson', username:'@kristinwtsn', date: 'Nov 28, 2022', active: '5 days ago' }
+    ];
+
+    items: MenuItem[] = [{
+        label: 'Options',
+        items: [{
+            label: 'Update',
+            icon: 'pi pi-refresh',
+        },
+        {
+            label: 'Delete',
+            icon: 'pi pi-times',
+        }
+        ]}
+    ];
+
+    roles: any = [
+        { color: 'bg-purple-500', alias: 'Project Manager', date: 'Oct 30, 2022', users: '4 users' },
+        { color: 'bg-blue-500', alias: 'QA Manager', date: 'Oct 30, 2022', users: '2 users' },
+        { color: 'bg-green-500', alias: 'QA Tester', date: 'Oct 30, 2022', users: '1 user' },
+        { color: 'bg-red-500', alias: 'Product Manager', date: 'Oct 30, 2022', users: '7 users' },
+        { color: 'bg-indigo-500', alias: 'UX Designer', date: 'Oct 30, 2022', users: '1 users' },
+        { color: 'bg-green-500', alias: 'UI Designer', date: 'Oct 30, 2022', users: '3 users' },
+        { color: 'bg-orange-500', alias: 'Developer', date: 'Oct 30, 2022', users: '5 users' }
+    ];
+
     ngOnInit() {
         this.countries = [
             {name: 'Australia', code: 'AU'},
@@ -30,8 +64,7 @@ export class SettingScreenComponent implements OnInit {
         ]; 
     }
 
-
-    block1 = `
+    block1: string = `
 <div class="min-h-screen flex surface-ground">
     <div id="app-sidebar" class="h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 border-right-1 surface-border w-full md:w-auto">
         <div class="flex h-full">
@@ -367,79 +400,80 @@ export class SettingScreenComponent implements OnInit {
                     <h2 class="mt-0 mb-2 text-900 font-medium text-2xl">Settings</h2>
                     <p class="mt-0 mb-0 text-500">Vivamus id nisl interdum, blandit augue sit amet, eleifend mi.</p>
                 </div>
-                <span class="p-input-icon-right w-full mt-4 md:mt-0 md:w-15rem">
+                <span class="p-input-icon-right w-full mt-2 md:mt-0 md:w-15rem">
                     <i class="pi pi-search"></i>
-                    <input type="text" pInputText placeholder="Search" class="w-full md:w-15rem border-round-lg"/>
+                    <input type="text" pInputText placeholder="Search" class="w-full md:w-15rem border-round"/>
                 </span>
             </div>
             <p-divider styleClass="my-5"></p-divider>
             
             <div class="p-fluid flex flex-column lg:flex-row">
-                <ul class="list-none m-0 p-0 flex flex-row lg:flex-column justify-content-evenly md:justify-content-between lg:justify-content-start mb-5 lg:mb-0">
+                <ul class="list-none m-0 p-0 flex flex-row lg:flex-column justify-content-between lg:justify-content-start mb-5 lg:mb-0">
                     <li>
-                        <a pRipple class="lg:w-15rem flex align-items-center cursor-pointer p-3 border-round-lg hover:surface-200 transition-duration-150 transition-colors" [ngClass]="{'surface-200': activeTab3 === 0}" (click)="activeTab3 = 0">
+                        <a pRipple class="lg:w-15rem flex align-items-center cursor-pointer p-3 border-round hover:surface-200 transition-duration-150 transition-colors" [ngClass]="{'surface-200': activeTab3 === 0}" (click)="activeTab3 = 0">
                             <i class="pi pi-user md:mr-2" [ngClass]="{'text-700' : activeTab3 === 0, 'text-600': activeTab3 !== 0}"></i>
                             <span class="font-medium hidden md:block" [ngClass]="{'text-800': activeTab3 === 0, 'text-700': activeTab3 !== 0}">Profile</span>
                         </a>
                     </li>
                     <li>
-                        <a pRipple class="lg:w-15rem flex align-items-center cursor-pointer p-3 border-round-lg hover:surface-200 transition-duration-150 transition-colors" [ngClass]="{'surface-200': activeTab3 === 1}" (click)="activeTab3 = 1">
+                        <a pRipple class="lg:w-15rem flex align-items-center cursor-pointer p-3 border-round hover:surface-200 transition-duration-150 transition-colors" [ngClass]="{'surface-200': activeTab3 === 1}" (click)="activeTab3 = 1">
                             <i class="pi pi-cog md:mr-2" [ngClass]="{'text-700' : activeTab3 === 1, 'text-600': activeTab3 !== 1}"></i>
                             <span class="font-medium hidden md:block" [ngClass]="{'text-800': activeTab3 === 1, 'text-700': activeTab3 !== 1}">Account</span>
                         </a>
                     </li>
                     <li>
-                        <a pRipple class="lg:w-15rem flex align-items-center cursor-pointer p-3 border-round-lg hover:surface-200 transition-duration-150 transition-colors" [ngClass]="{'surface-200': activeTab3 === 2}" (click)="activeTab3 = 2">
+                        <a pRipple class="lg:w-15rem flex align-items-center cursor-pointer p-3 border-round hover:surface-200 transition-duration-150 transition-colors" [ngClass]="{'surface-200': activeTab3 === 2}" (click)="activeTab3 = 2">
                             <i class="pi pi-palette md:mr-2" [ngClass]="{'text-700' : activeTab3 === 2, 'text-600': activeTab3 !== 2}"></i>
                             <span class="font-medium hidden md:block" [ngClass]="{'text-800': activeTab3 === 2, 'text-700': activeTab3 !== 2}">Appearance</span>
                         </a>
                     </li>
                     <li>
-                        <a pRipple class="lg:w-15rem flex align-items-center cursor-pointer p-3 border-round-lg hover:surface-200 transition-duration-150 transition-colors"  [ngClass]="{'surface-200': activeTab3 === 3}" (click)="activeTab3 = 3">
+                        <a pRipple class="lg:w-15rem flex align-items-center cursor-pointer p-3 border-round hover:surface-200 transition-duration-150 transition-colors"  [ngClass]="{'surface-200': activeTab3 === 3}" (click)="activeTab3 = 3">
                             <i class="pi pi-sun md:mr-2" [ngClass]="{'text-700' : activeTab3 === 3, 'text-600': activeTab3 !== 3}"></i>
                             <span class="font-medium hidden md:block" [ngClass]="{'text-800': activeTab3 === 3, 'text-700': activeTab3 !== 3}">Accessibility</span>
                         </a>
                     </li>
                     <li>
-                        <a pRipple class="lg:w-15rem flex align-items-center cursor-pointer p-3 border-round-lg hover:surface-200 transition-duration-150 transition-colors" [ngClass]="{'surface-200': activeTab3 === 4}" (click)="activeTab3 = 4">
+                        <a pRipple class="lg:w-15rem flex align-items-center cursor-pointer p-3 border-round hover:surface-200 transition-duration-150 transition-colors" [ngClass]="{'surface-200': activeTab3 === 4}" (click)="activeTab3 = 4">
                             <i class="pi pi-bell md:mr-2" [ngClass]="{'text-700' : activeTab3 === 4, 'text-600': activeTab3 !== 4}"></i>
                             <span class="font-medium hidden md:block" [ngClass]="{'text-800': activeTab3 === 4, 'text-700': activeTab3 !== 4}">Notifications</span>
                         </a>
                     </li>
                 </ul>
-                <div class="surface-card p-5 shadow-2 border-round-lg flex-auto xl:ml-5">
+                <div class="surface-card p-5 shadow-2 border-round flex-auto xl:ml-5">
                     <div class="text-900 font-semibold text-lg mt-3">Profile</div>
                     <p-divider></p-divider>
                     <div class="flex gap-5 flex-column-reverse md:flex-row">
                         <div class="flex-auto p-fluid">
                             <div class="mb-4">
-                                <label for="email" class="block font-medium text-900 mb-2">Name</label>
+                                <label for="email" class="block font-normal text-900 mb-2">Name</label>
                                 <input id="email" type="text" pInputText>
                             </div>
                             <div class="mb-4">
-                                <label for="bio" class="block font-medium text-900 mb-2">Bio</label>
+                                <label for="bio" class="block font-normal text-900 mb-2">Bio</label>
                                 <textarea id="bio" type="text" pInputTextarea rows="5" [autoResize]="true"></textarea>
+                                <p class="mt-2 mb-0 font-medium text-base text-600">You can <span class="font-medium text-900">@mention</span> other users and organizations to link to them.</p>
                             </div>
                             <div class="mb-4">
-                                <label for="website" class="block font-medium text-900 mb-2">URL</label>
+                                <label for="website" class="block font-normal text-900 mb-2">URL</label>
                                 <div class="p-inputgroup">
                                     <span class="p-inputgroup-addon">https://</span>
                                     <input id="website" type="text" pInputText>
                                 </div>
                             </div>
                             <div class="mb-4">
-                                <label for="company" class="block font-medium text-900 mb-2">Company</label>
+                                <label for="company" class="block font-normal text-900 mb-2">Company</label>
                                 <input id="company" type="text" pInputText>
                             </div>
                             <div class="mb-4">
-                                <label for="visibility" class="block font-medium text-900 mb-2">Profile Visibility</label>
+                                <label for="visibility" class="block font-normal text-900 mb-2">Profile Visibility</label>
                                 <div class="flex align-items-center">
                                     <p-checkbox [(ngModel)]="value1" [binary]="true" inputId="visibility"></p-checkbox>
-                                    <span class="ml-2 font-normal text-base text-900">Make profile private and hide all activity</span>
+                                    <span class="ml-2 font-normal text-base text-color-primary">Make profile private and hide all activity</span>
                                 </div>
                             </div>
                             <div>
-                                <button pButton pRipple label="Update Profile" class="w-auto"></button>
+                                <button pButton pRipple label="Update Profile" class="w-auto mt-3"></button>
                             </div>
                         </div>
                         <div class="flex flex-column align-items-center flex-or">
@@ -471,5 +505,185 @@ export class SettingScreenComponent implements OnInit {
             </div>
          </div>
     </div>
+</section>`;
+
+    block3: string = `
+<nav class="surface-overlay px-4 lg:px-6 shadow-2 flex justify-content-between relative lg:static" style="min-height: 84px">
+    <img src="assets/images/blocks/logos/bastion-700.svg" alt="Image" height="40" class="mr-0 lg:mr-6 align-self-center">
+    <a pRipple class="cursor-pointer block lg:hidden align-self-center text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+        <i class="pi pi-bars text-4xl"></i>
+    </a>
+    <div class="flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full surface-overlay left-0 top-100 z-1 shadow-2 lg:shadow-none">
+        <ul class="list-none p-0 m-0 flex select-none flex-column lg:flex-row">
+            <li>
+                <a pRipple class="flex px-6 p-3 h-full lg:px-3 lg:py-2 align-items-center text-600 border-left-2 lg:border-bottom-2 lg:border-left-none border-transparent hover:border-blue-500 font-medium cursor-pointer transition-colors transition-duration-150">
+                    <i class="pi pi-home mr-2"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple class="flex px-6 p-3 h-full lg:px-3 lg:py-2 align-items-center text-600 border-left-2 lg:border-bottom-2 lg:border-left-none border-transparent hover:border-blue-500 font-medium cursor-pointer transition-colors transition-duration-150">
+                    <i class="pi pi-users mr-2"></i>
+                    <span>Customers</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple class="flex px-6 p-3 h-full lg:px-3 lg:py-2 align-items-center text-600 border-left-2 lg:border-bottom-2 lg:border-left-none border-transparent hover:border-blue-500 font-medium cursor-pointer transition-colors transition-duration-150">
+                    <i class="pi pi-calendar mr-2"></i>
+                    <span>Calendar</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple class="flex px-6 p-3 h-full lg:px-3 lg:py-2 align-items-center text-600 border-left-2 lg:border-bottom-2 lg:border-left-none border-transparent hover:border-blue-500 font-medium cursor-pointer transition-colors transition-duration-150">
+                    <i class="pi pi-chart-line mr-2"></i>
+                    <span>Stats</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="list-none p-0 m-0 flex select-none flex-column lg:flex-row border-top-1 surface-border lg:border-top-none">
+            <li>
+                <a pRipple class="flex px-6 p-3 h-full lg:px-3 lg:py-2 align-items-center text-600 border-left-2 lg:border-bottom-2 lg:border-left-none border-transparent hover:border-blue-500 font-medium cursor-pointer transition-colors transition-duration-150">
+                    <i class="pi pi-inbox text-base lg:text-2xl mr-2 lg:mr-0"></i>
+                    <span class="block lg:hidden font-medium">Inbox</span>
+                </a>
+            </li>
+            <li>
+                <a pRipple class="flex px-6 p-3 h-full lg:px-3 lg:py-2 align-items-center text-600 border-left-2 lg:border-bottom-2 lg:border-left-none border-transparent hover:border-blue-500 font-medium cursor-pointer transition-colors transition-duration-150">
+                    <i class="pi pi-bell text-base lg:text-2xl mr-2 lg:mr-0"></i>
+                    <span class="block lg:hidden font-medium">Notifications</span>
+                </a>
+            </li>
+            <li class="border-top-1 surface-border lg:border-top-none">
+                <a pRipple class="flex px-6 p-3 h-full lg:px-3 lg:py-2 align-items-center text-600 border-left-2 lg:border-bottom-2 lg:border-left-none border-transparent hover:border-blue-500 font-medium cursor-pointer transition-colors transition-duration-150">
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-3 lg:mr-0" style="width: 28px; height: 28px"/>
+                    <div class="block lg:hidden">
+                        <div class="text-900 font-medium">Josephine Lillard</div>
+                        <span class="text-600 font-medium text-sm">Marketing Specialist</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="surface-overlay px-4 lg:px-6 py-4 px-4 lg:px-6 border-y-1 surface-border flex flex-column flex-wrap md:flex-row gap-3 w-full md:justify-content-between md:align-items-center">
+    <ul class="list-none m-0 p-0 flex flex-row justify-content-between lg:justify-content-start lg:mb-0">
+        <li>
+            <a pRipple class="flex align-items-center cursor-pointer p-3 border-round hover:surface-200 transition-duration-150 transition-colors" [ngClass]="{'surface-200': activeTab3 === 0}" (click)="activeTab3 = 0">
+                <i class="pi pi-user md:hidden" [ngClass]="{'text-700' : activeTab3 === 0, 'text-600': activeTab3 !== 0}"></i>
+                <span class="font-medium hidden md:block" [ngClass]="{'text-900': activeTab3 === 0, 'text-600': activeTab3 !== 0}">Profile</span>
+            </a>
+        </li>
+        <li>
+            <a pRipple class="flex align-items-center cursor-pointer p-3 border-round hover:surface-200 transition-duration-150 transition-colors" [ngClass]="{'surface-200': activeTab3 === 1}" (click)="activeTab3 = 1">
+                <i class="pi pi-cog md:hidden" [ngClass]="{'text-700' : activeTab3 === 1, 'text-600': activeTab3 !== 1}"></i>
+                <span class="font-medium hidden md:block" [ngClass]="{'text-900': activeTab3 === 1, 'text-600': activeTab3 !== 1}">Account</span>
+            </a>
+        </li>
+        <li>
+            <a pRipple class="flex align-items-center cursor-pointer p-3 border-round hover:surface-200 transition-duration-150 transition-colors" [ngClass]="{'surface-200': activeTab3 === 2}" (click)="activeTab3 = 2">
+                <i class="pi pi-palette md:hidden" [ngClass]="{'text-700' : activeTab3 === 2, 'text-600': activeTab3 !== 2}"></i>
+                <span class="font-medium hidden md:block" [ngClass]="{'text-900': activeTab3 === 2, 'text-600': activeTab3 !== 2}">Appearance</span>
+            </a>
+        </li>
+        <li>
+            <a pRipple class="flex align-items-center cursor-pointer p-3 border-round hover:surface-200 transition-duration-150 transition-colors"  [ngClass]="{'surface-200': activeTab3 === 3}" (click)="activeTab3 = 3">
+                <i class="pi pi-sun md:hidden" [ngClass]="{'text-700' : activeTab3 === 3, 'text-600': activeTab3 !== 3}"></i>
+                <span class="font-medium hidden md:block" [ngClass]="{'text-900': activeTab3 === 3, 'text-600': activeTab3 !== 3}">Accessibility</span>
+            </a>
+        </li>
+        <li>
+            <a pRipple class="flex align-items-center cursor-pointer p-3 border-round hover:surface-200 transition-duration-150 transition-colors" [ngClass]="{'surface-200': activeTab3 === 4}" (click)="activeTab3 = 4">
+                <i class="pi pi-bell md:hidden" [ngClass]="{'text-700' : activeTab3 === 4, 'text-600': activeTab3 !== 4}"></i>
+                <span class="font-medium hidden md:block" [ngClass]="{'text-900': activeTab3 === 4, 'text-600': activeTab3 !== 4}">Notifications</span>
+            </a>
+        </li>
+    </ul>
+    <span class="p-input-icon-right w-full mt-2 md:mt-0 md:w-15rem">
+        <i class="pi pi-search"></i>
+        <input type="text" pInputText placeholder="Search" class="w-full md:w-15rem border-round"/>
+    </span>
+</div>
+<section class="surface-overlay px-4 lg:px-6 py-4 px-4 lg:px-6 border-top-1 surface-border">
+    <div class="border-bottom-1 surface-border">
+        <h2 class="mt-0 mb-2 text-900 font-bold text-4xl">Members & Roles</h2>
+        <p class="mt-0 mb-5 text-700 font-normal text-base">You can easily manage your team on this page</p>
+    </div>
+    <article class="flex flex-wrap gap-3 py-6 justify-content-between border-bottom-1 surface-border">
+        <div class="flex-shrink-0">
+            <h3 class="mb-4 mt-0 text-900 font-medium text-xl">Members</h3>
+            <p class="mb-4 mt-0 text-700 font-normal text-base">Manage your member in this project</p>
+            <button pButton pRipple label="Invite a member" class="w-auto"></button>
+        </div>
+        <div class="p-2 surface-100 border-round-xl" style="overflow-x: scroll;">
+            <ul class="list-none p-3 m-0 flex justify-content-between" style="min-width: 50rem;">
+                <li class="w-20rem font-semibold text-sm text-color-secondary pl-1">Member</li>
+                <li class="w-10rem font-semibold text-sm text-color-secondary pl-2">Joined Date</li>
+                <li class="w-10rem font-semibold text-sm text-color-secondary pl-2">Last Active</li>
+                <li class="w-3rem font-semibold text-sm text-color-secondary"></li>
+            </ul>
+            <table style="min-width: 50rem; border-collapse: collapse;" class="shadow-1 surface-100 border-round-xl mt-4 md:mt-0">
+                <tbody class="surface-card">
+                    <tr *ngFor="let member of members; let first = first; let last = last" class="hover:surface-hover cursor-pointer">
+                        <td class="p-3 w-20rem" [ngStyle]="{'border-top-left-radius': first ? '10.5px' : '0', 'border-bottom-left-radius': last ? '10.5px' : '0'}">
+                            <div class="flex align-items-center gap-3">
+                                <p-avatar [image]="'assets/images/blocks/avatars/circle/' + member.image + '.png'" styleClass="mr-2" size="large" shape="circle"></p-avatar>
+                                <div>
+                                    <p class="mt-0 mb-2 font-medium text-lg text-color-primary">{{member.name}}</p>
+                                    <p class="mt-0 mb-2 font-normal text-base text-color-secondary">{{member.username}}</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="w-10rem">
+                            <p class="mt-0 mb-2 font-normal text-base text-color-secondary">{{member.date}}</p>
+                        </td>
+                        <td class="w-10rem">
+                            <p class="mt-0 mb-2 font-normal text-base text-color-secondary">{{member.active}}</p>
+                        </td>
+                        <td class="text-center w-3rem" [ngStyle]="{'border-top-right-radius': first ? '10.5px' : '0', 'border-bottom-right-radius': last ? '10.5px' : '0'}">
+                            <button type="button" pButton icon="pi pi-ellipsis-v" class="p-button-text p-button-secondary" (click)="menu.toggle($event)"></button>
+                            <p-menu #menu appendTo="body" [popup]="true" [model]="items"></p-menu>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </article>
+    <article class="flex flex-wrap gap-3 py-6 justify-content-between border-bottom-1 surface-border">
+        <div class="flex-shrink-0">
+            <h3 class="mb-4 mt-0 text-900 font-medium text-xl">Roles</h3>
+            <p class="mb-4 mt-0 text-700 font-normal text-base">Edit roles in this project</p>
+            <button pButton pRipple label="Add a role" class="w-auto"></button>
+        </div>
+        <div class="p-2 surface-100 border-round-xl" style="overflow-x: scroll;">
+            <ul class="list-none p-3 m-0 flex justify-content-between" style="min-width: 50rem;">
+                <li class="w-20rem font-semibold text-sm text-color-secondary pl-1">Alias Name</li>
+                <li class="w-10rem font-semibold text-sm text-color-secondary pl-2">Last Edit</li>
+                <li class="w-10rem font-semibold text-sm text-color-secondary pl-2">Users</li>
+                <li class="w-3rem font-semibold text-sm text-color-secondary"></li>
+            </ul>
+            <table style="min-width: 50rem; border-collapse: collapse;" class="shadow-1 surface-100 border-round-xl mt-4 md:mt-0">
+                <tbody class="surface-card">
+                    <tr *ngFor="let role of roles; let first = first; let last = last" class="hover:surface-hover cursor-pointer">
+                        <td class="px-3 py-2 w-20rem" [ngStyle]="{'border-top-left-radius': first ? '10.5px' : '0', 'border-bottom-left-radius': last ? '10.5px' : '0'}">
+                            <div class="flex align-items-center">
+                                <span class="border-circle mr-2" [ngClass]="role.color" style="width: 7px; height: 7px;"></span>
+                                <p class="mt-0 mb-0 font-medium text-lg text-color-primary">{{role.alias}}</p>
+                            </div>
+                        </td>
+                        <td class="py-2 w-10rem">
+                            <p class="mt-0 mb-0 font-normal text-base text-color-secondary">{{role.date}}</p>
+                        </td>
+                        <td class="py-2 w-10rem">
+                            <p class="mt-0 mb-0 font-normal text-base text-color-secondary">{{role.users}}</p>
+                        </td>
+                        <td class="py-2 text-center w-3rem" [ngStyle]="{'border-top-right-radius': first ? '10.5px' : '0', 'border-bottom-right-radius': last ? '10.5px' : '0'}">
+                            <button type="button" pButton icon="pi pi-ellipsis-v" class="p-button-text p-button-secondary" (click)="menu2.toggle($event)"></button>
+                            <p-menu #menu2 appendTo="body" [popup]="true" [model]="items"></p-menu>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </article>
 </section>`;
 }
