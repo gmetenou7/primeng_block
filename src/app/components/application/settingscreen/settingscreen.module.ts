@@ -13,15 +13,19 @@ import { FileUploadModule } from 'primeng/fileupload';
 import { CheckboxModule } from 'primeng/checkbox';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { StyleClassModule } from 'primeng/styleclass';
+import { DividerModule } from 'primeng/divider';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
+    FormsModule,
     HttpClientModule,
     SettingScreenRoutingModule,
     InputTextModule,
     InputTextareaModule,
     ButtonModule,
+    DividerModule,
     RippleModule,
     DropdownModule,
     FileUploadModule,
