@@ -15,7 +15,7 @@ export class TestimonialsComponent implements OnInit {
         ];
     }
 
-    block1 = `
+    block1: string = `
 <div class="surface-ground text-center px-4 py-8 md:px-6 lg:px-8">
     <div class="flex flex-column md:flex-row">
         <div class="flex flex-grow-1 mb-4 md:mb-0 md:px-4 py-4 md:py-0">
@@ -63,7 +63,7 @@ export class TestimonialsComponent implements OnInit {
     </div>
 </div>`;
 
-    block2 = `
+    block2: string = `
 <div class="surface-ground text-center px-0 sm:px-4 py-8 md:px-6 lg:px-8">
     <p-carousel [value]="company">
         <ng-template let-person pTemplate="item">
@@ -79,7 +79,7 @@ export class TestimonialsComponent implements OnInit {
     </p-carousel>
 </div>`;
 
-    block3 = `
+    block3: string = `
 <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="text-orange-500 font-medium mb-3 text-center">Exclusive Community</div>
     <div class="text-2xl font-medium mb-5 text-center text-900">Join Our Developer Community</div>
@@ -159,7 +159,7 @@ export class TestimonialsComponent implements OnInit {
     </div>
 </div>`;
 
-    block4 = `
+    block4: string = `
 <div style="background: url('assets/images/blocks/testimonial/testimonials-4.png') no-repeat; background-size: cover" class="px-4 py-8 md:px-6 lg:px-8">
     <div class="flex flex-column lg:flex-row">
         <div class="flex-1 pr-0 lg:pr-6 pb-6 lg:pb-0">
@@ -199,7 +199,7 @@ export class TestimonialsComponent implements OnInit {
     </div>
 </div>`;
 
-    block5 = `
+    block5: string = `
 <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="bg-no-repeat bg-cover bg-center border-round-xl p-7" style="background: url('assets/images/blocks/testimonial/testimonials-5.jpg')">
         <img src="assets/images/blocks/logos/franki-300.svg" alt="Image" class="block mb-4">
@@ -211,7 +211,7 @@ export class TestimonialsComponent implements OnInit {
     </div>
 </div>`;
 
-    block6 = `
+    block6: string = `
 <div class="flex flex-column lg:flex-row justify-content-between align-items-center surface-section">
     <div class="flex flex-column w-full gap-5 px-4 py-8 md:px-6 lg:px-8">
         <h1 class="m-0 text-900 font-bold text-7xl">Designed for Developers</h1>
@@ -262,17 +262,17 @@ export class TestimonialsComponent implements OnInit {
     </div>
 </div>`;
 
-    block7 = `
-<div class="surface-ground text-center px-0 sm:px-4 py-8 md:px-6 lg:px-8">
+    block7: string = `
+<section class="surface-ground text-center px-0 sm:px-4 py-8 md:px-6 lg:px-8">
     <div class="flex justify-content-center text-center mb-4 gap-2">
        <img src="assets/images/blocks/logos/hodly-indigo-500.svg" height="38"/>
     </div>
     <div class="flex justify-content-center">
-        <div class="px-2 md:px-6 text-900 text-5xl font-medium line-height-3" style="max-width: 1350px">“For some unfathomable reason, the response team didn't consider a lack of milk for my cereal as a proper emergency.”</div>
+        <h2 class="px-2 md:px-6 text-900 text-5xl font-medium line-height-3 mb-0" style="max-width: 1350px">“For some unfathomable reason, the response team didn't consider a lack of milk for my cereal as a proper emergency.”</h2>
     </div>
     <img src="assets/images/blocks/testimonial/testimonials-3.png" width="56" height="56" class="mt-4" />
-    <div class="text-900 font-semibold text-xl line-height-3 text-center">Annie Lanphear</div>
-    <div class="text-600 font-normal line-height-1 mt-2 text-md text-center">Software Engineer</div>
-</div>`;
+    <p class="text-900 font-semibold text-xl line-height-3 text-center">Annie Lanphear</p>
+    <p class="text-600 font-normal line-height-1 mt-2 text-md text-center">Software Engineer</p>
+</section>`;
 
 }
