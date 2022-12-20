@@ -502,4 +502,112 @@ export class NavBarComponent {
     </div>
 </div>`;
 
+    block7: string = `
+<section class="h-full bg-cover" style="background-image: url('assets/images/blocks/navbar/navbar-3.jpg');">
+    <div class="py-3 px-6 shadow-2 flex align-items-center justify-content-between relative">
+        <img src="assets/images/blocks/logos/peak-300.svg" alt="Image" height="50">
+        <a pRipple class="cursor-pointer block lg:hidden text-gray-400" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+            <i class="pi pi-bars text-4xl text-white"></i>
+        </a>
+        <nav class="align-items-center flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full left-0 top-100 px-6 lg:px-0 shadow-2 lg:shadow-none lg:bg-transparent" style="background-color: rgba(0, 0, 0, 0.5);">
+            <ul class="list-none p-0 m-0 lg:m-auto flex lg:align-items-center text-gray-400 select-none flex-column lg:flex-row">
+                <li>
+                    <a pRipple class="flex px-0 px-3 xl:px-5 py-3 align-items-center hover:text-blue-600 font-medium transition-colors transition-duration-150 cursor-pointer" 
+                        pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
+                        <span class="text-white font-semibold text-xl">Product</span>
+                    </a>
+                    <div class="lg:absolute hidden origin-top left-0 top-100 w-full p-4 overflow-y-scroll" style="background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(100px); min-height: 30rem;">
+                        <div class="flex h-full flex-wrap">
+                            <div class="flex w-full xl:w-6 flex-wrap p-0 lg:p-5">
+                                <div class="w-full flex lg:w-6 mb-4 lg:mb-0 p-2">
+                                    <div class="p-3 border-round-xl flex justify-content-center align-items-center bg-orange-100 w-3rem h-3rem mr-3">
+                                        <i class="pi pi-bolt text-4xl text-orange-500"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-semibold text-lg lg:text-xl mb-2 mt-0 flex align-items-start">Integrations<span class="p-badge ml-2">New</span></p>
+                                        <p class="text-base lg:text-lg mb-0 mt-0">Non blandit massa enim nec dui nunc mattis.</p>
+                                    </div>
+                                </div>
+                                <div class="w-full flex lg:w-6 mb-4 lg:mb-0 p-2">
+                                    <div class="p-3 border-round-xl flex justify-content-center align-items-center bg-green-100 w-3rem h-3rem mr-3">
+                                        <i class="pi pi-chart-pie text-4xl text-green-500"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-semibold text-lg lg:text-xl mb-2 mt-0 flex align-items-start">Analytics</p>
+                                        <p class="text-base lg:text-lg mb-0 mt-0">Non blandit massa enim nec dui nunc mattis.</p>
+                                    </div>
+                                </div>
+                                <div class="w-full flex lg:w-6 mb-4 lg:mb-0 p-2">
+                                    <div class="p-3 border-round-xl flex justify-content-center align-items-center bg-indigo-100 w-3rem h-3rem mr-3">
+                                        <i class="pi pi-book text-4xl text-indigo-500"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-semibold text-lg lg:text-xl mb-2 mt-0 flex align-items-start">Documentation</p>
+                                        <p class="text-base lg:text-lg mb-0 mt-0">Non blandit massa enim nec dui nunc mattis.</p>
+                                    </div>
+                                </div>
+                                <div class="w-full flex lg:w-6 mb-4 lg:mb-0 p-2">
+                                    <div class="p-3 border-round-xl flex justify-content-center align-items-center bg-pink-100 w-3rem h-3rem mr-3">
+                                        <i class="pi pi-tag text-4xl text-pink-500"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-semibold text-lg lg:text-xl mb-2 mt-0 flex align-items-start">Support</p>
+                                        <p class="text-base lg:text-lg mb-0 mt-0">Non blandit massa enim nec dui nunc mattis.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-full xl:w-6 p-2">
+                                <div class="flex lg:flex-column flex-wrap xl:flex-nowrap py-4 pb-3 mb-3">
+                                    <div class="w-full px-2">
+                                        <p class="text-white font-semibold text-base mt-0 mb-2 xl:mb-0">FEATURED</p>
+                                    </div>
+                                    <div class="p-2 lg:w-full flex flex-column lg:flex-row xl:align-items-center" style="min-width:10rem">
+                                        <img src="assets/images/blocks/navbar/navbar-1.jpeg" class="h-5rem w-10rem xl:h-5rem border-round mr-2 mb-4 lg:mb-0" alt="Image">
+                                        <div class="ml-2 w-8">
+                                            <p class="mb-2 mt-0 text-white font-medium text-lg lg:text-xl">Learn how to use Peak in 10 mins</p>
+                                            <p class="mt-0 mb-0 font-normal text-base lg:text-lg">Enim diam vulputate ut pharetra sit. Eget arcu dictum varius duis at consectetur lorem donec.</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 lg:w-full flex flex-column lg:flex-row xl:align-items-center" style="min-width: 10rem;">
+                                        <img src="assets/images/blocks/navbar/navbar-2.jpeg" class="h-5rem w-10rem xl:h-5rem border-round mr-2 mb-4 lg:mb-0" alt="Image">
+                                        <div class="ml-2 w-8">
+                                            <p class="mb-2 mt-0 text-white font-medium text-lg lg:text-xl">Reimagining development lifecycles</p>
+                                            <p class="mt-0 mb-0 font-normal text-base lg:text-lg">Enim diam vulputate ut pharetra sit. Eget arcu dictum varius duis at consectetur lorem donec.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a pRipple class="flex align-items-center px-0 px-3 xl:px-5 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150 cursor-pointer">
+                        <span class="text-white font-semibold text-xl">Solutions</span>
+                    </a>
+                </li>
+                <li>
+                    <a pRipple class="flex align-items-center px-0 px-3 xl:px-5 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150 cursor-pointer">
+                        <span class="text-white font-semibold text-xl">Company</span>
+                    </a>
+                </li>
+                <li>
+                    <a pRipple class="flex align-items-center px-0 px-3 xl:px-5 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150 cursor-pointer">
+                        <span class="text-white font-semibold text-xl">Careers</span>
+                        <span class="text-sm text-white bg-blue-500 flex justify-content-center align-items-center border-circle ml-2" style="width: 1.25rem; height: 1.25rem">3</span>
+                    </a>
+                </li>
+                <li>
+                    <a pRipple class="flex align-items-center px-0 px-3 xl:px-5 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150 cursor-pointer">
+                        <span class="text-white font-semibold text-xl">Pricing</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="flex justify-content-between lg:block border-top-1 lg:border-top-none py-3 lg:py-0 mt-3 lg:mt-0" style="border-color: rgba(222, 226, 230, 0.15)">
+                <button pButton pRipple label="Sign In" icon="pi pi-chevron-right" iconPos="right" class="p-button-rounded font-bold"></button>
+            </div>
+        </nav>
+    </div>
+</section>`;
+
 }
