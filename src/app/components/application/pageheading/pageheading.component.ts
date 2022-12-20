@@ -392,7 +392,7 @@ export class PageHeadingComponent {
 
     block14: string = `
 <section class="surface-section">
-    <div class="h-16rem bg-cover" style="background: url('assets/images/blocks/pageheading/cover-2.jpeg');"></div>
+    <div class="h-16rem bg-cover" style="background: url('assets/images/blocks/pageheading/cover-2.jpg');"></div>
     <div class="flex flex-column gap-3 md:flex-row justify-content-between px-4 py-4 md:px-6 lg:px-8">
         <nav>
             <ul class="flex list-none align-items-center gap-2 text-600 text-base line-height-3 p-0 m-0">
