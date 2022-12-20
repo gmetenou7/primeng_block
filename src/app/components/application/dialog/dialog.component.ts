@@ -11,6 +11,46 @@ export class DialogComponent {
 
     visible3: boolean = false;
 
+    visible4: boolean = false;
+
+    visible5: boolean = false;
+
+    visible6: boolean = false;
+
+    visible7: boolean = false;
+
+    val1: number;
+    
+    val2: number;
+    
+    val3: number;
+    
+    val4: number;
+    
+    val5: number;
+    
+    val6: number;
+
+    selectedMember: any = {name: 'Robert Fox', avatar: 'avatar-m-13' };
+
+    members = [
+        {name: 'Robert Fox', avatar: 'avatar-m-11' },
+        {name: 'John Walter', avatar: 'avatar-m-12' },
+        {name: 'Jane Doe', avatar: 'avatar-f-12' }
+    ];
+
+    payment: string = 'Visa';
+
+    payment2: string = 'MasterCard';
+
+    checked1: boolean = true;
+
+    checked2: boolean = false;
+    
+    checked3: boolean = false;
+
+    checked4: boolean = false;
+
     block1 = `
 <button pButton pRipple label="Display" (click)="visible1 = true"></button>
 
@@ -78,4 +118,184 @@ export class DialogComponent {
     </ng-template>
 </p-dialog>`;
 
+    block4: string = `
+<p-dialog [(visible)]="visible4" [modal]="false" [closable]="false" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '40vw', height: '22rem'}">
+    <section class="flex flex-column w-full mt-4">
+        <div class="flex w-full justify-content-between mb-4">
+            <span class="w-4rem h-4rem border-circle flex justify-content-center align-items-center bg-blue-100"><i class="pi pi-users text-blue-700 text-4xl"></i></span>
+            <button pButton pRipple type="button" icon="pi pi-times" class="p-button-rounded p-button-secondary p-button-text align-self-start" (click)="visible4 = false"></button>
+        </div>
+        <p class="font-semibold text-xl mt-0 mb-2 text-900">Invite Team Member</p>
+        <p class="font-normal text-base mt-0 mb-3 text-600">Sagittis eu volutpat odio facilisis mauris sit amet.</p>
+        <p-dropdown [options]="members" [(ngModel)]="selectedMember" optionLabel="name" appendTo="body" styleClass="w-full border-round-lg">
+            <ng-template pTemplate="selectedItem">
+                <div class="flex align-items-center" *ngIf="selectedMember">
+                    <img [src]="'assets/images/blocks/avatars/circle/' + selectedMember.avatar +'.png'" class="mr-3" style="height: 1.50rem; width: 1.50rem;"/>
+                    <p class="mt-0 mb-0 font-normal text-base text-600">{{selectedMember.name}}</p>
+                </div>
+            </ng-template>
+            <ng-template let-member pTemplate="item">
+                <div class="flex align-items-center">
+                    <img [src]="'assets/images/blocks/avatars/circle/' + member.avatar +'.png'" class="mr-3" style="height: 1.50rem; width: 1.50rem;"/>
+                    <p class="mt-0 mb-0 font-normal text-base text-600">{{member.name}}</p>
+                </div>
+            </ng-template>
+        </p-dropdown>
+    </section>
+    <ng-template pTemplate="footer">
+        <div class="pt-3 flex">
+            <button pButton pRipple (click)="visible4 = false" label="Cancel" class="p-button-text flex-grow-1"></button>
+            <button pButton pRipple (click)="visible4 = false" label="Invite" class="flex-grow-1"></button>
+        </div>
+    </ng-template>
+</p-dialog>`;
+
+    block5: string = `
+<p-dialog [(visible)]="visible5" [modal]="false" [closable]="false" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '52vw', height: '24rem'}">
+    <section class="flex flex-column w-full mt-4">
+        <div class="flex w-full justify-content-between mb-4">
+            <span class="w-4rem h-4rem border-circle flex justify-content-center align-items-center bg-blue-100"><i class="pi pi-lock text-blue-700 text-4xl"></i></span>
+            <button pButton pRipple type="button" icon="pi pi-times" class="p-button-rounded p-button-secondary p-button-text align-self-start" (click)="visible5 = false"></button>
+        </div>
+        <p class="font-semibold text-xl mt-0 mb-2 text-900">Authenticate Your Account</p>
+        <p class="font-normal text-base mt-0 mb-3 text-600">Protecting your profile is our first priority. Please confirm your account by entering the authorization code sent to ***-***1052.</p>
+        <div class="flex justify-content-between w-full align-items-center mb-4 gap-2">
+            <p-inputNumber [(ngModel)]="val1" inputStyleClass="w-6rem text-center" [maxlength]="1"></p-inputNumber>
+            <p-inputNumber [(ngModel)]="val2" inputStyleClass="w-6rem text-center" [maxlength]="1"></p-inputNumber>
+            <p-inputNumber [(ngModel)]="val3" inputStyleClass="w-6rem text-center" [maxlength]="1"></p-inputNumber>
+            <p-inputNumber [(ngModel)]="val4" inputStyleClass="w-6rem text-center" [maxlength]="1"></p-inputNumber>
+            <p-inputNumber [(ngModel)]="val5" inputStyleClass="w-6rem text-center" [maxlength]="1"></p-inputNumber>
+            <p-inputNumber [(ngModel)]="val6" inputStyleClass="w-6rem text-center" [maxlength]="1"></p-inputNumber>
+        </div>
+    </section>
+    <ng-template pTemplate="footer">
+        <div class="pt-3 flex justify-content-between align-items-center">
+            <div class="text-left">
+                <p class="font-normal text-base text-600 mb-0 mt-0">It may take a minute to receive.</p>
+                <a class="font-normal text-base text-primary-500 mb-0 mt-0 cursor-pointer">Resend a new code.</a>
+            </div>
+            <button pButton pRipple (click)="visible5 = false" label="Submit Code" class="m-0"></button>
+        </div>
+    </ng-template>
+</p-dialog>`;
+
+    block6: string = `
+<p-dialog [(visible)]="visible6" [modal]="false" [closable]="false" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '45vw'}">
+    <section class="flex flex-column w-full mt-4">
+        <div class="flex w-full justify-content-between mb-4">
+            <span class="w-4rem h-4rem border-circle flex justify-content-center align-items-center bg-blue-100"><i class="pi pi-lock text-blue-700 text-4xl"></i></span>
+            <button pButton pRipple type="button" icon="pi pi-times" class="p-button-rounded p-button-secondary p-button-text align-self-start" (click)="visible6 = false"></button>
+        </div>
+        <p class="font-semibold text-xl mt-0 mb-4 text-900">Manage Payment Info</p>
+        <div class="flex justify-content-between w-full align-items-center border-1 p-3 border-round surface-border mb-2" [ngClass]="{'bg-primary-50': payment === 'Visa'}" (click)="payment = 'Visa'">
+            <div>
+                <div class="flex align-items-center mb-3">
+                    <img src="assets/images/blocks/dialog/dialog-1.png" alt="Image" class="mr-2 border-round w-3rem">
+                    <p class="font-medium text-xl mt-0 mb-0 mr-2" [ngClass]="{'text-900': payment !== 'Visa', 'text-black-alpha-90': payment === 'Visa'}">Visa ending in 1234</p>
+                    <span class="p-tag">Default</span>
+                </div>
+                <p class="font-medium text-base mt-0 mb-0" [ngClass]="{'text-600': payment !== 'Visa', 'text-black-alpha-60': payment === 'Visa'}">Expires 12/2038</p>
+            </div>
+            <p-radioButton name="payment" value="Visa" [(ngModel)]="payment" inputId="payment1"></p-radioButton>
+        </div>
+        <div class="flex justify-content-between w-full align-items-center border-1 p-3 border-round surface-border mb-2" [ngClass]="{'bg-primary-50': payment === 'MasterCard'}" (click)="payment = 'MasterCard'">
+            <div>
+                <div class="flex align-items-center mb-3">
+                    <img src="assets/images/blocks/dialog/dialog-2.png" alt="Image" class="mr-2 border-round w-3rem">
+                    <p class="font-medium text-xl mt-0 mb-0" [ngClass]="{'text-900': payment !== 'MasterCard', 'text-black-alpha-90': payment === 'MasterCard'}">MasterCard ending in 1234</p>
+                </div>
+                <p class="font-medium text-base mt-0 mb-0" [ngClass]="{'text-600': payment !== 'MasterCard', 'text-black-alpha-60': payment === 'MasterCard'}">Expires 07/2025</p>
+            </div>
+            <p-radioButton name="payment" value="MasterCard" [(ngModel)]="payment" inputId="payment1"></p-radioButton>
+        </div>
+        <div class="flex justify-content-between w-full align-items-center border-1 p-3 border-round surface-border opacity-50" [ngClass]="{'bg-primary-50': payment === 'Other'}">
+            <div>
+                <div class="flex align-items-center mb-3">
+                    <img src="assets/images/blocks/dialog/dialog-1.png" alt="Image" class="mr-2 border-1 surface-border border-round w-3rem">
+                    <p class="font-medium text-xl text-900 mt-0 mb-0 mr-2">Visa ending in 1234</p>
+                    <span class="p-tag bg-red-500 text-white">Expired</span>
+                </div>
+                <p class="font-medium text-base text-600 mt-0 mb-0">Expires 01/2022</p>
+            </div>
+            <p-radioButton name="payment" value="Other" [(ngModel)]="payment" inputId="payment1" [disabled]="true"></p-radioButton>
+        </div>
+    </section>
+    <ng-template pTemplate="footer">
+        <div class="flex -mt-3 justify-content-between align-items-center">
+            <button pButton pRipple (click)="visible6 = false" icon="pi pi-plus" label="Add Payment Method" class="p-button-text m-0"></button>
+            <button pButton pRipple (click)="visible6 = false" label="Submit Code" class="m-0"></button>
+        </div>
+    </ng-template>
+</p-dialog>`;
+
+    block7: string = `
+<p-dialog [(visible)]="visible7" [modal]="false" [closable]="false" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '45vw'}">
+    <section class="flex flex-column w-full mt-4">
+        <div class="flex w-full justify-content-between align-items-center mb-4">
+            <span class="font-semibold text-base text-600">Notes / <span class="text-900">Daily</span></span>
+            <button pButton pRipple type="button" icon="pi pi-times text-sm" class="w-2rem h-2rem p-button-rounded p-button-secondary p-button-text text-600" (click)="visible7 = false"></button>
+        </div>
+        <div class="flex justify-content-between align-items-center w-full mb-4">
+            <p class="font-semibold text-xl mt-0 mb-0 text-900"><span class="pi pi-bolt text-xl text-yellow-600"></span> Extend Functional Coverage</p>
+            <button pButton pRipple type="button" icon="pi pi-pencil text-sm" class="w-2rem h-2rem p-button-rounded p-button-text surface-200 text-600"></button>
+        </div>
+        <table>
+            <tr style="height:2.5rem">
+                <td class="font-medium text-base text-600">Status</td>
+                <td class="font-medium text-base text-900">In Progress</td>
+            </tr>
+            <tr style="height:2.5rem">
+                <td class="font-medium text-base text-600">Assignee</td>
+                <td>
+                    <div class="flex align-items-center">
+                        <img src="assets/images/blocks/avatars/circle/avatar-m-11.png" alt="Image" class="inline mr-2" style="height: 1.5rem; width: 1.5rem;">
+                        <span class="font-medium text-base text-900">John Walter</span>
+                    </div>
+                </td>
+            </tr>
+            <tr style="height:2.5rem">
+                <td class="font-medium text-base text-600">Due Date</td>
+                <td class="font-medium text-base text-900">Oct 21 at 2:00 PM</td>
+            </tr>
+            <tr style="height:2.5rem">
+                <td class="font-medium text-base text-600">Label</td>
+                <td>
+                    <span class="p-tag bg-orange-500 mr-2">Product</span>
+                    <span class="p-tag bg-green-500">Quality</span>
+                </td>
+            </tr>
+        </table>
+        <div class="border-y-1 surface-border py-4 my-4">
+            <p class="font-medium text-lg text-700 mt-0">Description</p>
+            <p class="text-base text-900 mt-0 mb-0">Donec enim diam vulputate ut. Tellus mauris a diam maecenas. At varius vel pharetra vel turpis. Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus.</p>
+        </div>
+        <div class="flex flex-column">
+            <div class="flex justify-content-between align-items-center w-full">
+                <p class="font-medium text-lg text-700 mt-0">Checklist</p>
+                <span class="text-500"><i class="pi pi-check-square text-lg mr-2"></i>1/2</span>
+            </div>
+            <div class="field-checkbox">
+                <p-checkbox [(ngModel)]="checked1" [binary]="true" inputId="binary1"></p-checkbox>
+                <label for="binary">Placerat in egestas erat imperdiet.</label>
+            </div>
+            <div class="field-checkbox">
+                <p-checkbox [(ngModel)]="checked2" [binary]="true" inputId="binary2"></p-checkbox>
+                <label for="binary">Cursus euismod quis viverra nibh.</label>
+            </div>
+            <div class="field-checkbox">
+                <p-checkbox [(ngModel)]="checked3" [binary]="true" inputId="binary3"></p-checkbox>
+                <label for="binary">Malesuada fames ac turpis egestas integer eget.</label>
+            </div>
+            <div class="field-checkbox mb-0">
+                <p-checkbox [(ngModel)]="checked4" [binary]="true" inputId="binary4"></p-checkbox>
+                <label for="binary">Nisl suscipit adipiscing bibendum est ultricies integer quis.</label>
+            </div>
+        </div>
+    </section>
+    <ng-template pTemplate="footer">
+        <div class="flex border-top-1 pt-5 surface-border justify-content-end align-items-center">
+            <button pButton pRipple (click)="visible7 = false" icon="pi pi-check" label="Save" class="m-0"></button>
+        </div>
+    </ng-template>
+</p-dialog>`;
 }

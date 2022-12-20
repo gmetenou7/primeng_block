@@ -19,7 +19,11 @@ export class GridListComponent {
         }];
     }
 
-    block1 = `
+    val1: number = 4;
+    
+    val2: number = 4;
+
+    block1: string = `
 <div class="surface-ground">
     <div class="grid">
         <div class="col-12 md:col-6 xl:col-4 p-3">
@@ -121,7 +125,7 @@ export class GridListComponent {
     </div>
 </div>`;
 
-    block2 = `
+    block2: string = `
 <div class="surface-ground">
     <div class="grid">
         <div class="col-12 md:col-6 xl:col-3 p-3">
@@ -239,7 +243,7 @@ export class GridListComponent {
     </div>
 </div>`;
 
-    block3 = `
+    block3: string = `
 <div class="surface-ground">
     <div class="grid">
         <div class="col-12 md:col-6 xl:col-3 p-3">
@@ -365,7 +369,7 @@ export class GridListComponent {
     </div>
 </div>`;
 
-    block4 = `
+    block4: string = `
 <div class="surface-ground">
     <div class="grid">
         <div class="col-12 lg:col-4 p-3">
@@ -416,7 +420,7 @@ export class GridListComponent {
     </div>
 </div>`;
 
-    block5 = `
+    block5: string = `
 <div class="surface-ground">
     <div class="grid">
         <div class="col-12 md:col-6 xl:col-3 p-3">
@@ -630,7 +634,7 @@ export class GridListComponent {
     </div>
 </div>`;
 
-    block6 = `
+    block6: string = `
 <div class="surface-ground">
     <div class="grid">
         <div class="col-12 lg:col-4 p-3">
@@ -687,7 +691,7 @@ export class GridListComponent {
     </div>
 </div>`;
 
-    block7 = `
+    block7: string = `
 <div class="shadow-2 border-round surface-card p-4">
     <div class="flex align-items-center justify-content-between mb-4">
         <span class="text-xl font-medium text-900">Files</span>
@@ -805,7 +809,7 @@ export class GridListComponent {
     </div>
 </div>`;
 
-    block8 = `
+    block8: string = `
 <div class="grid shadow-2 border-round surface-card">
     <div class="col-12 md:col-6 md:border-right-1 border-bottom-1 surface-border">
         <div class="m-3">
@@ -874,5 +878,133 @@ export class GridListComponent {
         </div>
     </div>
 </div>`;
+
+    block9: string = `
+<section class="grid">
+    <div class="col-12 xl:col-6">
+        <article class="flex flex-column md:flex-row w-full gap-3 p-3 border-round border-1 surface-border surface-card">
+            <div class="relative">
+                <img src="assets/images/blocks/hotels/h4.jpeg" alt="Image" class="border-round w-full h-full md:w-14rem md:h-14rem">
+                <p class="absolute px-2 py-1 border-round-lg text-sm font-normal text-white mt-0 mb-0" style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px); top: 3%; left: 3%;">Superhost</p>
+            </div>
+            <div class="flex flex-column w-full gap-3">
+                <div class="flex w-full justify-content-between align-items-center">
+                    <p class="font-semibold text-lg mt-0 mb-0 mr-3">Private room in Amsterdam</p>
+                    <p-rating [ngModel]="val1" readonly="true" stars="5" [cancel]="false"></p-rating>
+                </div>
+                <p class="font-normal text-lg text-600 mt-0 mb-0">Comfortable single room</p>
+                <div class="flex flex-wrap justify-content-between md:h-2rem mt-auto">
+                    <p class="text-base flex align-items-center text-900 mt-0 mb-1">
+                        <i class="pi pi-users mr-2"></i>
+                        <span class="font-medium">2 Guests</span>  
+                    </p>
+                    <p class="text-base flex align-items-center text-900 mt-0 mb-1">
+                        <i class="pi pi-wifi mr-2"></i>
+                        <span class="font-medium">1 GBit</span>  
+                    </p>
+                    <p class="text-base flex align-items-center text-900 mt-0 mb-1">
+                        <i class="pi pi-check-circle mr-2"></i>
+                        <span class="font-medium">Verified</span>  
+                    </p>
+                </div>
+                <p class="font-semibold text-4xl text-900 mt-0 mb-2">$1,140</p>
+            </div>
+        </article>
+    </div>
+    <div class="col-12 xl:col-6">
+        <article class="flex flex-column md:flex-row w-full gap-3 p-3 border-round border-1 surface-border surface-card">
+            <div class="relative">
+                <img src="assets/images/blocks/hotels/h5.jpeg" alt="Image" class="border-round w-full h-full md:w-14rem md:h-14rem">
+                <p class="absolute px-2 py-1 border-round-lg text-sm font-normal text-white mt-0 mb-0" style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px); top: 3%; left: 3%;">Superhost</p>
+            </div>
+            <div class="flex flex-column w-full gap-3">
+                <div class="flex w-full justify-content-between align-items-center">
+                    <p class="font-semibold text-lg mt-0 mb-0 mr-3">Home in Amsterdam</p>
+                    <p-rating [ngModel]="val1" readonly="true" stars="5" [cancel]="false"></p-rating>
+                </div>
+                <p class="font-normal text-lg text-600 mt-0 mb-0">Large comfortable room in Sarphatistraat</p>
+                <div class="flex flex-wrap justify-content-between md:h-2rem mt-auto">
+                    <p class="text-base flex align-items-center text-900 mt-0 mb-1">
+                        <i class="pi pi-users mr-2"></i>
+                        <span class="font-medium">2 Guests</span>  
+                    </p>
+                    <p class="text-base flex align-items-center text-900 mt-0 mb-1">
+                        <i class="pi pi-wifi mr-2"></i>
+                        <span class="font-medium">1 GBit</span>  
+                    </p>
+                    <p class="text-base flex align-items-center text-900 mt-0 mb-1">
+                        <i class="pi pi-check-circle mr-2"></i>
+                        <span class="font-medium">Verified</span>  
+                    </p>
+                </div>
+                <div class="flex">
+                    <p class="font-semibold text-4xl text-900 mt-0 mb-2 mr-2">$510</p>
+                    <span class="text-sm text-gray-500">$</span><p class="font-semibold text-4xl text-900 mt-0 mb-2 line-through text-gray-500">850</p>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="col-12 xl:col-6">
+        <article class="flex flex-column md:flex-row w-full gap-3 p-3 border-round border-1 surface-border surface-card">
+            <div class="relative">
+                <img src="assets/images/blocks/hotels/h6.jpeg" alt="Image" class="border-round w-full h-full md:w-14rem md:h-14rem">
+                <p class="absolute px-2 py-1 border-round-lg text-sm font-normal text-white mt-0 mb-0" style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px); top: 3%; left: 3%;">Superhost</p>
+            </div>
+            <div class="flex flex-column w-full gap-3">
+                <div class="flex w-full justify-content-between align-items-center">
+                    <p class="font-semibold text-lg mt-0 mb-0 mr-3">Luxurious spacious suite Jordan</p>
+                    <p-rating [ngModel]="val1" readonly="true" stars="5" [cancel]="false"></p-rating>
+                </div>
+                <p class="font-normal text-lg text-600 mt-0 mb-0">Guest suite</p>
+                <div class="flex flex-wrap justify-content-between md:h-2rem mt-auto">
+                    <p class="text-base flex align-items-center text-900 mt-0 mb-1">
+                        <i class="pi pi-users mr-2"></i>
+                        <span class="font-medium">2 Guests</span>  
+                    </p>
+                    <p class="text-base flex align-items-center text-900 mt-0 mb-1">
+                        <i class="pi pi-wifi mr-2"></i>
+                        <span class="font-medium">500 MBit</span>  
+                    </p>
+                    <p class="text-base flex align-items-center text-900 mt-0 mb-1">
+                        <i class="pi pi-check-circle mr-2"></i>
+                        <span class="font-medium">Verified</span>  
+                    </p>
+                </div>
+                <p class="font-semibold text-4xl text-900 mt-0 mb-2">$980</p>
+            </div>
+        </article>
+    </div>
+    <div class="col-12 xl:col-6">
+        <article class="flex flex-column md:flex-row w-full gap-3 p-3 border-round border-1 surface-border surface-card">
+            <div class="relative">
+                <img src="assets/images/blocks/hotels/h7.jpeg" alt="Image" class="border-round w-full h-full md:w-14rem md:h-14rem">
+                <p class="absolute px-2 py-1 border-round-lg text-sm font-normal text-white mt-0 mb-0" style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px); top: 3%; left: 3%;">Superhost</p>
+            </div>
+            <div class="flex flex-column w-full gap-3">
+                <div class="flex w-full justify-content-between align-items-center">
+                    <p class="font-semibold text-lg mt-0 mb-0 mr-3">Beautiful Studio by the Amstel</p>
+                    <p-rating [ngModel]="val1" readonly="true" stars="5" [cancel]="false"></p-rating>
+                </div>
+                <p class="font-normal text-lg text-600 mt-0 mb-0">Loft in Stadsdeel Oost</p>
+                <div class="flex flex-wrap justify-content-between md:h-2rem mt-auto">
+                    <p class="text-base flex align-items-center text-900 mt-0 mb-1">
+                        <i class="pi pi-users mr-2"></i>
+                        <span class="font-medium">4 Guests</span>  
+                    </p>
+                    <p class="text-base flex align-items-center text-900 mt-0 mb-1">
+                        <i class="pi pi-wifi mr-2"></i>
+                        <span class="font-medium">10 GBit</span>  
+                    </p>
+                    <p class="text-base flex align-items-center text-900 mt-0 mb-1">
+                        <i class="pi pi-check-circle mr-2"></i>
+                        <span class="font-medium">Verified</span>  
+                    </p>
+                </div>
+                <p class="font-semibold text-4xl text-900 mt-0 mb-2">$1,250</p>
+            </div>
+        </article>
+    </div>
+
+</section>`;
 
 }
