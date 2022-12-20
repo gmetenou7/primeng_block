@@ -242,7 +242,7 @@ export class DialogComponent {
 <p-dialog [(visible)]="visible7" [modal]="false" [closable]="false" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '45vw'}">
     <section class="flex flex-column w-full mt-4">
         <div class="flex w-full justify-content-between mb-4">
-            <span class="w-4rem h-4rem border-circle flex justify-content-center align-items-center bg-blue-100"><i class="pi pi-lock text-blue-700 text-4xl"></i></span>
+            <span class="w-4rem h-4rem border-circle flex justify-content-center align-items-center bg-blue-100"><i class="pi pi-credit-card text-blue-700 text-4xl"></i></span>
             <button pButton pRipple type="button" icon="pi pi-times" class="p-button-rounded p-button-secondary p-button-text align-self-start" (click)="visible7 = false"></button>
         </div>
         <p class="font-semibold text-xl mt-0 mb-4 text-900">Manage Payment Info</p>
@@ -282,7 +282,7 @@ export class DialogComponent {
     <ng-template pTemplate="footer">
         <div class="flex -mt-3 justify-content-between align-items-center">
             <button pButton pRipple (click)="visible7 = false" icon="pi pi-plus" label="Add Payment Method" class="p-button-text m-0"></button>
-            <button pButton pRipple (click)="visible7 = false" label="Submit Code" class="m-0"></button>
+            <button pButton pRipple (click)="visible7 = false" icon="pi pi-check" label="Save" class="m-0"></button>
         </div>
     </ng-template>
 </p-dialog>`;
