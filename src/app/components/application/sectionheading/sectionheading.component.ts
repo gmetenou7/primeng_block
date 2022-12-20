@@ -76,8 +76,48 @@ export class SectionHeadingComponent implements OnInit {
     </div>
 </div>`;
 
-    block7: string = ``;
+    block7: string = `
+<section class="surface-section px-4 py-5 md:px-6 lg:px-8">
+    <div class="flex flex-wrap gap-3 justify-content-between align-items-center">
+        <div class="flex flex-column gap-2">
+            <h1 class="m-0 text-900 text-3xl font-medium line-height-3">Settings</h1>
+            <p class="mt-0 mb-0 text-600 text-lg">Set your preferences</p>
+        </div>
+        <div class="flex flex-wrap align-items-center gap-3">
+            <button pButton pRipple label="Upgrade to Pro" class="p-button-text"></button>
+            <button pButton pRipple label="Save Changes"></button>
+            <button pButton pRipple icon="pi pi-ellipsis-v" class="p-button-outlined"></button>
+        </div>
+    </div>
+    <div class="mt-5">
+        <ul class="flex align-items-center overflow-x-auto gap-3 px-2 py-3 list-none border-bottom-1 surface-border">
+            <li><button pButton pRipple icon="pi pi-user" (click)="activeTabAction = 'profile'" label="Profile" [ngClass]="{'p-button-text text-700': activeTabAction !== 'profile'}"></button></li>
+            <li><button pButton pRipple icon="pi pi-globe" (click)="activeTabAction = 'website'" label="Website" [ngClass]="{'p-button-text text-700': activeTabAction != 'website'}"></button></li>
+            <li><button pButton pRipple icon="pi pi-shield" (click)="activeTabAction = 'privacy'" label="Privacy" [ngClass]="{'p-button-text text-700': activeTabAction != 'privacy'}"></button></li>
+            <li><button pButton pRipple icon="pi pi-wallet" (click)="activeTabAction = 'payment'" label="Payments" [ngClass]="{'p-button-text text-700': activeTabAction != 'payment'}"></button></li>
+            <li><button pButton pRipple icon="pi pi-cog" (click)="activeTabAction = 'applications'" label="Applications" [ngClass]="{'p-button-text text-700': activeTabAction != 'applications'}"></button></li>
+        </ul>
+    </div>
+</section>`;
 
-    block8: string = ``;
+    block8: string = `
+<section class="surface-section px-4 py-5 md:px-6 lg:px-8">
+    <div class="flex flex-column lg:flex-row gap-3 justify-content-between lg:align-items-center border-primary py-5" style="border-top: 7px solid;">
+        <div class="flex flex-column gap-2">
+            <div class="flex align-items-center gap-2">
+                <h1 class="m-0 font-semibold text-900 text-xl line-height-3">Notifications</h1>
+                <p-badge [value]="11" severity="warning"></p-badge>
+            </div>
+            <p class="mb-0 mt-0 text-base text-600">Manage your notifications and permissions.</p>
+        </div>
+        <div class="flex align-items-center gap-2">
+            <span class="p-buttonset">
+                <button pButton pRipple label="Do Not Disturb"></button>
+                <button pButton pRipple label="Notify" class="p-button-outlined"></button>
+            </span>
+            <button pButton pRipple icon="pi pi-ellipsis-v" class="p-button-text"></button>
+        </div>
+    </div>
+</section>`;
 
 }
