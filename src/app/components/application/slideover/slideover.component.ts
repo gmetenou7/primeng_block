@@ -16,7 +16,7 @@ export class SlideOverComponent {
 
     user: number = 2;
 
-    block1 = `
+    block1: string = `
 <button pButton pRipple label="Display" icon="pi pi-arrow-right" 
     pStyleClass="#slideover-1" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true"></button>
 
@@ -30,7 +30,7 @@ export class SlideOverComponent {
     </div>
 </div>`;
 
-    block2 = `
+    block2: string = `
 <button pButton pRipple label="Display" icon="pi pi-arrow-left" 
     pStyleClass="#slideover-2" enterClass="hidden" enterActiveClass="fadeinright" leaveToClass="hidden" leaveActiveClass="fadeoutright" [hideOnOutsideClick]="true"></button>
 
@@ -44,7 +44,7 @@ export class SlideOverComponent {
     </div>
 </div>`;
 
-    block3 = `
+    block3: string = `
 <button pButton pRipple label="Display" icon="pi pi-arrow-left" 
     pStyleClass="#slideover-3" enterClass="hidden" enterActiveClass="fadeinright" leaveToClass="hidden" leaveActiveClass="fadeoutright" [hideOnOutsideClick]="true"></button>
 
@@ -58,7 +58,7 @@ export class SlideOverComponent {
     </div>
 </div>`;
 
-    block4 = `
+    block4: string = `
 <button pButton pRipple label="Display" icon="pi pi-arrow-left" 
     pStyleClass="#slideover-4" enterClass="hidden" enterActiveClass="fadeinright" leaveToClass="hidden" leaveActiveClass="fadeoutright" [hideOnOutsideClick]="true"></button>
 
@@ -77,7 +77,7 @@ export class SlideOverComponent {
     </div>
 </div>`;
 
-    block5 = `
+    block5: string = `
 <button pButton pRipple label="Display" icon="pi pi-arrow-left"
     pStyleClass="#slideover-5" enterClass="hidden" enterActiveClass="fadeinright" leaveToClass="hidden" leaveActiveClass="fadeoutright" [hideOnOutsideClick]="true"></button>
 
@@ -95,7 +95,7 @@ export class SlideOverComponent {
     </div>
 </div>`;
 
-    block6 = `
+    block6: string = `
 <button pButton pRipple label="Display" icon="pi pi-arrow-left"
     pStyleClass="#slideover-6" enterClass="hidden" enterActiveClass="fadeinright" leaveToClass="hidden" leaveActiveClass="fadeoutright" [hideOnOutsideClick]="true"></button>
 
@@ -208,7 +208,7 @@ export class SlideOverComponent {
     </div>
 </div>`;
 
-    block7 = `
+    block7: string = `
 <button pButton pRipple label="Display" icon="pi pi-arrow-left"
     pStyleClass="#slideover-7" enterClass="hidden" enterActiveClass="fadeinright" leaveToClass="hidden" leaveActiveClass="fadeoutright" [hideOnOutsideClick]="true"></button>
 
@@ -291,7 +291,7 @@ export class SlideOverComponent {
     </div>
 </div>`;
 
-    block8 = `
+    block8: string = `
 <button pButton pRipple label="Display" icon="pi pi-arrow-right" 
     pStyleClass="#slideover-8" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true"></button>
 
@@ -356,7 +356,7 @@ export class SlideOverComponent {
     </div>
 </div>`;
 
-    block9 = `
+    block9: string = `
 <button pButton pRipple label="Display" icon="pi pi-arrow-left" 
     pStyleClass="#slideover-9" enterClass="hidden" enterActiveClass="fadeinright" leaveToClass="hidden" leaveActiveClass="fadeoutright" [hideOnOutsideClick]="true"></button>
 
@@ -423,7 +423,7 @@ export class SlideOverComponent {
     </div>
 </div>`;
 
-    block10 = `
+    block10: string = `
 <button pButton pRipple label="Display" icon="pi pi-arrow-left"
     pStyleClass="#slideover-10" enterClass="hidden" enterActiveClass="fadeinright" leaveToClass="hidden" leaveActiveClass="fadeoutright" [hideOnOutsideClick]="true"></button>
 
@@ -601,5 +601,73 @@ export class SlideOverComponent {
         </p-tabView>
     </div>
 </div>`;
+
+    block11: string = `
+<button pButton pRipple label="Display" icon="pi pi-arrow-left" pStyleClass="#slideover-11" enterClass="hidden" enterActiveClass="fadeinright" leaveToClass="hidden" leaveActiveClass="fadeoutright" [hideOnOutsideClick]="true"></button>
+
+<section id="slideover-11" class="hidden surface-overlay h-full absolute top-0 right-0 shadow-2 w-24rem">
+    <div class="flex flex-column justify-content-between p-4 h-full">
+        <div>
+            <div class="flex align-items-start bg-primary-700 justify-content-between p-3 mb-4">
+                <div>
+                    <div class="text-0 text-xl font-medium mb-1">Title Placeholder</div>
+                    <p class="m-0 p-0 line-height-3 text-primary-200 text-sm">
+                        Nunc mi ipsum faucibus vitae aliquet nec. Lacus sed viverra tellus in hac habitasse.
+                    </p>
+                </div>
+                <div>
+                    <button pButton pRipple icon="pi pi-times" class="p-button-rounded p-button-text p-button-plain text-0" pStyleClass="#slideover-11" leaveToClass="hidden" leaveActiveClass="fadeoutright"></button>
+                </div>
+            </div>
+            <div>
+                <span class="font-semibold text-color">Project Name</span>
+                <div class="p-inputgroup mt-2">
+                    <span class="p-inputgroup-addon"><i class="pi pi-file"></i></span>
+                    <input type="text" pInputText />
+                </div>
+            </div>
+            <div class="mt-4">
+                <span class="font-semibold text-color">Tags</span>
+                <div class="mt-2 p-fluid">
+                    <p-chips></p-chips>
+                </div>
+            </div>
+            <div class="mt-4">
+                <span class="font-semibold text-color">Team Members</span>
+                <div class="mt-3 flex gap-3">
+                    <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-1.png" pBadge value="4" size="large"></p-avatar>
+                    <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-2.png" pBadge value="8" size="large"></p-avatar>
+                    <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-3.png" pBadge value="9" size="large"></p-avatar>
+                    <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-4.png" pBadge value="3" size="large"></p-avatar>
+                </div>
+            </div>
+            <div class="mt-4">
+                <span class="font-semibold text-color">Newsletter Permissions</span>
+                <div class="mt-3 flex align-items-center gap-3">
+                    <p-inputSwitch class="flex"></p-inputSwitch>
+                    <span class="text-color">Allow sending Marketing emails</span>
+                </div>
+                <div class="mt-3 flex align-items-center gap-3">
+                    <p-inputSwitch class="flex"></p-inputSwitch>
+                    <span class="text-color">Allow sending Marketing emails</span>
+                </div>
+                <div class="mt-3 flex align-items-center gap-3">
+                    <p-inputSwitch class="flex"></p-inputSwitch>
+                    <span class="text-color">Allow sending Marketing emails</span>
+                </div>
+            </div>
+        </div>
+        <div class="pt-3 border-top-1 surface-border flex">
+            <p-button class="w-full" styleClass="w-full">
+                <ng-template class="w-full" pTemplate="content">
+                    <span class="w-full flex justify-content-center align-items-center gap-3 ">
+                        <i class="pi pi-send"></i>
+                        <span class="font-bold">Submit Project</span>
+                    </span>
+                </ng-template>  
+            </p-button>
+        </div>
+    </div>
+</section>`;
 
 }
