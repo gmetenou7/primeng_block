@@ -12,7 +12,7 @@ export class PageHeadingComponent {
 
     items3: MenuItem[] = [{label: "Permanent"}, {label: "Contractor"}];
     
-    block1 = `
+    block1: string = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <ul class="list-none p-0 m-0 flex align-items-center font-medium mb-3">
         <li>
@@ -50,7 +50,7 @@ export class PageHeadingComponent {
     </div>
 </div>`;
 
-    block2 = `
+    block2: string = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <div class="flex align-items-start flex-column lg:flex-row lg:justify-content-between">
         <div class="flex align-items-start flex-column md:flex-row">
@@ -86,7 +86,7 @@ export class PageHeadingComponent {
     </div>
 </div>`;
 
-    block3 = `
+    block3: string = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <div class="flex flex-column md:align-items-center md:justify-content-between md:flex-row">
         <div class="font-medium text-3xl text-900">Customers</div>
@@ -97,7 +97,7 @@ export class PageHeadingComponent {
     </div>
 </div>`;
 
-    block4 = `
+    block4: string = `
 <div class="bg-gray-900 px-4 py-5 md:px-6 lg:px-8">
     <div class="flex flex-column md:align-items-center md:justify-content-between md:flex-row">
         <div class="font-medium text-3xl text-white">Customers</div>
@@ -108,7 +108,7 @@ export class PageHeadingComponent {
     </div>
 </div>`;
 
-    block5 = `
+    block5: string = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <ul class="list-none p-0 m-0 flex align-items-center font-medium mb-3">
         <li>
@@ -139,7 +139,7 @@ export class PageHeadingComponent {
     </div>
 </div>`;
 
-    block6 = `
+    block6: string = `
 <div class="bg-gray-900 px-4 py-5 md:px-6 lg:px-8">
     <ul class="list-none p-0 m-0 flex align-items-center font-medium mb-3">
         <li>
@@ -170,7 +170,7 @@ export class PageHeadingComponent {
     </div>
 </div>`;
 
-    block7 = `
+    block7: string = `
 <div>
     <div style="height:200px; background: url('assets/images/blocks/pageheading/cover.png') no-repeat; background-size: cover"></div>
     <div class="px-4 py-5 md:px-6 lg:px-8 surface-section">
@@ -194,7 +194,7 @@ export class PageHeadingComponent {
     </div>
 </div>`;
 
-    block8 = `
+    block8: string = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <div class="text-900 text-3xl font-medium mb-3 flex align-items-center">Applications <span class="text-700 ml-3 text-base font-normal">7 Active</span></div>
     <div class="flex flex-column lg:flex-row lg:align-items-center">
@@ -222,7 +222,7 @@ export class PageHeadingComponent {
     </div>
 </div>`;
 
-    block9 = `
+    block9: string = `
 <div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
     <div class="text-900 text-3xl font-medium mb-3">Latest Projects</div>
     <div class="px-4 py-2 surface-border border-1 border-round-top surface-section">
@@ -245,7 +245,7 @@ export class PageHeadingComponent {
     </div>
 </div>`;
 
-    block10 = `
+    block10: string = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <div class="text-900 font-medium text-3xl mb-3">Information Security Analyst</div>
     <div class="flex align-items-center text-700 mb-3">
@@ -284,7 +284,7 @@ export class PageHeadingComponent {
     </ul>
 </div>`;
 
-    block11 = `
+    block11: string = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8 flex flex-column lg:flex-row lg:align-items-center lg:justify-content-between">
     <div class="flex align-items-center">
         <div class="text-900 text-3xl font-medium mr-3">Mercury Mission</div>
@@ -305,7 +305,7 @@ export class PageHeadingComponent {
     </div>
 </div>`;
 
-    block12 = `
+    block12: string = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8 flex flex-wrap">
     <div class="w-full md:w-6">
         <span class="inline-flex align-items-center text-900 text-3xl font-medium mb-3 cursor-pointer" (click)="menu12_1.toggle($event)">Venus Mission <span class="ml-2 pi pi-angle-down"></span></span>
@@ -337,7 +337,7 @@ export class PageHeadingComponent {
     </div>
 </div>`;
 
-    block13 = ` 
+    block13: string = ` 
 <div class="surface-ground px-4 py-5 md:px-6 lg:px-8">
     <div class="surface-card shadow-2 border-round-xl p-5">
         <div class="flex flex-wrap row-gap-3 align-items-center justify-content-between mb-5">
@@ -389,5 +389,39 @@ export class PageHeadingComponent {
         </ul>
     </div>
 </div>`;
+
+    block14: string = `
+<section class="surface-section">
+    <div class="h-16rem bg-cover" style="background: url('assets/images/blocks/pageheading/cover-2.jpeg');"></div>
+    <div class="flex flex-column gap-3 md:flex-row justify-content-between px-4 py-4 md:px-6 lg:px-8">
+        <nav>
+            <ul class="flex list-none align-items-center gap-2 text-600 text-base line-height-3 p-0 m-0">
+                <li><a class="cursor-pointer"><i class="pi pi-home"></i></a></li>
+                <li><i class="pi pi-angle-right text-xs"></i></li>
+                <li><a class="cursor-pointer">Dashboard</a></li>
+                <li><i class="pi pi-angle-right text-xs"></i></li>
+                <li><a class="cursor-pointer">Profile</a></li>
+            </ul>
+        </nav>
+        <div class="flex flex-column align-items-center gap-4 md:-mt-8">
+            <img src="assets/images/blocks/avatars/circle-big/avatar-f-4@2x.png" alt="Image" class="w-10rem border-3 border-circle border-0">
+            <div class="flex flex-column align-items-center justify-content-center">
+                <h1 class="m-0 font-semibold text-900 text-2xl line-height-3">Sumitra Doe <i class="pi pi-verified text-xl text-primary-500"></i></h1>
+                <span class="text-700 text-base">@smtrdoe</span>
+            </div>
+            <div class="flex align-items-center gap-2">
+                <button pButton pRipple label="Follow" class="p-button-rounded"></button>
+                <button pButton pRipple label="Message" class="p-button-outlined p-button-rounded"></button>
+                <button pButton pRipple icon="pi pi-ellipsis-h" class="p-button-outlined p-button-rounded"></button>
+            </div>
+        </div>
+        <div>
+            <span class="p-input-icon-right w-full">
+                <i class="pi pi-search"></i>
+                <input type="text" pInputText placeholder="Search..." class="w-full" />
+            </span>
+        </div>
+    </div>
+</section>`;
 
 }
