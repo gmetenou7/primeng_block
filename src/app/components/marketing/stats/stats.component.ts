@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 })
 export class StatsComponent {
 
-    block1 = `
+    block1: string = `
 <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="text-900 font-bold text-2xl line-height-2 mb-3">🍕 Choice of all Ninja Turtles</div>
     <p class="text-600 line-height-3 text-lg m-0 mb-5">Excepteur sint occaecat cupidatat
@@ -43,7 +43,7 @@ export class StatsComponent {
     </div>
 </div>`;
 
-    block2 = `
+    block2: string = `
 <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="text-900 font-bold text-4xl line-height-3 mb-3 text-center">Continue Breaking Records</div>
     <p class="text-600 line-height-3 text-lg m-0 mb-6 text-center">Excepteur sint occaecat cupidatat non proident,
@@ -73,7 +73,7 @@ export class StatsComponent {
     </div>
 </div>`;
 
-    block3 = `
+    block3: string = `
 <div class="bg-gray-900 text-center bg-gray-900 px-4 py-8 md:px-6 lg:px-8">
     <i class="pi pi-users bg-blue-500 text-4xl text-0 p-2 mb-3 border-circle" style="width: 49px; height: 49px"></i>
     <div class="text-white font-bold text-5xl line-height-3 mb-3">Biggest Tech Company of Region</div>
@@ -105,7 +105,7 @@ export class StatsComponent {
     </div>
 </div>`;
 
-    block4 = `
+    block4: string = `
 <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="text-orange-500 text-center mb-3">VITAE TEMPUS QUAM</div>
     <div class="font-bold text-5xl text-900 text-center mb-6">Take your vision to the next level</div>
@@ -141,7 +141,7 @@ export class StatsComponent {
     </div>
 </div>`;
 
-    block5 = `
+    block5: string = `
 <div class="bg-gray-900 px-4 py-8 md:px-6 lg:px-8">
     <div class="flex flex-column lg:flex-row">
         <div class="flex-1 pr-0 lg:pr-5 mb-5 lg:mb-0">
@@ -187,4 +187,36 @@ export class StatsComponent {
         </div>
     </div>
 </div>`;
+
+    block6: string = `
+<section class="relative surface-section">
+    <div class="text-center bg-no-repeat bg-cover bg-gray-900 px-6 py-8">
+        <h2 class="text-blue-300 text-lg font-semibold mb-1 mt-0">Why Bastion</h2>
+        <h3 class="text-white font-semibold text-4xl mt-0 mb-0 mt-0 line-height-3">Build secure onboarding and authentication</h3>
+        <p class="text-gray-500 font-medium text-base text-xs mt-2 mb-4 line-height-3">Egestas congue quisque egestas diam in arcu. Sapien eget mi proin sed libero enim sed faucibus.</p>
+    </div>
+    <div class="px-4 py-5 md:px-6 lg:px-8">
+        <div class="flex flex-column lg:flex-row lg:align-items-center lg:justify-content-between">
+            <div class="px-2 w-full py-6 md:px-4 lg:px-6 bg-cover relative" style="background: url(assets/images/blocks/stats/stats-1.png); background-position: center; margin-top:-2rem; top:-70px;">
+                <div class="flex flex-column lg:flex-row">
+                    <article class="w-full p-2 mr-0 lg:mr-3 lg:mb-0 mb-3 text-center" style="background: rgba(255, 255, 255, 0.25);border-radius: 6px;">
+                        <h4 class="text-white text-6xl line-height-3 font-medium mt-3 mb-0">1 min</h4>
+                        <p class="text-white line-height-3 text-xl mt-0 mb-0">Save Time</p>
+                        <p class="text-white line-height-3 text-base font-light text-sm mt-0 mb-0">Get up and run in no time.</p>
+                    </article>
+                    <article class="w-full p-2 mr-0 lg:mr-3 lg:mb-0 mb-3 text-center" style="background: rgba(255, 255, 255, 0.25);border-radius: 6px;backdrop-filter: blur(10px);">
+                        <h4 class="text-white text-6xl line-height-3 font-medium mt-3 mb-0">+200%</h4>
+                        <p class="text-white line-height-3 text-xl mt-0 mb-0">Conversion Rate</p>
+                        <p class="text-white line-height-3 text-base font-light text-sm mt-0 mb-0">Increase rate after switch to Bastion</p>
+                    </article>
+                    <article class="w-full p-2 mr-0 lg:mr-3 lg:mb-0 mb-3 text-center" style="background: rgba(255, 255, 255, 0.25);border-radius: 6px;backdrop-filter: blur(10px);">
+                        <h4 class="text-white text-6xl line-height-3 font-medium mt-3 mb-0">+300K</h4>
+                        <p class="text-white line-height-3 text-xl mt-0 mb-0">Popular Community</p>
+                        <p class="text-white line-height-3 text-base font-light text-sm mt-0 mb-0">You will never walk alone.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>`;
 }
