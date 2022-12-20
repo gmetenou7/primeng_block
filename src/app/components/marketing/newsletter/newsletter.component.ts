@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 })
 export class NewsletterComponent {
 
-    block1 = `
+    block1: string = `
 <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="flex flex-wrap align-items-center">
         <div class="w-full lg:w-6 lg:pr-6">
@@ -22,7 +22,7 @@ export class NewsletterComponent {
     </div>
 </div>`;
 
-    block2 = `
+    block2: string = `
 <div class="surface-section text-center px-4 py-8 md:px-6 lg:px-8">
     <div class="bg-blue-50 text-blue-600 font-bold border-round px-2 py-1 mx-auto mb-3" style="max-width: 350px">
         🔥&nbsp;3,907 businesses already subscribed</div>
@@ -36,7 +36,7 @@ export class NewsletterComponent {
     </div>
 </div>`;
 
-    block3 = `
+    block3: string = `
 <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="py-6 px-3 md:px-6shadow-2 text-center" style="background: linear-gradient(180deg, #6372C3 0%, #3F51B5 100%); border-radius: 1rem">
         <div class="text-white font-bold text-2xl mb-3">Stay in touch with us</div>
@@ -49,16 +49,16 @@ export class NewsletterComponent {
     </div>
 </div>`;
 
-    block4 = `
-<div class="flex flex-column lg:flex-row justify-content-between overflow-hidden gap-4 surface-section px-4 py-8 md:px-6 lg:px-8">
+    block4: string = `
+<section class="flex flex-column lg:flex-row justify-content-between overflow-hidden gap-4 surface-section px-4 py-8 md:px-6 lg:px-8">
     <div class="flex flex-column gap-5">
-        <h1 class="m-0 font-bold text-900 text-4xl line-height-3">Interactively Enpower <br/> Installed Base Users</h1>
-        <div class="flex flex-column gap-4">
-            <span class="flex align-items-center gap-3 text-base text-700"><i class="pi pi-check-circle text-primary-500 text-2xl"></i>Fully responsive sections.</span>
-            <span class="flex align-items-center gap-3 text-base text-700"><i class="pi pi-check-circle text-primary-500 text-2xl"></i>Clean code blocks.</span>
-            <span class="flex align-items-center gap-3 text-base text-700"><i class="pi pi-check-circle text-primary-500 text-2xl"></i>Lifetime accessing to source code.</span>
-        </div>
-        <div class="flex flex-column gap-4 lg:gap-2">
+        <h2 class="m-0 font-bold text-900 text-4xl line-height-3">Interactively Enpower <br/> Installed Base Users</h2>
+        <article class="flex flex-column gap-4">
+            <p class="flex align-items-center gap-3 text-base text-700 mb-0 mt-0"><i class="pi pi-check-circle text-primary-500 text-2xl"></i>Fully responsive sections.</p>
+            <p class="flex align-items-center gap-3 text-base text-700 mb-0 mt-0"><i class="pi pi-check-circle text-primary-500 text-2xl"></i>Clean code blocks.</p>
+            <p class="flex align-items-center gap-3 text-base text-700 mb-0 mt-0"><i class="pi pi-check-circle text-primary-500 text-2xl"></i>Lifetime accessing to source code.</p>
+        </article>
+        <form class="flex flex-column gap-4 lg:gap-2" (submit)="$event.preventDefault();">
             <div class="flex flex-column align-items-start md:flex-row md:align-items-center gap-3">
                 <input pInputText placeholder="Email address" class="w-20rem">
                 <button pButton pRipple label="Subscribe"></button>
@@ -66,9 +66,8 @@ export class NewsletterComponent {
             <div>
                 <span class="text-base text-600">We exist to protect your privacy. <a class="text-base text-primary-500 cursor-pointer">Privacy Policy</a></span>
             </div>
-        </div>
+        </form>
     </div>
     <img src="assets/images/blocks/newsletter/with-image.png" alt="Image" class="mr-4 -mb-8 lg:-mr-8">
-</div>
-    `;
+</section>`;
 }
