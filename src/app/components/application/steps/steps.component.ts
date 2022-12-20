@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 })
 export class StepsComponent {
 
-    block1 = `
+    block1: string = `
 <ul class="list-none p-0 m-0 flex flex-column md:flex-row">
     <li class="relative mr-0 md:mr-8 flex-auto">
         <div class="border-1 border-300 border-round p-3 surface-card flex flex-column md:flex-row align-items-center z-1">
@@ -38,7 +38,7 @@ export class StepsComponent {
     </li>
 </ul>`;
 
-    block2 = `
+    block2: string = `
 <ul class="list-none p-0 m-0 surface-0">
     <li class="p-3 mb-2 flex">
         <div class="flex flex-column align-items-center" style="width:2rem">
@@ -80,7 +80,7 @@ export class StepsComponent {
     </li>
 </ul>`;
 
-    block3 = `
+    block3: string = `
 <div class="flex flex-column lg:flex-row surface-card shadow-2 border-round">
     <div class="flex-grow-1 border-left-2 lg:border-bottom-2 lg:border-left-none border-blue-500">
         <div class="flex align-items-start p-4 border-bottom-1 lg:border-right-1 lg:border-bottom-none surface-border">
@@ -120,7 +120,7 @@ export class StepsComponent {
     </div>
 </div>`;
 
-    block4 = `
+    block4: string = `
 <div class="flex align-items-center">
     <div>
         <button pButton pRipple class="p-button-outlined p-button-plain p-button-rounded" icon="pi pi-arrow-left"></button>
@@ -135,7 +135,7 @@ export class StepsComponent {
     </div>
 </div>`;
 
-    block5 = `
+    block5: string = `
 <div class="surface-card p-4 border-round shadow-2">
     <div class="text-900 font-medium text-xl mb-3">Registration</div>
     <p class="text-600 my-0 mb-4 pb-3 border-bottom-1 surface-border">1 of 5 steps are already complete</p>
@@ -174,7 +174,7 @@ export class StepsComponent {
     </div>
 </div>`;
 
-    block6 = `
+    block6: string = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <div class="flex flex-column md:flex-row lg:gap-5">
         <div class="flex-auto border-primary border-left-3 border-top-none md:border-left-none md:border-top-3 pl-3 py-3">
@@ -192,4 +192,51 @@ export class StepsComponent {
     </div>
 </div>`;
 
+    block7: string = `
+<section class="surface-section px-4 py-5 md:px-6 lg:px-8">
+    <ul class="list-none flex flex-column gap-3 lg:flex-row justify-content-between p-0">
+        <li class="flex align-items-center flex-column gap-3 relative w-full">
+            <div class="flex justify-content-center align-items-center border-circle bg-primary-100 w-4rem h-4rem z-1">
+                <i class="pi pi-check text-xl text-primary-600"></i>
+            </div>
+            <div class="w-full hidden lg:block absolute left-50 bg-primary-500 hidden" style="transform: translateY(-50%); height: 2px; top: 25%"></div>
+            <div class="flex flex-column align-items-center">
+                <h1 class="m-0 font-medium text-900 text-xl line-height-3">Personal</h1>
+                <span class="text-600 text-base text-center">Fames ac turpis egestas integer</span>
+            </div>
+        </li>
+        <li class="flex align-items-center flex-column gap-3 relative w-full">
+            <div class="flex justify-content-center align-items-center border-circle bg-primary-100 w-4rem h-4rem z-1">
+                <i class="pi pi-circle-fill text-xl text-primary-600"></i>
+            </div>
+            <div class="w-full hidden lg:block absolute right-50 bg-primary-500 hidden" style="transform: translateY(-50%); height: 2px; top: 25%"></div>
+            <div class="w-full hidden lg:block absolute left-50 surface-300 hidden" style="transform: translateY(-50%); height: 2px; top: 25%"></div>
+            <div class="flex flex-column align-items-center">
+                <h1 class="m-0 font-medium text-900 text-xl line-height-3">Seat</h1>
+                <span class="text-600 text-base text-center">Volutpat maecenas volutpat</span>
+            </div>
+        </li>
+        <li class="flex align-items-center flex-column gap-3 relative w-full">
+            <div class="flex justify-content-center align-items-center surface-200 border-circle  w-4rem h-4rem z-1">
+                <i class="pi pi-circle-fill text-xl text-600"></i>
+            </div>
+            <div class="w-full hidden lg:block absolute right-50 surface-300 hidden" style="transform: translateY(-50%); height: 2px; top: 25%"></div>
+            <div class="w-full hidden lg:block absolute left-50 surface-300 hidden" style="transform: translateY(-50%); height: 2px; top: 25%"></div>
+            <div class="flex flex-column align-items-center">
+                <h1 class="m-0 font-medium text-900 text-xl line-height-3">Payment</h1>
+                <span class="text-600 text-base text-center">Fringilla phasellus faucibus</span>
+            </div>
+        </li>
+        <li class="flex align-items-center flex-column gap-3 relative w-full">
+            <div class="w-full hidden lg:block absolute right-50 surface-300 hidden" style="transform: translateY(-50%); height: 2px; top: 25%"></div>
+            <div class="flex justify-content-center align-items-center surface-200 border-circle  w-4rem h-4rem z-1">
+                <i class="pi pi-circle-fill text-xl text-600"></i>
+            </div>
+            <div class="flex flex-column align-items-center">
+                <h1 class="m-0 font-medium text-900 text-xl line-height-3">Confirmation</h1>
+                <span class="text-600 text-base text-center">Laoreet sit amet cursus </span>
+            </div>
+        </li>
+    </ul>
+</section>`;
 }

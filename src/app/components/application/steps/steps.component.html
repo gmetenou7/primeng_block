@@ -173,7 +173,7 @@
     </div>
 </block-viewer>
 
-<block-viewer header="Simple" [code]="block6" [new]="true">
+<block-viewer header="Simple" [code]="block6">
     <div class="surface-section px-4 py-5 md:px-6 lg:px-8">
         <div class="flex flex-column md:flex-row lg:gap-5">
             <div class="flex-auto border-primary border-left-3 border-top-none md:border-left-none md:border-top-3 pl-3 py-3">
@@ -190,4 +190,53 @@
             </div>
         </div>
     </div>
+</block-viewer>
+
+<block-viewer header="Circles" [code]="block7" [new]="true">
+    <section class="surface-section px-4 py-5 md:px-6 lg:px-8">
+        <ul class="list-none flex flex-column gap-3 lg:flex-row justify-content-between p-0">
+            <li class="flex align-items-center flex-column gap-3 relative w-full">
+                <div class="flex justify-content-center align-items-center border-circle bg-primary-100 w-4rem h-4rem z-1">
+                    <i class="pi pi-check text-xl text-primary-600"></i>
+                </div>
+                <div class="w-full hidden lg:block absolute left-50 bg-primary-500 hidden" style="transform: translateY(-50%); height: 2px; top: 25%"></div>
+                <div class="flex flex-column align-items-center">
+                    <h1 class="m-0 font-medium text-900 text-xl line-height-3">Personal</h1>
+                    <span class="text-600 text-base text-center">Fames ac turpis egestas integer</span>
+                </div>
+            </li>
+            <li class="flex align-items-center flex-column gap-3 relative w-full">
+                <div class="flex justify-content-center align-items-center border-circle bg-primary-100 w-4rem h-4rem z-1">
+                    <i class="pi pi-circle-fill text-xl text-primary-600"></i>
+                </div>
+                <div class="w-full hidden lg:block absolute right-50 bg-primary-500 hidden" style="transform: translateY(-50%); height: 2px; top: 25%"></div>
+                <div class="w-full hidden lg:block absolute left-50 surface-300 hidden" style="transform: translateY(-50%); height: 2px; top: 25%"></div>
+                <div class="flex flex-column align-items-center">
+                    <h1 class="m-0 font-medium text-900 text-xl line-height-3">Seat</h1>
+                    <span class="text-600 text-base text-center">Volutpat maecenas volutpat</span>
+                </div>
+            </li>
+            <li class="flex align-items-center flex-column gap-3 relative w-full">
+                <div class="flex justify-content-center align-items-center surface-200 border-circle  w-4rem h-4rem z-1">
+                    <i class="pi pi-circle-fill text-xl text-600"></i>
+                </div>
+                <div class="w-full hidden lg:block absolute right-50 surface-300 hidden" style="transform: translateY(-50%); height: 2px; top: 25%"></div>
+                <div class="w-full hidden lg:block absolute left-50 surface-300 hidden" style="transform: translateY(-50%); height: 2px; top: 25%"></div>
+                <div class="flex flex-column align-items-center">
+                    <h1 class="m-0 font-medium text-900 text-xl line-height-3">Payment</h1>
+                    <span class="text-600 text-base text-center">Fringilla phasellus faucibus</span>
+                </div>
+            </li>
+            <li class="flex align-items-center flex-column gap-3 relative w-full">
+                <div class="w-full hidden lg:block absolute right-50 surface-300 hidden" style="transform: translateY(-50%); height: 2px; top: 25%"></div>
+                <div class="flex justify-content-center align-items-center surface-200 border-circle  w-4rem h-4rem z-1">
+                    <i class="pi pi-circle-fill text-xl text-600"></i>
+                </div>
+                <div class="flex flex-column align-items-center">
+                    <h1 class="m-0 font-medium text-900 text-xl line-height-3">Confirmation</h1>
+                    <span class="text-600 text-base text-center">Laoreet sit amet cursus </span>
+                </div>
+            </li>
+        </ul>
+    </section>
 </block-viewer>
