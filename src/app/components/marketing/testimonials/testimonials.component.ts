@@ -211,4 +211,68 @@ export class TestimonialsComponent implements OnInit {
     </div>
 </div>`;
 
+    block6 = `
+<div class="flex flex-column lg:flex-row justify-content-between align-items-center surface-section">
+    <div class="flex flex-column w-full gap-5 px-4 py-8 md:px-6 lg:px-8">
+        <h1 class="m-0 text-900 font-bold text-7xl">Designed for Developers</h1>
+        <div class="flex flex-column gap-4">
+            <div class="flex align-items-center gap-2">
+                <i class="pi pi-check-circle text-primary-500 text-2xl"></i>
+                <span class="text-base text-700 line-height-3">Aliquet nibh praesent tristique magna</span>
+            </div>
+            <div class="flex align-items-center gap-2">
+                <i class="pi pi-check-circle text-primary-500 text-2xl"></i>
+                <span class="text-base text-700 line-height-3">Ut enim blandit volutpat maecenas</span>
+            </div>
+            <div class="flex align-items-center gap-2">
+                <i class="pi pi-check-circle text-primary-500 text-2xl"></i>
+                <span class="text-base text-700 line-height-3">Quisque non tellus orci ac auctor</span>
+            </div>
+        </div>
+        <div class="flex align-items-center gap-3">
+            <button pButton pRipple label="Try it free" class="p-button-outlined"></button>
+            <button pButton pRipple label="Upgrade now" icon="pi pi-bolt" iconPos="right"></button>
+        </div>
+    </div>
+    <div class="w-full bg-cover flex align-items-end p-5 bg-center" style="background:url('assets/images/blocks/testimonial/testimonials-8.jpg'); height:44rem">
+        <div class="flex flex-column gap-5 border-round-lg p-3 w-full" style="backdrop-filter: blur(12.25px);background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.15);">
+            <h1 class="m-0 text-0 text-2xl line-height-3 font-semibold text-center">“He wondered if it could be called a beach if there was no sand.”</h1>
+            <div class="flex gap-3 align-items-center">
+                <hr class="w-full" style="border: 1px solid rgba(222, 226, 230, 0.15);">
+                <div class="flex align-items-center gap-2">
+                    <i class="pi pi-star-fill text-0"></i>
+                    <i class="pi pi-star-fill text-0"></i>
+                    <i class="pi pi-star-fill text-0"></i>
+                    <i class="pi pi-star-fill text-0"></i>
+                    <i class="pi pi-star-fill text-0"></i>
+                </div>
+                <hr class="w-full" style="border: 1px solid rgba(222, 226, 230, 0.15);">
+            </div>
+            <div class="flex justify-content-between">
+                <div class="flex flex-column gap-1">
+                    <span class="text-50 font-semibold line-height-3 text-base">Johnathan Doe</span>
+                    <span class="text-50 font-light line-height-3 text-sm">CEO & Co-Founder of Hyper</span>
+                </div>
+                <div class="flex align-items-center gap-2">
+                    <button pButton pRipple icon="pi pi-arrow-left" style="border: 1px solid rgba(255, 255, 255, 0.15);" class="p-button-rounded bg-white-alpha-10"></button>
+                    <button pButton pRipple icon="pi pi-arrow-right" style="border: 1px solid rgba(255, 255, 255, 0.15);" class="p-button-rounded bg-white-alpha-10"></button>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>`;
+
+    block7 = `
+<div class="surface-ground text-center px-0 sm:px-4 py-8 md:px-6 lg:px-8">
+    <div class="flex justify-content-center text-center mb-4 gap-2">
+       <img src="assets/images/blocks/logos/hodly-indigo-500.svg" height="38"/>
+    </div>
+    <div class="flex justify-content-center">
+        <div class="px-2 md:px-6 text-900 text-5xl font-medium line-height-3" style="max-width: 1350px">“For some unfathomable reason, the response team didn't consider a lack of milk for my cereal as a proper emergency.”</div>
+    </div>
+    <img src="assets/images/blocks/testimonial/testimonials-3.png" width="56" height="56" class="mt-4" />
+    <div class="text-900 font-semibold text-xl line-height-3 text-center">Annie Lanphear</div>
+    <div class="text-600 font-normal line-height-1 mt-2 text-md text-center">Software Engineer</div>
+</div>`;
+
 }
