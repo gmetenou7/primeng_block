@@ -1,4 +1,9 @@
 # Changelog
+
+## 3.1.1
+
+- Sync the blocks with the Figma design file
+
 ## 3.1.0
 
 - Includes 22 new UI blocks
