@@ -552,7 +552,7 @@ export class PricingComponent {
     </div>
 </div>`;
 
-    block6:string=`
+    block6: string =`
 <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
     <div class="text-900 font-bold text-5xl mb-4 text-center">Pricing</div>
     <p class="text-700 text-xl mt-0 mb-6 text-center line-height-3">
