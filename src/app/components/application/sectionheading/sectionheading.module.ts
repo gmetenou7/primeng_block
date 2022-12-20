@@ -7,6 +7,7 @@ import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { InputTextModule } from 'primeng/inputtext';
+import { BadgeModule } from 'primeng/badge';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { InputTextModule } from 'primeng/inputtext';
     RippleModule,
     InputTextModule,
     TabMenuModule,
+    BadgeModule,
     BlockViewerModule
   ],
   declarations: [

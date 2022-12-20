@@ -8,6 +8,8 @@ export class SectionHeadingComponent implements OnInit {
 
     items: MenuItem[];
 
+    activeTabAction: string = 'profile';
+
     ngOnInit() {
         this.items = [
             {label: 'Overview', icon: 'pi pi-home'},
@@ -18,7 +20,7 @@ export class SectionHeadingComponent implements OnInit {
         ];
     }
 
-    block1 = `
+    block1: string = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <div class="flex md:align-items-center md:justify-content-between flex-column md:flex-row pb-4 border-bottom-1 surface-border">
         <div class="flex align-items-center">
@@ -32,7 +34,7 @@ export class SectionHeadingComponent implements OnInit {
     </div>
 </div>`;
 
-    block2 = `
+    block2: string = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <div class="flex md:align-items-center md:justify-content-between flex-column md:flex-row pb-4 border-bottom-1 surface-border">
         <div class="mb-3 lg:mb-0">
@@ -46,13 +48,13 @@ export class SectionHeadingComponent implements OnInit {
     </div>
 </div>`;
 
-    block3 = `
+    block3: string = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <div class="text-3xl font-medium text-900 mb-4">Application</div>
     <p-tabMenu [model]="items" [activeItem]="items[0]"></p-tabMenu>
 </div>`;
 
-    block4 = `
+    block4: string = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <div class="flex lg:align-items-center flex-column lg:flex-row">
         <div class="text-3xl font-medium text-900 mr-0 lg:mr-4 mb-4 lg:mb-0">Application</div>
@@ -60,18 +62,22 @@ export class SectionHeadingComponent implements OnInit {
     </div>
 </div>`;
 
-    block5 = `
+    block5: string = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <div class="border-bottom-1 surface-border">
         <span class="block text-3xl font-medium text-900 mb-4">Messages</span>
     </div>
 </div>`;
 
-    block6 = `
+    block6: string = `
 <div class="surface-section px-4 py-5 md:px-6 lg:px-8">
     <div class="border-bottom-1 surface-border">
         <div class="text-3xl font-medium text-900 mb-4 flex align-items-center">Messages <span class="text-base font-normal ml-3 text-600">79 Unread</span></div>
     </div>
 </div>`;
+
+    block7: string = ``;
+
+    block8: string = ``;
 
 }
