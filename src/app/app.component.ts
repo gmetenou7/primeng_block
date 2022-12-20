@@ -3,6 +3,7 @@ import { ChildActivationStart, NavigationStart, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { MenuItem,PrimeNGConfig } from 'primeng/api';
 import { AppConfig } from './app.config';
+import { timingSafeEqual } from 'crypto';
 
 @Component({
     selector: 'app-root',
@@ -19,7 +20,7 @@ export class AppComponent implements OnInit {
 
     visibleTopbarMenu: boolean;
 
-    scale: number = 14;
+    scale: number = 16;
     
     scales: number[] = [12,13,14,15,16];
 
@@ -38,6 +39,8 @@ export class AppComponent implements OnInit {
         this.router.events
             .pipe(filter(event => event instanceof NavigationStart))
             .subscribe(() => this.menuitems = [{label:'', routerLink:''}]);
+        
+        this.applyScale();
     }
 
     changeTheme(event: Event, theme: string, dark: boolean) {
