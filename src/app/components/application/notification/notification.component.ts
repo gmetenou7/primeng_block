@@ -92,11 +92,47 @@ export class NotificationComponent  {
         });
     }
 
+    notify8() {
+        this.messageService.clear();
+        this.messageService.add({
+            key: 'block8',
+            severity: 'custom-8',
+            summary: 'Hey! Did you see new features? 🎉',
+            detail: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            styleClass: 'surface-overlay',
+            contentStyleClass: 'p-4'
+        });
+    }
+
+    notify9() {
+        this.messageService.clear();
+        this.messageService.add({
+            key: 'block9',
+            severity: 'custom-9',
+            summary: 'Uploading Your Files',
+            detail: 'Please wait till the end...',
+            styleClass: 'surface-overlay',
+            contentStyleClass: 'p-3'
+        });
+    }
+
+    notify10() {
+        this.messageService.clear();
+        this.messageService.add({
+            key: 'block10',
+            severity: 'custom-10',
+            summary: 'Uploading Your Files',
+            detail: 'Please wait till the end...',
+            styleClass: 'surface-overlay',
+            contentStyleClass: 'p-3'
+        });
+    }
+
     clear(key: string) {
         this.messageService.clear(key);
     }
 
-    block1 = `
+    block1: string = `
 <button pButton pRipple label="Display" (click)="notify1()"></button>
 <p-toast key="block1" [style]="{width: '30rem'}" [preventOpenDuplicates]="true">
     <ng-template let-message pTemplate="message">
@@ -122,7 +158,7 @@ export class NotificationComponent  {
     </ng-template>
 </p-toast>`;
 
-    block2 = `
+    block2: string = `
 <button pButton pRipple label="Display" (click)="notify2()"></button>
 <p-toast key="block2" [preventOpenDuplicates]="true">
     <ng-template let-message pTemplate="message">
@@ -143,7 +179,7 @@ export class NotificationComponent  {
     </ng-template>
 </p-toast>`;
 
-    block3 = `
+    block3: string = `
 <button pButton pRipple label="Display" (click)="notify3()"></button>
 <p-toast key="block3" [style]="{width: '30rem'}" [preventOpenDuplicates]="true">
     <ng-template let-message pTemplate="message">
@@ -157,7 +193,7 @@ export class NotificationComponent  {
     </ng-template>
 </p-toast>`;
 
-    block4 = `
+    block4: string = `
 <button pButton pRipple label="Display" (click)="notify4()"></button>
 <p-toast key="block4" [style]="{width: '30rem'}" [preventOpenDuplicates]="true">
     <ng-template let-message pTemplate="message">
@@ -168,7 +204,7 @@ export class NotificationComponent  {
     </ng-template>
 </p-toast>`;
 
-    block5 = `
+    block5: string = `
 <button pButton pRipple label="Display" (click)="notify5()"></button>
 <p-toast key="block5" [style]="{width: '30rem'}" [preventOpenDuplicates]="true">
     <ng-template let-message pTemplate="message">
@@ -184,7 +220,7 @@ export class NotificationComponent  {
     </ng-template>
 </p-toast>`;
 
-    block6 = `
+    block6: string = `
 <button pButton pRipple label="Display" (click)="notify6()"></button>
 <p-toast key="block6" [style]="{width: '30rem'}" [preventOpenDuplicates]="true">
     <ng-template let-message pTemplate="message">
@@ -198,13 +234,71 @@ export class NotificationComponent  {
     </ng-template>
 </p-toast>`;
 
-    block7 = `
+    block7: string = `
 <button pButton pRipple label="Display" (click)="notify7()"></button>
 <p-toast key="block7" [style]="{width: '30rem'}" [preventOpenDuplicates]="true">
     <ng-template let-message pTemplate="message">
         <div class="flex align-items-center justify-content-between flex-1 align-self-center mr-3">
             <span class="text-xl font-medium text-orange-900">{{message.detail}}</span>
             <a class="cursor-pointer font-medium text-orange-700">Reply</a>
+        </div>
+    </ng-template>
+</p-toast>`;
+
+    block8: string = `
+<button pButton pRipple label="Display" (click)="notify8()"></button>
+<p-toast key="block8" [style]="{width: '30rem'}" [preventOpenDuplicates]="true">
+    <ng-template let-message pTemplate="message">
+        <div class="flex gap-3 p-0 -m-4">
+        <img src="assets/images/blocks/illustration/notification-1.jpg" alt="Image">
+        <div class="flex flex-column gap-3 py-3">
+            <h1 class="m-0 font-semibold text-base text-900">{{message.summary}}</h1>
+            <span class="text-base text-700">{{message.detail}}</span>
+            <div class="flex gap-3">
+                <button pButton pRipple label="Let's see" class="p-button-text p-0"></button>
+                <button pButton pRipple label="Not now" class="p-button-text text-500 p-0"></button>
+            </div>
+        </div>
+        </div>
+    </ng-template>
+</p-toast>`;
+    
+    block9: string = `
+<button pButton pRipple label="Display" (click)="notify9()"></button>
+<p-toast key="block9" [style]="{width: '20rem'}" [preventOpenDuplicates]="true">
+    <ng-template let-message pTemplate="message">
+        <div class="flex flex-column gap-3 w-full">
+            <div class="flex flex-column gap-2">
+                <h1 class="m-0 font-semibold text-base text-900">{{message.summary}}</h1>
+                <span class="text-base text-700">{{message.detail}}</span>
+            </div>
+            <img src="assets/images/blocks/illustration/notification-2.jpg" alt="Image">
+            <div class="flex gap-3">
+                <button pButton pRipple label="Let's see" class="p-button-text p-0"></button>
+                <button pButton pRipple label="Not now" class="p-button-text text-500 p-0"></button>
+            </div>
+        </div>
+    </ng-template>
+</p-toast>`;
+    
+    block10: string = `
+<button pButton pRipple label="Display" (click)="notify10()"></button>
+<p-toast key="block10" [style]="{width: '30rem'}" [preventOpenDuplicates]="true">
+    <ng-template let-message pTemplate="message">
+        <div class="flex gap-3 w-full">
+            <i class="pi pi-cloud-upload text-primary-500 text-2xl"></i>
+            <div class="flex flex-column gap-3 w-full">
+                <h1 class="m-0 font-semibold text-base text-900">{{message.summary}}</h1>
+                <span class="text-base text-700">{{message.detail}}</span>
+                <div class="flex flex-column gap-2">
+                    <p-progressBar value="80" [showValue]="false" [style]="{'height': '6px'}"></p-progressBar>
+                    <label class="text-right text-xs text-700">80% uploaded...</label>
+                </div>
+                <div class="flex gap-3">
+                    <button pButton pRipple label="Another Upload?" class="p-button-text p-0"></button>
+                    <button pButton pRipple label="Cancel" class="p-button-text text-500 p-0"></button>
+                </div>
+            </div>
         </div>
     </ng-template>
 </p-toast>`;

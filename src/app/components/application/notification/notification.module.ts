@@ -7,6 +7,7 @@ import { MessageService } from 'primeng/api';
 import { NotificationComponent } from './notification.component';
 import { NotificationRoutingModule } from './notification-routing.module';
 import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
+import { ProgressBarModule } from 'primeng/progressbar';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { BlockViewerModule } from '../../blockviewer/blockviewer.module';
     ToastModule,
     ButtonModule,
     RippleModule,
+    ProgressBarModule,
     BlockViewerModule
   ],
   declarations: [
