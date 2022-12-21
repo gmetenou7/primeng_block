@@ -206,7 +206,7 @@ export class DialogComponent {
 </p-dialog>`;
 
     block6: string = `
-<button pButton pRipple label="Display" (click)="visible6 = false"></button>
+<button pButton pRipple label="Display" (click)="visible6 = true"></button>
 
 <p-dialog [(visible)]="visible6" [modal]="false" [closable]="false" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '52vw', height: '24rem'}">
     <section class="flex flex-column w-full mt-4">
@@ -333,7 +333,7 @@ export class DialogComponent {
         <div class="flex flex-column">
             <div class="flex justify-content-between align-items-center w-full">
                 <p class="font-medium text-lg text-700 mt-0">Checklist</p>
-                <span class="text-500"><i class="pi pi-check-square text-lg mr-2"></i>1/2</span>
+                <span class="text-500 flex align-items-center"><i class="pi pi-check-square text-lg mr-2"></i>1/2</span>
             </div>
             <div class="field-checkbox">
                 <p-checkbox [(ngModel)]="checked1" [binary]="true" inputId="binary1"></p-checkbox>
