@@ -50,8 +50,8 @@ export class NewsletterComponent {
 </div>`;
 
     block4: string = `
-<section class="flex flex-column lg:flex-row justify-content-between overflow-hidden gap-4 surface-section px-4 py-8 md:px-6 lg:px-8">
-    <div class="flex flex-column gap-5">
+<section class="flex flex-column lg:flex-row justify-content-between overflow-hidden gap-4 surface-section py-8">
+    <div class="flex flex-column gap-5 pl-4 md:pl-6 lg:pl-8">
         <h2 class="m-0 font-bold text-900 text-4xl line-height-3">Interactively Enpower <br/> Installed Base Users</h2>
         <article class="flex flex-column gap-4">
             <p class="flex align-items-center gap-3 text-base text-700 mb-0 mt-0"><i class="pi pi-check-circle text-primary-500 text-2xl"></i>Fully responsive sections.</p>
@@ -68,6 +68,6 @@ export class NewsletterComponent {
             </div>
         </form>
     </div>
-    <img src="assets/images/blocks/newsletter/with-image.png" alt="Image" class="mr-4 -mb-8 lg:-mr-8">
+    <img src="assets/images/blocks/newsletter/with-image.png" alt="Image" class="-mb-8 ml-4 md:ml-6 lg:ml-0">
 </section>`;
 }
