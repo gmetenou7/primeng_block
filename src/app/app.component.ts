@@ -3,7 +3,6 @@ import { ChildActivationStart, NavigationStart, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { MenuItem,PrimeNGConfig } from 'primeng/api';
 import { AppConfig } from './app.config';
-import { timingSafeEqual } from 'crypto';
 
 @Component({
     selector: 'app-root',
