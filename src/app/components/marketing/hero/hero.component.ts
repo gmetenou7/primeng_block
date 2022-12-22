@@ -139,9 +139,9 @@ export class HeroComponent {
     block8: string = `
 <section class="surface-section px-4 py-8 md:px-6 lg:px-8 overflow-hidden">
     <div class="flex flex-wrap">
-        <article class="w-full mt-8 xl:mb-0 xl:w-8 flex flex-column flex-order-1 xl:flex-order-0 justify-content-center">
+        <article class="w-full mt-8 xl:mt-0 xl:mb-0 xl:w-8 flex flex-column flex-order-1 xl:flex-order-0 justify-content-center align-items-center xl:align-items-start">
             <span class="text-blue-500 font-semibold text-lg mb-2">CATCH YOUR NOTIFICATIONS</span>
-            <h2 class="font-bold text-4xl sm:text-7xl mt-0 mb-4">Develop amazing communication.</h2>
+            <h2 class="font-bold text-4xl sm:text-7xl mt-0 mb-4">Develop amazing <br/> communication.</h2>
             <div class="flex gap-3">
                 <button pButton pRipple type="button" label="Get Started" icon="pi pi-arrow-right" iconPos="right" class="z-2"></button>
                 <button pButton pRipple type="button" label="Documentation" class="p-button-outlined z-2"></button>
@@ -149,43 +149,30 @@ export class HeroComponent {
         </article>
         <div class="w-full xl:w-4 relative flex justify-content-center align-items-center">
             <img src="assets/images/blocks/hero/hero-12.png" alt="Image">
-            <article class="absolute flex align-items-center w-24rem border-round-xl z-2 right-0 md:right-50" style="bottom: 41%; backdrop-filter: blur(40px); background-color: rgba(255, 255, 255, 0.5);">
-                <figure class="border-circle w-2rem h-2rem">
-                    <img src="assets/images/blocks/hero/hero-13.png" alt="Image">
-                </figure>
+            <article class="absolute flex align-items-center w-24rem border-round-xl z-2 right-0 md:right-50 gap-3 px-4 py-3" style="bottom: 41%; backdrop-filter: blur(40px); background-color: rgba(255, 255, 255, 0.5);">
+                <img src="assets/images/blocks/hero/hero-13.png" class="border-circle" alt="Image">
                 <div class="flex flex-column justify-content-center w-full">
-                    <p class="m-0 font-medium text-sm line-height-1.5">OLYMPIA</p>
-                    <p class="m-0 font-medium text-sm line-height-1.5">Your stocks <span class="text-indigo-500">getting up</span></p>
+                    <p class="m-0 font-semibold text-sm line-height-1.5 text-black-alpha-60">OLYMPIA</p>
+                    <p class="m-0 font-medium text-sm line-height-1.5 text-black-alpha-80">Your stocks <span class="text-indigo-500">getting up</span></p>
                 </div>
-                <figure class="ml-auto w-3rem h-2rem">
-                    <img src="assets/images/blocks/hero/hero-14.png" alt="Image">
-                </figure>
+                <img src="assets/images/blocks/hero/hero-14.png" class="border-circle" alt="Image">
             </article>
 
-            <article class="absolute flex align-items-center w-24rem p-1 border-round-xl z-2 right-0 md:right-50" style="bottom: 24%; backdrop-filter: blur(40px); background-color: rgba(255, 255, 255, 0.5)">
-                <figure class="border-circle w-2rem h-2rem">
-                    <img src="assets/images/blocks/hero/hero-15.png" alt="Image">
-                </figure>
+            <article class="absolute flex align-items-center w-24rem p-1 border-round-xl z-2 right-0 md:right-50 gap-3 px-4 py-3" style="bottom: 24%; backdrop-filter: blur(40px); background-color: rgba(255, 255, 255, 0.5)">
+                <img src="assets/images/blocks/hero/hero-15.png" alt="Image" class="border-circle">
                 <div class="flex flex-column justify-content-center w-full">
-                    <p class="m-0 font-medium text-sm line-height-1.5">OLYMPIA</p>
-                    <p class="m-0 font-medium text-sm line-height-1.5">Anastasia sent you a message</p>
+                    <p class="m-0 font-semibold text-sm line-height-1.5 text-black-alpha-60">OLYMPIA</p>
+                    <p class="m-0 font-medium text-sm line-height-1.5 text-black-alpha-80">Anastasia sent you a message</p>
                 </div>
-                <figure class="ml-auto w-3rem h-2rem">
-
-                </figure>
             </article>
 
-            <article class="absolute flex align-items-center w-24rem p-1 border-round-xl z-2 right-0 md:right-50" style="bottom: 5%; backdrop-filter: blur(40px); background-color: rgba(255, 255, 255, 0.5)">
-                <figure class="border-circle">
-                    <img src="assets/images/blocks/hero/hero-13.png" alt="Image">
-                </figure>
+            <article class="absolute flex align-items-center w-24rem p-1 border-round-xl z-2 right-0 md:right-50 gap-3 px-4 py-3" style="bottom: 7%; backdrop-filter: blur(40px); background-color: rgba(255, 255, 255, 0.5)">
+                <img src="assets/images/blocks/hero/hero-13.png" alt="Image" class="border-circle">
                 <div class="flex flex-column justify-content-center w-full">
-                    <p class="m-0 font-medium text-sm line-height-1.5">OLYMPIA</p>
-                    <p class="m-0 font-medium text-sm line-height-1.5">Your revenue <span class="text-red-500"></span>getting low</p>
+                    <p class="m-0 font-semibold text-sm line-height-1.5 text-black-alpha-60">OLYMPIA</p>
+                    <p class="m-0 font-medium text-sm line-height-1.5 text-black-alpha-80">Your revenue <span class="text-red-500"></span>getting low</p>
                 </div>
-                <figure class="ml-auto w-3rem h-2rem">
-                    <img src="assets/images/blocks/hero/hero-16.png" alt="Image">
-                </figure>
+                <img src="assets/images/blocks/hero/hero-16.png" alt="Image" class="border-circle">
             </article>
         </div>
     </div>
