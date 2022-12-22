@@ -888,12 +888,12 @@ export class GridListComponent {
                 <p class="absolute px-2 py-1 border-round-lg text-sm font-normal text-white mt-0 mb-0" style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px); top: 3%; left: 3%;">Superhost</p>
             </div>
             <div class="flex flex-column w-full gap-3">
-                <div class="flex w-full justify-content-between align-items-center">
-                    <p class="font-semibold text-lg mt-0 mb-0 mr-3">Private room in Amsterdam</p>
-                    <p-rating [ngModel]="val1" readonly="true" stars="5" [cancel]="false"></p-rating>
+                <div class="flex w-full justify-content-between align-items-center flex-wrap gap-3">
+                    <p class="font-semibold text-lg mt-0 mb-0">Private room in Amsterdam</p>
+                    <p-rating [ngModel]="val1" readonly="true" stars="5" [cancel]="false" ngClass="flex-shrink-0"></p-rating>
                 </div>
                 <p class="font-normal text-lg text-600 mt-0 mb-0">Comfortable single room</p>
-                <div class="flex flex-wrap justify-content-between md:h-2rem mt-auto">
+                <div class="flex flex-wrap justify-content-between xl:h-2rem mt-auto">
                     <p class="text-base flex align-items-center text-900 mt-0 mb-1">
                         <i class="pi pi-users mr-2"></i>
                         <span class="font-medium">2 Guests</span>  
@@ -915,12 +915,12 @@ export class GridListComponent {
         <article class="flex flex-column md:flex-row w-full gap-3 p-3 border-round border-1 surface-border surface-card">
             <div class="relative">
                 <img src="assets/images/blocks/hotels/h5.jpeg" alt="Image" class="border-round w-full h-full md:w-14rem md:h-14rem">
-                <p class="absolute px-2 py-1 border-round-lg text-sm font-normal text-white mt-0 mb-0" style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px); top: 3%; left: 3%;">On Sale</p>
+                <p class="absolute px-2 py-1 border-round-lg text-sm font-normal text-white mt-0 mb-0" style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px); top: 3%; left: 3%;">Superhost</p>
             </div>
             <div class="flex flex-column w-full gap-3">
-                <div class="flex w-full justify-content-between align-items-center">
-                    <p class="font-semibold text-lg mt-0 mb-0 mr-3">Home in Amsterdam</p>
-                    <p-rating [ngModel]="val1" readonly="true" stars="5" [cancel]="false"></p-rating>
+                <div class="flex w-full justify-content-between align-items-center flex-wrap gap-3">
+                    <p class="font-semibold text-lg mt-0 mb-0">Home in Amsterdam</p>
+                    <p-rating [ngModel]="val1" readonly="true" stars="5" [cancel]="false" ngClass="flex-shrink-0"></p-rating>
                 </div>
                 <p class="font-normal text-lg text-600 mt-0 mb-0">Large comfortable room in Sarphatistraat</p>
                 <div class="flex flex-wrap justify-content-between md:h-2rem mt-auto">
@@ -948,12 +948,12 @@ export class GridListComponent {
         <article class="flex flex-column md:flex-row w-full gap-3 p-3 border-round border-1 surface-border surface-card">
             <div class="relative">
                 <img src="assets/images/blocks/hotels/h6.jpeg" alt="Image" class="border-round w-full h-full md:w-14rem md:h-14rem">
-                <p class="absolute px-2 py-1 border-round-lg text-sm font-normal text-white mt-0 mb-0" style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px); top: 3%; left: 3%;">Rare</p>
+                <p class="absolute px-2 py-1 border-round-lg text-sm font-normal text-white mt-0 mb-0" style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px); top: 3%; left: 3%;">On Sale</p>
             </div>
             <div class="flex flex-column w-full gap-3">
-                <div class="flex w-full justify-content-between align-items-center">
-                    <p class="font-semibold text-lg mt-0 mb-0 mr-3">Luxurious spacious suite Jordan</p>
-                    <p-rating [ngModel]="val1" readonly="true" stars="5" [cancel]="false"></p-rating>
+                <div class="flex w-full justify-content-between align-items-center flex-wrap gap-3">
+                    <p class="font-semibold text-lg mt-0 mb-0">Luxurious spacious suite Jordan</p>
+                    <p-rating [ngModel]="val1" readonly="true" stars="5" [cancel]="false" ngClass="flex-shrink-0"></p-rating>
                 </div>
                 <p class="font-normal text-lg text-600 mt-0 mb-0">Guest suite</p>
                 <div class="flex flex-wrap justify-content-between md:h-2rem mt-auto">
@@ -978,12 +978,12 @@ export class GridListComponent {
         <article class="flex flex-column md:flex-row w-full gap-3 p-3 border-round border-1 surface-border surface-card">
             <div class="relative">
                 <img src="assets/images/blocks/hotels/h7.jpeg" alt="Image" class="border-round w-full h-full md:w-14rem md:h-14rem">
-                <p class="absolute px-2 py-1 border-round-lg text-sm font-normal text-white mt-0 mb-0" style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px); top: 3%; left: 3%;">Superhost</p>
+                <p class="absolute px-2 py-1 border-round-lg text-sm font-normal text-white mt-0 mb-0" style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px); top: 3%; left: 3%;">Rare</p>
             </div>
             <div class="flex flex-column w-full gap-3">
-                <div class="flex w-full justify-content-between align-items-center">
-                    <p class="font-semibold text-lg mt-0 mb-0 mr-3">Beautiful Studio by the Amstel</p>
-                    <p-rating [ngModel]="val1" readonly="true" stars="5" [cancel]="false"></p-rating>
+                <div class="flex w-full justify-content-between align-items-center flex-wrap gap-3">
+                    <p class="font-semibold text-lg mt-0 mb-0">Beautiful Studio by the Amstel</p>
+                    <p-rating [ngModel]="val1" readonly="true" stars="5" [cancel]="false" ngClass="flex-shrink-0"></p-rating>
                 </div>
                 <p class="font-normal text-lg text-600 mt-0 mb-0">Loft in Stadsdeel Oost</p>
                 <div class="flex flex-wrap justify-content-between md:h-2rem mt-auto">
@@ -1004,7 +1004,6 @@ export class GridListComponent {
             </div>
         </article>
     </div>
-
 </section>`;
 
 }
