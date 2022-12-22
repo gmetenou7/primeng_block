@@ -504,7 +504,7 @@ export class NavBarComponent {
 
     block7: string = `
 <section class="h-full bg-cover" style="background-image: url('assets/images/blocks/navbar/navbar-3.jpg');">
-    <div class="py-3 px-6 shadow-2 flex align-items-center justify-content-between relative">
+    <div class="py-3 px-6 shadow-2 flex align-items-center justify-content-between relative bg-black-alpha-50">
         <img src="assets/images/blocks/logos/peak-300.svg" alt="Image" height="50">
         <a pRipple class="cursor-pointer block lg:hidden text-gray-400" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
             <i class="pi pi-bars text-4xl text-white"></i>
@@ -565,15 +565,15 @@ export class NavBarComponent {
                                     <div class="p-2 lg:w-full flex flex-column lg:flex-row xl:align-items-center" style="min-width:10rem">
                                         <img src="assets/images/blocks/navbar/navbar-1.jpeg" class="h-5rem w-10rem xl:h-5rem border-round mr-2 mb-4 lg:mb-0" alt="Image">
                                         <div class="ml-2 w-8">
-                                            <p class="mb-2 mt-0 text-white font-medium text-lg lg:text-xl">Learn how to use Peak in 10 mins</p>
-                                            <p class="mt-0 mb-0 font-normal text-base lg:text-lg">Enim diam vulputate ut pharetra sit. Eget arcu dictum varius duis at consectetur lorem donec.</p>
+                                            <p class="mb-2 mt-0 text-white font-medium text-lg">Learn how to use Peak in 10 mins</p>
+                                            <p class="mt-0 mb-0 font-normal text-base">Enim diam vulputate ut pharetra sit. Eget arcu dictum varius duis at consectetur lorem donec.</p>
                                         </div>
                                     </div>
                                     <div class="p-2 lg:w-full flex flex-column lg:flex-row xl:align-items-center" style="min-width: 10rem;">
                                         <img src="assets/images/blocks/navbar/navbar-2.jpeg" class="h-5rem w-10rem xl:h-5rem border-round mr-2 mb-4 lg:mb-0" alt="Image">
                                         <div class="ml-2 w-8">
-                                            <p class="mb-2 mt-0 text-white font-medium text-lg lg:text-xl">Reimagining development lifecycles</p>
-                                            <p class="mt-0 mb-0 font-normal text-base lg:text-lg">Enim diam vulputate ut pharetra sit. Eget arcu dictum varius duis at consectetur lorem donec.</p>
+                                            <p class="mb-2 mt-0 text-white font-medium text-lg">Reimagining development lifecycles</p>
+                                            <p class="mt-0 mb-0 font-normal text-base">Enim diam vulputate ut pharetra sit. Eget arcu dictum varius duis at consectetur lorem donec.</p>
                                         </div>
                                     </div>
                                 </div>
