@@ -435,7 +435,7 @@ export class TeamComponent {
                     <div class="mb-3 relative h-25rem border-round bg-cover bg-no-repeat" style="background-image: url('assets/images/blocks/team/team-9.png')">
                         <div class="border-round p-3 absolute text-white inline-flex flex-column justify-content-center font-semibold" style="bottom: 1rem; left: 1rem; width: calc(100% - 2rem); background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4) 100%); backdrop-filter: blur(6px);">
                             <h3 class="font-light text-xl xl:text-2xl mb-2 mt-0">Mysha Feeney</h3>
-                            <p class="font-normal text-sm xl:text-base mb-0 mt-0">Scrum Master</p>
+                            <p class="font-normal text-sm xl:text-base mb-0 mt-0 text-white-alpha-70">Scrum Master</p>
                             <div class="flex gap-4 w-full mt-3">
                                 <i class="pi pi-discord cursor-pointer"></i>
                                 <i class="pi pi-linkedin cursor-pointer"></i>
@@ -448,7 +448,7 @@ export class TeamComponent {
                     <div class="mb-3 relative h-25rem border-round bg-cover bg-no-repeat" style="background-image: url('assets/images/blocks/team/team-10.png')">
                         <div class="border-round p-3 absolute text-white inline-flex flex-column justify-content-center font-semibold" style="bottom: 1rem; left: 1rem; width: calc(100% - 2rem); background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4) 100%); backdrop-filter: blur(6px);">
                             <h3 class="font-light text-xl xl:text-2xl mb-2 mt-0">Helena Larsen</h3>
-                            <p class="font-normal text-sm xl:text-base mb-0 mt-0">President of Sales</p>
+                            <p class="font-normal text-sm xl:text-base mb-0 mt-0 text-white-alpha-70">President of Sales</p>
                             <div class="flex gap-4 w-full mt-3">
                                 <i class="pi pi-discord cursor-pointer"></i>
                                 <i class="pi pi-linkedin cursor-pointer"></i>
@@ -461,7 +461,7 @@ export class TeamComponent {
                     <div class="mb-3 relative h-25rem border-round bg-cover bg-no-repeat" style="background-image: url('assets/images/blocks/team/team-11.png')">
                         <div class="border-round p-3 absolute text-white inline-flex flex-column justify-content-center font-semibold" style="bottom: 1rem; left: 1rem; width: calc(100% - 2rem); background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4) 100%); backdrop-filter: blur(6px);">
                             <h3 class="font-light text-xl xl:text-2xl mb-2 mt-0">Brian Bargeman</h3>
-                            <p class="font-normal text-sm xl:text-base mb-0 mt-0">Team Leader</p>
+                            <p class="font-normal text-sm xl:text-base mb-0 mt-0 text-white-alpha-70">Team Leader</p>
                             <div class="flex gap-4 w-full mt-3">
                                 <i class="pi pi-linkedin cursor-pointer"></i>
                                 <i class="pi pi-twitter cursor-pointer"></i>
@@ -473,7 +473,7 @@ export class TeamComponent {
                     <div class="mb-3 relative h-25rem border-round bg-cover bg-no-repeat" style="background-image: url('assets/images/blocks/team/team-12.png')">
                         <div class="border-round p-3 absolute text-white inline-flex flex-column justify-content-center font-semibold" style="bottom: 1rem; left: 1rem; width: calc(100% - 2rem); background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4) 100%); backdrop-filter: blur(6px);">
                             <h3 class="font-light text-xl xl:text-2xl mb-2 mt-0">Ronald Richards</h3>
-                            <p class="font-normal text-sm xl:text-base mb-0 mt-0">Software Development Manager</p>
+                            <p class="font-normal text-sm xl:text-base mb-0 mt-0 text-white-alpha-70">Software Development Manager</p>
                             <div class="flex gap-4 w-full mt-3">
                                 <i class="pi pi-github cursor-pointer"></i>
                                 <i class="pi pi-twitter cursor-pointer"></i>
@@ -485,7 +485,7 @@ export class TeamComponent {
                     <div class="mb-3 relative h-25rem border-round bg-cover bg-no-repeat" style="background-image: url('assets/images/blocks/team/team-13.png')">
                         <div class="border-round p-3 absolute text-white inline-flex flex-column justify-content-center font-semibold" style="bottom: 1rem; left: 1rem; width: calc(100% - 2rem); background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4) 100%); backdrop-filter: blur(6px);">
                             <h3 class="font-light text-xl xl:text-2xl mb-2 mt-0">Albert Flores</h3>
-                            <p class="font-normal text-sm xl:text-base mb-0 mt-0">Web Designer</p>
+                            <p class="font-normal text-sm xl:text-base mb-0 mt-0 text-white-alpha-70">Web Designer</p>
                             <div class="flex gap-4 w-full mt-3">
                                 <i class="pi pi-twitter cursor-pointer"></i>
                                 <i class="pi pi-github cursor-pointer"></i>
@@ -499,7 +499,7 @@ export class TeamComponent {
                     <div class="mb-3 relative h-25rem border-round bg-cover bg-no-repeat" style="background-image: url('assets/images/blocks/team/team-14.png')">
                         <div class="border-round p-3 absolute text-white inline-flex flex-column justify-content-center font-semibold" style="bottom: 1rem; left: 1rem; width: calc(100% - 2rem); background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4) 100%); backdrop-filter: blur(6px);">
                             <h3 class="font-light text-xl xl:text-2xl mb-2 mt-0">Leona Gunn</h3>
-                            <p class="font-normal text-sm xl:text-base mb-0 mt-0">Software Developer</p>
+                            <p class="font-normal text-sm xl:text-base mb-0 mt-0 text-white-alpha-70">Software Developer</p>
                             <div class="flex gap-4 w-full mt-3">
                                 <i class="pi pi-twitter cursor-pointer"></i>
                                 <i class="pi pi-github cursor-pointer"></i>
@@ -513,7 +513,7 @@ export class TeamComponent {
                     <div class="mb-3 relative h-25rem border-round bg-cover bg-no-repeat" style="background-image: url('assets/images/blocks/team/team-15.png')">
                         <div class="border-round p-3 absolute text-white inline-flex flex-column justify-content-center font-semibold" style="bottom: 1rem; left: 1rem; width: calc(100% - 2rem); background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4) 100%); backdrop-filter: blur(6px);">
                             <h3 class="font-light text-xl xl:text-2xl mb-2 mt-0">David Goodman</h3>
-                            <p class="font-normal text-sm xl:text-base mb-0 mt-0">UI/UX Designer</p>
+                            <p class="font-normal text-sm xl:text-base mb-0 mt-0 text-white-alpha-70">UI/UX Designer</p>
                             <div class="flex gap-4 w-full mt-3">
                                 <i class="pi pi-linkedin cursor-pointer"></i>
                                 <i class="pi pi-github cursor-pointer"></i>
@@ -526,7 +526,7 @@ export class TeamComponent {
                     <div class="mb-3 relative h-25rem border-round bg-cover bg-no-repeat" style="background-image: url('assets/images/blocks/team/team-16.png')">
                         <div class="border-round p-3 absolute text-white inline-flex flex-column justify-content-center font-semibold" style="bottom: 1rem; left: 1rem; width: calc(100% - 2rem); background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4) 100%); backdrop-filter: blur(6px);">
                             <h3 class="font-light text-xl xl:text-2xl mb-2 mt-0">Aleena Jones</h3>
-                            <p class="font-normal text-sm xl:text-base mb-0 mt-0">Software Tester</p>
+                            <p class="font-normal text-sm xl:text-base mb-0 mt-0 text-white-alpha-70">Software Tester</p>
                             <div class="flex gap-4 w-full mt-3">
                                 <i class="pi pi-twitter cursor-pointer"></i>
                                 <i class="pi pi-github cursor-pointer"></i>
