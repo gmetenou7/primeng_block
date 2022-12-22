@@ -10,6 +10,10 @@ export class SectionHeadingComponent implements OnInit {
 
     activeTabAction: string = 'profile';
 
+    value1: string = "do not disturb";
+
+    options: any[];
+
     ngOnInit() {
         this.items = [
             {label: 'Overview', icon: 'pi pi-home'},
@@ -18,6 +22,8 @@ export class SectionHeadingComponent implements OnInit {
             {label: 'Profile', icon: 'pi pi-user'},
             {label: 'Settings', icon: 'pi pi-cog'}
         ];
+
+        this.options = [{label: 'Do Not Disturb', value: 'do not disturb'}, {label: 'Notify', value: 'notify'}];
     }
 
     block1: string = `
@@ -111,10 +117,7 @@ export class SectionHeadingComponent implements OnInit {
             <p class="mb-0 mt-0 text-base text-600">Manage your notifications and permissions.</p>
         </div>
         <div class="flex align-items-center gap-2">
-            <span class="p-buttonset">
-                <button pButton pRipple label="Do Not Disturb"></button>
-                <button pButton pRipple label="Notify" class="p-button-outlined"></button>
-            </span>
+            <p-selectButton [options]="options" [(ngModel)]="value1" optionLabel="label" optionValue="value"></p-selectButton>
             <button pButton pRipple icon="pi pi-ellipsis-v" class="p-button-text"></button>
         </div>
     </div>
