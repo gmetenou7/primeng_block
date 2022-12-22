@@ -12,6 +12,7 @@ import { InputNumberModule } from 'primeng/inputnumber';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { CheckboxModule } from 'primeng/checkbox';
 import { InputTextModule } from 'primeng/inputtext';
+import { KeyFilterModule } from 'primeng/keyfilter';
 
 @NgModule({
   imports: [
@@ -22,6 +23,7 @@ import { InputTextModule } from 'primeng/inputtext';
     DropdownModule,
     CheckboxModule,
     InputTextModule,
+    KeyFilterModule,
     InputNumberModule,
     RadioButtonModule,
     FormsModule,

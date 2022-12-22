@@ -79,7 +79,7 @@
                     <span class="text-600 text-base">Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam.</span>
                 </div>
         </ng-template>
-        <section class="flex flex-column gap-3 mt-3">
+        <form class="flex flex-column gap-3 mt-3">
             <div>
                 <label for="cardholder" class="block mb-1 text-color text-base">Cardholder Name</label>
                 <span class="p-input-icon-left w-full">
@@ -91,7 +91,7 @@
                 <label for="credit-card" class="block mb-1 text-color text-base">Credit Card Number</label>
                 <span class="p-input-icon-left w-full">
                     <i class="pi pi-credit-card"></i>
-                    <input type="text" class="w-full" id="credit-card" pInputText />
+                    <input type="text" class="w-full" id="credit-card" pInputText [pKeyFilter]="ccRegex" [pValidateOnly]="true" placeholder="1234-1234-1234-1234"/>
                 </span>
             </div>
             <div class="flex gap-3">
@@ -99,21 +99,21 @@
                     <label for="cvc" class="block mb-1 text-color text-base">CVC</label>
                     <span class="p-input-icon-left w-full">
                         <i class="pi pi-lock"></i>
-                        <input type="text" class="w-full" id="cvc" pInputText />
+                        <input type="text" class="w-full" id="cvc" pInputText pKeyFilter placeholder="123"/>
                     </span>
                 </div>
                 <div class="w-full">
                     <label for="expiration" class="block mb-1 text-color text-base">Expiration Month and Year</label>
                     <span class="p-input-icon-left w-full">
                         <i class="pi pi-clock"></i>
-                        <input type="text" class="w-full" id="expiration" pInputText />
+                        <input type="text" class="w-full" id="expiration" pInputText pKeyFilter placeholder="12/22"/>
                     </span>
                 </div>
             </div>
-        </section>
+        </form>
 
         <ng-template pTemplate="footer">
-            <div class="flex gap-3 justify-content-end">
+            <div class="flex gap-3 justify-content-end border-top-1 surface-border pt-5">
                 <button pButton pRipple label="Cancel" (click)="visible4 = false" class="p-button-text"></button>
                 <button pButton pRipple label="Update" (click)="visible4 = false" class="p-button-rounded"></button>
             </div>
