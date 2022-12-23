@@ -602,72 +602,72 @@ export class SlideOverComponent {
     </div>
 </div>`;
 
-    block11: string = `
+    block11: string = `    
 <button pButton pRipple label="Display" icon="pi pi-arrow-left" pStyleClass="#slideover-11" enterClass="hidden" enterActiveClass="fadeinright" leaveToClass="hidden" leaveActiveClass="fadeoutright" [hideOnOutsideClick]="true"></button>
 
-<section id="slideover-11" class="hidden surface-overlay h-full absolute top-0 right-0 shadow-2 w-24rem">
-    <div class="flex flex-column justify-content-between p-4 h-full">
-        <div>
-            <div class="flex align-items-start bg-primary-700 justify-content-between p-3 mb-4">
-                <div>
-                    <div class="text-0 text-xl font-medium mb-1">Title Placeholder</div>
-                    <p class="m-0 p-0 line-height-3 text-primary-200 text-sm">
-                        Nunc mi ipsum faucibus vitae aliquet nec. Lacus sed viverra tellus in hac habitasse.
-                    </p>
+    <section id="slideover-11" class="hidden surface-overlay h-full absolute top-0 right-0 shadow-2 w-24rem">
+        <div class="flex flex-column justify-content-between h-full">
+            <form>
+                <div class="flex align-items-start bg-blue-700 justify-content-between p-3 mb-4">
+                    <article>
+                        <h2 class="text-0 mt-0 text-xl font-medium mb-1 text-white">Title Placeholder</h2>
+                        <p class="m-0 p-0 line-height-3 text-primary-200 text-sm">
+                            Nunc mi ipsum faucibus vitae aliquet nec. Lacus sed viverra tellus in hac habitasse.
+                        </p>
+                    </article>
+                    <div>
+                        <button pButton pRipple icon="pi pi-times" class="p-button-rounded p-button-text p-button-plain text-0" pStyleClass="#slideover-11" leaveToClass="hidden" leaveActiveClass="fadeoutright"></button>
+                    </div>
                 </div>
-                <div>
-                    <button pButton pRipple icon="pi pi-times" class="p-button-rounded p-button-text p-button-plain text-0" pStyleClass="#slideover-11" leaveToClass="hidden" leaveActiveClass="fadeoutright"></button>
+                <div class="px-4">
+                    <h3 class="text-base font-semibold mt-0 mb-0 text-color">Project Name</h3>
+                    <div class="p-inputgroup mt-2">
+                        <span class="p-inputgroup-addon"><i class="pi pi-file"></i></span>
+                        <input type="text" pInputText />
+                    </div>
                 </div>
-            </div>
-            <div>
-                <span class="font-semibold text-color">Project Name</span>
-                <div class="p-inputgroup mt-2">
-                    <span class="p-inputgroup-addon"><i class="pi pi-file"></i></span>
-                    <input type="text" pInputText />
+                <div class="px-4 mt-4">
+                    <h3 class="text-base font-semibold text-color mt-0 mb-0">Tags</h3>
+                    <div class="mt-2 p-fluid">
+                        <p-chips></p-chips>
+                    </div>
                 </div>
-            </div>
-            <div class="mt-4">
-                <span class="font-semibold text-color">Tags</span>
-                <div class="mt-2 p-fluid">
-                    <p-chips></p-chips>
+                <div class="px-4 mt-4">
+                    <h3 class="text-base font-semibold text-color mt-0 mb-0">Team Members</h3>
+                    <div class="mt-3 flex gap-3">
+                        <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-1.png" pBadge value="4" size="large"></p-avatar>
+                        <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-2.png" pBadge value="8" size="large"></p-avatar>
+                        <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-3.png" pBadge value="9" size="large"></p-avatar>
+                        <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-4.png" pBadge value="3" size="large"></p-avatar>
+                    </div>
                 </div>
-            </div>
-            <div class="mt-4">
-                <span class="font-semibold text-color">Team Members</span>
-                <div class="mt-3 flex gap-3">
-                    <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-1.png" pBadge value="4" size="large"></p-avatar>
-                    <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-2.png" pBadge value="8" size="large"></p-avatar>
-                    <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-3.png" pBadge value="9" size="large"></p-avatar>
-                    <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-4.png" pBadge value="3" size="large"></p-avatar>
+                <div class="px-4 mt-4">
+                    <h3 class="text-base font-semibold text-color">Newsletter Permissions</h3>
+                    <div class="mt-3 flex align-items-center gap-3">
+                        <p-inputSwitch class="flex"></p-inputSwitch>
+                        <p class="mt-0 mb-0 text-base text-color">Allow sending Marketing emails</p>
+                    </div>
+                    <div class="mt-3 flex align-items-center gap-3">
+                        <p-inputSwitch class="flex"></p-inputSwitch>
+                        <p class="mt-0 mb-0 text-base">Allow sending Release emails</p>
+                    </div>
+                    <div class="mt-3 flex align-items-center gap-3">
+                        <p-inputSwitch class="flex"></p-inputSwitch>
+                        <p class="mt-0 mb-0 text-base">Allow sending Notification emails</p>
+                    </div>
                 </div>
-            </div>
-            <div class="mt-4">
-                <span class="font-semibold text-color">Newsletter Permissions</span>
-                <div class="mt-3 flex align-items-center gap-3">
-                    <p-inputSwitch class="flex"></p-inputSwitch>
-                    <span class="text-color">Allow sending Marketing emails</span>
-                </div>
-                <div class="mt-3 flex align-items-center gap-3">
-                    <p-inputSwitch class="flex"></p-inputSwitch>
-                    <span class="text-color">Allow sending Release emails</span>
-                </div>
-                <div class="mt-3 flex align-items-center gap-3">
-                    <p-inputSwitch class="flex"></p-inputSwitch>
-                    <span class="text-color">Allow sending Notification emails</span>
-                </div>
+            </form>
+            <div class="mx-4 py-4 border-top-1 surface-border flex">
+                <p-button class="w-full" styleClass="w-full">
+                    <ng-template class="w-full" pTemplate="content">
+                        <span class="w-full flex justify-content-center align-items-center gap-3 ">
+                            <i class="pi pi-send"></i>
+                            <span class="font-bold">Submit Project</span>
+                        </span>
+                    </ng-template>  
+                </p-button>
             </div>
         </div>
-        <div class="pt-3 border-top-1 surface-border flex">
-            <p-button class="w-full" styleClass="w-full">
-                <ng-template class="w-full" pTemplate="content">
-                    <span class="w-full flex justify-content-center align-items-center gap-3 ">
-                        <i class="pi pi-send"></i>
-                        <span class="font-bold">Submit Project</span>
-                    </span>
-                </ng-template>  
-            </p-button>
-        </div>
-    </div>
-</section>`;
+    </section>`;
 
 }
