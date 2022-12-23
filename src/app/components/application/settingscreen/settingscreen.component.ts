@@ -565,36 +565,42 @@ export class SettingScreenComponent implements OnInit {
         </ul>
     </div>
 </nav>
-<div class="surface-overlay px-4 lg:px-6 py-4 px-4 lg:px-6 border-y-1 surface-border flex flex-column flex-wrap md:flex-row gap-3 w-full md:justify-content-between md:align-items-center">
+<nav class="surface-overlay px-4 lg:px-6 py-4 px-4 lg:px-6 border-y-1 surface-border flex flex-column flex-wrap md:flex-row gap-3 w-full md:justify-content-between md:align-items-center">
     <ul class="list-none m-0 p-0 flex flex-row justify-content-between lg:justify-content-start lg:mb-0">
         <li>
             <a pRipple class="flex align-items-center cursor-pointer p-3 border-round hover:surface-200 transition-duration-150 transition-colors" [ngClass]="{'surface-200': activeTab3 === 0}" (click)="activeTab3 = 0">
-                <i class="pi pi-user md:hidden" [ngClass]="{'text-700' : activeTab3 === 0, 'text-600': activeTab3 !== 0}"></i>
-                <span class="font-medium hidden md:block" [ngClass]="{'text-900': activeTab3 === 0, 'text-600': activeTab3 !== 0}">Profile</span>
+                <i class="pi pi-chart-line md:hidden" [ngClass]="{'text-700' : activeTab3 === 0, 'text-600': activeTab3 !== 0}"></i>
+                <span class="font-medium hidden md:block" [ngClass]="{'text-900': activeTab3 === 0, 'text-600': activeTab3 !== 0}">Overview</span>
             </a>
         </li>
         <li>
             <a pRipple class="flex align-items-center cursor-pointer p-3 border-round hover:surface-200 transition-duration-150 transition-colors" [ngClass]="{'surface-200': activeTab3 === 1}" (click)="activeTab3 = 1">
-                <i class="pi pi-cog md:hidden" [ngClass]="{'text-700' : activeTab3 === 1, 'text-600': activeTab3 !== 1}"></i>
-                <span class="font-medium hidden md:block" [ngClass]="{'text-900': activeTab3 === 1, 'text-600': activeTab3 !== 1}">Account</span>
+                <i class="pi pi-user md:hidden" [ngClass]="{'text-700' : activeTab3 === 1, 'text-600': activeTab3 !== 1}"></i>
+                <span class="font-medium hidden md:block" [ngClass]="{'text-900': activeTab3 === 1, 'text-600': activeTab3 !== 1}">Profile</span>
             </a>
         </li>
         <li>
             <a pRipple class="flex align-items-center cursor-pointer p-3 border-round hover:surface-200 transition-duration-150 transition-colors" [ngClass]="{'surface-200': activeTab3 === 2}" (click)="activeTab3 = 2">
-                <i class="pi pi-palette md:hidden" [ngClass]="{'text-700' : activeTab3 === 2, 'text-600': activeTab3 !== 2}"></i>
-                <span class="font-medium hidden md:block" [ngClass]="{'text-900': activeTab3 === 2, 'text-600': activeTab3 !== 2}">Appearance</span>
+                <i class="pi pi-bolt md:hidden" [ngClass]="{'text-700' : activeTab3 === 2, 'text-600': activeTab3 !== 2}"></i>
+                <span class="font-medium hidden md:block" [ngClass]="{'text-900': activeTab3 === 2, 'text-600': activeTab3 !== 2}">Activity</span>
             </a>
         </li>
         <li>
             <a pRipple class="flex align-items-center cursor-pointer p-3 border-round hover:surface-200 transition-duration-150 transition-colors"  [ngClass]="{'surface-200': activeTab3 === 3}" (click)="activeTab3 = 3">
-                <i class="pi pi-sun md:hidden" [ngClass]="{'text-700' : activeTab3 === 3, 'text-600': activeTab3 !== 3}"></i>
-                <span class="font-medium hidden md:block" [ngClass]="{'text-900': activeTab3 === 3, 'text-600': activeTab3 !== 3}">Accessibility</span>
+                <i class="pi pi-users md:hidden" [ngClass]="{'text-700' : activeTab3 === 3, 'text-600': activeTab3 !== 3}"></i>
+                <span class="font-medium hidden md:block" [ngClass]="{'text-900': activeTab3 === 3, 'text-600': activeTab3 !== 3}">Members & Roles</span>
             </a>
         </li>
         <li>
             <a pRipple class="flex align-items-center cursor-pointer p-3 border-round hover:surface-200 transition-duration-150 transition-colors" [ngClass]="{'surface-200': activeTab3 === 4}" (click)="activeTab3 = 4">
-                <i class="pi pi-bell md:hidden" [ngClass]="{'text-700' : activeTab3 === 4, 'text-600': activeTab3 !== 4}"></i>
-                <span class="font-medium hidden md:block" [ngClass]="{'text-900': activeTab3 === 4, 'text-600': activeTab3 !== 4}">Notifications</span>
+                <i class="pi pi-lock md:hidden" [ngClass]="{'text-700' : activeTab3 === 4, 'text-600': activeTab3 !== 4}"></i>
+                <span class="font-medium hidden md:block" [ngClass]="{'text-900': activeTab3 === 4, 'text-600': activeTab3 !== 4}">Security</span>
+            </a>
+        </li>
+        <li>
+            <a pRipple class="flex align-items-center cursor-pointer p-3 border-round hover:surface-200 transition-duration-150 transition-colors" [ngClass]="{'surface-200': activeTab3 === 5}" (click)="activeTab3 = 5">
+                <i class="pi pi-dollar md:hidden" [ngClass]="{'text-700' : activeTab3 === 5, 'text-600': activeTab3 !== 5}"></i>
+                <span class="font-medium hidden md:block" [ngClass]="{'text-900': activeTab3 === 5, 'text-600': activeTab3 !== 5}">Team Plan</span>
             </a>
         </li>
     </ul>
@@ -602,7 +608,7 @@ export class SettingScreenComponent implements OnInit {
         <i class="pi pi-search"></i>
         <input type="text" pInputText placeholder="Search" class="w-full md:w-15rem border-round"/>
     </span>
-</div>
+</nav>
 <section class="surface-overlay px-4 lg:px-6 py-4 px-4 lg:px-6 border-top-1 surface-border">
     <div class="border-bottom-1 surface-border">
         <h2 class="mt-0 mb-2 text-900 font-bold text-4xl">Members & Roles</h2>
@@ -621,7 +627,7 @@ export class SettingScreenComponent implements OnInit {
                 <li class="w-10rem font-semibold text-sm text-color-secondary pl-2">Last Active</li>
                 <li class="w-3rem font-semibold text-sm text-color-secondary"></li>
             </ul>
-            <table style="min-width: 50rem; border-collapse: collapse;" class="shadow-1 surface-100 border-round-xl mt-4 md:mt-0">
+            <table style="min-width: 50rem; border-collapse: collapse;" class="shadow-1 surface-100 border-round-xl mt-4 md:mt-0 w-full">
                 <tbody class="surface-card">
                     <tr *ngFor="let member of members; let first = first; let last = last" class="hover:surface-hover cursor-pointer">
                         <td class="p-3 w-20rem" [ngStyle]="{'border-top-left-radius': first ? '10.5px' : '0', 'border-bottom-left-radius': last ? '10.5px' : '0'}">
