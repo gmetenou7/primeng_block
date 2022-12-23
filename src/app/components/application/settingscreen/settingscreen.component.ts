@@ -370,19 +370,19 @@ export class SettingScreenComponent implements OnInit {
             </ul>
             <ul class="list-none p-0 m-0 flex xl:align-items-center select-none flex-column xl:flex-row border-top-1 surface-border xl:border-top-none">
                 <li>
-                    <a pRipple class="flex h-3rem w-full xl:w-3rem px-3 align-items-center text-orange-600 hover:surface-hover font-medium xl:border-round cursor-pointer transition-colors transition-duration-150" (click)="activeTab2 = 4">
+                    <a pRipple class="flex h-3rem w-full xl:w-3rem px-3 xl:px-0 justify-content-start xl:justify-content-center align-items-center text-orange-600 hover:surface-hover font-medium xl:border-round cursor-pointer transition-colors transition-duration-150" (click)="activeTab2 = 4">
                         <i class="pi pi-inbox text-base xl:text-2xl mr-2 xl:mr-0"></i>
                         <span class="block xl:hidden font-medium">Inbox</span>
                     </a>
                 </li>
                 <li>
-                    <a pRipple class="flex h-3rem w-full xl:w-3rem px-3 align-items-center text-cyan-600 hover:surface-hover font-medium xl:border-round cursor-pointer transition-colors transition-duration-150" (click)="activeTab2 = 5">
+                    <a pRipple class="flex h-3rem w-full xl:w-3rem px-3 xl:px-0 justify-content-start xl:justify-content-center align-items-center text-cyan-600 hover:surface-hover font-medium xl:border-round cursor-pointer transition-colors transition-duration-150" (click)="activeTab2 = 5">
                         <i class="pi pi-bell text-base xl:text-2xl mr-2 xl:mr-0" pBadge severity="danger"></i>
                         <span class="block xl:hidden font-medium">Notifications</span>
                     </a>
                 </li>
                 <li class="border-top-1 surface-border xl:border-top-none">
-                    <a pRipple class="flex h-3rem w-full xl:w-3rem px-3 align-items-center hover:surface-hover font-medium xl:border-round cursor-pointer transition-colors transition-duration-150" (click)="activeTab2 = 6">
+                    <a pRipple class="flex h-3rem w-full xl:w-3rem px-3 xl:px-0 justify-content-start xl:justify-content-center align-items-center hover:surface-hover font-medium xl:border-round cursor-pointer transition-colors transition-duration-150" (click)="activeTab2 = 6">
                         <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-3 xl:mr-0" style="width: 32px; height: 32px"/>
                         <div class="block xl:hidden" [ngClass]="{'text-900': activeTab2 === 6, 'text-50': activeTab2 !== 6}">
                             <span class="block font-medium">Josephine Lillard</span>
@@ -503,7 +503,7 @@ export class SettingScreenComponent implements OnInit {
                     </div>
                 </div>
             </div>
-         </div>
+            </div>
     </div>
 </section>`;
 
