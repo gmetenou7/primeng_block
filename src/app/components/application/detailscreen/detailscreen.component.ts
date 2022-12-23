@@ -411,11 +411,11 @@ export class DetailScreenComponent implements OnInit {
             </div>
             <button pButton pRipple class="p-button-outlined" label="Report Issue"></button>
         </header>
-        <form class="flex flex-wrap flex-column md:flex-row md:align-items-center gap-2 py-5">
+        <section class="flex flex-wrap flex-column md:flex-row md:align-items-center gap-2 py-5">
             <p-multiSelect [options]="cities" [(ngModel)]="selectedCities" styleClass="w-full md:w-15rem" defaultLabel="Select a city" optionLabel="name" selectedItemsLabel="{0} items selected"></p-multiSelect>
             <p-calendar [(ngModel)]="rangeDates" selectionMode="range" styleClass="w-full md:w-15rem" [readonlyInput]="true" inputId="range"></p-calendar>
             <p-dropdown [options]="prices" [(ngModel)]="selectedPrice" styleClass="w-full md:w-15rem" placeholder="Select price range" optionLabel="value"></p-dropdown>
-        </form>
+        </section>
         <img src="assets/images/blocks/maps/map-1.png" alt="Map" class="w-full border-1 surface-border border-round">
         <div class="flex w-full justify-content-center sm:justify-content-end align-items-center my-5">
             <p-selectButton [options]="stateOptions" [(ngModel)]="value1" optionLabel="label" optionValue="value"></p-selectButton>
