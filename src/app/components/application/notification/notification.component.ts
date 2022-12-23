@@ -6,6 +6,8 @@ import { MessageService } from 'primeng/api';
 })
 export class NotificationComponent  {
 
+    value: number = 0;
+
     constructor(private messageService: MessageService) {}
 
     notify1() {
@@ -117,6 +119,7 @@ export class NotificationComponent  {
     }
 
     notify10() {
+        this.value = 0;
         this.messageService.clear();
         this.messageService.add({
             key: 'block10',
@@ -124,8 +127,23 @@ export class NotificationComponent  {
             summary: 'Uploading Your Files',
             detail: 'Please wait till the end...',
             styleClass: 'surface-overlay',
-            contentStyleClass: 'p-3'
+            contentStyleClass: 'p-3',
+            life: 6000
         });
+        this.increment();
+    }
+
+    increment() {
+        let interval = setInterval(() => {
+            
+            if (this.value <= 100) {
+                this.value = this.value + 20;
+            }
+            if (this.value >= 100) {
+                this.value = 100;
+                clearInterval(interval);
+            }
+        }, 1000);
     }
 
     clear(key: string) {
@@ -267,17 +285,17 @@ export class NotificationComponent  {
 <button pButton pRipple label="Display" (click)="notify9()"></button>
 <p-toast key="block9" [style]="{width: '20rem'}" [preventOpenDuplicates]="true">
     <ng-template let-message pTemplate="message">
-        <div class="flex flex-column gap-3 w-full">
+        <article class="flex flex-column gap-3 w-full">
             <div class="flex flex-column gap-2">
-                <h1 class="m-0 font-semibold text-base text-900">{{message.summary}}</h1>
-                <span class="text-base text-700">{{message.detail}}</span>
+                <p class="m-0 font-semibold text-base text-900">{{message.summary}}</p>
+                <p class="m-0 text-base text-700">{{message.detail}}</p>
             </div>
-            <img src="assets/images/blocks/illustration/notification-2.jpg" alt="Image">
+            <img src="assets/images/blocks/illustration/notification-2.jpg" class="border-round" alt="Image">
             <div class="flex gap-3">
                 <button pButton pRipple label="Let's see" class="p-button-text p-0"></button>
                 <button pButton pRipple label="Not now" class="p-button-text text-500 p-0"></button>
             </div>
-        </div>
+        </article>
     </ng-template>
 </p-toast>`;
     
@@ -285,21 +303,21 @@ export class NotificationComponent  {
 <button pButton pRipple label="Display" (click)="notify10()"></button>
 <p-toast key="block10" [style]="{width: '30rem'}" [preventOpenDuplicates]="true">
     <ng-template let-message pTemplate="message">
-        <div class="flex gap-3 w-full">
+        <article class="flex gap-3 w-full">
             <i class="pi pi-cloud-upload text-primary-500 text-2xl"></i>
             <div class="flex flex-column gap-3 w-full">
-                <h1 class="m-0 font-semibold text-base text-900">{{message.summary}}</h1>
-                <span class="text-base text-700">{{message.detail}}</span>
+                <p class="m-0 font-semibold text-base text-900">{{message.summary}}</p>
+                <p class="m-0 text-base text-700">{{message.detail}}</p>
                 <div class="flex flex-column gap-2">
-                    <p-progressBar value="80" [showValue]="false" [style]="{'height': '6px'}"></p-progressBar>
-                    <label class="text-right text-xs text-700">80% uploaded...</label>
+                    <p-progressBar [value]="value" [showValue]="false" [style]="{'height': '6px'}"></p-progressBar>
+                    <label class="text-right text-xs text-700">{{value}}% uploaded...</label>
                 </div>
                 <div class="flex gap-3">
                     <button pButton pRipple label="Another Upload?" class="p-button-text p-0"></button>
                     <button pButton pRipple label="Cancel" class="p-button-text text-500 p-0"></button>
                 </div>
             </div>
-        </div>
+        </article>
     </ng-template>
 </p-toast>`;
 
