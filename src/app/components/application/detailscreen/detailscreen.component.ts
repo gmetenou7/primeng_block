@@ -14,7 +14,7 @@ export class DetailScreenComponent implements OnInit {
 
     prices: any[];
 
-    selectedPrice: string = '$5000 - $10000';
+    selectedPrice: any = {value: '$5000 - $10000'};
 
     selectedCities: any[];
 
@@ -27,8 +27,7 @@ export class DetailScreenComponent implements OnInit {
             guest: '2 Guests',
             speed: '1 Gigabit',
             stars: 4,
-            price: '$1,143',
-            background: 'linear-gradient(120deg, rgb(59, 130, 246, 10%) 0%, #ffffff 100%)'
+            price: '$1,143'
         },
         {
             title: 'Luxurious spacious suite Jordan',
@@ -38,8 +37,7 @@ export class DetailScreenComponent implements OnInit {
             guest: '2 Guests',
             speed: '1 Gigabit',
             stars: 5,
-            price: '$983',
-            background: 'linear-gradient(120deg, rgb(249, 115, 22, 10%) 0%, #ffffff 100%)'
+            price: '$983'
         },
         {
             title: 'Home in Amsterdam',
@@ -49,8 +47,7 @@ export class DetailScreenComponent implements OnInit {
             guest: '2 Guests',
             speed: '200 Megabits',
             stars: 4,
-            price: '$514',
-            background: 'linear-gradient(120deg, rgb(20, 184, 166, 10%) 0%, #ffffff 100%)'
+            price: '$514'
         }
 	];
 
@@ -77,7 +74,7 @@ export class DetailScreenComponent implements OnInit {
             {name: 'Paris', code: 'PRS'}
         ];
 
-        this.prices = ['$5000 - $10000', '$10000 - $15000', '$15000 - $20000'];
+        this.prices = [{value: '$5000 - $10000'}, {value: '$10000 - $15000'}, {value: '$15000 - $20000'}];
     }
 
     block1: string = `
@@ -341,8 +338,8 @@ export class DetailScreenComponent implements OnInit {
 </div>`;
 
     block2: string = `
-<div class="surface-ground">
-    <div class="surface-overlay px-6 border-bottom-1 surface-border shadow-2 flex justify-content-between relative lg:static" style="min-height: 84px">
+<section class="surface-ground">
+    <nav class="surface-overlay px-6 border-bottom-1 surface-border shadow-2 flex justify-content-between relative lg:static" style="min-height: 84px">
         <img src="assets/images/blocks/logos/bastion-700.svg" alt="Image" height="40" class="mr-0 lg:mr-6 align-self-center">
         <a pRipple class="cursor-pointer block lg:hidden align-self-center text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
             <i class="pi pi-bars text-4xl"></i>
@@ -405,27 +402,27 @@ export class DetailScreenComponent implements OnInit {
                 </li>
             </ul>
         </div>
-    </div>
-    <div class="surface-section px-6 py-5">
-        <div class="flex w-full justify-content-between align-items-center border-bottom-1 surface-border pb-5">
+    </nav>
+    <section class="surface-section px-6 py-5">
+        <header class="flex w-full justify-content-between align-items-center border-bottom-1 surface-border pb-5">
             <div>
                 <h2 class="mt-0 mb-3 font-medium text-2xl text-900">Listings</h2>
                 <p class="mt-0 mb-0 font-normal text-base text-500">Vivamus id nisl interdum, blandit augue sit amet, eleifend mi.</p>
             </div>
             <button pButton pRipple class="p-button-outlined" label="Report Issue"></button>
-        </div>
-        <div class="flex flex-wrap align-items-center gap-2 py-5">
-            <p-multiSelect [options]="cities" [(ngModel)]="selectedCities" defaultLabel="Select a city" optionLabel="name" selectedItemsLabel="{0} items selected"></p-multiSelect>
-            <p-calendar [(ngModel)]="rangeDates" selectionMode="range" [readonlyInput]="true" inputId="range"></p-calendar>
-            <p-dropdown [options]="prices" [(ngModel)]="selectedPrice" placeholder="Select price range" optionLabel="name"></p-dropdown>
-        </div>
+        </header>
+        <form class="flex flex-wrap flex-column md:flex-row md:align-items-center gap-2 py-5">
+            <p-multiSelect [options]="cities" [(ngModel)]="selectedCities" styleClass="w-full md:w-15rem" defaultLabel="Select a city" optionLabel="name" selectedItemsLabel="{0} items selected"></p-multiSelect>
+            <p-calendar [(ngModel)]="rangeDates" selectionMode="range" styleClass="w-full md:w-15rem" [readonlyInput]="true" inputId="range"></p-calendar>
+            <p-dropdown [options]="prices" [(ngModel)]="selectedPrice" styleClass="w-full md:w-15rem" placeholder="Select price range" optionLabel="value"></p-dropdown>
+        </form>
         <img src="assets/images/blocks/maps/map-1.png" alt="Map" class="w-full border-1 surface-border border-round">
         <div class="flex w-full justify-content-center sm:justify-content-end align-items-center my-5">
             <p-selectButton [options]="stateOptions" [(ngModel)]="value1" optionLabel="label" optionValue="value"></p-selectButton>
         </div>
         <p-dataView #dv [value]="products" [paginator]="true" [rows]="3" layout="list" [showCurrentPageReport]="true"  [rowsPerPageOptions]="[10,25,50]" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries">
             <ng-template let-product pTemplate="listItem">
-                <article class="flex flex-column md:flex-row w-full gap-3 p-3 border-round border-1 surface-border mb-3" [style.background-image]="product.background">
+                <article class="flex flex-column md:flex-row w-full gap-3 p-3 border-round border-1 surface-border mb-3">
                     <div class="relative">
                         <img [src]="product.image" alt="Image" class="border-round w-full h-full md:w-14rem md:h-14rem">
                         <p class="absolute px-2 py-1 border-round-lg text-sm font-normal text-white mt-0 mb-0" style="background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px); top: 3%; left: 3%;">Superhost</p>
@@ -461,7 +458,7 @@ export class DetailScreenComponent implements OnInit {
                 </article>
             </ng-template>
         </p-dataView>
-    </div>
-</div>`;
+    </section>
+</section>`;
 
 }
