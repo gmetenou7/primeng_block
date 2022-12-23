@@ -404,7 +404,7 @@ export class CommandMenuComponent {
         </span>
         <span class="p-1 border-white-alpha-20 border-1 border-round mr-2 text-white-alpha-80 text-xs bg-white-alpha-20">⌘K</span>
     </div>
-    <div id="command-menu-6" class="">
+    <div id="command-menu-6">
         <div class="flex flex-column md:flex-row border-top-1 border-white-alpha-20">
             <div class="w-full md:w-6 p-3 border-right-1 border-white-alpha-20">
                 <ul class="list-none m-0 p-0">
@@ -434,7 +434,7 @@ export class CommandMenuComponent {
                     </li>
                 </ul>
             </div>
-            <div class="w-full md:w-6 p-3 flex flex-column align-items-center md:align-items-start">
+            <div class="w-full md:w-6 px-3 py-4 md:p-3 flex flex-column align-items-center md:align-items-start border-top-1 border-white-alpha-20 md:border-none">
                 <img src="assets/images/blocks/commandmenu/commandmenu-3.jpeg" class="w-10rem h-6rem mx-auto border-round shadow-2" alt="Image">
                 <p class="font-medium text-sm text-white mt-2 mb-2 w-full text-center">portrait-sign.jpg</p>
                 <div class="flex gap-2 text-white-alpha-80">
