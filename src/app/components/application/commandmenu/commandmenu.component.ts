@@ -459,7 +459,7 @@ export class CommandMenuComponent {
                         <td>
                             <div class="inline-flex w-full align-items-center justify-content-end">
                                 <p class="text-white font-medium text-xs text-right my-1">My Drive/Personal/Images/</p>
-                                <span class="bg-white-alpha-20 border-circle ml-1 p-1"><i class="pi pi-folder-open text-white"></i></span>
+                                <span class="bg-white-alpha-20 border-circle ml-1 p-1 flex align-items-center justify-content-center"><i class="pi pi-folder-open text-white" style="font-size: 8px;"></i></span>
                             </div>
                         </td>
                     </tr>
@@ -483,17 +483,17 @@ export class CommandMenuComponent {
                 </table>
             </div>
         </div>
-        <div class="p-2 bg-white-alpha-10 border-top-1 border-white-alpha-20 flex flex-wrap md:flex-nowrap align-items-center justify-content-center sm:justify-content-start">
-            <p class="sm:mt-0 mb-0 mr-3 text-xs text-white-alpha-70">
+        <div class="px-2 bg-white-alpha-10 border-top-1 border-white-alpha-20 flex column-gap-1 md:column-gap-3 flex-wrap md:flex-nowrap align-items-center justify-content-evenly sm:justify-content-start">
+            <p class="text-xs text-white-alpha-70">
                 <span class="px-2 py-1 border-white-alpha-20 border-1 border-round mr-1 text-white-alpha-80 text-xs bg-white-alpha-20">⏎</span>
                 Select
             </p>
-            <p class="sm:mt-0 mb-0 mr-3 text-xs text-white-alpha-70">
+            <p class="text-xs text-white-alpha-70">
                 <span class="px-2 py-1 border-white-alpha-20 border-1 border-round mr-1 text-white-alpha-80 text-xs bg-white-alpha-20">↑</span>
                 <span class="px-2 py-1 border-white-alpha-20 border-1 border-round mr-1 text-white-alpha-80 text-xs bg-white-alpha-20">↓</span>
                 Navigate
             </p>
-            <p class="sm:mt-0 mb-0 mr-3 text-xs text-white-alpha-70 flex-align-items-center justify-content-center flex-row">
+            <p class="text-xs text-white-alpha-70 flex-align-items-center justify-content-center flex-row">
                 <span class="px-2 py-1 border-white-alpha-20 border-1 border-round mr-1 text-white-alpha-80 text-xs bg-white-alpha-20 inline-flex">esc</span>
                 Close
             </p>
