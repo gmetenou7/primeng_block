@@ -295,7 +295,7 @@ export class CommandMenuComponent {
         </span>
         <span class="p-1 border-white-alpha-20 border-1 border-round mr-2 text-white-alpha-80 text-xs bg-white-alpha-20">⌘K</span>
     </div>
-    <div id="command-menu-5" class="hidden">
+    <div id="command-menu-5" class="">
         <div class="border-y-2 border-white-alpha-20 p-3">
             <h2 class="font-semibold text-xs text-white-alpha-50 mb-2 mt-0 px-1">RECENT</h2>
             <ul class="list-none m-0 p-0">
@@ -316,7 +316,7 @@ export class CommandMenuComponent {
                         <p class="font-normal text-xs text-white-alpha-80 mt-0 mb-0">Reach your favorites easily</p>
                     </div>
                 </div>
-                <div class="flex align-items-center align-self-center mt-3 sm:mt-0">
+                <div class="hidden md:flex align-items-center md:align-self-center mt-3 sm:mt-0">
                     <span class="px-2 py-1 border-white-alpha-20 border-1 border-round text-white-alpha-80 text-xs bg-white-alpha-20">⌘</span>
                     <span class="mx-2 text-white-alpha-80">+</span>
                     <span class="px-2 py-1 border-white-alpha-20 border-1 border-round text-white-alpha-80 text-xs bg-white-alpha-20">F</span>
@@ -333,7 +333,7 @@ export class CommandMenuComponent {
                         <p class="font-normal text-xs text-white-alpha-80 mt-0 mb-0">Get list and manage your repositories</p>
                     </div>
                 </div>
-                <div class="flex align-items-center align-self-center mt-3 sm:mt-0">
+                <div class="hidden md:flex align-items-center md:align-self-center mt-3 sm:mt-0">
                     <span class="px-2 py-1 border-white-alpha-20 border-1 border-round text-white-alpha-80 text-xs bg-white-alpha-20">⌘</span>
                     <span class="mx-2 text-white-alpha-80">+</span>
                     <span class="px-2 py-1 border-white-alpha-20 border-1 border-round text-white-alpha-80 text-xs bg-white-alpha-20">SHIFT</span>
@@ -352,7 +352,7 @@ export class CommandMenuComponent {
                         <p class="font-normal text-xs text-white-alpha-80 mt-0 mb-0">Access all premium benefits</p>
                     </div>
                 </div>
-                <div class="flex align-items-center align-self-center mt-3 sm:mt-0">
+                <div class="hidden md:flex align-items-center md:align-self-center mt-3 sm:mt-0">
                     <span class="px-2 py-1 border-white-alpha-20 border-1 border-round text-white-alpha-80 text-xs bg-white-alpha-20">⌘</span>
                     <span class="mx-2 text-white-alpha-80">+</span>
                     <span class="px-2 py-1 border-white-alpha-20 border-1 border-round text-white-alpha-80 text-xs bg-white-alpha-20">U</span>
@@ -369,7 +369,7 @@ export class CommandMenuComponent {
                         <p class="font-normal text-xs text-white-alpha-80 mt-0 mb-0">Refresh all of your data</p>
                     </div>
                 </div>
-                <div class="flex align-items-center align-self-center mt-3 sm:mt-0">
+                <div class="hidden md:flex align-items-center md:align-self-center mt-3 sm:mt-0">
                     <span class="px-2 py-1 border-white-alpha-20 border-1 border-round text-white-alpha-80 text-xs bg-white-alpha-20">⌘</span>
                     <span class="mx-2 text-white-alpha-80">+</span>
                     <span class="px-2 py-1 border-white-alpha-20 border-1 border-round text-white-alpha-80 text-xs bg-white-alpha-20">/</span>
