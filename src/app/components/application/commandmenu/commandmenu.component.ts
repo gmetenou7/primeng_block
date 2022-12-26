@@ -35,16 +35,16 @@ export class CommandMenuComponent {
             <i class="pi pi-search text-500"></i>
             <input type="text" pInputText placeholder="Search menus, shortcuts, contact and more..." class="w-full border-none shadow-none outline-none" (click)="visible1 = true"/> 
         </span>
-        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden sm:block">⌘K</span>
+        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden md:block">⌘K</span>
     </div> 
 </section>
 <p-dialog [(visible)]="visible1" [dismissableMask]="true" [modal]="true" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '50vw'}" contentStyleClass="border-round-top p-0" appendTo="body" (onShow)="input1.focus();" (onHide)="visible1 = false;  value1 = '';">
-    <div class="flex w-full align-items-center justify-content-between px-1">
+    <div class="flex w-full surface-section align-items-center justify-content-between px-1">
         <span class="p-input-icon-left w-full">
             <i class="pi pi-search text-500"></i>
             <input #input1 type="text" pInputText placeholder="Search menus, shortcuts, contact and more..." [(ngModel)]="value1" class="w-full border-none shadow-none outline-none"/> 
         </span>
-        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden sm:block">⌘K</span>
+        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden md:block">⌘K</span>
     </div> 
     <div class="border-y-1 surface-border px-3 py-3">
         <h2 class="font-semibold text-xs text-500 mb-2 mt-0 px-1">RECENT</h2>
@@ -66,7 +66,7 @@ export class CommandMenuComponent {
                     <p class="font-normal text-xs text-600 mt-0 mb-0">Change your system preferences</p>
                 </div>
             </div>
-            <span class="hidden sm:inline-block border-1 px-2 py-1 surface-border border-round surface-100 mr-2 text-600 text-xs">S</span>
+            <span class="hidden md:inline-block border-1 px-2 py-1 surface-border border-round surface-100 mr-2 text-600 text-xs">S</span>
         </article>
         
         <article class="flex w-full justify-content-between align-items-center mb-3 select-none cursor-pointer surface-border hover:surface-hover border-round-lg px-2 py-1 text-800 hover:text-primary">
@@ -79,7 +79,7 @@ export class CommandMenuComponent {
                     <p class="font-normal text-xs text-600 mt-0 mb-0">Go to your profile</p>
                 </div>
             </div>
-            <span class="hidden sm:inline-block border-1 px-2 py-1 surface-border border-round surface-100 mr-2 text-600 text-xs">P</span>
+            <span class="hidden md:inline-block border-1 px-2 py-1 surface-border border-round surface-100 mr-2 text-600 text-xs">P</span>
         </article>
 
         <article class="flex w-full justify-content-between align-items-center mb-3 select-none cursor-pointer surface-border hover:surface-hover border-round-lg px-2 py-1 text-800 hover:text-primary">
@@ -92,7 +92,7 @@ export class CommandMenuComponent {
                     <p class="font-normal text-xs text-600 mt-0 mb-0">Switch to dark mode save your eyes</p>
                 </div>
             </div>
-            <span class="hidden sm:inline-block border-1 px-2 py-1 surface-border border-round surface-100 mr-2 text-600 text-xs">D</span>
+            <span class="hidden md:inline-block border-1 px-2 py-1 surface-border border-round surface-100 mr-2 text-600 text-xs">D</span>
         </article>
 
         <article class="flex w-full justify-content-between align-items-center select-none cursor-pointer surface-border hover:surface-hover border-round-lg px-2 py-1 text-800 hover:text-primary">
@@ -116,16 +116,16 @@ export class CommandMenuComponent {
             <i class="pi pi-search text-500"></i>
             <input type="text" pInputText placeholder="Search menus, shortcuts, contact and more..." class="w-full border-none shadow-none outline-none" (click)="visible2 = true;"/> 
         </span>
-        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden sm:block">⌘K</span>
+        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden md:block">⌘K</span>
     </div>
 </section>
 <p-dialog [(visible)]="visible2" [dismissableMask]="true" [modal]="true" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '50vw'}" contentStyleClass="border-round-top p-0" appendTo="body" (onShow)="input2.focus();" (onHide)="visible2 = false; value2 = '';">
-    <div class="flex w-full align-items-center justify-content-between px-1">
+    <div class="flex w-full surface-section align-items-center justify-content-between px-1">
         <span class="p-input-icon-left w-full">
             <i class="pi pi-search text-500"></i>
             <input #input2 type="text" pInputText placeholder="Search menus, shortcuts, contact and more..." [(ngModel)]="value2" class="w-full border-none shadow-none outline-none"/> 
         </span>
-        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden sm:block">⌘K</span>
+        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden md:block">⌘K</span>
     </div>
     <section class="border-y-1 surface-border p-5 flex flex-column align-items-center gap-2">
         <h2 class="m-0 font-semibold text-900 text-xl">No emails found</h2>
@@ -145,23 +145,23 @@ export class CommandMenuComponent {
             <i class="pi pi-search text-500"></i>
             <input type="text" pInputText placeholder="Search menus, shortcuts, contact and more..." class="w-full border-none shadow-none outline-none" (click)="visible3 = true;"/> 
         </span>
-        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden sm:block">⌘K</span>
+        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden md:block">⌘K</span>
     </div>
 </section>
 <p-dialog [(visible)]="visible3" [dismissableMask]="true" [modal]="true" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '50vw'}" contentStyleClass="border-round-top p-0" appendTo="body" (onShow)="input3.focus();" (onHide)="visible3 = false; value3 = '';">
-    <div class="flex w-full align-items-center justify-content-between px-1">
+    <div class="flex w-full surface-section align-items-center justify-content-between px-1">
         <span class="p-input-icon-left w-full">
             <i class="pi pi-search text-500"></i>
             <input type="text" #input3 pInputText placeholder="Search menus, shortcuts, contact and more..." [(ngModel)]="value3" class="w-full border-none shadow-none outline-none"/> 
         </span>
-        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden sm:block">⌘K</span>
+        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden md:block">⌘K</span>
     </div>
     <div class="border-y-1 surface-border p-3">
         <h2 class="font-semibold text-xs text-500 mb-2 mt-0 px-1">RECENT</h2>
         <ul class="list-none m-0 p-0">
             <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
                 <span class="flex align-items-center"><i class="pi pi-file mr-2"></i>Add new file</span>
-                <div class="hidden sm:flex align-items-center">
+                <div class="hidden md:flex align-items-center">
                     <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">CMD</span>
                     <span class="mx-2 text-600">+</span>
                     <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">N</span>
@@ -169,7 +169,7 @@ export class CommandMenuComponent {
             </li>
             <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
                 <span class="flex align-items-center"><i class="pi pi-lock mr-2"></i>Lock Session</span>
-                <div class="hidden sm:flex align-items-center">
+                <div class="hidden md:flex align-items-center">
                     <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">CMD</span>
                     <span class="mx-2 text-600">+</span>
                     <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">L</span>
@@ -184,7 +184,7 @@ export class CommandMenuComponent {
         <ul class="list-none m-0 p-0">
             <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
                 <span class="flex align-items-center"><i class="pi pi-bell mr-2"></i>Notifications</span>
-                <div class="hidden sm:flex align-items-center">
+                <div class="hidden md:flex align-items-center">
                     <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">CMD</span>
                     <span class="mx-2 text-600">+</span>
                     <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">C</span>
@@ -192,7 +192,7 @@ export class CommandMenuComponent {
             </li>
             <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
                 <span class="flex align-items-center"><i class="pi pi-bookmark mr-2"></i>Bookmarks</span>
-                <div class="hidden sm:flex align-items-center">
+                <div class="hidden md:flex align-items-center">
                     <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">CMD</span>
                     <span class="mx-2 text-600">+</span>
                     <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">B</span>
@@ -200,7 +200,7 @@ export class CommandMenuComponent {
             </li>
             <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
                 <span class="flex align-items-center"><i class="pi pi-bolt mr-2"></i>Quick Actions</span>
-                <div class="hidden sm:flex align-items-center">
+                <div class="hidden md:flex align-items-center">
                     <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">SHIFT</span>
                     <span class="mx-2 text-600">+</span>
                     <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">Q</span>
@@ -208,7 +208,7 @@ export class CommandMenuComponent {
             </li>
             <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
                 <span class="flex align-items-center"><i class="pi pi-users mr-2"></i>Manage User Groups</span>
-                <div class="hidden sm:flex align-items-center">
+                <div class="hidden md:flex align-items-center">
                     <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">CMD</span>
                     <span class="mx-2 text-600">+</span>
                     <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">U</span>
@@ -216,7 +216,7 @@ export class CommandMenuComponent {
             </li>
             <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
                 <span class="flex align-items-center"><i class="pi pi-book mr-2"></i>Go to Documentation</span>
-                <div class="hidden sm:flex align-items-center">
+                <div class="hidden md:flex align-items-center">
                     <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">SHIFT</span>
                     <span class="mx-2 text-600">+</span>
                     <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">L</span>
@@ -224,7 +224,7 @@ export class CommandMenuComponent {
             </li>
             <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
                 <span class="flex align-items-center"><i class="pi pi-cog mr-2"></i>System Preferences</span>
-                <div class="hidden sm:flex align-items-center">
+                <div class="hidden md:flex align-items-center">
                     <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">CMD</span>
                     <span class="mx-2 text-600">+</span>
                     <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">P</span>
@@ -241,16 +241,16 @@ export class CommandMenuComponent {
             <i class="pi pi-search text-500"></i>
             <input type="text" pInputText placeholder="Find someone quickly..." class="w-full border-none shadow-none outline-none text-white-alpha-80" (click)="visible4 = true;"/> 
         </span>
-        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden sm:block">⌘K</span>
+        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden md:block">⌘K</span>
     </div>
 </section>
 <p-dialog [(visible)]="visible4" [dismissableMask]="true" [modal]="true" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '50vw'}" contentStyleClass="border-round-top p-0" appendTo="body" (onShow)="input4.focus();" (onHide)="visible4 = false; value4 = '';">
-    <div class="flex w-full align-items-center justify-content-between px-1">
+    <div class="flex w-full surface-section align-items-center justify-content-between px-1">
         <span class="p-input-icon-left w-full">
             <i class="pi pi-search text-500"></i>
             <input #input4 type="text" pInputText placeholder="Find someone quickly..." [(ngModel)]="value4" class="w-full border-none shadow-none outline-none" (click)="visible4 = true;"/> 
         </span>
-        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden sm:block">⌘K</span>
+        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden md:block">⌘K</span>
     </div>
     <div class="border-y-1 surface-border p-3">
         <h2 class="font-semibold text-xs text-500 mb-2 mt-0 px-1">RECENT</h2>
@@ -333,16 +333,16 @@ export class CommandMenuComponent {
             <i class="pi pi-search text-white-alpha-80"></i>
             <input type="text" pInputText [(ngModel)]="value5" class="w-full border-none bg-transparent shadow-none outline-none text-white-alpha-80 text-sm" (click)="visible5 = true; value5 = '';"> 
         </span>
-        <span class="p-1 border-white-alpha-20 border-1 border-round mr-2 text-white-alpha-80 text-xs bg-white-alpha-2s hidden sm:block">⌘K</span>
+        <span class="p-1 border-white-alpha-20 border-1 border-round mr-2 text-white-alpha-80 text-xs bg-white-alpha-2s hidden md:block">⌘K</span>
     </div>
 </section>
-<p-dialog [(visible)]="visible5" [dismissableMask]="true" [modal]="true" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '620px', 'backdrop-filter': 'blur(70px)'}" contentStyleClass="border-round-top p-0 bg-black-alpha-50" appendTo="body" (onShow)="input5.focus();" (onHide)="visible5 = false; value5 = 'Search menus, shortcuts, contact and more...';">
+<p-dialog [(visible)]="visible5" [dismissableMask]="true" [modal]="true" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '620px', 'backdrop-filter': 'blur(70px)'}" styleClass="border-none bg-black-alpha-50" contentStyleClass="border-black-alpha-20 border-round p-0 bg-transparent" appendTo="body" (onShow)="input5.focus();" (onHide)="visible5 = false; value5 = 'Search menus, shortcuts, contact and more...';">
     <div class="flex w-full align-items-center justify-content-between px-1">
         <span class="p-input-icon-left w-full">
             <i class="pi pi-search text-white-alpha-80"></i>
             <input #input5 type="text" pInputText [(ngModel)]="value5" class="w-full border-none bg-transparent shadow-none outline-none text-white-alpha-80 text-sm"/> 
         </span>
-        <span class="p-1 border-white-alpha-20 border-1 border-round mr-2 text-white-alpha-80 text-xs bg-white-alpha-2s hidden sm:block">⌘K</span>
+        <span class="p-1 border-white-alpha-20 border-1 border-round mr-2 text-white-alpha-80 text-xs bg-white-alpha-2s hidden md:block">⌘K</span>
     </div>
     <div class="border-y-2 border-white-alpha-20 p-3">
         <h2 class="font-semibold text-xs text-white-alpha-50 mb-2 mt-0 px-1">RECENT</h2>
@@ -425,20 +425,20 @@ export class CommandMenuComponent {
         </article>
     </div>
     <div class="p-2 bg-white-alpha-10 border-top-1 border-white-alpha-20 flex flex-wrap sm:flex-nowrap align-items-center">
-        <p class="hidden sm:block mt-0 mb-0 mr-3 text-xs text-white-alpha-70">
+        <p class="hidden md:block mt-0 mb-0 mr-3 text-xs text-white-alpha-70">
             <span class="px-2 py-1 border-white-alpha-20 border-1 border-round mr-1 text-white-alpha-80 text-xs bg-white-alpha-20">P</span>
             Select
         </p>
-        <p class="hidden sm:block mt-0 mb-0 mr-3 text-xs text-white-alpha-70">
+        <p class="hidden md:block mt-0 mb-0 mr-3 text-xs text-white-alpha-70">
             <span class="px-2 py-1 border-white-alpha-20 border-1 border-round mr-1 text-white-alpha-80 text-xs bg-white-alpha-20">↑</span>
             <span class="px-2 py-1 border-white-alpha-20 border-1 border-round mr-1 text-white-alpha-80 text-xs bg-white-alpha-20">↓</span>
             Navigate
         </p>
-        <p class="hidden sm:block mt-0 mb-0 mr-3 text-xs text-white-alpha-70 flex-align-items-center justify-content-center flex-row">
+        <p class="hidden md:block mt-0 mb-0 mr-3 text-xs text-white-alpha-70 flex-align-items-center justify-content-center flex-row">
             <span class="px-2 py-1 border-white-alpha-20 border-1 border-round mr-1 text-white-alpha-80 text-xs bg-white-alpha-20 inline-flex">esc</span>
             Close
         </p>
-        <p class="w-full sm:w-auto mt-0 mb-0 sm:ml-auto text-xs text-white-alpha-70">4 results</p>
+        <p class="w-full md:w-auto mt-0 mb-0 md:ml-auto text-xs text-white-alpha-70">4 results</p>
     </div>
 </p-dialog>`;
 
@@ -449,19 +449,19 @@ export class CommandMenuComponent {
             <i class="pi pi-search text-white-alpha-80"></i>
             <input type="text" pInputText [(ngModel)]="value6" class="w-full border-none bg-transparent shadow-none outline-none text-white-alpha-80 text-sm" (click)="visible6 = true; value6 = '';"/> 
         </span>
-        <span class="p-1 border-white-alpha-20 border-1 border-round mr-2 text-white-alpha-80 text-xs bg-white-alpha-2s hidden sm:block">⌘K</span>
+        <span class="p-1 border-white-alpha-20 border-1 border-round mr-2 text-white-alpha-80 text-xs bg-white-alpha-2s hidden md:block">⌘K</span>
     </div>
 </section>
-<p-dialog [(visible)]="visible6" [dismissableMask]="true" [modal]="true" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '620px', 'backdrop-filter': 'blur(70px)'}" contentStyleClass="border-round-top p-0 bg-black-alpha-50" appendTo="body" (onShow)="input6.focus();" (onHide)="visible6 = false; value6 = 'Sign';">
+<p-dialog [(visible)]="visible6" [dismissableMask]="true" [modal]="true" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '620px', 'backdrop-filter': 'blur(70px)'}" styleClass="border-none bg-black-alpha-50" contentStyleClass="border-black-alpha-20 border-round-top p-0 bg-transparent" appendTo="body" (onShow)="input6.focus();" (onHide)="visible6 = false; value6 = 'Sign';">
     <div class="flex w-full align-items-center justify-content-between px-1">
         <span class="p-input-icon-left w-full">
             <i class="pi pi-search text-white-alpha-80"></i>
             <input #input6 type="text" pInputText [(ngModel)]="value6" class="w-full border-none bg-transparent shadow-none outline-none text-white-alpha-80 text-sm"/> 
         </span>
-        <span class="p-1 border-white-alpha-20 border-1 border-round mr-2 text-white-alpha-80 text-xs bg-white-alpha-2s hidden sm:block">⌘K</span>
+        <span class="p-1 border-white-alpha-20 border-1 border-round mr-2 text-white-alpha-80 text-xs bg-white-alpha-2s hidden md:block">⌘K</span>
     </div>
     <div class="flex flex-column md:flex-row border-top-1 border-white-alpha-20">
-        <div class="w-full md:w-6 p-3 border-right-1 border-white-alpha-20">
+        <div class="w-full md:w-6 p-3 md:border-right-1 border-white-alpha-20">
             <ul class="list-none m-0 p-0">
                 <li class="flex justify-content-between align-items-center select-none p-2 text-white-alpha-80 font-normal text-base cursor-pointer border-round-lg hover:bg-white-alpha-20 hover:text-white">
                     <span><i class="pi pi-image mr-2"></i>mail-sign.jpg</span>
@@ -492,11 +492,11 @@ export class CommandMenuComponent {
         <div class="w-full md:w-6 px-3 py-4 md:p-3 flex flex-column align-items-center md:align-items-start border-top-1 border-white-alpha-20 md:border-none">
             <img src="assets/images/blocks/commandmenu/commandmenu-3.jpeg" class="w-10rem h-6rem mx-auto border-round shadow-2" alt="Image">
             <p class="font-medium text-sm text-white mt-2 mb-2 w-full text-center">portrait-sign.jpg</p>
-            <div class="flex gap-2 text-white-alpha-80">
-                <span class="flex justify-content-center align-items-center border-round bg-white-alpha-20 text-white hover:bg-white-alpha-30 cursor-pointer" style="height: 2rem; width: 4rem;"><i class="pi pi-eye"></i></span>
-                <span class="flex justify-content-center align-items-center border-round bg-white-alpha-20 text-white hover:bg-white-alpha-30 cursor-pointer" style="height: 2rem; width: 4rem;"><i class="pi pi-star"></i></span>
-                <span class="flex justify-content-center align-items-center border-round bg-white-alpha-20 text-white hover:bg-white-alpha-30 cursor-pointer" style="height: 2rem; width: 4rem;"><i class="pi pi-copy"></i></span>
-                <span class="flex justify-content-center align-items-center border-round bg-white-alpha-20 text-white hover:bg-white-alpha-30 cursor-pointer" style="height: 2rem; width: 4rem;"><i class="pi pi-upload"></i></span>
+            <div class="flex w-full gap-2 text-white-alpha-80">
+                <span class="flex flex-grow-1 justify-content-center align-items-center border-round bg-white-alpha-20 text-white hover:bg-white-alpha-30 cursor-pointer" style="height: 2rem; width: 4rem;"><i class="pi pi-eye"></i></span>
+                <span class="flex flex-grow-1 justify-content-center align-items-center border-round bg-white-alpha-20 text-white hover:bg-white-alpha-30 cursor-pointer" style="height: 2rem; width: 4rem;"><i class="pi pi-star"></i></span>
+                <span class="flex flex-grow-1 justify-content-center align-items-center border-round bg-white-alpha-20 text-white hover:bg-white-alpha-30 cursor-pointer" style="height: 2rem; width: 4rem;"><i class="pi pi-copy"></i></span>
+                <span class="flex flex-grow-1 justify-content-center align-items-center border-round bg-white-alpha-20 text-white hover:bg-white-alpha-30 cursor-pointer" style="height: 2rem; width: 4rem;"><i class="pi pi-upload"></i></span>
             </div>
             <table class="w-full mt-2">
                 <tr>
@@ -538,7 +538,7 @@ export class CommandMenuComponent {
             </table>
         </div>
     </div>
-    <div class="px-2 bg-white-alpha-10 border-top-1 border-white-alpha-20 flex column-gap-1 md:column-gap-3 flex-wrap md:flex-nowrap align-items-center justify-content-evenly sm:justify-content-start">
+    <div class="hidden md:flex column-gap-1 md:column-gap-3 flex-wrap md:flex-nowrap align-items-center justify-content-evenly sm:justify-content-start px-2 bg-white-alpha-10 border-top-1 border-white-alpha-20">
         <p class="text-xs text-white-alpha-70">
             <span class="px-2 py-1 border-white-alpha-20 border-1 border-round mr-1 text-white-alpha-80 text-xs bg-white-alpha-20">⏎</span>
             Select
