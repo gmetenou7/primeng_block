@@ -551,82 +551,76 @@
             <h2 class="mt-0 mb-2 text-900 font-bold text-4xl">Members & Roles</h2>
             <p class="mt-0 mb-5 text-700 font-normal text-base">You can easily manage your team on this page</p>
         </div>
-        <article class="flex flex-wrap gap-3 py-6 justify-content-between border-bottom-1 surface-border">
+        <section class="flex flex-wrap gap-3 py-6 justify-content-between border-bottom-1 surface-border">
             <div class="flex-shrink-0">
                 <h3 class="mb-4 mt-0 text-900 font-medium text-xl">Members</h3>
                 <p class="mb-4 mt-0 text-700 font-normal text-base">Manage your member in this project</p>
                 <button pButton pRipple label="Invite a member" class="w-auto"></button>
             </div>
-            <div class="p-2 surface-100 border-round-xl" style="overflow-x: scroll;">
-                <ul class="list-none p-3 m-0 flex justify-content-between" style="min-width: 50rem;">
-                    <li class="w-20rem font-semibold text-sm text-color-secondary pl-1">Member</li>
-                    <li class="w-10rem font-semibold text-sm text-color-secondary pl-2">Joined Date</li>
-                    <li class="w-10rem font-semibold text-sm text-color-secondary pl-2">Last Active</li>
-                    <li class="w-3rem font-semibold text-sm text-color-secondary"></li>
-                </ul>
-                <table style="min-width: 50rem; border-collapse: collapse;" class="shadow-1 surface-100 border-round-xl mt-4 md:mt-0 w-full">
-                    <tbody class="surface-card">
-                        <tr *ngFor="let member of members; let first = first; let last = last" class="hover:surface-hover cursor-pointer">
-                            <td class="p-3 w-20rem" [ngStyle]="{'border-top-left-radius': first ? '10.5px' : '0', 'border-bottom-left-radius': last ? '10.5px' : '0'}">
-                                <div class="flex align-items-center gap-3">
-                                    <p-avatar [image]="'assets/images/blocks/avatars/circle/' + member.image + '.png'" styleClass="mr-2" size="large" shape="circle"></p-avatar>
-                                    <div>
-                                        <p class="mt-0 mb-2 font-medium text-lg text-color-primary">{{member.name}}</p>
-                                        <p class="mt-0 mb-2 font-normal text-base text-color-secondary">{{member.username}}</p>
-                                    </div>
+            <p-table [value]="members" [tableStyle]="{'min-width': '60rem', 'border-radius': '5rem'}" [rowHover]="true">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th><span class="font-semibold text-sm text-color-secondary">Name</span></th>
+                        <th><span class="font-semibold text-sm text-color-secondary">Joined Date</span></th>
+                        <th><span class="font-semibold text-sm text-color-secondary">Last Active</span></th>
+                        <th></th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-member>
+                    <tr>
+                        <td>
+                            <div class="flex align-items-center gap-3">
+                                <p-avatar [image]="'assets/images/blocks/avatars/circle/' + member.image + '.png'" styleClass="mr-2" size="large" shape="circle"></p-avatar>
+                                <div>
+                                    <p class="mt-0 mb-2 font-medium text-lg text-color-primary">{{member.name}}</p>
+                                    <p class="mt-0 mb-2 font-normal text-base text-color-secondary">{{member.username}}</p>
                                 </div>
-                            </td>
-                            <td class="w-10rem">
-                                <p class="mt-0 mb-2 font-normal text-base text-color-secondary">{{member.date}}</p>
-                            </td>
-                            <td class="w-10rem">
-                                <p class="mt-0 mb-2 font-normal text-base text-color-secondary">{{member.active}}</p>
-                            </td>
-                            <td class="text-center w-3rem" [ngStyle]="{'border-top-right-radius': first ? '10.5px' : '0', 'border-bottom-right-radius': last ? '10.5px' : '0'}">
-                                <button type="button" pButton icon="pi pi-ellipsis-v" class="p-button-text p-button-secondary" (click)="menu.toggle($event)"></button>
-                                <p-menu #menu appendTo="body" [popup]="true" [model]="items"></p-menu>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </article>
-        <article class="flex flex-wrap gap-3 py-6 justify-content-between border-bottom-1 surface-border">
+                            </div>
+                        </td>
+                        <td><p class="mt-0 mb-2 font-normal text-base text-color-secondary">{{member.date}}</p></td>
+                        <td><p class="mt-0 mb-2 font-normal text-base text-color-secondary">{{member.active}}</p></td>
+                        <td>
+                            <button type="button" pButton icon="pi pi-ellipsis-v" class="p-button-text p-button-secondary" (click)="menu.toggle($event)"></button>
+                            <p-menu #menu appendTo="body" [popup]="true" [model]="items"></p-menu>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </section>
+        <section class="flex flex-wrap gap-3 py-6 justify-content-between border-bottom-1 surface-border">
             <div class="flex-shrink-0">
                 <h3 class="mb-4 mt-0 text-900 font-medium text-xl">Roles</h3>
                 <p class="mb-4 mt-0 text-700 font-normal text-base">Edit roles in this project</p>
                 <button pButton pRipple label="Add a role" class="w-auto"></button>
             </div>
-            <div class="p-2 surface-100 border-round-xl" style="overflow-x: scroll;">
-                <ul class="list-none p-3 m-0 flex justify-content-between" style="min-width: 50rem;">
-                    <li class="w-20rem font-semibold text-sm text-color-secondary pl-1">Alias Name</li>
-                    <li class="w-10rem font-semibold text-sm text-color-secondary pl-2">Last Edit</li>
-                    <li class="w-10rem font-semibold text-sm text-color-secondary pl-2">Users</li>
-                    <li class="w-3rem font-semibold text-sm text-color-secondary"></li>
-                </ul>
-                <table style="min-width: 50rem; border-collapse: collapse;" class="shadow-1 surface-100 border-round-xl mt-4 md:mt-0">
-                    <tbody class="surface-card">
-                        <tr *ngFor="let role of roles; let first = first; let last = last" class="hover:surface-hover cursor-pointer">
-                            <td class="px-3 py-2 w-20rem" [ngStyle]="{'border-top-left-radius': first ? '10.5px' : '0', 'border-bottom-left-radius': last ? '10.5px' : '0'}">
-                                <div class="flex align-items-center">
-                                    <span class="border-circle mr-2" [ngClass]="role.color" style="width: 7px; height: 7px;"></span>
-                                    <p class="mt-0 mb-0 font-medium text-lg text-color-primary">{{role.alias}}</p>
-                                </div>
-                            </td>
-                            <td class="py-2 w-10rem">
-                                <p class="mt-0 mb-0 font-normal text-base text-color-secondary">{{role.date}}</p>
-                            </td>
-                            <td class="py-2 w-10rem">
-                                <p class="mt-0 mb-0 font-normal text-base text-color-secondary">{{role.users}}</p>
-                            </td>
-                            <td class="py-2 text-center w-3rem" [ngStyle]="{'border-top-right-radius': first ? '10.5px' : '0', 'border-bottom-right-radius': last ? '10.5px' : '0'}">
-                                <button type="button" pButton icon="pi pi-ellipsis-v" class="p-button-text p-button-secondary" (click)="menu2.toggle($event)"></button>
-                                <p-menu #menu2 appendTo="body" [popup]="true" [model]="items"></p-menu>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </article>
+            <p-table [value]="roles" [tableStyle]="{'min-width': '60rem', 'border-radius': '5rem'}" [rowHover]="true">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th><span class="font-semibold text-sm text-color-secondary">Alias Name</span></th>
+                        <th><span class="font-semibold text-sm text-color-secondary">Last Edit</span></th>
+                        <th><span class="font-semibold text-sm text-color-secondary">Users</span></th>
+                        <th></th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-role>
+                    <tr>
+                        <td>
+                            <div class="flex align-items-center">
+                                <span class="border-circle mr-2" [ngClass]="role.color" style="width: 7px; height: 7px;"></span>
+                                <p class="mt-0 mb-0 font-medium text-lg text-color-primary">{{role.alias}}</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="mt-0 mb-0 font-normal text-base text-color-secondary">{{role.date}}</p>
+                        </td>
+                        <td><p class="mt-0 mb-0 font-normal text-base text-color-secondary">{{role.users}}</p></td>
+                        <td>
+                            <button type="button" pButton icon="pi pi-ellipsis-v" class="p-button-text p-button-secondary" (click)="menu2.toggle($event)"></button>
+                            <p-menu #menu2 appendTo="body" [popup]="true" [model]="items"></p-menu>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </section>
     </section>
 </block-viewer>
