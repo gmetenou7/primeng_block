@@ -46,7 +46,7 @@ export class CommandMenuComponent {
                         <p class="font-normal text-xs text-600 mt-0 mb-0">Change your system preferences</p>
                     </div>
                 </div>
-                <span class="border-1 px-2 py-1 surface-border border-round surface-100 mr-2 text-600 text-xs">S</span>
+                <span class="hidden sm:inline-block border-1 px-2 py-1 surface-border border-round surface-100 mr-2 text-600 text-xs">S</span>
             </article>
             
             <article class="flex w-full justify-content-between align-items-center mb-3 select-none cursor-pointer surface-border hover:surface-hover border-round-lg px-2 py-1 text-800 hover:text-primary">
@@ -59,7 +59,7 @@ export class CommandMenuComponent {
                         <p class="font-normal text-xs text-600 mt-0 mb-0">Go to your profile</p>
                     </div>
                 </div>
-                <span class="border-1 px-2 py-1 surface-border border-round surface-100 mr-2 text-600 text-xs">P</span>
+                <span class="hidden sm:inline-block border-1 px-2 py-1 surface-border border-round surface-100 mr-2 text-600 text-xs">P</span>
             </article>
 
             <article class="flex w-full justify-content-between align-items-center mb-3 select-none cursor-pointer surface-border hover:surface-hover border-round-lg px-2 py-1 text-800 hover:text-primary">
@@ -72,7 +72,7 @@ export class CommandMenuComponent {
                         <p class="font-normal text-xs text-600 mt-0 mb-0">Switch to dark mode save your eyes</p>
                     </div>
                 </div>
-                <span class="border-1 px-2 py-1 surface-border border-round surface-100 mr-2 text-600 text-xs">D</span>
+                <span class="hidden sm:inline-block border-1 px-2 py-1 surface-border border-round surface-100 mr-2 text-600 text-xs">D</span>
             </article>
 
             <article class="flex w-full justify-content-between align-items-center select-none cursor-pointer surface-border hover:surface-hover border-round-lg px-2 py-1 text-800 hover:text-primary">
@@ -208,28 +208,28 @@ export class CommandMenuComponent {
             <i class="pi pi-search text-500"></i>
             <input type="text" pInputText placeholder="Find someone quickly..." [(ngModel)]="value4" class="w-full border-none shadow-none outline-none" pStyleClass="#command-menu-4" enterClass="hidden" leaveToClass="hidden"/> 
         </span>
-        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs">⌘K</span>
+        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden sm:block">⌘K</span>
     </div>
     <div id="command-menu-4" class="hidden">
         <div class="border-y-1 surface-border p-3">
             <h2 class="font-semibold text-xs text-500 mb-2 mt-0 px-1">RECENT</h2>
             <ul class="list-none m-0 p-0">
                 <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex gap-2 align-items-center">
-                    <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-1.png"></p-avatar>
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" alt="Image" class="w-2rem h-2rem">
                     <div class="flex flex-column justify-content-center">
                         <span class="text-800 text-base">Sarah Dylan</span>
                         <span class="text-600 text-xs">@srhdylan</span>
                     </div>
                 </li>
                 <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex gap-2 align-items-center">
-                    <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-2.png"></p-avatar>
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-2.png" alt="Image" class="w-2rem h-2rem">
                     <div class="flex flex-column justify-content-center">
                         <span class="text-800 text-base">Marvin McKinney</span>
                         <span class="text-600 text-xs">@terekdriving</span>
                     </div>
                 </li>
                 <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex gap-2 align-items-center">
-                    <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-3.png"></p-avatar>
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-3.png" alt="Image" class="w-2rem h-2rem">
                     <div class="flex flex-column justify-content-center">
                         <span class="text-800 text-base">Jenny Wilson</span>
                         <span class="text-600 text-xs">@lewissanctuary</span>
@@ -240,42 +240,42 @@ export class CommandMenuComponent {
         <div class="p-3">
             <ul class="list-none m-0 p-0">
                 <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex gap-2 align-items-center">
-                    <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-4.png"></p-avatar>
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-4.png" alt="Image" class="w-2rem h-2rem">
                     <div class="flex flex-column justify-content-center">
                         <span class="text-800 text-base">Wade Warren</span>
                         <span class="text-600 text-xs">@amusementethics</span>
                     </div>
                 </li>
                 <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex gap-2 align-items-center">
-                    <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-5.png"></p-avatar>
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-5.png" alt="Image" class="w-2rem h-2rem">
                     <div class="flex flex-column justify-content-center">
                         <span class="text-800 text-base">Darlene Robertson</span>
                         <span class="text-600 text-xs">@pointersnutmeg</span>
                     </div>
                 </li>
                 <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex gap-2 align-items-center">
-                    <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-6.png"></p-avatar>
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-6.png" alt="Image" class="w-2rem h-2rem">
                     <div class="flex flex-column justify-content-center">
                         <span class="text-800 text-base">Courtney Henry</span>
                         <span class="text-600 text-xs">@amisssteadily</span>
                     </div>
                 </li>
                 <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex gap-2 align-items-center">
-                    <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-7.png"></p-avatar>
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-7.png" alt="Image" class="w-2rem h-2rem">
                     <div class="flex flex-column justify-content-center">
                         <span class="text-800 text-base">Annette Black</span>
                         <span class="text-600 text-xs">@raddledhastily</span>
                     </div>
                 </li>
                 <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex gap-2 align-items-center">
-                    <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-8.png"></p-avatar>
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-8.png" alt="Image" class="w-2rem h-2rem">
                     <div class="flex flex-column justify-content-center">
                         <span class="text-800 text-base">Arlene McCoy</span>
                         <span class="text-600 text-xs">@germlessshredder</span>
                     </div>
                 </li>
                 <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex gap-2 align-items-center">
-                    <p-avatar image="assets/images/blocks/avatars/circle/avatar-f-9.png"></p-avatar>
+                    <img src="assets/images/blocks/avatars/circle/avatar-f-9.png" alt="Image" class="w-2rem h-2rem">
                     <div class="flex flex-column justify-content-center">
                         <span class="text-800 text-base">Savannah Nguyen</span>
                         <span class="text-600 text-xs">@zapdetergent</span>

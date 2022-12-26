@@ -8,6 +8,7 @@ import { ButtonModule } from 'primeng/button';
 import { AvatarModule } from 'primeng/avatar';
 import { FormsModule } from '@angular/forms';
 import { StyleClassModule } from 'primeng/styleclass';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { StyleClassModule } from 'primeng/styleclass';
     FormsModule,
     CommandMenuRoutingModule,
     StyleClassModule,
+    DialogModule,
     InputTextModule,
     ButtonModule,
     AvatarModule,
