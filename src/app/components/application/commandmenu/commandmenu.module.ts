@@ -7,7 +7,6 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { AvatarModule } from 'primeng/avatar';
 import { FormsModule } from '@angular/forms';
-import { StyleClassModule } from 'primeng/styleclass';
 import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
@@ -15,7 +14,6 @@ import { DialogModule } from 'primeng/dialog';
     CommonModule,
     FormsModule,
     CommandMenuRoutingModule,
-    StyleClassModule,
     DialogModule,
     InputTextModule,
     ButtonModule,
