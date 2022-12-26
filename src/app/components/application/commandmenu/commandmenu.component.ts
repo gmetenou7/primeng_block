@@ -23,7 +23,7 @@ export class CommandMenuComponent {
             <i class="pi pi-search text-500"></i>
             <input type="text" pInputText placeholder="Search menus, shortcuts, contact and more..." [(ngModel)]="value1" class="w-full border-none shadow-none outline-none" pStyleClass="#command-menu-1" enterClass="hidden" leaveToClass="hidden"/> 
         </span>
-        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs">⌘K</span>
+        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden sm:block">⌘K</span>
     </div>
     <div id="command-menu-1" class="hidden">
         <div class="border-y-1 surface-border px-3 py-3">
@@ -97,7 +97,7 @@ export class CommandMenuComponent {
             <i class="pi pi-search text-500"></i>
             <input type="text" pInputText placeholder="Search menus, shortcuts, contact and more..." [(ngModel)]="value2" class="w-full border-none shadow-none outline-none" pStyleClass="#command-menu-2" enterClass="hidden" leaveToClass="hidden"/> 
         </span>
-        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs">⌘K</span>
+        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden sm:block">⌘K</span>
     </div>
     <div id="command-menu-2" class="hidden">
        <section class="border-y-1 surface-border p-5 flex flex-column align-items-center gap-2">
@@ -119,7 +119,7 @@ export class CommandMenuComponent {
             <i class="pi pi-search text-500"></i>
             <input type="text" pInputText placeholder="Search menus, shortcuts, contact and more..." [(ngModel)]="value3" class="w-full border-none shadow-none outline-none" pStyleClass="#command-menu-3" enterClass="hidden" leaveToClass="hidden"/> 
         </span>
-        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs">⌘K</span>
+        <span class="border-1 p-1 surface-border border-round surface-100 mr-2 text-600 text-xs hidden sm:block">⌘K</span>
     </div>
     <div id="command-menu-3" class="hidden">
         <div class="border-y-1 surface-border p-3">
@@ -127,7 +127,7 @@ export class CommandMenuComponent {
             <ul class="list-none m-0 p-0">
                 <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
                     <span class="flex align-items-center"><i class="pi pi-file mr-2"></i>Add new file</span>
-                    <div class="flex align-items-center">
+                    <div class="hidden sm:flex align-items-center">
                         <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">CMD</span>
                         <span class="mx-2 text-600">+</span>
                         <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">N</span>
@@ -135,7 +135,7 @@ export class CommandMenuComponent {
                 </li>
                 <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
                     <span class="flex align-items-center"><i class="pi pi-lock mr-2"></i>Lock Session</span>
-                    <div class="flex align-items-center">
+                    <div class="hidden sm:flex align-items-center">
                         <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">CMD</span>
                         <span class="mx-2 text-600">+</span>
                         <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">L</span>
@@ -150,7 +150,7 @@ export class CommandMenuComponent {
             <ul class="list-none m-0 p-0">
                 <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
                     <span class="flex align-items-center"><i class="pi pi-bell mr-2"></i>Notifications</span>
-                    <div class="flex align-items-center">
+                    <div class="hidden sm:flex align-items-center">
                         <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">CMD</span>
                         <span class="mx-2 text-600">+</span>
                         <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">C</span>
@@ -158,7 +158,7 @@ export class CommandMenuComponent {
                 </li>
                 <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
                     <span class="flex align-items-center"><i class="pi pi-bookmark mr-2"></i>Bookmarks</span>
-                    <div class="flex align-items-center">
+                    <div class="hidden sm:flex align-items-center">
                         <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">CMD</span>
                         <span class="mx-2 text-600">+</span>
                         <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">B</span>
@@ -166,7 +166,7 @@ export class CommandMenuComponent {
                 </li>
                 <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
                     <span class="flex align-items-center"><i class="pi pi-bolt mr-2"></i>Quick Actions</span>
-                    <div class="flex align-items-center">
+                    <div class="hidden sm:flex align-items-center">
                         <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">SHIFT</span>
                         <span class="mx-2 text-600">+</span>
                         <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">Q</span>
@@ -174,7 +174,7 @@ export class CommandMenuComponent {
                 </li>
                 <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
                     <span class="flex align-items-center"><i class="pi pi-users mr-2"></i>Manage User Groups</span>
-                    <div class="flex align-items-center">
+                    <div class="hidden sm:flex align-items-center">
                         <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">CMD</span>
                         <span class="mx-2 text-600">+</span>
                         <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">U</span>
@@ -182,7 +182,7 @@ export class CommandMenuComponent {
                 </li>
                 <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
                     <span class="flex align-items-center"><i class="pi pi-book mr-2"></i>Go to Documentation</span>
-                    <div class="flex align-items-center">
+                    <div class="hidden sm:flex align-items-center">
                         <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">SHIFT</span>
                         <span class="mx-2 text-600">+</span>
                         <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">L</span>
@@ -190,7 +190,7 @@ export class CommandMenuComponent {
                 </li>
                 <li class="select-none p-2 font-medium text-base cursor-pointer border-round-lg hover:surface-hover hover:text-primary flex justify-content-between align-items-center">
                     <span class="flex align-items-center"><i class="pi pi-cog mr-2"></i>System Preferences</span>
-                    <div class="flex align-items-center">
+                    <div class="hidden sm:flex align-items-center">
                         <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">CMD</span>
                         <span class="mx-2 text-600">+</span>
                         <span class="border-1 p-1 surface-border border-round surface-100 text-600 text-xs">P</span>
@@ -293,7 +293,7 @@ export class CommandMenuComponent {
             <i class="pi pi-search text-white-alpha-80"></i>
             <input type="text" pInputText [(ngModel)]="value5" class="w-full border-none bg-transparent shadow-none outline-none text-white-alpha-80 text-sm" pStyleClass="#command-menu-5" enterClass="hidden" leaveToClass="hidden"/> 
         </span>
-        <span class="p-1 border-white-alpha-20 border-1 border-round mr-2 text-white-alpha-80 text-xs bg-white-alpha-20">⌘K</span>
+        <span class="p-1 border-white-alpha-20 border-1 border-round mr-2 text-white-alpha-80 text-xs bg-white-alpha-2s hidden sm:block">⌘K</span>
     </div>
     <div id="command-menu-5" class="">
         <div class="border-y-2 border-white-alpha-20 p-3">
@@ -377,20 +377,20 @@ export class CommandMenuComponent {
             </article>
         </div>
         <div class="p-2 bg-white-alpha-10 border-top-1 border-white-alpha-20 flex flex-wrap sm:flex-nowrap align-items-center">
-            <p class="sm:mt-0 mb-0 mr-3 text-xs text-white-alpha-70">
+            <p class="hidden sm:block mb-0 mr-3 text-xs text-white-alpha-70">
                 <span class="px-2 py-1 border-white-alpha-20 border-1 border-round mr-1 text-white-alpha-80 text-xs bg-white-alpha-20">P</span>
                 Select
             </p>
-            <p class="sm:mt-0 mb-0 mr-3 text-xs text-white-alpha-70">
+            <p class="hidden sm:block mb-0 mr-3 text-xs text-white-alpha-70">
                 <span class="px-2 py-1 border-white-alpha-20 border-1 border-round mr-1 text-white-alpha-80 text-xs bg-white-alpha-20">↑</span>
                 <span class="px-2 py-1 border-white-alpha-20 border-1 border-round mr-1 text-white-alpha-80 text-xs bg-white-alpha-20">↓</span>
                 Navigate
             </p>
-            <p class="sm:mt-0 mb-0 mr-3 text-xs text-white-alpha-70 flex-align-items-center justify-content-center flex-row">
+            <p class="hidden sm:block mb-0 mr-3 text-xs text-white-alpha-70 flex-align-items-center justify-content-center flex-row">
                 <span class="px-2 py-1 border-white-alpha-20 border-1 border-round mr-1 text-white-alpha-80 text-xs bg-white-alpha-20 inline-flex">esc</span>
                 Close
             </p>
-            <p class="w-full sm:w-auto sm:mt-0 mb-0 sm:ml-auto text-xs text-white-alpha-70">4 results</p>
+            <p class="w-full sm:w-auto mt-0 mb-0 sm:ml-auto text-xs text-white-alpha-70">4 results</p>
         </div>
     </div>
 </section>`;
@@ -402,7 +402,7 @@ export class CommandMenuComponent {
             <i class="pi pi-search text-white-alpha-80"></i>
             <input type="text" pInputText [(ngModel)]="value6" class="w-full border-none bg-transparent shadow-none outline-none text-white-alpha-80 text-sm" pStyleClass="#command-menu-6" enterClass="hidden" leaveToClass="hidden"/> 
         </span>
-        <span class="p-1 border-white-alpha-20 border-1 border-round mr-2 text-white-alpha-80 text-xs bg-white-alpha-20">⌘K</span>
+        <span class="p-1 border-white-alpha-20 border-1 border-round mr-2 text-white-alpha-80 text-xs bg-white-alpha-2s hidden sm:block">⌘K</span>
     </div>
     <div id="command-menu-6">
         <div class="flex flex-column md:flex-row border-top-1 border-white-alpha-20">
