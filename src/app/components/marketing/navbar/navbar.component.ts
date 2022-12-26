@@ -503,102 +503,111 @@ export class NavBarComponent {
 </div>`;
 
     block7: string = `
-<nav class="surface-section py-3 px-6 shadow-2 flex align-items-center justify-content-between relative lg:static border-bottom-1 surface-border" style="min-height: 84px">
-    <img src="assets/images/blocks/logos/bastion-700.svg" alt="Image" height="40" class="mr-0 lg:mr-6">
-    <a pRipple class="cursor-pointer block lg:hidden text-600" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
-        <i class="pi pi-bars text-4xl"></i>
-    </a>
-    <div class="align-items-center flex-grow-1 hidden lg:flex absolute lg:static w-full surface-section left-0 top-100 z-1 shadow-2 lg:shadow-none border-1 lg:border-none surface-border">
-        <ul class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row">
-            <li>
-                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:surface-hover hover:text-blue-500 font-medium lg:border-round cursor-pointer transition-colors transition-duration-150">
-                    <i class="pi pi-home mr-2 lg:mr-0"></i>
-                    <span class="font-medium lg:hidden">Home</span>
-                </a>
-            </li>
-            <li>
-                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:surface-hover hover:text-blue-500 font-medium lg:border-round cursor-pointer transition-colors transition-duration-150"
-                    pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
-                    <i class="pi pi-comments mr-2 lg:mr-0"></i>
-                    <span class="font-medium lg:hidden">Comments</span>
-                </a>
-                <ul class="list-none py-3 px-6 m-0 lg:px-0 lg:py-0 hidden border-round shadow-0 lg:shadow-2 lg:absolute surface-section origin-top w-full lg:w-15rem cursor-pointer lg:border-1 surface-border z-2">
-                    <li>
-                        <a pRipple class="flex p-3 align-items-center text-600 hover:surface-hover hover:text-blue-500 lg:border-round transition-colors transition-duration-150">
-                            <i class="pi pi-comment mr-2"></i>
-                            <span class="font-medium">View all</span>
-                        </a>
-                    </li>
-                    <li class="relative">
-                        <a pRipple class="flex p-3 align-items-center text-600 hover:surface-hover hover:text-blue-500 lg:border-round transition-colors transition-duration-150">
-                            <i class="pi pi-search mr-2"></i>
-                            <span class="font-medium">Search</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:surface-hover hover:text-blue-500 font-medium lg:border-round cursor-pointer transition-colors transition-duration-150">
-                    <i class="pi pi-heart mr-2 lg:mr-0"></i>
-                    <span class="font-medium lg:hidden">Favorites</span>
-                </a>
-            </li>
-            <li>
-                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:surface-hover hover:text-blue-500 font-medium lg:border-round cursor-pointer transition-colors transition-duration-150">
-                    <i class="pi pi-calendar mr-2 lg:mr-0"></i>
-                    <span class="font-medium lg:hidden">Calendar</span>
-                </a>
-            </li>
-            <li>
-                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:surface-hover hover:text-blue-500 font-medium lg:border-round cursor-pointer transition-colors transition-duration-150">
-                    <i class="pi pi-bolt mr-2 lg:mr-0"></i>
-                    <span class="font-medium lg:hidden">Likes</span>
-                </a>
-            </li>
-        </ul>
-        <ul class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row flex-grow-1">
-            <li class="flex-order-2 lg:flex-order-0 flex-grow-1">
-                <div class="flex px-6 p-3 lg:px-3 lg:py-2">
-                    <span class="p-input-icon-left w-full">
-                        <i class="pi pi-search text-600"></i>
-                        <input type="text" pInputText placeholder="Search" class="surface-section text-600 surface-border w-full" />
-                    </span>
-                </div>
-            </li>
-            <li>
-                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:surface-hover hover:text-blue-500 font-medium lg:border-round cursor-pointer transition-colors transition-duration-150 mr-2">
-                    <i class="pi pi-bell mr-2 lg:mr-0"></i>
-                    <span class="font-medium lg:hidden">Notifications</span>
-                </a>
-            </li>
-            <li>
-                <a pRipple class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-600 hover:surface-hover hover:text-blue-500 font-medium lg:border-round cursor-pointer transition-colors transition-duration-150 mr-2">
-                    <i class="pi pi-cog mr-2 lg:mr-0"></i>
-                    <span class="font-medium lg:hidden">Settings</span>
-                </a>
-            </li>
-            <li>
-                <a class="hidden lg:flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-green-600 bg-green-100 font-medium border-round cursor-pointer transition-colors transition-duration-150 mr-2">
-                    Available
-                </a>
-            </li>
-            <li class="border-top-1 surface-border lg:border-top-none flex-grow-0">
-                <a class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center font-medium border-round cursor-pointer">
-                    <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-3 lg:mr-0" style="width: 28px; height: 28px"/>
-                    <div class="flex align-items-center lg:hidden">
-                        <div class="mr-3">
-                            <p class="text-900 font-medium mb-0 mt-0">Josephine Lillard</p>
-                            <span class="text-600 font-medium text-sm">Marketing Specialist</span>
-                        </div>
+<section class="h-full bg-cover" style="background-image: url('assets/images/blocks/navbar/navbar-3.jpg');">
+    <div class="py-3 px-6 shadow-2 flex align-items-center justify-content-between relative bg-black-alpha-50">
+        <img src="assets/images/blocks/logos/peak-300.svg" alt="Image" height="50">
+        <a pRipple class="cursor-pointer block lg:hidden text-gray-400" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
+            <i class="pi pi-bars text-4xl text-white"></i>
+        </a>
+        <nav class="align-items-center flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full left-0 top-100 px-6 lg:px-0 shadow-2 lg:shadow-none lg:bg-transparent" style="background-color: rgba(0, 0, 0, 0.5);">
+            <ul class="list-none p-0 m-0 lg:m-auto flex lg:align-items-center text-gray-400 select-none flex-column lg:flex-row">
+                <li>
+                    <a pRipple class="flex px-0 px-3 xl:px-5 py-3 align-items-center hover:text-blue-600 font-medium transition-colors transition-duration-150 cursor-pointer" 
+                        pStyleClass="@next" enterClass="hidden" enterActiveClass="scalein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
+                        <span class="text-white font-semibold text-xl">Product</span>
+                    </a>
+                    <div class="lg:absolute hidden origin-top left-0 top-100 w-full p-4 overflow-y-scroll" style="background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(100px); min-height: 30rem;">
+                        <div class="flex h-full flex-wrap">
+                            <div class="flex w-full xl:w-6 flex-wrap p-0 lg:p-5">
+                                <div class="w-full flex lg:w-6 mb-4 lg:mb-0 p-2">
+                                    <div class="p-3 border-round-xl flex justify-content-center align-items-center bg-orange-100 w-3rem h-3rem mr-3">
+                                        <i class="pi pi-bolt text-4xl text-orange-500"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-semibold text-lg lg:text-xl mb-2 mt-0 flex align-items-start">Integrations<span class="p-badge ml-2">New</span></p>
+                                        <p class="text-base lg:text-lg mb-0 mt-0 text-white-alpha-70">Non blandit massa enim nec dui nunc mattis.</p>
+                                    </div>
+                                </div>
+                                <div class="w-full flex lg:w-6 mb-4 lg:mb-0 p-2">
+                                    <div class="p-3 border-round-xl flex justify-content-center align-items-center bg-green-100 w-3rem h-3rem mr-3">
+                                        <i class="pi pi-chart-pie text-4xl text-green-500"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-semibold text-lg lg:text-xl mb-2 mt-0 flex align-items-start">Analytics</p>
+                                        <p class="text-base lg:text-lg mb-0 mt-0 text-white-alpha-70">Non blandit massa enim nec dui nunc mattis.</p>
+                                    </div>
+                                </div>
+                                <div class="w-full flex lg:w-6 mb-4 lg:mb-0 p-2">
+                                    <div class="p-3 border-round-xl flex justify-content-center align-items-center bg-indigo-100 w-3rem h-3rem mr-3">
+                                        <i class="pi pi-book text-4xl text-indigo-500"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-semibold text-lg lg:text-xl mb-2 mt-0 flex align-items-start">Documentation</p>
+                                        <p class="text-base lg:text-lg mb-0 mt-0 text-white-alpha-70">Non blandit massa enim nec dui nunc mattis.</p>
+                                    </div>
+                                </div>
+                                <div class="w-full flex lg:w-6 mb-4 lg:mb-0 p-2">
+                                    <div class="p-3 border-round-xl flex justify-content-center align-items-center bg-pink-100 w-3rem h-3rem mr-3">
+                                        <i class="pi pi-tag text-4xl text-pink-500"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-semibold text-lg lg:text-xl mb-2 mt-0 flex align-items-start">Support</p>
+                                        <p class="text-base lg:text-lg mb-0 mt-0 text-white-alpha-70">Non blandit massa enim nec dui nunc mattis.</p>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <a class="flex px-3 py-2 align-items-center text-green-600 bg-green-100 font-medium border-round cursor-pointer transition-colors transition-duration-150">
-                            Available
-                        </a>
+                            <div class="w-full xl:w-6 p-2">
+                                <div class="flex lg:flex-column flex-wrap xl:flex-nowrap py-4 pb-3 mb-3">
+                                    <div class="w-full px-2">
+                                        <p class="text-white font-semibold text-base mt-0 mb-2 xl:mb-0">FEATURED</p>
+                                    </div>
+                                    <div class="p-2 lg:w-full flex flex-column lg:flex-row xl:align-items-center" style="min-width:10rem">
+                                        <img src="assets/images/blocks/navbar/navbar-1.jpeg" class="h-5rem w-10rem xl:h-5rem border-round mr-2 mb-4 lg:mb-0" alt="Image">
+                                        <div class="ml-2 w-8">
+                                            <p class="mb-2 mt-0 text-white font-medium text-lg">Learn how to use Peak in 10 mins</p>
+                                            <p class="mt-0 mb-0 font-normal text-base text-white-alpha-70">Enim diam vulputate ut pharetra sit. Eget arcu dictum varius duis at consectetur lorem donec.</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 lg:w-full flex flex-column lg:flex-row xl:align-items-center" style="min-width: 10rem;">
+                                        <img src="assets/images/blocks/navbar/navbar-2.jpeg" class="h-5rem w-10rem xl:h-5rem border-round mr-2 mb-4 lg:mb-0" alt="Image">
+                                        <div class="ml-2 w-8">
+                                            <p class="mb-2 mt-0 text-white font-medium text-lg">Reimagining development lifecycles</p>
+                                            <p class="mt-0 mb-0 font-normal text-base text-white-alpha-70">Enim diam vulputate ut pharetra sit. Eget arcu dictum varius duis at consectetur lorem donec.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </a>
-            </li>
-        </ul>
+                </li>
+                <li>
+                    <a pRipple class="flex align-items-center px-0 px-3 xl:px-5 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150 cursor-pointer">
+                        <span class="text-white font-semibold text-xl">Solutions</span>
+                    </a>
+                </li>
+                <li>
+                    <a pRipple class="flex align-items-center px-0 px-3 xl:px-5 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150 cursor-pointer">
+                        <span class="text-white font-semibold text-xl">Company</span>
+                    </a>
+                </li>
+                <li>
+                    <a pRipple class="flex align-items-center px-0 px-3 xl:px-5 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150 cursor-pointer">
+                        <span class="text-white font-semibold text-xl">Careers</span>
+                        <span class="text-sm text-white bg-blue-500 flex justify-content-center align-items-center border-circle ml-2" style="width: 1.25rem; height: 1.25rem">3</span>
+                    </a>
+                </li>
+                <li>
+                    <a pRipple class="flex align-items-center px-0 px-3 xl:px-5 py-3 hover:text-blue-600 font-medium transition-colors transition-duration-150 cursor-pointer">
+                        <span class="text-white font-semibold text-xl">Pricing</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="flex justify-content-between lg:block border-top-1 lg:border-top-none py-3 lg:py-0 mt-3 lg:mt-0" style="border-color: rgba(222, 226, 230, 0.15)">
+                <button pButton pRipple label="Sign In" icon="pi pi-chevron-right" iconPos="right" class="p-button-rounded font-bold"></button>
+            </div>
+        </nav>
     </div>
-</nav>`;
+</section>`;
 
 }
