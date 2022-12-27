@@ -144,7 +144,7 @@ export class DialogComponent {
                     </span>
                 </div>
                 <div class="w-full">
-                    <label for="expiration" class="block mb-1 text-color text-base">Expiration Month and Year</label>
+                    <label for="expiration" class="block mb-1 text-color text-base">Expiration</label>
                     <span class="p-input-icon-left w-full">
                         <i class="pi pi-clock"></i>
                         <input type="text" class="w-full" id="expiration" pInputText pKeyFilter placeholder="12/22"/>
