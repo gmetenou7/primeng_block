@@ -489,7 +489,7 @@ export class TeamComponent {
                             <div class="flex gap-4 w-full mt-3">
                                 <i class="pi pi-twitter cursor-pointer"></i>
                                 <i class="pi pi-github cursor-pointer"></i>
-                                <i class="pi pi-discrod cursor-pointer"></i>
+                                <i class="pi pi-discord cursor-pointer"></i>
                                 <i class="pi pi-linkedin cursor-pointer"></i>
                             </div>
                         </div>
