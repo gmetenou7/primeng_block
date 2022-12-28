@@ -339,7 +339,7 @@ export class DetailScreenComponent implements OnInit {
 
     block2: string = `
 <section class="surface-ground">
-    <nav class="surface-overlay px-6 border-bottom-1 surface-border shadow-2 flex justify-content-between relative lg:static" style="min-height: 84px">
+    <nav class="surface-overlay px-6 lg:px-3 xl:px-6 border-bottom-1 surface-border shadow-2 flex justify-content-between relative lg:static" style="min-height: 84px">
         <img src="assets/images/blocks/logos/bastion-700.svg" alt="Image" height="40" class="mr-0 lg:mr-6 align-self-center">
         <a pRipple class="cursor-pointer block lg:hidden align-self-center text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" [hideOnOutsideClick]="true">
             <i class="pi pi-bars text-4xl"></i>
