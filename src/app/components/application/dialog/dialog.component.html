@@ -167,12 +167,12 @@
             <p class="font-semibold text-xl mt-0 mb-2 text-900">Authenticate Your Account</p>
             <p class="font-normal text-base mt-0 mb-3 text-600">Protecting your profile is our first priority. Please confirm your account by entering the authorization code sent to ***-***1052.</p>
             <div class="flex justify-content-between w-full align-items-center mb-4 gap-2">
-                <input #input1 type="text" maxlength="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input2)">
-                <input #input2 type="text" maxlength="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input3)">
-                <input #input3 type="text" maxlength="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input4)">
-                <input #input4 type="text" maxlength="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input5)">
-                <input #input5 type="text" maxlength="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input6)">
-                <input #input6 type="text" maxlength="1" pInputText class="w-4rem xl:w-6rem text-center">
+                <input #input1 type="text" maxlength="1" pInputText pKeyFilter="int" class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input2)">
+                <input #input2 type="text" maxlength="1" pInputText pKeyFilter="int" class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input3)">
+                <input #input3 type="text" maxlength="1" pInputText pKeyFilter="int" class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input4)">
+                <input #input4 type="text" maxlength="1" pInputText pKeyFilter="int" class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input5)">
+                <input #input5 type="text" maxlength="1" pInputText pKeyFilter="int" class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input6)">
+                <input #input6 type="text" maxlength="1" pInputText pKeyFilter="int" class="w-4rem xl:w-6rem text-center">
             </div>
         </form>
         <ng-template pTemplate="footer">

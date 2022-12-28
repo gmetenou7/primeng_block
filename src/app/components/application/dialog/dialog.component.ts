@@ -47,31 +47,15 @@ export class DialogComponent {
 
     expiration: any;
 
+    regexNum: RegExp = /^\d+$/;
+
     focus(event: KeyboardEvent, input?: HTMLInputElement) {
-        switch (event.code) {
-            case 'Escape':
-            case 'Space':
-            case 'Backspace':
-            case 'Enter':
-            case 'MetaRight':
-            case 'MetaLeft':
-            case 'ControlRight':
-            case 'ControlLeft':
-            case 'AltRight':
-            case 'AltLeft':
-            case 'ArrowUp':
-            case 'ArrowDown':
-            case 'ArrowLeft':
-            case 'ArrowRight':
-            case 'ShiftLeft':
-            case 'ShiftRight':
-            case 'ShiftRight':
-            case 'Minus':
-            case 'Equal':
-            case 'IntlBackslash':
-                return;
-            default:
-                input && input.focus();
+        let ok = this.regexNum.test(event.key);
+        if(ok) {
+            input.focus();
+        }
+        else {
+            return;
         }
     }
 
@@ -238,12 +222,12 @@ export class DialogComponent {
             <p class="font-semibold text-xl mt-0 mb-2 text-900">Authenticate Your Account</p>
             <p class="font-normal text-base mt-0 mb-3 text-600">Protecting your profile is our first priority. Please confirm your account by entering the authorization code sent to ***-***1052.</p>
             <div class="flex justify-content-between w-full align-items-center mb-4 gap-2">
-                <input #input1 type="text" maxlength="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input2)">
-                <input #input2 type="text" maxlength="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input3)">
-                <input #input3 type="text" maxlength="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input4)">
-                <input #input4 type="text" maxlength="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input5)">
-                <input #input5 type="text" maxlength="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input6)">
-                <input #input6 type="text" maxlength="1" pInputText class="w-4rem xl:w-6rem text-center">
+                <input #input1 type="text" maxlength="1" pInputText pKeyFilter="int" class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input2)">
+                <input #input2 type="text" maxlength="1" pInputText pKeyFilter="int" class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input3)">
+                <input #input3 type="text" maxlength="1" pInputText pKeyFilter="int" class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input4)">
+                <input #input4 type="text" maxlength="1" pInputText pKeyFilter="int" class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input5)">
+                <input #input5 type="text" maxlength="1" pInputText pKeyFilter="int" class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input6)">
+                <input #input6 type="text" maxlength="1" pInputText pKeyFilter="int" class="w-4rem xl:w-6rem text-center">
             </div>
         </form>
         <ng-template pTemplate="footer">
