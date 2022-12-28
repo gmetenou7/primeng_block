@@ -47,6 +47,34 @@ export class DialogComponent {
 
     expiration: any;
 
+    focus(event: KeyboardEvent, input?: HTMLInputElement) {
+        switch (event.code) {
+            case 'Escape':
+            case 'Space':
+            case 'Backspace':
+            case 'Enter':
+            case 'MetaRight':
+            case 'MetaLeft':
+            case 'ControlRight':
+            case 'ControlLeft':
+            case 'AltRight':
+            case 'AltLeft':
+            case 'ArrowUp':
+            case 'ArrowDown':
+            case 'ArrowLeft':
+            case 'ArrowRight':
+            case 'ShiftLeft':
+            case 'ShiftRight':
+            case 'ShiftRight':
+            case 'Minus':
+            case 'Equal':
+            case 'IntlBackslash':
+                return;
+            default:
+                input && input.focus();
+        }
+    }
+
     block1: string = `
 <button pButton pRipple label="Display" (click)="visible1 = true"></button>
 
@@ -201,33 +229,33 @@ export class DialogComponent {
     block6: string = `
 <button pButton pRipple label="Display" (click)="visible6 = true"></button>
 
-<p-dialog [(visible)]="visible6" [modal]="false" [closable]="false" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '52vw', height: '24rem'}">
-    <form class="flex flex-column w-full mt-4">
-        <div class="flex w-full justify-content-between mb-4">
-            <span class="w-4rem h-4rem border-circle flex justify-content-center align-items-center bg-blue-100"><i class="pi pi-lock text-blue-700 text-4xl"></i></span>
-            <button pButton pRipple type="button" icon="pi pi-times" class="p-button-rounded p-button-secondary p-button-text align-self-start" (click)="visible6 = false"></button>
-        </div>
-        <p class="font-semibold text-xl mt-0 mb-2 text-900">Authenticate Your Account</p>
-        <p class="font-normal text-base mt-0 mb-3 text-600">Protecting your profile is our first priority. Please confirm your account by entering the authorization code sent to ***-***1052.</p>
-        <div class="flex justify-content-between w-full align-items-center mb-4 gap-2">
-            <input type="text" length="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="input2.focus()">
-            <input #input2 type="text" length="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="input3.focus()">
-            <input #input3 type="text" length="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="input4.focus()">
-            <input #input4 type="text" length="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="input5.focus()">
-            <input #input5 type="text" length="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="input6.focus()">
-            <input #input6 type="text" length="1" pInputText class="w-4rem xl:w-6rem text-center">
-        </div>
-    </form>
-    <ng-template pTemplate="footer">
-        <div class="pt-3 flex justify-content-between align-items-center">
-            <div class="text-left">
-                <p class="font-normal text-base text-600 mb-0 mt-0">It may take a minute to receive.</p>
-                <a class="font-normal text-base text-primary-500 mb-0 mt-0 cursor-pointer">Resend a new code.</a>
+    <p-dialog [(visible)]="visible6" [modal]="false" [closable]="false" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '52vw', height: '24rem'}">
+        <form class="flex flex-column w-full mt-4">
+            <div class="flex w-full justify-content-between mb-4">
+                <span class="w-4rem h-4rem border-circle flex justify-content-center align-items-center bg-blue-100"><i class="pi pi-lock text-blue-700 text-4xl"></i></span>
+                <button pButton pRipple type="button" icon="pi pi-times" class="p-button-rounded p-button-secondary p-button-text align-self-start" (click)="visible6 = false"></button>
             </div>
-            <button pButton pRipple (click)="visible6 = false" label="Submit Code" class="m-0"></button>
-        </div>
-    </ng-template>
-</p-dialog>`;
+            <p class="font-semibold text-xl mt-0 mb-2 text-900">Authenticate Your Account</p>
+            <p class="font-normal text-base mt-0 mb-3 text-600">Protecting your profile is our first priority. Please confirm your account by entering the authorization code sent to ***-***1052.</p>
+            <div class="flex justify-content-between w-full align-items-center mb-4 gap-2">
+                <input #input1 type="text" maxlength="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input2)">
+                <input #input2 type="text" maxlength="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input3)">
+                <input #input3 type="text" maxlength="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input4)">
+                <input #input4 type="text" maxlength="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input5)">
+                <input #input5 type="text" maxlength="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="focus($event, input6)">
+                <input #input6 type="text" maxlength="1" pInputText class="w-4rem xl:w-6rem text-center">
+            </div>
+        </form>
+        <ng-template pTemplate="footer">
+            <div class="pt-3 flex justify-content-between align-items-center">
+                <div class="text-left">
+                    <p class="font-normal text-base text-600 mb-0 mt-0">It may take a minute to receive.</p>
+                    <a class="font-normal text-base text-primary-500 mb-0 mt-0 cursor-pointer">Resend a new code.</a>
+                </div>
+                <button pButton pRipple (click)="visible6 = false" label="Submit Code" class="m-0"></button>
+            </div>
+        </ng-template>
+    </p-dialog>`;
 
     block7: string = `
 <button pButton pRipple label="Display" (click)="visible7 = true"></button>
