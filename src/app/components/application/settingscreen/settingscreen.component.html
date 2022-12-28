@@ -557,35 +557,37 @@
                 <p class="mb-4 mt-0 text-700 font-normal text-base">Manage your member in this project</p>
                 <button pButton pRipple label="Invite a member" class="w-auto"></button>
             </div>
-            <p-table [value]="members" [tableStyle]="{'min-width': '60rem', 'border-radius': '5rem'}" [rowHover]="true">
-                <ng-template pTemplate="header">
-                    <tr>
-                        <th><span class="font-semibold text-sm text-color-secondary">Name</span></th>
-                        <th><span class="font-semibold text-sm text-color-secondary">Joined Date</span></th>
-                        <th><span class="font-semibold text-sm text-color-secondary">Last Active</span></th>
-                        <th></th>
-                    </tr>
-                </ng-template>
-                <ng-template pTemplate="body" let-member>
-                    <tr>
-                        <td>
-                            <div class="flex align-items-center gap-3">
-                                <p-avatar [image]="'assets/images/blocks/avatars/circle/' + member.image + '.png'" styleClass="mr-2" size="large" shape="circle"></p-avatar>
-                                <div>
-                                    <p class="mt-0 mb-2 font-medium text-lg text-color-primary">{{member.name}}</p>
-                                    <p class="mt-0 mb-2 font-normal text-base text-color-secondary">{{member.username}}</p>
+            <div class="overflow-x-scroll">
+                <p-table [value]="members" [tableStyle]="{'min-width': '50rem', 'border-radius': '5rem'}" [rowHover]="true">
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th><span class="font-semibold text-sm text-color-secondary">Name</span></th>
+                            <th><span class="font-semibold text-sm text-color-secondary">Joined Date</span></th>
+                            <th><span class="font-semibold text-sm text-color-secondary">Last Active</span></th>
+                            <th></th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-member>
+                        <tr>
+                            <td>
+                                <div class="flex align-items-center gap-3">
+                                    <p-avatar [image]="'assets/images/blocks/avatars/circle/' + member.image + '.png'" styleClass="mr-2" size="large" shape="circle"></p-avatar>
+                                    <div>
+                                        <p class="mt-0 mb-2 font-medium text-lg text-color-primary">{{member.name}}</p>
+                                        <p class="mt-0 mb-2 font-normal text-base text-color-secondary">{{member.username}}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td><p class="mt-0 mb-2 font-normal text-base text-color-secondary">{{member.date}}</p></td>
-                        <td><p class="mt-0 mb-2 font-normal text-base text-color-secondary">{{member.active}}</p></td>
-                        <td>
-                            <button type="button" pButton icon="pi pi-ellipsis-v" class="p-button-text p-button-secondary" (click)="menu.toggle($event)"></button>
-                            <p-menu #menu appendTo="body" [popup]="true" [model]="items"></p-menu>
-                        </td>
-                    </tr>
-                </ng-template>
-            </p-table>
+                            </td>
+                            <td><p class="mt-0 mb-2 font-normal text-base text-color-secondary">{{member.date}}</p></td>
+                            <td><p class="mt-0 mb-2 font-normal text-base text-color-secondary">{{member.active}}</p></td>
+                            <td>
+                                <button type="button" pButton icon="pi pi-ellipsis-v" class="p-button-text p-button-secondary" (click)="menu.toggle($event)"></button>
+                                <p-menu #menu appendTo="body" [popup]="true" [model]="items"></p-menu>
+                            </td>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </div>
         </section>
         <section class="flex flex-wrap gap-3 py-6 justify-content-between border-bottom-1 surface-border">
             <div class="flex-shrink-0">
@@ -593,34 +595,36 @@
                 <p class="mb-4 mt-0 text-700 font-normal text-base">Edit roles in this project</p>
                 <button pButton pRipple label="Add a role" class="w-auto"></button>
             </div>
-            <p-table [value]="roles" [tableStyle]="{'min-width': '60rem', 'border-radius': '5rem'}" [rowHover]="true">
-                <ng-template pTemplate="header">
-                    <tr>
-                        <th><span class="font-semibold text-sm text-color-secondary">Alias Name</span></th>
-                        <th><span class="font-semibold text-sm text-color-secondary">Last Edit</span></th>
-                        <th><span class="font-semibold text-sm text-color-secondary">Users</span></th>
-                        <th></th>
-                    </tr>
-                </ng-template>
-                <ng-template pTemplate="body" let-role>
-                    <tr>
-                        <td>
-                            <div class="flex align-items-center">
-                                <span class="border-circle mr-2" [ngClass]="role.color" style="width: 7px; height: 7px;"></span>
-                                <p class="mt-0 mb-0 font-medium text-lg text-color-primary">{{role.alias}}</p>
-                            </div>
-                        </td>
-                        <td>
-                            <p class="mt-0 mb-0 font-normal text-base text-color-secondary">{{role.date}}</p>
-                        </td>
-                        <td><p class="mt-0 mb-0 font-normal text-base text-color-secondary">{{role.users}}</p></td>
-                        <td>
-                            <button type="button" pButton icon="pi pi-ellipsis-v" class="p-button-text p-button-secondary" (click)="menu2.toggle($event)"></button>
-                            <p-menu #menu2 appendTo="body" [popup]="true" [model]="items"></p-menu>
-                        </td>
-                    </tr>
-                </ng-template>
-            </p-table>
+            <div class="overflow-x-scroll">
+                <p-table [value]="roles" [tableStyle]="{'min-width': '60rem', 'border-radius': '5rem'}" [rowHover]="true">
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th><span class="font-semibold text-sm text-color-secondary">Alias Name</span></th>
+                            <th><span class="font-semibold text-sm text-color-secondary">Last Edit</span></th>
+                            <th><span class="font-semibold text-sm text-color-secondary">Users</span></th>
+                            <th></th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-role>
+                        <tr>
+                            <td>
+                                <div class="flex align-items-center">
+                                    <span class="border-circle mr-2" [ngClass]="role.color" style="width: 7px; height: 7px;"></span>
+                                    <p class="mt-0 mb-0 font-medium text-lg text-color-primary">{{role.alias}}</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="mt-0 mb-0 font-normal text-base text-color-secondary">{{role.date}}</p>
+                            </td>
+                            <td><p class="mt-0 mb-0 font-normal text-base text-color-secondary">{{role.users}}</p></td>
+                            <td>
+                                <button type="button" pButton icon="pi pi-ellipsis-v" class="p-button-text p-button-secondary" (click)="menu2.toggle($event)"></button>
+                                <p-menu #menu2 appendTo="body" [popup]="true" [model]="items"></p-menu>
+                            </td>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </div>
         </section>
     </section>
 </block-viewer>
