@@ -29,7 +29,7 @@ export class CommandMenuComponent {
     visible6: boolean = false;
 
     block1: string = `
-<section *ngIf="!visible1" class="w-30rem border-1 surface-border border-round-lg">
+<section class="w-30rem border-1 surface-border border-round-lg">
     <div class="flex w-full align-items-center justify-content-between px-1">
         <span class="p-input-icon-left w-full">
             <i class="pi pi-search text-500"></i>
@@ -110,7 +110,7 @@ export class CommandMenuComponent {
 </p-dialog>`;
 
     block2: string = `
-<section *ngIf="!visible2" class="w-30rem border-1 surface-border border-round-lg">
+<section class="w-30rem border-1 surface-border border-round-lg">
     <div class="flex w-full align-items-center justify-content-between px-1">
         <span class="p-input-icon-left w-full">
             <i class="pi pi-search text-500"></i>
@@ -139,7 +139,7 @@ export class CommandMenuComponent {
 </p-dialog>`;
 
     block3: string = `
-<section *ngIf="!visible3" class="w-30rem border-1 surface-border border-round-lg">
+<section class="w-30rem border-1 surface-border border-round-lg">
     <div class="flex w-full align-items-center justify-content-between px-1">
         <span class="p-input-icon-left w-full">
             <i class="pi pi-search text-500"></i>
@@ -235,7 +235,7 @@ export class CommandMenuComponent {
 </p-dialog>`;
     
     block4: string = `
-<section *ngIf="!visible4" class="w-30rem border-1 surface-border border-round-lg">
+<section class="w-30rem border-1 surface-border border-round-lg">
     <div class="flex w-full align-items-center justify-content-between px-1">
         <span class="p-input-icon-left w-full">
             <i class="pi pi-search text-500"></i>
@@ -327,7 +327,7 @@ export class CommandMenuComponent {
 </p-dialog>`;
 
     block5: string = `
-<section *ngIf="!visible5" class="w-30rem bg-black-alpha-50 border-round-lg" style="backdrop-filter: blur(70px)">
+<section class="w-30rem bg-black-alpha-50 border-round-lg" style="backdrop-filter: blur(70px)">
     <div class="flex w-full align-items-center justify-content-between px-1">
         <span class="p-input-icon-left w-full">
             <i class="pi pi-search text-white-alpha-80"></i>
@@ -443,7 +443,7 @@ export class CommandMenuComponent {
 </p-dialog>`;
 
     block6: string = `
-<section *ngIf="!visible6" class="w-30rem bg-black-alpha-50 border-round-lg" style="backdrop-filter: blur(70px); width: 40rem;">
+<section class="w-30rem bg-black-alpha-50 border-round-lg" style="backdrop-filter: blur(70px); width: 40rem;">
     <div class="flex w-full align-items-center justify-content-between px-1">
         <span class="p-input-icon-left w-full">
             <i class="pi pi-search text-white-alpha-80"></i>
