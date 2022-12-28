@@ -524,7 +524,7 @@ export class NavBarComponent {
                                         <i class="pi pi-bolt text-4xl text-orange-500"></i>
                                     </div>
                                     <div>
-                                        <p class="text-white font-semibold text-lg lg:text-xl mb-2 mt-0 flex align-items-start">Integrations<span class="p-badge ml-2">New</span></p>
+                                        <a class="cursor-pointer text-white font-semibold text-lg lg:text-xl mb-2 mt-0 flex align-items-start">Integrations<span class="p-badge ml-2">New</span></a>
                                         <p class="text-base lg:text-lg mb-0 mt-0 text-white-alpha-70">Non blandit massa enim nec dui nunc mattis.</p>
                                     </div>
                                 </div>
@@ -533,7 +533,7 @@ export class NavBarComponent {
                                         <i class="pi pi-chart-pie text-4xl text-green-500"></i>
                                     </div>
                                     <div>
-                                        <p class="text-white font-semibold text-lg lg:text-xl mb-2 mt-0 flex align-items-start">Analytics</p>
+                                        <a class="cursor-pointer text-white font-semibold text-lg lg:text-xl mb-2 mt-0 flex align-items-start">Analytics</a>
                                         <p class="text-base lg:text-lg mb-0 mt-0 text-white-alpha-70">Non blandit massa enim nec dui nunc mattis.</p>
                                     </div>
                                 </div>
@@ -542,7 +542,7 @@ export class NavBarComponent {
                                         <i class="pi pi-book text-4xl text-indigo-500"></i>
                                     </div>
                                     <div>
-                                        <p class="text-white font-semibold text-lg lg:text-xl mb-2 mt-0 flex align-items-start">Documentation</p>
+                                        <a class="cursor-pointer text-white font-semibold text-lg lg:text-xl mb-2 mt-0 flex align-items-start">Documentation</a>
                                         <p class="text-base lg:text-lg mb-0 mt-0 text-white-alpha-70">Non blandit massa enim nec dui nunc mattis.</p>
                                     </div>
                                 </div>
@@ -551,7 +551,7 @@ export class NavBarComponent {
                                         <i class="pi pi-tag text-4xl text-pink-500"></i>
                                     </div>
                                     <div>
-                                        <p class="text-white font-semibold text-lg lg:text-xl mb-2 mt-0 flex align-items-start">Support</p>
+                                        <a class="cursor-pointer text-white font-semibold text-lg lg:text-xl mb-2 mt-0 flex align-items-start">Support</a>
                                         <p class="text-base lg:text-lg mb-0 mt-0 text-white-alpha-70">Non blandit massa enim nec dui nunc mattis.</p>
                                     </div>
                                 </div>
@@ -565,14 +565,14 @@ export class NavBarComponent {
                                     <div class="p-2 lg:w-full flex flex-column sm:flex-row sm:align-items-center" style="min-width:10rem">
                                         <img src="assets/images/blocks/navbar/navbar-1.jpeg" class="h-5rem w-10rem xl:h-5rem border-round mr-2" alt="Image">
                                         <div class="mt-3 sm:mt-0 sm:ml-2 w-full sm:w-8">
-                                            <p class="mb-2 mt-0 text-white font-medium text-lg">Learn how to use Peak in 10 mins</p>
+                                            <a class="block cursor-pointer mb-2 mt-0 text-white font-medium text-lg">Learn how to use Peak in 10 mins</a>
                                             <p class="mt-0 mb-0 font-normal text-base text-white-alpha-70">Enim diam vulputate ut pharetra sit. Eget arcu dictum varius duis at consectetur lorem donec.</p>
                                         </div>
                                     </div>
                                     <div class="mt-3 sm:mt-0 p-2 lg:w-full flex flex-column sm:flex-row sm:align-items-center" style="min-width: 10rem;">
                                         <img src="assets/images/blocks/navbar/navbar-2.jpeg" class="h-5rem w-10rem xl:h-5rem border-round mr-2" alt="Image">
                                         <div class="mt-3 sm:mt-0 sm:ml-2 w-full sm:w-8">
-                                            <p class="mb-2 mt-0 text-white font-medium text-lg">Reimagining development lifecycles</p>
+                                            <a class="block cursor-pointer mb-2 mt-0 text-white font-medium text-lg">Reimagining development lifecycles</a>
                                             <p class="mt-0 mb-0 font-normal text-base text-white-alpha-70">Habitant morbi tristique senectus et netus et malesuada fames. Ut placerat orci nulla pellentesque dignissim.</p>
                                         </div>
                                     </div>
