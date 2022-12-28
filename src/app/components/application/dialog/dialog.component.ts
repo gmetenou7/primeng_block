@@ -43,6 +43,10 @@ export class DialogComponent {
 
     ccRegex: RegExp = /[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}$/;
 
+    cvc: any;
+
+    expiration: any;
+
     block1: string = `
 <button pButton pRipple label="Display" (click)="visible1 = true"></button>
 
@@ -113,53 +117,52 @@ export class DialogComponent {
     block4: string = `
 <button pButton pRipple label="Display" (click)="visible4 = true"></button>
 
-    <p-dialog [(visible)]="visible4" appendTo="body" [modal]="true" [breakpoint]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '52vw'}" header="Edit Payment Method" [draggable]="false" [resizable]="false">
-        <ng-template pTemplate="header">
-                <div class="flex flex-column gap-2">
-                    <h1 class="m-0 text-900 font-semibold text-xl line-height-3">Edit Payment Method</h1>
-                    <span class="text-600 text-base">Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam.</span>
-                </div>
-        </ng-template>
-        <form class="flex flex-column gap-3 mt-3">
-            <div>
-                <label for="cardholder" class="block mb-1 text-color text-base">Cardholder Name</label>
+<p-dialog [(visible)]="visible4" appendTo="body" [modal]="true" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '52vw'}" header="Edit Payment Method" [draggable]="false" [resizable]="false">
+    <ng-template pTemplate="header">
+            <div class="flex flex-column gap-2">
+                <h1 class="m-0 text-900 font-semibold text-xl line-height-3">Edit Payment Method</h1>
+                <span class="text-600 text-base">Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam.</span>
+            </div>
+    </ng-template>
+    <form class="flex flex-column gap-3 mt-3">
+        <div>
+            <label for="cardholder" class="block mb-1 text-color text-base">Cardholder Name</label>
+            <span class="p-input-icon-left w-full">
+                <i class="pi pi-user"></i>
+                <input name="cardholder" type="text" class="w-full" id="cardholder" pInputText />
+            </span>
+        </div>
+        <div>
+            <label for="credit-card" class="block mb-1 text-color text-base">Credit Card Number</label>
+            <span class="p-input-icon-left w-full">
+                <i class="pi pi-credit-card"></i>
+                <input name="cc" type="text" class="w-full" id="credit-card" pInputText [pKeyFilter]="ccRegex" [pValidateOnly]="true" placeholder="1234-1234-1234-1234"/>
+            </span>
+        </div>
+        <div class="flex gap-3">
+            <div class="w-full">
+                <label for="cvc" class="block mb-1 text-color text-base">CVC</label>
                 <span class="p-input-icon-left w-full">
-                    <i class="pi pi-user"></i>
-                    <input type="text" class="w-full" id="cardholder" pInputText />
+                    <i class="pi pi-lock"></i>
+                    <input name="cvc" type="text" [(ngModel)]="cvc" class="w-full" id="cvc" pInputText pKeyFilter="int" placeholder="123"/>
                 </span>
             </div>
-            <div>
-                <label for="credit-card" class="block mb-1 text-color text-base">Credit Card Number</label>
+            <div class="w-full">
+                <label for="expiration" class="block mb-1 text-color text-base">Expiration</label>
                 <span class="p-input-icon-left w-full">
-                    <i class="pi pi-credit-card"></i>
-                    <input type="text" class="w-full" id="credit-card" pInputText [pKeyFilter]="ccRegex" [pValidateOnly]="true" placeholder="1234-1234-1234-1234"/>
+                    <i class="pi pi-clock"></i>
+                    <input name="exp" type="text" [(ngModel)]="expiration" class="w-full" id="expiration" pInputText placeholder="12/22"/>
                 </span>
             </div>
-            <div class="flex gap-3">
-                <div class="w-full">
-                    <label for="cvc" class="block mb-1 text-color text-base">CVC</label>
-                    <span class="p-input-icon-left w-full">
-                        <i class="pi pi-lock"></i>
-                        <input type="text" class="w-full" id="cvc" pInputText pKeyFilter placeholder="123"/>
-                    </span>
-                </div>
-                <div class="w-full">
-                    <label for="expiration" class="block mb-1 text-color text-base">Expiration</label>
-                    <span class="p-input-icon-left w-full">
-                        <i class="pi pi-clock"></i>
-                        <input type="text" class="w-full" id="expiration" pInputText pKeyFilter placeholder="12/22"/>
-                    </span>
-                </div>
-            </div>
-        </form>
-
-        <ng-template pTemplate="footer">
-            <div class="flex gap-3 justify-content-end border-top-1 surface-border pt-5">
-                <button pButton pRipple label="Cancel" (click)="visible4 = false" class="p-button-text"></button>
-                <button pButton pRipple label="Update" (click)="visible4 = false" class="p-button-rounded"></button>
-            </div>
-        </ng-template>
-    </p-dialog>`;
+        </div>
+    </form>
+    <ng-template pTemplate="footer">
+        <div class="flex gap-3 justify-content-end border-top-1 surface-border pt-5">
+            <button pButton pRipple label="Cancel" (click)="visible4 = false" class="p-button-text"></button>
+            <button pButton pRipple label="Update" (click)="visible4 = false" class="p-button-rounded"></button>
+        </div>
+    </ng-template>
+</p-dialog>`;
 
     block5: string = `
 <button pButton pRipple label="Display" (click)="visible5 = true"></button>
@@ -207,12 +210,12 @@ export class DialogComponent {
         <p class="font-semibold text-xl mt-0 mb-2 text-900">Authenticate Your Account</p>
         <p class="font-normal text-base mt-0 mb-3 text-600">Protecting your profile is our first priority. Please confirm your account by entering the authorization code sent to ***-***1052.</p>
         <div class="flex justify-content-between w-full align-items-center mb-4 gap-2">
-            <input type="text" length="1" pInputText class="w-6rem text-center" (keyup)="input2.focus()">
-            <input #input2 type="text" length="1" pInputText class="w-6rem text-center" (keyup)="input3.focus()">
-            <input #input3 type="text" length="1" pInputText class="w-6rem text-center" (keyup)="input4.focus()">
-            <input #input4 type="text" length="1" pInputText class="w-6rem text-center" (keyup)="input5.focus()">
-            <input #input5 type="text" length="1" pInputText class="w-6rem text-center" (keyup)="input6.focus()">
-            <input #input6 type="text" length="1" pInputText class="w-6rem text-center">
+            <input type="text" length="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="input2.focus()">
+            <input #input2 type="text" length="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="input3.focus()">
+            <input #input3 type="text" length="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="input4.focus()">
+            <input #input4 type="text" length="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="input5.focus()">
+            <input #input5 type="text" length="1" pInputText class="w-4rem xl:w-6rem text-center" (keyup)="input6.focus()">
+            <input #input6 type="text" length="1" pInputText class="w-4rem xl:w-6rem text-center">
         </div>
     </form>
     <ng-template pTemplate="footer">
