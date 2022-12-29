@@ -11,7 +11,8 @@
     .introduction-content {
         padding: 4rem 12rem;
         border-radius: 8px;
-        background-color: rgba(255,255,255,.9);
+        background-color: rgba(255,255,255,.3);
+        backdrop-filter: blur(24px);
         text-align: center;
 
         .introduction-title {
@@ -57,7 +58,7 @@
 
 .layout-wrapper-dark {
     .introduction {
-        background-image: url('../../images/bg-hero-dark.png');
+        background-image: url('../../images/bg-hero-dark.jpg');
 
         .introduction-content {
             background-color: rgba(0,0,0,.75);
