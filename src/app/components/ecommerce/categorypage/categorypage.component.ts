@@ -52,6 +52,22 @@ export class CategoryPageComponent {
         {label: 'Price'}
     ];
 
+    color1: string = 'black';
+
+    color2: string = 'indigo';
+
+    color3: string = 'puprle';
+
+    color4: string = 'cyan';
+
+    color5: string = 'black';
+
+    color6: string = 'indigo';
+
+    color7: string = 'purple';
+
+    color8: string = 'cyan';
+
     block1: string = `
 <div class="bg-cyan-700 px-4 lg:px-8 py-2 text-center">
     <span class="text-white">Free shipping on orders over $100</span>
@@ -253,15 +269,15 @@ export class CategoryPageComponent {
                         <span class="text-xl text-900 mb-3">$150.00</span>
                         <div class="flex align-items-center mb-3">
                             <div class="flex-shrink-0 border-circle bg-black-alpha-90 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'black' ? '0 0 0 0.2rem var(--bluegray-900)' : null" (click)="color = 'black'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color1 === 'black' ? '0 0 0 0.2rem var(--bluegray-900)' : null" (click)="color1 = 'black'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-bluegray-500 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color = 'bluegray'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color1 === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color1 = 'bluegray'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-green-500 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color = 'green'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color1 === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color1 = 'green'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-blue-500 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color = 'blue'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color1 === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color1 = 'blue'" style="width:1.2rem; height:1.2rem;"></div>
                         </div>
-                        <span class="text-500">Black</span>
+                        <span class="text-500">{{color1}}</span>
                     </div>
                 </div>
                 <div class="col-12 md:col-6 lg:col-3 mb-5 lg:mb-0">
@@ -278,15 +294,15 @@ export class CategoryPageComponent {
                         <span class="text-xl text-900 mb-3">$150.00</span>
                         <div class="flex align-items-center mb-3">
                             <div class="flex-shrink-0 border-circle bg-black-alpha-90 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'black' ? '0 0 0 0.2rem var(--bluegray-900)' : null" (click)="color = 'black'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color2 === 'black' ? '0 0 0 0.2rem var(--bluegray-900)' : null" (click)="color2 = 'black'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-bluegray-500 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color = 'bluegray'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color2 === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color2 = 'bluegray'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-green-500 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color = 'green'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color2 === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color2 = 'green'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-blue-500 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color = 'blue'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color2 === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color2 = 'blue'" style="width:1.2rem; height:1.2rem;"></div>
                         </div>
-                        <span class="text-500">Indigo</span>
+                        <span class="text-500">{{color2}}</span>
                     </div>
                 </div>
                 <div class="col-12 md:col-6 lg:col-3 mb-5 lg:mb-0">
@@ -303,15 +319,15 @@ export class CategoryPageComponent {
                         <span class="text-xl text-900 mb-3">$150.00</span>
                         <div class="flex align-items-center mb-3">
                             <div class="flex-shrink-0 border-circle bg-black-alpha-90 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'black' ? '0 0 0 0.2rem var(--bluegray-900)' : null" (click)="color = 'black'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color4 === 'black' ? '0 0 0 0.2rem var(--bluegray-900)' : null" (click)="color4 = 'black'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-bluegray-500 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color = 'bluegray'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color4 === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color4 = 'bluegray'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-green-500 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color = 'green'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color4 === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color4 = 'green'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-blue-500 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color = 'blue'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color4 === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color4 = 'blue'" style="width:1.2rem; height:1.2rem;"></div>
                         </div>
-                        <span class="text-500">Purple</span>
+                        <span class="text-500">{{color3}}</span>
                     </div>
                 </div>
                 <div class="col-12 md:col-6 lg:col-3">
@@ -328,15 +344,15 @@ export class CategoryPageComponent {
                         <span class="text-xl text-900 mb-3">$150.00</span>
                         <div class="flex align-items-center mb-3">
                             <div class="flex-shrink-0 border-circle bg-black-alpha-90 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'black' ? '0 0 0 0.2rem var(--bluegray-900)' : null" (click)="color = 'black'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color5 === 'black' ? '0 0 0 0.2rem var(--bluegray-900)' : null" (click)="color5 = 'black'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-bluegray-500 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color = 'bluegray'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color5 === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color5 = 'bluegray'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-green-500 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color = 'green'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color5 === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color5 = 'green'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-blue-500 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color = 'blue'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color5 === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color5 = 'blue'" style="width:1.2rem; height:1.2rem;"></div>
                         </div>
-                        <span class="text-500">Cyan</span>
+                        <span class="text-500">{{color4}}</span>
                     </div>
                 </div>
                 <div class="col-12 md:col-6 lg:col-3 mt-5 mb-5 lg:mb-0">
@@ -353,15 +369,15 @@ export class CategoryPageComponent {
                         <span class="text-xl text-900 mb-3">$150.00</span>
                         <div class="flex align-items-center mb-3">
                             <div class="flex-shrink-0 border-circle bg-black-alpha-90 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'black' ? '0 0 0 0.2rem var(--bluegray-900)' : null" (click)="color = 'black'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color6 === 'black' ? '0 0 0 0.2rem var(--bluegray-900)' : null" (click)="color6 = 'black'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-bluegray-500 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color = 'bluegray'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color6 === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color6 = 'bluegray'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-green-500 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color = 'green'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color6 === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color6 = 'green'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-blue-500 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color = 'blue'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color6 === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color6 = 'blue'" style="width:1.2rem; height:1.2rem;"></div>
                         </div>
-                        <span class="text-500">Black</span>
+                        <span class="text-500">{{color5}}</span>
                     </div>
                 </div>
                 <div class="col-12 md:col-6 lg:col-3 mt-5 mb-5 lg:mb-0">
@@ -378,15 +394,15 @@ export class CategoryPageComponent {
                         <span class="text-xl text-900 mb-3">$150.00</span>
                         <div class="flex align-items-center mb-3">
                             <div class="flex-shrink-0 border-circle bg-black-alpha-90 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'black' ? '0 0 0 0.2rem var(--bluegray-900)' : null" (click)="color = 'black'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color6 === 'black' ? '0 0 0 0.2rem var(--bluegray-900)' : null" (click)="color6 = 'black'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-bluegray-500 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color = 'bluegray'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color6 === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color6 = 'bluegray'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-green-500 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color = 'green'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color6 === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color6 = 'green'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-blue-500 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color = 'blue'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color6 === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color6 = 'blue'" style="width:1.2rem; height:1.2rem;"></div>
                         </div>
-                        <span class="text-500">Indigo</span>
+                        <span class="text-500">{{color6}}</span>
                     </div>
                 </div>
                 <div class="col-12 md:col-6 lg:col-3 mt-5 mb-5 lg:mb-0">
@@ -403,15 +419,15 @@ export class CategoryPageComponent {
                         <span class="text-xl text-900 mb-3">$150.00</span>
                         <div class="flex align-items-center mb-3">
                             <div class="flex-shrink-0 border-circle bg-black-alpha-90 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'black' ? '0 0 0 0.2rem var(--bluegray-900)' : null" (click)="color = 'black'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color7 === 'black' ? '0 0 0 0.2rem var(--bluegray-900)' : null" (click)="color7 = 'black'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-bluegray-500 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color = 'bluegray'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color7 === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color7 = 'bluegray'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-green-500 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color = 'green'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color7 === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color7 = 'green'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-blue-500 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color = 'blue'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color7 === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color7 = 'blue'" style="width:1.2rem; height:1.2rem;"></div>
                         </div>
-                        <span class="text-500">Purple</span>
+                        <span class="text-500">{{color7}}</span>
                     </div>
                 </div>
                 <div class="col-12 md:col-6 lg:col-3 mt-5">
@@ -428,15 +444,15 @@ export class CategoryPageComponent {
                         <span class="text-xl text-900 mb-3">$150.00</span>
                         <div class="flex align-items-center mb-3">
                             <div class="flex-shrink-0 border-circle bg-black-alpha-90 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'black' ? '0 0 0 0.2rem var(--bluegray-900)' : null" (click)="color = 'black'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color8 === 'black' ? '0 0 0 0.2rem var(--bluegray-900)' : null" (click)="color8 = 'black'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-bluegray-500 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color = 'bluegray'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color8 === 'bluegray' ? '0 0 0 0.2rem var(--bluegray-500)' : null" (click)="color8 = 'bluegray'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-green-500 mr-1 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color = 'green'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color8 === 'green' ? '0 0 0 0.2rem var(--green-500)' : null" (click)="color8 = 'green'" style="width:1.2rem; height:1.2rem;"></div>
                             <div class="flex-shrink-0 border-circle bg-blue-500 cursor-pointer border-2 surface-border transition-all transition-duration-300" 
-                                [style.box-shadow]="color === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color = 'blue'" style="width:1.2rem; height:1.2rem;"></div>
+                                [style.box-shadow]="color8 === 'blue' ? '0 0 0 0.2rem var(--blue-500)' : null" (click)="color8 = 'blue'" style="width:1.2rem; height:1.2rem;"></div>
                         </div>
-                        <span class="text-500">Cyan</span>
+                        <span class="text-500">{{color8}}</span>
                     </div>
                 </div>
             </div>
