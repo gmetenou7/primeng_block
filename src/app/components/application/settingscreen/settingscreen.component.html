@@ -552,13 +552,13 @@
             <p class="mt-0 mb-5 text-700 font-normal text-base">You can easily manage your team on this page</p>
         </div>
         <section class="flex flex-wrap gap-3 py-6 justify-content-between border-bottom-1 surface-border">
-            <div class="flex-shrink-0">
+            <div class="flex-shrink-0 w-15rem">
                 <h3 class="mb-4 mt-0 text-900 font-medium text-xl">Members</h3>
                 <p class="mb-4 mt-0 text-700 font-normal text-base">Manage your member in this project</p>
                 <button pButton pRipple label="Invite a member" class="w-auto"></button>
             </div>
             <div class="overflow-x-scroll">
-                <p-table [value]="members" [tableStyle]="{'min-width': '50rem', 'border-radius': '5rem'}" [rowHover]="true">
+                <p-table [value]="members" [tableStyle]="{'min-width': '60rem'}" [rowHover]="true">
                     <ng-template pTemplate="header">
                         <tr>
                             <th><span class="font-semibold text-sm text-color-secondary">Name</span></th>
@@ -590,13 +590,13 @@
             </div>
         </section>
         <section class="flex flex-wrap gap-3 py-6 justify-content-between border-bottom-1 surface-border">
-            <div class="flex-shrink-0">
+            <div class="flex-shrink-0 w-15rem">
                 <h3 class="mb-4 mt-0 text-900 font-medium text-xl">Roles</h3>
                 <p class="mb-4 mt-0 text-700 font-normal text-base">Edit roles in this project</p>
                 <button pButton pRipple label="Add a role" class="w-auto"></button>
             </div>
             <div class="overflow-x-scroll">
-                <p-table [value]="roles" [tableStyle]="{'min-width': '60rem', 'border-radius': '5rem'}" [rowHover]="true">
+                <p-table [value]="roles" [tableStyle]="{'min-width': '60rem'}" [rowHover]="true">
                     <ng-template pTemplate="header">
                         <tr>
                             <th><span class="font-semibold text-sm text-color-secondary">Alias Name</span></th>
