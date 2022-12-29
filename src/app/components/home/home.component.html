@@ -1,15 +1,16 @@
 <div class="introduction">
     <div class="introduction-content shadow-2 relative overflow-hidden">
-        <div class="bg-drop bg-primary"></div>
+        <div class="bg-drop bg-primary hidden"></div>
         <div class="introduction-title">Angular UI Blocks</div>
         <div class="introduction-subtitle">Powered by PrimeNG</div>
         <p class="text-900"><strong>400+</strong> ready to use UI blocks to build spectacular applications in no time.</p>
-        <div class="flex flex-nowrap flex-column align-items-center sm:flex-row sm:justify-content-center">
+        <div class="z-3 relative flex flex-nowrap flex-column align-items-center sm:flex-row sm:justify-content-center">
             <button pButton pRipple label="Browse All" (click)="viewBlocks(application)" class="w-full sm:w-auto font-bold p-3 mb-3 sm:mb-0 sm:mr-3"></button>
             <button pButton pRipple label="Free Blocks" class="w-full sm:w-auto p-button-outlined font-bold p-3" [routerLink]="['/free']"></button>
         </div>
-        <div class="video-container mt-5 z-2 relative">
+        <div class="video-container mt-5 z-2 relative flex justify-content-center align-items-center">
             <iframe width="420" height="236" src="https://www.youtube.com/embed/XNRevmRLb70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen onload="this.classList.add('shadow-6')"></iframe>
+            <div class="introduction-gradient top-50 w-30rem h-20rem bg-primary absolute"></div>
         </div>
     </div>
 </div>

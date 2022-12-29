@@ -11,7 +11,8 @@
     .pricing-content {
         padding: 4rem;
         border-radius: 8px;
-        background-color: rgba(255,255,255,.8);
+        background-color: rgba(255,255,255,.5);
+        backdrop-filter: blur(24px);
         text-align: center;
 
         .pricing-title {
@@ -45,7 +46,8 @@
         background-image: url('../../images/pricing/bg-pricing-dark.jpg');
 
         .pricing-content {
-            background-color: rgba(0,0,0,.75);
+            background-color: rgba(0,0,0,.5);
+            backdrop-filter: blur(24px);
         }
     }
 }
