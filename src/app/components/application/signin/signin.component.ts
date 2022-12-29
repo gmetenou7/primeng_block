@@ -152,7 +152,7 @@ export class SignInComponent implements OnInit {
     <div class="flex flex-wrap shadow-2">
         <div class="w-full lg:w-6 px-0 py-4 lg:p-7 bg-blue-50">
             <img src="assets/images/blocks/logos/bastion-700.svg" alt="Image" height="35" class="mb-6">
-            <p-carousel [value]="features">
+            <p-carousel [value]="features" indicatorStyleClass="hover:bg-primary-500" [showNavigators]="false">
                 <ng-template let-feature pTemplate="item">
                     <div class="text-center mb-8">
                         <img src="assets/images/blocks/illustration/{{feature.image}}" alt="Image" class="mb-6 w-6">
@@ -189,7 +189,7 @@ export class SignInComponent implements OnInit {
 
             <div class="flex align-items-center justify-content-between mb-6">
                 <div class="flex align-items-center">
-                    <p-checkbox id="rememberme" [binary]="true" styleClass="mr-2"></p-checkbox>
+                    <p-checkbox id="rememberme4" [binary]="true" styleClass="mr-2"></p-checkbox>
                     <label for="rememberme4">Remember me</label>
                 </div>
                 <a class="font-medium text-blue-500 hover:text-blue-700 cursor-pointer transition-colors transition-duration-150">Forgot password?</a>
