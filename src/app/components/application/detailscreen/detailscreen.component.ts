@@ -366,14 +366,14 @@ export class DetailScreenComponent implements OnInit {
                 </li>
                 <li>
                     <a pRipple class="flex px-6 p-3 h-full lg:px-3 lg:py-2 align-items-center text-600 border-left-2 lg:border-bottom-2 lg:border-left-none border-transparent hover:border-blue-500 font-medium cursor-pointer transition-colors transition-duration-150">
-                        <i class="pi pi-messages mr-2"></i>
+                        <i class="pi pi-envelope mr-2"></i>
                         <span>Messages</span>
                         <span class="p-tag text-orange-500 bg-orange-100 border-circle ml-2">3</span>
                     </a>
                 </li>
                 <li>
                     <a pRipple class="flex px-6 p-3 h-full lg:px-3 lg:py-2 align-items-center text-600 border-left-2 lg:border-bottom-2 lg:border-left-none border-transparent hover:border-blue-500 font-medium cursor-pointer transition-colors transition-duration-150">
-                        <i class="pi pi-cog-line mr-2"></i>
+                        <i class="pi pi-cog mr-2"></i>
                         <span>Settings</span>
                     </a>
                 </li>
@@ -382,7 +382,7 @@ export class DetailScreenComponent implements OnInit {
                 <li>
                     <a pRipple class="flex px-6 p-3 h-full lg:px-3 lg:py-2 align-items-center text-600 border-left-2 lg:border-bottom-2 lg:border-left-none border-transparent hover:border-blue-500 font-medium cursor-pointer transition-colors transition-duration-150">
                         <i class="pi pi-inbox text-base lg:text-2xl mr-2 lg:mr-0"></i>
-                        <span class="block lg:hidden font-medium">Settings</span>
+                        <span class="block lg:hidden font-medium">Inbox</span>
                     </a>
                 </li>
                 <li>
