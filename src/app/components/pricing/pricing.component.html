@@ -12,10 +12,8 @@
             <div class="shadow-2 p-4 surface-0 border-blue-500 border-2" style="border-radius:6px">
                 <div class="text-2xl text-900 mb-3 font-medium">Single Developer</div>
                 <p class="text-600 mb-4">For individual developers</p>
-                <div *ngIf="pricing"
-                    class="py-4 text-900 font-medium text-5xl border-top-1 border-bottom-1 border-300 flex gap-3 flex-wrap">
-                    <span [class]="pricing.single.old.class">{{pricing.single.old.value}}</span>
-                    <span [class]="pricing.single.new.class">{{pricing.single.new.value}}</span>
+                <div class="py-4 text-900 font-medium text-5xl border-top-1 border-bottom-1 border-300 flex gap-3 flex-wrap">
+                    <span class="font-bold text-2xl text-900">$199</span>
                 </div>
                 <div class="pt-4 pb-0">
                     <ul class="list-none p-0 m-0">
@@ -65,10 +63,8 @@
             <div class="shadow-2 p-4 surface-0 border-orange-500 border-2" style="border-radius:6px">
                 <div class="text-2xl text-900 mb-3 font-medium">Team</div>
                 <p class="text-600 mb-4">For small teams</p>
-                <div *ngIf="pricing"
-                    class="py-4 text-900 font-medium text-5xl border-top-1 border-bottom-1 border-300 flex gap-3 flex-wrap">
-                    <span [class]="pricing.team.old.class">{{pricing.team.old.value}}</span>
-                    <span [class]="pricing.team.new.class">{{pricing.team.new.value}}</span>
+                <div class="py-4 text-900 font-medium text-5xl border-top-1 border-bottom-1 border-300 flex gap-3 flex-wrap">
+                    <span class="font-bold text-2xl text-900">$699</span>
                 </div>
                 <div class="pt-4 pb-0">
                     <ul class="list-none p-0 m-0">
@@ -118,9 +114,8 @@
             <div class="shadow-2 p-4 surface-0 border-bluegray-500 border-2" style="border-radius:6px">
                 <div class="text-2xl text-900 mb-3 font-medium">Enterprise</div>
                 <p class="text-600 mb-4">For larger teams</p>
-                <div *ngIf="pricing"
-                    class="py-4 border-top-1 border-bottom-1 border-300">
-                    <span [class]="pricing.enterprise.new.class">{{pricing.enterprise.new.value}}</span>
+                <div class="py-4 text-900 font-medium text-5xl border-top-1 border-bottom-1 border-300 flex gap-3 flex-wrap">
+                    <span class="font-bold text-2xl text-900">Exclusive Deals</span>
                 </div>
                 <div class="pt-4 pb-0">
                     <ul class="list-none p-0 m-0">
