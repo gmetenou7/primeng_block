@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.2.0
+
+- Includes 30+ new UI blocks
+- Updated to PrimeFlex 3.3.0
+- Themes Updated
+
 ## 3.1.1
 
 - Sync the blocks with the Figma design file
