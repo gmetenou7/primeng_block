@@ -56,7 +56,7 @@ export class CategoryPageComponent {
 
     color2: string = 'indigo';
 
-    color3: string = 'puprle';
+    color3: string = 'purple';
 
     color4: string = 'cyan';
 
