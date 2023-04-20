@@ -382,9 +382,9 @@ export class SettingScreenComponent implements OnInit {
                     </a>
                 </li>
                 <li class="border-top-1 surface-border xl:border-top-none">
-                    <a pRipple class="flex h-3rem w-full xl:w-3rem px-3 xl:px-0 justify-content-start xl:justify-content-center align-items-center hover:surface-hover font-medium xl:border-round cursor-pointer transition-colors transition-duration-150" (click)="activeTab2 = 6">
+                    <a pRipple class="p-ripple flex h-3rem w-full xl:w-3rem px-3 xl:px-0 text-50 hover:text-900 justify-content-start xl:justify-content-center align-items-center hover:surface-hover font-medium xl:border-round cursor-pointer transition-colors transition-duration-150" (click)="activeTab2 = 6">
                         <img src="assets/images/blocks/avatars/circle/avatar-f-1.png" class="mr-3 xl:mr-0" style="width: 32px; height: 32px"/>
-                        <div class="block xl:hidden" [ngClass]="{'text-900': activeTab2 === 6, 'text-50': activeTab2 !== 6}">
+                        <div class="block xl:hidden">
                             <span class="block font-medium">Josephine Lillard</span>
                             <span class="block font-medium text-sm">Marketing Specialist</span>
                         </div>
@@ -503,7 +503,7 @@ export class SettingScreenComponent implements OnInit {
                     </div>
                 </div>
             </div>
-            </div>
+         </div>
     </div>
 </section>`;
 
