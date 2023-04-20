@@ -179,7 +179,7 @@ export class DialogComponent {
     block5: string = `
 <button pButton pRipple label="Display" (click)="visible5 = true"></button>
 
-<p-dialog [(visible)]="visible5" [modal]="false" [closable]="false" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '40vw', height: '22rem'}">
+<p-dialog [(visible)]="visible5" [modal]="true" [closable]="false" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '40vw', height: '22rem'}">
     <section class="flex flex-column w-full mt-4">
         <div class="flex w-full justify-content-between mb-4">
             <span class="w-4rem h-4rem border-circle flex justify-content-center align-items-center bg-blue-100"><i class="pi pi-users text-blue-700 text-4xl"></i></span>
@@ -213,7 +213,7 @@ export class DialogComponent {
     block6: string = `
 <button pButton pRipple label="Display" (click)="visible6 = true"></button>
 
-    <p-dialog [(visible)]="visible6" [modal]="false" [closable]="false" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '52vw', height: '24rem'}">
+    <p-dialog [(visible)]="visible6" [modal]="true" [closable]="false" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '52vw', height: '24rem'}">
         <form class="flex flex-column w-full mt-4">
             <div class="flex w-full justify-content-between mb-4">
                 <span class="w-4rem h-4rem border-circle flex justify-content-center align-items-center bg-blue-100"><i class="pi pi-lock text-blue-700 text-4xl"></i></span>
@@ -244,7 +244,7 @@ export class DialogComponent {
     block7: string = `
 <button pButton pRipple label="Display" (click)="visible7 = true"></button>
 
-<p-dialog [(visible)]="visible7" [modal]="false" [closable]="false" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '45vw'}">
+<p-dialog [(visible)]="visible7" [modal]="true" [closable]="false" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '45vw'}">
     <form class="flex flex-column w-full mt-4">
         <div class="flex w-full justify-content-between mb-4">
             <span class="w-4rem h-4rem border-circle flex justify-content-center align-items-center bg-blue-100"><i class="pi pi-credit-card text-blue-700 text-4xl"></i></span>
@@ -295,7 +295,7 @@ export class DialogComponent {
     block8: string = `
 <button pButton pRipple label="Display" (click)="visible8 = true"></button>
 
-<p-dialog [(visible)]="visible8" [modal]="false" [closable]="false" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '45vw'}">
+<p-dialog [(visible)]="visible8" [modal]="true" [closable]="false" [showHeader]="false" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '45vw'}">
     <section class="flex flex-column w-full mt-4">
         <div class="flex w-full justify-content-between align-items-center mb-4">
             <span class="font-semibold text-base text-600">Notes / <span class="text-900">Daily</span></span>
