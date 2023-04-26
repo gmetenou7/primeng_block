@@ -2,7 +2,7 @@
 
 ## 3.2.1
 
-- PrimeNG version updated to 15.4.0.
+- PrimeNG version updated to 15.4.1.
 - Fixed a bug that was causing dropdowns not to open.
 
 ## 3.2.0
